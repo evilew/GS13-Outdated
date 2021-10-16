@@ -100,6 +100,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/body_size = 100					//Body Size in percent
 	var/can_get_preg = 0				//if they can get preggers
 
+	//GS13
+	var/starting_weight = 0				//how thicc you wanna be at start
+
 	//HS13 jobs
 	var/sillyroles = FALSE //for clown and mime
 	var/roleplayroles = FALSE //for the roleplay roles
@@ -315,6 +318,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 //H13 make body size compatable with the current save.
 	if (body_size == null)
 		body_size = 100
+	if (starting_weight == null)
+		starting_weight = 0
 
 	dat += "</center>"
 
@@ -467,6 +472,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			if (body_size == null)
 				dat += "<b>Sprite Size:</b> <a href='?_src_=prefs;preference=bodysize;task=input'>[body_size]%</a><br>"
 				mutant_colors = TRUE
+			//GS13 fatness
+			dat += "<b>Starting weight :</b> <a href='?_src_=prefs;preference=fatness;task=input'>[starting_weight]</a><br>"
 
 			if((EYECOLOR in pref_species.species_traits) && !(NOEYES in pref_species.species_traits))
 
@@ -2465,7 +2472,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if (new_bodysize)
 						body_size = max(min( round(text2num(new_bodysize)), MAX_BODYSIZE),MIN_BODYSIZE)
 
-
+//GS13 fatness
+				
+				if("fatness")
+					var/new_fatness = input(user, "Choose your amount of fat at start :\n(0-2000), Fat changes appearance and move speed. \nThresholds are 100, 350, 650, 950 and 1671. Fair warning : being too fat will make you immobile", "Character Preference") as num|null
+					if (new_fatness)
+						starting_weight = max(min( round(text2num(new_fatness)), 2000),0)
 
 				if("ui")
 					var/pickedui = input(user, "Choose your UI style.", "Character Preference", UI_style)  as null|anything in GLOB.available_ui_styles
@@ -2803,6 +2815,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	//h13 character custom body size, make sure to set to 100% if the player hasn't choosen one yet.
 	character.custom_body_size = body_size
 	character.breedable = 0
+
+	character.fatness = starting_weight
 
 	character.gender = gender
 	character.age = age

@@ -53,6 +53,7 @@
 	checkLiked(fraction, M)
 	reagents.reaction(M, INGEST, fraction)
 	reagents.trans_to(M, gulp_size)
+	M.fullness += min(gulp_size, reagents.total_volume) // GS13 drinks will fill your stomach
 	playsound(M.loc,'sound/items/drink.ogg', rand(10,50), 1)
 	return 1
 

@@ -308,3 +308,13 @@
 	name = "snowman"
 	desc = "Several lumps of snow put together to form a snowman."
 	icon_state = "snowman"
+
+/////////////////////V Statues from GS13 V/////////////////////////////////////////
+
+/obj/structure/statue/blueberry
+	max_integrity = 500
+
+/obj/structure/statue/blueberry
+	name = "blueberry statue"
+	desc = "A statue resembling a poor humanoid creature shaped like a ball."
+	icon_state = "blueberry"

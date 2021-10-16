@@ -3065,6 +3065,7 @@
 #include "code\modules\VR\vr_sleeper.dm"
 #include "code\modules\zombie\items.dm"
 #include "code\modules\zombie\organs.dm"
+#include "GainStation13\code\modules\vending\mealdor.dm"
 #include "hyperstation\code\__DEFINES\economy.dm"
 #include "hyperstation\code\__DEFINES\wendigo.dm"
 #include "hyperstation\code\controllers\subsystem\economy.dm"

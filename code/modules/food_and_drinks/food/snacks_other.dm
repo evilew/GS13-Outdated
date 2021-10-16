@@ -77,6 +77,7 @@
 	trash = /obj/item/trash/popcorn
 	list_reagents = list(/datum/reagent/consumable/nutriment = 2)
 	bitesize = 0.1 //this snack is supposed to be eating during looooong time. And this it not dinner food! --rastaf0
+	bitevolume = 0.1
 	filling_color = "#FFEFD5"
 	tastes = list("popcorn" = 3, "butter" = 1)
 	foodtype = JUNKFOOD

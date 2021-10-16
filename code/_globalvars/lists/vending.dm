@@ -36,6 +36,7 @@ GLOBAL_VAR_INIT(vending_m_choices, list(
 	"NanoMed Plus"								= image(icon = 'icons/obj/vending.dmi', icon_state = "med"),
 	"NanoMed"									= image(icon = 'icons/obj/vending.dmi', icon_state = "wallmed"),
 	"KinkMate"									= image(icon = 'icons/obj/citvending.dmi', icon_state = "kink"),
+	"Meal Vendor"								= image(icon = 'icons/obj/vending.dmi', icon_state = "mealdor"),
 ))
 // This GLOBAL list is just here to be here.
 GLOBAL_VAR_INIT(vending_machines, list(
@@ -74,5 +75,6 @@ GLOBAL_VAR_INIT(vending_machines, list(
 	/obj/machinery/vending/clothing,
 	/obj/machinery/vending/medical,
 	/obj/machinery/vending/wallmed,
-	/obj/machinery/vending/kink
+	/obj/machinery/vending/kink,
+	/obj/machinery/vending/mealdor
 ))

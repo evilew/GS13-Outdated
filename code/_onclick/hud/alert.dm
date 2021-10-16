@@ -151,11 +151,47 @@
 	icon_state = "too_much_tox"
 //End gas alerts
 
+//GS13 fat alerts
+/obj/screen/alert/blob
+	name = "Fatty blob"
+	desc = "Every last piece of your corpulent body is now flush and bloated with vast globs of blubber. Your corpulence is such that you are akin to a gigantic, towering wad of dough. Your thoughts are scattered, and the only thing in your mind is that you want to eat more and more"
+	icon_state = "blob"
+
+/obj/screen/alert/immobile
+	name = "Immobile"
+	desc = "Fat has taken over your body, now colossal in size and loaded with cumbersome flab. You are completely unable to move the bulk that has set upon your body. But for whatever reason, you can't help but blush with strange fascination at every moment you're aware of your tremendous size..."
+	icon_state = "immobile"
+
+/obj/screen/alert/morbidlyobese
+	name = "Morbidly Obese"
+	desc = "Every inch of you is stuffed with copious amounts of fat, you feel yourself struggling to haul the heft of your body. Your thoughts wander to strange, fleeting fantasies of growing bigger yet..."
+	icon_state = "morbobese"
+
+/obj/screen/alert/obese
+	name = "Obese"
+	desc = "Your body is swollen with lard, and it's challenging to move. Despite this, there's something... pleasing about being so large."
+	icon_state = "obese"
 
 /obj/screen/alert/fat
 	name = "Fat"
-	desc = "You ate too much food, lardass. Run around the station and lose some weight."
+	desc = "You ate too much food, and now your body has plumped up, let's hope your clothes don't rip."
 	icon_state = "fat"
+
+/obj/screen/alert/bloated
+	name = "Bloated stomach"
+	desc = "Your stomach is a bit too full"
+	icon_state = "fat"
+
+/obj/screen/alert/stuffed
+	name = "Completely stuffed"
+	desc = "Whatever you ate, you ate too much. Your stomach has stretched to accomodate its contents, forming a very obvious belly"
+	icon_state = "fat"
+
+/obj/screen/alert/beegbelly
+	name = "Walking belly"
+	desc = "You've somehow managed to fit even more in your stomach. Can you even stand?"
+	icon_state = "obese"
+
 
 /obj/screen/alert/hungry
 	name = "Hungry"

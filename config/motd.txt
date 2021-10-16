@@ -1,5 +1,22 @@
 <!-- Most valid html will work in here, excluding images. -->
 
-<h1>Welcome to Space Station 13!</h1>
+<h1>You are now entering Gain Station 13!</h1>
 
-<i>This server is running a /tg/station 13 Git build.</i>
+<i> These are the rules of the server:</i>
+	
+  <b>1:</b> If you are not 18 you will not be able to enter the server, sorry.
+	
+  <b>2:</b> Keep in mind that while in game you have to talk in character, 
+            if you got something to say about certain jobs or anything please use OOC (By pressing O)"
+  
+  <b>3:</b> Do not RDM without a reason, please people do not like that and that will get you banned.
+
+  <b>4:</b> Please be respectful to the admins 
+  
+  <b>5:</b> Metagaming is not allowed.
+
+  <b>6:</b> Do not use racial slurs or any offensive characters.
+
+  <b>7:</b> Griefing the station unless you are the antagonist is not allowed.
+
+<b>Thanks for reading these rules and enjoy your time at Gain Station 13</b>

@@ -144,6 +144,14 @@
 	is_decorated = TRUE
 	filling_color = "#879630"
 
+/obj/item/reagent_containers/food/snacks/donut/purefat //DEBUG DONUT THAT MAKES YOU FAT
+	name = "Donut-that-makes-you-fat"
+	desc = "Careful, it'll go to your hips"
+	bitesize = 9999
+	list_reagents = list("nutriment" = 9999)
+	icon_state = "donut1"
+	foodtype = JUNKFOOD | GRAIN | FRIED | SUGAR
+
 /obj/item/reagent_containers/food/snacks/donut/semen
 	name = "\"cream\" donut"
 	desc = "That cream looks a little runny..."
