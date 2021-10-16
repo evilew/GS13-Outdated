@@ -2871,7 +2871,7 @@
 /area/xenoarch/gen)
 "hb" = (
 /obj/structure/table,
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "hc" = (
@@ -3176,7 +3176,7 @@
 /area/xenoarch/gen)
 "hP" = (
 /obj/structure/table,
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/plasteel,
 /area/xenoarch/gen)
 "hQ" = (
@@ -5457,7 +5457,7 @@
 /area/xenoarch/gen)
 "np" = (
 /obj/structure/table/wood,
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/carpet,
 /area/xenoarch/gen)
 "nq" = (
@@ -5472,7 +5472,7 @@
 /area/xenoarch/gen)
 "ns" = (
 /obj/structure/table/wood,
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/carpet/royalblue,
 /area/xenoarch/gen)
 "nt" = (
