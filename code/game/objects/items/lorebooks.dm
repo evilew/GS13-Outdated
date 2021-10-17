@@ -23,7 +23,7 @@
 				<body>
 				<h3 style="text-align: center;">Welcome to Gato Industrial Concern!</h3>
 				<hr>
-				Thank you, valued employee, for signing up to do work for Gato Industrial Concern. Whether you are working full-time or as a contractor for us, the contents within this little guide will help you get started on what you need to know! 
+				Thank you, valued employee, for signing up to do work for Gato Industrial Concern. Whether you are working full-time or as a contractor for us, the contents within this little guide will help you get started on what you need to know!
 				<p>
 				<h2>Table of Contents...</h2>
 				<ol>
@@ -36,30 +36,30 @@
                 <h1><u>Chapter 1</u></h1>
                 <h2>What is Gato? </h2>
 				<p>
-				Gato Industrial Concern is a corporation that operates in every sector known to all sapients. Agriculture, R&D, pharmaceuticals- if it exists, we make it! Your current employment is upon that of a....: 				
+				Gato Industrial Concern is a corporation that operates in every sector known to all sapients. Agriculture, R&D, pharmaceuticals- if it exists, we make it! Your current employment is upon that of a....:
 				<p>
 				GENERAL STATION
 				<p>
-				Lucky you! A General Station is one that does not specialize in any particular type of production, and profits off of whatever it can manage to export. You've heard us! So long as the crew can get profitable stuff and ship it off to Central Command, you're doing your job! Here at Gato, we understand how autonomy for stations can improve both the conditions of workers and stimulate both creativity and innovation. As a result, we have permitted you to have nearly free reign over your activities, far from bureaucracy and regulation.				
+				Lucky you! A General Station is one that does not specialize in any particular type of production, and profits off of whatever it can manage to export. You've heard us! So long as the crew can get profitable stuff and ship it off to Central Command, you're doing your job! Here at Gato, we understand how autonomy for stations can improve both the conditions of workers and stimulate both creativity and innovation. As a result, we have permitted you to have nearly free reign over your activities, far from bureaucracy and regulation.
 				<p>
 				<hr>
 				<h1><u>Chapter 2</u></h1>
 				<h2>The origin of Gato</h2>
 				<p>
-				Gato's story begins around the beginning of the 22nd century. It was a truly hard time, indeed! Between the troublesome and expensive startup process of making a small business, and the crushing weight of bigger corporations, one would think that setting up a business was financial suicide. But our founder, 
-				<i>~~-`11@#[ERROR]</i>
-				, thought otherwise! So, GatoMart was founded, and we were instantly known for our creativity. Cute designs and friendly service built us the profit and recognition we needed to expand! And expand we did, taking on more and more corporations under our wing until we became the way we are today.				
+				Gato's story begins around the beginning of the 22nd century. It was a truly hard time, indeed! Between the troublesome and expensive startup process of making a small business, and the crushing weight of bigger corporations, one would think that setting up a business was financial suicide. But our founder,
+				<i>~~-`11@#\[ERROR\]</i>
+				, thought otherwise! So, GatoMart was founded, and we were instantly known for our creativity. Cute designs and friendly service built us the profit and recognition we needed to expand! And expand we did, taking on more and more corporations under our wing until we became the way we are today.
 				<p>
 				<hr>
                 <h1><u>Chapter 3</u></h1>
                 <h2>The current state of Gato</h2>
 				<p>
-				Many people have begun to circulate bad rumors that Gato is beginning to decline. Dear employees, as honest, loving, and trustworthy employers, we must deny those claims! The Syndicate does not pose much of a threat, and we have continued to profit despite the odds! So do not fear, neither your wages nor your employment are currently at risk. We would never think of doing something to discredit the members of our beloved corporation! Perhaps it is time to go onto a more pleasant topic... how the corporate hierarchy works! At the bottom, we have common workers, above that are your Department Heads, and above that is your Captain! And your Captain answers to our Central Command teams, who answers the Head of Central Command, who reports to the Branch Manager, who answers to the Executive Officers, who answer to the CEO, who answers to the Board of Directors. The Board of Directors equally listens to the input of our most trusted shareholders, and the Head of the Board! Got it? Good! And if you hear any little urban legends that seem to say that our dear Founder 
-				<i>##@--_[ERROR]</i>
+				Many people have begun to circulate bad rumors that Gato is beginning to decline. Dear employees, as honest, loving, and trustworthy employers, we must deny those claims! The Syndicate does not pose much of a threat, and we have continued to profit despite the odds! So do not fear, neither your wages nor your employment are currently at risk. We would never think of doing something to discredit the members of our beloved corporation! Perhaps it is time to go onto a more pleasant topic... how the corporate hierarchy works! At the bottom, we have common workers, above that are your Department Heads, and above that is your Captain! And your Captain answers to our Central Command teams, who answers the Head of Central Command, who reports to the Branch Manager, who answers to the Executive Officers, who answer to the CEO, who answers to the Board of Directors. The Board of Directors equally listens to the input of our most trusted shareholders, and the Head of the Board! Got it? Good! And if you hear any little urban legends that seem to say that our dear Founder
+				<i>##@--_\[ERROR\]</i>
 				is still alive and acting as the Head of the Board... DO NOT LISTEN. THEY ARE NOT TRUE.
 				<p>
                 <hr>
-                  
+
 
 
 				</body>
