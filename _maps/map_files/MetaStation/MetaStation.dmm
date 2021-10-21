@@ -9236,7 +9236,6 @@
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/fitness/recreation)
 "arb" = (
-/obj/machinery/vending/coffee,
 /obj/item/radio/intercom{
 	name = "Station Intercom (General)";
 	pixel_y = -28
@@ -9251,6 +9250,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/machinery/vending/mealdor,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/fitness/recreation)
 "arc" = (
@@ -15405,7 +15405,6 @@
 /obj/item/storage/backpack/duffelbag/syndie/hitman{
 	contents = newlist(/obj/item/clothing/suit/armor/vest,/obj/item/gun/ballistic/automatic/pistol,/obj/item/suppressor,/obj/item/melee/classic_baton/telescopic,/obj/item/clothing/mask/balaclava,/obj/item/bodybag,/obj/item/soap/nanotrasen)
 	},
-/obj/item/card/id/silver/reaper,
 /obj/item/lazarus_injector,
 /obj/item/gun/energy/e_gun/advtaser,
 /obj/item/clothing/neck/stethoscope,
@@ -26633,7 +26632,6 @@
 /turf/closed/wall,
 /area/crew_quarters/locker)
 "aYP" = (
-/obj/machinery/vending/snack/random,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -26644,6 +26642,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/machinery/vending/mealdor,
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
 "aYQ" = (
@@ -38766,8 +38765,8 @@
 /turf/open/space,
 /area/space/nearstation)
 "buG" = (
-/obj/machinery/vending/cola/random,
 /obj/effect/turf_decal/delivery,
+/obj/machinery/vending/mealdor,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "buH" = (
@@ -38806,7 +38805,8 @@
 /turf/open/floor/plasteel/grimy,
 /area/hallway/primary/port)
 "buM" = (
-/obj/machinery/vending/snack/random,
+/obj/machinery/vending/mealdor,
+/obj/machinery/vending/mealdor,
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/port)
 "buN" = (
@@ -39180,7 +39180,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/machinery/vending/snack/random,
+/obj/machinery/vending/mealdor,
 /turf/open/floor/plasteel/dark,
 /area/bridge)
 "bvx" = (
@@ -47988,10 +47988,10 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
 "bNt" = (
-/obj/machinery/vending/snack/random,
 /obj/machinery/newscaster{
 	pixel_y = -29
 	},
+/obj/machinery/vending/mealdor,
 /turf/open/floor/carpet,
 /area/crew_quarters/bar)
 "bNu" = (
@@ -52556,10 +52556,10 @@
 /turf/open/floor/wood,
 /area/library)
 "bWV" = (
-/obj/machinery/vending/snack/random,
 /obj/machinery/newscaster{
 	pixel_x = -30
 	},
+/obj/machinery/vending/mealdor,
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/central)
 "bWW" = (
@@ -73119,7 +73119,7 @@
 /turf/open/floor/plasteel,
 /area/science/mixing)
 "cJz" = (
-/obj/machinery/vending/snack/random,
+/obj/machinery/vending/mealdor,
 /turf/open/floor/plasteel,
 /area/science/mixing)
 "cJA" = (
@@ -82595,6 +82595,13 @@
 /obj/structure/disposaloutlet,
 /turf/open/floor/plating/airless,
 /area/science/xenobiology)
+"faq" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/machinery/vending/mealdor,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "khd" = (
 /obj/effect/turf_decal/bot_white/left,
 /obj/effect/turf_decal/tile/neutral{
@@ -93303,7 +93310,7 @@ aDV
 aDV
 aDV
 aDV
-aXS
+faq
 aZv
 bbo
 bcN

@@ -4603,9 +4603,9 @@
 /turf/open/floor/engine,
 /area/security/processing)
 "ajg" = (
-/obj/machinery/computer/gulag_teleporter_computer,
-/turf/open/floor/engine,
-/area/security/processing)
+/obj/machinery/vending/mealdor,
+/turf/open/floor/plasteel/dark,
+/area/hallway/primary/central)
 "ajh" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 6
@@ -7011,8 +7011,8 @@
 /turf/open/floor/engine,
 /area/hallway/primary/fore)
 "aoh" = (
-/obj/machinery/vending/snack/random,
 /obj/effect/turf_decal/tile/red,
+/obj/machinery/vending/mealdor,
 /turf/open/floor/engine,
 /area/hallway/primary/fore)
 "aoi" = (
@@ -18098,10 +18098,10 @@
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
 "aNN" = (
-/obj/machinery/vending/snack/random,
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
+/obj/machinery/vending/mealdor,
 /turf/open/floor/engine,
 /area/hallway/secondary/entry)
 "aNO" = (
@@ -18683,7 +18683,7 @@
 /turf/open/floor/plasteel/grimy,
 /area/hallway/secondary/entry)
 "aPi" = (
-/obj/machinery/vending/snack/random,
+/obj/machinery/vending/mealdor,
 /turf/open/floor/plasteel/dark,
 /area/hallway/secondary/entry)
 "aPj" = (
@@ -86831,7 +86831,7 @@ aad
 aaa
 aaa
 aiI
-ajg
+akX
 ajN
 aks
 akX
@@ -93540,7 +93540,7 @@ bdw
 bBT
 aom
 aIU
-aKf
+ajg
 aLI
 aNh
 aOq

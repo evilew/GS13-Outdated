@@ -4878,6 +4878,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
 /turf/open/floor/plating,
 /area/xenoarch/gen)
 "lE" = (
@@ -6600,6 +6603,13 @@
 	icon_state = "engine"
 	},
 /area/xenoarch/nothinghere)
+"qv" = (
+/obj/structure/barricade/wooden,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/wood,
+/area/xenoarch/gen)
 "qK" = (
 /obj/machinery/door/airlock/vault{
 	name = "secured door";
@@ -6639,7 +6649,14 @@
 	map_pad_link_id = "demone";
 	mapped_quantum_pads = list("ldemone","demone")
 	},
+/obj/structure/cable,
 /turf/open/floor/carpet/black,
+/area/xenoarch/gen)
+"sO" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/wood,
 /area/xenoarch/gen)
 "tG" = (
 /obj/structure/chair/office,
@@ -6676,8 +6693,19 @@
 	initial_gas_mix = "o2=14;n2=23;TEMP=300"
 	},
 /area/xenoarch/gen)
-"Ek" = (
-/obj/structure/barricade/wooden,
+"CA" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/wood,
+/area/xenoarch/gen)
+"Ed" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/wood,
 /area/xenoarch/gen)
 "ED" = (
@@ -6715,9 +6743,23 @@
 "Hx" = (
 /turf/open/floor/carpet,
 /area/xenoarch/gen)
+"Jt" = (
+/obj/structure/barricade/wooden,
+/turf/open/floor/wood,
+/area/xenoarch/gen)
+"JT" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/wood,
+/area/xenoarch/gen)
 "Ku" = (
 /turf/closed/wall/r_wall/rust,
 /area/xenoarch/nothinghere)
+"KC" = (
+/obj/item/candle/infinite,
+/turf/open/floor/wood,
+/area/xenoarch/gen)
 "LP" = (
 /obj/machinery/porta_turret/aux_base{
 	dir = 5;
@@ -6800,10 +6842,6 @@
 /obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel/rockvault,
 /area/xenoarch/nothinghere)
-"SN" = (
-/obj/item/candle/infinite,
-/turf/open/floor/wood,
-/area/xenoarch/gen)
 "Us" = (
 /obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/grimy{
@@ -6818,6 +6856,12 @@
 /obj/effect/decal/remains/xeno,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
+"Xi" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/carpet/black,
+/area/xenoarch/gen)
 "ZK" = (
 /obj/machinery/door/window/eastleft{
 	dir = 2
@@ -17611,7 +17655,7 @@ Sy
 Sy
 Sy
 Sy
-Ek
+qv
 Sy
 Sy
 Sy
@@ -17868,7 +17912,7 @@ jN
 jN
 jN
 Sy
-mA
+CA
 mA
 mA
 mA
@@ -18125,11 +18169,11 @@ jN
 jN
 jN
 Sy
+sO
 mA
 mA
 mA
-mA
-SN
+KC
 mA
 mA
 Sy
@@ -18382,7 +18426,7 @@ jN
 jN
 jN
 Sy
-mA
+sO
 mA
 VE
 VE
@@ -18639,9 +18683,9 @@ jN
 jN
 jN
 Sy
-mA
-mA
-VE
+JT
+Ed
+Xi
 sv
 VE
 mA
@@ -18898,10 +18942,10 @@ jN
 Sy
 mA
 mA
-SN
+KC
 mA
 mA
-SN
+KC
 mA
 Sy
 "}
@@ -19152,7 +19196,7 @@ jN
 jN
 jN
 jN
-Ek
+Jt
 mA
 mA
 mA

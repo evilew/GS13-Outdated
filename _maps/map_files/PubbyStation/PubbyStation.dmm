@@ -58471,7 +58471,6 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "gLF" = (
-/obj/machinery/vending/snack/random,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -58482,6 +58481,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/machinery/vending/mealdor,
 /turf/open/floor/plasteel/dark,
 /area/hallway/secondary/exit/departure_lounge)
 "gMm" = (

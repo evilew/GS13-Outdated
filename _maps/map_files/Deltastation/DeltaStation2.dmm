@@ -7018,12 +7018,12 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "arP" = (
-/obj/machinery/vending/snack/random,
 /obj/item/radio/intercom{
 	name = "Station Intercom";
 	pixel_y = 26
 	},
 /obj/effect/turf_decal/bot,
+/obj/machinery/vending/mealdor,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "arQ" = (
@@ -44611,7 +44611,6 @@
 /turf/open/floor/plasteel,
 /area/engine/break_room)
 "bAW" = (
-/obj/machinery/vending/snack/random,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -44622,6 +44621,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
+/obj/machinery/vending/mealdor,
 /turf/open/floor/plasteel,
 /area/engine/break_room)
 "bAX" = (
@@ -87843,12 +87843,12 @@
 /turf/open/floor/plasteel/grimy,
 /area/crew_quarters/dorms)
 "cRw" = (
-/obj/machinery/vending/snack/random,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -26
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/effect/turf_decal/delivery,
+/obj/machinery/vending/mealdor,
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness/recreation)
 "cRx" = (
@@ -89125,7 +89125,6 @@
 /area/maintenance/port)
 "cTz" = (
 /obj/effect/decal/remains/xeno,
-/obj/effect/decal/cleanable/xenoblood,
 /turf/open/floor/circuit/green,
 /area/science/xenobiology)
 "cTA" = (
@@ -99860,7 +99859,6 @@
 	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/machinery/vending/snack/random,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
@@ -99868,6 +99866,7 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
+/obj/machinery/vending/mealdor,
 /turf/open/floor/plasteel/white,
 /area/science/misc_lab)
 "dlo" = (
