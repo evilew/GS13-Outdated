@@ -14,7 +14,7 @@
 
 // BEGIN_INCLUDE
 #include "_maps\_basemap.dm"
-#include "_maps\layeniastation.dm"
+#include "_maps\metastation.dm"
 #include "_maps\map_files\generic\CentCom.dmm"
 #include "code\_compile_options.dm"
 #include "code\world.dm"
@@ -3065,6 +3065,7 @@
 #include "code\modules\VR\vr_sleeper.dm"
 #include "code\modules\zombie\items.dm"
 #include "code\modules\zombie\organs.dm"
+#include "GainStation13\code\modules\mob\living\emote.dm"
 #include "GainStation13\code\modules\vending\mealdor.dm"
 #include "hyperstation\code\__DEFINES\economy.dm"
 #include "hyperstation\code\__DEFINES\wendigo.dm"

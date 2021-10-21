@@ -173,6 +173,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	if (clientfps == 0) clientfps = world.fps*2
 	body_size		= sanitize_integer(body_size, 90, 110, 0)
 	can_get_preg	= sanitize_integer(can_get_preg, 0, 1, 0)
+	starting_weight	= sanitize_integer(starting_weight, 0, 2000, 0)
 	parallax		= sanitize_integer(parallax, PARALLAX_INSANE, PARALLAX_DISABLE, null)
 	ambientocclusion	= sanitize_integer(ambientocclusion, 0, 1, initial(ambientocclusion))
 	auto_fit_viewport	= sanitize_integer(auto_fit_viewport, 0, 1, initial(auto_fit_viewport))
@@ -321,6 +322,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["gender"]				>> gender
 	S["age"]				>> age
 	S["body_size"]			>> body_size
+	S["starting_weight"]	>> starting_weight
 	S["hair_color"]			>> hair_color
 	S["facial_hair_color"]	>> facial_hair_color
 	S["eye_color"]			>> eye_color
@@ -395,6 +397,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["feature_mcolor3"]				>> features["mcolor3"]
 	S["feature_mam_body_markings"]		>> features["mam_body_markings"]
 	S["body_size"]						>> features["body_size"]
+	S["starting_weight"]				>> features["starting_weight"]
 	S["feature_mam_tail"]				>> features["mam_tail"]
 	S["feature_mam_ears"]				>> features["mam_ears"]
 	S["feature_mam_tail_animated"]		>> features["mam_tail_animated"]
@@ -586,6 +589,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["facial_style_name"]	, facial_hair_style)
 	WRITE_FILE(S["underwear"]			, underwear)
 	WRITE_FILE(S["body_size"]			, body_size)
+	WRITE_FILE(S["starting_weight"]		, starting_weight)
 	WRITE_FILE(S["undie_color"]			, undie_color)
 	WRITE_FILE(S["undershirt"]			, undershirt)
 	WRITE_FILE(S["shirt_color"]			, shirt_color)

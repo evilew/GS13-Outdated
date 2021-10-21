@@ -11,7 +11,7 @@
 				/obj/item/reagent_containers/food/snacks/store/cake/birthday = 10,
 				/obj/item/reagent_containers/food/snacks/store/cake/pumpkinspice = 10,
 				/obj/item/reagent_containers/food/snacks/store/cake/pound_cake = 5,
-				/obj/item/reagent_containers/food/snacks/donut/purefat = 10,
+//				/obj/item/reagent_containers/food/snacks/donut/purefat = 10,
 				/obj/item/reagent_containers/food/snacks/fries = 8,
 				/obj/item/reagent_containers/food/snacks/donut = 5,
 				/obj/item/reagent_containers/food/snacks/candiedapple = 2,
