@@ -6633,6 +6633,14 @@
 "so" = (
 /turf/closed/wall/r_wall,
 /area/xenoarch/nothinghere)
+"sv" = (
+/obj/machinery/quantumpad{
+	map_pad_id = "ldemone";
+	map_pad_link_id = "demone";
+	mapped_quantum_pads = list("ldemone","demone")
+	},
+/turf/open/floor/carpet/black,
+/area/xenoarch/gen)
 "tG" = (
 /obj/structure/chair/office,
 /obj/effect/decal/cleanable/dirt,
@@ -6667,6 +6675,10 @@
 /turf/open/floor/plating{
 	initial_gas_mix = "o2=14;n2=23;TEMP=300"
 	},
+/area/xenoarch/gen)
+"Ek" = (
+/obj/structure/barricade/wooden,
+/turf/open/floor/wood,
 /area/xenoarch/gen)
 "ED" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6788,12 +6800,19 @@
 /obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel/rockvault,
 /area/xenoarch/nothinghere)
+"SN" = (
+/obj/item/candle/infinite,
+/turf/open/floor/wood,
+/area/xenoarch/gen)
 "Us" = (
 /obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/grimy{
 	icon_state = "engine"
 	},
 /area/xenoarch/nothinghere)
+"VE" = (
+/turf/open/floor/carpet/black,
+/area/xenoarch/gen)
 "Ws" = (
 /obj/structure/flora/rock/pile,
 /obj/effect/decal/remains/xeno,
@@ -17592,7 +17611,7 @@ Sy
 Sy
 Sy
 Sy
-kw
+Ek
 Sy
 Sy
 Sy
@@ -17849,13 +17868,13 @@ jN
 jN
 jN
 Sy
-jN
-jN
-jN
-jN
-jN
-jN
-jN
+mA
+mA
+mA
+mA
+mA
+mA
+mA
 Sy
 "}
 (44,1,1) = {"
@@ -18106,13 +18125,13 @@ jN
 jN
 jN
 Sy
-jN
-jN
-jN
-jN
-jN
-jN
-jN
+mA
+mA
+mA
+mA
+SN
+mA
+mA
 Sy
 "}
 (45,1,1) = {"
@@ -18363,13 +18382,13 @@ jN
 jN
 jN
 Sy
-jN
-jN
-jN
-jN
-jN
-jN
-jN
+mA
+mA
+VE
+VE
+VE
+mA
+mA
 Sy
 "}
 (46,1,1) = {"
@@ -18620,13 +18639,13 @@ jN
 jN
 jN
 Sy
-jN
-jN
-jN
-jN
-jN
-jN
-jN
+mA
+mA
+VE
+sv
+VE
+mA
+mA
 Sy
 "}
 (47,1,1) = {"
@@ -18877,13 +18896,13 @@ jN
 jN
 jN
 Sy
-jN
-jN
-jN
-jN
-jN
-jN
-jN
+mA
+mA
+SN
+mA
+mA
+SN
+mA
 Sy
 "}
 (48,1,1) = {"
@@ -19133,14 +19152,14 @@ jN
 jN
 jN
 jN
-kw
-jN
-jN
-jN
-jN
-jN
-jN
-Sy
+Ek
+mA
+mA
+mA
+mA
+mA
+mA
+mA
 Sy
 "}
 (49,1,1) = {"
@@ -19398,7 +19417,7 @@ Sy
 Sy
 Sy
 Sy
-ab
+Sy
 "}
 (50,1,1) = {"
 ab
