@@ -180,17 +180,17 @@
 /obj/screen/alert/bloated
 	name = "Bloated stomach"
 	desc = "Your stomach is a bit too full"
-	icon_state = "fat"
+	icon_state = "Stuffed"
 
 /obj/screen/alert/stuffed
 	name = "Completely stuffed"
 	desc = "Whatever you ate, you ate too much. Your stomach has stretched to accomodate its contents, forming a very obvious belly"
-	icon_state = "fat"
+	icon_state = "Bloated"
 
 /obj/screen/alert/beegbelly
 	name = "Walking belly"
 	desc = "You've somehow managed to fit even more in your stomach. Can you even stand?"
-	icon_state = "obese"
+	icon_state = "beegbelly"
 
 
 /obj/screen/alert/hungry

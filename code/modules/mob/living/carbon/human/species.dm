@@ -1535,11 +1535,11 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		if(HAS_TRAIT(H, TRAIT_FAT))
 			. += (1 - flight)
 		if(HAS_TRAIT(H, TRAIT_OBESE))//GS13 fat levels move speed decrease
-			. += (2 - flight)
+			. += (1.5 - flight)
 		if(HAS_TRAIT(H, TRAIT_MORBIDLYOBESE))
-			. += (3 - flight)
+			. += (2 - flight)
 		if(HAS_TRAIT(H, TRAIT_IMMOBILE))
-			. += 4 // No wings are going to lift that much off the ground
+			. += 3 // No wings are going to lift that much off the ground
 		if(H.bodytemperature < BODYTEMP_COLD_DAMAGE_LIMIT && !HAS_TRAIT(H, TRAIT_RESISTCOLD))
 			. += (BODYTEMP_COLD_DAMAGE_LIMIT - H.bodytemperature) / COLD_SLOWDOWN_FACTOR
 	return .
