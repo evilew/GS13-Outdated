@@ -1540,6 +1540,8 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			. += (2 - flight)
 		if(HAS_TRAIT(H, TRAIT_IMMOBILE))
 			. += 3 // No wings are going to lift that much off the ground
+		if(HAS_TRAIT(H, TRAIT_BLOB))
+			. += 4
 		if(H.bodytemperature < BODYTEMP_COLD_DAMAGE_LIMIT && !HAS_TRAIT(H, TRAIT_RESISTCOLD))
 			. += (BODYTEMP_COLD_DAMAGE_LIMIT - H.bodytemperature) / COLD_SLOWDOWN_FACTOR
 	return .
