@@ -12,7 +12,7 @@
 	materials = list(MAT_BIOMASS = 20)
 	make_reagents = list(/datum/reagent/consumable/milk = 10)
 	category = list("initial","Food")
-	
+
 /datum/design/flour
 	name = "15u flour"
 	id = "flour"
