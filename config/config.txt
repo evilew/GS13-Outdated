@@ -95,7 +95,7 @@ LOG_OOC
 LOG_SAY
 
 ## log admin actions
-LOG_ADMIN
+#LOG_ADMIN
 
 ## log admin chat
 LOG_ADMINCHAT
@@ -192,7 +192,7 @@ VOTE_AUTOTRANSFER_INTERVAL 18000
 # DEFAULT_NO_VOTE
 
 ## disable abandon mob
-NORESPAWN
+#NORESPAWN
 
 ## disables calling del(src) on newmobs if they logout before spawnin in
 # DONT_DEL_NEWMOB

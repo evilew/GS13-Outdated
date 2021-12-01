@@ -808,14 +808,14 @@
 	repeatable = TRUE
 	occurances_max = 3
 
-/datum/dynamic_ruleset/event/spontaneous_appendicitis
-	name = "Spontaneous Appendicitis"
-	typepath = /datum/round_event/spontaneous_appendicitis
-	enemy_roles = list("Medical Doctor","Chief Medical Officer")
-	required_enemies = list(2,2,2,2,2,2,2,1,1,1)
-	requirements = list(5,5,5,5,5,5,5,5,0,0)
-	high_population_requirement = 5
-	weight = 5
-	repeatable = TRUE
-	repeatable_weight_decrease = 3
-	occurances_max = 3
+// /datum/dynamic_ruleset/event/spontaneous_appendicitis
+// 	name = "Spontaneous Appendicitis"
+// 	typepath = /datum/round_event/spontaneous_appendicitis
+// 	enemy_roles = list("Medical Doctor","Chief Medical Officer")
+// 	required_enemies = list(2,2,2,2,2,2,2,1,1,1)
+// 	requirements = list(5,5,5,5,5,5,5,5,0,0)
+// 	high_population_requirement = 5
+// 	weight = 5
+// 	repeatable = TRUE
+// 	repeatable_weight_decrease = 3
+// 	occurances_max = 3
