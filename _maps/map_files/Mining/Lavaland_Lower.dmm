@@ -252,10 +252,7 @@
 /turf/open/floor/plasteel,
 /area/xenoarch/arch)
 "aT" = (
-/obj/item/toy/plush/mammal/winfre{
-	desc = "She lies in wait, for the one who comes is the one that gets robusted.";
-	name = "Inhabitor of the maze: Winfre"
-	},
+/obj/item/banhammer,
 /turf/open/indestructible/necropolis,
 /area/lavaland/surface/outdoors)
 "aU" = (
