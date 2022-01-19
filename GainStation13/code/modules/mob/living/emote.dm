@@ -25,6 +25,31 @@
 	message = " farts"
 	emote_type = EMOTE_AUDIBLE
 
+
+	//god hates me for this -Metha
+
+/datum/emote/living/fart/run_emote(mob/living/user, params)
+	if(ishuman(user))
+
+		var/fartSoundChoice = rand(3)
+
+		switch(fartSoundChoice)
+			if (0) playsound(user, 'GainStation13/sound/voice/fart3.ogg', 50, 1, -1)
+
+			if (1) playsound(user, 'GainStation13/sound/voice/fart4.ogg', 50, 1, -1)
+
+			if (2) playsound(user, 'GainStation13/sound/voice/fart2.ogg', 50, 1, -1)
+
+			if (3) playsound(user, 'GainStation13/sound/voice/fart1.ogg', 50, 1, -1)
+
+
+
+
+
+	. = ..()
+
+
+
 //Shhh... It's a secret! Don't tell or I'll steal your legs
 /datum/emote/living/burunyu
 	key = "burunyu"
