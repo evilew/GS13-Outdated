@@ -1,22 +1,2 @@
 <!-- Most valid html will work in here, excluding images. -->
-
-<h1>You are now entering Gain Station 13!</h1>
-
-<i> These are the rules of the server:</i>
-	
-  <b>1:</b> If you are not 18 you will not be able to enter the server, sorry.
-	
-  <b>2:</b> Keep in mind that while in game you have to talk in character, 
-            if you got something to say about certain jobs or anything please use OOC (By pressing O)"
-  
-  <b>3:</b> Do not RDM without a reason, please people do not like that and that will get you banned.
-
-  <b>4:</b> Please be respectful to the admins 
-  
-  <b>5:</b> Metagaming is not allowed.
-
-  <b>6:</b> Do not use racial slurs or any offensive characters.
-
-  <b>7:</b> Griefing the station unless you are the antagonist is not allowed.
-
-<b>Thanks for reading these rules and enjoy your time at Gain Station 13</b>
+<p style="text-align: center; padding-left: 80px;"><strong><span style="color: #000000;">Welcome to</span> <span style="color: #003366;">Gain Station 13</span><span style="color: #000000;">!</span><br /><br /><br /><span style="color: #000000;">These are our rules kindly follow them:</span></strong><br /><br /><span style="color: #000000;"><em><strong>1:</strong></em> This server contains Not Safe For Work (NSFW) content if you are a minor you'll be removed.</span><br /><br /><span style="color: #000000;"><em><strong>2:</strong></em> Talk in character while playing on the server if you got to ask something related to game mechanics or other, please keep it OOC (By pressing O).</span><br /><br /><span style="color: #000000;"><em><strong>3: </strong></em>Killing without a reason unless an antagonist shall be punished with a ban, it may vary at the severity of the situation.</span><br /><br /><span style="color: #000000;"><em><strong>&nbsp;4:</strong> </em>Remember to be respectful to admins and players.</span><br /><br /><span style="color: #000000;"><em><strong>5:</strong></em> Knowing certain things that your character does not know (Ex. You get killed and know the antagonist and once you get cloned you say it in comms.) is considered to be Metagaming.</span><br /><br /><span style="color: #000000;"><em><strong>6:</strong></em> Offensive characters and racism will be punished.</span><br /><br /><span style="color: #000000;"><em><strong>7:</strong></em> Griefing the station or player-made stuff will not be approved and will result in a ban.</span><br /><br /><strong><span style="color: #000000;">Thank you for reading these rules, now it's time for you to play!</span><br /><br /><br /></strong></p>
