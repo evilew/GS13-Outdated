@@ -11,5 +11,5 @@
 	toxpwr = 0
 
 /datum/reagent/toxin/lipoifier/on_mob_life(mob/living/carbon/M)
-	M.fatness = fatness + 3
+	M.fatness = M.fatness + 3
 	return ..()
