@@ -87,6 +87,48 @@
 	build_path = /obj/item/reagent_containers/food/drinks/shaker
 	category = list("initial","Dinnerware")
 
+
+//gs13 paper cups
+/datum/design/small_cup
+	name = "Small Gulp Cup"
+	id = "Small_Gulp"
+	build_type = AUTOLATHE
+	materials = list(MAT_PLASTIC=200)
+	build_path = /obj/item/reagent_containers/food/drinks/flask/paper_cup/small
+	category = list("initial","Dinnerware")
+
+/datum/design/medium_cup
+	name = "Medium Gulp Cup"
+	id = "Medium_Gulp"
+	build_type = AUTOLATHE
+	materials = list(MAT_PLASTIC=300)
+	build_path = /obj/item/reagent_containers/food/drinks/flask/paper_cup/medium
+	category = list("initial","Dinnerware")
+
+/datum/design/small_cup
+	name = "Big Gulp Cup"
+	id = "Big_Gulp"
+	build_type = AUTOLATHE
+	materials = list(MAT_PLASTIC=500)
+	build_path = /obj/item/reagent_containers/food/drinks/flask/paper_cup/big
+	category = list("initial","Dinnerware")
+
+/datum/design/extra_big_cup
+	name = "Extra Big Gulp Cup"
+	id = "Extra_Big_Gulp"
+	build_type = AUTOLATHE
+	materials = list(MAT_PLASTIC=600)
+	build_path = /obj/item/reagent_containers/food/drinks/flask/paper_cup/extra_big
+	category = list("initial","Dinnerware")
+
+/datum/design/super_extra_big_cup
+	name = "Super Extra Big Gulp Cup"
+	id = "Super_Extra_Big_Gulp"
+	build_type = AUTOLATHE
+	materials = list(MAT_PLASTIC=1000)
+	build_path = /obj/item/reagent_containers/food/drinks/flask/paper_cup/super_extra_big
+	category = list("initial","Dinnerware")
+
 ////////////
 ///Medical//
 ////////////
