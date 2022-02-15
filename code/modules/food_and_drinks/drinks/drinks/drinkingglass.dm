@@ -159,7 +159,7 @@
 
 /obj/item/reagent_containers/food/drinks/flask/paper_cup/medium
 	name = "Medium Gulp Cup"
-	desc = "It's a paper cup, but you wouldn't call it 'medium' though. It can hold up to 70 units. It's not very strong."
+	desc = "It's a paper cup, but you wouldn't call it 'medium' though. It can hold up to 75 units. It's not very strong."
 	icon_state = "medium"
 	volume = 75
 	materials = list(MAT_PLASTIC=300)
