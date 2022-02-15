@@ -30,9 +30,14 @@
 					/obj/item/reagent_containers/food/drinks/ice = 10,
 					/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass = 12,
 					/obj/item/reagent_containers/food/drinks/flask = 3,
-					/obj/item/reagent_containers/food/drinks/beer = 6)
+					/obj/item/reagent_containers/food/drinks/beer = 6,
+					/obj/item/reagent_containers/food/drinks/flask/paper_cup/small = 20,
+					/obj/item/reagent_containers/food/drinks/flask/paper_cup/medium = 20,
+					/obj/item/reagent_containers/food/drinks/flask/paper_cup/big = 20,
+					/obj/item/reagent_containers/food/drinks/flask/paper_cup/extra_big = 15)
 	contraband = list(/obj/item/reagent_containers/food/drinks/mug/tea = 12,
-					  /obj/item/reagent_containers/food/drinks/bottle/fernet = 5)
+					  /obj/item/reagent_containers/food/drinks/bottle/fernet = 5,
+					  /obj/item/reagent_containers/food/drinks/flask/paper_cup/super_extra_big = 10)
 	premium = list(/obj/item/reagent_containers/glass/bottle/ethanol = 4,
 				   /obj/item/reagent_containers/food/drinks/bottle/champagne = 5,
 				   /obj/item/reagent_containers/food/drinks/bottle/trappist = 5)
