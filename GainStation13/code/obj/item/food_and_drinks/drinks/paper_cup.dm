@@ -9,7 +9,7 @@
 	container_HP = 5
 	beaker_weakness_bitflag = PH_WEAK
 
-/obj/item/reagent_containers/food/drinks/paper_cup/small
+/obj/item/reagent_containers/food/drinks/drinkingglass/paper_cup/small
 	name = "Small Gulp Cup"
 	desc = "A paper cup. It can hold up to 50 units. It's not very strong."
 	icon = 'icons/obj/chemical.dmi'
