@@ -927,7 +927,6 @@
 
 /obj/item/clothing/suit/space/hardsuit/lavaknight
 	icon = 'modular_citadel/icons/lavaknight/item/suit.dmi'
-	alternate_worn_icon = 'modular_citadel/icons/lavaknight/mob/suit.dmi'
 	icon_state = "knight_cydonia"
 	name = "cydonian armor"
 	desc = "A suit designed with both form and function in mind, it protects the user against physical trauma and hazardous conditions while also having polychromic light strips."
