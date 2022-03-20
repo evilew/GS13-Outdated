@@ -874,8 +874,8 @@
 /obj/item/clothing/head/helmet/space/hardsuit/lavaknight
 	name = "cydonian helmet"
 	desc = "A helmet designed with both form and function in mind, it protects the user against physical trauma and hazardous conditions while also having polychromic light strips."
-	icon = "modular_citadel/icons/lavaknight/item/head.dmi"
-	alternate_worn_icon = "modular_citadel/icons/lavaknight/mob/head.dmi"
+	icon = 'modular_citadel/icons/lavaknight/item/head.dmi'
+	alternate_worn_icon = 'modular_citadel/icons/lavaknight/mob/head.dmi'
 	icon_state = "knight_cydonia"
 	item_state = "knight_yellow"
 	item_color = null
@@ -926,8 +926,8 @@
 		. += energy_overlay
 
 /obj/item/clothing/suit/space/hardsuit/lavaknight
-	icon = "modular_citadel/icons/lavaknight/item/suit.dmi"
-	alternate_worn_icon = "modular_citadel/icons/lavaknight/mob/suit.dmi"
+	icon = 'modular_citadel/icons/lavaknight/item/suit.dmi'
+	alternate_worn_icon = 'modular_citadel/icons/lavaknight/mob/suit.dmi'
 	icon_state = "knight_cydonia"
 	name = "cydonian armor"
 	desc = "A suit designed with both form and function in mind, it protects the user against physical trauma and hazardous conditions while also having polychromic light strips."
