@@ -997,3 +997,19 @@
 	icon_state = "maya"
 	item_state = "maya"
 	attack_verb = list("nuked", "arrested", "harmbatonned")
+
+/obj/item/toy/plush/metha
+	name = "Magical Captain Plushie"
+	desc = "A NEW GATO TOY FROM GATO CORPORATION, FEEL THE MAGIC OF THIS COOL TOY!"
+	icon_state = "metha"
+	item_state = "metha"
+	attack_verb = list("fattened","Metha'd", "Brigged")
+	gender = FEMALE
+
+/obj/item/toy/plush/amogus
+	name = "Amingas Prushie"
+	desc = "Yoo it mogngas sunsies. hehee"
+	icon_state = "yongas"
+	item_state = "yongas"
+	attack_verb = list("Sussied")
+	gender = MALE
