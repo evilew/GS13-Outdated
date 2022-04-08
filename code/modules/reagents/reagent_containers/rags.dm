@@ -110,7 +110,7 @@
 
 /obj/item/reagent_containers/rag/towel
 	name = "towel"
-	desc = "A soft cotton towel."
+	desc = "Make sure you always know where it is."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "towel"
 	item_state = "towel"
