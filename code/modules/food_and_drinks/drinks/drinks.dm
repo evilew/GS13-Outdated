@@ -384,7 +384,7 @@
 
 /obj/item/reagent_containers/food/drinks/flask
 	name = "flask"
-	desc = "Every good spaceman knows it's a good idea to bring along a couple of pints of whiskey wherever they go."
+	desc = "You take a sip from your trusty GS13 canteen."
 	icon_state = "flask"
 	materials = list(MAT_METAL=250)
 	volume = 60
