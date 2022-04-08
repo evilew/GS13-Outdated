@@ -28,6 +28,7 @@
 
 /obj/item/crowbar/red
 	icon_state = "crowbar_red"
+	desc = "I think you dropped this back in Black Mesa."
 	force = 8
 
 /obj/item/crowbar/brass

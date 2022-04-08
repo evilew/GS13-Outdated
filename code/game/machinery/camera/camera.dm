@@ -4,7 +4,7 @@
 
 /obj/machinery/camera
 	name = "security camera"
-	desc = "It's used to monitor rooms."
+	desc = "This is literally 1984."
 	icon = 'icons/obj/machines/camera.dmi'
 	icon_state = "camera"
 	light_color = "#CDDDFF"
