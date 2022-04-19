@@ -39,3 +39,5 @@ Grey
 Grim
 Electric
 Burning
+Bloated
+Blob

@@ -1,0 +1,22 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"j" = (/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors/unexplored)
+"C" = (/mob/living/simple_animal/hostile/asteroid/basilisk/watcher/random,/turf/open/chasm/lavaland,/area/lavaland/surface/outdoors/unexplored)
+"J" = (/turf/open/chasm/lavaland,/area/lavaland/surface/outdoors/unexplored)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaa
+aaaaajjjjjjjaaa
+ajjjjjJJJJJjjaa
+ajJJJJJJJCJJjaa
+ajJCJJJJJJJJjaa
+ajJJJJJJJJJJjaa
+ajJJJJJJJJJJjja
+ajJJJJCJJJJJCja
+ajJJJJJJJJJJJja
+ajjjjjjjjJJJJja
+aaaaaaaajjjjjja
+aaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaa
+"}
