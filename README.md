@@ -1,14 +1,11 @@
-## Hyper Station 13
+## Gain Station 13
 
-Based and maintained from Citadel Station.
+Based and maintained from Citadel Station, Hyperstation, and others. 
 
 ## Warning you will need Byond Compiler [513.1525] or higher to compile the source code.
 
 [![forinfinityandbyond](https://user-images.githubusercontent.com/5211576/29499758-4efff304-85e6-11e7-8267-62919c3688a9.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
 
-[![Krihelimeter](http://www.krihelinator.xyz/badge/quotefox/Hyper-Station-13)](http://www.krihelinator.xyz)
-
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/quotefox/Hyper-Station-13.svg)](http://isitmaintained.com/project/quotefox/Hyper-Station-13 "Percentage of issues still open") [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/quotefox/Hyper-Station-13.svg)](http://isitmaintained.com/project/quotefox/Hyper-Station-13 "Average time to resolve an issue")
 
 **Hyper Station Information**  
 **Website:** http://hyperstation13.com  
