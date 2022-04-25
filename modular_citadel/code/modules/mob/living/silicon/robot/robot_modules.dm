@@ -1,3 +1,4 @@
+/*
 /mob/living/silicon/robot/modules/medihound
 	set_module = /obj/item/robot_module/medihound
 
@@ -9,14 +10,15 @@
 
 /mob/living/silicon/robot/modules/borgi
 	set_module = /obj/item/robot_module/borgi
+*/ //I don't know what removing this does but I don't like it (I think this disables turning someone into a dogborg)
 
 /mob/living/silicon/robot/proc/get_cit_modules()
 	var/list/modulelist = list()
-	modulelist["MediHound"] = /obj/item/robot_module/medihound
-	if(!CONFIG_GET(flag/disable_secborg))
-		modulelist["Security K-9"] = /obj/item/robot_module/k9
-	modulelist["Scrub Puppy"] = /obj/item/robot_module/scrubpup
-	modulelist["Borgi"] = /obj/item/robot_module/borgi
+	//modulelist["MediHound"] = /obj/item/robot_module/medihound //removes the Medihound Call code
+	//if(!CONFIG_GET(flag/disable_secborg))
+		//modulelist["Security K-9"] = /obj/item/robot_module/k9 //removes Secborg call code?
+	//modulelist["Scrub Puppy"] = /obj/item/robot_module/scrubpup //removes the scrubpup call code
+	//modulelist["Borgi"] = /obj/item/robot_module/borgi //removes the borgi callcode
 	return modulelist
 
 /obj/item/robot_module
@@ -39,7 +41,7 @@
 	if(user.incapacitated() || !user.Adjacent(src))
 		return FALSE
 	return TRUE
-
+/*
 /obj/item/robot_module/k9
 	name = "Security K-9 Unit"
 	basic_modules = list(
@@ -103,8 +105,8 @@
 			special_light_key = "alina"
 			sleeper_overlay = "alinasleeper"
 	return ..()
-
-/obj/item/robot_module/medihound
+*/ //removes Security K9
+/* /obj/item/robot_module/medihound
 	name = "MediHound"
 	basic_modules = list(
 		/obj/item/assembly/flash/cyborg,
@@ -178,8 +180,8 @@
 			special_light_key = "alina"
 			sleeper_overlay = "alinasleeper"
 	return ..()
-
-/obj/item/robot_module/scrubpup
+*/ // Removes the Mediborg Selection code
+/* /obj/item/robot_module/scrubpup
 	name = "Scrub Pup"
 	basic_modules = list(
 		/obj/item/assembly/flash/cyborg,
@@ -232,8 +234,8 @@
 /obj/item/robot_module/scrubpup/do_transform_animation()
 	..()
 	to_chat(loc,"<span class='userdanger'>As tempting as it might be, do not begin binging on important items. Eat your garbage responsibly. People are not included under Garbage.</span>")
-
-/obj/item/robot_module/borgi
+*/ //removes scrubpup module from the game
+/* /obj/item/robot_module/borgi
 	name = "Borgi"
 	basic_modules = list(
 		/obj/item/assembly/flash/cyborg,
@@ -260,7 +262,7 @@
 	hat_offset = INFINITY
 	cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
 	has_snowflake_deadsprite = TRUE
-
+*/ //removes Borgi from the game
 /*
 /obj/item/robot_module/orepup
 	name = "Ore Pup"
@@ -567,7 +569,7 @@
 			"BootyM" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootyengineerM"),
 			"BootyS" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootyengineerS")
 		)
-		var/list/L = list("Pupdozer" = "pupdozer", "Engihound" = "Engihound")
+		/*var/list/L = list("Pupdozer" = "pupdozer", "Engihound" = "Engihound")
 		for(var/a in L)
 			var/image/wide = image(icon = 'modular_citadel/icons/mob/widerobot.dmi', icon_state = L[a])
 			wide.pixel_x = -16
@@ -575,7 +577,7 @@
 		if(R.client?.ckey == "nezuli")
 			var/image/bad_snowflake = image(icon = 'modular_citadel/icons/mob/widerobot.dmi', icon_state = "alina-sec")
 			bad_snowflake.pixel_x = -16
-			eng_models["Alina"] = bad_snowflake
+			eng_models["Alina"] = bad_snowflake*/ //removes pupdozer,engihound (this option doesn't work anyways)
 		eng_models = sortList(eng_models)
 	var/eng_borg_icon = show_radial_menu(R, R , eng_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
 	if(!eng_borg_icon)
@@ -609,22 +611,22 @@
 		if("Heavy")
 			cyborg_base_icon = "heavyeng"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-		if("Pup Dozer")
+		/*if("Pup Dozer")
 			cyborg_base_icon = "pupdozer"
 			can_be_pushed = FALSE
 			hat_offset = INFINITY
 			cyborg_icon_override = 'modular_citadel/icons/mob/widerobot.dmi'
 			has_snowflake_deadsprite = TRUE
 			dogborg = TRUE
-			cyborg_pixel_offset = -16
-		if("Engihound")
+			cyborg_pixel_offset = -16*/ //Removes pupdozer display
+		/*if("Engihound")
 			cyborg_base_icon = "valeeng"
 			can_be_pushed = FALSE
 			cyborg_icon_override = 'modular_citadel/icons/mob/widerobot.dmi'
 			has_snowflake_deadsprite = TRUE
 			sleeper_overlay = "valeengsleeper"
 			dogborg = TRUE
-			cyborg_pixel_offset = -16
+			cyborg_pixel_offset = -16 */ //Removes Engihound display
 		if("Alina")
 			cyborg_base_icon = "alina-eng"
 			special_light_key = "alina"
