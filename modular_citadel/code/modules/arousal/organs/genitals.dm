@@ -464,9 +464,9 @@
 			if(G.slot == "penis" || G.slot == "testicles")
 				if(G.size < 3)		//is actually "less than 11 inches"
 					genital_overlay.layer = -GENITALS_UNDER_LAYER
-			if(G.slot == "breasts")
-				
-				//GS13 Commented out as it clashes with the Belly Sprites
+					
+			//GS13 Commented out as it clashes with the Belly Sprites and its fucking stupid and looks dumb
+			//if(G.slot == "breasts")
 
 				//var/obj/item/organ/genital/breasts/B = G
 				//if(B.cached_size < 8)	//anything smaller than a g-cup
