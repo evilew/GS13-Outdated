@@ -190,8 +190,9 @@ obj/item/dildo/custom
 		playsound(loc, 'sound/voice/scream/scream_r.ogg', 50, 2, -1)
 		playsound(loc, 'sound/lewd/champ_fingering.ogg', 50, 2, -1)
 		playsound(loc, 'sound/effects/gib_step.ogg', 50, 2, -1)
-		user.Stun(400)
+		user.mob_climax(forced_climax=TRUE)
+		user.Stun(300)
 		user.adjust_blurriness(24)
-		user.adjustBruteLoss(100)
+		user.adjustBruteLoss(85)
 		user.adjustOxyLoss(20)
 	return MANUAL_SUICIDE
