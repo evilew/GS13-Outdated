@@ -33,6 +33,8 @@
 			sizeword = "huge "
 		if(5)
 			sizeword = "gigantic "
+		if(6)
+			sizeword = "herculean "
 
 	name = "[sizeword][dildo_shape] [can_customize ? "custom " : ""][dildo_type]"
 
