@@ -1,0 +1,35 @@
+"a" = (/turf/closed/mineral/random/volcanic,/area/lavaland/surface/outdoors/unexplored)
+"b" = (/obj/structure/chair/comfy/shuttle{dir = 1},/obj/machinery/status_display/evac{pixel_x = 32},/obj/machinery/computer/shuttle/pod{pixel_x = -32},/obj/effect/mob_spawn/human/corpse/assistant,/obj/item/clothing/mask/breath,/turf/open/floor/mineral/titanium/blue,/area/lavaland/surface/outdoors/unexplored)
+"c" = (/obj/structure/chair/comfy/shuttle{dir = 1},/obj/item/radio/intercom{pixel_x = 25},/obj/item/storage/pod{pixel_x = -26},/obj/machinery/light/small{dir = 8},/obj/effect/decal/cleanable/blood,/turf/open/floor/mineral/titanium/blue,/area/lavaland/surface/outdoors/unexplored)
+"g" = (/obj/item/paper/crumpled/bloody/docsdeathnote{desc = "We forgot to bring an oxy tank for the both of of us, fuck.."; info = null},/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors/unexplored)
+"h" = (/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors/unexplored)
+"n" = (/obj/structure/shuttle/engine/propulsion/burst,/turf/closed/wall/mineral/titanium,/area/lavaland/surface/outdoors/unexplored)
+"w" = (/obj/machinery/door/airlock/titanium{name = "Escape Pod Airlock"},/obj/structure/fans/tiny,/turf/open/floor/mineral/titanium/blue,/area/lavaland/surface/outdoors/unexplored)
+"y" = (/obj/item/clothing/mask/breath,/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors/unexplored)
+"C" = (/obj/effect/decal/cleanable/blood/gibs/human,/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors/unexplored)
+"F" = (/turf/closed/wall/mineral/titanium,/area/lavaland/surface/outdoors/unexplored)
+"J" = (/obj/effect/decal/cleanable/blood,/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors/unexplored)
+"M" = (/obj/effect/spawner/structure/window/shuttle,/turf/open/floor/plating,/area/lavaland/surface/outdoors/unexplored)
+"R" = (/obj/effect/mob_spawn/human/corpse,/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors/unexplored)
+"Y" = (/mob/living/simple_animal/hostile/asteroid/goliath/beast,/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors/unexplored)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaa
+aaaaahhhaaaaaaaaaaaa
+aaaahhhhhhaaaaaaaaaa
+aaaahhFMFhhhaaaaaaaa
+aaaahhFbFhhhhaaaaaaa
+aaaahhFcFhghhaaaaaaa
+aaaahhnwnhyChhaaaaaa
+aaaahJhJhCRYhhaaaaaa
+aaaaahhCJhhhJhhahhah
+aaaaahhhhhhhhhhhhhhh
+aaaaaahhhhhhhhhhhahh
+aaaaaaahhhhhhhhhhhhh
+aaaaaaaahhhhhhhhhhhh
+aaaaaaaaahhhhhhahhhh
+aaaaaaaaaaahahhhhhhh
+aaaaaaaaaaaaaaaaaahh
+aaaaaaaaaaaaaaaaaaaa
+"}

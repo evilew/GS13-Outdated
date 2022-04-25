@@ -1,0 +1,50 @@
+"a" = (/turf/open/lava/smooth,/area/lavaland/surface/outdoors/unexplored)
+"g" = (/obj/structure/stone_tile/surrounding,/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors/unexplored)
+"m" = (/obj/structure/stone_tile/block{dir = 8},/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors/unexplored)
+"n" = (/turf/closed/indestructible/riveted/boss,/area/lavaland/surface/outdoors/unexplored)
+"o" = (/obj/structure/stone_tile/block/burnt{dir = 1},/turf/open/lava/smooth,/area/lavaland/surface/outdoors/unexplored)
+"s" = (/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors/unexplored)
+"t" = (/obj/structure/stone_tile/slab/burnt,/turf/open/lava/smooth,/area/lavaland/surface/outdoors/unexplored)
+"x" = (/obj/structure/stone_tile/slab,/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors/unexplored)
+"B" = (/obj/structure/spawner/lavaland/legion,/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors/unexplored)
+"F" = (/obj/structure/stone_tile/surrounding/burnt,/turf/open/lava/smooth,/area/lavaland/surface/outdoors/unexplored)
+"G" = (/turf/closed/mineral/random/volcanic,/area/lavaland/surface/outdoors/unexplored)
+"I" = (/obj/structure/stone_tile/block/burnt{dir = 4},/turf/open/lava/smooth,/area/lavaland/surface/outdoors/unexplored)
+"L" = (/obj/structure/stone_tile/block/burnt,/turf/open/lava/smooth,/area/lavaland/surface/outdoors/unexplored)
+"M" = (/obj/structure/stone_tile/block/burnt{dir = 8},/turf/open/lava/smooth,/area/lavaland/surface/outdoors/unexplored)
+"W" = (/obj/structure/stone_tile/block{dir = 4},/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors/unexplored)
+
+(1,1,1) = {"
+aaaaaaaaaaassssxssssaaaaaaaaaaaa
+aaaaaaaaaaaassxxxssaaaaaaaaaaaaa
+aaaaaaaaaaaaantttnaaaaaaGaaaaaaa
+aaaaaaaGaaaaaMtttIaaaaGGaaaaaaaa
+aaGGGGaGaaaaamxFtIaaaaGaaaGaaaaa
+aaaGGGaGGaaaamxxxWaaaGGGGaGaaaaa
+aaaGGGGGGaaaamxxxWaaGGGGGGGaaaaa
+aaaaGGGGaaaaaMtFxWaaaGGGGGGaaaaa
+aaaGGGGGGaaaaMtttIaaaaGGGGGaaaaa
+aaaGGGGGaaaasnxxxnsaaaaGGGaaaaaa
+aaaaaaaaaaasssxxxsssaaaaaaaaaaaa
+saaaaaaaaasssssxsssssaaaaaaaaaas
+ssaaaaaaasssssssssssssaaaaaaaass
+ssnoooooonsssssnsssssnooooooonss
+sxttttxxxxxssnsssnssxxttttttttxs
+xxxxgxxgxxxxsssBsssxxxtFtttFttxx
+sxttttxxxxxssnsssnssxxttttttttxs
+ssnLLLLLLnsssssnsssssnLLLLLLLnss
+ssaaaaaaasssssssssssssaaaaaaaass
+saaaaaaaaasssssxsssssaaaaaaaaass
+aaaaaaaaaaasssxxxsssaaaaaaaaaaas
+aaaaaaGaaaaasnxxxnsaaaaaaaaaaaaa
+aaaaGGGaaaaaaMtttIaaaaaaaaaaaaaa
+aaaGGGGaaaaaaMtgxIaaaaaaaGGaaaaa
+aaaGGGGGaaaaaMtxxIaaaaaGGGGaaaaa
+aaaGGGGGaaaaaMxxxWaaaaaGGGGaaaaa
+aaaaGGGaaaaaaMxxxWaaaaaGGGGaaaaa
+aaaaaaaaaaaaamxgxIaaaaaaaaaaaaaa
+aaaaaaaaaaaaamxxxIaaaaaaaaaaaaaa
+aaaaaaaaaaaaanxxxnaaaaaaaaaaaaaa
+aaaaaaaaaaaassxxxssaaaaaaaaaaaaa
+aaaaaaaaaaassssxssssaaaaaaaaaaaa
+"}

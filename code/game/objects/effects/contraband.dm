@@ -594,4 +594,23 @@
 	desc = "This informational poster teaches the viewer what carbon dioxide is."
 	icon_state = "poster35_legit"
 
+// GS13 CONTENT HERE
+
+/obj/structure/sign/poster/official/gatito
+	name = "Gato Poster"
+	desc = "A poster from the Gato company, it reads: 'Remember to take care of your station!' "
+	icon_state = "gato13"
+
+/obj/structure/sign/poster/official/captainposter
+	name = "Respect your captain poster"
+	desc = "A poster from the Gato company, it reads: 'Your captain is always watching, do not do anything suspicious.' "
+	icon_state = "capitan"
+
+/obj/structure/sign/poster/official/antifat
+	name = "NO FAT"
+	desc = "A vandalized 'NO ERP' poster, now the words 'NO FAT' are written onto it. "
+	icon_state = "no_fat"
+
+
+
 #undef PLACE_SPEED

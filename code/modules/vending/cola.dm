@@ -42,6 +42,9 @@
 
 /obj/machinery/vending/cola/black
 	icon_state = "cola_black"
+	name = "\improper GATO Vending Machine"
+	desc = "A GATO constructed vending machine, hopefully it can satisfy you."
+	product_slogans = "Meoow!~ New sodas are now here!!"
 
 /obj/machinery/vending/cola/red
 	icon_state = "red_cola"

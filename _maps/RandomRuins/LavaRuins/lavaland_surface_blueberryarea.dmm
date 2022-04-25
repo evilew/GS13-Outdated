@@ -17,6 +17,7 @@
 "G" = (/turf/closed/indestructible/riveted/boss,/area/ruin/powered)
 "H" = (/obj/structure/stone_tile/block{dir = 8; icon_state = "pristine_block1"},/obj/structure/statue/blueberry,/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
 "I" = (/obj/structure/flora/junglebush/b,/obj/machinery/light{base_state = null; dir = 1; icon = null; icon_state = null; invisibility = 1; overlayicon = null},/turf/open/floor/grass,/area/ruin/powered)
+"O" = (/obj/item/reagent_containers/food/snacks/muffin/berry{desc = "A delicious and spongy little cake, with blueberries."; name = "blueberry muffin"},/turf/open/floor/grass,/area/ruin/powered)
 "U" = (/obj/machinery/light{base_state = null; dir = 1; icon = null; icon_state = null; invisibility = 1; overlayicon = null},/turf/open/floor/grass,/area/ruin/powered)
 
 (1,1,1) = {"
@@ -28,7 +29,7 @@ meebllGGGGGGGGGGGGllbeemm
 meellGUccUqqqqUccUGlleemm
 meelGGcacqqqqqqcccGGleemm
 mellGGGUqqcccqqcUGGGllemm
-melllGcqqcccqqccacGlllemm
+melllGcqqccOqqccacGlllemm
 melllGcqqcccccccccGlllemm
 mellGIcqqccccccccnUGllemm
 mellGcccqqqccccccccGllemm

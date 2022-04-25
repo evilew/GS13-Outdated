@@ -25,7 +25,7 @@
 	var/dat	=	{""}
 	dat += "<p>"
 	dat += "<center><span class = 'big'><p>ATM</span></span></h1>"
-	dat += "<b><p>Welcome to Hyper Station 13's Automated Teller Service.</b>"
+	dat += "<b><p>Welcome to General Station 13's Automated Teller Service.</b>"
 	dat += "<p>"
 	if(!held_card)
 		dat += "<p>Welcome, please insert your ID to continue."

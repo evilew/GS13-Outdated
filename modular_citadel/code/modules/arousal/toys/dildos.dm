@@ -33,6 +33,8 @@
 			sizeword = "huge "
 		if(5)
 			sizeword = "gigantic "
+		if(6)
+			sizeword = "herculean "
 
 	name = "[sizeword][dildo_shape] [can_customize ? "custom " : ""][dildo_type]"
 
@@ -129,6 +131,13 @@ obj/item/dildo/flared/gigantic
 	desc 				= "You can barely carry this thing! Meant for... \"advanced\" interrogation techniques."
 	dildo_size 			= 5
 	attack_verb 		= list("penetrated", "slapped", "gaped", "prolapsed", "inseminated", "destroyed", "broke", "demolished", "whacked")
+//killerdildokillerdildo
+obj/item/dildo/flared/killer
+	name 				= "bitch killer"
+	desc 				= "The fact you're able to carry this is insane. Initally made to be used as a new death penalty, Using this will definitely kill you."
+	dildo_size 			= 6
+	attack_verb 		= list("penetrated", "beat", "gaped", "prolapsed", "destroyed", "broke", "demolished", "whacked", "bruised", "tore")
+
 
 obj/item/dildo/custom
 	name 				= "customizable dildo"
@@ -137,6 +146,7 @@ obj/item/dildo/custom
 	random_color 		= TRUE
 	random_shape 		= TRUE
 	random_size 		= TRUE
+
 
 // Suicide acts, by request
 
@@ -173,4 +183,16 @@ obj/item/dildo/custom
 		user.adjust_eye_damage(20)
 		user.adjustOxyLoss(15)
 	return MANUAL_SUICIDE
-
+// Two tries, then you're dead bud.
+/obj/item/dildo/flared/killer/suicide_act(mob/living/user)
+	if(do_after(user,45,target=src))
+		user.visible_message("<span class='suicide'>[user] screams in pain as they insert the [src] into their ass! WHY WOULD THEY DO THAT? It looks like [user.p_theyre()] trying to commit suicide!!</span>")
+		playsound(loc, 'sound/voice/scream/scream_r.ogg', 50, 2, -1)
+		playsound(loc, 'sound/lewd/champ_fingering.ogg', 50, 2, -1)
+		playsound(loc, 'sound/effects/gib_step.ogg', 50, 2, -1)
+		user.mob_climax(forced_climax=TRUE)
+		user.Stun(300)
+		user.adjust_blurriness(24)
+		user.adjustBruteLoss(85)
+		user.adjustOxyLoss(20)
+	return MANUAL_SUICIDE
