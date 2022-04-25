@@ -415,9 +415,9 @@
 	icon_state = "cyborg_upgrade3"
 	require_module = 1
 	module_type = list(
-		/obj/item/robot_module/medical,
-		/obj/item/robot_module/medihound)
-	
+		/obj/item/robot_module/medical) //had to move parantheses to close the list argument not inluding the medhihound here.
+		// /obj/item/robot_module/medihound //Removes the Medihound hypospray upgrade
+
 	var/list/additional_reagents = list()
 
 /obj/item/borg/upgrade/hypospray/action(mob/living/silicon/robot/R, user = usr)
@@ -502,8 +502,8 @@
 	icon_state = "cyborg_upgrade3"
 	require_module = 1
 	module_type = list(
-		/obj/item/robot_module/medical,
-		/obj/item/robot_module/medihound)
+		/obj/item/robot_module/medical) //Had to close list parantheses here to not include medihound
+		///obj/item/robot_module/medihound //Removes Medihound surgical processor upgrade
 
 /obj/item/borg/upgrade/processor/action(mob/living/silicon/robot/R, user = usr)
 	. = ..()
@@ -525,8 +525,8 @@
 	icon_state = "cyborg_upgrade3"
 	require_module = 1
 	module_type = list(
-		/obj/item/robot_module/medical,
-		/obj/item/robot_module/medihound)
+		/obj/item/robot_module/medical) //Closed list parantheses again to not include Medihound
+		///obj/item/robot_module/medihound
 
 
 /obj/item/borg/upgrade/advhealth/action(mob/living/silicon/robot/R, user = usr)

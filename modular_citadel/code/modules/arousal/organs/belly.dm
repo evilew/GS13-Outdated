@@ -2,7 +2,7 @@
 	name 					= "belly"
 	desc 					= "You see a belly on their midsection."
 	icon_state 				= "belly"
-	icon 					= 'modular_citadel/icons/obj/genitals/breasts.dmi'
+	icon 					= 'hyperstation/icons/obj/genitals/belly.dmi'
 	zone 					= "chest"
 	slot 					= "belly"
 	w_class 				= 3
