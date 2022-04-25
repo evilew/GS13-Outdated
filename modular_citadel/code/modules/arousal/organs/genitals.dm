@@ -472,9 +472,9 @@
 				//if(B.cached_size < 8)	//anything smaller than a g-cup
 					//genital_overlay.layer = -GENITALS_UNDER_LAYER
 
-				//Get the icon
-				genital_overlay.icon_state = "[G.slot]_[S.icon_state]_[size]_[aroused_state]_[layertext]"
-				colourcode = S.color_src
+			//Get the icon
+			genital_overlay.icon_state = "[G.slot]_[S.icon_state]_[size]_[aroused_state]_[layertext]"
+			colourcode = S.color_src
 
 			if(G.slot == "belly") //we have a different size system
 				genital_overlay.icon = 'hyperstation/icons/obj/genitals/belly.dmi'
