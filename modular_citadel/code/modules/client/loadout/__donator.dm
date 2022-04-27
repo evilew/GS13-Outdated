@@ -1,6 +1,6 @@
 //This is the file that handles donator loadout items.
 
-
+/*
 /datum/gear/pingcoderfailsafe
 	name = "IF YOU SEE THIS, PING A CODER RIGHT NOW!"
 	category = SLOT_IN_BACKPACK
@@ -168,3 +168,5 @@ datum/gear/lyricalpawsring
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/clothing/suit/hooded/occultrobes
 	ckeywhitelist = list("relquen")
+*/
+//Commented out all Donator items

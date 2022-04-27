@@ -144,17 +144,17 @@
 	required_reagents = list(/datum/reagent/slime_toxin = 1, /datum/reagent/toxin/mutagen = 1)
 
 
-/datum/chemical_reaction/fermis_plush
+/*/datum/chemical_reaction/fermis_plush
 	name = "Fermis plush"
 	id = "fermis_plush"
 	required_reagents = list(/datum/reagent/consumable/caramel = 10, /datum/reagent/blood = 10, /datum/reagent/stable_plasma = 10)
 	mob_react = FALSE
-	required_temp = 400
+	required_temp = 400*/ //Removed Fermis Plush recipe
 
-/datum/chemical_reaction/fermis_plush/on_reaction(datum/reagents/holder, created_volume)
+/*/datum/chemical_reaction/fermis_plush/on_reaction(datum/reagents/holder, created_volume)
 	var/location = get_turf(holder.my_atom)
 	for(var/i = 1, i <= created_volume, i+=10)
-		new /obj/item/toy/plush/catgirl/fermis(location)
+		new /obj/item/toy/plush/catgirl/fermis(location)*/ //Fursona recipe
 
 ////////////////////////////////// VIROLOGY //////////////////////////////////////////
 

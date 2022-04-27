@@ -501,70 +501,70 @@
 	attack_verb = list("clawed", "hissed", "tail slapped")
 	squeak_override = list('sound/weapons/slash.ogg' = 1)
 
-/obj/item/toy/plush/lizardplushie/durgit
+/*/obj/item/toy/plush/lizardplushie/durgit
 	icon_state = "durgit"
 	item_state = "durgit"
-	squeak_override = list('modular_citadel/sound/voice/weh.ogg' = 1) //Durgit's the origin of the sound
+	squeak_override = list('modular_citadel/sound/voice/weh.ogg' = 1)*/ //Durgit's the origin of the sound
 
-/obj/item/toy/plush/lizardplushie/rio
+/*/obj/item/toy/plush/lizardplushie/rio
 	icon_state = "rio"
-	item_state = "rio"
+	item_state = "rio"*/
 
-/obj/item/toy/plush/lizardplushie/dan
+/*/obj/item/toy/plush/lizardplushie/dan
 	icon_state = "dan"
-	item_state = "dan"
+	item_state = "dan"*/
 
-/obj/item/toy/plush/lizardplushie/urinsu
+/*/obj/item/toy/plush/lizardplushie/urinsu
 	icon_state = "urinsu"
-	item_state = "urinsu"
+	item_state = "urinsu"*/
 
-/obj/item/toy/plush/lizardplushie/arfrehn
+/*/obj/item/toy/plush/lizardplushie/arfrehn
 	icon_state = "arfrehn"
-	item_state = "arfrehn"
+	item_state = "arfrehn"*/
 
-/obj/item/toy/plush/lizardplushie/soars
+/*/obj/item/toy/plush/lizardplushie/soars
 	icon_state = "soars"
-	item_state = "soars"
+	item_state = "soars"*/
 
-/obj/item/toy/plush/lizardplushie/ghostie
+/*/obj/item/toy/plush/lizardplushie/ghostie
 	icon_state = "ghostie"
-	item_state = "ghostie"
+	item_state = "ghostie"*/
 
-/obj/item/toy/plush/lizardplushie/amber
+/*/obj/item/toy/plush/lizardplushie/amber
 	icon_state = "amber"
-	item_state = "amber"
+	item_state = "amber"*/
 
-/obj/item/toy/plush/lizardplushie/cyan
+/*/obj/item/toy/plush/lizardplushie/cyan
 	icon_state = "cyan"
-	item_state = "cyan"
+	item_state = "cyan"*/
 
-/obj/item/toy/plush/lizardplushie/meena
+/*/obj/item/toy/plush/lizardplushie/meena
 	icon_state = "meena"
-	item_state = "meena"
+	item_state = "meena"*/
 
-/obj/item/toy/plush/lizardplushie/stalks
+/*/obj/item/toy/plush/lizardplushie/stalks
 	icon_state = "stalks"
-	item_state = "stalks"
+	item_state = "stalks"*/
 
 /obj/item/toy/plush/lizardplushie/kobold
 	icon_state = "kobold"
 	item_state = "kobold"
 
-/obj/item/toy/plush/lizardplushie/gorgi
+/*/obj/item/toy/plush/lizardplushie/gorgi
 	icon_state = "gorgi"
-	item_state = "gorgi"
+	item_state = "gorgi"*/
 
-/obj/item/toy/plush/lizardplushie/almaz
+/*/obj/item/toy/plush/lizardplushie/almaz
 	icon_state = "almaz"
 	item_state = "almaz"
-	squeak_override = list('modular_citadel/sound/voice/raptor_purr.ogg' = 1)
+	squeak_override = list('modular_citadel/sound/voice/raptor_purr.ogg' = 1)*/
 
-/obj/item/toy/plush/lizardplushie/malric
+/*/obj/item/toy/plush/lizardplushie/malric
 	desc = "An adorable stuffed toy that resembles a certain drake. He looks tired."
 	icon_state = "malric"
 	item_state = "malric"
 	attack_verb = list("depressed", "tailwhipped", "hissed on")
-	squeak_override = list('modular_citadel/sound/voice/weh.ogg' = 1)
+	squeak_override = list('modular_citadel/sound/voice/weh.ogg' = 1)*/
 
 /obj/item/toy/plush/snakeplushie
 	name = "snake plushie"
@@ -574,17 +574,17 @@
 	attack_verb = list("bitten", "hissed", "tail slapped")
 	squeak_override = list('modular_citadel/sound/voice/hiss.ogg' = 1)
 
-/obj/item/toy/plush/snakeplushie/sasha
+/*/obj/item/toy/plush/snakeplushie/sasha
 	icon_state = "sasha"
-	item_state = "sasha"
+	item_state = "sasha"*/ //Someones fursona
 
-/obj/item/toy/plush/snakeplushie/shay
+/*/obj/item/toy/plush/snakeplushie/shay
 	icon_state = "shay"
-	item_state = "shay"
+	item_state = "shay"*/ //Someones fursona
 
-/obj/item/toy/plush/snakeplushie/vulken
+/*/obj/item/toy/plush/snakeplushie/vulken
 	icon_state = "vulken"
-	item_state = "vulken"
+	item_state = "vulken"*/ //Someones fursona
 
 /obj/item/toy/plush/nukeplushie
 	name = "operative plushie"
@@ -603,17 +603,17 @@
 	squeak_override = list('sound/effects/blobattack.ogg' = 1)
 	gender = FEMALE	//given all the jokes and drawings, I'm not sure the xenobiologists would make a slimeboy
 
-/obj/item/toy/plush/slimeplushie/annie
+/*/obj/item/toy/plush/slimeplushie/annie
 	desc = "An adorable stuffed toy that resembles a slimey crewmember."
 	icon_state = "annie"
-	item_state = "annie"
+	item_state = "annie"*/
 
-/obj/item/toy/plush/slimeplushie/paxton
+/*/obj/item/toy/plush/slimeplushie/paxton
 	desc = "An adorable stuffed toy that resembles a slimey crewmember."
 	icon_state = "paxton"
 	item_state = "paxton"
 	attack_verb = list("CQC'd", "jabroni'd", "powergamed", "robusted", "cakehatted")
-	gender = MALE
+	gender = MALE*/
 
 /obj/item/toy/plush/awakenedplushie
 	name = "awakened plushie"
@@ -646,9 +646,9 @@
 	icon_state = "nameko"
 	item_state = "nameko"
 
-/obj/item/toy/plush/mothplushie/suru
+/*/obj/item/toy/plush/mothplushie/suru
 	icon_state = "suru"
-	item_state = "suru"
+	item_state = "suru"*/ //Someone's fursona
 
 /obj/item/toy/plush/mothplushie/moffplush
 	name = "moth plushie"
@@ -700,192 +700,188 @@
 	item_state = "dr_scanny"
 	attack_verb = list("scanned", "beeped", "stared")
 
-/obj/item/toy/plush/borgplushie
+/*/obj/item/toy/plush/borgplushie
 	name = "robot plushie"
 	desc = "An adorable stuffed toy of a robot."
 	icon_state = "securityk9"
 	item_state = "securityk9"
 	attack_verb = list("beeped", "booped", "pinged")
-	squeak_override = list('sound/machines/beep.ogg' = 1)
+	squeak_override = list('sound/machines/beep.ogg' = 1)*/ //Self explainatory
 
-/obj/item/toy/plush/borgplushie/medihound
+/*/obj/item/toy/plush/borgplushie/medihound
 	icon_state = "medihound"
-	item_state = "medihound"
+	item_state = "medihound"*/ //Self explainatory
 
-/obj/item/toy/plush/borgplushie/scrubpuppy
+/*/obj/item/toy/plush/borgplushie/scrubpuppy
 	icon_state = "scrubpuppy"
-	item_state = "scrubpuppy"
+	item_state = "scrubpuppy"*/
 
-/obj/item/toy/plush/borgplushie/seeking
+/*/obj/item/toy/plush/borgplushie/seeking
 	icon_state = "seeking"
-	item_state = "seeking"
+	item_state = "seeking"*/
 
-/obj/item/toy/plush/borgplushie/neeb
+/*/obj/item/toy/plush/borgplushie/neeb
 	icon_state = "neeb"
-	item_state = "neeb"
+	item_state = "neeb"*/
 
-/obj/item/toy/plush/borgplushie/bhijn
+/*/obj/item/toy/plush/borgplushie/bhijn
 	desc = "An adorable stuffed toy of a IPC."
 	icon_state = "bhijn"
 	item_state = "bhijn"
-	attack_verb = list("closed", "reworked", "merged")
+	attack_verb = list("closed", "reworked", "merged")*/
 
-/obj/item/toy/plush/bird
+/*/obj/item/toy/plush/bird
 	name = "bird plushie"
 	desc = "An adorable stuffed plushie that resembles an avian."
 	icon_state = "sylas"
 	item_state = "sylas"
 	attack_verb = list("peeped", "beeped", "poofed")
-	squeak_override = list('modular_citadel/sound/voice/peep.ogg' = 1)
+	squeak_override = list('modular_citadel/sound/voice/peep.ogg' = 1)*/
 
-/obj/item/toy/plush/bird/esela
+/*/obj/item/toy/plush/bird/esela
 	icon_state = "esela"
-	item_state = "esela"
+	item_state = "esela"*/
 
-/obj/item/toy/plush/bird/jahonna
+/*/obj/item/toy/plush/bird/jahonna
 	icon_state = "jahonna"
-	item_state = "jahonna"
+	item_state = "jahonna"*/
 
-/obj/item/toy/plush/bird/krick
+/*/obj/item/toy/plush/bird/krick
 	icon_state = "krick"
-	item_state = "krick"
+	item_state = "krick"*/
 
-/obj/item/toy/plush/bird/birddi
+/*/obj/item/toy/plush/bird/birddi
 	icon_state = "birddi"
-	item_state = "birddi"
+	item_state = "birddi"*/
 
-/obj/item/toy/plush/bird/jewel
+/*/obj/item/toy/plush/bird/jewel
 	icon_state = "jewel"
-	item_state = "jewel"
+	item_state = "jewel"*/
 
-/obj/item/toy/plush/bird/kenk
+/*/obj/item/toy/plush/bird/kenk
 	name = "kenku plushie"
 	desc = "An adorable stuffed plushie that resembles a kenku, perfect to sit on."
 	young = TRUE
 	icon_state = "kenk"
 	item_state = "kenk"
-	squeak_override = list('modular_citadel/sound/voice/merp.ogg' = 1)
+	squeak_override = list('modular_citadel/sound/voice/merp.ogg' = 1)*/
 
-/obj/item/toy/plush/sergal
+/*/obj/item/toy/plush/sergal
 	name = "sergal plushie"
 	desc = "An adorable stuffed plushie that resembles a sagaru."
 	icon_state = "faux"
 	item_state = "faux"
-	squeak_override = list('modular_citadel/sound/voice/merp.ogg' = 1)
+	squeak_override = list('modular_citadel/sound/voice/merp.ogg' = 1)*/ //removes someones fursona plushie? Hyperstaion related.
 
-/obj/item/toy/plush/sergal/gladwyn
+/*/obj/item/toy/plush/sergal/gladwyn
 	icon_state = "gladwyn"
-	item_state = "gladwyn"
+	item_state = "gladwyn"*/ //Someone's fursona
 
-/obj/item/toy/plush/sergal/jermaine
+/*/obj/item/toy/plush/sergal/jermaine
 	icon_state = "jermaine"
-	item_state = "jermaine"
+	item_state = "jermaine"*/
 
-/obj/item/toy/plush/mammal
+/*/obj/item/toy/plush/mammal
 	name = "mammal plushie"
 	desc = "An adorable stuffed toy resembling some sort of crew member."
 	icon_state = "dubious"
-	item_state = "dubious"
+	item_state = "dubious"*/
 
-/obj/item/toy/plush/mammal/gavin
+/*/obj/item/toy/plush/mammal/gavin
 	icon_state = "gavin"
-	item_state = "gavin"
+	item_state = "gavin"*/
 
-/obj/item/toy/plush/mammal/blep
+/*/obj/item/toy/plush/mammal/blep
 	icon_state = "blep"
-	item_state = "blep"
+	item_state = "blep"*/
 
-/obj/item/toy/plush/mammal/circe
+/*/obj/item/toy/plush/mammal/circe
 	desc = "A luxuriously soft toy that resembles a nine-tailed kitsune."
 	icon_state = "circe"
 	item_state = "circe"
-	attack_verb = list("medicated", "tailhugged", "kissed")
+	attack_verb = list("medicated", "tailhugged", "kissed")*/
 
-/obj/item/toy/plush/mammal/robin
+/*/obj/item/toy/plush/mammal/robin
 	icon_state = "robin"
-	item_state = "robin"
+	item_state = "robin"*/
 
-/obj/item/toy/plush/mammal/pavel
+/*/obj/item/toy/plush/mammal/pavel
 	icon_state = "pavel"
-	item_state = "pavel"
+	item_state = "pavel"*/
 
-/obj/item/toy/plush/mammal/mason
+/*/obj/item/toy/plush/mammal/mason
 	icon_state = "mason"
-	item_state = "mason"
+	item_state = "mason"*/
 
-/obj/item/toy/plush/mammal/oten
+/*/obj/item/toy/plush/mammal/oten
 	icon_state = "oten"
-	item_state = "oten"
+	item_state = "oten"*/
 
-/obj/item/toy/plush/mammal/ray
+/*/obj/item/toy/plush/mammal/ray
 	icon_state = "ray"
-	item_state = "ray"
+	item_state = "ray"*/
 
-/obj/item/toy/plush/mammal/redtail
+/*/obj/item/toy/plush/mammal/redtail
 	icon_state = "redtail"
-	item_state = "redtail"
+	item_state = "redtail"*/
 
-/obj/item/toy/plush/mammal/dawud
+/*/obj/item/toy/plush/mammal/dawud
 	icon_state = "dawud"
-	item_state = "dawud"
+	item_state = "dawud"*/
 
-/obj/item/toy/plush/mammal/edgar
+/*/obj/item/toy/plush/mammal/edgar
 	icon_state = "edgar"
 	item_state = "edgar"
-	attack_verb = list("collared", "tricked", "headpatted")
+	attack_verb = list("collared", "tricked", "headpatted")*/
 
-/obj/item/toy/plush/mammal/frank
+/*/obj/item/toy/plush/mammal/frank
 	icon_state = "frank"
-	item_state = "frank"
+	item_state = "frank"*/
 
-/obj/item/toy/plush/mammal/poojawa
+/*/obj/item/toy/plush/mammal/poojawa
 	icon_state = "poojawa"
-	item_state = "poojawa"
+	item_state = "poojawa"*/
 
-/obj/item/toy/plush/mammal/hazel
+/*/obj/item/toy/plush/mammal/hazel
 	icon_state = "hazel"
-	item_state = "hazel"
+	item_state = "hazel"*/
 
-/obj/item/toy/plush/mammal/joker
+/*/obj/item/toy/plush/mammal/joker
 	icon_state = "joker"
-	item_state = "joker"
+	item_state = "joker"*/
 
-/obj/item/toy/plush/mammal/gunther
+/*/obj/item/toy/plush/mammal/gunther
 	icon_state = "gunther"
-	item_state = "gunther"
+	item_state = "gunther"*/
 
-/obj/item/toy/plush/mammal/fox
-	icon_state = "fox"
-	item_state = "fox"
-
-/obj/item/toy/plush/mammal/rae
+/*/obj/item/toy/plush/mammal/rae
 	desc = "An adorable stuffed toy of an artic fox."
 	icon_state = "rae"
-	item_state = "rae"
+	item_state = "rae"*/
 
-/obj/item/toy/plush/mammal/zed
+/*/obj/item/toy/plush/mammal/zed
 	desc = "A masked stuffed toy that resembles a fierce miner. He even comes with his own little crusher!"
 	icon_state = "zed"
 	item_state = "zed"
-	attack_verb = list("ENDED", "CRUSHED", "GNOMED")
+	attack_verb = list("ENDED", "CRUSHED", "GNOMED")*/
 
-/obj/item/toy/plush/mammal/justin
+/*/obj/item/toy/plush/mammal/justin
 	icon_state = "justin"
 	item_state = "justin"
-	attack_verb = list("buttslapped", "fixed")
+	attack_verb = list("buttslapped", "fixed")*/
 
-/obj/item/toy/plush/mammal/reece
+/*/obj/item/toy/plush/mammal/reece
 	icon_state = "reece"
 	item_state = "reece"
-	attack_verb = list("healed", "cured", "demoted")
+	attack_verb = list("healed", "cured", "demoted")*/
 
-/obj/item/toy/plush/mammal/redwood
+/*/obj/item/toy/plush/mammal/redwood
 	desc = "An adorable stuffed toy resembling a Kinaris Captain. That just happens to be a bunny."
 	icon_state = "redwood"
 	item_state = "redwood"
-	attack_verb = list("ordered", "bapped", "reprimanded")
+	attack_verb = list("ordered", "bapped", "reprimanded")*/
 
-/obj/item/toy/plush/mammal/dog
+/*/obj/item/toy/plush/mammal/dog
 	desc = "An adorable stuffed toy that resembles a canine."
 	icon_state = "katlin"
 	item_state = "katlin"
@@ -893,60 +889,60 @@
 	squeak_override = list(
 	'modular_citadel/sound/voice/bark1.ogg' = 1,
 	'modular_citadel/sound/voice/bark2.ogg' = 1
-	)
+	)*/
 
-/obj/item/toy/plush/mammal/dog/frost
+/*/obj/item/toy/plush/mammal/dog/frost
 	icon_state = "frost"
-	item_state = "frost"
+	item_state = "frost"*/
 
-/obj/item/toy/plush/mammal/dog/atticus
+/*/obj/item/toy/plush/mammal/dog/atticus
 	icon_state = "atticus"
-	item_state = "atticus"
+	item_state = "atticus"*/
 
-/obj/item/toy/plush/mammal/dog/fletch
+/*/obj/item/toy/plush/mammal/dog/fletch
 	icon_state = "fletch"
-	item_state = "fletch"
+	item_state = "fletch"*/
 
-/obj/item/toy/plush/mammal/dog/vincent
+/*/obj/item/toy/plush/mammal/dog/vincent
 	icon_state = "vincent"
-	item_state = "vincent"
+	item_state = "vincent"*/
 
-/obj/item/toy/plush/mammal/dog/zigfried
+/*/obj/item/toy/plush/mammal/dog/zigfried
 	desc = "An adorable stuffed toy of a very good boy."
 	icon_state = "zigfried"
-	item_state = "zigfried"
+	item_state = "zigfried"*/
 
-/obj/item/toy/plush/mammal/dog/nikolai
+/*/obj/item/toy/plush/mammal/dog/nikolai
 	icon_state = "nikolai"
-	item_state = "nikolai"
+	item_state = "nikolai"*/
 
-/obj/item/toy/plush/mammal/dog/flynn
+/*/obj/item/toy/plush/mammal/dog/flynn
 	icon_state = "flynn"
-	item_state = "flynn"
+	item_state = "flynn"*/
 
-/obj/item/toy/plush/mammal/dog/fritz
+/*/obj/item/toy/plush/mammal/dog/fritz
 	icon_state = "fritz"
 	item_state = "fritz"
 	attack_verb = list("barked", "boofed", "shotgun'd")
 	obj_flags = UNIQUE_RENAME
-	unique_reskin = list("Goodboye" = "fritz", "Badboye" = "fritz_bad")
+	unique_reskin = list("Goodboye" = "fritz", "Badboye" = "fritz_bad")*/
 
-/obj/item/toy/plush/mammal/dog/jesse
+/*/obj/item/toy/plush/mammal/dog/jesse
 	desc = "An adorable wolf toy that resembles a cream-colored wolf. He has a little pride flag!"
 	icon_state = "jesse"
 	item_state = "jesse"
-	attack_verb = list("greeted", "merc'd", "howdy'd")
+	attack_verb = list("greeted", "merc'd", "howdy'd")*/
 
-/obj/item/toy/plush/mammal/dog/marie
+/*/obj/item/toy/plush/mammal/dog/marie
 	desc = "An adorable wolfgirl toy! She smells like strawberries."
 	icon_state = "marie"
 	item_state = "marie"
-	attack_verb = list("awoo'd", "shoved", "bonked")
+	attack_verb = list("awoo'd", "shoved", "bonked")*/
 
-/obj/item/toy/plush/mammal/marisol
+/*/obj/item/toy/plush/mammal/marisol
 	desc = "An adorable stuffed toy resembling a demi-wolf security officer. That a baton, or is she happy to see you..?"
 	icon_state = "marisol"
-	item_state = "marisol"
+	item_state = "marisol"*/
 
 /obj/item/toy/plush/catgirl
 	name = "feline plushie"
@@ -956,47 +952,47 @@
 	attack_verb = list("headbutt", "scritched", "bit")
 	squeak_override = list('modular_citadel/sound/voice/nya.ogg' = 1)
 
-/obj/item/toy/plush/catgirl/mikeel
+/*/obj/item/toy/plush/catgirl/mikeel
 	desc = "An adorable stuffed toy of some tauric cat person."
 	icon_state = "mikeel"
-	item_state = "mikeel"
+	item_state = "mikeel"*/
 
-/obj/item/toy/plush/catgirl/skylar
+/*/obj/item/toy/plush/catgirl/skylar
 	desc = "An adorable stuffed toy that resembles a pure and good cat boy."
 	icon_state = "skylar"
 	item_state = "skylar"
 	attack_verb = list("powergamed", "merged", "tabled")
-	squeak_override = list('sound/effects/meow1.ogg' = 1)
+	squeak_override = list('sound/effects/meow1.ogg' = 1)*/
 
-/obj/item/toy/plush/catgirl/drew
+/*/obj/item/toy/plush/catgirl/drew
 	icon_state = "drew"
-	item_state = "drew"
+	item_state = "drew"*/
 
-/obj/item/toy/plush/catgirl/trilby
+/*/obj/item/toy/plush/catgirl/trilby
 	desc = "A masked stuffed toy that resembles a feline scientist."
 	icon_state = "trilby"
 	item_state = "trilby"
-	attack_verb = list("pred", "coded", "remembered")
+	attack_verb = list("pred", "coded", "remembered")*/
 
-/obj/item/toy/plush/catgirl/fermis
+/*/obj/item/toy/plush/catgirl/fermis
     name = "medcat plushie"
     desc = "An affectionate stuffed toy that resembles a certain medcat, comes complete with battery operated wagging tail!! You get the impression she's cheering you on to to find happiness and be kind to people."
     icon_state = "fermis"
     item_state = "fermis"
     attack_verb = list("cuddled", "petpatted", "wigglepurred")
-    squeak_override = list('modular_citadel/sound/voice/merowr.ogg' = 1)
+    squeak_override = list('modular_citadel/sound/voice/merowr.ogg' = 1)*/
 
-/obj/item/toy/plush/catgirl/mariaf
+/*/obj/item/toy/plush/catgirl/mariaf
 	desc = "An adorable stuffed toy that resembles a very tall cat girl."
 	icon_state = "mariaf"
 	item_state = "mariaf"
-	attack_verb = list("hugged", "stabbed", "licked")
+	attack_verb = list("hugged", "stabbed", "licked")*/
 
-/obj/item/toy/plush/catgirl/maya
+/*/obj/item/toy/plush/catgirl/maya
 	desc = "An adorable stuffed toy that resembles an angry cat girl. She has her own tiny nuke disk!"
 	icon_state = "maya"
 	item_state = "maya"
-	attack_verb = list("nuked", "arrested", "harmbatonned")
+	attack_verb = list("nuked", "arrested", "harmbatonned")*/
 
 /obj/item/toy/plush/metha
 	name = "Magical Captain Plushie"
@@ -1013,3 +1009,7 @@
 	item_state = "yongas"
 	attack_verb = list("Sussied")
 	gender = MALE
+
+	/obj/item/toy/plush/mammal/fox
+	icon_state = "fox"
+	item_state = "fox"
