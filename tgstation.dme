@@ -3018,6 +3018,8 @@
 #include "code\modules\vehicles\_vehicle.dm"
 #include "code\modules\vehicles\atv.dm"
 #include "code\modules\vehicles\bicycle.dm"
+#include "code\modules\vehicles\grocery_cart_scooter.dm"
+#include "code\modules\vehicles\grocery_cart_scooter_unmortorized.dm"
 #include "code\modules\vehicles\lavaboat.dm"
 #include "code\modules\vehicles\motorized_wheelchair.dm"
 #include "code\modules\vehicles\pimpin_ride.dm"
