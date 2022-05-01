@@ -1010,6 +1010,12 @@
 	attack_verb = list("Sussied")
 	gender = MALE
 
-	/obj/item/toy/plush/mammal/fox
+/obj/item/toy/plush/catgirl/fi
+	desc = "An adorable stuffed toy that resembles a very enthusiastic catgirl. Its smug aura mocks you."
+	icon_state = "fi"
+	item_state = "fi"
+	attack_verb = list("pranked","nyuh'd","science'd","hugged")
+
+/obj/item/toy/plush/mammal/fox
 	icon_state = "fox"
 	item_state = "fox"
