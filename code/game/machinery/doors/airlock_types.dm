@@ -387,7 +387,6 @@
 
 /obj/machinery/door/airlock/vault
 	name = "vault door"
-	desc= "Guys, the thermal drill. Go get it."
 	icon = 'icons/obj/doors/airlocks/vault/vault.dmi'
 	overlays_file = 'icons/obj/doors/airlocks/vault/overlays.dmi'
 	assemblytype = /obj/structure/door_assembly/door_assembly_vault

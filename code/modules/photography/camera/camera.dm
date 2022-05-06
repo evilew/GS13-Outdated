@@ -4,7 +4,7 @@
 /obj/item/camera
 	name = "camera"
 	icon = 'icons/obj/items_and_weapons.dmi'
-	desc = "Snap, thats going on my cringe compilation. :)"
+	desc = "A polaroid camera."
 	icon_state = "camera"
 	item_state = "camera"
 	lefthand_file = 'icons/mob/inhands/misc/devices_lefthand.dmi'

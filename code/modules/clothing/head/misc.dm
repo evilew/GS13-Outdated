@@ -157,7 +157,7 @@
 
 /obj/item/clothing/head/chicken
 	name = "chicken suit head"
-	desc = "Do you like hurting other people?"
+	desc = "Bkaw!"
 	icon_state = "chickenhead"
 	item_state = "chickensuit"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
