@@ -1120,7 +1120,7 @@
 "abH" = (
 /obj/structure/table/wood,
 /obj/item/phone,
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/carpet,
 /area/crew_quarters/heads/hos)
 "abI" = (
@@ -5650,7 +5650,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/carpet,
 /area/crew_quarters/dorms)
 "ale" = (
@@ -6311,7 +6311,7 @@
 /area/security/main)
 "amt" = (
 /obj/structure/table/wood,
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/carpet,
 /area/crew_quarters/heads/captain)
 "amu" = (
@@ -6389,7 +6389,7 @@
 /obj/structure/table/wood,
 /obj/item/paper_bin,
 /obj/item/pen/blue,
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/wood,
 /area/lawoffice)
 "amF" = (
@@ -6689,7 +6689,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/kitchen)
 "ank" = (
@@ -6761,7 +6761,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /mob/living/simple_animal/parrot/Poly,
 /turf/open/floor/plasteel,
 /area/crew_quarters/heads/chief)
@@ -7139,7 +7139,7 @@
 "anZ" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/snacks/grown/poppy,
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/plasteel/dark,
 /area/chapel/main/monastery)
 "aoa" = (
@@ -7153,7 +7153,7 @@
 	pixel_x = 5;
 	pixel_y = 6
 	},
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/plasteel/dark,
 /area/chapel/main/monastery)
 "aob" = (
@@ -7170,7 +7170,7 @@
 	},
 /obj/item/clothing/mask/cigarette/cigar,
 /obj/item/reagent_containers/food/drinks/flask/gold,
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/plasteel/grimy,
 /area/crew_quarters/heads/captain)
 "aod" = (

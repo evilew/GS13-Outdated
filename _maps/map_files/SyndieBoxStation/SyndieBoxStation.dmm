@@ -1111,7 +1111,7 @@
 /obj/structure/table/wood/fancy/blackred,
 /obj/item/folder/red,
 /obj/item/stamp/hos,
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/carpet/red,
 /area/crew_quarters/heads/hos)
 "acE" = (
@@ -13801,7 +13801,7 @@
 	dir = 8
 	},
 /obj/structure/table,
-/obj/item/book/lorebooks/welcome_to_kinaris{
+/obj/item/book/lorebooks/welcome_to_gato{
 	pixel_y = 5
 	},
 /turf/open/floor/plasteel/dark,
@@ -16491,7 +16491,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/plasteel/grimy,
 /area/chapel/office)
 "aJA" = (
@@ -18143,7 +18143,7 @@
 "aNS" = (
 /obj/structure/table/wood/fancy/blackred,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/carpet,
 /area/hallway/secondary/entry)
 "aNT" = (
@@ -19972,7 +19972,7 @@
 /obj/structure/table/reinforced,
 /obj/item/assembly/flash/handheld,
 /obj/item/assembly/flash/handheld,
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/engine,
 /area/bridge)
 "aSh" = (
@@ -20366,7 +20366,7 @@
 /area/crew_quarters/locker)
 "aTl" = (
 /obj/structure/table,
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/locker)
 "aTm" = (
@@ -25286,7 +25286,7 @@
 /area/maintenance/disposal)
 "beD" = (
 /obj/structure/table/wood/fancy/blackred,
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/carpet/black,
 /area/crew_quarters/bar)
 "beE" = (
@@ -30873,7 +30873,7 @@
 /area/crew_quarters/heads/captain)
 "bqz" = (
 /obj/structure/table/wood/fancy/blackred,
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/carpet/black,
 /area/library)
 "bqA" = (
@@ -31551,7 +31551,7 @@
 /area/crew_quarters/heads/hor)
 "bsa" = (
 /obj/structure/table/wood/fancy/blackred,
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/carpet/black,
 /area/security/vacantoffice)
 "bsb" = (
@@ -36638,7 +36638,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/plating,
 /area/maintenance/disposal)
 "bCZ" = (
@@ -37132,7 +37132,7 @@
 	},
 /obj/item/clothing/mask/cigarette/cigar,
 /obj/item/reagent_containers/food/drinks/flask/gold,
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/carpet/royalblue,
 /area/crew_quarters/heads/captain)
 "bDV" = (
@@ -38889,7 +38889,7 @@
 	pixel_y = 5;
 	req_access_txt = "47"
 	},
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /obj/machinery/button/door{
 	id = "scishut1";
 	name = "Office Lockdown";
@@ -39408,12 +39408,12 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/heads/cmo)
 "bJa" = (
 /obj/structure/table/wood/fancy/blackred,
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/carpet/black,
 /area/maintenance/bar)
 "bJb" = (
@@ -40063,7 +40063,7 @@
 /obj/item/paper/monitorkey,
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/engine,
 /area/crew_quarters/heads/chief)
 "bKy" = (
@@ -61877,7 +61877,7 @@
 /area/maintenance/port/fore)
 "lOV" = (
 /obj/structure/table/wood/fancy/blackred,
-/obj/item/book/lorebooks/welcome_to_kinaris,
+/obj/item/book/lorebooks/welcome_to_gato,
 /turf/open/floor/carpet/black,
 /area/quartermaster/qm)
 "lQq" = (
