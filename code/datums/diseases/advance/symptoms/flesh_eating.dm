@@ -129,7 +129,7 @@ Bonus
 	var/get_damage = rand(6,10)
 	M.adjustBruteLoss(get_damage)
 	if(chems)
-		M.reagents.add_reagent_list(list(/datum/reagent/toxin/heparin = 2, /datum/reagent/toxin/lipolicide = 2))
+		M.reagents.add_reagent_list(list(/datum/reagent/toxin/heparin = 2, /datum/reagent/medicine/lipolicide = 2))
 	if(zombie)
 		M.reagents.add_reagent(/datum/reagent/romerol, 1)
 	return 1

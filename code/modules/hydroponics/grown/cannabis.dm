@@ -15,7 +15,7 @@
 	genes = list(/datum/plant_gene/trait/repeated_harvest)
 	mutatelist = list(/obj/item/seeds/cannabis/rainbow,
 						/obj/item/seeds/cannabis/death)
-	reagents_add = list(/datum/reagent/drug/space_drugs = 0.15, /datum/reagent/toxin/lipolicide = 0.35) // gives u the munchies
+	reagents_add = list(/datum/reagent/drug/space_drugs = 0.15, /datum/reagent/medicine/lipolicide = 0.35) // gives u the munchies
 
 /obj/item/seeds/cannabis/rainbow
 	name = "pack of rainbow weed seeds"
@@ -25,7 +25,7 @@
 	plantname = "Rainbow Weed"
 	product = /obj/item/reagent_containers/food/snacks/grown/cannabis/rainbow
 	mutatelist = list(/obj/item/seeds/cannabis/ultimate)
-	reagents_add = list(/datum/reagent/toxin/mindbreaker = 0.15, /datum/reagent/toxin/lipolicide = 0.35)
+	reagents_add = list(/datum/reagent/toxin/mindbreaker = 0.15, /datum/reagent/medicine/lipolicide = 0.35)
 	rarity = 40
 
 /obj/item/seeds/cannabis/death
@@ -36,7 +36,7 @@
 	plantname = "Deathweed"
 	product = /obj/item/reagent_containers/food/snacks/grown/cannabis/death
 	mutatelist = list(/obj/item/seeds/cannabis/white)
-	reagents_add = list(/datum/reagent/toxin/cyanide = 0.35, /datum/reagent/drug/space_drugs = 0.15, /datum/reagent/toxin/lipolicide = 0.15)
+	reagents_add = list(/datum/reagent/toxin/cyanide = 0.35, /datum/reagent/drug/space_drugs = 0.15, /datum/reagent/medicine/lipolicide = 0.15)
 	rarity = 40
 
 /obj/item/seeds/cannabis/white
@@ -47,7 +47,7 @@
 	plantname = "Lifeweed"
 	product = /obj/item/reagent_containers/food/snacks/grown/cannabis/white
 	mutatelist = list()
-	reagents_add = list(/datum/reagent/medicine/omnizine = 0.35, /datum/reagent/drug/space_drugs = 0.15, /datum/reagent/toxin/lipolicide = 0.15)
+	reagents_add = list(/datum/reagent/medicine/omnizine = 0.35, /datum/reagent/drug/space_drugs = 0.15, /datum/reagent/medicine/lipolicide = 0.15)
 	rarity = 40
 
 
@@ -74,7 +74,7 @@
 						/datum/reagent/drug/crank = 0.15,
 						/datum/reagent/drug/krokodil = 0.15,
 						/datum/reagent/toxin/histamine = 0.15,
-						/datum/reagent/toxin/lipolicide = 0.15)
+						/datum/reagent/medicine/lipolicide = 0.15)
 	rarity = 69
 
 
