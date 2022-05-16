@@ -446,3 +446,14 @@
 	item_state = "explorer"
 	item_color = "explorer"
 	can_adjust = FALSE
+
+/obj/item/clothing/under/cowkini
+	name = "cowkini"
+	desc = "A bikini including a cowbell, truly for a good cow like you!"
+	icon_state = "cowkini"
+	item_state = "cowkini"
+	item_color = "cowkini"
+	can_adjust = FALSE
+	body_parts_covered = CHEST|GROIN
+	armor = list("melee" = 5, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 5)
+	fitted = FEMALE_UNIFORM_TOP
