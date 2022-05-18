@@ -7,6 +7,10 @@
 	w_class = WEIGHT_CLASS_TINY
 	resistance_flags = FLAMMABLE
 
+/obj/item/trash/Initialize() //stolen from hyper for trash eating
+	. = ..()
+	AddElement(/datum/element/trash)
+
 /obj/item/trash/raisins
 	name = "\improper 4no raisins"
 	icon_state= "4no_raisins"
@@ -85,5 +89,3 @@
 	name = "Sunflower Seeds"
 	icon_state = "seedtrash"
 	
-/obj/item/trash/attack(mob/M, mob/living/user)
-	return

@@ -177,3 +177,13 @@
 		wheels.setDir(spawn_chair.dir)
 
 	wheels.buckle_mob(quirk_holder)
+
+/datum/quirk/trashcan //for when you are literally flint (Stolen from hyper)
+	name = "Trashcan"
+	desc = "You are able to consume and digest trash."
+	value = 0
+	gain_text = "<span class='notice'>You feel like munching on a can of soda.</span>"
+	lose_text = "<span class='notice'>You no longer feel like you should be eating trash.</span>"
+	mob_trait = TRAIT_TRASHCAN
+	category = CATEGORY_FOOD
+	medical_record_text = "Patient has been observed eating inedable garbage."

@@ -194,6 +194,7 @@
 #define TRAIT_NEVER_CLONE       "donotclone"
 #define TRAIT_COLDBLOODED		"coldblooded"	// Your body is literal room temperature. Does not make you immune to the temp.
 #define TRAIT_FLIMSY		"flimsy" //you have 20% less maxhealth
+#define TRAIT_TRASHCAN		"trashcan" //Im the TRASH MAN! (Shamlessly stolen from hyper for local trash eater, flint)
 
 
 //Hyper
