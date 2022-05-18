@@ -89,5 +89,3 @@
 	name = "Sunflower Seeds"
 	icon_state = "seedtrash"
 	
-/obj/item/trash/attack(mob/M, mob/living/user)
-	return
