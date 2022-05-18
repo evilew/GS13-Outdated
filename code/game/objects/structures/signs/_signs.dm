@@ -121,8 +121,8 @@
 	setDir(turn(dir, 90))
 
 /obj/structure/sign/nanotrasen
-	name = "\improper Kinaris.Corp Logo"
-	desc = "A sign with the Kinaris Logo on it. Blessed be Kinaris!"
+	name = "\improper GATO Logo"
+	desc = "The logo of the company you are working on, surely this cat has been placed everywhere..."
 	icon_state = "nanotrasen"
 
 /obj/structure/sign/logo
@@ -160,3 +160,9 @@
 	name = "Hella Nice Sign"
 	desc = "Made from the hottest planet itself!"
 	icon_state = "donut_signTR"
+
+
+/obj/structure/sign/carts
+	name = "CARTS"
+	desc = "You are entering a motorized cart area."
+	icon_state = "carts"

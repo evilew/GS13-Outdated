@@ -252,7 +252,7 @@
 /turf/open/floor/plasteel,
 /area/xenoarch/arch)
 "aT" = (
-/obj/item/banhammer,
+/obj/item/toy/plush/amogus,
 /turf/open/indestructible/necropolis,
 /area/lavaland/surface/outdoors)
 "aU" = (
@@ -509,13 +509,11 @@
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "bI" = (
-/obj/machinery/power/smes{
-	charge = 5e+006
-	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
 /obj/effect/turf_decal/box,
+/obj/machinery/power/smes/engineering,
 /turf/open/floor/plating,
 /area/xenoarch/gen)
 "bJ" = (
@@ -2554,13 +2552,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/xenoarch/gen)
-"gm" = (
-/obj/item/toy/plush/mammal/dog/marie{
-	desc = "HOWWWWWWWWWWWWWWWWWWWWWWWWW";
-	name = "Fool of the maze: Marie"
-	},
-/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
-/area/lavaland/surface/outdoors)
 "gn" = (
 /obj/machinery/door/airlock/glass{
 	name = "Public Freezer"
@@ -2756,11 +2747,6 @@
 /area/xenoarch/arch)
 "gL" = (
 /obj/structure/flora/ausbushes/fernybush,
-/turf/open/floor/holofloor/grass,
-/area/xenoarch/gen)
-"gM" = (
-/obj/structure/flora/ausbushes/brflowers,
-/obj/item/toy/plush/snakeplushie/shay,
 /turf/open/floor/holofloor/grass,
 /area/xenoarch/gen)
 "gN" = (
@@ -4036,10 +4022,6 @@
 /area/xenoarch/gen)
 "jY" = (
 /obj/structure/flora/rock,
-/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
-/area/lavaland/surface/outdoors)
-"jZ" = (
-/obj/item/toy/plush/catgirl/skylar,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "ka" = (
@@ -5505,10 +5487,6 @@
 "nx" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/xenoarch/nothinghere)
-"ny" = (
-/obj/item/toy/plush/catgirl/fermis,
-/turf/open/floor/plasteel/white,
-/area/xenoarch/gen)
 "nz" = (
 /obj/structure/bed,
 /obj/item/bedsheet/pirate,
@@ -6350,12 +6328,6 @@
 	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
-	},
-/obj/item/toy/plush/bird/kenk{
-	desc = "A dusty old charred plushie of a strange-looking Kenku in a yellow jumpsuit and a brown collar which you can almost make out something on. How long has this been here?";
-	name = "charred Kenk plushie";
-	pixel_x = 6;
-	pixel_y = 5
 	},
 /obj/item/lighter{
 	pixel_x = -4
@@ -11234,7 +11206,7 @@ ay
 ay
 ay
 jB
-jZ
+lQ
 "}
 (18,1,1) = {"
 ms
@@ -13567,7 +13539,7 @@ lQ
 lQ
 lQ
 ms
-gm
+lQ
 mB
 mB
 lQ
@@ -14040,7 +14012,7 @@ ei
 fF
 fE
 fN
-gM
+fS
 gT
 hf
 ei
@@ -18148,7 +18120,7 @@ gF
 hr
 Sy
 lW
-ny
+eX
 mk
 Sy
 mw

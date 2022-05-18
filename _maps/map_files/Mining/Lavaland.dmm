@@ -1990,12 +1990,6 @@
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "dR" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "Mining Station Port Wing APC";
-	pixel_x = 1;
-	pixel_y = 25
-	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -2007,6 +2001,12 @@
 	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
+	},
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "Mining Station Port Wing APC";
+	pixel_x = 1;
+	pixel_y = 25
 	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
@@ -3980,12 +3980,10 @@
 /turf/open/floor/plasteel,
 /area/mine/laborcamp)
 "rI" = (
-/obj/machinery/power/smes{
-	charge = 5e+006
-	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
+/obj/machinery/power/smes/engineering,
 /turf/open/floor/plating,
 /area/mine/living_quarters)
 "rN" = (
