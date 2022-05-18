@@ -233,7 +233,7 @@
 	list_reagents = list(/datum/reagent/mulligan = 1)
 
 /obj/item/reagent_containers/syringe/gluttony
-	name = "Gluttony's Thrall"
+	name = "Gluttony's Abomination"
 	desc = "A syringe recovered from a dread place. It has a transformative chemical, best not to use it... yet...."
 	amount_per_transfer_from_this = 1
 	volume = 1
