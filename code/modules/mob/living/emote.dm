@@ -22,6 +22,12 @@
 	message = "burps."
 	emote_type = EMOTE_AUDIBLE
 
+/datum/emote/living/belch
+	key = "belch"
+	key_third_person = "belches loudly"
+	message = "belches."
+	emote_type = EMOTE_AUDIBLE
+
 /datum/emote/living/choke
 	key = "choke"
 	key_third_person = "chokes"

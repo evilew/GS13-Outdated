@@ -60,3 +60,34 @@
 /datum/emote/living/burunyu/run_emote(mob/living/user, params)
 	playsound(user, 'GainStation13/sound/voice/funnycat.ogg', 50, 1, -1)
 	. = ..()
+
+
+/datum/emote/living/belch
+	key = "belch"
+	key_third_person = "belches loudly"
+	message = " belches"
+	emote_type = EMOTE_AUDIBLE
+
+
+	//god hates me for this -Metha
+
+/datum/emote/living/belch/run_emote(mob/living/user, params)
+	if(ishuman(user))
+
+		var/fartSoundChoice = rand(5)
+
+		switch(fartSoundChoice)
+			if (0) playsound(user, 'GainStation13/sound/voice/belch3.ogg', 50, 1, -1)
+
+			if (1) playsound(user, 'GainStation13/sound/voice/belch4.ogg', 50, 1, -1)
+
+			if (2) playsound(user, 'GainStation13/sound/voice/belch2.ogg', 50, 1, -1)
+
+			if (3) playsound(user, 'GainStation13/sound/voice/belch1.ogg', 50, 1, -1)
+
+			if (4) playsound(user, 'GainStation13/sound/voice/belch5.ogg', 50, 1, -1)
+
+			if (5) playsound(user, 'GainStation13/sound/voice/belch6.ogg', 50, 1, -1)
+
+
+	. = ..()
