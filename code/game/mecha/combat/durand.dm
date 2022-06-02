@@ -1,5 +1,5 @@
 /obj/mecha/combat/durand
-	desc = "An aging combat exosuit utilized by the Kinaris corporation. Originally developed to combat hostile alien lifeforms."
+	desc = "An aging combat exosuit utilized by the GATO corporation. Originally developed to combat hostile alien lifeforms."
 	name = "\improper Durand"
 	icon_state = "durand"
 	step_in = 4

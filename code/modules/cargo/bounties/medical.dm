@@ -48,7 +48,7 @@
 
 /datum/bounty/item/medical/lizard_tail
 	name = "Lizard Tail"
-	description = "The Wizard Federation has made off with Kinaris.Co's supply of lizard tails. While CentCom is dealing with the wizards, can the station spare a tail of their own?"
+	description = "The Wizard Federation has made off with GATO's supply of lizard tails. While CentCom is dealing with the wizards, can the station spare a tail of their own?"
 	reward = 3000
 	wanted_types = list(/obj/item/organ/tail/lizard)
 
@@ -60,7 +60,7 @@
 
 /datum/bounty/item/medical/blood
 	name = "Generic Blood"
-	description = "The Kinaris annual blood drive is back up to full speed, following the garlic incident. Good blood in good volumes accepted for Credit returns."
+	description = "The GATO annual blood drive is back up to full speed, following the garlic incident. Good blood in good volumes accepted for Credit returns."
 	reward = 3500
 	required_count = 600
 	wanted_types = list(/datum/reagent/blood)

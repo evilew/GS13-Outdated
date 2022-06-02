@@ -13,7 +13,7 @@
 
 /datum/ert/New()
 	if (!polldesc)
-		polldesc = "a Code [code] Kinaris Emergency Response Team"
+		polldesc = "a Code [code] GATO Emergency Response Team"
 
 /datum/ert/blue
 	opendoors = FALSE
@@ -35,7 +35,7 @@
 	rename_team = "Deathsquad"
 	code = "Delta"
 	mission = "Leave no witnesses."
-	polldesc = "an elite Kinaris Strike Team"
+	polldesc = "an elite GATO Strike Team"
 
 /datum/ert/centcom_official
 	code = "Green"
@@ -54,7 +54,7 @@
 	leader_role = /datum/antagonist/ert/commander/inquisitor
 	rename_team = "Inquisition"
 	mission = "Destroy any traces of paranormal activity aboard the station."
-	polldesc = "a Kinaris paranormal response team"
+	polldesc = "a GATO paranormal response team"
 
 /datum/ert/greybois
 	code = "Green"

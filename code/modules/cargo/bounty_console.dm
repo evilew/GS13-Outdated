@@ -3,8 +3,8 @@
 
 
 /obj/machinery/computer/bounty
-	name = "Kinaris.Co bounty console"
-	desc = "Used to check and claim bounties offered by Kinaris"
+	name = "GATO bounty console"
+	desc = "Used to check and claim bounties offered by GATO"
 	icon_screen = "bounty"
 	circuit = /obj/item/circuitboard/computer/bounty
 	light_color = "#E2853D"//orange
@@ -22,7 +22,7 @@
 
 /obj/item/paper/bounty_printout/Initialize()
 	. = ..()
-	info = "<h2>Kinaris.Co Cargo Bounties</h2></br>"
+	info = "<h2>GATO Cargo Bounties</h2></br>"
 	for(var/datum/bounty/B in GLOB.bounties_list)
 		if(B.claimed)
 			continue
@@ -66,7 +66,7 @@
 		dat += "</tr>"
 	dat += "</table>"
 	dat = dat.Join()
-	var/datum/browser/popup = new(user, "bounties", "Kinaris Bounties", 700, 600)
+	var/datum/browser/popup = new(user, "bounties", "GATO Bounties", 700, 600)
 	popup.set_content(dat)
 	popup.set_title_image(user.browse_rsc_icon(src.icon, src.icon_state))
 	popup.open()

@@ -149,8 +149,8 @@ GLOBAL_VAR_INIT(dynamic_chaos_level, 1.5)
 	dat += "Midround: [(midround_injection_cooldown-world.time)>60*10 ? "[round((midround_injection_cooldown-world.time)/60/10,0.1)] minutes" : "[(midround_injection_cooldown-world.time)] seconds"] <a href='?src=\ref[src];[HrefToken()];injectmid=1'>\[Now!\]</a><BR>"
 	dat += "Event: [(event_injection_cooldown-world.time)>60*10 ? "[round((event_injection_cooldown-world.time)/60/10,0.1)] minutes" : "[(event_injection_cooldown-world.time)] seconds"] <a href='?src=\ref[src];[HrefToken()];injectevent=1'>\[Now!\]</a><BR>"
 	dat += "Threat: [(threat_injection_cooldown-world.time)>60*10 ? "[round((threat_injection_cooldown-world.time)/60/10,0.1)] minutes" : "[(threat_injection_cooldown-world.time)] seconds"] <a href='?src=\ref[src];[HrefToken()];injectthreat=1'>\[Now!\]</a><BR>"
-	
-	
+
+
 	usr << browse(dat.Join(), "window=gamemode_panel;size=500x500")
 
 /datum/game_mode/dynamic/Topic(href, href_list)
@@ -215,19 +215,19 @@ GLOBAL_VAR_INIT(dynamic_chaos_level, 1.5)
 			update_playercounts()
 			if(!current_players[CURRENT_LIVING_ANTAGS].len)
 				. += "<b>Peaceful Waypoint</b></center><BR>"
-				. += "Your station orbits deep within controlled, core-sector systems and serves as a waypoint for routine traffic through friendly Kinaris space. Due to the combination of high security, interstellar traffic, and low strategic value, it makes any direct threat of violence unlikely. Your primary enemies will be incompetence and bored crewmen: try to organize team-building events to keep staffers interested and productive."
+				. += "Your station orbits deep within controlled, core-sector systems and serves as a waypoint for routine traffic through friendly GATO space. Due to the combination of high security, interstellar traffic, and low strategic value, it makes any direct threat of violence unlikely. Your primary enemies will be incompetence and bored crewmen: try to organize team-building events to keep staffers interested and productive."
 			else
 				. += "<b>Core Territory</b></center><BR>"
-				. += "Your station orbits within reliably mundane, secure space. Although Kinaris has a firm grip on security in your region, the valuable resources and strategic position aboard your station make it a potential target for infiltrations. Monitor crew for non-loyal behavior, but expect a relatively tame shift free of large-scale destruction. We expect great things from your station."
+				. += "Your station orbits within reliably mundane, secure space. Although GATO has a firm grip on security in your region, the valuable resources and strategic position aboard your station make it a potential target for infiltrations. Monitor crew for non-loyal behavior, but expect a relatively tame shift free of large-scale destruction. We expect great things from your station."
 		if(20 to 39)
 			. += "<b>Anomalous Exogeology</b></center><BR>"
-			. += "Although your station lies within what is generally considered Kinaris-controlled space, the course of its orbit has caused it to cross unusually close to exogeological features with anomalous readings. Although these features offer opportunities for our research department, it is known that these little understood readings are often correlated with increased activity from competing interstellar organizations and individuals, among them the Wizard Federation and Cult of the Geometer of Blood - all known competitors for Anomaly Type B sites. Exercise elevated caution."
+			. += "Although your station lies within what is generally considered GATO-controlled space, the course of its orbit has caused it to cross unusually close to exogeological features with anomalous readings. Although these features offer opportunities for our research department, it is known that these little understood readings are often correlated with increased activity from competing interstellar organizations and individuals, among them the Wizard Federation and Cult of the Geometer of Blood - all known competitors for Anomaly Type B sites. Exercise elevated caution."
 		if(40 to 49)
 			. += "<b>Contested System</b></center><BR>"
-			. += "Your station's orbit passes along the edge of Kinaris allied influence. While subversive elements remain the most likely threat against your station, Kinaris and hostile organizations are bolder here, where our grip is weaker. Exercise increased caution against potential Syndicate agents, and be on the lookout for any potentially anomalous activity."
+			. += "Your station's orbit passes along the edge of GATO allied influence. While subversive elements remain the most likely threat against your station, GATO and hostile organizations are bolder here, where our grip is weaker. Exercise increased caution against potential Syndicate agents, and be on the lookout for any potentially anomalous activity."
 		if(50 to 64)
 			. += "<b>Uncharted Space</b></center><BR>"
-			. += "Congratulations and thank you for participating in the Kinaris 'Frontier' space program! Your station is actively orbiting a high value system far from the nearest support stations. Little is known about your region of space, and the opportunity to encounter the unknown invites greater glory. You are encouraged to elevate security as necessary to protect your lives and station assets."
+			. += "Congratulations and thank you for participating in the GATO 'Frontier' space program! Your station is actively orbiting a high value system far from the nearest support stations. Little is known about your region of space, and the opportunity to encounter the unknown invites greater glory. You are encouraged to elevate security as necessary to protect your lives and station assets."
 			if(GLOB.security_level < SEC_LEVEL_BLUE)
 				set_security_level(SEC_LEVEL_BLUE)
 		if(65 to 89)
@@ -298,7 +298,7 @@ GLOBAL_VAR_INIT(dynamic_chaos_level, 1.5)
 	threat = threat_level
 */ //Hyper Change
 
-	threat_level = GLOB.dynamic_chaos_level * 20  //Initial threat will be based off chaos vote. 
+	threat_level = GLOB.dynamic_chaos_level * 20  //Initial threat will be based off chaos vote.
 	threat = threat_level
 
 /datum/game_mode/dynamic/can_start()
@@ -432,13 +432,13 @@ GLOBAL_VAR_INIT(dynamic_chaos_level, 1.5)
 				for (var/datum/dynamic_ruleset/roundstart/rule in drafted_rules)
 					if (rule.cost > threat)
 						drafted_rules -= rule
-				if(prob(GLOB.dynamic_chaos_level*20)) //Make round start traitors a percent chance instead of a constant.		
+				if(prob(GLOB.dynamic_chaos_level*20)) //Make round start traitors a percent chance instead of a constant.
 					if (drafted_rules.len > 0 && picking_roundstart_rule(drafted_rules))
 						if (extra_rulesets_amount > 1) // We've got enough population and threat for a third rulestart rule
 							for (var/datum/dynamic_ruleset/roundstart/rule in drafted_rules)
 								if (rule.cost > threat)
 									drafted_rules -= rule
-							if(prob(GLOB.dynamic_chaos_level*20)) //Make round start traitors a percent chance instead of a constant.	
+							if(prob(GLOB.dynamic_chaos_level*20)) //Make round start traitors a percent chance instead of a constant.
 								picking_roundstart_rule(drafted_rules)
 	else
 		return FALSE
@@ -728,7 +728,7 @@ GLOBAL_VAR_INIT(dynamic_chaos_level, 1.5)
 		else
 			chance += 25-10*(max_pop_per_antag-current_pop_per_antag)
 	*/
-	//Hyper change - Base injection chance based on chaos. 
+	//Hyper change - Base injection chance based on chaos.
 	chance = (GLOB.dynamic_chaos_level * 12) //Base chance from 0 to 60
 	if (current_players[CURRENT_DEAD_PLAYERS].len > current_players[CURRENT_LIVING_PLAYERS].len)
 		chance -= 30 // More than half the crew died? ew, let's calm down on antags

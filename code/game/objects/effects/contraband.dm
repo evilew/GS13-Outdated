@@ -264,7 +264,7 @@
 
 /obj/structure/sign/poster/contraband/power
 	name = "Power"
-	desc = "A poster that positions the seat of power outside Kinaris.Co."
+	desc = "A poster that positions the seat of power outside GATO Corp."
 	icon_state = "poster16"
 
 /obj/structure/sign/poster/contraband/space_cube
@@ -426,7 +426,7 @@
 
 /obj/structure/sign/poster/official/nanotrasen_logo
 	name = "Kinaris Logo"
-	desc = "A poster depicting the Kinaris.Co logo."
+	desc = "A poster depicting the Kinaris.Co logo, an enemy of GATO."
 	icon_state = "poster2_legit"
 
 /obj/structure/sign/poster/official/cleanliness
@@ -561,7 +561,7 @@
 
 /obj/structure/sign/poster/official/enlist
 	name = "Enlist" // but I thought deathsquad was never acknowledged
-	desc = "Enlist in the Kinaris Deathsquadron reserves today!"
+	desc = "Enlist in the GATO Deathsquadron reserves today!"
 	icon_state = "poster29_legit"
 
 /obj/structure/sign/poster/official/nanomichi_ad

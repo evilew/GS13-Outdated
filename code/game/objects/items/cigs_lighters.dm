@@ -268,7 +268,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	list_reagents = list(/datum/reagent/drug/nicotine = 7.5, /datum/reagent/silicon = 7.5)
 
 /obj/item/clothing/mask/cigarette/smokekins
-	desc = "A Kinaris Corp brand cigarette"
+	desc = "A GATO Corp brand cigarette"
 	list_reagents = list(/datum/reagent/drug/nicotine = 7.5, /datum/reagent/gold = 1)
 
 /obj/item/clothing/mask/cigarette/uplift

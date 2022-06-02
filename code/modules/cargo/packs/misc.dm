@@ -115,7 +115,7 @@
 
 /datum/supply_pack/misc/bicycle
 	name = "Bicycle"
-	desc = "Kinaris reminds all employees to never toy with powers outside their control."
+	desc = "GATO reminds all employees to never toy with powers outside their control."
 	cost = 1000000
 	contains = list(/obj/vehicle/ridden/bicycle)
 	crate_name = "Bicycle Crate"
@@ -139,7 +139,7 @@
 
 /datum/supply_pack/misc/book_crate
 	name = "Book Crate"
-	desc = "Surplus from the Kinaris Archives, these five books are sure to be good reads."
+	desc = "Surplus from the GATO Archives, these five books are sure to be good reads."
 	cost = 1500
 	contains = list(/obj/item/book/codex_gigas,
 					/obj/item/book/manual/random/,
@@ -222,7 +222,7 @@
 
 /datum/supply_pack/misc/paper_work
 	name = "Freelance Paper work"
-	desc = "The Kinaris Primary Bureaucratic Database Intelligence (PDBI) reports that the station has not completed its funding and grant paperwork this solar cycle. In order to gain further funding, your station is required to fill out (20) ten of these forms or no additional capital will be disbursed. We have sent you ten copies of the following form and we expect every one to be up to Kinaris Standards." // Disbursement. It's not a typo, look it up.
+	desc = "The GATO Primary Bureaucratic Database Intelligence (PDBI) reports that the station has not completed its funding and grant paperwork this solar cycle. In order to gain further funding, your station is required to fill out (20) ten of these forms or no additional capital will be disbursed. We have sent you ten copies of the following form and we expect every one to be up to Kinaris Standards." // Disbursement. It's not a typo, look it up.
 	cost = 700 // Net of 0 credits but makes (120 x 20 = 2400)
 	contains = list(/obj/item/folder/paperwork,
 					/obj/item/folder/paperwork,

@@ -276,7 +276,7 @@
 
 /obj/item/surgical_drapes
 	name = "surgical drapes"
-	desc = "Kinaris brand surgical drapes provide optimal safety and infection control."
+	desc = "GATO brand surgical drapes provide optimal safety and infection control."
 	icon = 'icons/obj/surgery.dmi'
 	icon_state = "surgical_drapes"
 	w_class = WEIGHT_CLASS_TINY

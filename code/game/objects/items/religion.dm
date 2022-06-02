@@ -162,7 +162,7 @@
 	desc = "A banner with the logo of the blue deity."
 
 /obj/item/storage/backpack/bannerpack
-	name = "Kinaris banner backpack"
+	name = "GATO banner backpack"
 	desc = "It's a backpack with lots of extra room.  A banner with Kinaris's logo is attached, that can't be removed."
 	icon_state = "bannerpack"
 

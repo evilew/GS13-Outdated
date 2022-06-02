@@ -197,7 +197,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 
 /datum/quirk/lightless
 	name = "Light Sensitivity"
-	desc = "Bright lights irritate you. Your eyes start to water, your skin feels itchy against the photon radiation, and your hair gets dry and frizzy. Maybe it's a medical condition. If only Kinaris was more considerate of your needs..."
+	desc = "Bright lights irritate you. Your eyes start to water, your skin feels itchy against the photon radiation, and your hair gets dry and frizzy. Maybe it's a medical condition. If only GATO was more considerate of your needs..."
 	value = -1
 	category = CATEGORY_BODY
 	gain_text = "<span class='danger'>The safety of light feels off...</span>"

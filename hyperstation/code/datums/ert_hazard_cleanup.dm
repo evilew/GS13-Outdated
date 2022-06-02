@@ -26,7 +26,7 @@
 	//\an [name] because modularization is nice
 	to_chat(owner, "You are \an [name].\n\
 		Your job is to remove all nuclear waste and residue contaminants from [station_name()], \
-		under orders of Kinaris's Crew Health and Safety Division, as formerly as possible.\n\
+		under orders of GATO's Crew Health and Safety Division, as formerly as possible.\n\
 		You are not required to repair any construction damages, as you are not equipped for such.")
 
 /datum/team/ert/cleanup

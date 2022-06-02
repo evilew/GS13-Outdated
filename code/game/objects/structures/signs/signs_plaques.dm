@@ -15,7 +15,7 @@
 
 /obj/structure/sign/plaques/golden
 	name = "CEO of the Millennia"
-	desc = "The CEO of Kinaris, adorned with a lack of expression and the heart for extended space colonization at the forefront of advanced light technology, at odds with Nanotrasen."
+	desc = "The CEO of GATO, adorned with a lack of expression and the heart for extended space colonization at the forefront of advanced light technology, at odds with Nanotrasen."
 	icon_state = "goldenplaque"
 
 /obj/structure/sign/plaques/golden/captain

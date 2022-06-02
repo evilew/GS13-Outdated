@@ -6,7 +6,7 @@
 
 /datum/bounty/item/chef/soup
 	name = "Soup"
-	description = "To quell the homeless uprising, Kinaris will be serving soup to all underpaid workers. Ship any type of soup."
+	description = "To quell the homeless uprising, GATO will be serving soup to all underpaid workers. Ship any type of soup."
 	reward = 700
 	required_count = 3
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/soup)
@@ -20,7 +20,7 @@
 
 /datum/bounty/item/chef/onionrings
 	name = "Onion Rings"
-	description = "Kinaris.co is remembering Saturn day. Ship onion rings to show the station's support."
+	description = "GATO is remembering Saturn day. Ship onion rings to show the station's support."
 	reward = 800
 	required_count = 3
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/onionrings)
@@ -78,7 +78,7 @@
 
 /datum/bounty/item/chef/hotdog
 	name = "Hot Dog"
-	description = "Kinaris.co is conducting taste tests to determine the best hot dog recipe. Ship your station's version to participate."
+	description = "GATO is conducting taste tests to determine the best hot dog recipe. Ship your station's version to participate."
 	reward = 4000
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/hotdog)
 
@@ -98,7 +98,7 @@
 
 /datum/bounty/item/chef/chawanmushi
 	name = "Chawanmushi"
-	description = "Kinaris.Co wants to improve relations with its sister company, Donk.Co. Ship Chawanmushi immediately."
+	description = "GATO wants to improve relations with its sister company, Donk.Co. Ship Chawanmushi immediately."
 	reward = 5000
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/chawanmushi)
 

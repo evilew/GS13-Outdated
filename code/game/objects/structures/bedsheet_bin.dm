@@ -119,7 +119,7 @@ LINEN BINS
 
 /obj/item/bedsheet/captain
 	name = "captain's bedsheet"
-	desc = "It has a Kinaris symbol on it, and was woven with a revolutionary new kind of thread guaranteed to have 0.01% permeability for most non-chemical substances, popular among most modern captains."
+	desc = "It has a nice cat shaped patter on it, and was woven with a revolutionary new kind of thread guaranteed to have 0.01% permeability for most non-chemical substances, popular among most modern captains."
 	icon_state = "sheetcaptain"
 	item_color = "captain"
 	dream_messages = list("authority", "a golden ID", "sunglasses", "a green disc", "an antique gun", "the captain")
@@ -218,8 +218,8 @@ LINEN BINS
 	dream_messages = list("a book", "an explosion", "lightning", "a staff", "a skeleton", "a robe", "magic")
 
 /obj/item/bedsheet/nanotrasen
-	name = "Kinaris bedsheet"
-	desc = "It has the Kinaris.Co logo on it and has an aura of duty."
+	name = "Nanotransen bedsheet"
+	desc = "It has the has an aura of duty."
 	icon_state = "sheetNT"
 	item_color = "nanotrasen"
 	dream_messages = list("authority", "an ending")
