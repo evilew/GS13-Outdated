@@ -40,9 +40,7 @@
 				/obj/item/reagent_containers/food/snacks/salad/fruit = 15,
 				/obj/item/reagent_containers/food/snacks/salad = 20,
 				/obj/item/reagent_containers/food/snacks/salad/hellcobb =10,
-
-
-
+				/obj/item/clothing/under/cowkini = 5,
 				)
 	premium = list(
 				/obj/item/reagent_containers/food/drinks/soda_cans/air = 1,
