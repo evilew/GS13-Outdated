@@ -3072,6 +3072,7 @@
 #include "GainStation13\code\modules\reagents\chemistry\recipes\fatchem.dm"
 #include "GainStation13\code\modules\vending\mealdor.dm"
 #include "GainStation13\code\obj\fatray.dm"
+#include "GainStation13\code\obj\structure\scale.dm"
 #include "hyperstation\code\__DEFINES\economy.dm"
 #include "hyperstation\code\__DEFINES\wendigo.dm"
 #include "hyperstation\code\controllers\subsystem\economy.dm"
