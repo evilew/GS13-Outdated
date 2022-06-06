@@ -1,6 +1,6 @@
 /obj/structure/scale
 	name = "weighing scale"
-	desc = "You can weigh yourself with this"
+	desc = "You can weigh yourself with this. Its last reading was: [src.lastreading]Lbs"
 	icon = 'GainStation13/icons/obj/scale.dmi'
 	icon_state = "scale"
 	anchored = TRUE
@@ -39,6 +39,19 @@
 /obj/structure/chair/examine(mob/user)
 	. = ..()
 	. += "<span class='notice'>It's held together by a couple of <b>bolts</b>.</span>"
-	if(!has_buckled_mobs())
-		. += "<span class='notice'>Drag your sprite to weigh yourself.</span>"
 
+/obj/structure/scale/Crossed(AM)
+
+	if(AM.ishuman())
+		var/mob/living/fatty = AM 
+
+		if(isturf(loc))
+
+			if(!(fatty.movement_type & FLYING))
+
+				
+				src.lastreading = (150 + fatty.fatness)*(fatty.size_multiplier**2)
+				usr.visible_message("[usr] weighs themselves on the scales.", "You weigh yourself on the scales")
+				usr.visible_message("<span class='notice'> The scales read [src.lastreading]Lbs </span>")
+			
+			
