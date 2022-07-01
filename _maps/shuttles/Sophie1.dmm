@@ -17,7 +17,6 @@
 	name = "Sophie 1 Kitchen"
 	})
 "ac" = (
-/obj/structure/sign/warning/docking,
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/abandoned/crew{
 	name = "Sophie1 crew quarters"
@@ -67,6 +66,7 @@
 	name = "Sophie 1 Kitchen"
 	})
 "ah" = (
+/obj/structure/sign/warning/docking,
 /turf/closed/wall/mineral/titanium,
 /area/shuttle/abandoned/engine{
 	name = "Sophie1 engine"
@@ -383,16 +383,23 @@
 	name = "Sophie1 crew quarters"
 	})
 "aH" = (
-/obj/structure/sign/nanotrasen,
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/structure/fans/tiny,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"aI" = (
+/obj/structure/sign/warning/docking,
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/abandoned/medbay{
 	name = "Sophie1 medbay"
-	})
-"aI" = (
-/obj/structure/sign/poster/official/fruit_bowl,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/abandoned/cargo{
-	name = "Sophie1 lounge"
 	})
 "aJ" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -417,10 +424,13 @@
 	name = "Sophie1 crew quarters"
 	})
 "aK" = (
-/obj/structure/sign/poster/contraband/red_rum,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/abandoned/bar{
-	name = "Sophie 1 Kitchen"
+/obj/machinery/power/terminal,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
 	})
 "aL" = (
 /obj/effect/turf_decal/tile/bar,
@@ -688,6 +698,12 @@
 	name = "Sophie 1 Kitchen"
 	})
 "be" = (
+/obj/structure/sign/nanotrasen,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"bf" = (
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
@@ -695,12 +711,6 @@
 /turf/open/floor/plasteel,
 /area/shuttle/abandoned/bar{
 	name = "Sophie 1 Kitchen"
-	})
-"bf" = (
-/obj/structure/sign/poster/contraband/eat,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/abandoned/cargo{
-	name = "Sophie1 lounge"
 	})
 "bg" = (
 /obj/structure/window/reinforced{
@@ -728,12 +738,6 @@
 	name = "Sophie 1 Kitchen"
 	})
 "bi" = (
-/obj/structure/sign/warning/docking,
-/turf/closed/wall/mineral/titanium,
-/area/shuttle/abandoned/engine{
-	name = "Sophie1 engine"
-	})
-"bj" = (
 /obj/effect/spawner/structure/window/shuttle,
 /obj/machinery/door/poddoor{
 	id = "whiteship_windows"
@@ -741,6 +745,12 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/abandoned/bar{
 	name = "Sophie 1 Kitchen"
+	})
+"bj" = (
+/obj/structure/sign/poster/official/fruit_bowl,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
 	})
 "bk" = (
 /obj/effect/turf_decal/stripes/corner{
@@ -880,7 +890,7 @@
 	name = "Sophie1 crew quarters"
 	})
 "bu" = (
-/obj/machinery/computer/security/telescreen/entertainment,
+/obj/structure/sign/barsign,
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/abandoned/cargo{
 	name = "Sophie1 lounge"
@@ -991,11 +1001,6 @@
 	name = "Sophie1 crew quarters"
 	})
 "bG" = (
-/obj/machinery/door/airlock/external,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
-/obj/structure/fans/tiny,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -1257,8 +1262,8 @@
 "ca" = (
 /obj/structure/sign/nanotrasen,
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/abandoned/crew{
-	name = "Sophie1 crew quarters"
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
 	})
 "cb" = (
 /obj/structure/cable{
@@ -1387,7 +1392,8 @@
 	dir = 1
 	},
 /obj/machinery/power/smes/engineering{
-	charge = 4e+006
+	charge = 4e+006;
+	output_level = 10000
 	},
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -1448,10 +1454,9 @@
 	name = "Sophie1 bridge"
 	})
 "cn" = (
-/obj/structure/sign/poster/contraband/donut_corp,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/abandoned/bar{
-	name = "Sophie 1 Kitchen"
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
 	})
 "co" = (
 /obj/structure/chair/comfy/shuttle{
@@ -1606,10 +1611,17 @@
 	name = "Sophie1 engine"
 	})
 "cC" = (
-/obj/structure/sign/barsign,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/abandoned/cargo{
-	name = "Sophie1 lounge"
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 4
+	},
+/obj/structure/closet/secure_closet/freezer/kitchen,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
 	})
 "cD" = (
 /obj/machinery/firealarm{
@@ -1662,9 +1674,8 @@
 	name = "Sophie1 lounge"
 	})
 "cK" = (
-/obj/machinery/firealarm{
-	dir = 1;
-	pixel_y = -24
+/obj/machinery/airalarm/all_access{
+	pixel_y = 24
 	},
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4
@@ -1845,10 +1856,10 @@
 	name = "Sophie1 lounge"
 	})
 "da" = (
-/obj/structure/sign/poster/official/bless_this_spess,
+/obj/machinery/computer/security/telescreen/entertainment,
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/abandoned/crew{
-	name = "Sophie1 crew quarters"
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
 	})
 "db" = (
 /obj/machinery/light/small{
@@ -2180,9 +2191,10 @@
 	name = "Sophie1 lounge"
 	})
 "dz" = (
+/obj/structure/sign/poster/contraband/donut_corp,
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/abandoned/crew{
-	name = "Sophie1 crew quarters"
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
 	})
 "dA" = (
 /obj/effect/turf_decal/stripes/line{
@@ -2304,12 +2316,10 @@
 	name = "Sophie1 lounge"
 	})
 "dM" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plating,
-/area/shuttle/abandoned/engine{
-	name = "Sophie1 engine"
+/obj/structure/sign/warning/docking,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
 	})
 "dN" = (
 /obj/structure/table,
@@ -2476,22 +2486,9 @@
 /area/shuttle/abandoned/medbay{
 	name = "Sophie1 medbay"
 	})
-"es" = (
-/obj/structure/sign/warning/docking,
+"hH" = (
+/obj/structure/sign/poster/contraband/red_rum,
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/abandoned/medbay{
-	name = "Sophie1 medbay"
-	})
-"hJ" = (
-/obj/effect/turf_decal/tile/bar,
-/obj/effect/turf_decal/tile/bar{
-	dir = 1
-	},
-/obj/effect/turf_decal/stripes/white/line{
-	dir = 4
-	},
-/obj/structure/closet/secure_closet/freezer/kitchen,
-/turf/open/floor/plasteel,
 /area/shuttle/abandoned/bar{
 	name = "Sophie 1 Kitchen"
 	})
@@ -2512,21 +2509,16 @@
 /area/shuttle/abandoned/crew{
 	name = "Sophie1 crew quarters"
 	})
-"vm" = (
+"qB" = (
+/obj/structure/sign/poster/contraband/eat,
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/abandoned/medbay{
-	name = "Sophie1 medbay"
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
 	})
-"DZ" = (
-/obj/effect/turf_decal/delivery/white,
-/obj/machinery/suit_storage_unit/standard_unit,
-/turf/open/floor/plasteel/dark,
-/area/shuttle/abandoned/medbay{
-	name = "Sophie1 medbay"
-	})
-"Gd" = (
-/obj/machinery/airalarm/all_access{
-	pixel_y = 24
+"tp" = (
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
 	},
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4
@@ -2535,20 +2527,29 @@
 /area/shuttle/abandoned/cargo{
 	name = "Sophie1 lounge"
 	})
-"Kd" = (
-/obj/machinery/power/terminal,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/turf/open/floor/plating,
-/area/shuttle/abandoned/engine{
-	name = "Sophie1 engine"
+"vm" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
 	})
-"RJ" = (
+"xD" = (
 /obj/structure/sign/warning/nosmoking/circle,
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/abandoned/bridge{
 	name = "Sophie1 bridge"
+	})
+"DZ" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/machinery/suit_storage_unit/standard_unit,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"Fd" = (
+/obj/structure/sign/poster/official/bless_this_spess,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
 	})
 "SY" = (
 /obj/effect/spawner/structure/window/shuttle,
@@ -2565,15 +2566,15 @@ aa
 aa
 aa
 aa
-ah
-ay
-aM
-bi
-bG
-bi
+cn
 ay
 aM
 ah
+aH
+ah
+ay
+aM
+cn
 aa
 aa
 aa
@@ -2581,21 +2582,21 @@ aa
 "}
 (2,1,1) = {"
 aa
-ah
+cn
 ay
 aM
 ai
 az
 az
 ai
-dM
+bG
 cc
 az
 az
 ai
 ay
 aM
-ah
+cn
 aa
 "}
 (3,1,1) = {"
@@ -2607,7 +2608,7 @@ ai
 by
 bP
 bV
-Kd
+aK
 ck
 cs
 cB
@@ -2643,7 +2644,7 @@ aB
 dd
 bl
 bA
-RJ
+xD
 bB
 bB
 bB
@@ -2675,9 +2676,9 @@ ai
 aa
 "}
 (7,1,1) = {"
-dz
-dz
-dz
+ac
+ac
+ac
 aQ
 bn
 bC
@@ -2694,7 +2695,7 @@ vm
 iM
 "}
 (8,1,1) = {"
-dz
+ac
 aj
 aC
 aR
@@ -2713,11 +2714,11 @@ dN
 vm
 "}
 (9,1,1) = {"
-dz
+ac
 ak
 aD
 aS
-dz
+ac
 bB
 bT
 bZ
@@ -2732,11 +2733,11 @@ vm
 vm
 "}
 (10,1,1) = {"
-dz
-dz
-dz
+ac
+ac
+ac
 aT
-dz
+ac
 bE
 bT
 bT
@@ -2770,9 +2771,9 @@ di
 SY
 "}
 (12,1,1) = {"
-dz
-dz
-dz
+ac
+ac
+ac
 aU
 bq
 cb
@@ -2793,13 +2794,13 @@ bI
 am
 aF
 aV
-dz
+ac
 bH
-dz
+ac
 bI
-da
+Fd
 bI
-dz
+ac
 cF
 cR
 dm
@@ -2808,18 +2809,18 @@ dR
 SY
 "}
 (14,1,1) = {"
-dz
-dz
-dz
+ac
+ac
+ac
 aJ
-dz
-dz
+ac
+ac
 cw
 aa
 aa
 aa
 cw
-dz
+ac
 vm
 dq
 vm
@@ -2827,12 +2828,12 @@ vm
 vm
 "}
 (15,1,1) = {"
-ac
+dM
 an
-ca
+be
 aX
 br
-dz
+ac
 aa
 aa
 aa
@@ -2841,9 +2842,9 @@ aa
 vm
 cU
 dn
-aH
+ca
 dS
-es
+aI
 "}
 (16,1,1) = {"
 ad
@@ -2865,12 +2866,12 @@ dT
 eb
 "}
 (17,1,1) = {"
+dM
 ac
-dz
-ca
+be
 aZ
 bt
-dz
+ac
 aa
 aa
 aa
@@ -2879,9 +2880,9 @@ aa
 vm
 cV
 dp
-aH
+ca
 vm
-es
+aI
 "}
 (18,1,1) = {"
 ae
@@ -2903,7 +2904,7 @@ dU
 dv
 "}
 (19,1,1) = {"
-aK
+hH
 ab
 at
 ba
@@ -2924,9 +2925,9 @@ dv
 (20,1,1) = {"
 af
 aq
-be
+bf
 bb
-be
+bf
 bJ
 af
 aa
@@ -2943,28 +2944,28 @@ cz
 (21,1,1) = {"
 ae
 ar
-be
+bf
 bc
-be
+bf
 bK
 ae
 aa
 aa
 aa
-aI
+bj
 cI
 dL
 du
 cZ
 dX
-cC
+bu
 "}
 (22,1,1) = {"
 ae
 as
-be
-be
-be
+bf
+bf
+bf
 bL
 ae
 aa
@@ -2980,9 +2981,9 @@ dv
 "}
 (23,1,1) = {"
 ae
-hJ
+cC
 aL
-be
+bf
 bx
 au
 ae
@@ -2990,17 +2991,17 @@ aa
 aa
 aa
 dv
-Gd
+cK
 db
 dL
 db
-cK
+tp
 dv
 "}
 (24,1,1) = {"
 af
 av
-cn
+dz
 bg
 ae
 bN
@@ -3010,9 +3011,9 @@ aa
 aa
 cz
 cL
-bu
+da
 dw
-bf
+qB
 dZ
 cz
 "}
@@ -3039,7 +3040,7 @@ dv
 ag
 ae
 ae
-bj
+bi
 ae
 ae
 ag
@@ -3058,7 +3059,7 @@ cA
 aa
 ax
 ae
-bj
+bi
 ae
 ax
 aa
