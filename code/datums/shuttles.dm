@@ -419,6 +419,10 @@
 	suffix = "delta"
 	name = "NT Frigate"
 
+/datum/map_template/shuttle/whiteship/Sophie1
+	suffix = "Sophie1"
+	name = "Sophie's Ship"
+
 /datum/map_template/shuttle/whiteship/pod
 	suffix = "whiteship_pod"
 	name = "Salvage Pod"
