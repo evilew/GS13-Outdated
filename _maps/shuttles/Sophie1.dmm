@@ -1,0 +1,3069 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/turf/template_noop,
+/area/template_noop)
+"ab" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/structure/table,
+/obj/machinery/reagentgrinder,
+/obj/item/reagent_containers/food/drinks/shaker{
+	step_x = -10
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"ac" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"ad" = (
+/obj/machinery/door/airlock/external,
+/obj/structure/fans/tiny,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/docking_port/mobile{
+	callTime = 250;
+	dheight = 0;
+	dir = 2;
+	dwidth = 11;
+	height = 17;
+	id = "whiteship";
+	launch_status = 0;
+	movement_force = list("KNOCKDOWN"=0,"THROW"=0);
+	name = "NT Frigate";
+	port_direction = 8;
+	preferred_direction = 4;
+	width = 27
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"ae" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"af" = (
+/obj/effect/spawner/structure/window/shuttle,
+/obj/machinery/door/poddoor{
+	id = "whiteship_windows"
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"ag" = (
+/obj/machinery/porta_turret/centcom_shuttle/weak{
+	dir = 4
+	},
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"ah" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"ai" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"aj" = (
+/obj/machinery/shower{
+	pixel_y = 15
+	},
+/obj/item/soap,
+/obj/structure/curtain,
+/obj/machinery/light/small,
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"ak" = (
+/obj/structure/toilet{
+	pixel_y = 16
+	},
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 11
+	},
+/obj/structure/mirror{
+	pixel_x = 28
+	},
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"al" = (
+/obj/structure/bed,
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
+/obj/machinery/airalarm/all_access{
+	dir = 8;
+	pixel_x = 24
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/item/bedsheet/hop,
+/turf/open/floor/wood,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"am" = (
+/obj/structure/bed,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
+/obj/machinery/airalarm/all_access{
+	dir = 8;
+	pixel_x = 24
+	},
+/obj/item/bedsheet/runtime,
+/turf/open/floor/wood,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"an" = (
+/obj/structure/closet/emcloset/anchored,
+/obj/item/storage/firstaid/o2{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/machinery/camera{
+	network = list("Sophie1");
+	name = "Frigate Camera";
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"ao" = (
+/obj/structure/sign/warning/vacuum/external{
+	pixel_x = 32
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"ap" = (
+/obj/machinery/vending/boozeomat/all_access,
+/obj/effect/decal/cleanable/dirt{
+	desc = "A thin layer of dust coating the floor.";
+	name = "dust"
+	},
+/obj/effect/decal/cleanable/dirt{
+	desc = "A thin layer of dust coating the floor.";
+	name = "dust"
+	},
+/obj/effect/decal/cleanable/dirt{
+	desc = "A thin layer of dust coating the floor.";
+	name = "dust"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"aq" = (
+/obj/structure/table,
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/machinery/chem_dispenser/drinks/beer,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"ar" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/structure/table,
+/obj/machinery/chem_dispenser/drinks,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"as" = (
+/obj/machinery/firealarm{
+	pixel_y = 24
+	},
+/obj/structure/closet/crate/bin,
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"at" = (
+/obj/structure/cable{
+	icon_state = "0-2";
+	pixel_y = 1
+	},
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "Frigate Bar APC";
+	pixel_x = -24;
+	req_access = null
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"au" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 4
+	},
+/obj/structure/closet/secure_closet/freezer/kitchen,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"av" = (
+/obj/effect/turf_decal/bot_white,
+/obj/structure/closet/crate,
+/obj/item/reagent_containers/glass/beaker/waterbottle/large{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/beaker/waterbottle/large,
+/obj/item/reagent_containers/glass/beaker/waterbottle/large{
+	pixel_x = 3;
+	pixel_y = -3
+	},
+/obj/item/reagent_containers/glass/beaker/waterbottle{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/beaker/waterbottle,
+/obj/item/reagent_containers/glass/beaker/waterbottle{
+	pixel_x = 3;
+	pixel_y = -3
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"aw" = (
+/obj/effect/turf_decal/bot_white,
+/obj/structure/closet/crate,
+/obj/item/reagent_containers/food/snacks/candy{
+	pixel_x = -3;
+	pixel_y = 1
+	},
+/obj/item/reagent_containers/food/snacks/candy,
+/obj/item/reagent_containers/food/snacks/candy{
+	pixel_x = 3;
+	pixel_y = -1
+	},
+/obj/item/reagent_containers/food/snacks/cookie{
+	pixel_x = -2;
+	pixel_y = -2
+	},
+/obj/item/reagent_containers/food/snacks/cookie{
+	pixel_x = -5;
+	pixel_y = -5
+	},
+/obj/item/reagent_containers/food/snacks/chocolatebar,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"ax" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"ay" = (
+/obj/structure/shuttle/engine/propulsion/left{
+	dir = 8
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"az" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/shuttle/engine/heater{
+	dir = 8
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"aA" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/reagent_dispensers/watertank,
+/obj/item/reagent_containers/glass/bucket,
+/obj/item/mop,
+/obj/item/storage/bag/trash{
+	pixel_x = 6
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"aB" = (
+/obj/structure/reagent_dispensers/fueltank,
+/obj/item/weldingtool/largetank,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"aC" = (
+/obj/structure/sign/departments/restroom,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"aD" = (
+/obj/machinery/door/airlock{
+	name = "Restroom"
+	},
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"aE" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/door/airlock{
+	name = "Cabin 2"
+	},
+/turf/open/floor/wood,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"aF" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/door/airlock{
+	name = "Cabin 1"
+	},
+/turf/open/floor/wood,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"aG" = (
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"aH" = (
+/obj/structure/sign/warning/docking,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"aI" = (
+/obj/structure/sign/poster/contraband/red_rum,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"aJ" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt{
+	desc = "A thin layer of dust coating the floor.";
+	name = "dust"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/door/airlock/external/glass{
+	name = "E.V.A Access"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"aK" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"aL" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"aM" = (
+/obj/structure/shuttle/engine/propulsion/right{
+	dir = 8
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"aN" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 6
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"aQ" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"aR" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"aS" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"aT" = (
+/obj/machinery/light/small,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/airalarm/all_access{
+	pixel_y = 24
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"aU" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 1
+	},
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "Frigate Crew Quarters APC";
+	pixel_y = 24;
+	req_access = null
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"aV" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/machinery/light/small,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"aW" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt{
+	desc = "A thin layer of dust coating the floor.";
+	name = "dust"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/door/airlock/external/glass{
+	name = "E.V.A Access"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/fans/tiny,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"aX" = (
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 6
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark{
+	dir = 8
+	},
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"aY" = (
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"aZ" = (
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 10
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 1
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"ba" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"bb" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"bc" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"bd" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/machinery/vending/dinnerware,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"be" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"bf" = (
+/obj/structure/sign/nanotrasen,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"bg" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/processor,
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"bh" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/effect/spawner/structure/window/shuttle,
+/obj/machinery/door/poddoor{
+	id = "whiteship_windows"
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"bi" = (
+/obj/effect/spawner/structure/window/shuttle,
+/obj/machinery/door/poddoor{
+	id = "whiteship_windows"
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"bj" = (
+/obj/structure/sign/barsign,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"bk" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/machinery/airalarm/all_access{
+	dir = 4;
+	pixel_x = -24
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"bl" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"bm" = (
+/obj/structure/sign/departments/engineering,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"bn" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"bo" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 1
+	},
+/obj/item/storage/wallet/random,
+/obj/item/clothing/under/rank/centcom_officer{
+	desc = "A badge on the arm indicates that it's meant to be worn by CentCom recovery teams. This one seems dusty and clearly hasn't been cleaned in some time.";
+	name = "\improper dusty old CentCom jumpsuit"
+	},
+/obj/item/clothing/under/rank/centcom_commander{
+	desc = "A badge on the arm indicates that it's meant to be worn by CentCom recovery teams. This one seems dusty and clearly hasn't been cleaned in some time.";
+	name = "\improper dusty old CentCom jumpsuit"
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/structure/closet,
+/obj/machinery/camera{
+	network = list("Sophie1");
+	name = "Frigate Camera";
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"bp" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/public/glass{
+	name = "Crew Quarters"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"bq" = (
+/obj/machinery/door/firedoor,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/door/airlock/public/glass{
+	name = "Crew Quarters"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"br" = (
+/obj/effect/turf_decal/bot_white,
+/obj/structure/table,
+/obj/item/stack/sheet/glass/fifty{
+	pixel_x = -2;
+	pixel_y = 2
+	},
+/obj/item/stack/rods/fifty,
+/obj/item/wrench,
+/obj/item/t_scanner,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"bs" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/machinery/suit_storage_unit/standard_unit,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"bt" = (
+/obj/effect/turf_decal/bot_white,
+/obj/structure/rack,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/clothing/head/welding{
+	pixel_x = -3;
+	pixel_y = 5
+	},
+/obj/machinery/airalarm/all_access{
+	dir = 1;
+	pixel_y = -24
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"bu" = (
+/obj/machinery/power/terminal,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"bw" = (
+/obj/structure/table,
+/obj/machinery/microwave,
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"bx" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/structure/closet/secure_closet/freezer/kitchen,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"by" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/portables_connector/visible,
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"bz" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"bA" = (
+/obj/structure/table,
+/obj/item/storage/toolbox/mechanical{
+	pixel_y = 4
+	},
+/obj/item/flashlight{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/clothing/head/welding{
+	pixel_x = -2;
+	pixel_y = 1
+	},
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 24
+	},
+/obj/item/multitool{
+	pixel_y = -13
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"bB" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/bridge{
+	name = "Sophie1 bridge"
+	})
+"bC" = (
+/obj/machinery/door/airlock/command{
+	name = "Bridge"
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Sophie1 bridge"
+	})
+"bD" = (
+/obj/structure/sign/nanotrasen,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/bridge{
+	name = "Sophie1 bridge"
+	})
+"bE" = (
+/obj/machinery/vending/cola/black,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"bF" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 4
+	},
+/obj/structure/closet/secure_closet/freezer/meat,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"bG" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/effect/turf_decal/tile/blue,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"bH" = (
+/obj/structure/closet/firecloset{
+	anchored = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"bI" = (
+/obj/effect/spawner/structure/window/shuttle,
+/obj/machinery/door/poddoor{
+	id = "whiteship_windows"
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"bJ" = (
+/obj/structure/table,
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"bK" = (
+/obj/structure/table,
+/obj/item/storage/fancy/donut_box,
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/machinery/camera{
+	network = list("Sophie1");
+	name = "Frigate Camera";
+	dir = 1
+	},
+/obj/machinery/airalarm/all_access{
+	dir = 1;
+	pixel_y = -24
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"bL" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/structure/sink/kitchen{
+	pixel_y = -7;
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"bM" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4
+	},
+/obj/item/beacon,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"bN" = (
+/obj/effect/turf_decal/bot_white,
+/obj/machinery/space_heater,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"bO" = (
+/obj/effect/turf_decal/bot_white,
+/obj/structure/rack,
+/obj/item/crowbar,
+/obj/item/wrench,
+/obj/item/multitool,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bar{
+	name = "Sophie 1 Kitchen"
+	})
+"bP" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 8
+	},
+/obj/machinery/meter,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"bQ" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"bR" = (
+/obj/machinery/turretid{
+	icon_state = "control_kill";
+	lethal = 1;
+	locked = 0;
+	pixel_x = -28;
+	req_access = null
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Sophie1 bridge"
+	})
+"bS" = (
+/obj/structure/table,
+/obj/item/folder/blue{
+	pixel_x = 6;
+	pixel_y = 5
+	},
+/obj/item/pen{
+	pixel_x = 5;
+	pixel_y = 3
+	},
+/obj/machinery/recharger,
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Sophie1 bridge"
+	})
+"bT" = (
+/obj/machinery/door/firedoor,
+/obj/effect/spawner/structure/window/shuttle,
+/obj/machinery/door/poddoor{
+	id = "whiteship_bridge"
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bridge{
+	name = "Sophie1 bridge"
+	})
+"bU" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/airalarm/all_access{
+	dir = 8;
+	pixel_x = 24
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"bV" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 1
+	},
+/obj/machinery/light/small{
+	brightness = 3;
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"bW" = (
+/obj/structure/table,
+/obj/item/paper_bin{
+	pixel_x = -4
+	},
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = -24
+	},
+/obj/item/pen{
+	pixel_x = -4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/item/gun/energy/laser/retro{
+	name = "Sophie's laser gun";
+	desc = "Never been fired and only dropped once."
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Sophie1 bridge"
+	})
+"bX" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Sophie1 bridge"
+	})
+"bY" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Sophie1 bridge"
+	})
+"bZ" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/machinery/computer/security{
+	dir = 8;
+	network = list("Sophie1");
+	name = "frigate security camera console"
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Sophie1 bridge"
+	})
+"ca" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"cb" = (
+/obj/structure/sign/poster/official/bless_this_spess,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"cc" = (
+/obj/structure/sign/warning/electricshock,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/engine)
+"cd" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/camera{
+	network = list("Sophie1");
+	name = "Frigate Camera";
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"ce" = (
+/obj/structure/table,
+/obj/item/storage/photo_album{
+	pixel_y = 12
+	},
+/obj/item/camera,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "Frigate Bridge APC";
+	pixel_x = -24;
+	req_access = null
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/machinery/camera{
+	network = list("Sophie1");
+	name = "Frigate Camera";
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Sophie1 bridge"
+	})
+"cf" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 8
+	},
+/mob/living/simple_animal/pet/cat/space{
+	name = "Jasper";
+	desc = "A certain HoP's adopted pet and trusted co-pilot."
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Sophie1 bridge"
+	})
+"cg" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Sophie1 bridge"
+	})
+"ch" = (
+/obj/machinery/computer/shuttle/white_ship{
+	dir = 8;
+	name = "Sophie1 Ship Console"
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Sophie1 bridge"
+	})
+"cj" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/quantumpad,
+/obj/machinery/camera{
+	network = list("Sophie1");
+	name = "Frigate Camera";
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"ck" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/machinery/power/smes/engineering{
+	charge = 4e+006
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/light/small{
+	brightness = 3;
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"cl" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "Frigate Engineering APC";
+	pixel_x = 24;
+	req_access = null
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"cm" = (
+/obj/structure/table,
+/obj/item/radio/off{
+	pixel_x = 6;
+	pixel_y = 14
+	},
+/obj/item/gps{
+	gpstag = "SPH1";
+	pixel_x = -9;
+	pixel_y = 15
+	},
+/obj/item/megaphone,
+/obj/machinery/airalarm/all_access{
+	dir = 4;
+	pixel_x = -24
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Sophie1 bridge"
+	})
+"cn" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"co" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Sophie1 bridge"
+	})
+"cp" = (
+/obj/machinery/computer/camera_advanced/shuttle_docker/whiteship{
+	dir = 8;
+	x_offset = -2;
+	y_offset = -8;
+	name = "Sophie1 Navigation Computer"
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Sophie1 bridge"
+	})
+"cq" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"cr" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"cs" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"ct" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/button/door{
+	id = "whiteship_windows";
+	name = "Windows Blast Door Control";
+	pixel_x = -24;
+	pixel_y = -5
+	},
+/obj/machinery/button/door{
+	id = "whiteship_bridge";
+	name = "Bridge Blast Door Control";
+	pixel_x = -24;
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Sophie1 bridge"
+	})
+"cu" = (
+/obj/structure/table,
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/item/radio/intercom,
+/obj/item/toy/figure/hop{
+	step_x = 5;
+	step_y = -5
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Sophie1 bridge"
+	})
+"cv" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 24
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"cw" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"cx" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"cy" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/cargo)
+"cz" = (
+/obj/effect/spawner/structure/window/shuttle,
+/obj/machinery/door/poddoor{
+	id = "whiteship_windows"
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"cA" = (
+/obj/machinery/porta_turret/centcom_shuttle/weak{
+	dir = 4
+	},
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"cB" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/power/port_gen/pacman{
+	anchored = 1
+	},
+/obj/item/wrench,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"cC" = (
+/obj/machinery/computer/security/telescreen/entertainment,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"cD" = (
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 24
+	},
+/obj/machinery/telecomms/relay/preset/auto,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"cE" = (
+/obj/machinery/vending/coffee,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"cF" = (
+/obj/structure/closet/emcloset/anchored,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"cG" = (
+/obj/structure/closet/crate/bin,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"cH" = (
+/obj/machinery/vending/mealdor,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"cI" = (
+/obj/machinery/camera{
+	network = list("Sophie1");
+	name = "Frigate Camera"
+	},
+/obj/machinery/vending/sovietsoda,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"cJ" = (
+/obj/machinery/vending/snack/random,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"cK" = (
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"cL" = (
+/obj/effect/turf_decal/bot_white,
+/obj/structure/closet/cardboard,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"cM" = (
+/obj/effect/turf_decal/bot_white,
+/obj/structure/ore_box,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"cN" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/machinery/airalarm/all_access{
+	dir = 4;
+	pixel_x = -24
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"cO" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/structure/closet/crate/secure/weapon,
+/obj/item/gun/energy/laser/retro,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"cP" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"cQ" = (
+/obj/structure/rack,
+/obj/item/defibrillator,
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"cR" = (
+/obj/structure/sign/departments/medbay/alt,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"cS" = (
+/obj/machinery/door/airlock/medical/glass{
+	name = "Medbay"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"cT" = (
+/obj/machinery/door/airlock/medical/glass{
+	name = "Medbay"
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"cU" = (
+/obj/effect/turf_decal/bot_white,
+/obj/structure/table,
+/obj/item/stack/sheet/metal/fifty,
+/obj/item/storage/toolbox/electrical{
+	pixel_x = -3;
+	pixel_y = 8
+	},
+/obj/item/stock_parts/cell/high{
+	charge = 100;
+	maxcharge = 15000;
+	pixel_x = 3;
+	pixel_y = -1
+	},
+/obj/machinery/cell_charger,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"cV" = (
+/obj/effect/turf_decal/bot_white,
+/obj/structure/rack,
+/obj/item/storage/belt/utility,
+/obj/item/radio/off{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/radio/off,
+/obj/machinery/airalarm/all_access{
+	pixel_y = 24
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"cW" = (
+/obj/structure/sign/poster/official/high_class_martini,
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"cX" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"cY" = (
+/obj/structure/chair/sofa{
+	dir = 8;
+	name = "comfy couch"
+	},
+/obj/item/toy/plush/metha,
+/turf/open/floor/carpet/orange,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"cZ" = (
+/obj/structure/table/wood/fancy,
+/obj/item/reagent_containers/food/drinks/drinkingglass/filled{
+	list_reagents = list(/datum/reagent/consumable/space_cola = 50)
+	},
+/turf/open/floor/carpet/orange,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"da" = (
+/turf/open/floor/wood,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"db" = (
+/obj/structure/sign/warning/nosmoking/circle,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/bridge{
+	name = "Sophie1 bridge"
+	})
+"dc" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 5
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"dd" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"de" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/obj/machinery/door/airlock/maintenance/external/glass,
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"df" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dg" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dh" = (
+/obj/machinery/door/airlock/medical{
+	name = "Medbay Storage"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"di" = (
+/obj/structure/table,
+/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/mask/surgical,
+/obj/item/clothing/suit/apron/surgical,
+/turf/open/floor/plasteel/white,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dj" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/firealarm{
+	pixel_y = 24
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/machinery/camera{
+	network = list("Sophie1");
+	name = "Frigate Camera"
+	},
+/turf/open/floor/plasteel/white/side{
+	dir = 9
+	},
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dk" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 1
+	},
+/turf/open/floor/plasteel/white/side{
+	dir = 1
+	},
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dl" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden,
+/turf/open/floor/plasteel/white/side{
+	dir = 1
+	},
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dm" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white/side{
+	dir = 5
+	},
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dn" = (
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 5
+	},
+/obj/machinery/light/small/built,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"do" = (
+/obj/effect/turf_decal/stripes/white/line,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dp" = (
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 9
+	},
+/obj/machinery/light/small,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dq" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/door/airlock/external/glass{
+	name = "E.V.A Access"
+	},
+/obj/structure/fans/tiny,
+/obj/effect/decal/cleanable/dirt{
+	desc = "A thin layer of dust coating the floor.";
+	name = "dust"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dr" = (
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt{
+	desc = "A thin layer of dust coating the floor.";
+	name = "dust"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/door/airlock/external/glass{
+	name = "E.V.A Access"
+	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"ds" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/chair/sofa/left{
+	desc = "More inviting than the average couch.";
+	name = "comfy couch";
+	dir = 4
+	},
+/turf/open/floor/carpet/orange,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"dt" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/wood,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"du" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/structure/table/wood/fancy,
+/obj/item/pizzabox/meat,
+/turf/open/floor/carpet/orange,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"dv" = (
+/obj/machinery/airalarm/all_access{
+	pixel_y = 24
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"dw" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/jukebox,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"dx" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/poddoor{
+	id = "whiteship_windows"
+	},
+/obj/effect/spawner/structure/window/shuttle,
+/turf/open/floor/plating/airless,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"dy" = (
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/structure/fans/tiny,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"dz" = (
+/obj/machinery/door/poddoor{
+	id = "whiteship_windows"
+	},
+/obj/effect/spawner/structure/window/shuttle,
+/turf/open/floor/plating/airless,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"dA" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/closet/crate,
+/obj/item/stack/sheet/metal/twenty,
+/obj/item/stack/sheet/glass{
+	amount = 10
+	},
+/obj/item/storage/box/lights/bulbs,
+/obj/item/stack/sheet/mineral/plasma{
+	amount = 10
+	},
+/obj/item/storage/box/lights/mixed,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"dB" = (
+/obj/structure/closet/crate,
+/obj/item/shovel,
+/obj/item/pickaxe,
+/obj/item/mining_scanner,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+"dC" = (
+/obj/structure/chair/sofa/right{
+	desc = "More inviting than the average couch.";
+	dir = 8;
+	name = "comfy couch"
+	},
+/turf/open/floor/carpet/orange,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"dD" = (
+/obj/machinery/vending/medical{
+	req_access = null
+	},
+/turf/open/floor/plasteel/white/side,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dE" = (
+/obj/machinery/airalarm/all_access{
+	dir = 8;
+	pixel_x = 24
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white/side,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dF" = (
+/obj/structure/table/optable,
+/obj/item/storage/firstaid/regular,
+/turf/open/floor/plasteel/white/side{
+	dir = 8
+	},
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dG" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dH" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dI" = (
+/obj/machinery/door/airlock/external,
+/obj/structure/fans/tiny,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dJ" = (
+/obj/structure/cable,
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "Frigate Cargo APC";
+	pixel_x = -24;
+	req_access = null
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"dK" = (
+/obj/structure/chair/sofa{
+	dir = 4;
+	name = "comfy couch"
+	},
+/turf/open/floor/carpet/orange,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"dL" = (
+/obj/structure/sign/poster/contraband/eat,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"dM" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"dN" = (
+/obj/structure/table,
+/obj/item/reagent_containers/glass/bottle/epinephrine{
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/glass/bottle/charcoal{
+	pixel_x = -3
+	},
+/obj/item/reagent_containers/syringe,
+/turf/open/floor/plasteel/white,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dO" = (
+/obj/structure/table,
+/obj/item/storage/backpack/duffelbag/med/surgery{
+	pixel_y = 4
+	},
+/obj/machinery/airalarm/all_access{
+	dir = 1;
+	pixel_y = -24
+	},
+/turf/open/floor/plasteel/white,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dP" = (
+/obj/machinery/sleeper{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white/side{
+	dir = 4
+	},
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dQ" = (
+/obj/machinery/iv_drip,
+/obj/effect/turf_decal/bot,
+/obj/structure/cable,
+/obj/machinery/power/apc{
+	name = "Frigate Medbay APC";
+	pixel_y = -24;
+	req_access = null
+	},
+/turf/open/floor/plasteel/white,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dR" = (
+/obj/structure/closet/crate/freezer,
+/obj/item/reagent_containers/blood{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/random,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plasteel/white,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dS" = (
+/obj/structure/closet/emcloset/anchored,
+/obj/item/storage/firstaid/o2{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/machinery/camera{
+	network = list("Sophie1");
+	name = "Frigate Camera";
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dT" = (
+/obj/structure/sign/warning/vacuum/external{
+	pixel_x = 32
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"dU" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/computer/arcade/orion_trail{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"dV" = (
+/obj/structure/chair{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"dW" = (
+/obj/structure/chair/sofa/corner{
+	name = "comfy couch";
+	dir = 4
+	},
+/turf/open/floor/carpet/orange,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"dX" = (
+/obj/structure/chair/sofa{
+	dir = 1;
+	name = "comfy couch"
+	},
+/turf/open/floor/carpet/orange,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"dY" = (
+/obj/structure/chair/sofa/corner{
+	name = "comfy couch";
+	dir = 8
+	},
+/turf/open/floor/carpet/orange,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"dZ" = (
+/obj/effect/turf_decal/bot_white,
+/obj/structure/reagent_dispensers/watertank,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"ea" = (
+/obj/effect/turf_decal/bot_white,
+/obj/structure/reagent_dispensers/fueltank,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"eb" = (
+/obj/machinery/door/airlock/external,
+/obj/structure/fans/tiny,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"iM" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"oo" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"rw" = (
+/obj/structure/sign/poster/official/fruit_bowl,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/cargo{
+	name = "Sophie1 lounge"
+	})
+"vm" = (
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"DZ" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/machinery/suit_storage_unit/standard_unit,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"SY" = (
+/obj/effect/spawner/structure/window/shuttle,
+/obj/machinery/door/poddoor{
+	id = "whiteship_windows"
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"Uh" = (
+/obj/structure/sign/warning/docking,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/medbay{
+	name = "Sophie1 medbay"
+	})
+"Uz" = (
+/obj/structure/sign/nanotrasen,
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/shuttle/abandoned/crew{
+	name = "Sophie1 crew quarters"
+	})
+"WQ" = (
+/obj/structure/sign/warning/docking,
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/engine{
+	name = "Sophie1 engine"
+	})
+
+(1,1,1) = {"
+aa
+aa
+aa
+aa
+ah
+ay
+aM
+WQ
+dy
+WQ
+ay
+aM
+ah
+aa
+aa
+aa
+aa
+"}
+(2,1,1) = {"
+aa
+ah
+ay
+aM
+ai
+az
+az
+ai
+aK
+cc
+az
+az
+ai
+ay
+aM
+ah
+aa
+"}
+(3,1,1) = {"
+aa
+ai
+az
+az
+ai
+by
+bP
+bV
+bu
+ck
+cs
+cB
+ai
+az
+az
+ai
+aa
+"}
+(4,1,1) = {"
+aa
+ai
+aA
+aN
+bk
+bz
+bQ
+bz
+cd
+cl
+bz
+bz
+cN
+dc
+dA
+ai
+aa
+"}
+(5,1,1) = {"
+aa
+ai
+aB
+dd
+bl
+bA
+db
+bB
+bB
+bB
+bB
+cD
+cO
+dd
+dB
+ai
+aa
+"}
+(6,1,1) = {"
+aa
+ai
+ai
+de
+bm
+bB
+bB
+bW
+ce
+cm
+bB
+bB
+bm
+de
+ai
+ai
+aa
+"}
+(7,1,1) = {"
+ac
+ac
+ac
+aQ
+bn
+bC
+bR
+bX
+cf
+bX
+ct
+bC
+cP
+df
+dD
+vm
+iM
+"}
+(8,1,1) = {"
+ac
+aj
+aC
+aR
+bo
+bD
+bS
+bY
+cg
+co
+cu
+bD
+cQ
+dg
+dE
+dN
+vm
+"}
+(9,1,1) = {"
+ac
+ak
+aD
+aS
+ac
+bB
+bT
+bZ
+ch
+cp
+bT
+bB
+vm
+dh
+vm
+vm
+vm
+"}
+(10,1,1) = {"
+ac
+ac
+ac
+aT
+ac
+bE
+bT
+bT
+bT
+bT
+bT
+cE
+vm
+dj
+dF
+dO
+vm
+"}
+(11,1,1) = {"
+bI
+al
+aE
+oo
+bp
+ca
+ca
+ca
+bM
+cq
+cq
+cq
+cS
+dk
+dH
+di
+SY
+"}
+(12,1,1) = {"
+ac
+ac
+ac
+aU
+bq
+bG
+bU
+bG
+cj
+cr
+cv
+cr
+cT
+dl
+dG
+dQ
+vm
+"}
+(13,1,1) = {"
+bI
+am
+aF
+aV
+ac
+bH
+ac
+bI
+cb
+bI
+ac
+cF
+cR
+dm
+dP
+dR
+SY
+"}
+(14,1,1) = {"
+ac
+ac
+ac
+aJ
+ac
+ac
+cw
+aa
+aa
+aa
+cw
+ac
+vm
+dq
+vm
+vm
+vm
+"}
+(15,1,1) = {"
+aH
+an
+Uz
+aX
+br
+ac
+aa
+aa
+aa
+aa
+aa
+vm
+cU
+dn
+bf
+dS
+Uh
+"}
+(16,1,1) = {"
+ad
+ao
+aG
+aY
+bs
+bI
+aa
+aa
+aa
+aa
+aa
+SY
+DZ
+do
+dI
+dT
+eb
+"}
+(17,1,1) = {"
+aH
+ac
+Uz
+aZ
+bt
+ac
+aa
+aa
+aa
+aa
+aa
+vm
+cV
+dp
+bf
+vm
+Uh
+"}
+(18,1,1) = {"
+ae
+ap
+ae
+aW
+ae
+ae
+ax
+aa
+aa
+aa
+cx
+cn
+cW
+dr
+cn
+dU
+cn
+"}
+(19,1,1) = {"
+aI
+ab
+at
+ba
+bd
+bw
+ae
+aa
+aa
+aa
+cn
+cG
+cX
+dt
+dJ
+dV
+cn
+"}
+(20,1,1) = {"
+af
+aq
+be
+bb
+be
+bJ
+af
+aa
+aa
+aa
+cz
+cH
+da
+ds
+dK
+dW
+cz
+"}
+(21,1,1) = {"
+ae
+ar
+be
+bc
+be
+bK
+ae
+aa
+aa
+aa
+rw
+cI
+da
+du
+cZ
+dX
+bj
+"}
+(22,1,1) = {"
+ae
+as
+be
+be
+be
+bL
+ae
+aa
+aa
+aa
+cn
+cJ
+da
+dC
+cY
+dY
+cn
+"}
+(23,1,1) = {"
+ae
+au
+aL
+be
+bx
+bF
+ae
+aa
+aa
+aa
+cn
+dv
+dM
+da
+dM
+cK
+cn
+"}
+(24,1,1) = {"
+af
+av
+ae
+bg
+ae
+bN
+af
+aa
+aa
+aa
+cz
+cL
+cC
+dw
+dL
+dZ
+cz
+"}
+(25,1,1) = {"
+ae
+aw
+ae
+bh
+ae
+bO
+ae
+aa
+aa
+aa
+cn
+cM
+cy
+dx
+cn
+ea
+cn
+"}
+(26,1,1) = {"
+ag
+ae
+ae
+bi
+ae
+ae
+ag
+aa
+aa
+aa
+cA
+cn
+cn
+dz
+cn
+cn
+cA
+"}
+(27,1,1) = {"
+aa
+ax
+ae
+bi
+ae
+ax
+aa
+aa
+aa
+aa
+aa
+cx
+cn
+dz
+cn
+cx
+aa
+"}
