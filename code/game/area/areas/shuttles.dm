@@ -97,7 +97,7 @@
 	name = "Sophie's Ship"
 	blob_allowed = FALSE
 	requires_power = TRUE
-	canSmoothWithAreas = /area/shuttle/abandoned
+	canSmoothWithAreas = /area/shuttle/Sophie
 
 /area/shuttle/Sophie/bridge
 	name = "Sophie's Ship Bridge"
