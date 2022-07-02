@@ -3071,7 +3071,6 @@ f// DM Environment file for tgstation.dme.
 #include "GainStation13\code\modules\reagents\chemistry\reagents\consumable_reagents.dm"
 #include "GainStation13\code\modules\reagents\chemistry\recipes\fatchem.dm"
 #include "GainStation13\code\modules\vending\mealdor.dm"
-#include "GainStation13\code\obj\fatray.dm"
 #include "hyperstation\code\__DEFINES\economy.dm"
 #include "hyperstation\code\__DEFINES\wendigo.dm"
 #include "hyperstation\code\controllers\subsystem\economy.dm"
