@@ -124,3 +124,6 @@
 /proc/load_new_z_level(var/file, var/name)
 	var/datum/map_template/template = new(file, name)
 	template.load_new_z()
+
+/datum/map_template/proc/post_load()
+	return
