@@ -242,11 +242,11 @@
 /obj/docking_port/stationary/picked/whiteship
 	name = "Deep Space"
 	id = "whiteship_away"
-	height = 45 //Width and height need to remain in sync with the size of whiteshipdock.dmm, otherwise we'll get overflow
-	width = 44
-	dheight = 18
-	dwidth = 18
+	dheight = 0
 	dir = 2
+	dwidth = 11
+	height = 22
+	width = 35
 	shuttlekeys = list("whiteship_meta", "whiteship_pubby", "whiteship_box", "whiteship_cere", "whiteship_delta", "whiteship_Sophie1")
 
 /// Helper proc that tests to ensure all whiteship templates can spawn at their docking port, and logs their sizes
