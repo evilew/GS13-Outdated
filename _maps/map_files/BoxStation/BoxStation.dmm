@@ -6627,7 +6627,7 @@
 "cxw" = (/obj/structure/lattice,/obj/machinery/atmospherics/pipe/simple/yellow/visible,/obj/structure/window/reinforced{dir = 1},/turf/open/space,/area/space/nearstation)
 "cxx" = (/obj/machinery/atmospherics/components/unary/tank/toxins{dir = 4},/turf/open/floor/plasteel,/area/maintenance/disposal/incinerator)
 "cxy" = (/obj/machinery/atmospherics/components/binary/pump{dir = 4; name = "plasma tank pump"},/turf/open/floor/plasteel,/area/maintenance/disposal/incinerator)
-"cxz" = (/obj/machinery/atmospherics/pipe/manifold4w/general{level = 2},/obj/machinery/meter,/turf/open/floor/plasteel,/area/maintenance/disposal/incinerator)
+"cxz" = (/obj/machinery/atmospherics/pipe/manifold4w/general{},/obj/machinery/meter,/turf/open/floor/plasteel,/area/maintenance/disposal/incinerator)
 "cxA" = (/obj/effect/landmark/blobstart,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/components/binary/pump{dir = 4; name = "Mix to Incinerator"},/turf/open/floor/plasteel,/area/maintenance/disposal/incinerator)
 "cxB" = (/obj/item/cigbutt,/obj/machinery/atmospherics/pipe/simple/general/visible{dir = 10},/turf/open/floor/plasteel,/area/maintenance/disposal/incinerator)
 "cxC" = (/obj/structure/cable/yellow{icon_state = "1-2"},/obj/structure/disposalpipe/segment,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/plasteel,/area/maintenance/disposal/incinerator)
