@@ -126,3 +126,8 @@
 	head = /obj/item/clothing/head/helmet/space/plasmaman/clown
 	uniform = /obj/item/clothing/under/plasmaman/clown
 	mask = /obj/item/clothing/mask/gas/clown_hat
+
+/datum/outfit/plasmaman/captain
+	name = "Plasmaman Captain"
+	head = /obj/item/clothing/head/helmet/space/plasmaman/captain
+	uniform = /obj/item/clothing/under/plasmaman/captain

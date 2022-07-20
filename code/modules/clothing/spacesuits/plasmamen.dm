@@ -268,3 +268,9 @@
 	item_state = "clown_envirohelm"
 	visor_icon = "clown_envisor"
 	smile_state = "clown_smile"
+
+/obj/item/clothing/head/helmet/space/plasmaman/captain
+	name = "captain envirosuit helmet"
+	desc = "A blue and gold envirosuit helmet designed only for the most important plasmaman on board."
+	icon_state = "captain_envirohelm"
+	item_state = "captain_envirohelm"
