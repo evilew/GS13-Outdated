@@ -274,3 +274,4 @@
 	desc = "A blue and gold envirosuit helmet designed only for the most important plasmaman on board."
 	icon_state = "captain_envirohelm"
 	item_state = "captain_envirohelm"
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 25, "bomb" = 50, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 75)
