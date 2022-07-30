@@ -118,8 +118,24 @@
 
 		if("Clown")
 			O = new /datum/outfit/plasmaman/clown
+
 		if("Captain")
 			O = new /datum/outfit/plasmaman/captain
+
+		if("Head of Personnel")
+			O = new /datum/outfit/plasmaman/hop
+
+		if("Chief Engineer")
+			O = new /datum/outfit/plasmaman/ce
+
+		if("Chief Medical Officer")
+			O = new /datum/outfit/plasmaman/cmo
+
+		if("Research Director")
+			O = new /datum/outfit/plasmaman/rd
+
+		if("Head of Security")
+			O = new /datum/outfit/plasmaman/hos
 
 	H.equipOutfit(O, visualsOnly)
 	H.internal = H.get_item_for_held_index(2)

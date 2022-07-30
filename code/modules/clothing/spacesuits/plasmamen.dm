@@ -274,4 +274,39 @@
 	desc = "A blue and gold envirosuit helmet designed only for the most important plasmaman on board."
 	icon_state = "captain_envirohelm"
 	item_state = "captain_envirohelm"
-	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 25, "bomb" = 50, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 75)
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 50, "energy" = 25, "bomb" = 50, "bio" = 100, "rad" = 0, "fire" = 100, "acid" = 75)
+
+/obj/item/clothing/head/helmet/space/plasmaman/hop
+	name = "head of personnel envirosuit helmet"
+	desc = "A blue envirosuit helmet with red details. The plasma bureaucrat's helmet of choice. Not that he has much choice, anyway."
+	icon_state = "hop_envirohelm"
+	item_state = "hop_envirohelm"
+
+/obj/item/clothing/head/helmet/space/plasmaman/ce
+	name = "chief engineer envirosuit helmet"
+	desc = "A durable yellow and white envirosuit helmet with green stripes. It reflects lights for high visibility of the wearer. The Chief Engineer must stand out, after all."
+	icon_state = "ce_envirohelm"
+	item_state = "ce_envirohelm"
+	armor = list("melee" = 40, "bullet" = 5, "laser" = 10, "energy" = 5, "bomb" = 50, "bio" = 100, "rad" = 0, "fire" = 100, "acid" = 90)
+
+/obj/item/clothing/head/helmet/space/plasmaman/cmo
+	name = "chief medical officer envirosuit helmet"
+	desc = "A light blue envirosuit helmet with white stripes. It looks very clean. Let the plasma bring health to those who need it (the healing, not plasma)."
+	icon_state = "cmo_envirohelm"
+	item_state = "cmo_envirohelm"
+	armor = list("melee" = 30, "bullet" = 5, "laser" = 10, "energy" = 5, "bomb" = 10, "bio" = 100, "rad" = 0, "fire" = 100, "acid" = 75)
+
+/obj/item/clothing/head/helmet/space/plasmaman/rd
+	name = "research director envirosuit helmet"
+	desc = "An envirosuit helmet with a bizarrely unfitting black and white coloration. Has extended cranium space for the biggest egghead on board."
+	icon_state = "rd_envirohelm"
+	item_state = "rd_envirohelm"
+	visor_icon = "rd_envisor"
+	armor = list("melee" = 30, "bullet" = 5, "laser" = 10, "energy" = 5, "bomb" = 100, "bio" = 100, "rad" = 0, "fire" = 100, "acid" = 80)
+
+/obj/item/clothing/head/helmet/space/plasmaman/hos
+	name = "head of security envirosuit helmet"
+	desc = "A red and black envirosuit helmet with golden stripes. It is well-armored. All must bow before the Purple Skeleton of Law."
+	icon_state = "hos_envirohelm"
+	item_state = "hos_envirohelm"
+	armor = list("melee" = 45, "bullet" = 25, "laser" = 30, "energy" = 10, "bomb" = 25, "bio" = 100, "rad" = 0, "fire" = 100, "acid" = 95)
