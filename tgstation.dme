@@ -1700,6 +1700,7 @@
 #include "code\modules\clothing\under\jobs\medsci.dm"
 #include "code\modules\clothing\under\jobs\security.dm"
 #include "code\modules\clothing\under\jobs\Plasmaman\civilian_service.dm"
+#include "code\modules\clothing\under\jobs\Plasmaman\command.dm"
 #include "code\modules\clothing\under\jobs\Plasmaman\engineering.dm"
 #include "code\modules\clothing\under\jobs\Plasmaman\medsci.dm"
 #include "code\modules\clothing\under\jobs\Plasmaman\security.dm"

@@ -126,3 +126,34 @@
 	head = /obj/item/clothing/head/helmet/space/plasmaman/clown
 	uniform = /obj/item/clothing/under/plasmaman/clown
 	mask = /obj/item/clothing/mask/gas/clown_hat
+
+/datum/outfit/plasmaman/captain
+	name = "Plasmaman Captain"
+	head = /obj/item/clothing/head/helmet/space/plasmaman/captain
+	uniform = /obj/item/clothing/under/plasmaman/captain
+
+/datum/outfit/plasmaman/hop
+	name = "Plasmaman Head of Personnel"
+	head = /obj/item/clothing/head/helmet/space/plasmaman/hop
+	uniform = /obj/item/clothing/under/plasmaman/hop
+
+/datum/outfit/plasmaman/ce
+	name = "Plasmaman Chief Engineer"
+	head = /obj/item/clothing/head/helmet/space/plasmaman/ce
+	uniform = /obj/item/clothing/under/plasmaman/ce
+
+/datum/outfit/plasmaman/cmo
+	name = "Plasmaman Chief Medical Officer"
+	head = /obj/item/clothing/head/helmet/space/plasmaman/cmo
+	uniform = /obj/item/clothing/under/plasmaman/cmo
+
+/datum/outfit/plasmaman/rd
+	name = "Plasmaman Research Director"
+	head = /obj/item/clothing/head/helmet/space/plasmaman/rd
+	uniform = /obj/item/clothing/under/plasmaman/rd
+
+/datum/outfit/plasmaman/hos
+	name = "Plasmaman Head of Security"
+	head = /obj/item/clothing/head/helmet/space/plasmaman/hos
+	uniform = /obj/item/clothing/under/plasmaman/hos
+
