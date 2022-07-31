@@ -29,11 +29,7 @@
 	. = ..()
 	priority_announce("[station_name()]: A large quantity of condensed low temperature oxygen clouds has been detected around and above the station. A liquid oxygen downpour is expected.",
 	sound = 'sound/misc/notice2.ogg',
-<<<<<<< Updated upstream
 	sender_override = "GATO Meteorology Division")
-=======
-	sender_override = "Gato Meteorology Division")
->>>>>>> Stashed changes
 	for(var/V in GLOB.player_list)
 		var/mob/M = V
 		if((M.client.prefs.toggles & SOUND_MIDI) && is_station_level(M.z))
