@@ -60,7 +60,7 @@
 
 /datum/bounty/item/chef/superbite
 	name = "Super Bite Burger"
-	description = "Commander Tubbs thinks he can set a competitive eating world record. All he needs is a super bite burger shipped to him."
+	description = "Commander Lydia would like a snack. Send her a Super Bite Burger."
 	reward = 1800
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/burger/superbite)
 
@@ -78,7 +78,11 @@
 
 /datum/bounty/item/chef/hotdog
 	name = "Hot Dog"
+<<<<<<< Updated upstream
 	description = "GATO is conducting taste tests to determine the best hot dog recipe. Ship your station's version to participate."
+=======
+	description = "Gato is conducting taste tests to determine the best hot dog recipe. Ship your station's version to participate."
+>>>>>>> Stashed changes
 	reward = 4000
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/hotdog)
 
@@ -98,7 +102,11 @@
 
 /datum/bounty/item/chef/chawanmushi
 	name = "Chawanmushi"
+<<<<<<< Updated upstream
 	description = "GATO wants to improve relations with its sister company, Donk.Co. Ship Chawanmushi immediately."
+=======
+	description = "Gato wants to improve relations with Donk.Co. Ship Chawanmushi immediately."
+>>>>>>> Stashed changes
 	reward = 5000
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/chawanmushi)
 
@@ -111,7 +119,7 @@
 
 /datum/bounty/item/chef/soylentgreen
 	name = "Soylent Green"
-	description = "CentCom has heard wonderful things about the product 'Soylent Green', and would love to try some. If you endulge them, expect a pleasant bonus."
+	description = "CentCom has heard wonderful things about the product 'Soylent Green', and would love to try some. If you indulge them, expect a pleasant bonus."
 	reward = 4000
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/soylentgreen)
 

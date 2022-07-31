@@ -974,7 +974,7 @@
 
 /datum/reagent/chlorine
 	name = "Chlorine"
-	description = "A pale yellow gas that's well known as an oxidizer. While it forms many harmless molecules in its elemental form it is far from harmless."
+	description = "A pale yellow gas that's well known as an oxidizer. While it forms many harmless molecules in its elemental form, it is far from harmless."
 	reagent_state = GAS
 	color = "#808080" // rgb: 128, 128, 128
 	taste_description = "chlorine"

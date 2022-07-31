@@ -1,19 +1,31 @@
 /datum/bounty/item/assistant/strange_object
 	name = "Strange Object"
+<<<<<<< Updated upstream
 	description = "GATO has taken an interest in strange objects. Find one in maint, and ship it off to CentCom right away."
+=======
+	description = "Gato has taken an interest in strange objects. Find one in maint, and ship it off to CentCom right away."
+>>>>>>> Stashed changes
 	reward = 600
 	wanted_types = list(/obj/item/relic)
 
 /datum/bounty/item/assistant/scooter
 	name = "Scooter"
+<<<<<<< Updated upstream
 	description = "GATO has determined walking to be wasteful. Ship a scooter to CentCom to speed operations up."
+=======
+	description = "Gato has determined walking to be wasteful. Ship a scooter to CentCom to speed operations up."
+>>>>>>> Stashed changes
 	reward = 850 // the mat hoffman
 	wanted_types = list(/obj/vehicle/ridden/scooter)
 	include_subtypes = FALSE
 
 /datum/bounty/item/assistant/skateboard
 	name = "Skateboard"
+<<<<<<< Updated upstream
 	description = "GATO has determined walking to be wasteful. Ship a skateboard to CentCom to speed operations up."
+=======
+	description = "Gato has determined walking to be wasteful. Ship a skateboard to CentCom to speed operations up."
+>>>>>>> Stashed changes
 	reward = 700 // the tony hawk
 	wanted_types = list(/obj/vehicle/ridden/scooter/skateboard)
 
