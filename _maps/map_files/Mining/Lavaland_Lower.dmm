@@ -252,7 +252,9 @@
 /turf/open/floor/plasteel,
 /area/xenoarch/arch)
 "aT" = (
-/obj/item/toy/plush/amogus,
+/obj/item/toy/plush/amogus{
+	desc = "Holding such might make you insane."
+	},
 /turf/open/indestructible/necropolis,
 /area/lavaland/surface/outdoors)
 "aU" = (
@@ -6573,12 +6575,17 @@
 	},
 /area/xenoarch/nothinghere)
 "qv" = (
-/obj/structure/barricade/wooden,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/wood,
-/area/xenoarch/gen)
+/obj/machinery/door/airlock/maintenance{
+	dir = 1;
+	req_one_access_txt = "48"
+	},
+/turf/open/floor/plating,
+/area/xenoarch/bot{
+	name = "Demon Teleporter"
+	})
 "qK" = (
 /obj/machinery/door/airlock/vault{
 	name = "secured door";
@@ -6612,6 +6619,12 @@
 "so" = (
 /turf/closed/wall/r_wall,
 /area/xenoarch/nothinghere)
+"sp" = (
+/obj/effect/decal/cleanable/oil,
+/turf/open/floor/plasteel,
+/area/xenoarch/bot{
+	name = "Demon Teleporter"
+	})
 "sv" = (
 /obj/machinery/quantumpad{
 	map_pad_id = "ldemone";
@@ -6619,19 +6632,30 @@
 	mapped_quantum_pads = list("ldemone","demone")
 	},
 /obj/structure/cable,
-/turf/open/floor/carpet/black,
-/area/xenoarch/gen)
+/turf/open/floor/plasteel,
+/area/xenoarch/bot{
+	name = "Demon Teleporter"
+	})
 "sO" = (
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/wood,
-/area/xenoarch/gen)
+/turf/open/floor/plasteel,
+/area/xenoarch/bot{
+	name = "Demon Teleporter"
+	})
 "tG" = (
 /obj/structure/chair/office,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/grimy,
 /area/xenoarch/nothinghere)
+"tW" = (
+/obj/effect/decal/cleanable/oil,
+/obj/effect/decal/cleanable/robot_debris,
+/turf/open/floor/plasteel,
+/area/xenoarch/bot{
+	name = "Demon Teleporter"
+	})
 "wZ" = (
 /obj/machinery/door/airlock/highsecurity{
 	req_access = 207
@@ -6669,14 +6693,18 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/wood,
-/area/xenoarch/gen)
+/turf/open/floor/plasteel,
+/area/xenoarch/bot{
+	name = "Demon Teleporter"
+	})
 "Ed" = (
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/wood,
-/area/xenoarch/gen)
+/turf/open/floor/plasteel,
+/area/xenoarch/bot{
+	name = "Demon Teleporter"
+	})
 "ED" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/rockvault,
@@ -6696,6 +6724,19 @@
 	icon_state = "engine"
 	},
 /area/xenoarch/nothinghere)
+"Fl" = (
+/obj/item/screwdriver{
+	pixel_y = 12;
+	pixel_x = 12
+	},
+/obj/item/multitool{
+	pixel_y = 8;
+	pixel_x = -4
+	},
+/turf/open/floor/plating,
+/area/xenoarch/bot{
+	name = "Demon Teleporter"
+	})
 "FE" = (
 /turf/open/floor/plasteel/grimy,
 /area/xenoarch/nothinghere)
@@ -6705,6 +6746,22 @@
 	},
 /turf/open/floor/plasteel/rockvault,
 /area/xenoarch/nothinghere)
+"FV" = (
+/obj/item/candle/infinite,
+/turf/open/floor/plating,
+/area/xenoarch/bot{
+	name = "Demon Teleporter"
+	})
+"FZ" = (
+/turf/closed/wall,
+/area/xenoarch/bot{
+	name = "Demon Teleporter"
+	})
+"Gq" = (
+/turf/open/floor/plating,
+/area/xenoarch/bot{
+	name = "Demon Teleporter"
+	})
 "GR" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/grimy,
@@ -6713,22 +6770,37 @@
 /turf/open/floor/carpet,
 /area/xenoarch/gen)
 "Jt" = (
-/obj/structure/barricade/wooden,
-/turf/open/floor/wood,
-/area/xenoarch/gen)
+/obj/machinery/door/airlock/maintenance{
+	dir = 1;
+	req_one_access_txt = "48"
+	},
+/turf/open/floor/plating,
+/area/xenoarch/bot{
+	name = "Demon Teleporter"
+	})
 "JT" = (
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/turf/open/floor/wood,
-/area/xenoarch/gen)
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/apc/auto_name/north{
+	name = "Demon Teleporter APC"
+	},
+/turf/open/floor/plating,
+/area/xenoarch/bot{
+	name = "Demon Teleporter"
+	})
 "Ku" = (
 /turf/closed/wall/r_wall/rust,
 /area/xenoarch/nothinghere)
 "KC" = (
 /obj/item/candle/infinite,
-/turf/open/floor/wood,
-/area/xenoarch/gen)
+/turf/open/floor/plasteel,
+/area/xenoarch/bot{
+	name = "Demon Teleporter"
+	})
 "LP" = (
 /obj/machinery/porta_turret/aux_base{
 	dir = 5;
@@ -6811,6 +6883,12 @@
 /obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel/rockvault,
 /area/xenoarch/nothinghere)
+"SD" = (
+/obj/effect/decal/cleanable/robot_debris,
+/turf/open/floor/plating,
+/area/xenoarch/bot{
+	name = "Demon Teleporter"
+	})
 "Us" = (
 /obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/plasteel/grimy{
@@ -6818,8 +6896,10 @@
 	},
 /area/xenoarch/nothinghere)
 "VE" = (
-/turf/open/floor/carpet/black,
-/area/xenoarch/gen)
+/turf/open/floor/plasteel,
+/area/xenoarch/bot{
+	name = "Demon Teleporter"
+	})
 "Ws" = (
 /obj/structure/flora/rock/pile,
 /obj/effect/decal/remains/xeno,
@@ -6829,8 +6909,10 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/carpet/black,
-/area/xenoarch/gen)
+/turf/open/floor/plating,
+/area/xenoarch/bot{
+	name = "Demon Teleporter"
+	})
 "ZK" = (
 /obj/machinery/door/window/eastleft{
 	dir = 2
@@ -17623,15 +17705,15 @@ Sy
 Sy
 Sy
 Sy
-Sy
+FZ
 qv
-Sy
-Sy
-Sy
-Sy
-Sy
-Sy
-Sy
+FZ
+FZ
+FZ
+FZ
+FZ
+FZ
+FZ
 "}
 (43,1,1) = {"
 ms
@@ -17880,15 +17962,15 @@ jN
 jN
 jN
 jN
-Sy
+FZ
 CA
-mA
-mA
-mA
-mA
-mA
-mA
-Sy
+Gq
+VE
+Gq
+Gq
+sp
+VE
+FZ
 "}
 (44,1,1) = {"
 ms
@@ -18137,15 +18219,15 @@ jN
 jN
 jN
 jN
-Sy
+FZ
 sO
-mA
-mA
-mA
+Gq
+VE
+VE
 KC
-mA
-mA
-Sy
+SD
+Gq
+FZ
 "}
 (45,1,1) = {"
 ms
@@ -18394,15 +18476,15 @@ jN
 jN
 jN
 jN
-Sy
+FZ
 sO
-mA
 VE
 VE
 VE
-mA
-mA
-Sy
+Fl
+Gq
+Gq
+FZ
 "}
 (46,1,1) = {"
 ms
@@ -18651,15 +18733,15 @@ jN
 jN
 jN
 jN
-Sy
+FZ
 JT
 Ed
 Xi
 sv
 VE
-mA
-mA
-Sy
+Gq
+VE
+FZ
 "}
 (47,1,1) = {"
 ab
@@ -18908,15 +18990,15 @@ jN
 jN
 jN
 jN
-Sy
-mA
-mA
+FZ
+Gq
+tW
+FV
+Gq
+Gq
 KC
-mA
-mA
-KC
-mA
-Sy
+Gq
+FZ
 "}
 (48,1,1) = {"
 ab
@@ -19166,14 +19248,14 @@ jN
 jN
 jN
 Jt
-mA
-mA
-mA
-mA
-mA
-mA
-mA
-Sy
+Gq
+VE
+VE
+VE
+Gq
+VE
+Gq
+FZ
 "}
 (49,1,1) = {"
 ab
@@ -19422,15 +19504,15 @@ Sy
 Sy
 Sy
 Sy
-Sy
-Sy
-Sy
-Sy
-Sy
-Sy
-Sy
-Sy
-Sy
+FZ
+FZ
+FZ
+FZ
+FZ
+FZ
+FZ
+FZ
+FZ
 "}
 (50,1,1) = {"
 ab

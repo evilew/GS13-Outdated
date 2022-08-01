@@ -423,6 +423,10 @@
 	suffix = "whiteship_pod"
 	name = "Salvage Pod"
 
+/datum/map_template/shuttle/whiteship/Sophie1
+	suffix = "Sophie1"
+	name = "Sophie's Ship"
+	
 /datum/map_template/shuttle/cargo/box
 	suffix = "box"
 	name = "supply shuttle (Box)"

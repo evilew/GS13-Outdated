@@ -104,9 +104,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/starting_weight = 0				//how thicc you wanna be at start
 
 	//HS13 jobs
-	var/sillyroles = FALSE //for clown and mime
-	var/roleplayroles = FALSE //for the roleplay roles
-	var/importantroles = FALSE //for things that define as important.
+	var/sillyroles = TRUE //for clown and mime
+	var/roleplayroles = TRUE //for the roleplay roles
+	var/importantroles = TRUE //for things that define as important.
 
 
 	var/datum/species/pref_species = new /datum/species/human()	//Mutant race
@@ -2474,7 +2474,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						body_size = max(min( round(text2num(new_bodysize)), MAX_BODYSIZE),MIN_BODYSIZE)
 
 //GS13 fatness
-				
+
 				if("fatness")
 					var/new_fatness = input(user, "Choose your amount of fat at start :\n(0-2000), Fat changes appearance and move speed. \nThresholds are 100, 350, 650, 950 and 1671. Fair warning : being too fat will make you immobile", "Character Preference") as num|null
 					if (new_fatness)
