@@ -313,7 +313,8 @@
 				"BootyF" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootymedical"),
 				"BootyM" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootymedicalM"),
 				"BootyS" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootymedicalS"),
-				"Haydee" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "haydeemedical")
+				"Haydee" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "haydeemedical"),
+				"Fat" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "fat_medical")
 		)
 		med_models = sortList(med_models)
 	var/medi_borg_icon = show_radial_menu(R, R , med_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
@@ -353,6 +354,10 @@
 		if("Haydee")
 			cyborg_base_icon = "haydeemedical"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
+			hat_offset = 3
+		if("Fat")
+			cyborg_base_icon = "fat_medical"
+			cyborg_icon_override = 'GainStation13/icons/mob/robots.dmi'
 			hat_offset = 3
 	return ..()
 
@@ -412,7 +417,8 @@
 			"Spider" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "whitespider"),
 			"BootyF" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootypeace"),
 			"BootyM" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootypeaceM"),
-			"BootyS" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootypeaceS")
+			"BootyS" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootypeaceS"),
+			"Fat" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "fat_peacekeeper")
 		)
 		peace_models = sortList(peace_models)
 	var/peace_borg_icon = show_radial_menu(R, R , peace_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
@@ -436,6 +442,10 @@
 			cyborg_base_icon = "bootypeaceS"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
 			hat_offset = 3
+		if("Fat")
+			cyborg_base_icon = "fat_peacekeeper"
+			cyborg_icon_override = 'GainStation13/icons/mob/robots.dmi'
+			hat_offset = 3
 	return ..()
 
 /obj/item/robot_module/security/be_transformed_to(obj/item/robot_module/old_module)
@@ -452,7 +462,8 @@
 			"Heavy" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "heavysec"),
 			"BootyF" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootysecurity"),
 			"BootyM" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootysecurityM"),
-			"BootyS" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootysecurityS")
+			"BootyS" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootysecurityS"),
+			"Fat" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "fat_security")
 		)
 		sec_models = sortList(sec_models)
 	var/sec_borg_icon = show_radial_menu(R, R , sec_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
@@ -492,6 +503,10 @@
 			cyborg_base_icon = "bootysecurityS"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
 			hat_offset = 3
+		if("Fat")
+			cyborg_base_icon = "fat_security"
+			cyborg_icon_override = 'GainStation13/icons/mob/robots.dmi'
+			hat_offset = 3
 	return ..()
 
 /obj/item/robot_module/butler/be_transformed_to(obj/item/robot_module/old_module)
@@ -508,7 +523,8 @@
 			"Heavy" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "heavyserv"),
 			"BootyF" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootyservice"),
 			"BootyM" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootyserviceM"),
-			"BootyS" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootyserviceS")
+			"BootyS" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootyserviceS"),
+			"Fat" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "fat_service")
 		)
 		butler_models = sortList(butler_models)
 	var/butler_borg_icon = show_radial_menu(R, R , butler_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
@@ -549,6 +565,10 @@
 			cyborg_base_icon = "bootyserviceS"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
 			hat_offset = 3
+		if("Fat")
+			cyborg_base_icon = "fat_service"
+			cyborg_icon_override = 'GainStation13/icons/mob/robots.dmi'
+			hat_offset = 3
 	return ..()
 
 /obj/item/robot_module/engineering/be_transformed_to(obj/item/robot_module/old_module)
@@ -567,7 +587,8 @@
 			"Heavy" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "heavyeng"),
 			"BootyF" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootyengineer"),
 			"BootyM" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootyengineerM"),
-			"BootyS" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootyengineerS")
+			"BootyS" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootyengineerS"),
+			"Fat" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "fat_engineer")
 		)
 		/*var/list/L = list("Pupdozer" = "pupdozer", "Engihound" = "Engihound")
 		for(var/a in L)
@@ -648,6 +669,10 @@
 			cyborg_base_icon = "bootyengineerS"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
 			hat_offset = 3
+		if("Fat")
+			cyborg_base_icon = "fat_engineer"
+			cyborg_icon_override = 'GainStation13/icons/mob/robots.dmi'
+			hat_offset = 3
 	return ..()
 
 /obj/item/robot_module/miner/be_transformed_to(obj/item/robot_module/old_module)
@@ -665,7 +690,8 @@
 			"Heavy" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "heavymin"),
 			"BootyF" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootyminer"),
 			"BootyM" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootyminerM"),
-			"BootyS" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootyminerS")
+			"BootyS" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootyminerS"),
+			"Fat" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "fat_mining")
 		)
 		miner_models = sortList(miner_models)
 	var/miner_borg_icon = show_radial_menu(R, R , miner_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
@@ -707,6 +733,10 @@
 		if("BootyS")
 			cyborg_base_icon = "bootyminerS"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
+			hat_offset = 3
+		if("Fat")
+			cyborg_base_icon = "fat_mining"
+			cyborg_icon_override = 'GainStation13/icons/mob/robots.dmi'
 			hat_offset = 3
 	return ..()
 
