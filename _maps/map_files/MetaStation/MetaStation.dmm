@@ -4146,7 +4146,7 @@
 "bCf" = (/obj/structure/cable/yellow{icon_state = "1-2"},/obj/machinery/door/firedoor,/obj/effect/turf_decal/stripes/line,/turf/open/floor/plasteel,/area/hallway/secondary/entry)
 "bCg" = (/turf/closed/wall,/area/security/vacantoffice)
 "bCh" = (/obj/machinery/door/firedoor,/obj/effect/turf_decal/stripes/line,/turf/open/floor/plasteel,/area/hallway/secondary/entry)
-"bCi" = (/obj/machinery/door/airlock/grunge,/obj/structure/cable/yellow{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/space/basic,/area/security/vacantoffice)
+"bCi" = (/obj/machinery/door/airlock/grunge,/obj/structure/cable/yellow{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/open/floor/wood,/area/security/vacantoffice)
 "bCj" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/obj/structure/cable/yellow{icon_state = "1-2"},/obj/machinery/light/small{dir = 8},/turf/open/floor/plasteel,/area/crew_quarters/toilet/auxiliary)
 "bCk" = (/obj/structure/mirror{pixel_x = 28},/turf/open/floor/plating,/area/crew_quarters/toilet/auxiliary)
 "bCl" = (/obj/structure/cable/yellow{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plating,/area/maintenance/port)
