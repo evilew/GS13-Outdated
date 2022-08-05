@@ -187,3 +187,23 @@
 	mob_trait = TRAIT_TRASHCAN
 	category = CATEGORY_FOOD
 	medical_record_text = "Patient has been observed eating inedable garbage."
+
+/datum/quirk/universal_diet
+	name = "Universal diet"
+	desc = "You are fine with eating just about anything normally edible, you have no strong dislikes in food. Toxic food will still hurt you, though."
+	value = 0
+	category = CATEGORY_FOOD
+	gain_text = "<span class='notice'>You feel like you can eat any food type.</span>"
+	lose_text = "<span class='notice'>You start to dislike certain food types again.</span>"
+	medical_record_text = "Patient reports no strong dietary dislikes."
+
+/datum/quirk/universal_diet/add()
+	var/mob/living/carbon/human/H = quirk_holder
+	var/datum/species/species = H.dna.species
+	species.disliked_food = null
+
+/datum/quirk/universal_diet/remove()
+	var/mob/living/carbon/human/H = quirk_holder
+	if(H)
+		var/datum/species/species = H.dna.species
+		species.disliked_food = initial(species.disliked_food)
