@@ -9407,12 +9407,11 @@
 /area/maintenance/port/fore)
 "avG" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/table,
-/obj/item/storage/firstaid/regular,
 /obj/effect/turf_decal/bot,
 /obj/machinery/light_switch{
 	pixel_x = -26
 	},
+/obj/structure/scale,
 /turf/open/floor/plasteel,
 /area/crew_quarters/toilet/auxiliary)
 "avH" = (
@@ -13721,6 +13720,7 @@
 /turf/open/floor/plasteel/grimy,
 /area/hallway/secondary/service)
 "aDG" = (
+/obj/structure/scale,
 /turf/open/floor/plasteel/grimy,
 /area/hallway/secondary/service)
 "aDH" = (
@@ -63644,13 +63644,13 @@
 /turf/open/floor/plasteel/grimy,
 /area/crew_quarters/heads/captain/private)
 "ccS" = (
-/obj/item/twohanded/required/kirbyplants/random,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
 	},
 /obj/item/storage/secure/safe{
 	pixel_x = 32
 	},
+/obj/structure/scale,
 /turf/open/floor/plasteel/grimy,
 /area/crew_quarters/heads/captain/private)
 "ccT" = (
@@ -81857,6 +81857,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
+/obj/structure/scale,
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness/recreation)
 "cHa" = (
@@ -84496,6 +84497,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
+/obj/structure/scale,
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness/recreation)
 "cLn" = (
@@ -110265,6 +110267,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+/obj/structure/scale,
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/heads/cmo)
 "dDY" = (
@@ -127250,6 +127253,12 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/science/research)
+"oWr" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/effect/turf_decal/tile/blue,
+/obj/structure/scale,
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/central)
 "oYI" = (
 /obj/machinery/igniter/incinerator_toxmix,
 /turf/open/floor/engine/vacuum,
@@ -127364,6 +127373,16 @@
 /obj/effect/spawner/lootdrop/keg,
 /turf/open/floor/plating,
 /area/crew_quarters/abandoned_gambling_den)
+"reY" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/structure/scale,
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/central)
 "rhO" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 1
@@ -127377,6 +127396,22 @@
 	dir = 6
 	},
 /area/science/circuit)
+"rKZ" = (
+/obj/structure/mirror{
+	pixel_y = -28
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/structure/scale,
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/central)
 "rUD" = (
 /obj/machinery/meter,
 /obj/machinery/atmospherics/pipe/manifold/general/visible{
@@ -170823,7 +170858,7 @@ cNz
 dcY
 cNz
 cPy
-dhe
+reY
 diA
 dkq
 dlX
@@ -174170,7 +174205,7 @@ dkA
 dfF
 dnB
 dpA
-dnB
+oWr
 dsH
 dnB
 dvy
@@ -174950,7 +174985,7 @@ dyE
 dma
 dBp
 cSE
-dEd
+rKZ
 cPy
 dBp
 cSE

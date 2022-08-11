@@ -46,10 +46,12 @@
 	to_chat(fatty, "<span class='notice'>You weigh yourself.</span>")
 	to_chat(fatty, "<span class='notice'>The numbers on the screen tick up and eventually settle on:</span>")
 	//The appearance of the numbers changes with the fat level of the character
-	if(HAS_TRAIT(fatty, FATNESS_LEVEL_IMMOBILE) || HAS_TRAIT(fatty, FATNESS_LEVEL_BLOB))
-		to_chat(fatty, "<span class='alert'> <span class='big'>[src.lastreading]LBS!</span></span>")
-	else if(HAS_TRAIT(fatty, FATNESS_LEVEL_OBESE) || HAS_TRAIT(fatty, FATNESS_LEVEL_MORBIDLY_OBESE))
+	if (HAS_TRAIT(fatty, TRAIT_IMMOBILE) || HAS_TRAIT(fatty, TRAIT_BLOB))
+		to_chat(fatty, "<span class='alert'> <span class='big'>[src.lastreading/2000]TONS!!!</span></span>")
+
+	else if(HAS_TRAIT(fatty, TRAIT_OBESE) || HAS_TRAIT(fatty, TRAIT_MORBIDLYOBESE))
 		to_chat(fatty, "<span class='alert'>[src.lastreading]Lbs!</span>")
+
 	else 
 		to_chat(fatty, "<span class='notice'>[src.lastreading]Lbs.</span>")
 
@@ -63,7 +65,7 @@
 				weighperson(HM)
 
 /obj/structure/scale/proc/weighperson(mob/living/carbon/human/fatty)
-	src.lastreading = (150 + fatty.fatness)*(fatty.size_multiplier**2)
+	src.lastreading = (100 + (fatty.fatness))*(fatty.size_multiplier**2)
 	weighEffect(fatty)
 	visible_message("<span class='notice'>[fatty] Weighs themselves.</span>")
 	visible_message("<span class='notice'>The numbers on the screen settle on: [src.lastreading]Lbs.</span>")
