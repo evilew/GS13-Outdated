@@ -94,7 +94,7 @@ SUBSYSTEM_DEF(vote)
 					if(choices[GLOB.master_mode] >= greatest_votes)
 						greatest_votes = choices[GLOB.master_mode]
 			else if(mode == "transfer") // austation sort of but not really begin -- Crew autotransfer vote
-				choices["Initiate Crew Transfer"] += non_voters.len
+			//GS13 no more transfer autovote, finally!
 				if(choices["Initiate Crew Transfer"] >= greatest_votes)
 					greatest_votes = choices["Initiate Crew Transfer"]
 

@@ -481,48 +481,6 @@
 	},
 /turf/open/floor/plasteel/freezer,
 /area/crew_quarters/toilet/restrooms)
-"aaJ" = (
-/obj/structure/lattice,
-/obj/structure/sign/logo/kinaris{
-	pixel_w = 0;
-	pixel_x = 0;
-	pixel_y = 32;
-	pixel_z = 0
-	},
-/turf/open/space,
-/area/space/nearstation)
-"aaK" = (
-/obj/structure/lattice,
-/obj/structure/sign/logo/kinaris{
-	icon_state = "kinaris_sign2";
-	pixel_y = 32
-	},
-/turf/open/space,
-/area/space/nearstation)
-"aaL" = (
-/obj/structure/lattice,
-/obj/structure/sign/logo/kinaris{
-	icon_state = "kinaris_sign3";
-	pixel_y = 32
-	},
-/turf/open/space,
-/area/space/nearstation)
-"aaM" = (
-/obj/structure/lattice,
-/obj/structure/sign/logo/kinaris{
-	icon_state = "kinaris_sign4";
-	pixel_y = 32
-	},
-/turf/open/space,
-/area/space/nearstation)
-"aaN" = (
-/obj/structure/lattice,
-/obj/structure/sign/logo/kinaris{
-	icon_state = "kinaris_sign5";
-	pixel_y = 32
-	},
-/turf/open/space,
-/area/space/nearstation)
 "aaO" = (
 /obj/machinery/door/airlock{
 	dir = 4;
@@ -5609,10 +5567,6 @@
 	name = "Asshole Containment"
 	},
 /obj/item/banhammer,
-/obj/item/toy/plush/mammal/winfre{
-	item_state = "Winfre";
-	name = "Winfre, Destroyer of Fun"
-	},
 /turf/open/floor/plating/asteroid/airless,
 /area/asteroid/nearstation/bomb_site)
 "akZ" = (
@@ -19670,7 +19624,7 @@
 /area/crew_quarters/cafeteria/lunchroom)
 "aNb" = (
 /obj/machinery/vending/sustenance{
-	contraband = list(/obj/item/kitchen/knife = 6, /obj/item/reagent_containers/food/drinks/coffee = 12);
+	contraband = list(/obj/item/kitchen/knife=6,/obj/item/reagent_containers/food/drinks/coffee=12);
 	desc = "A vending machine which vends food.";
 	product_ads = "Sufficiently healthy."
 	},
@@ -40767,7 +40721,7 @@
 	},
 /obj/machinery/vending/wallmed{
 	pixel_y = 28;
-	products = list(/obj/item/reagent_containers/syringe = 3, /obj/item/reagent_containers/pill/patch/styptic = 1, /obj/item/reagent_containers/pill/patch/silver_sulf = 1, /obj/item/reagent_containers/medspray/sterilizine = 1)
+	products = list(/obj/item/reagent_containers/syringe=3,/obj/item/reagent_containers/pill/patch/styptic=1,/obj/item/reagent_containers/pill/patch/silver_sulf=1,/obj/item/reagent_containers/medspray/sterilizine=1)
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /obj/effect/landmark/blobstart,
@@ -42490,7 +42444,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/vending/wallmed{
 	pixel_y = 28;
-	products = list(/obj/item/reagent_containers/syringe = 3, /obj/item/reagent_containers/pill/patch/styptic = 1, /obj/item/reagent_containers/pill/patch/silver_sulf = 1, /obj/item/reagent_containers/medspray/sterilizine = 1)
+	products = list(/obj/item/reagent_containers/syringe=3,/obj/item/reagent_containers/pill/patch/styptic=1,/obj/item/reagent_containers/pill/patch/silver_sulf=1,/obj/item/reagent_containers/medspray/sterilizine=1)
 	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
@@ -43400,7 +43354,7 @@
 "bKw" = (
 /obj/machinery/vending/wallmed{
 	pixel_y = 28;
-	products = list(/obj/item/reagent_containers/syringe = 3, /obj/item/reagent_containers/pill/patch/styptic = 1, /obj/item/reagent_containers/pill/patch/silver_sulf = 1, /obj/item/reagent_containers/medspray/sterilizine = 1)
+	products = list(/obj/item/reagent_containers/syringe=3,/obj/item/reagent_containers/pill/patch/styptic=1,/obj/item/reagent_containers/pill/patch/silver_sulf=1,/obj/item/reagent_containers/medspray/sterilizine=1)
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
@@ -44113,7 +44067,7 @@
 	input_tag = "mix_in";
 	name = "Gas Mix Tank Control";
 	output_tag = "mix_in";
-	sensors = list("mix_sensor" = "Tank")
+	sensors = list("mix_sensor"="Tank")
 	},
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
@@ -45616,7 +45570,7 @@
 	input_tag = "n2o_in";
 	name = "Nitrous Oxide Supply Control";
 	output_tag = "n2o_out";
-	sensors = list("n2o_sensor" = "Tank")
+	sensors = list("n2o_sensor"="Tank")
 	},
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
@@ -46942,7 +46896,7 @@
 	input_tag = "tox_in";
 	name = "Plasma Supply Control";
 	output_tag = "tox_out";
-	sensors = list("tox_sensor" = "Tank")
+	sensors = list("tox_sensor"="Tank")
 	},
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
@@ -95638,7 +95592,7 @@ aCH
 aCK
 aEE
 aAB
-aaJ
+abI
 aHf
 aHX
 aIW
@@ -95895,7 +95849,7 @@ aCI
 aDL
 aEF
 aAB
-aaK
+abI
 aHf
 aHX
 aIW
@@ -96152,7 +96106,7 @@ aCJ
 aDM
 aEG
 aAB
-aaL
+abI
 aHf
 aHY
 aIX
@@ -96409,7 +96363,7 @@ aCK
 aDL
 aEH
 aAB
-aaM
+abI
 aHf
 aHX
 aIW
@@ -96666,7 +96620,7 @@ aCL
 aCK
 aEE
 aAB
-aaN
+abI
 aHf
 aHX
 aIY

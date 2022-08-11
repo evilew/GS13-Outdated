@@ -21243,10 +21243,16 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "aVr" = (
-/obj/machinery/light{
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/machinery/hydroponics/constructable,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
 /turf/open/floor/plasteel/dark,
 /area/hydroponics)
 "aVs" = (
@@ -21964,13 +21970,12 @@
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
 "aWL" = (
-/obj/machinery/processor,
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = 24
+/obj/machinery/hydroponics/constructable,
+/obj/machinery/light{
+	dir = 8
 	},
-/turf/open/floor/plasteel/cafeteria,
-/area/crew_quarters/kitchen)
+/turf/open/floor/plasteel/dark,
+/area/hydroponics)
 "aWM" = (
 /obj/machinery/light,
 /turf/open/floor/plasteel/stairs/left{
@@ -22731,8 +22736,11 @@
 /turf/open/floor/engine,
 /area/hallway/primary/aft)
 "aYo" = (
-/obj/structure/table,
-/obj/machinery/reagentgrinder,
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 24
+	},
+/obj/machinery/processor,
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
 "aYp" = (
@@ -27299,6 +27307,7 @@
 /obj/item/reagent_containers/glass/beaker{
 	pixel_x = 5
 	},
+/obj/machinery/reagentgrinder,
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
 "biW" = (
@@ -58293,10 +58302,6 @@
 	pixel_x = -4;
 	pixel_y = -4
 	},
-/obj/item/toy/plush/mammal/marilyn{
-	pixel_x = 4;
-	pixel_y = 4
-	},
 /obj/effect/decal/cleanable/semen,
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
@@ -61421,10 +61426,6 @@
 	name = "Asshole Containment"
 	},
 /obj/item/banhammer,
-/obj/item/toy/plush/mammal/winfre{
-	item_state = "Winfre";
-	name = "Winfre, Destroyer of Fun"
-	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "dQj" = (
@@ -62038,6 +62039,15 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/chapel/office)
+"oKV" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/public/glass{
+	name = "Hydroponics";
+	req_access_txt = "35";
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/hydroponics)
 "oQA" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
 	dir = 4
@@ -62568,6 +62578,27 @@
 /obj/machinery/bloodbankgen,
 /turf/open/floor/pod/light,
 /area/medical/sleeper)
+"xXD" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/machinery/door/airlock/public/glass{
+	name = "Hydroponics";
+	req_access_txt = "35";
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/kitchen)
 "xYc" = (
 /obj/item/crowbar,
 /obj/item/wrench,
@@ -102029,7 +102060,7 @@ aJi
 aSu
 aSB
 aSB
-aWL
+aSB
 aYo
 bhy
 aJi
@@ -102286,7 +102317,7 @@ aJi
 aJi
 aSI
 aUb
-aJi
+xXD
 aJi
 aJi
 aJi
@@ -102544,7 +102575,7 @@ aOH
 aSJ
 aUc
 aVr
-aOH
+aWL
 aYs
 aZU
 aZW
@@ -102804,7 +102835,7 @@ aUd
 aUd
 aYt
 aSJ
-bbg
+oKV
 bem
 bnP
 bsu
