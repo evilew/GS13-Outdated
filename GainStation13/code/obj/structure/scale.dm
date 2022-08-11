@@ -1,6 +1,6 @@
 /obj/structure/scale
 	name = "weighing scale"
-	desc = "You can weigh yourself with this. Its last reading was: [src.lastreading]Lbs"
+	desc = "You can weigh yourself with this."
 	icon = 'GainStation13/icons/obj/scale.dmi'
 	icon_state = "scale"
 	anchored = TRUE
@@ -10,6 +10,7 @@
 	var/buildstacktype = /obj/item/stack/sheet/metal
 	var/buildstackamount = 3
 	layer = OBJ_LAYER
+	//stores the weight of the last person to step on in Lbs
 	var/lastreading = 0
 
 /obj/structure/scale/deconstruct()
@@ -36,22 +37,33 @@
 	else
 		return ..()
 
-/obj/structure/chair/examine(mob/user)
+/obj/structure/scale/examine(mob/user)
 	. = ..()
+	. += "Its last reading was: [src.lastreading]Lbs"
 	. += "<span class='notice'>It's held together by a couple of <b>bolts</b>.</span>"
 
-/obj/structure/scale/Crossed(AM)
+/obj/structure/scale/proc/weighEffect(mob/living/carbon/human/fatty)
+	to_chat(fatty, "<span class='notice'>You weigh yourself.</span>")
+	to_chat(fatty, "<span class='notice'>The numbers on the screen tick up and eventually settle on:</span>")
+	//The appearance of the numbers changes with the fat level of the character
+	if(HAS_TRAIT(fatty, FATNESS_LEVEL_IMMOBILE) || HAS_TRAIT(fatty, FATNESS_LEVEL_BLOB))
+		to_chat(fatty, "<span class='alert'> <span class='big'>[src.lastreading]LBS!</span></span>")
+	else if(HAS_TRAIT(fatty, FATNESS_LEVEL_OBESE) || HAS_TRAIT(fatty, FATNESS_LEVEL_MORBIDLY_OBESE))
+		to_chat(fatty, "<span class='alert'>[src.lastreading]Lbs!</span>")
+	else 
+		to_chat(fatty, "<span class='notice'>[src.lastreading]Lbs.</span>")
 
-	if(AM.ishuman())
-		var/mob/living/fatty = AM 
 
-		if(isturf(loc))
+/obj/structure/scale/Crossed(AM as mob|obj)
+	if(isturf(loc))
+		//need to be sure the thing that just crossed the scale is human
+		if(ishuman(AM))
+			var/mob/living/carbon/human/HM = AM
+			if(!(HM.movement_type & FLYING))
+				weighperson(HM)
 
-			if(!(fatty.movement_type & FLYING))
-
-				
-				src.lastreading = (150 + fatty.fatness)*(fatty.size_multiplier**2)
-				usr.visible_message("[usr] weighs themselves on the scales.", "You weigh yourself on the scales")
-				usr.visible_message("<span class='notice'> The scales read [src.lastreading]Lbs </span>")
-			
-			
+/obj/structure/scale/proc/weighperson(mob/living/carbon/human/fatty)
+	src.lastreading = (150 + fatty.fatness)*(fatty.size_multiplier**2)
+	weighEffect(fatty)
+	visible_message("<span class='notice'>[fatty] Weighs themselves.</span>")
+	visible_message("<span class='notice'>The numbers on the screen settle on: [src.lastreading]Lbs.</span>")
