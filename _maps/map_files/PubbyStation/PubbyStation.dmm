@@ -15581,6 +15581,7 @@
 /obj/machinery/light_switch{
 	pixel_y = 25
 	},
+/obj/structure/scale,
 /turf/open/floor/plasteel/freezer,
 /area/crew_quarters/toilet/restrooms)
 "aFc" = (
@@ -27290,6 +27291,7 @@
 /obj/machinery/atmospherics/pipe/simple/cyan/hidden{
 	dir = 6
 	},
+/obj/structure/scale,
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/main)
 "bdc" = (
@@ -30099,6 +30101,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
 	},
+/obj/structure/scale,
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness/pool)
 "biI" = (
@@ -32687,6 +32690,7 @@
 	icon_state = "drain";
 	name = "drain"
 	},
+/obj/structure/scale,
 /turf/open/floor/wood,
 /area/crew_quarters/fitness)
 "bok" = (
@@ -37629,6 +37633,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+/obj/structure/scale,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "bys" = (
@@ -40682,9 +40687,6 @@
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/heads/cmo)
 "bEH" = (
-/obj/item/twohanded/required/kirbyplants{
-	icon_state = "plant-16"
-	},
 /obj/machinery/light_switch{
 	pixel_y = -22
 	},
@@ -40694,6 +40696,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+/obj/structure/scale,
 /turf/open/floor/plasteel/white,
 /area/crew_quarters/heads/cmo)
 "bEI" = (
@@ -41232,6 +41235,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
+/obj/structure/scale,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "bFU" = (

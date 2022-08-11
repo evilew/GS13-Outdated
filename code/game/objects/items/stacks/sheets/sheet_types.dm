@@ -53,6 +53,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	null, \
 	//add this when I can find a way to make them easily constructible > new/datum/stack_recipe("sink", /obj/structure/sink, 2, one_per_turf = TRUE, on_floor = TRUE),
 	new/datum/stack_recipe("shower", /obj/machinery/shower/crafted, 2, one_per_turf = TRUE, on_floor = TRUE), \
+	new/datum/stack_recipe("scale", /obj/structure/scale, 3, one_per_turf = TRUE, on_floor = TRUE), \
 	null, \
 	new/datum/stack_recipe("rack parts", /obj/item/rack_parts), \
 	new/datum/stack_recipe("closet", /obj/structure/closet, 2, time = 15, one_per_turf = TRUE, on_floor = TRUE), \
