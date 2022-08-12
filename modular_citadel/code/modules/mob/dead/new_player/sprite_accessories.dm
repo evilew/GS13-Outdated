@@ -2575,3 +2575,23 @@ VFACE("Chinless Beard", facial_chinlessbeard_s)
 VFACE("Moonshiner", facial_moonshiner_s)
 VFACE("Tribearder", facial_tribearder_s)
 #undef VFACE
+
+//Shit we've stolen from Splurt (GS13)
+
+//Snouts (you're welcome Neun)
+
+/datum/sprite_accessory/mam_snouts/easterndragon
+	name = "Eastern Dragon"
+	icon_state = "easterndw"
+
+/datum/sprite_accessory/mam_snouts/easterndragon/no_whiskers
+	name = "Eastern Dragon - No Whiskers"
+	icon_state = "easterndnw"
+
+/datum/sprite_accessory/mam_snouts/feasterndragon
+	name = "Eastern Dragon (Top)"
+	icon_state = "feasterndw"
+
+/datum/sprite_accessory/mam_snouts/feasterndragon/no_whiskers
+	name = "Eastern Dragon - No Whiskers (Top)"
+	icon_state = "feasterndnw"
