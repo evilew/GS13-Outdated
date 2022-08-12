@@ -12,6 +12,8 @@
 	layer = OBJ_LAYER
 	//stores the weight of the last person to step on in Lbs
 	var/lastreading = 0
+	//the conversion ratio for how much a point of fatness weighs on a 6' person
+	var/fatnessToWeight = 0.25
 
 /obj/structure/scale/deconstruct()
 	// If we have materials, and don't have the NOCONSTRUCT flag
@@ -68,7 +70,7 @@
 				weighperson(HM)
 
 /obj/structure/scale/proc/weighperson(mob/living/carbon/human/fatty)
-	src.lastreading = round((140 + (fatty.fatness/2))*(fatty.size_multiplier**2))
+	src.lastreading = round((140 + (fatty.fatness/src.fatnessToWeight))*(fatty.size_multiplier**2))
 	weighEffect(fatty)
 	visible_message("<span class='notice'>[fatty] weighs themselves.</span>")
 	visible_message("<span class='notice'>The numbers on the screen settle on: [src.lastreading]Lbs.</span>")
