@@ -1332,7 +1332,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 
 	if (H.nutrition > NUTRITION_LEVEL_FULL)
-		var/fatConversionRate = 40 //GS13 what percentage of the excess nutrition should go to fat (total nutrition to transfer can't be under 1)
+		var/fatConversionRate = 15 //GS13 what percentage of the excess nutrition should go to fat (total nutrition to transfer can't be under 1)
 		var/nutritionThatBecomesFat = max((H.nutrition - NUTRITION_LEVEL_FULL)*(fatConversionRate / 100),1)
 		H.nutrition -= nutritionThatBecomesFat
 		H.fatness += nutritionThatBecomesFat
