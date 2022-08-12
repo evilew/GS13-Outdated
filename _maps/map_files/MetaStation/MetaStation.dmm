@@ -3759,7 +3759,7 @@
 "buJ" = (/obj/effect/turf_decal/tile/blue{dir = 4},/obj/machinery/newscaster{pixel_x = 28; pixel_y = 1},/turf/open/floor/plasteel/white/corner,/area/hallway/secondary/entry)
 "buK" = (/obj/structure/chair/comfy{dir = 4},/turf/open/floor/plasteel/grimy,/area/hallway/primary/port)
 "buL" = (/obj/structure/chair/comfy{dir = 8},/obj/machinery/light{dir = 4},/turf/open/floor/plasteel/grimy,/area/hallway/primary/port)
-"buM" = (/obj/machinery/vending/mealdor,/obj/machinery/vending/mealdor,/turf/open/floor/plasteel/dark,/area/hallway/primary/port)
+"buM" = (/obj/machinery/vending/mealdor,/turf/open/floor/plasteel/dark,/area/hallway/primary/port)
 "buN" = (/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 8},/obj/structure/disposalpipe/segment,/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 8},/turf/open/floor/plasteel,/area/hallway/primary/port)
 "buO" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/structure/cable/yellow{icon_state = "1-2"},/obj/effect/turf_decal/tile/neutral,/turf/open/floor/plasteel,/area/hallway/primary/port)
 "buP" = (/obj/item/radio/intercom{name = "Station Intercom (General)"; pixel_y = -28},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 8},/turf/open/floor/plasteel,/area/hallway/primary/port)
