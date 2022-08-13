@@ -2476,9 +2476,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 //GS13 fatness
 
 				if("fatness")
-					var/new_fatness = input(user, "Choose your amount of fat at start :\n(0-2000), Fat changes appearance and move speed. \nThresholds are 90, 150, 350, 500 and 900. Warning : If using the 'weak legs' trait, bieng too fat will make you immobile and unable to leave the shuttle without a wheelchair or help", "Character Preference") as num|null
+					var/new_fatness = input(user, "Choose your amount of fat at start :\n(0-4000), Fat changes appearance and move speed. \nThresholds are 200, 440, 1240, 1840 and 3400. Warning : If using the 'weak legs' trait, being too fat will make you immobile and unable to leave the shuttle without a wheelchair or help", "Character Preference") as num|null
 					if (new_fatness)
-						starting_weight = max(min( round(text2num(new_fatness)), 2000),0)
+						starting_weight = max(min( round(text2num(new_fatness)), 4000),0)
 
 				if("ui")
 					var/pickedui = input(user, "Choose your UI style.", "Character Preference", UI_style)  as null|anything in GLOB.available_ui_styles
