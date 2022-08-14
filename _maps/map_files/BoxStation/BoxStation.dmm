@@ -5115,7 +5115,7 @@
 "bUs" = (/obj/structure/table,/obj/item/storage/firstaid/brute{pixel_x = 3; pixel_y = 3},/obj/item/storage/firstaid/brute,/obj/item/storage/firstaid/regular{pixel_x = -3; pixel_y = -3},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/turf/open/floor/plasteel/white,/area/medical/sleeper)
 "bUt" = (/obj/machinery/light,/obj/machinery/rnd/production/techfab/department/medical,/turf/open/floor/plasteel/white,/area/medical/sleeper)
 "bUu" = (/turf/open/floor/plasteel/cafeteria{dir = 5},/area/medical/medbay/central)
-"bUv" = (/obj/effect/spawner/structure/window,/obj/machinery/door/poddoor/preopen{id = "RBreakPriv"; name = "privacy door"},/turf/open/floor/plating,/area/medical/medbay/central)
+"bUv" = (/obj/effect/spawner/structure/window,/obj/machinery/door/poddoor/preopen{id = "medpriv4"; name = "privacy door"},/turf/open/floor/plating,/area/medical/medbay/central)
 "bUw" = (/obj/structure/disposalpipe/junction/flip{dir = 2},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 8},/turf/open/floor/plasteel/white,/area/medical/medbay/central)
 "bUx" = (/obj/structure/disposalpipe/segment{dir = 9},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel/white,/area/medical/medbay/central)
 "bUy" = (/obj/effect/spawner/structure/window/reinforced,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/machinery/door/poddoor/preopen{id = "medshut2"; name = "shutters"},/turf/open/floor/plating,/area/crew_quarters/heads/cmo)
