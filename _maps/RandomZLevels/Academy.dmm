@@ -3133,8 +3133,7 @@
 	},
 /obj/structure/table,
 /obj/item/soulstone,
-/turf/open/floor/plasteel/airless{
-	icon_state = "whitered";
+/turf/open/floor/plasteel/airless/white{
 	dir = 4
 	},
 /area/awaymission/academy/academyaft)
@@ -3201,8 +3200,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/open/floor/plasteel/airless{
-	icon_state = "whitered";
+/turf/open/floor/plasteel/airless/white{
 	dir = 4
 	},
 /area/awaymission/academy/academyaft)
@@ -3260,8 +3258,7 @@
 /obj/item/organ/brain{
 	name = "The preserved brain of Harry Houdini"
 	},
-/turf/open/floor/plasteel/airless{
-	icon_state = "whitered";
+/turf/open/floor/plasteel/airless/white{
 	dir = 4
 	},
 /area/awaymission/academy/academyaft)
@@ -3367,8 +3364,7 @@
 /obj/structure/table,
 /obj/structure/window/reinforced,
 /obj/item/batterer,
-/turf/open/floor/plasteel/airless{
-	icon_state = "whitered";
+/turf/open/floor/plasteel/airless/white{
 	dir = 4
 	},
 /area/awaymission/academy/academyaft)

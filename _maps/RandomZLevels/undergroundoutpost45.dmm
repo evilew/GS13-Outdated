@@ -2125,15 +2125,6 @@
 	icon_state = "platingdmg1"
 	},
 /area/awaymission/undergroundoutpost45/central)
-"eu" = (
-/turf/open/floor/plating{
-	initial_gas_mix = "co2=173.4;n2=135.1;plasma=229.8;TEMP=351.9";
-	heat_capacity = 1e+006;
-	icon_plating = "asteroidplating";
-	icon_state = "asteroidplating";
-	temperature = 363.9
-	},
-/area/awaymission/undergroundoutpost45/caves)
 "ev" = (
 /obj/item/clothing/under/pj/red,
 /obj/structure/closet/secure_closet{
@@ -9274,7 +9265,7 @@
 	input_tag = "UO45_air_in";
 	name = "Mixed Air Supply Control";
 	output_tag = "UO45_air_out";
-	sensors = list("UO45_air_sensor" = "Tank")
+	sensors = list("UO45_air_sensor"="Tank")
 	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -10764,7 +10755,7 @@
 	input_tag = "UO45_mix_in";
 	name = "Gas Mix Tank Control";
 	output_tag = "UO45_mix_in";
-	sensors = list("UO45_mix_sensor" = "Tank")
+	sensors = list("UO45_mix_sensor"="Tank")
 	},
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 6
@@ -11470,7 +11461,7 @@
 	input_tag = "UO45_n2_in";
 	name = "Nitrogen Supply Control";
 	output_tag = "UO45_n2_out";
-	sensors = list("UO45_n2_sensor" = "Tank")
+	sensors = list("UO45_n2_sensor"="Tank")
 	},
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
 /obj/effect/turf_decal/tile/red,
@@ -11521,7 +11512,7 @@
 	input_tag = "UO45_o2_in";
 	name = "Oxygen Supply Control";
 	output_tag = "UO45_o2_out";
-	sensors = list("UO45_o2_sensor" = "Tank")
+	sensors = list("UO45_o2_sensor"="Tank")
 	},
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
@@ -11610,7 +11601,7 @@
 /obj/machinery/computer/atmos_control{
 	dir = 4;
 	name = "Tank Monitor";
-	sensors = list("UO45_n2_sensor" = "Nitrogen", "UO45_o2_sensor" = "Oxygen", "UO45_mix_sensor" = "Gas Mix Tank")
+	sensors = list("UO45_n2_sensor"="Nitrogen","UO45_o2_sensor"="Oxygen","UO45_mix_sensor"="Gas Mix Tank")
 	},
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
@@ -11801,7 +11792,7 @@
 	dir = 4;
 	level = 3;
 	name = "Distribution and Waste Monitor";
-	sensors = list("UO45_air_sensor" = "Mixed Air Supply Tank", "UO45_distro_meter" = "Distribution Loop", "UO45_waste_meter" = "Waste Loop")
+	sensors = list("UO45_air_sensor"="Mixed Air Supply Tank","UO45_distro_meter"="Distribution Loop","UO45_waste_meter"="Waste Loop")
 	},
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
@@ -42626,7 +42617,7 @@ tT
 gy
 uN
 hH
-eu
+eJ
 eJ
 ad
 ad
@@ -42883,7 +42874,7 @@ tU
 uw
 uO
 vk
-eu
+eJ
 eJ
 eJ
 ad
@@ -43140,7 +43131,7 @@ tV
 ux
 uP
 hH
-eu
+eJ
 eJ
 eJ
 eJ
@@ -48811,7 +48802,7 @@ ww
 xZ
 yc
 ww
-eu
+eJ
 eJ
 eJ
 eJ
@@ -49068,7 +49059,7 @@ xX
 ya
 yd
 yf
-eu
+eJ
 eJ
 eJ
 eJ
@@ -49325,7 +49316,7 @@ xY
 yb
 ye
 ww
-eu
+eJ
 eJ
 eJ
 eJ
@@ -51326,9 +51317,9 @@ ad
 ad
 ad
 ad
-eu
-eu
-eu
+eJ
+eJ
+eJ
 fn
 eJ
 eJ
