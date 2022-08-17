@@ -14743,6 +14743,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
+/obj/machinery/vending/gato,
 /turf/open/floor/plasteel/cafeteria,
 /area/hallway/secondary/entry)
 "aDt" = (
@@ -28866,7 +28867,6 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "bgi" = (
-/obj/machinery/vending/cola,
 /obj/structure/sign/map{
 	icon_state = "map-pubby";
 	pixel_y = 32
@@ -28874,6 +28874,7 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
+/obj/machinery/vending/gato,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "bgj" = (
