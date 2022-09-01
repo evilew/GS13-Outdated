@@ -229,7 +229,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 
 /datum/quirk/paraplegic
 	name = "Paraplegic"
-	desc = "Your legs do not function. Nothing will ever fix this. But hey, free wheelchair!"
+	desc = "Your legs do not function. Nothing will ever fix this. But hey, free hoverchair!"
 	value = -3
 	category = CATEGORY_MOVEMENT
 	mob_trait = TRAIT_PARA

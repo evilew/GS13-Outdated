@@ -4,7 +4,7 @@
 
 /datum/crafting_recipe/showercurtain
 	name = "Shower Curtains"
-	reqs = 	list(/obj/item/stack/sheet/cloth = 2, 
+	reqs = 	list(/obj/item/stack/sheet/cloth = 2,
 				 /obj/item/stack/sheet/plastic = 2,
 				 /obj/item/stack/rods = 1)
 	result = /obj/structure/curtain
@@ -109,7 +109,7 @@
 ////////////
 
 /datum/crafting_recipe/wheelchair
-	name = "Wheelchair"
+	name = "Hoverchair"
 	result = /obj/vehicle/ridden/wheelchair
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/stack/rods = 8)
@@ -117,7 +117,7 @@
 	category = CAT_MISC
 
 /datum/crafting_recipe/motorized_wheelchair
-	name = "Motorized Wheelchair"
+	name = "Motorized Hoverchair"
 	result = /obj/vehicle/ridden/wheelchair/motorized
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 		/obj/item/stack/rods = 8,
@@ -334,7 +334,7 @@
 	reqs = list(/obj/item/stack/sheet/mineral/bamboo = 2,
 				/obj/item/reagent_containers/food/snacks/grown/coconut = 1)
 	time = 70
-	category = CAT_MISC 
+	category = CAT_MISC
 
 /datum/crafting_recipe/bloodsucker/vassalrack
 	name = "Persuasion Rack"

@@ -163,7 +163,7 @@
 
 /datum/quirk/SpawnWithWheelchair
 	name = "Mobility Assistance"
-	desc = "After your last failed fitness test, you were advised to start using a wheelchair"
+	desc = "After your last failed fitness test, you were advised to start using a hoverchair"
 	category = CATEGORY_MOVEMENT
 /datum/quirk/SpawnWithWheelchair/on_spawn()
 	if(quirk_holder.buckled) // Handle late joins being buckled to arrival shuttle chairs.
