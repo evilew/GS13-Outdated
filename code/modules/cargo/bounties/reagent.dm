@@ -84,7 +84,7 @@ datum/bounty/reagent/simple_drink/New()
 	var/reagent_type = pick(possible_reagents)
 	wanted_reagent = new reagent_type
 	name = wanted_reagent.name
-	description = "Winfre is thirsty, Send a shipment of [name] to CentCom to quench her thirst."
+	description = "Juliette is thirsty, Send a shipment of [name] to CentCom to quench her thirst."
 	reward += rand(0, 2) * 500
 
 /datum/bounty/reagent/complex_drink

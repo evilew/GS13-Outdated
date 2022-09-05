@@ -1,6 +1,6 @@
 /datum/bounty/item/chef/birthday_cake
 	name = "Birthday Cake"
-	description = "Winfre's birthday is coming up! Ship them a birthday cake to celebrate!"
+	description = "An CentCom's employee is having a birthday party! Ship them a birthday cake so that they can celebrate it!"
 	reward = 1000
 	wanted_types = list(/obj/item/reagent_containers/food/snacks/store/cake/birthday, /obj/item/reagent_containers/food/snacks/cakeslice/birthday)
 
