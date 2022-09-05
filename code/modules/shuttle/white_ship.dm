@@ -54,8 +54,3 @@
 	loot = list(/obj/mecha/working/ripley/mining = 1,
 				/obj/structure/mecha_wreckage/ripley = 5)
 	lootdoubles = FALSE
-
-/obj/item/paper/fluff/ruins/sophie
-	name = "Handwritten note"
-
-	info = "Hello, if you are reading this, you've must have come across my ship.<br>You're welcome to borrow it to get about if its an emergency. Just plase dont leave it an mess.<br> - Sophie Johnson (HoP of General Station 13)"
