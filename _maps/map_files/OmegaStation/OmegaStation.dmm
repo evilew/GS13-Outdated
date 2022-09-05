@@ -2478,7 +2478,7 @@
 "aZl" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/closed/wall/r_wall,/area/science/robotics/lab)
 "aZm" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 10},/turf/closed/wall/r_wall,/area/science/robotics/lab)
 "aZo" = (/obj/structure/girder,/turf/open/floor/plating,/area/maintenance/port)
-"aZp" = (/obj/machinery/recycler,/obj/machinery/conveyor{dir = 4; id = "garbage"},/turf/open/floor/plating,/area/maintenance/disposal)
+"aZp" = (/obj/machinery/conveyor{dir = 4; id = "garbage"},/turf/open/floor/plating,/area/maintenance/disposal)
 "aZq" = (/obj/machinery/conveyor{dir = 6; id = "garbage"},/turf/open/floor/plating,/area/maintenance/disposal)
 "aZr" = (/obj/structure/window/reinforced{dir = 8},/turf/open/floor/plating,/area/maintenance/disposal)
 "aZs" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/closed/wall,/area/maintenance/disposal)
