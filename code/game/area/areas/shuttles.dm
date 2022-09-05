@@ -93,30 +93,6 @@
 /area/shuttle/abandoned/pod
 	name = "Abandoned Ship Pod"
 
-/area/shuttle/Sophie
-	name = "Sophie's Ship"
-	blob_allowed = FALSE
-	requires_power = TRUE
-	canSmoothWithAreas = /area/shuttle/Sophie
-
-/area/shuttle/Sophie/bridge
-	name = "Sophie's Ship Bridge"
-
-/area/shuttle/Sophie/engine
-	name = "Sophie's Ship Engine"
-
-/area/shuttle/Sophie/kitchen
-	name = "Sophie's Ship kitchen"
-
-/area/shuttle/Sophie/lounge
-	name = "Sophie's Ship lounge"
-
-/area/shuttle/Sophie/crew
-	name = "Sophie's Ship Crew Quarters"
-
-/area/shuttle/Sophie/medbay
-	name = "Sophie's Ship Medbay"
-
 ////////////////////////////Single-area shuttles////////////////////////////
 
 /area/shuttle/transit
