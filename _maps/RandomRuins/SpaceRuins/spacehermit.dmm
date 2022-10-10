@@ -6,10 +6,12 @@
 /turf/closed/mineral/random/low_chance,
 /area/ruin/unpowered)
 "ac" = (
+/obj/machinery/hydroponics/soil,
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
 "ad" = (
-/obj/machinery/hydroponics/soil,
+/obj/structure/table/wood,
+/obj/item/shovel,
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
 "ae" = (
@@ -26,8 +28,6 @@
 /turf/closed/wall/mineral/titanium,
 /area/ruin/powered)
 "ah" = (
-/obj/structure/table/wood,
-/obj/item/shovel,
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
 "ai" = (
@@ -47,8 +47,9 @@
 /turf/closed/wall/mineral/titanium,
 /area/ruin/powered)
 "am" = (
-/obj/item/circuitboard/computer/rdconsole,
-/obj/item/circuitboard/machine/protolathe/department/science,
+/obj/item/seeds/tower,
+/obj/item/seeds/tower,
+/obj/item/seeds/tower,
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
 "an" = (
@@ -78,6 +79,7 @@
 /obj/machinery/door/airlock/titanium{
 	name = "Escape Pod Airlock"
 	},
+/obj/machinery/poweredfans,
 /turf/open/floor/mineral/titanium,
 /area/ruin/powered)
 "as" = (
@@ -91,60 +93,51 @@
 /turf/closed/wall/mineral/titanium,
 /area/ruin/powered)
 "au" = (
-/obj/item/seeds/tower,
-/obj/item/seeds/tower,
-/obj/item/seeds/tower,
+/obj/item/stack/sheet/mineral/wood,
+/obj/item/stack/sheet/mineral/wood,
+/obj/item/stack/sheet/mineral/wood,
+/obj/item/stack/sheet/mineral/wood,
+/obj/item/stack/sheet/mineral/wood,
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
 "av" = (
-/obj/structure/table/wood,
-/obj/item/paper/crumpled{
-	info = "</b><br><br>So this is it, I guess.. Always thought I'd go out doing something stupid, but.. not like this.<br>Should anyone find this note, tell Jeremy Clarke he can kiss my ass. Launching the pod unprepared like that..<br>Well. Now that I'm keeling over here, I guess I should write how I came to be the last one standing here.<br>Four of us took this pod.. only three of us woke up though.. fourth pod is locked from the inside, we couldn't figure out how to get it open.<br>Me and the clown set up a farm s'we can survive at least a while.. though, he didn't seem to understand that man cannot live on banana alone.<br>Had a bunch of circuits on him for some reason when he eventually passed, whispered to me something about a chem dispenser.. I.. don't know what he meant by that. I was never good with machinary. Maybe he wanted space lube?<br>The assistant that we gave the space suit to go out and find help never came back.. I'm betting he found salvation and left us behind.. never can trust those grubby greytiders."
-	},
-/obj/item/pen,
-/obj/item/bluespace_thread{
-	pixel_x = -1;
-	pixel_y = 1
-	},
-/turf/open/floor/plating/asteroid,
-/area/ruin/unpowered)
-"aw" = (
-/obj/item/stack/sheet/mineral/wood,
-/obj/item/stack/sheet/mineral/wood,
-/obj/item/stack/sheet/mineral/wood,
-/obj/item/stack/sheet/mineral/wood,
-/obj/item/stack/sheet/mineral/wood,
-/turf/open/floor/plating/asteroid,
-/area/ruin/unpowered)
-"ax" = (
 /obj/item/twohanded/spear,
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
-"ay" = (
+"aw" = (
 /obj/item/grown/log,
 /obj/item/grown/log,
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
-"az" = (
+"ax" = (
 /obj/structure/table/wood,
 /obj/item/storage/bag/plants/portaseeder,
+/turf/open/floor/plating/asteroid,
+/area/ruin/unpowered)
+"ay" = (
+/obj/item/flashlight/lamp/bananalamp,
+/turf/open/floor/plating/asteroid,
+/area/ruin/unpowered)
+"az" = (
+/obj/item/seeds/banana,
+/obj/item/seeds/banana,
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
 "aA" = (
 /turf/open/floor/plating/asteroid/airless,
 /area/ruin/unpowered)
 "aB" = (
-/obj/item/seeds/banana,
-/obj/item/seeds/banana,
-/turf/open/floor/plating/asteroid,
-/area/ruin/unpowered)
-"aC" = (
 /obj/effect/mob_spawn/human/clown/corpse,
 /obj/structure/fans/tiny/invisible,
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
-"aD" = (
+"aC" = (
 /obj/item/mining_scanner,
+/turf/open/floor/plating/asteroid,
+/area/ruin/unpowered)
+"aD" = (
+/obj/item/circuitboard/computer/rdconsole,
+/obj/item/circuitboard/machine/protolathe/department/science,
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
 "aE" = (
@@ -255,25 +248,30 @@
 /turf/closed/wall/mineral/titanium,
 /area/ruin/unpowered)
 "bc" = (
-/obj/item/circuitboard/machine/circuit_imprinter,
+/obj/structure/table/wood,
+/obj/item/pen,
+/obj/item/bluespace_thread{
+	pixel_x = -1;
+	pixel_y = 1
+	},
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
 "bd" = (
-/obj/item/grown/bananapeel,
+/obj/item/circuitboard/machine/circuit_imprinter,
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
 "be" = (
+/obj/item/grown/bananapeel,
+/turf/open/floor/plating/asteroid,
+/area/ruin/unpowered)
+"bf" = (
 /obj/effect/mob_spawn/human/corpse/cargo_tech,
 /obj/structure/fans/tiny/invisible,
 /obj/effect/decal/cleanable/vomit,
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
-"bf" = (
-/obj/item/clothing/glasses/meson,
-/turf/open/floor/plating/asteroid,
-/area/ruin/unpowered)
 "bg" = (
-/obj/item/stock_parts/matter_bin,
+/obj/item/clothing/glasses/meson,
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
 "bh" = (
@@ -281,11 +279,11 @@
 /turf/open/floor/mineral/titanium,
 /area/ruin/powered)
 "bi" = (
-/obj/item/stock_parts/manipulator,
+/obj/item/stock_parts/matter_bin,
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
 "bj" = (
-/obj/item/holosign_creator/atmos,
+/obj/item/stock_parts/manipulator,
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
 "bk" = (
@@ -293,37 +291,41 @@
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
 "bl" = (
+/obj/item/holosign_creator/atmos,
+/turf/open/floor/plating/asteroid,
+/area/ruin/unpowered)
+"bm" = (
 /obj/machinery/power/floodlight,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
-"bm" = (
+"bn" = (
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
-"bn" = (
+"bo" = (
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
-"bo" = (
+"bp" = (
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
-"bp" = (
+"bq" = (
 /obj/item/stack/ore/iron,
 /obj/item/stack/ore/iron,
 /obj/item/stack/ore/iron,
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
-"bq" = (
+"br" = (
 /obj/structure/cable,
 /obj/machinery/power/port_gen/pacman{
 	active = 1;
@@ -332,14 +334,10 @@
 	},
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
-"br" = (
+"bs" = (
 /obj/item/stack/ore/iron,
 /obj/item/stack/sheet/mineral/plasma,
 /obj/item/stack/sheet/mineral/plasma,
-/turf/open/floor/plating/asteroid,
-/area/ruin/unpowered)
-"bs" = (
-/obj/item/flashlight/lamp/bananalamp,
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered)
 "bt" = (
@@ -347,6 +345,21 @@
 /obj/structure/mirror{
 	pixel_x = 28
 	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered)
+"eX" = (
+/obj/item/clothing/suit/space/orange,
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered)
+"kU" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/obj/item/clothing/head/helmet/space/orange,
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered)
+"Qy" = (
+/obj/item/tank/internals/emergency_oxygen/empty,
 /turf/open/floor/mineral/titanium,
 /area/ruin/powered)
 
@@ -858,7 +871,7 @@ ae
 ao
 ae
 ae
-ab
+ah
 ab
 ab
 ab
@@ -910,8 +923,8 @@ an
 an
 an
 af
-ab
-ab
+ah
+ah
 ab
 ab
 ab
@@ -963,8 +976,8 @@ an
 an
 ae
 aZ
-ab
-ab
+ah
+ah
 ab
 ab
 ab
@@ -1015,8 +1028,8 @@ ao
 ao
 ak
 ba
-ab
-ab
+ah
+ah
 ab
 ab
 ab
@@ -1067,8 +1080,8 @@ an
 as
 aj
 aE
-ab
-ab
+ah
+ah
 ab
 ab
 ab
@@ -1116,11 +1129,11 @@ af
 bt
 ao
 ao
-ao
+kU
 bt
 ba
-ac
-ab
+ah
+ah
 ab
 ab
 ab
@@ -1153,8 +1166,8 @@ ab
 ab
 ab
 ab
-ah
-az
+ad
+ax
 ab
 ab
 ab
@@ -1166,13 +1179,13 @@ ab
 aR
 ae
 ae
+Qy
 an
-an
-an
+eX
 ae
 aZ
-ac
-ab
+ah
+ah
 ab
 ab
 ab
@@ -1205,9 +1218,9 @@ ab
 ab
 ab
 ab
-ac
-ac
-ab
+ah
+ah
+ah
 ab
 ab
 ab
@@ -1223,8 +1236,8 @@ ar
 af
 at
 bb
-ac
-ab
+ah
+ah
 ab
 ab
 ab
@@ -1256,27 +1269,27 @@ ab
 ab
 ab
 ab
-ad
 ac
-ac
-ac
-ac
-ab
+ah
+ah
+ah
+ah
+ah
 aH
 aJ
 aL
 ab
 ab
 aT
-ac
-ac
-ac
-ac
-ac
-ac
-ac
+ah
+ah
+ah
+ah
+ah
+ah
+ah
 aR
-ab
+ah
 ab
 ab
 ab
@@ -1308,27 +1321,27 @@ ab
 ab
 ab
 ab
-ad
-au
 ac
-aB
 am
-ac
-ac
-ac
-ac
+ah
+az
+aD
+ah
+ah
+ah
+ah
 ab
 ab
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-bg
-ab
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+bi
+ah
 ab
 ab
 ab
@@ -1360,27 +1373,27 @@ ab
 ab
 ab
 ab
-ad
-aw
-bs
-aC
 ac
-ac
-ac
-ac
-ac
+au
+ay
+aB
+ah
+ah
+ah
+ah
+ah
 ab
 ab
-ab
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ab
-ab
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+ah
 ab
 ab
 ab
@@ -1412,27 +1425,27 @@ ab
 ab
 ab
 ab
-ad
-ax
 ac
-aD
+av
+ah
+aC
 aF
-ac
-ac
-ac
-ab
+ah
+ah
+ah
+ah
 ab
 ab
 aU
-bd
-ac
-ac
-bl
+be
+ah
+ah
 bm
-ac
-ac
-ab
-ab
+bn
+ah
+ah
+ah
+ah
 ab
 ab
 ab
@@ -1464,27 +1477,27 @@ ab
 ab
 ab
 ab
-ad
-ay
 ac
-ac
-ac
+aw
+ah
+ah
+ah
 aG
-ac
-ac
+ah
+ah
+ah
 ab
 ab
-ab
-av
-be
-ac
-ac
-ac
-bn
+bc
+bf
+ah
+ah
+ah
 bo
-bo
-bq
-ab
+bp
+bp
+br
+ah
 ab
 ab
 ab
@@ -1517,26 +1530,26 @@ ab
 ab
 ab
 ab
-ac
-ac
-ac
-ac
-ac
-ac
-ac
+ah
+ah
+ah
+ah
+ab
+ah
+ah
+ah
 ab
 ab
-ab
-bc
-bf
-ac
-ac
-ac
-ac
-ac
-ac
-br
-ab
+bd
+bg
+ah
+ah
+ah
+ah
+ah
+ah
+bs
+ah
 ab
 ab
 ab
@@ -1570,25 +1583,25 @@ ab
 ab
 ab
 ab
-ac
-ab
-ac
-ac
-ac
-ac
-ac
 ab
 ab
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
 ab
+ab
+ab
+ah
+ah
+ab
+ab
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+ah
 ab
 ab
 ab
@@ -1624,23 +1637,23 @@ ab
 ab
 ab
 ab
-ac
-ac
-ac
-ac
-ac
+ab
+ab
+ab
+ah
+ah
 aN
-ac
-ac
-ac
-ac
+ah
+ah
+ah
+ah
 aR
-ac
-ac
-ac
-ac
-ab
-ab
+ah
+ah
+ah
+ah
+ah
+ah
 ab
 ab
 ab
@@ -1677,22 +1690,22 @@ ab
 ab
 ab
 ab
-ac
-ac
-ac
 ab
+ah
+ah
+ah
 ab
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+ah
 ab
 ab
 ab
@@ -1729,21 +1742,21 @@ ab
 ab
 ab
 ab
-ab
-ab
+ah
+ah
 aK
 ab
 ab
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-bp
-ac
-ac
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+bq
+ah
+ah
 aR
 ab
 ab
@@ -1781,21 +1794,21 @@ ab
 ab
 ab
 ab
-ab
-ab
+ah
+ah
 ab
 ab
 ab
 aP
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
-ac
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+ah
+ah
 aR
 ab
 ab
@@ -1840,15 +1853,15 @@ ab
 ab
 aQ
 aP
-ac
-ac
+ah
+ah
 aR
-ac
-ac
-ac
-ac
+ah
+ah
+ah
+ah
+ah
 ab
-ac
 ab
 ab
 ab
@@ -1892,13 +1905,13 @@ ab
 ab
 ab
 ab
-ac
-ac
-ac
-ac
+ah
+ah
+ah
+ah
 aP
-ac
-bg
+ah
+bi
 ab
 ab
 ab
@@ -1944,12 +1957,12 @@ ab
 ab
 ab
 ab
-ac
-ac
-ac
-ac
-ac
-ac
+ah
+ah
+ah
+ah
+ah
+ah
 aS
 ab
 ab
@@ -1996,12 +2009,12 @@ ab
 ab
 ab
 ab
-bg
-ac
-ac
-ac
-ac
-ac
+bi
+ah
+ah
+ah
+ah
+ah
 aS
 ab
 ab
@@ -2048,12 +2061,12 @@ ab
 ab
 ab
 ab
-ac
-ac
-bj
-ac
-ac
-ac
+ab
+ah
+bl
+ah
+ah
+ah
 aS
 ab
 ab
@@ -2101,10 +2114,10 @@ ab
 ab
 ab
 aS
-bi
-ac
-ac
-ac
+bj
+ah
+ah
+ah
 aS
 aS
 ab
@@ -2153,10 +2166,10 @@ ab
 ab
 ab
 aS
-ac
-ac
-ac
-ac
+ah
+ah
+ah
+ah
 aS
 aS
 ab
