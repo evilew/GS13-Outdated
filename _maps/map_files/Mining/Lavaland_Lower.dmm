@@ -691,6 +691,8 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
+/obj/item/stack/sheet/mineral/plasma,
+/obj/item/stack/sheet/mineral/plasma,
 /turf/open/floor/plating,
 /area/xenoarch/gen)
 "cb" = (
@@ -3444,27 +3446,14 @@
 	},
 /turf/open/floor/plasteel,
 /area/xenoarch/gen)
-"iE" = (
-/obj/effect/turf_decal/tile/yellow{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/xenoarch/gen)
 "iF" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
 /turf/closed/wall,
 /area/xenoarch/gen)
 "iG" = (
-/obj/effect/turf_decal/tile/yellow{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
+/obj/item/stack/sheet/mineral/plasma,
+/obj/item/stack/sheet/mineral/plasma,
+/turf/open/floor/plating,
 /area/xenoarch/gen)
 "iH" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -3511,13 +3500,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/open/floor/plasteel,
 /area/xenoarch/gen)
-"iQ" = (
-/obj/effect/turf_decal/tile/yellow,
-/obj/effect/turf_decal/tile/yellow{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/xenoarch/gen)
 "iR" = (
 /obj/structure/sign/poster/official/random{
 	pixel_x = 32
@@ -3530,19 +3512,6 @@
 /obj/item/storage/bag/ore,
 /obj/item/storage/bag/ore,
 /obj/item/storage/bag/ore,
-/turf/open/floor/plasteel/dark,
-/area/xenoarch/gen)
-"iS" = (
-/obj/effect/turf_decal/tile/yellow{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/yellow,
-/obj/effect/turf_decal/tile/yellow{
-	dir = 4
-	},
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "iT" = (
@@ -3762,9 +3731,13 @@
 /turf/open/floor/plasteel/white,
 /area/xenoarch/arch)
 "jp" = (
-/obj/structure/fluff/arc,
-/turf/open/floor/plasteel/dark,
-/area/xenoarch/gen)
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/xenoarch/bot{
+	name = "Demon Teleporter"
+	})
 "jq" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
@@ -4769,13 +4742,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/xenoarch/gen)
-"lw" = (
-/obj/effect/turf_decal/tile/yellow{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/yellow,
-/turf/open/floor/plasteel/dark,
-/area/xenoarch/gen)
 "lx" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -5013,10 +4979,6 @@
 	},
 /turf/open/floor/plating,
 /area/xenoarch/gen)
-"lZ" = (
-/obj/effect/turf_decal/tile/yellow,
-/turf/open/floor/plasteel/dark,
-/area/xenoarch/gen)
 "ma" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
 /obj/structure/trash_pile,
@@ -5115,14 +5077,10 @@
 /turf/open/floor/plasteel,
 /area/xenoarch/gen)
 "mo" = (
-/obj/effect/turf_decal/tile/yellow,
-/obj/effect/turf_decal/tile/yellow{
-	dir = 4
+/obj/machinery/light{
+	dir = 1
 	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel,
 /area/xenoarch/gen)
 "mp" = (
 /obj/structure/flora/ausbushes/grassybush,
@@ -5656,23 +5614,6 @@
 /obj/machinery/rnd/production/protolathe/department/science,
 /turf/open/floor/plasteel/white,
 /area/xenoarch/arch)
-"nP" = (
-/obj/effect/turf_decal/tile/yellow,
-/obj/effect/turf_decal/tile/yellow{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/xenoarch/gen)
-"nQ" = (
-/obj/effect/turf_decal/tile/yellow,
-/obj/effect/turf_decal/tile/yellow{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/yellow{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/xenoarch/gen)
 "nR" = (
 /obj/structure/disposalpipe/segment,
 /turf/closed/wall,
@@ -6746,12 +6687,6 @@
 	},
 /turf/open/floor/plasteel/rockvault,
 /area/xenoarch/nothinghere)
-"FV" = (
-/obj/item/candle/infinite,
-/turf/open/floor/plating,
-/area/xenoarch/bot{
-	name = "Demon Teleporter"
-	})
 "FZ" = (
 /turf/closed/wall,
 /area/xenoarch/bot{
@@ -6795,12 +6730,6 @@
 "Ku" = (
 /turf/closed/wall/r_wall/rust,
 /area/xenoarch/nothinghere)
-"KC" = (
-/obj/item/candle/infinite,
-/turf/open/floor/plasteel,
-/area/xenoarch/bot{
-	name = "Demon Teleporter"
-	})
 "LP" = (
 /obj/machinery/porta_turret/aux_base{
 	dir = 5;
@@ -12557,9 +12486,9 @@ nI
 nM
 nR
 oi
-el
-el
-el
+fK
+fK
+fK
 fK
 ei
 jG
@@ -12813,11 +12742,11 @@ az
 az
 hc
 oq
-el
-iE
-iS
-iE
-nP
+fK
+fK
+fK
+fK
+fK
 nY
 kb
 kR
@@ -13070,11 +12999,11 @@ az
 az
 nN
 fL
-au
-iG
-jp
-lw
-nP
+mo
+fK
+fK
+fK
+fK
 nZ
 kb
 cf
@@ -13327,11 +13256,11 @@ gj
 nJ
 nO
 fL
-el
-el
-el
-lZ
-nQ
+fK
+fK
+fK
+fK
+fK
 oh
 kb
 kT
@@ -13585,9 +13514,9 @@ fV
 fV
 fL
 as
-iQ
-iQ
-mo
+fK
+fK
+fK
 fK
 ei
 kd
@@ -14081,7 +14010,7 @@ bl
 ho
 fL
 bJ
-jN
+iG
 cw
 Sy
 cd
@@ -18224,7 +18153,7 @@ sO
 Gq
 VE
 VE
-KC
+VE
 SD
 Gq
 FZ
@@ -18993,10 +18922,10 @@ jN
 FZ
 Gq
 tW
-FV
 Gq
 Gq
-KC
+Gq
+VE
 Gq
 FZ
 "}
@@ -19251,7 +19180,7 @@ Jt
 Gq
 VE
 VE
-VE
+jp
 Gq
 VE
 Gq

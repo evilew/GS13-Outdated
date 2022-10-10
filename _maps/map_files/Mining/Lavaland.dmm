@@ -937,7 +937,8 @@
 /obj/machinery/power/apc{
 	name = "Mining EVA APC";
 	pixel_x = 1;
-	pixel_y = -23
+	pixel_y = -23;
+	req_one_access_txt = "48"
 	},
 /obj/structure/table,
 /obj/item/storage/toolbox/mechanical{
@@ -1268,7 +1269,8 @@
 	dir = 8;
 	name = "Mining Station Starboard Wing APC";
 	pixel_x = -27;
-	pixel_y = 2
+	pixel_y = 2;
+	req_one_access_txt = "48"
 	},
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -2006,7 +2008,8 @@
 	dir = 1;
 	name = "Mining Station Port Wing APC";
 	pixel_x = 1;
-	pixel_y = 25
+	pixel_y = 25;
+	req_one_access_txt = "48"
 	},
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
@@ -4395,7 +4398,8 @@
 	dir = 1;
 	name = "Mining Communications APC";
 	pixel_x = 1;
-	pixel_y = 25
+	pixel_y = 25;
+	req_one_access_txt = "48"
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1,
 /turf/open/floor/plasteel/dark,

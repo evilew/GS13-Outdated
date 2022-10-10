@@ -75,7 +75,6 @@
 
 
 
-
 /**********************Lavaland Areas**************************/
 
 /area/lavaland
@@ -122,3 +121,57 @@
 
 /area/lavaland/surface/outdoors/explored
 	name = "Lavaland Labor Camp"
+
+/area/lavaland/demone/tele
+	name= "Demone Teleporter Room"
+	icon_state= "demonetp"
+
+
+/area/lavaland/demone/living
+	name= "Demone Living Area"
+	icon_state= "demoneliving"
+
+/area/lavaland/demone/kitchen
+	name= "Demone Mining Kitchen"
+	icon_state= "demonekitchen"
+
+/area/lavaland/demone/minestorage
+	name= "Demone Mining Storage"
+	icon_state= "demonestorage"
+
+/area/lavaland/demone/factoryoffice
+	name= "Factory CEO Office"
+	icon_state= "demonceo"
+
+/area/lavaland/demone/lobby
+	name= "Factory Lobby"
+	icon_state= "demonelobby"
+
+/area/lavaland/demone/reception
+	name= "Factory Reception"
+	icon_state= "demonereception"
+
+/area/lavaland/demone/factorystorage
+	name= "Factory Storage"
+	icon_state= "factorystorage"
+
+/area/lavaland/demone/factory
+	name= "Factory"
+	icon_state= "demonefactory"
+
+/area/lavaland/demone/factorygen
+	name= "Factory Generator Room"
+	icon_state= "demonegen"
+
+/area/lavaland/demone/villagesilo
+	name= "Demone Village Silo"
+	icon_state= "demonesilo"
+
+/area/lavaland/demone/villagepsu
+	name= "Village Generator Room"
+	icon_state= "demonevilpsu"
+
+/area/lavaland/demone/demonevillage
+	name= "Village "
+	icon_state= "demonevillage"
+
