@@ -6,7 +6,7 @@
 	earliest_start = 10
 
 /datum/round_event/high_priority_bounty/announce(fake)
-	priority_announce("C.C has issued a high-priority bounty. Details have been uploaded to all bounty consoles.", "Kinaris Corp Bounty Program")
+	priority_announce("C.C has issued a high-priority bounty. Details have been uploaded to all bounty consoles.", "GATO Bounty Program")
 
 /datum/round_event/high_priority_bounty/start()
 	var/datum/bounty/B

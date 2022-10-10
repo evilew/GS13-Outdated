@@ -61,7 +61,7 @@
 	can_adjust = FALSE
 /obj/item/clothing/under/rank/prisoner
 	name = "prison jumpsuit"
-	desc = "It's standardised Kinaris prisoner-wear. Its suit sensors are stuck in the \"Fully On\" position."
+	desc = "It's standardised GATO prisoner-wear. Its suit sensors are stuck in the \"Fully On\" position."
 	icon_state = "prisoner"
 	item_state = "o_suit"
 	item_color = "prisoner"
@@ -71,7 +71,7 @@
 
 /obj/item/clothing/under/rank/prisoner/skirt
 	name = "prison jumpskirt"
-	desc = "It's standardised Kinaris prisoner-wear. Its suit sensors are stuck in the \"Fully On\" position."
+	desc = "It's standardised GATO prisoner-wear. Its suit sensors are stuck in the \"Fully On\" position."
 	icon_state = "prisoner_skirt"
 	item_state = "o_suit"
 	item_color = "prisoner_skirt"
@@ -113,21 +113,21 @@
 	item_color = "vice"
 	can_adjust = FALSE
 /obj/item/clothing/under/rank/centcom_officer
-	desc = "CentCom officer's jumpsuit, adorned with a golden K and a star, signifying work under Kinaris."
+	desc = "CentCom officer's jumpsuit, adorned with a golden K and a star, signifying work under GATO."
 	name = "\improper CentCom Officer's jumpsuit"
 	icon_state = "officer"
 	item_state = "g_suit"
 	item_color = "officer"
 	alt_covers_chest = TRUE
 /obj/item/clothing/under/rank/centcom_commander
-	desc = "It's a jumpsuit worn by CentCom's highest-tier Commanders, adorned with a golden K and a star. signifying work under Kinaris."
+	desc = "It's a jumpsuit worn by CentCom's highest-tier Commanders, adorned with a golden K and a star. signifying work under GATO."
 	name = "\improper CentCom Commander's jumpsuit"
 	icon_state = "centcom"
 	item_state = "dg_suit"
 	item_color = "centcom"
 /obj/item/clothing/under/rank/centcom_officer/skirt
 	name = "\improper CentCom Officer's jumpskirt"
-	desc = "It's a jumpskirt worn by CentCom's officials, adorned with a golden K and a star, signifying work under Kinaris."
+	desc = "It's a jumpskirt worn by CentCom's officials, adorned with a golden K and a star, signifying work under GATO."
 	icon_state = "official_skirt"
 	item_state = "g_suit"
 	item_color = "official_skirt"

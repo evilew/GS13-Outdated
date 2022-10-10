@@ -9,7 +9,7 @@
  */
 /obj/item/clothing/under/rank/security
 	name = "security jumpsuit"
-	desc = "A tactical security jumpsuit for officers complete with Kinaris PMC belt buckle."
+	desc = "A tactical security jumpsuit for officers complete with a GATO PMC belt buckle."
 	icon_state = "rsecurity"
 	item_state = "r_suit"
 	item_color = "rsecurity"
@@ -66,7 +66,7 @@
 
 /obj/item/clothing/under/rank/warden
 	name = "security suit"
-	desc = "A formal security suit for officers complete with Kinaris PMC belt buckle."
+	desc = "A formal security suit for officers complete with a GATO PMC belt buckle."
 	icon_state = "rwarden"
 	item_state = "r_suit"
 	item_color = "rwarden"
@@ -84,7 +84,7 @@
 
 /obj/item/clothing/under/rank/warden/skirt
 	name = "warden's suitskirt"
-	desc = "A formal security suitskirt for officers complete with Kinaris PMC belt buckle."
+	desc = "A formal security suitskirt for officers complete with a GATO PMC belt buckle."
 	icon_state = "rwarden_skirt"
 	item_state = "r_suit"
 	item_color = "rwarden_skirt"

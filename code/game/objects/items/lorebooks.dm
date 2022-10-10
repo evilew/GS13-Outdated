@@ -53,7 +53,7 @@
                 <h1><u>Chapter 3</u></h1>
                 <h2>The current state of Gato</h2>
 				<p>
-				Many people have begun to circulate bad rumors that Gato is beginning to decline. Dear employees, as honest, loving, and trustworthy employers, we must deny those claims! The Syndicate does not pose much of a threat, and we have continued to profit despite the odds! So do not fear, neither your wages nor your employment are currently at risk. We would never think of doing something that would cause such anguish to the members of our beloved company! Perhaps it is time to go onto a more pleasant topic... how the corporate hierarchy works! At the bottom, we have common workers, above that are your Department Heads, and above that is your Captain! And your Captain answers to our Central Command teams, who are subordinate to the Head of Central Command, who reports to the Branch Manager, who answers to the Executive Officers, who answer to the CEO(Chief Executive Officer!), who answers to the Board of Directors. The Board of Directors equally listens to the input of our most trusted shareholders, and the Head of the Board! 
+				Many people have begun to circulate bad rumors that Gato is beginning to decline. Dear employees, as honest, loving, and trustworthy employers, we must deny those claims! The Syndicate does not pose much of a threat, and we have continued to profit despite the odds! So do not fear, neither your wages nor your employment are currently at risk. We would never think of doing something that would cause such anguish to the members of our beloved company! Perhaps it is time to go onto a more pleasant topic... how the corporate hierarchy works! At the bottom, we have common workers, above that are your Department Heads, and above that is your Captain! And your Captain answers to our Central Command teams, who are subordinate to the Head of Central Command, who reports to the Branch Manager, who answers to the Executive Officers, who answer to the CEO(Chief Executive Officer!), who answers to the Board of Directors. The Board of Directors equally listens to the input of our most trusted shareholders, and the Head of the Board!
 				<p>
 				Got it? Good! Now you understand all that you might need to know about Gato Industrial Concern!
 				<p>
@@ -84,7 +84,7 @@
 				<body>
 				<h3 style="text-align: center;">Layenia Crystal Cycles</h3>
 				<hr>
-				Layenia is a prominent interest in recent times for the likes of Azurean civilizations. While the concepts of negative mass and spacetime-altering properties are nothing new for Kinaris R&D, Layenia holds a special key for Weave-integrated technology. If you are familiar with The Weave, then you may know why Layenian Crystals (also referred to as lattice crystals) are such a focal point. If not, this datapad may prove useful to you.
+				Layenia is a prominent interest in recent times for the likes of Azurean civilizations. While the concepts of negative mass and spacetime-altering properties are nothing new for GATO R&D, Layenia holds a special key for Weave-integrated technology. If you are familiar with The Weave, then you may know why Layenian Crystals (also referred to as lattice crystals) are such a focal point. If not, this datapad may prove useful to you.
 				<p>
 				<h2>Table of Contents...</h2>
 				<ol>

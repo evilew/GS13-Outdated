@@ -260,7 +260,7 @@
 		if("A&A")
 			fullname = "Ash and Asher"
 		if("Generic")
-			fullname = "Kinariss Cheap Imitations"
+			fullname = "GATO Cheap Imitations"
 	var/removals = list("\[REDACTED\]", "\[EXPLETIVE DELETED\]",
 		"\[EXPUNGED\]", "\[INFORMATION ABOVE YOUR SECURITY CLEARANCE\]",
 		"\[MOVE ALONG CITIZEN\]", "\[NOTHING TO SEE HERE\]")

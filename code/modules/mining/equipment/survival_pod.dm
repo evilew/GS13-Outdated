@@ -266,8 +266,8 @@
 
 //Signs
 /obj/structure/sign/mining
-	name = "Kinaris mining corps sign"
-	desc = "A sign of relief for weary miners, and a warning for would-be competitors to Kinaris's mining claims."
+	name = "GATO mining corps sign"
+	desc = "A sign of relief for weary miners, and a warning for would-be competitors to GATO's mining claims."
 	icon = 'icons/turf/walls/survival_pod_walls.dmi'
 	icon_state = "ntpod"
 

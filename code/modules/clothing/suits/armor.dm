@@ -95,7 +95,7 @@
 
 /obj/item/clothing/suit/armor/vest/leather
 	name = "security overcoat"
-	desc = "Lightly armored leather overcoat meant as casual wear for high-ranking officers. Bears the crest of Kinaris Security."
+	desc = "Lightly armored leather overcoat meant as casual wear for high-ranking officers. Bears the crest of GATO Security."
 	icon_state = "leathercoat-sec"
 	item_state = "hostrench"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
@@ -263,7 +263,7 @@
 	max_integrity = 200
 	resistance_flags = FLAMMABLE
 	armor = list("melee" = 20, "bullet" = 10, "laser" = 30, "energy" = 5, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 50)
-	
+
 /obj/item/clothing/suit/armor/monolith
 	name = "Monolith suit"
 	desc = "The producer is unknown. Its protective properties are slightly worse then those of the bulletproof vest. Its structure combines a bulletproof vest and radiation protection plates. It provides good protection from gunfire."

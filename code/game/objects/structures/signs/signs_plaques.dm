@@ -7,7 +7,7 @@
 
 /obj/structure/sign/plaques/atmos
 	name = "\improper CEO of the Millennia."
-	desc = "The CEO of Kinaris, adorned with a lack of expression and the heart for extended space colonization at the forefront of advanced light technology, at odds with Nanotrasen."
+	desc = "The CEO of GATO, adorned with a lack of expression and the heart for extended space colonization at the forefront of advanced light technology, at odds with Nanotrasen."
 
 /obj/structure/sign/plaques/thunderdome
 	name = "Thunderdome Plaque"

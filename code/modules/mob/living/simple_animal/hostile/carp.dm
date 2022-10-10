@@ -116,7 +116,7 @@
 /mob/living/simple_animal/hostile/carp/cayenne/lia
 	name = "Lia"
 	real_name = "Lia"
-	desc = "A failed experiment of Nanotrasen to create weaponised carp technology, now acquired by Kinaris. This less than intimidating carp now serves as the Head of Security's pet."
+	desc = "A failed experiment of GATO to create a transportation carp. This less than intimidating carp now serves as the Head of Security's pet."
 	faction = list("neutral", "carp")
 	health = 200
 	icon_dead = "magicarp_dead"

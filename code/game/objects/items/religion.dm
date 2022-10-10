@@ -163,7 +163,7 @@
 
 /obj/item/storage/backpack/bannerpack
 	name = "GATO banner backpack"
-	desc = "It's a backpack with lots of extra room.  A banner with Kinaris's logo is attached, that can't be removed."
+	desc = "It's a backpack with lots of extra room.  A banner with GATO's logo is attached, that can't be removed."
 	icon_state = "bannerpack"
 
 /obj/item/storage/backpack/bannerpack/Initialize()

@@ -9,7 +9,7 @@ Captain
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Kinaris officials and Space law"
+	supervisors = "GATO officials and Space law"
 	selection_color = "#ccccff"
 	req_admin_notify = 1
 	minimal_player_age = 30
