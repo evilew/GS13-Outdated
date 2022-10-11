@@ -21,7 +21,7 @@
 "u" = (/obj/structure/shuttle/engine/propulsion{dir = 4},/obj/docking_port/mobile/arrivals,/turf/open/floor/plating/airless,/area/shuttle/arrival)
 "v" = (/obj/structure/chair/comfy/shuttle{dir = 1},/turf/open/floor/mineral/titanium/blue,/area/shuttle/arrival)
 "w" = (/obj/structure/chair/comfy/shuttle{dir = 1},/obj/machinery/light/small{dir = 4},/turf/open/floor/mineral/titanium/blue,/area/shuttle/arrival)
-"x" = (/obj/structure/closet/emcloset,/turf/open/floor/mineral/titanium/blue,/area/shuttle/arrival)
+"x" = (/obj/structure/closet/emcloset,/obj/item/storage/toolbox/emergency,/turf/open/floor/mineral/titanium/blue,/area/shuttle/arrival)
 "y" = (/obj/machinery/light,/turf/open/floor/mineral/titanium/blue,/area/shuttle/arrival)
 "z" = (/obj/item/radio/intercom{name = "Station Intercom (General)"; pixel_y = -29},/obj/machinery/light,/turf/open/floor/mineral/titanium/blue,/area/shuttle/arrival)
 "A" = (/obj/structure/shuttle/engine/propulsion/burst/left{dir = 4},/turf/open/floor/plating/airless,/area/shuttle/arrival)
