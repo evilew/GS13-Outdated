@@ -216,10 +216,10 @@
 	icon = "honkednloaded"
 	desc = "Honk."
 
-/datum/barsign/cumzone
-	name = "The Cumzone"
-	icon = "thecumzone"
-	desc = "Welcome."
+// /datum/barsign/cumzone
+//	name = "The Cumzone"
+//	icon = "thecumzone"
+//	desc = "Welcome."
 
 /datum/barsign/thenest
 	name = "The Nest"
@@ -318,10 +318,15 @@
 	icon = "thehive"
 	desc = "Comb in for some sweet drinks! Not known for serving any sappy drink."
 
-/datum/barsign/kinariscorp
-	name = "Kinaris.Co"
-	icon = "kinariscorp"
-	desc = "Provided in saturated olive, Much like the drinks."
+// /datum/barsign/kinariscorp
+//	name = "Kinaris.Co"
+//	icon = "kinariscorp"
+//	desc = "Provided in saturated olive, Much like the drinks."
+
+/datum/barsign/the_bustedbelt
+		name = "The Busted Belt"
+		icon = "thebustedbelt"
+		desc = "DRINK ALL YOUR FAVORITE ALCOHOL UNTIL YOUR BELT POPS!!"
 
 /datum/barsign/hiddensigns
 	hidden = TRUE
