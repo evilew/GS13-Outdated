@@ -5757,7 +5757,7 @@
 	dir = 9
 	},
 /obj/item/twohanded/required/kirbyplants/random,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark/corner,
 /area/xenoarch/gen)
 "oj" = (
 /obj/item/twohanded/required/kirbyplants/random,
@@ -6552,11 +6552,20 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/xenoarch/nothinghere)
+"rc" = (
+/turf/open/floor/plasteel/dark/side,
+/area/xenoarch/gen)
 "rf" = (
 /turf/open/floor/plasteel/grimy{
 	icon_state = "engine"
 	},
 /area/xenoarch/nothinghere)
+"sf" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/xenoarch/gen)
 "so" = (
 /turf/closed/wall/r_wall,
 /area/xenoarch/nothinghere)
@@ -6585,6 +6594,10 @@
 /area/xenoarch/bot{
 	name = "Demon Teleporter"
 	})
+"sU" = (
+/obj/effect/turf_decal/tile/purple,
+/turf/open/floor/plasteel/dark,
+/area/xenoarch/gen)
 "tG" = (
 /obj/structure/chair/office,
 /obj/effect/decal/cleanable/dirt,
@@ -6604,6 +6617,11 @@
 /obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plasteel/rockvault,
 /area/xenoarch/nothinghere)
+"xn" = (
+/turf/open/floor/plasteel/dark/side{
+	dir = 1
+	},
+/area/xenoarch/gen)
 "xG" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/grimy{
@@ -6625,6 +6643,14 @@
 /obj/structure/closet/firecloset,
 /turf/open/floor/plating{
 	initial_gas_mix = "o2=14;n2=23;TEMP=300"
+	},
+/area/xenoarch/gen)
+"BA" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_y = 28
+	},
+/turf/open/floor/plasteel/dark/corner{
+	dir = 8
 	},
 /area/xenoarch/gen)
 "CA" = (
@@ -6665,6 +6691,13 @@
 	icon_state = "engine"
 	},
 /area/xenoarch/nothinghere)
+"EY" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/purple,
+/turf/open/floor/plasteel/dark,
+/area/xenoarch/gen)
 "Fl" = (
 /obj/item/screwdriver{
 	pixel_y = 12;
@@ -6701,8 +6734,20 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/grimy,
 /area/xenoarch/nothinghere)
+"GS" = (
+/obj/effect/turf_decal/tile{
+	color = "8F96AD"
+	},
+/turf/open/floor/plasteel/dark,
+/area/xenoarch/gen)
 "Hx" = (
 /turf/open/floor/carpet,
+/area/xenoarch/gen)
+"Ib" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "Jt" = (
 /obj/machinery/door/airlock/maintenance{
@@ -6727,6 +6772,13 @@
 /area/xenoarch/bot{
 	name = "Demon Teleporter"
 	})
+"Kd" = (
+/obj/effect/turf_decal/tile{
+	color = "#8F96AD";
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/xenoarch/gen)
 "Ku" = (
 /turf/closed/wall/r_wall/rust,
 /area/xenoarch/nothinghere)
@@ -6842,6 +6894,12 @@
 /area/xenoarch/bot{
 	name = "Demon Teleporter"
 	})
+"ZE" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/xenoarch/gen)
 "ZK" = (
 /obj/machinery/door/window/eastleft{
 	dir = 2
@@ -12486,9 +12544,9 @@ nI
 nM
 nR
 oi
-fK
-fK
-fK
+el
+el
+Kd
 fK
 ei
 jG
@@ -12743,10 +12801,10 @@ az
 hc
 oq
 fK
-fK
-fK
-fK
-fK
+rc
+sf
+Ib
+xn
 nY
 kb
 kR
@@ -13000,10 +13058,10 @@ az
 nN
 fL
 mo
-fK
-fK
-fK
-fK
+rc
+el
+EY
+xn
 nZ
 kb
 cf
@@ -13257,10 +13315,10 @@ nJ
 nO
 fL
 fK
-fK
-fK
-fK
-fK
+rc
+sU
+ZE
+xn
 oh
 kb
 kT
@@ -13513,10 +13571,10 @@ fV
 fV
 fV
 fL
-as
-fK
-fK
-fK
+BA
+el
+el
+GS
 fK
 ei
 kd
