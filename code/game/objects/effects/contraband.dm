@@ -424,9 +424,9 @@
 	desc = "A poster glorifying the station's security force."
 	icon_state = "poster1_legit"
 
-/obj/structure/sign/poster/official/nanotrasen_logo
-	name = "Kinaris Logo"
-	desc = "A poster depicting the Kinaris.Co logo, an enemy of GATO."
+/obj/structure/sign/poster/official/gato_logo
+	name = "GATO Logo"
+	desc = "A poster of our glorious GATO Corp!"
 	icon_state = "poster2_legit"
 
 /obj/structure/sign/poster/official/cleanliness
@@ -610,6 +610,12 @@
 	name = "NO FAT"
 	desc = "A vandalized 'NO ERP' poster, now the words 'NO FAT' are written onto it. "
 	icon_state = "no_fat"
+
+/obj/structure/sign/poster/official/libraryposter
+	name = "Motivational Poster"
+	desc = "A poster motivating you in reading books, reading this is already giving you a headache."
+	icon_state = "libraryposter"
+
 
 
 
