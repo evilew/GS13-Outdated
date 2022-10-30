@@ -749,7 +749,7 @@
 "aoO" = (/obj/structure/chair{dir = 4},/turf/open/floor/plating,/area/maintenance/port/fore)
 "aoP" = (/obj/structure/chair{dir = 8},/turf/open/floor/plating,/area/maintenance/port/fore)
 "aoQ" = (/obj/machinery/space_heater,/obj/effect/decal/cleanable/cobweb,/turf/open/floor/plating,/area/maintenance/port/fore)
-"aoR" = (/obj/effect/decal/cleanable/semen,/obj/structure/bed,/obj/item/bedsheet/runtime,/turf/open/floor/carpet/orange,/area/maintenance/port/fore)
+"aoR" = (/obj/structure/bed,/obj/item/bedsheet/runtime,/turf/open/floor/carpet/orange,/area/maintenance/port/fore)
 "aoS" = (/obj/structure/trash_pile,/turf/open/floor/plating{icon_state = "panelscorched"},/area/maintenance/port/fore)
 "aoT" = (/obj/machinery/atmospherics/components/unary/vent_pump/on{dir = 4},/turf/open/floor/carpet/orange,/area/maintenance/port/fore)
 "aoU" = (/obj/machinery/atmospherics/components/unary/portables_connector/visible{dir = 4},/obj/machinery/portable_atmospherics/canister/air,/obj/item/tank/internals/air,/turf/open/floor/plating,/area/maintenance/port/fore)
