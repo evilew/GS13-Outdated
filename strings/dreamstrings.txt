@@ -28,7 +28,7 @@ the %ADJECTIVE% brig
 %A% %ADJECTIVE% shuttle
 %A% %ADJECTIVE% laboratory
 Nanotrasen
-Kinaris
+GATO
 the Syndicate
 the Wizard Federation
 %ADJECTIVE% blood
