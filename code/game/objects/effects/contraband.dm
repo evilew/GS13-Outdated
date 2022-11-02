@@ -410,7 +410,7 @@
 
 /obj/structure/sign/poster/official
 	poster_item_name = "motivational poster"
-	poster_item_desc = "An official GATO-issued poster to foster a compliant and obedient workforce. It comes with state-of-the-art adhesive backing, for easy pinning to any vertical surface."
+	poster_item_desc = "An official Nanotrasen-issued poster to foster a compliant and obedient workforce. It comes with state-of-the-art adhesive backing, for easy pinning to any vertical surface."
 	poster_item_icon_state = "rolled_legit"
 
 /obj/structure/sign/poster/official/random
@@ -424,9 +424,9 @@
 	desc = "A poster glorifying the station's security force."
 	icon_state = "poster1_legit"
 
-/obj/structure/sign/poster/official/nanotrasen_logo
+/obj/structure/sign/poster/official/gato_logo
 	name = "GATO Logo"
-	desc = "A poster depicting the alternative version of GATO logo."
+	desc = "A poster of our glorious GATO Corp!"
 	icon_state = "poster2_legit"
 
 /obj/structure/sign/poster/official/cleanliness
@@ -610,6 +610,12 @@
 	name = "NO FAT"
 	desc = "A vandalized 'NO ERP' poster, now the words 'NO FAT' are written onto it. "
 	icon_state = "no_fat"
+
+/obj/structure/sign/poster/official/libraryposter
+	name = "Motivational Poster"
+	desc = "A poster motivating you in reading books, reading this is already giving you a headache."
+	icon_state = "libraryposter"
+
 
 
 

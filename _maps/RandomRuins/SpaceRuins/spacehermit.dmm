@@ -217,12 +217,19 @@
 /area/ruin/unpowered)
 "aV" = (
 /obj/item/clothing/suit/space/orange,
+/obj/item/clothing/head/helmet/space/orange{
+	pixel_y = 12;
+	pixel_x = -7
+	},
 /turf/template_noop,
 /area/template_noop)
 "aW" = (
-/obj/item/clothing/head/helmet/space/orange,
-/turf/template_noop,
-/area/template_noop)
+/obj/structure/chair/comfy/shuttle{
+	dir = 8
+	},
+/obj/item/clothing/suit/space/orange,
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered)
 "aX" = (
 /mob/living/simple_animal/hostile/carp/megacarp,
 /turf/template_noop,
@@ -348,16 +355,13 @@
 /turf/open/floor/mineral/titanium,
 /area/ruin/powered)
 "eX" = (
-/obj/item/clothing/suit/space/orange,
-/turf/open/floor/mineral/titanium,
-/area/ruin/powered)
-"kU" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 8
-	},
 /obj/item/clothing/head/helmet/space/orange,
 /turf/open/floor/mineral/titanium,
 /area/ruin/powered)
+"kU" = (
+/mob/living/simple_animal/hostile/carp,
+/turf/closed/mineral/random/low_chance,
+/area/ruin/unpowered)
 "Qy" = (
 /obj/item/tank/internals/emergency_oxygen/empty,
 /turf/open/floor/mineral/titanium,
@@ -514,7 +518,7 @@ aa
 aa
 aa
 aa
-aW
+aa
 aa
 aM
 aa
@@ -739,7 +743,7 @@ aa
 aa
 aa
 aa
-aa
+aM
 aA
 ab
 ab
@@ -877,7 +881,7 @@ ab
 ab
 ab
 ab
-ab
+kU
 ab
 aA
 aa
@@ -1023,7 +1027,7 @@ ab
 ab
 af
 aY
-ao
+aW
 ao
 ao
 ak
@@ -1129,7 +1133,7 @@ af
 bt
 ao
 ao
-kU
+ao
 bt
 ba
 ah
@@ -1180,8 +1184,8 @@ aR
 ae
 ae
 Qy
-an
 eX
+an
 ae
 aZ
 ah
@@ -1776,7 +1780,7 @@ aa
 aa
 aa
 aa
-aa
+aM
 aa
 aA
 ab
@@ -2277,7 +2281,7 @@ aS
 aS
 aS
 aA
-aA
+aO
 ab
 aA
 aa
@@ -2561,7 +2565,7 @@ aa
 aa
 aa
 aa
-aa
+aM
 aa
 aa
 aa
@@ -2579,7 +2583,7 @@ aA
 aA
 aA
 aA
-aA
+aO
 ab
 aa
 aa
@@ -2589,7 +2593,7 @@ aa
 aa
 aa
 aa
-aa
+aM
 aa
 aa
 aa
@@ -2891,7 +2895,7 @@ aa
 aa
 aa
 aa
-aa
+aM
 aA
 aa
 aa
