@@ -116,7 +116,7 @@
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper_s"
 	short_desc = "You are a syndicate agent, employed in a top secret research facility developing biological weapons plants and toys."
-	flavour_text = "Fortunately, Nanotrasen's activity in this sector of space is minimal. Continue your research as best you can, and try to keep a low profile from both Nanotrasen and GATO." //Making it more clear it's Nanotrasne AND Kinaris.
+	flavour_text = "Fortunately, Nanotrasen's activity in this sector of space is minimal. Continue your research as best you can, and try to keep a low profile from both Nanotrasen and GATO."
 	important_info = "The base is rigged with explosives, DO NOT leave the base or let it fall into enemy hands!" //Changed 'abandon it' to 'leave the base', no more loopholes please, you know who you are.
 	outfit = /datum/outfit/lavaland_syndicate
 	assignedrole = "Lavaland Syndicate"
