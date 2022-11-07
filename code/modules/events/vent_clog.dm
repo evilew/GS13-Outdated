@@ -13,7 +13,8 @@
 	var/list/vents  = list()
 	var/randomProbability = 1
 	var/reagentsAmount = 100
-	var/list/saferChems = list(
+	var/list/saferChems = list(		
+		/datum/reagent/consumable/lipoifier,
 		/datum/reagent/water,
 		/datum/reagent/carbon,
 		/datum/reagent/consumable/flour,
@@ -130,6 +131,31 @@
 	typepath = /datum/round_event/vent_clog/beer
 	max_occurrences = 0
 
+// WIP, gonna use it later once I fix ingredients not popping into smoke
+
+// /datum/round_event_control/vent_clog/lipoifier
+// 	name = "Clogged Vents: Lipoifier"
+// 	typepath = /datum/round_event/vent_clog/lipoifier
+// 	weight = 5
+// 	max_occurrences = 0
+// 	min_players = 5
+
+// /datum/round_event/vent_clog/lipoifier/start()
+// 	for(var/obj/machinery/atmospherics/components/unary/vent in vents)
+// 		if(vent && vent.loc && !vent.welded)
+// 			var/datum/reagents/R = new/datum/reagents(1000)
+// 			R.my_atom = vent
+// 			R.add_reagent(/datum/reagent/consumable/lipoifier, reagentsAmount)
+
+// 			var/datum/effect_system/foam_spread/foam = new
+// 			foam.set_up(200, get_turf(vent), R)
+// 			foam.start()
+// 		CHECK_TICK
+
+// /datum/round_event/vent_clog/lipoifier
+// 	reagentsAmount = 20
+
+
 /datum/round_event/vent_clog/beer
 	reagentsAmount = 100
 
@@ -137,22 +163,6 @@
 	name = "Anti-Plasma Flood"
 	typepath = /datum/round_event/vent_clog/plasma_decon
 	max_occurrences = 0
-
-/datum/round_event_control/vent_clog/female
-	name = "Clogged Vents; Girlcum"
-	typepath = /datum/round_event/vent_clog/female
-	max_occurrences = 0
-
-/datum/round_event/vent_clog/female
-	reagentsAmount = 100
-
-/datum/round_event_control/vent_clog/male
-	name = "Clogged Vents: Semen"
-	typepath = /datum/round_event/vent_clog/male
-	max_occurrences = 0
-
-/datum/round_event/vent_clog/male
-	reagentsAmount = 100
 
 /datum/round_event/vent_clog/beer/announce()
 	priority_announce("The scrubbers network is experiencing an unexpected surge of pressurized beer. Some ejection of contents may occur.", "Atmospherics alert")
@@ -163,36 +173,6 @@
 			var/datum/reagents/R = new/datum/reagents(1000)
 			R.my_atom = vent
 			R.add_reagent(/datum/reagent/consumable/ethanol/beer, reagentsAmount)
-
-			var/datum/effect_system/foam_spread/foam = new
-			foam.set_up(200, get_turf(vent), R)
-			foam.start()
-		CHECK_TICK
-
-/datum/round_event/vent_clog/male/announce()
-	priority_announce("The scrubbers network is experiencing a backpressure surge. Some ejaculation of contents may occur.", "Atmospherics alert")
-
-/datum/round_event/vent_clog/male/start()
-	for(var/obj/machinery/atmospherics/components/unary/vent in vents)
-		if(vent && vent.loc && !vent.welded)
-			var/datum/reagents/R = new/datum/reagents(1000)
-			R.my_atom = vent
-			R.add_reagent(/datum/reagent/consumable/semen, reagentsAmount)
-
-			var/datum/effect_system/foam_spread/foam = new
-			foam.set_up(200, get_turf(vent), R)
-			foam.start()
-		CHECK_TICK
-
-/datum/round_event/vent_clog/female/announce()
-	priority_announce("The scrubbers network is experiencing a backpressure squirt. Some ejection of contents may occur.", "Atmospherics alert")
-
-/datum/round_event/vent_clog/female/start()
-	for(var/obj/machinery/atmospherics/components/unary/vent in vents)
-		if(vent && vent.loc && !vent.welded)
-			var/datum/reagents/R = new/datum/reagents(1000)
-			R.my_atom = vent
-			R.add_reagent(/datum/reagent/consumable/femcum, reagentsAmount)
 
 			var/datum/effect_system/foam_spread/foam = new
 			foam.set_up(200, get_turf(vent), R)

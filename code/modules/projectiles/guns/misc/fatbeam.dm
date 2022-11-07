@@ -1,6 +1,6 @@
 /obj/item/gun/fatbeam
 	name = "Fatbeam Gun"
-	desc = "New invention of GATO's most degenerate engineers."
+	desc = "New invention of this sector's most degenerate engineers."
 	icon = 'icons/obj/fatbeam.dmi'
 	icon_state = "chronogun"
 	item_state = "chronogun"
@@ -114,7 +114,7 @@
 /obj/item/gun/fatbeam/proc/on_beam_tick(var/mob/living/target)
 	if(target.health != target.maxHealth)
 		new /obj/effect/temp_visual/heal(get_turf(target), "#FFC2F8")
-	target.nutrition += 100
+	target.nutrition += 50
 	return
 
 /obj/item/gun/fatbeam/proc/on_beam_release(var/mob/living/target)
@@ -123,10 +123,3 @@
 /obj/effect/ebeam/medical
 	name = "fattening beam"
 
-//////////////////////////////Mech Version///////////////////////////////
-/obj/item/gun/fatbeam/mech
-	mounted = 1
-
-/obj/item/gun/fatbeam/mech/Initialize()
-	. = ..()
-	STOP_PROCESSING(SSobj, src) //Mech mediguns do not process until installed, and are controlled by the holder obj

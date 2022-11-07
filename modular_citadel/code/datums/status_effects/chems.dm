@@ -720,7 +720,7 @@
 			deltaResist *= 0.75
 		if (owner.reagents.has_reagent(/datum/reagent/drug/aphrodisiacplus))
 			deltaResist *= 0.5
-
+			
 	//Antag resistance
 	//cultists are already brainwashed by their god
 	if(iscultist(owner))
