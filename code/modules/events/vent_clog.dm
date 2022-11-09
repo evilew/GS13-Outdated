@@ -131,29 +131,23 @@
 	typepath = /datum/round_event/vent_clog/beer
 	max_occurrences = 0
 
-// WIP, gonna use it later once I fix ingredients not popping into smoke
+/datum/round_event_control/vent_clog/lipoifier
+	name = "Clogged Vents: Lipoifier"
+	typepath = /datum/round_event/vent_clog/lipoifier
+	weight = 5
+	max_occurrences = 0
+	min_players = 5
 
-// /datum/round_event_control/vent_clog/lipoifier
-// 	name = "Clogged Vents: Lipoifier"
-// 	typepath = /datum/round_event/vent_clog/lipoifier
-// 	weight = 5
-// 	max_occurrences = 0
-// 	min_players = 5
+/datum/round_event/vent_clog/lipoifier/start()
+	for(var/obj/machinery/atmospherics/components/unary/vent in vents)
+		if(vent && vent.loc && !vent.welded)
+			var/datum/reagent/consumable/lipoifier = new
+			smoke.set_up(7, get_turf(vent), 7)
+			smoke.start()
+		CHECK_TICK
 
-// /datum/round_event/vent_clog/lipoifier/start()
-// 	for(var/obj/machinery/atmospherics/components/unary/vent in vents)
-// 		if(vent && vent.loc && !vent.welded)
-// 			var/datum/reagents/R = new/datum/reagents(1000)
-// 			R.my_atom = vent
-// 			R.add_reagent(/datum/reagent/consumable/lipoifier, reagentsAmount)
-
-// 			var/datum/effect_system/foam_spread/foam = new
-// 			foam.set_up(200, get_turf(vent), R)
-// 			foam.start()
-// 		CHECK_TICK
-
-// /datum/round_event/vent_clog/lipoifier
-// 	reagentsAmount = 20
+/datum/round_event/vent_clog/lipoifier
+	reagentsAmount = 20
 
 
 /datum/round_event/vent_clog/beer

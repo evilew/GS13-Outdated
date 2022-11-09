@@ -452,11 +452,11 @@
 	color = "#302000" // rgb: 48, 32, 0
 	taste_description = "slime"
 
-/datum/reagent/consumable/sprinkles/on_mob_life(mob/living/carbon/M)
+/datum/reagent/consumable/cornoil/on_mob_life(mob/living/carbon/M)
 	if(M && !HAS_TRAIT(M, TRAIT_LIPOIFIER_IMMUNE))
-		target.nutrition += 20 * REAGENTS_METABOLISM
-	else:
-		target.nutrition += 1
+		M.nutrition += 20 * REAGENTS_METABOLISM
+	else
+		M.nutrition += 1
 	..()
 
 /datum/reagent/consumable/cornoil/reaction_turf(turf/open/T, reac_volume)
