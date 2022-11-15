@@ -2,8 +2,8 @@
 	name = "Fatbeam Gun"
 	desc = "New invention of this sector's most degenerate engineers."
 	icon = 'icons/obj/fatbeam.dmi'
-	icon_state = "chronogun"
-	item_state = "chronogun"
+	icon_state = "fatbeam"
+	item_state = "fatbeam"
 	w_class = WEIGHT_CLASS_NORMAL
 
 	var/mob/living/current_target
