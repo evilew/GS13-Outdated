@@ -107,7 +107,7 @@
 	typepath = /datum/round_event/vent_clog/threatening
 	weight = 4
 	min_players = 35
-	max_occurrences = 1
+	max_occurrences = 1	
 	earliest_start = 35 MINUTES
 
 /datum/round_event/vent_clog/threatening
@@ -131,25 +131,6 @@
 	typepath = /datum/round_event/vent_clog/beer
 	max_occurrences = 0
 
-/datum/round_event_control/vent_clog/lipoifier
-	name = "Clogged Vents: Lipoifier"
-	typepath = /datum/round_event/vent_clog/lipoifier
-	weight = 5
-	max_occurrences = 0
-	min_players = 5
-
-/datum/round_event/vent_clog/lipoifier/start()
-	for(var/obj/machinery/atmospherics/components/unary/vent in vents)
-		if(vent && vent.loc && !vent.welded)
-			var/datum/reagent/consumable/lipoifier = new
-			smoke.set_up(7, get_turf(vent), 7)
-			smoke.start()
-		CHECK_TICK
-
-/datum/round_event/vent_clog/lipoifier
-	reagentsAmount = 20
-
-
 /datum/round_event/vent_clog/beer
 	reagentsAmount = 100
 
@@ -169,6 +150,7 @@
 			R.add_reagent(/datum/reagent/consumable/ethanol/beer, reagentsAmount)
 
 			var/datum/effect_system/foam_spread/foam = new
+			/obj/effect/particle_effect/smoke/chem
 			foam.set_up(200, get_turf(vent), R)
 			foam.start()
 		CHECK_TICK
@@ -183,3 +165,69 @@
 			smoke.set_up(7, get_turf(vent), 7)
 			smoke.start()
 		CHECK_TICK
+
+// Lipoifier variant here
+
+/datum/round_event_control/vent_clog_fat
+	name = "Clogged Vents: Fattening Chems"
+	typepath = /datum/round_event/vent_clog_fat
+	weight = 8
+	max_occurrences = 1
+	min_players = 10
+
+/datum/round_event/vent_clog_fat
+	announceWhen	= 1
+	startWhen		= 5
+	endWhen			= 35
+	var/interval 	= 2
+	var/list/vents2  = list()
+	var/randomProbability2 = 1
+	var/reagentsAmount2 = 100
+	var/list/saferChems2 = list(		
+		/datum/reagent/consumable/lipoifier,
+		/datum/reagent/consumable/nutriment,
+		/datum/reagent/consumable/cornoil,
+	)
+
+/datum/round_event/vent_clog_fat/announce()
+	priority_announce("The scrubbers network is experiencing a backpressure surge. Some ejection of nutriments may occur.", "Atmospherics alert")
+
+/datum/round_event/vent_clog_fat/setup()
+	endWhen = rand(120, 180)
+	for(var/obj/machinery/atmospherics/components/unary/vent_scrubber/temp_vent in GLOB.machines)
+		var/turf/T = get_turf(temp_vent)
+		var/area/A = T.loc
+		if(T && is_station_level(T.z) && !temp_vent.welded && !A.safe)
+			vents2 += temp_vent
+
+	if(!vents2.len)
+		return kill()
+
+/datum/round_event/vent_clog_fat/tick()
+
+	if(!vents2.len)
+		return kill()
+
+	CHECK_TICK
+
+	var/obj/machinery/atmospherics/components/unary/vent = pick(vents2)
+	vents2 -= vent
+
+	if(!vent || vent.welded)
+		return
+
+	var/turf/T = get_turf(vent)
+	if(!T)
+		return
+
+	var/datum/reagents/R = new/datum/reagents(1000)
+	R.my_atom = vent
+	if (prob(randomProbability2))
+		R.add_reagent(get_random_reagent_id(), reagentsAmount2)
+	else
+		R.add_reagent(pick(saferChems2), reagentsAmount2)
+
+	var/datum/effect_system/smoke_spread/chem/smoke_machine/C = new
+	C.set_up(R,16,1,T)
+	C.start()
+	playsound(T, 'sound/effects/smoke.ogg', 50, 1, -3)
