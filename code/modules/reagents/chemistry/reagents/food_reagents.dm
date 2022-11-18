@@ -448,10 +448,16 @@
 /datum/reagent/consumable/cornoil
 	name = "Corn Oil"
 	description = "An oil derived from various types of corn."
-	nutriment_factor = 20 * REAGENTS_METABOLISM
 	value = 4
 	color = "#302000" // rgb: 48, 32, 0
 	taste_description = "slime"
+
+/datum/reagent/consumable/cornoil/on_mob_life(mob/living/carbon/M)
+	if(M && !HAS_TRAIT(M, TRAIT_LIPOIFIER_IMMUNE))
+		M.nutrition += 20 * REAGENTS_METABOLISM
+	else
+		M.nutrition += 1
+	..()
 
 /datum/reagent/consumable/cornoil/reaction_turf(turf/open/T, reac_volume)
 	if (!istype(T))

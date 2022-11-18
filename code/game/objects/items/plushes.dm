@@ -1016,6 +1016,21 @@
 	item_state = "fi"
 	attack_verb = list("pranked","nyuh'd","science'd","hugged")
 
+
+/obj/item/toy/plush/tertia
+	desc = "An adorable stuffed toy that resembles a mischevious yet helpful slime-goat. It seems to have a mysterious smirk."
+	icon_state = "tertia"
+	item_state = "tertia"
+	attack_verb = list("glorped","hugged","experimented","baaaah'd")
+	squeak_override = list('sound/effects/blobattack.ogg' = 1)
+
+/obj/item/toy/plush/primus
+	desc = "An adorable stuffed toy that resembles a mad scientist goat. Its hair seems to be quite messy."
+	icon_state = "primus"
+	item_state = "primus"
+	attack_verb = list("glorped","hugged","experimented","baaaah'd")
+	squeak_override = list('sound/effects/blobattack.ogg' = 1)
+
 /obj/item/toy/plush/mammal/fox
 	icon_state = "fox"
 	item_state = "fox"
