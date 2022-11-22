@@ -246,6 +246,14 @@
 		/obj/machinery/vending/cigarette = "ShadyCigs Deluxe",
 		/obj/machinery/vending/games = "\improper Good Clean Fun",
 		/obj/machinery/vending/autodrobe = "AutoDrobe",
+		/obj/machinery/vending/assist = "Vendomat",
+		/obj/machinery/vending/engivend = "Engi-Vend",
+		/obj/machinery/vending/tool ="YouTool",
+		/obj/machinery/vending/sustenance = "Sustenance Vendor",
+		/obj/machinery/vending/dinnerware = "Plasteel Chef's Dinnerware Vendor",
+		/obj/machinery/vending/cart = "PTech",
+		/obj/machinery/vending/hydronutrients = "NutriMax",
+		/obj/machinery/vending/hydroseeds = "MegaSeed Servitor",
 		/obj/machinery/vending/wardrobe/sec_wardrobe = "SecDrobe",
 		/obj/machinery/vending/wardrobe/medi_wardrobe = "MediDrobe",
 		/obj/machinery/vending/wardrobe/engi_wardrobe = "EngiDrobe",
@@ -266,7 +274,9 @@
 		/obj/machinery/vending/clothing = "ClothesMate",
 		/obj/machinery/vending/medical = "NanoMed Plus",
 		/obj/machinery/vending/wallmed = "NanoMed",
-		/obj/machinery/vending/kink = "\improper KinkMate")
+		/obj/machinery/vending/kink = "\improper KinkMate",
+		/obj/machinery/vending/mealdor = "Meal Vendor",
+		/obj/machinery/vending/gato = "GATO Vending Machine")
 
 /obj/item/circuitboard/machine/vendor/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/screwdriver))
@@ -278,9 +288,8 @@
 		if(!choiceposition)
 			return
 		var/typepath = GLOB.vending_machines[choiceposition]
-		var/namepath = vending_names_paths[choiceposition]
 		set_type(typepath)
-		to_chat(user, "<span class='notice'>You set the board to \"[vending_names_paths[namepath]]\".</span>")
+		to_chat(user, "<span class='notice'>You set the board to \"[choice]\".</span>")
 	else
 		return ..()
 
