@@ -46,7 +46,8 @@ GLOBAL_LIST_INIT(disease_ability_singletons, list(
 	new /datum/disease_ability/symptom/powerful/heal/plasma,
 	new /datum/disease_ability/symptom/powerful/heal/radiation,
 	new /datum/disease_ability/symptom/powerful/heal/coma,
-	new /datum/disease_ability/symptom/powerful/youth
+	new /datum/disease_ability/symptom/powerful/youth,
+	new /datum/disease_ability/symptom/medium/heal/weight_gain
 	))
 
 /datum/disease_ability
@@ -275,9 +276,9 @@ GLOBAL_LIST_INIT(disease_ability_singletons, list(
 /datum/disease_ability/symptom/medium
 	category = "Symptom"
 
-/datum/disease_ability/symptom/medium/heal
-	cost = 5
-	required_total_points = 5
+/datum/disease_ability/symptom/medium/heal //changes here to allow for more funky sentient diseases on lowpop, cus sentinent diseases can't get any of the crazy symptoms without 10+ peeps on and we can't hit that consistently
+	cost = 2
+	required_total_points = 2
 	category = "Symptom (+)"
 
 /datum/disease_ability/symptom/powerful
@@ -418,6 +419,11 @@ GLOBAL_LIST_INIT(disease_ability_singletons, list(
 	symptoms = list(/datum/symptom/youth)
 	short_desc = "Cause victims to become eternally young."
 	long_desc = "Cause victims to become eternally young. Provides boosts to all stats except transmissibility."
+
+/datum/disease_ability/symptom/medium/heal/weight_gain
+	symptoms = list(/datum/symptom/weight_gain)
+	short_desc = "Cause victims to gain weight."
+	long_desc = "Cause victims to gain weight. Boosts stage speed, but weakens all other stats."
 
 /****HEALING SUBTYPE****/
 

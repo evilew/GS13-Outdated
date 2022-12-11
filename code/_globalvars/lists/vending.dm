@@ -39,7 +39,7 @@ GLOBAL_VAR_INIT(vending_m_choices, list(
 	"Meal Vendor"								= image(icon = 'icons/obj/vending.dmi', icon_state = "mealdor"),
 	"GATO Vending Machine"						= image(icon = 'icons/obj/vending.dmi', icon_state = "cola_black"),
 ))
-// This GLOBAL list is just here to be here.
+// This GLOBAL list is used in the vending machine circuit board code.
 GLOBAL_VAR_INIT(vending_machines, list(
 	/obj/machinery/vending/boozeomat,
 	/obj/machinery/vending/coffee,
