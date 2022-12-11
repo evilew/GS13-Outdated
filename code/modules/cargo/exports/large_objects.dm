@@ -134,6 +134,11 @@
 	unit_name = "iv drip"
 	export_types = list(/obj/machinery/iv_drip)
 
+/datum/export/large/iv //GS13
+	cost = 50
+	unit_name = "feeding tube"
+	export_types = list(/obj/machinery/feeding_tube)
+
 /datum/export/large/barrier
 	cost = 25
 	unit_name = "security barrier"
