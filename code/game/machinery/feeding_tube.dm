@@ -14,8 +14,7 @@
 	var/mode = FEEDTUBE_INJECTING
 	var/obj/item/reagent_containers/beaker
 	var/static/list/drip_containers = typecacheof(list(/obj/item/reagent_containers/food,
-									/obj/item/reagent_containers/glass,
-									/obj/item/reagent_containers/chem_pack))
+									/obj/item/reagent_containers/glass,))
 /obj/machinery/feeding_tube/Initialize(mapload)
 	. = ..()
 	update_icon()
@@ -29,13 +28,9 @@
 	if(attached)
 		if(mode)
 			icon_state = "injecting"
-		else
-			icon_state = "donating"
 	else
 		if(mode)
 			icon_state = "injectidle"
-		else
-			icon_state = "donateidle"
 
 	cut_overlays()
 
@@ -73,25 +68,25 @@
 		return
 
 	if(attached)
-		visible_message("<span class='warning'>[attached] is detached from [src].</span>")
+		visible_message("<span class='warning'>[attached] is detached from [src]'s mouth.</span>")
 		attached = null
 		update_icon()
 		return
 
 	if(!target.has_dna())
-		to_chat(usr, "<span class='danger'>The drip beeps: Warning, incompatible creature!</span>")
+		to_chat(usr, "<span class='danger'>The hose beeps: Warning, incompatible creature!</span>")
 		return
 
 	if(Adjacent(target) && usr.Adjacent(target))
 		if(beaker)
-			usr.visible_message("<span class='warning'>[usr] attaches [src] to [target].</span>", "<span class='notice'>You attach [src] to [target].</span>")
+			usr.visible_message("<span class='warning'>[usr] attaches [src] to [target].</span>", "<span class='notice'>You attach [src] to [target]'s mouth.</span>")
 			log_combat(usr, target, "attached", src, "containing: [beaker.name] - ([beaker.reagents.log_list()])")
 			add_fingerprint(usr)
 			attached = target
 			START_PROCESSING(SSmachines, src)
 			update_icon()
 		else
-			to_chat(usr, "<span class='warning'>There's nothing attached to the IV drip!</span>")
+			to_chat(usr, "<span class='warning'>There's no one attached to the feeding hose!</span>")
 
 
 /obj/machinery/feeding_tube/attackby(obj/item/W, mob/user, params)
@@ -102,7 +97,7 @@
 		if(!user.transferItemToLoc(W, src))
 			return
 		beaker = W
-		to_chat(user, "<span class='notice'>You attach [W] to [src].</span>")
+		to_chat(user, "<span class='notice'>You attach [W] to [src]'s mouth.</span>")
 		user.log_message("attached a [W] to [src] at [AREACOORD(src)] containing ([beaker.reagents.log_list()])", LOG_ATTACK)
 		add_fingerprint(user)
 		update_icon()
@@ -120,9 +115,7 @@
 		return PROCESS_KILL
 
 	if(!(get_dist(src, attached) <= 1 && isturf(attached.loc)))
-		to_chat(attached, "<span class='userdanger'>The IV drip needle is ripped out of you!</span>")
-		attached.apply_damage(3, BRUTE, pick(BODY_ZONE_R_ARM, BODY_ZONE_L_ARM))
-		attached = null
+		to_chat(attached, "<span class='userdanger'>The feeding hose is yanked out of you!</span>")
 		update_icon()
 		return PROCESS_KILL
 
@@ -139,23 +132,23 @@
 				beaker.reagents.trans_to(attached, transfer_amount)
 				update_icon()
 
-		// Take blood
-		else
-			var/amount = beaker.reagents.maximum_volume - beaker.reagents.total_volume
-			amount = min(amount, 4)
-			// If the beaker is full, ping
-			if(!amount)
-				if(prob(5))
-					visible_message("[src] pings.")
-					playsound(loc, 'sound/machines/beep.ogg', 50, 1)
-				return
+		// // Take blood
+		// else
+		// 	var/amount = beaker.reagents.maximum_volume - beaker.reagents.total_volume
+		// 	amount = min(amount, 4)
+		// 	// If the beaker is full, ping
+		// 	if(!amount)
+		// 		if(prob(5))
+		// 			visible_message("[src] pings.")
+		// 			playsound(loc, 'sound/machines/beep.ogg', 50, 1)
+		// 		return
 
-			// If the human is losing too much blood, beep.
-			if(attached.blood_volume < ((BLOOD_VOLUME_SAFE*attached.blood_ratio) && prob(5) && ishuman(attached))) //really couldn't care less about monkeys
-				visible_message("[src] beeps loudly.")
-				playsound(loc, 'sound/machines/twobeep.ogg', 50, 1)
-			attached.transfer_blood_to(beaker, amount)
-			update_icon()
+		// 	// If the human is losing too much blood, beep.
+		// 	if(attached.blood_volume < ((BLOOD_VOLUME_SAFE*attached.blood_ratio) && prob(5) && ishuman(attached))) //really couldn't care less about monkeys
+		// 		visible_message("[src] beeps loudly.")
+		// 		playsound(loc, 'sound/machines/twobeep.ogg', 50, 1)
+		// 	attached.transfer_blood_to(beaker, amount)
+		// 	update_icon()
 
 /obj/machinery/feeding_tube/attack_hand(mob/user)
 	. = ..()
@@ -164,7 +157,7 @@
 	if(!ishuman(user))
 		return
 	if(attached)
-		visible_message("[attached] is detached from [src]")
+		visible_message("[attached] is detached from [src]'s mouth")
 		attached = null
 		update_icon()
 		return
@@ -175,7 +168,7 @@
 
 /obj/machinery/feeding_tube/verb/eject_beaker()
 	set category = "Object"
-	set name = "Remove IV Container"
+	set name = "Remove Feeding Container"
 	set src in view(1)
 
 	if(!isliving(usr))
@@ -203,7 +196,7 @@
 	if(usr.incapacitated())
 		return
 	mode = !mode
-	to_chat(usr, "The IV drip is now [mode ? "injecting" : "taking blood"].")
+	to_chat(usr, "The feeding hose is now [mode ? "injecting" : "taking blood"].")
 	update_icon()
 
 /obj/machinery/feeding_tube/examine(mob/user)

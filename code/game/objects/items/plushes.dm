@@ -1031,6 +1031,12 @@
 	attack_verb = list("glorped","hugged","experimented","baaaah'd")
 	squeak_override = list('sound/effects/blobattack.ogg' = 1)
 
+/obj/item/toy/plush/melony
+	desc = "A plump looking deer with a red circle on her belly. She seems to have a tired but a welcoming gaze."
+	icon_state = "melony"
+	item_state = "melony"
+	attack_verb = list("bleated", "wobbled", "Melony'd")
+
 /obj/item/toy/plush/mammal/fox
 	icon_state = "fox"
 	item_state = "fox"
