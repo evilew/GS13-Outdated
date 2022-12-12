@@ -32875,6 +32875,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+/obj/vehicle/ridden/wheelchair,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "boF" = (
@@ -32903,6 +32904,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
+/obj/vehicle/ridden/wheelchair,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "boH" = (
@@ -36976,8 +36978,8 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/obj/structure/bed/roller,
 /obj/effect/turf_decal/tile/blue,
+/obj/vehicle/ridden/wheelchair,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "bwP" = (
@@ -39532,6 +39534,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+/obj/vehicle/ridden/wheelchair,
 /turf/open/floor/plasteel/white,
 /area/medical/sleeper)
 "bCm" = (
