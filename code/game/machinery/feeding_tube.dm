@@ -18,7 +18,7 @@
 /obj/machinery/feeding_tube/Initialize(mapload)
 	. = ..()
 	update_icon()
-
+	
 /obj/machinery/feeding_tube/Destroy()
 	attached = null
 	QDEL_NULL(beaker)
@@ -86,7 +86,7 @@
 			START_PROCESSING(SSmachines, src)
 			update_icon()
 		else
-			to_chat(usr, "<span class='warning'>There's no one attached to the feeding hose!</span>")
+			to_chat(usr, "<span class='warning'>There's nothing attached to the feeding hose!</span>")
 
 
 /obj/machinery/feeding_tube/attackby(obj/item/W, mob/user, params)
@@ -163,8 +163,8 @@
 		return
 	else if(beaker)
 		eject_beaker(user)
-	else
-		toggle_mode()
+	// else
+	// 	toggle_mode()
 
 /obj/machinery/feeding_tube/verb/eject_beaker()
 	set category = "Object"
@@ -184,27 +184,27 @@
 		beaker = null
 		update_icon()
 
-/obj/machinery/feeding_tube/verb/toggle_mode()
-	set category = "Object"
-	set name = "Toggle Mode"
-	set src in view(1)
+// /obj/machinery/feeding_tube/verb/toggle_mode()
+// 	set category = "Object"
+// 	set name = "Toggle Mode"
+// 	set src in view(1)
 
-	if(!isliving(usr))
-		to_chat(usr, "<span class='warning'>You can't do that!</span>")
-		return
+// 	if(!isliving(usr))
+// 		to_chat(usr, "<span class='warning'>You can't do that!</span>")
+// 		return
 
-	if(usr.incapacitated())
-		return
-	mode = !mode
-	to_chat(usr, "The feeding hose is now [mode ? "injecting" : "taking blood"].")
-	update_icon()
+// 	if(usr.incapacitated())
+// 		return
+// 	mode = !mode
+// 	to_chat(usr, "The feeding hose is now [mode ? "injecting" : "taking blood"].")
+// 	update_icon()
 
 /obj/machinery/feeding_tube/examine(mob/user)
 	. = ..()
 	if(get_dist(user, src) > 2)
 		return
 
-	. += "[src] is [mode ? "injecting" : "taking blood"].\n"
+	. += "[src] is pumping liquid.\n"
 
 	if(beaker)
 		if(beaker.reagents && beaker.reagents.reagent_list.len)
