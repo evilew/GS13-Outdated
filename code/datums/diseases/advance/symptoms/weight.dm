@@ -70,7 +70,7 @@ Bonus
 	symptom_delay_max = 45
 	threshold_desc = list(
 		"Transmission 7" = "Increases the rate of cell replication.",
-		"Transmission 14" = "Increases the rate of cell replication further"
+		"Transmission 12" = "Increases the rate of cell replication further"
 	)
 
 
@@ -78,16 +78,17 @@ Bonus
 	if(!..())
 		return
 	var/mob/living/M = A.affected_mob
+	if(HAS_TRAIT(M, TRAIT_LIPOIFIER_IMMUNE))
+		return
 	switch(A.stage)
 		if(1, 2, 3, 4)
 			if(prob(base_message_chance))
 				to_chat(M, "<span class='warning'>[pick("You feel oddly full...", "You feel more plush...", "You feel more huggable...", "You hear an odd gurgle from your stomach")]</span>")
 		else
 			to_chat(M, "<span class='warning'><i>[pick("You feel your body churn...", "You feel heavier...", "You hear an ominous gurgle from your belly...", "You feel bulkier...")]</i></span>")
-			if(A.properties["transmittable"] >= 14) //get chunkier quicker
+			if(A.properties["transmittable"] >= 12) //get chunkier quicker
 				M.fatness = M.fatness + 70
 			else if(A.properties["transmittable"] >= 7)
 				M.fatness = M.fatness + 40
 			else
 				M.fatness = M.fatness + 15
-
