@@ -1037,6 +1037,12 @@
 	item_state = "melony"
 	attack_verb = list("bleated", "wobbled", "Melony'd")
 
+/obj/item/toy/plush/rose
+	desc = "An energetic looking snake toy with a silly little rose hanging from the side of his head.."
+	icon_state = "rose"
+	item_state = "rose"
+	attack_verb = list("hissed", "nibbled", "squished")
+
 /obj/item/toy/plush/mammal/fox
 	icon_state = "fox"
 	item_state = "fox"

@@ -4,7 +4,7 @@
 #define FEEDTUBE_INJECTING 1
 
 /obj/machinery/feeding_tube
-	name = "\improper Feeding Tube"
+	name = "\improper Feeding tube"
 	desc = "something something test."
 	icon = 'icons/obj/feeding_tube.dmi'
 	icon_state = "feeding_tube"
@@ -68,7 +68,7 @@
 		return
 
 	if(attached)
-		visible_message("<span class='warning'>[attached] is detached from [src]'s mouth.</span>")
+		visible_message("<span class='warning'>[attached] is detached from [src].</span>")
 		attached = null
 		update_icon()
 		return
@@ -157,7 +157,7 @@
 	if(!ishuman(user))
 		return
 	if(attached)
-		visible_message("[attached] is detached from [src]'s mouth")
+		visible_message("[attached] is detached from the feeding tube.")
 		attached = null
 		update_icon()
 		return
@@ -168,7 +168,7 @@
 
 /obj/machinery/feeding_tube/verb/eject_beaker()
 	set category = "Object"
-	set name = "Remove Feeding Container"
+	set name = "Remove feeding container"
 	set src in view(1)
 
 	if(!isliving(usr))
@@ -189,15 +189,13 @@
 // 	set name = "Toggle Mode"
 // 	set src in view(1)
 
-// 	if(!isliving(usr))
-// 		to_chat(usr, "<span class='warning'>You can't do that!</span>")
-// 		return
+	if(!isliving(usr))
+		to_chat(usr, "<span class='warning'>You can't do that!</span>")
+		return
 
-// 	if(usr.incapacitated())
-// 		return
-// 	mode = !mode
-// 	to_chat(usr, "The feeding hose is now [mode ? "injecting" : "taking blood"].")
-// 	update_icon()
+	if(usr.incapacitated())
+		return
+	update_icon()
 
 /obj/machinery/feeding_tube/examine(mob/user)
 	. = ..()
