@@ -1042,6 +1042,7 @@
 	icon_state = "rose"
 	item_state = "rose"
 	attack_verb = list("hissed", "nibbled", "squished")
+	squeak_override = list('modular_citadel/sound/voice/weh.ogg' = 1)
 
 /obj/item/toy/plush/kinichi
 	desc = "A silly looking plushie of an adorable lizard janitor. His smile is heartwarming to look at."

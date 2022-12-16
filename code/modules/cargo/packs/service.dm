@@ -260,9 +260,16 @@
 					/obj/item/stack/tile/carpet/monochrome/fifty)
 	crate_name = "exotic carpet crate"
 
+/datum/supply_pack/service/feeding_tube //GS13
+	name = "Feeding Tube Crate"
+	desc = "Contains a feeding tube machine, originally meant for supplying nutrition to farm animals. However, you could probably use it for your own, nefarious deeds..."
+	cost = 2000
+	contains = list(/obj/machinery/feeding_tube)
+	crate_name = "feeding tube crate"
+
 /datum/supply_pack/service/lightbulbs
 	name = "Replacement Lights"
-	desc = "May the light of Aether shine upon this station! Or at least, the light of forty two light tubes and twenty one light bulbs as well as a light replacer."
+	desc = "May the light of the stars shine upon this station! Or at least, the light of forty two light tubes and twenty one light bulbs as well as a light replacer."
 	cost = 1200
 	contains = list(/obj/item/storage/box/lights/mixed,
 					/obj/item/storage/box/lights/mixed,

@@ -59040,6 +59040,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
+"iuj" = (
+/obj/machinery/feeding_tube,
+/turf/open/floor/plating,
+/area/maintenance/department/crew_quarters/dorms)
 "iuM" = (
 /obj/machinery/door/window/southleft{
 	dir = 8;
@@ -64159,6 +64163,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
+"vjK" = (
+/obj/machinery/feeding_tube,
+/turf/open/floor/plating,
+/area/maintenance/department/science)
 "vlF" = (
 /obj/item/coin/silver,
 /obj/effect/decal/cleanable/oil{
@@ -65146,6 +65154,11 @@
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
 /area/space/nearstation)
+"xuZ" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/feeding_tube,
+/turf/open/floor/plating,
+/area/maintenance/disposal)
 "xvK" = (
 /obj/structure/reflector/single/anchored{
 	dir = 6
@@ -103547,7 +103560,7 @@ aiS
 aob
 eaw
 ajv
-ajv
+iuj
 cnX
 aiS
 apv
@@ -110034,7 +110047,7 @@ xzp
 ugC
 gdJ
 bkF
-lWy
+vjK
 iVJ
 lWy
 tSL
@@ -111536,7 +111549,7 @@ aaa
 ahi
 aaa
 aLo
-aMG
+xuZ
 dqY
 aLo
 aMG
