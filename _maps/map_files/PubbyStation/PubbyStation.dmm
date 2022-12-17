@@ -10800,13 +10800,13 @@
 /turf/open/floor/plating,
 /area/crew_quarters/dorms)
 "ave" = (
-/obj/structure/bed,
 /obj/machinery/button/door{
 	id = "Dorm3Shutters";
 	name = "Privacy Shutters Control";
 	pixel_y = 26
 	},
-/obj/effect/spawner/lootdrop/bedsheet,
+/obj/structure/double_bed,
+/obj/item/bedsheet/double_gato,
 /turf/open/floor/wood,
 /area/crew_quarters/dorms)
 "avf" = (
@@ -11463,17 +11463,13 @@
 /turf/open/floor/wood,
 /area/crew_quarters/dorms)
 "awo" = (
-/turf/open/floor/wood{
-	icon_state = "wood-broken7"
-	},
+/turf/open/floor/wood,
 /area/crew_quarters/dorms)
 "awp" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
 	},
-/turf/open/floor/wood{
-	icon_state = "wood-broken7"
-	},
+/turf/open/floor/wood,
 /area/crew_quarters/dorms)
 "awq" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -12298,14 +12294,14 @@
 /turf/open/floor/plating,
 /area/crew_quarters/dorms)
 "ayj" = (
-/obj/structure/bed,
 /obj/machinery/button/door{
 	id = "Dorm2Shutters";
 	name = "Privacy Shutters Control";
 	pixel_y = 26;
 	req_access_txt = "0"
 	},
-/obj/effect/spawner/lootdrop/bedsheet,
+/obj/structure/double_bed,
+/obj/item/bedsheet/double_red,
 /turf/open/floor/carpet,
 /area/crew_quarters/dorms)
 "ayk" = (
