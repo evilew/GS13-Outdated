@@ -34606,6 +34606,8 @@
 	},
 /obj/item/crowbar,
 /obj/structure/table,
+/obj/item/borg/upgrade/cookiesynth,
+/obj/item/borg/upgrade/cookiesynth,
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "brz" = (
