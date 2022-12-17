@@ -408,6 +408,11 @@
 	desc = "A poster advertising a movie about some masked men."
 	icon_state = "poster44"
 
+/obj/structure/sign/poster/contraband/corn_oil //GS13
+	name = "Corn Oil"
+	desc = "A strange poster advertising corn oil beverage. Who would want to drink that...?"
+	icon_state = "poster45"
+
 /obj/structure/sign/poster/official
 	poster_item_name = "motivational poster"
 	poster_item_desc = "An official Nanotrasen-issued poster to foster a compliant and obedient workforce. It comes with state-of-the-art adhesive backing, for easy pinning to any vertical surface."

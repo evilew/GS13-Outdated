@@ -1031,6 +1031,25 @@
 	attack_verb = list("glorped","hugged","experimented","baaaah'd")
 	squeak_override = list('sound/effects/blobattack.ogg' = 1)
 
+/obj/item/toy/plush/melony
+	desc = "A plump looking deer with a red circle on her belly. She seems to have a tired but a welcoming gaze."
+	icon_state = "melony"
+	item_state = "melony"
+	attack_verb = list("bleated", "wobbled", "Melony'd")
+
+/obj/item/toy/plush/rose
+	desc = "An energetic looking snake toy with a silly little rose hanging from the side of his head."
+	icon_state = "rose"
+	item_state = "rose"
+	attack_verb = list("hissed", "nibbled", "squished")
+	squeak_override = list('modular_citadel/sound/voice/weh.ogg' = 1)
+
+/obj/item/toy/plush/kinichi
+	desc = "A silly looking plushie of an adorable lizard janitor. His smile is heartwarming to look at."
+	icon_state = "kinichi"
+	item_state = "kinichi"
+	attack_verb = list("hissed","squished", "hugged")
+
 /obj/item/toy/plush/mammal/fox
 	icon_state = "fox"
 	item_state = "fox"

@@ -2602,7 +2602,7 @@
 	input_tag = "o2_in_bunker";
 	name = "Oxygen Supply Control";
 	output_tag = "o2_out_bunker";
-	sensors = list("o2_sensor_bunker" = "Tank")
+	sensors = list("o2_sensor_bunker"="Tank")
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
@@ -2962,7 +2962,7 @@
 	input_tag = "n2_in_bunker";
 	name = "Nitrogen Supply Control";
 	output_tag = "n2_out_bunker";
-	sensors = list("n2_sensor_bunker" = "Tank")
+	sensors = list("n2_sensor_bunker"="Tank")
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
@@ -3313,6 +3313,25 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/deepstorage/crusher)
+"uy" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/effect/mob_spawn/human/hermit,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/deepstorage/dorm)
+"xp" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/effect/mob_spawn/human/hermit{
+	flavour_text = "After years of preparations, your space bunker was complete: a deep storage, meant to keep you safe and secure through any sort of annihilation scenario. After locking yourself in with your friends, you began waiting... and waiting - yet no apocalypse came. Eventually bored and afraid of running out of resources, you lay yourself to cryosleep... and eventually, you awaken years later. How does the world look now?";
+	short_desc = "After years of preparations, your space bunker was complete: a deep storage, meant to keep you safe and secure through any sort of annihilation scenario. After locking yourself in with your friends, you began waiting... and waiting - yet no apocalypse came. Eventually bored and afraid of running out of resources, you lay yourself to cryosleep... and eventually, you awaken years later. How does the world look now?";
+	name = "deep storage cryostasis sleeper";
+	desc = "A humming sleeper with a silhouetted occupant inside. Its stasis function is functional and it's likely being used as a bed."
+	},
+/turf/open/floor/wood,
+/area/ruin/space/has_grav/deepstorage/dorm)
 "Bb" = (
 /obj/machinery/conveyor{
 	dir = 10;
@@ -4023,10 +4042,10 @@ cQ
 df
 dy
 dB
-ek
+uy
 eA
 dB
-ek
+xp
 eA
 dB
 ek

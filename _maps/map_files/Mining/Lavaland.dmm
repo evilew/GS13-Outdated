@@ -47,6 +47,7 @@
 "ah" = (
 /obj/item/mop,
 /obj/item/reagent_containers/glass/bucket,
+/obj/item/borg/upgrade/cookiesynth,
 /turf/open/floor/plating,
 /area/mine/production)
 "ai" = (

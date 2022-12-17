@@ -204,6 +204,28 @@
 		R.module.basic_modules += S
 		R.module.add_module(S, FALSE, TRUE)
 
+// ----------------------- GS13
+
+/obj/item/borg/upgrade/cookiesynth
+	name = "cyborg cookie synthesizer"
+	desc = "An extra module that allows cyborgs to dispense cookies."
+	icon_state = "cyborg_upgrade3"
+
+/obj/item/borg/upgrade/cookiesynth/action(mob/living/silicon/robot/R, user = usr)
+	. = ..()
+	if(.)		
+		var/obj/item/cookiesynth/S = new(R.module)
+		R.module.basic_modules += S
+		R.module.add_module(S, FALSE, TRUE)
+
+/obj/item/borg/upgrade/cookiesynth/deactivate(mob/living/silicon/robot/R, user = usr)
+	. = ..()
+	if (.)
+		var/obj/item/cookiesynth/S = locate() in R.module
+		R.module.remove_module(S, TRUE)
+
+// ----------
+
 /obj/item/borg/upgrade/tboh
 	name = "janitor cyborg trash bag of holding"
 	desc = "A trash bag of holding replacement for the janiborg's standard trash bag."

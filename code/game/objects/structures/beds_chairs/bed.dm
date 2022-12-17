@@ -22,6 +22,21 @@
 	var/buildstackamount = 2
 	var/bolts = TRUE
 
+/obj/structure/double_bed //GS13
+	name = "double bed"
+	desc = "This is used to lie in, sleep in or strap on. Now extra-sized, for extra snuggling experience!"
+	icon_state = "double_bed"
+	icon = 'icons/obj/objects.dmi'
+	anchored = TRUE
+	can_buckle = TRUE
+	buckle_lying = TRUE
+	resistance_flags = NONE
+	max_integrity = 100
+	integrity_failure = 30
+	var/buildstacktype = /obj/item/stack/sheet/metal
+	var/buildstackamount = 4
+	var/bolts = TRUE
+
 /obj/structure/bed/examine(mob/user)
 	. = ..()
 	if(bolts)

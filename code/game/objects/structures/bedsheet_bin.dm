@@ -234,6 +234,34 @@ LINEN BINS
 	item_color = "runtime"
 	dream_messages = list("a kitty", "a cat", "meow", "purr", "nya~")
 
+/obj/item/bedsheet/gato //GS13
+	name = "GATO Bedsheet"
+	desc = "Extra padding, for extra comfiness."
+	icon_state = "sheetgato"
+	item_color = "black"
+	dream_messages = list("GATO", "capitalism", "meow",)
+
+/obj/item/bedsheet/double_gato //GS13
+	name = "Double GATO Bedsheet"
+	desc = "Extra padding, for extra comfiness. Mega sized, for mega cuddles."
+	icon_state = "doublesheet_gato"
+	item_color = "black"
+	dream_messages = list("GATO", "capitalism", "meow",)
+
+/obj/item/bedsheet/double_red //GS13
+	name = "Double Red Bedsheet"
+	desc = "Mega sized, for mega cuddles."
+	icon_state = "doublesheet_red"
+	item_color = "red"
+	dream_messages = list("red", "mega",)
+
+/obj/item/bedsheet/double_blue //GS13
+	name = "Double Blue Bedsheet"
+	desc = "Mega sized, for mega cuddles."
+	icon_state = "doublesheet_blue"
+	item_color = "blue"
+	dream_messages = list("blue", "mega",)
+
 /obj/item/bedsheet/pirate
 	name = "pirate's bedsheet"
 	desc = "It has a Jolly Roger emblem on it and has a faint scent of grog."
