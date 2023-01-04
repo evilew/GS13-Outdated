@@ -385,7 +385,7 @@
 	name = "Calorit"
 	id = MAT_CALORIT
 	sheet_type = /obj/item/stack/sheet/mineral/calorit
-	coin_type = /obj/item/coin/calorit
+	// coin_type = /obj/item/coin/calorit
 
 /datum/material/titanium
 	name = "Titanium"

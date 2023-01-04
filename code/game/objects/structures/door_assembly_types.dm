@@ -216,14 +216,14 @@
 	mineral = "bananium"
 	glass_type = /obj/machinery/door/airlock/bananium/glass
 
-/obj/structure/door_assembly/door_assembly_calorit //GS13
-	name = "calorit airlock assembly"
-	desc = "Very inviting."
-	icon = 'icons/obj/doors/airlocks/station/calorit.dmi'
-	base_name = "calorit airlock"
-	airlock_type = /obj/machinery/door/airlock/calorit
-	mineral = "calorit"
-	glass_type = /obj/machinery/door/airlock/calorit/glass
+// /obj/structure/door_assembly/door_assembly_calorit //GS13
+// 	name = "calorit airlock assembly"
+// 	desc = "Very inviting."
+// 	icon = 'icons/obj/doors/airlocks/station/calorit.dmi'
+// 	base_name = "calorit airlock"
+// 	airlock_type = /obj/machinery/door/airlock/calorit
+// 	mineral = "calorit"
+// 	glass_type = /obj/machinery/door/airlock/calorit/glass
 
 /obj/structure/door_assembly/door_assembly_sandstone
 	name = "sandstone airlock assembly"
