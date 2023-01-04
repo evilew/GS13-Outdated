@@ -278,6 +278,32 @@ GLOBAL_LIST_INIT(bananium_recipes, list ( \
 	recipes = GLOB.bananium_recipes
 	. = ..()
 
+
+/*
+ * Calorit - GS13
+ */
+/obj/item/stack/sheet/mineral/calorit
+	name = "calorit"
+	icon_state = "sheet-calorit"
+	item_state = "sheet-calorit"
+	singular_name = "calorit sheet"
+	sheettype = "calorit"
+	materials = list(MAT_CALORIT=MINERAL_MATERIAL_AMOUNT)
+	novariants = TRUE
+	grind_results = list(/datum/reagent/consumable/lipoifier = 10)
+	point_value = 40
+	merge_type = /obj/item/stack/sheet/mineral/calorit
+
+GLOBAL_LIST_INIT(calorit_recipes, list ( \
+	new/datum/stack_recipe("calorit tile", /obj/item/stack/tile/mineral/calorit, 1, 4, 20), \
+	// new/datum/stack_recipe("Fatty Statue", /obj/structure/statue/calorit/fatty, 5, one_per_turf = 1, on_floor = 1), \
+	))
+
+/obj/item/stack/sheet/mineral/calorit/Initialize(mapload, new_amount, merge = TRUE)
+	recipes = GLOB.calorit_recipes
+	. = ..()
+
+
 /*
  * Titanium
  */

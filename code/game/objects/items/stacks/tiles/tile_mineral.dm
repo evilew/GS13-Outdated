@@ -52,6 +52,15 @@
 	mineralType = "bananium"
 	materials = list(MAT_BANANIUM=500)
 
+/obj/item/stack/tile/mineral/calorit  //GS13
+	name = "calorit tile"
+	singular_name = "calorit floor tile"
+	desc = "A tile made out of calorit. Bwwooomphf."
+	icon_state = "tile_calorit"
+	turf_type = /turf/open/floor/mineral/calorit
+	mineralType = "calorit"
+	materials = list(MAT_CALORIT=500)
+
 /obj/item/stack/tile/mineral/abductor
 	name = "alien floor tile"
 	singular_name = "alien floor tile"

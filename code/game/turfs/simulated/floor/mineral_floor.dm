@@ -203,6 +203,51 @@
 /turf/open/floor/mineral/bananium/airless
 	initial_gas_mix = AIRLESS_ATMOS
 
+
+//CALORIT - GS13
+
+/turf/open/floor/mineral/calorit
+	article = "a"
+	name = "calorit floor"
+	icon_state = "calorit"
+	floor_tile = /obj/item/stack/tile/mineral/calorit
+	icons = list("calorit","calorit_dam")
+	var/last_event = 0
+	var/active = null
+
+/turf/open/floor/mineral/calorit/Entered(var/mob/AM)
+	.=..()
+	if(!.)
+		if(istype(AM))
+			fatten()
+
+/turf/open/floor/mineral/calorit/attackby(obj/item/W, mob/user, params)
+	.=..()
+	if(!.)
+		fatten()
+
+/turf/open/floor/mineral/calorit/attack_hand(mob/user)
+	.=..()
+	if(!.)
+		fatten()
+
+/turf/open/floor/mineral/calorit/attack_paw(mob/user)
+	.=..()
+	if(!.)
+		fatten()
+
+/turf/open/floor/mineral/calorit/proc/fatten()
+	if(!active)
+		if(world.time > last_event+15)
+			active = 1
+			radiation_pulse(src, 10)
+			for(var/turf/open/floor/mineral/calorit/T in orange(1,src))
+				T.radiate()
+			last_event = world.time
+			active = 0
+			return
+
+
 //DIAMOND
 
 /turf/open/floor/mineral/diamond
