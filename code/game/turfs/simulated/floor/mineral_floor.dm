@@ -5,6 +5,7 @@
  * Silver floor
  * Bananium floor
  * Diamond floor
+ * Calorite floor
  * Uranium floor
  * Shuttle floor (Titanium)
  * Sand floors
@@ -204,20 +205,52 @@
 	initial_gas_mix = AIRLESS_ATMOS
 
 
-//CALORIT - GS13
+//calorite floor - GS13
 
-/turf/open/floor/mineral/calorit
-	article = "a"
-	name = "calorit floor"
-	icon_state = "calorit"
-	floor_tile = /obj/item/stack/tile/mineral/calorit
-	icons = list("calorit","calorit_dam")
+/turf/open/floor/mineral/calorite
+	name = "Calorite floor"
+	icon_state = "calorite"
+	floor_tile = /obj/item/stack/tile/mineral/calorite
+	icons = list("calorite","calorite_dam")
 	var/last_event = 0
 	var/active = null
 
-/turf/open/floor/mineral/calorit/Entered(mob/living/carbon/M)
-	M.fatness = M.fatness + 50
-	return ..()
+/turf/open/floor/mineral/calorite/Entered(mob/living/carbon/M)
+			M.fatness = M.fatness + 20
+
+// /turf/open/floor/mineral/calorite/proc/fatten(mob/living/carbon/M)
+// 	if(!active)
+// 		if(world.time > last_event+15)
+// 			active = 1
+// 			M.fatness = M.fatness + 30
+// 			for(var/turf/open/floor/mineral/calorite/T in orange(1,src))
+// 				T.fatten()
+// 			last_event = world.time
+// 			active = 0
+// 			return
+
+// calorite floor, disguised version - GS13
+
+/turf/open/floor/mineral/calorite_hide
+	name = "Steel floor"
+	icon_state = "calorite_hide"
+	floor_tile = /obj/item/stack/tile/mineral/calorite_hide
+	icons = list("calorite_hide","calorite_hide_dam")
+
+/turf/open/floor/mineral/calorite_hide/Entered(mob/living/carbon/M)
+			M.fatness = M.fatness + 50
+
+// calorite floor, powerful version - GS13
+
+/turf/open/floor/mineral/calorite_strong
+	name = "Infused calorite floor"
+	icon_state = "calorite_strong"
+	floor_tile = /obj/item/stack/tile/mineral/calorite_strong
+	icons = list("calorite_strong","calorite_strong_dam")
+
+/turf/open/floor/mineral/calorite_strong/Entered(mob/living/carbon/M)
+			M.fatness = M.fatness + 200
+
 
 //DIAMOND
 

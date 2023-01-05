@@ -318,3 +318,15 @@
 	name = "blueberry statue"
 	desc = "A statue resembling a poor humanoid creature shaped like a ball."
 	icon_state = "blueberry"
+
+
+//////////////////////////////CALORITE - GS13///////////////////////////////
+
+/obj/structure/statue/calorite
+	max_integrity = 400
+	material_drop_type = /obj/item/stack/sheet/mineral/calorite
+
+/obj/structure/statue/calorite/fatty
+	name = "Fatty statue"
+	desc = "A statue of a well-rounded fatso."
+	icon_state = "fatty"

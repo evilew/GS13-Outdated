@@ -381,11 +381,11 @@
 	sheet_type = /obj/item/stack/sheet/mineral/bananium
 	coin_type = /obj/item/coin/bananium
 
-/datum/material/calorit //GS13
-	name = "Calorit"
-	id = MAT_CALORIT
-	sheet_type = /obj/item/stack/sheet/mineral/calorit
-	// coin_type = /obj/item/coin/calorit
+/datum/material/calorite //GS13
+	name = "calorite"
+	id = MAT_CALORITE
+	sheet_type = /obj/item/stack/sheet/mineral/calorite
+	// coin_type = /obj/item/coin/calorite
 
 /datum/material/titanium
 	name = "Titanium"

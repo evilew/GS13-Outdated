@@ -69,7 +69,7 @@
 #define MAT_PLASMA		"$plasma"
 #define MAT_BLUESPACE	"$bluespace"
 #define MAT_BANANIUM	"$bananium"
-#define MAT_CALORIT 	"$calorit"           //GS13
+#define MAT_CALORITE 	"$calorite"           //GS13
 #define MAT_TITANIUM	"$titanium"
 #define MAT_BIOMASS		"$biomass"
 #define MAT_PLASTIC	    "$plastic"
