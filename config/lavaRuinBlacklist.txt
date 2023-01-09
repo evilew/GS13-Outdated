@@ -44,3 +44,4 @@ _maps/RandomRuins/LavaRuins/lavaland_surface_cube.dmm
 #_maps/RandomRuins/LavaRuins/lavaland_surface_hermit.dmm
 #_maps/RandomRuins/LavaRuins/lavaland_surface_swarmer_crash.dmm
 #_maps/RandomRuins/LavaRuins/lavaland_surface_oasis.dmm
+#_maps/RandomRuins/LavaRuins/lavaland_surface_snack_store.dmm
