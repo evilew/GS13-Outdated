@@ -296,7 +296,7 @@ GLOBAL_LIST_INIT(bananium_recipes, list ( \
 
 GLOBAL_LIST_INIT(calorite_recipes, list ( \
 	new/datum/stack_recipe("calorite tile", /obj/item/stack/tile/mineral/calorite, 1, 4, 20), \
-	// new/datum/stack_recipe("Fatty Statue", /obj/structure/statue/calorite/fatty, 5, one_per_turf = 1, on_floor = 1),
+	new/datum/stack_recipe("Fatty Statue", /obj/structure/statue/calorite/fatty, 5, one_per_turf = 1, on_floor = 1),
 	))
 
 /obj/item/stack/sheet/mineral/calorite/Initialize(mapload, new_amount, merge = TRUE)

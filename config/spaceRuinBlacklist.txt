@@ -52,3 +52,4 @@
 #_maps/RandomRuins/SpaceRuins/advancedlab.dmm
 #_maps/RandomRuins/SpaceRuins/hilbertshoteltestingsite.dmm
 #_maps/RandomRuins/SpaceRuins/feeders_den.dmm
+#_maps/RandomRuins/SpaceRuins/fastfood.dmm

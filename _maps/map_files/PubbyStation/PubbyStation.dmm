@@ -63563,10 +63563,7 @@
 /turf/open/floor/engine,
 /area/science/xenobiology)
 "tvj" = (
-/obj/structure/festivus{
-	anchored = 1;
-	name = "pole"
-	},
+/obj/item/polepack,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/department/crew_quarters/dorms)
 "tvP" = (

@@ -402,7 +402,7 @@
 	power_draw_per_use = 40
 	ext_cooldown = 1
 	cooldown_per_use = 10
-	var/list/mtypes = list(MAT_METAL, MAT_GLASS, MAT_SILVER, MAT_GOLD, MAT_DIAMOND, MAT_PLASMA, MAT_URANIUM, MAT_BANANIUM, MAT_CALORITE MAT_TITANIUM, MAT_BLUESPACE)
+	var/list/mtypes = list(MAT_METAL, MAT_GLASS, MAT_SILVER, MAT_GOLD, MAT_DIAMOND, MAT_PLASMA, MAT_URANIUM, MAT_BANANIUM, MAT_CALORITE, MAT_TITANIUM, MAT_BLUESPACE)
 
 /obj/item/integrated_circuit/manipulation/matman/Initialize()
 	var/datum/component/material_container/materials = AddComponent(/datum/component/material_container,

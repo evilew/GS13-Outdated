@@ -355,12 +355,12 @@
 	spread = 0
 	scan_state = "rock_Bananium"
 
-// /turf/closed/mineral/calorite //GS13
-// 	mineralType = /obj/item/stack/ore/calorite
-// 	mineralAmt = 3
-// 	spreadChance = 1
-// 	spread = 0
-// 	scan_state = "rock_calorite"
+/turf/closed/mineral/calorite //GS13
+	mineralType = /obj/item/stack/ore/calorite
+	mineralAmt = 3
+	spreadChance = 1
+	spread = 0
+	scan_state = "rock_calorite"
 
 /turf/closed/mineral/bscrystal
 	mineralType = /obj/item/stack/ore/bluespace_crystal
