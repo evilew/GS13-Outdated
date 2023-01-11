@@ -70,7 +70,7 @@
 										/datum/reagent/medicine/haloperidol, /datum/reagent/drug/aranesp, /datum/reagent/medicine/diphenhydramine
 									),
 									list(	//level 11
-										/datum/reagent/medicine/modafinil, /datum/reagent/medicine/bicaridine
+										/datum/reagent/medicine/modafinil, /datum/reagent/drug/krokodil
 									)
 								)
 
@@ -243,7 +243,14 @@
 		else
 			visibility_flags &= ~HIDDEN_SCANNER
 
-		SetSpread(CLAMP(2 ** (properties["transmittable"] - symptoms.len), DISEASE_SPREAD_BLOOD, DISEASE_SPREAD_AIRBORNE))
+		if(properties["transmittable"]>=11)
+			SetSpread(DISEASE_SPREAD_AIRBORNE)
+		else if(properties["transmittable"]>=7)
+			SetSpread(DISEASE_SPREAD_CONTACT_SKIN)
+		else if(properties["transmittable"]>=3)
+			SetSpread(DISEASE_SPREAD_CONTACT_FLUIDS)
+		else
+			SetSpread(DISEASE_SPREAD_BLOOD)
 
 		permeability_mod = max(CEILING(0.4 * properties["transmittable"], 1), 1)
 		cure_chance = 15 - CLAMP(properties["resistance"], -5, 5) // can be between 10 and 20
@@ -419,7 +426,7 @@
 
 	 // Should be only 1 entry left, but if not let's only return a single entry
 	var/datum/disease/advance/to_return = pick(diseases)
-	to_return.Refresh(1)
+	to_return.Refresh(TRUE)
 	return to_return
 
 /proc/SetViruses(datum/reagent/R, list/data)
@@ -455,7 +462,8 @@
 			else if(ispath(symptom))
 				var/datum/symptom/S = new symptom
 				if(!D.HasSymptom(S))
-					D.symptoms += S
+					D.symptoms += S //We manually add to avoid the randomness
+					S.OnAdd(D) //Second step of adding a symptom
 					i -= 1
 	while(i > 0)
 
