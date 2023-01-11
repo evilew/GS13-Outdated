@@ -138,6 +138,7 @@
 	always_place = TRUE
 	allow_duplicates = FALSE
 
+
 /datum/map_template/ruin/lavaland/blood_drunk_miner
 	name = "Blood-Drunk Miner"
 	id = "blooddrunk"
@@ -255,3 +256,11 @@
 	suffix = "lavaland_surface_cozy_cabin.dmm"
 	allow_duplicates = FALSE
 	cost = 0
+
+/datum/map_template/ruin/lavaland/snack_store //GS13
+	name = "Snack Store"
+	id = "snackstore"
+	description = "All your dreams about spending a night in a snack store finally came true! Though judging by your situation, you might spend a bit longer than just one night here..."
+	suffix = "lavaland_surface_snack_store.dmm"
+	allow_duplicates = FALSE
+	cost = 5
