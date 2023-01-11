@@ -8650,6 +8650,18 @@
 	name = "Station Intercom (General)";
 	pixel_y = 26
 	},
+/obj/item/instrument/trombone,
+/obj/item/clothing/glasses/monocle,
+/obj/item/instrument/recorder,
+/obj/item/clothing/head/that{
+	throwforce = 1
+	},
+/obj/item/cane,
+/obj/item/clothing/under/waiter,
+/obj/item/clothing/under/blacktango,
+/obj/item/clothing/under/sundress,
+/obj/item/clothing/shoes/sandal,
+/obj/structure/closet,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/bar)
 "arf" = (
@@ -12847,7 +12859,7 @@
 /area/hallway/primary/central)
 "azr" = (
 /obj/structure/table/wood,
-/obj/item/storage/book/bible,
+/obj/item/toy/plush,
 /turf/open/floor/carpet,
 /area/crew_quarters/dorms)
 "azs" = (
@@ -24986,6 +24998,9 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/bar)
 "aYf" = (
@@ -25034,6 +25049,10 @@
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4
+	},
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/bar)
@@ -26045,27 +26064,21 @@
 	name = "Station Intercom (General)";
 	pixel_y = 26
 	},
-/turf/open/floor/carpet{
-	icon_state = "carpetsymbol"
-	},
+/turf/open/floor/carpet/royalblack,
 /area/crew_quarters/bar)
 "bap" = (
 /obj/machinery/computer/slot_machine,
 /obj/machinery/airalarm{
 	pixel_y = 24
 	},
-/turf/open/floor/carpet{
-	icon_state = "carpetsymbol"
-	},
+/turf/open/floor/carpet/royalblack,
 /area/crew_quarters/bar)
 "baq" = (
 /obj/machinery/computer/arcade,
 /obj/structure/noticeboard{
 	pixel_y = 32
 	},
-/turf/open/floor/carpet{
-	icon_state = "carpetsymbol"
-	},
+/turf/open/floor/carpet/royalblack,
 /area/crew_quarters/bar)
 "bar" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -26495,19 +26508,20 @@
 /turf/open/floor/plating,
 /area/asteroid/nearstation)
 "bbo" = (
-/obj/item/clothing/head/hardhat/cakehat,
-/obj/structure/table/wood/fancy,
-/turf/open/floor/carpet{
-	icon_state = "carpetsymbol"
+/obj/structure/table/wood,
+/obj/item/ashtray{
+	pixel_y = -16
 	},
+/obj/item/clothing/mask/cigarette/cigar{
+	pixel_x = 6
+	},
+/turf/open/floor/carpet/royalblack,
 /area/crew_quarters/bar)
 "bbp" = (
 /obj/structure/chair/wood/normal{
 	dir = 8
 	},
-/turf/open/floor/carpet{
-	icon_state = "carpetsymbol"
-	},
+/turf/open/floor/carpet/royalblack,
 /area/crew_quarters/bar)
 "bbq" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -26527,26 +26541,21 @@
 /obj/structure/chair/wood/normal{
 	dir = 4
 	},
-/turf/open/floor/carpet{
-	icon_state = "carpetsymbol"
-	},
+/turf/open/floor/carpet/royalblack,
 /area/crew_quarters/bar)
 "bbs" = (
-/obj/item/cane,
-/obj/item/clothing/head/that{
-	throwforce = 1
+/obj/structure/table/wood,
+/obj/item/gun/ballistic/revolver/russian{
+	pixel_y = 8
 	},
-/obj/structure/table/wood/fancy,
-/turf/open/floor/carpet{
-	icon_state = "carpetsymbol"
+/obj/item/ashtray{
+	pixel_y = -16
 	},
+/turf/open/floor/carpet/royalblack,
 /area/crew_quarters/bar)
 "bbt" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/table/wood,
-/obj/item/clothing/under/sundress,
-/obj/item/clothing/under/waiter,
-/obj/item/clothing/under/blacktango,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/bar)
 "bbu" = (
@@ -26557,22 +26566,16 @@
 "bbv" = (
 /obj/structure/chair/stool,
 /obj/item/trash/can,
-/turf/open/floor/carpet{
-	icon_state = "carpetsymbol"
-	},
+/turf/open/floor/carpet/royalblack,
 /area/crew_quarters/bar)
 "bbw" = (
 /obj/effect/landmark/start/assistant,
 /obj/structure/chair/stool,
-/turf/open/floor/carpet{
-	icon_state = "carpetsymbol"
-	},
+/turf/open/floor/carpet/royalblack,
 /area/crew_quarters/bar)
 "bbx" = (
 /obj/structure/chair/stool,
-/turf/open/floor/carpet{
-	icon_state = "carpetsymbol"
-	},
+/turf/open/floor/carpet/royalblack,
 /area/crew_quarters/bar)
 "bby" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
@@ -26914,17 +26917,12 @@
 /turf/open/floor/plating/asteroid/airless,
 /area/asteroid/nearstation)
 "bco" = (
-/obj/structure/table/wood/fancy,
-/obj/item/gun/ballistic/revolver/russian{
-	pixel_y = 16
-	},
 /obj/item/storage/box/matches{
 	pixel_x = -3;
 	pixel_y = 5
 	},
-/turf/open/floor/carpet{
-	icon_state = "carpetsymbol"
-	},
+/obj/structure/table/wood,
+/turf/open/floor/carpet/royalblack,
 /area/crew_quarters/bar)
 "bcp" = (
 /obj/machinery/door/airlock{
@@ -26934,12 +26932,11 @@
 /turf/open/floor/plasteel/grimy,
 /area/chapel/main/monastery)
 "bcq" = (
-/obj/item/clothing/glasses/monocle,
-/obj/item/instrument/recorder,
-/obj/structure/table/wood/fancy,
-/turf/open/floor/carpet{
-	icon_state = "carpetsymbol"
+/obj/structure/table/wood,
+/obj/item/toy/cards/deck{
+	pixel_y = 4
 	},
+/turf/open/floor/carpet/royalblack,
 /area/crew_quarters/bar)
 "bcr" = (
 /obj/structure/disposalpipe/segment,
@@ -26956,10 +26953,6 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark,
-/area/crew_quarters/bar)
-"bcs" = (
-/obj/item/clothing/shoes/sandal,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/bar)
 "bct" = (
@@ -27946,7 +27939,6 @@
 /area/crew_quarters/bar)
 "bez" = (
 /obj/structure/table/wood,
-/obj/item/instrument/trombone,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -27957,6 +27949,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/item/clothing/head/hardhat/cakehat,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/bar)
 "beA" = (
@@ -28966,10 +28959,10 @@
 /area/hallway/primary/central)
 "bgs" = (
 /obj/structure/table,
-/obj/item/reagent_containers/food/snacks/donut,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
+/obj/item/reagent_containers/food/snacks/donut/apple,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "bgt" = (
@@ -99484,7 +99477,7 @@ aUf
 aUf
 aPE
 bbu
-bcs
+bah
 bag
 beG
 aPE

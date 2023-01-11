@@ -177,6 +177,11 @@
 	turf_type = /turf/open/floor/carpet/monochrome
 	tableVariant = /obj/structure/table/wood/fancy/monochrome
 
+/obj/item/stack/tile/carpet/gato //GS13
+	name = "gato-themed carpet"
+	icon_state = "tile-carpet-gato"
+	turf_type = /turf/open/floor/carpet/gato
+
 /obj/item/stack/tile/carpet/fifty
 	amount = 50
 
@@ -211,6 +216,9 @@
 	amount = 50
 
 /obj/item/stack/tile/carpet/royalblue/fifty
+	amount = 50
+
+/obj/item/stack/tile/carpet/gato/fifty
 	amount = 50
 
 /obj/item/stack/tile/fakespace
