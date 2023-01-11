@@ -36,7 +36,8 @@
 		var/datum/symptom/chosen_symptom = pick_n_take(possible_symptoms)
 		if(chosen_symptom)
 			var/datum/symptom/S = new chosen_symptom
-			symptoms += S
+			symptoms += S //Avoiding the randomness
+			S.OnAdd(src) //Activating symptoms added
 
 	name = "Sample #[rand(1,10000)]"
 	..()
