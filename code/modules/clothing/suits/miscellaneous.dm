@@ -29,7 +29,7 @@
 	resistance_flags = NONE
 
 /*
- * Posshim's Corpus atire 
+ * Posshim's Corpus atire
  */
 /obj/item/clothing/suit/hooded/corpus/
 	name = "Standard Voidsuit"
@@ -516,6 +516,12 @@
 	desc = "Oddly, this jacket seems to have a large S on the back..."
 	icon_state = "letterman_s"
 	item_state = "letterman_s"
+
+/obj/item/clothing/suit/jacket/letterman_gato
+	name = "Gato letterman jacket"
+	desc = "A GATO themed letterman jacket. Perfect for repping your pride in the company as you violently murder russian mobsters"
+	icon_state = "letterman_gato"
+	item_state = "letterman_gato"
 
 /obj/item/clothing/suit/jacket/letterman_nanotrasen
 	name = "blue letterman jacket"
