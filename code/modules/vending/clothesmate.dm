@@ -8,6 +8,7 @@
 	vend_reply = "Thank you for using the ClothesMate!"
 	products = list(/obj/item/clothing/head/that = 4,
 		            /obj/item/clothing/head/fedora = 3,
+		            /obj/item/clothing/suit/jacket/letterman_gato = 5,
 		            /obj/item/clothing/glasses/monocle = 3,
 		            /obj/item/clothing/suit/jacket = 4,
 					/obj/item/clothing/suit/jacket/flannel = 4,
