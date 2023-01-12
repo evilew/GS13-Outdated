@@ -32918,6 +32918,11 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
+/mob/living/simple_animal/bot/medbot{
+	desc = "A little cat medical robot. He looks determined.";
+	icon = 'hyperstation/icons/mob/catmedbot.dmi';
+	name = "Runtime V.2"
+	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "boI" = (
