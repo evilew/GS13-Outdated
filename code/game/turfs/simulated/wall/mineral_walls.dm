@@ -42,13 +42,13 @@
 	sheet_type = /obj/item/stack/sheet/mineral/bananium
 	canSmoothWith = list(/turf/closed/wall/mineral/bananium, /obj/structure/falsewall/bananium)
 
-// /turf/closed/wall/mineral/calorite //GS13
-// 	name = "calorite wall"
-// 	desc = "A wall with calorite plating. Burp."
-// 	icon = 'icons/turf/walls/calorite_wall.dmi'
-// 	icon_state = "calorite"
-// 	sheet_type = /obj/item/stack/sheet/mineral/calorite
-// 	canSmoothWith = list(/turf/closed/wall/mineral/calorite, /obj/structure/falsewall/calorite)
+/turf/closed/wall/mineral/calorite //GS13
+	name = "calorite wall"
+	desc = "A wall with calorite plating. Burp."
+	icon = 'icons/turf/walls/calorite_wall.dmi'
+	icon_state = "calorite"
+	sheet_type = /obj/item/stack/sheet/mineral/calorite
+	canSmoothWith = list(/turf/closed/wall/mineral/calorite, /obj/structure/falsewall/calorite)
 
 /turf/closed/wall/mineral/sandstone
 	name = "sandstone wall"
