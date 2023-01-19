@@ -216,18 +216,10 @@
 	var/active = null
 
 /turf/open/floor/mineral/calorite/Entered(mob/living/carbon/M)
-			M.fatness = M.fatness + 20
-
-// /turf/open/floor/mineral/calorite/proc/fatten(mob/living/carbon/M)
-// 	if(!active)
-// 		if(world.time > last_event+15)
-// 			active = 1
-// 			M.fatness = M.fatness + 30
-// 			for(var/turf/open/floor/mineral/calorite/T in orange(1,src))
-// 				T.fatten()
-// 			last_event = world.time
-// 			active = 0
-// 			return
+	if(HAS_TRAIT(M, TRAIT_LIPOIFIER_IMMUNE))
+		return
+	else
+		M.fatness = M.fatness + 50
 
 // calorite floor, disguised version - GS13
 
@@ -238,7 +230,10 @@
 	icons = list("calorite_hide","calorite_hide_dam")
 
 /turf/open/floor/mineral/calorite_hide/Entered(mob/living/carbon/M)
-			M.fatness = M.fatness + 50
+	if(HAS_TRAIT(M, TRAIT_LIPOIFIER_IMMUNE))
+		return
+	else
+		M.fatness = M.fatness + 50
 
 // calorite floor, powerful version - GS13
 
@@ -249,8 +244,10 @@
 	icons = list("calorite_strong","calorite_strong_dam")
 
 /turf/open/floor/mineral/calorite_strong/Entered(mob/living/carbon/M)
-			M.fatness = M.fatness + 200
-
+	if(HAS_TRAIT(M, TRAIT_LIPOIFIER_IMMUNE))
+		return
+	else
+		M.fatness = M.fatness + 50
 
 //DIAMOND
 

@@ -614,3 +614,55 @@
 	shoes = /obj/item/clothing/shoes/sneakers/black
 	suit = /obj/item/clothing/suit/armor/vest
 	glasses = /obj/item/clothing/glasses/sunglasses/reagent
+
+
+
+// GS13 stuff!
+
+// Restaurant Worker: Basically just a bunch of wagies who are supposed to lure people into their restaurant
+
+
+/obj/effect/mob_spawn/human/fastfood
+	name = "Corporate Cryostasis Pod"
+	desc = "On the grease-stained cryopod glass, you can see someone sleeping inside..."
+	mob_name = "fastfood_worker"
+	job_description = "Restaurant Worker"
+	icon = 'icons/obj/machines/sleeper.dmi'
+	icon_state = "sleeper"
+	roundstart = FALSE
+	death = FALSE
+	mob_species = /datum/species/human
+	short_desc = "It's the grand opening day!"
+	flavour_text = "After you've sold your soul to corporate overlords, your contract obliged you to enter cryostasis. \
+	Finally, after God knows how long, the cryopod system have awakened you with only a single sentence of information - welcome and lure in new guests into the freshly opened restaurant!"
+	assignedrole = "Free villager"
+	mirrorcanloadappearance = TRUE
+
+/obj/effect/mob_spawn/human/fastfood/Initialize(mapload)
+	. = ..()
+	var/arrpee = rand(1,3)
+	switch(arrpee)
+		if(1)
+			flavour_text += "You are this restaurant's manager, taking care of all the necessary paperwork, overseeing all the workers...\
+			But most importantly, you always have to make sure that the restaurant prospers and remains in good shape! "
+			outfit.head = /obj/item/clothing/head/pharaoh
+			outfit.uniform = /obj/item/clothing/under/tunic
+			outfit.shoes = /obj/item/clothing/shoes/sneakers/black
+			outfit.back = /obj/item/storage/backpack/satchel/leather
+		if(2)
+			flavour_text += "You are this restaurant's cook, using up the plethora of ingredients to cook up deliciously greasy and caloric foods.\
+			The kitchen and the bar is your turf! Make sure the guests stay fed."
+			outfit.head = /obj/item/clothing/head/rice_hat
+			outfit.uniform = /obj/item/clothing/under/tunic
+			outfit.shoes = /obj/item/clothing/shoes/sneakers/black
+			outfit.back = /obj/item/storage/backpack
+		if(3)
+			flavour_text += "You are this restaurant's waiter, responsible not only for tending to the guests, but also fixing and taking care of station's shape, power and looks.\
+			Make sure everything looks squeaky clean and that the restaurant remains powered!"
+			outfit.uniform = /obj/item/clothing/under/mummy
+			outfit.uniform = /obj/item/clothing/under/tunic
+			outfit.shoes = /obj/item/clothing/shoes/sneakers/black
+			outfit.back = /obj/item/storage/backpack
+
+/obj/effect/mob_spawn/human/fastfood/special(mob/living/carbon/human/new_spawn)
+	ADD_TRAIT(new_spawn,TRAIT_EXEMPT_HEALTH_EVENTS,GHOSTROLE_TRAIT)
