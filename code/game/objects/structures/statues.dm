@@ -358,18 +358,6 @@
 	beacon()
 	..()
 
-/obj/structure/statue/calorite/fatty/Bumped(atom/movable/AM)
-	beacon()
-	..()
-
-/obj/structure/statue/calorite/fatty/Uncross(atom/movable/AM)
-	beacon()
-	..()
-
-/obj/structure/statue/calorite/fatty/Uncrossed(atom/movable/AM)
-	beacon()
-	..()
-
 /obj/structure/statue/calorite/fatty/attackby(obj/item/W, mob/living/carbon/M, params)
 
 	if(HAS_TRAIT(M, TRAIT_LIPOIFIER_IMMUNE))
