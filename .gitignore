@@ -220,3 +220,4 @@ tools/MapAtmosFixer/MapAtmosFixer/bin/*
 /config/title_screens/images/*
 !/config/title_screens/images/exclude
 config/admins.txt
+_maps/RandomRuins_SpaceRuins_TheDerelictProject.dmm
