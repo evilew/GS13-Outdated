@@ -22,6 +22,7 @@
 "cC" = (/obj/effect/turf_decal/tile/brown{dir = 1},/obj/effect/turf_decal/tile/brown{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/bar)
 "cH" = (/obj/effect/turf_decal/tile/brown{dir = 8},/obj/effect/turf_decal/tile/brown,/obj/effect/turf_decal/tile/brown{dir = 4},/obj/structure/sign/poster/contraband/space_cola{pixel_x = 32},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/bar{name = "Restaurant Main Area"})
 "cP" = (/obj/structure/closet/emcloset/anchored,/obj/machinery/light/small{dir = 4},/turf/open/floor/plating,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
+"cV" = (/obj/structure/table/reinforced,/obj/machinery/door/poddoor/shutters/old/preopen{id = "fastfood_bar"},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "da" = (/obj/machinery/light/small{dir = 4},/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 9},/turf/open/floor/plating,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "dm" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 1},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/hotel/bar)
 "do" = (/obj/structure/sign/barsign,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/closed/wall,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
@@ -66,7 +67,7 @@
 "hz" = (/obj/effect/turf_decal/tile/brown{dir = 8},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/bar)
 "hD" = (/obj/structure/closet/crate/freezer,/obj/effect/turf_decal/bot,/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "hG" = (/obj/structure/table,/obj/item/stack/packageWrap,/obj/item/stack/packageWrap,/obj/item/stack/packageWrap,/obj/item/stack/packageWrap,/obj/item/stack/packageWrap,/obj/item/stack/packageWrap,/obj/structure/disposalpipe/segment{dir = 4},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
-"hK" = (/obj/structure/table/reinforced,/obj/machinery/door/poddoor/shutters/old/preopen,/obj/item/trash/plate{pixel_x = -5; pixel_y = 4},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
+"hK" = (/obj/structure/table/reinforced,/obj/machinery/door/poddoor/shutters/old/preopen{id = "fastfood_kitchen"},/obj/item/trash/plate{pixel_x = -5; pixel_y = 4},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "hL" = (/obj/structure/cable{icon_state = "1-4"},/turf/open/floor/plating,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "hX" = (/obj/structure/chair/stool/bar,/obj/effect/turf_decal/tile/brown{dir = 8},/obj/effect/turf_decal/tile/brown{dir = 1},/obj/structure/disposalpipe/segment,/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/bar{name = "Restaurant Main Area"})
 "if" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 5},/turf/open/floor/carpet/black,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
@@ -109,7 +110,7 @@
 "lL" = (/obj/machinery/light/small{dir = 8},/obj/structure/janitorialcart,/obj/item/mop/advanced,/turf/open/floor/plating,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "lM" = (/obj/effect/turf_decal/loading_area{dir = 6; icon_state = "steel_panel"; name = "steel pannel"},/obj/effect/turf_decal/loading_area{dir = 8; icon_state = "steel_panel"; name = "steel pannel"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 1},/turf/open/floor/plasteel/cafeteria,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "lO" = (/obj/effect/turf_decal/loading_area{dir = 10; icon_state = "steel_panel"; name = "steel pannel"},/turf/open/floor/plasteel/cafeteria,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
-"lP" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/mineral/calorite_hide,/area/ruin/space/has_grav/hotel/bar)
+"lP" = (/obj/effect/turf_decal/tile/brown{dir = 8},/obj/effect/turf_decal/tile/brown{dir = 1},/turf/open/floor/mineral/calorite_hide,/area/ruin/space/has_grav/hotel/bar)
 "mb" = (/obj/machinery/vending/coffee,/obj/machinery/light{dir = 4},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "mj" = (/obj/machinery/atmospherics/pipe/manifold/supply{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/bar)
 "mx" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 6},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
@@ -120,7 +121,7 @@
 "nn" = (/obj/structure/window/fulltile,/obj/structure/flora/ausbushes/ywflowers,/obj/machinery/light/floor,/turf/open/floor/grass,/area/ruin/space/has_grav/hotel/bar)
 "nB" = (/obj/structure/window/fulltile,/obj/structure/flora/ausbushes/ywflowers,/obj/structure/sign/poster/contraband/donut_corp{pixel_y = -32},/obj/machinery/light/floor,/turf/open/floor/grass,/area/ruin/space/has_grav/hotel/bar)
 "nH" = (/obj/effect/turf_decal/tile/brown{dir = 1},/obj/effect/turf_decal/tile/brown{dir = 8},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/bar)
-"nJ" = (/obj/structure/table/reinforced,/obj/machinery/door/poddoor/shutters/old/preopen,/obj/item/reagent_containers/food/drinks/drinkingglass/filled/cola,/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
+"nJ" = (/obj/structure/table/reinforced,/obj/machinery/door/poddoor/shutters/old/preopen{id = "fastfood_bar"},/obj/item/reagent_containers/food/drinks/drinkingglass/filled/cola,/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "nP" = (/turf/open/floor/wood,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "nY" = (/obj/item/toy/plush/tertia{pixel_x = -16},/turf/open/floor/plating/asteroid/airless,/area/ruin/unpowered/no_grav)
 "oh" = (/obj/effect/turf_decal/tile/brown{dir = 4},/obj/effect/turf_decal/tile/brown,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 8},/obj/structure/disposalpipe/segment,/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/bar)
@@ -158,17 +159,19 @@
 "sZ" = (/obj/effect/turf_decal/tile/brown{dir = 4},/obj/effect/turf_decal/tile/brown,/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/bar)
 "tA" = (/obj/effect/turf_decal/tile/brown,/obj/effect/turf_decal/tile/brown{dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 5},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/bar)
 "tK" = (/obj/structure/lattice/catwalk,/turf/open/space/basic,/area/ruin/space/has_grav/hotel/bar)
-"tQ" = (/obj/structure/table/reinforced,/obj/machinery/door/poddoor/shutters/old/preopen,/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
+"tQ" = (/obj/structure/table/reinforced,/obj/machinery/door/poddoor/shutters/old/preopen{id = "fastfood_kitchen"},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "tX" = (/obj/machinery/vending/mealdor,/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
+"tZ" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 8},/turf/open/floor/mineral/calorite_hide,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "uc" = (/obj/machinery/icecream_vat,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "ud" = (/obj/effect/turf_decal/loading_area{dir = 5; icon_state = "steel_panel"; name = "steel pannel"},/obj/effect/turf_decal/loading_area{dir = 8; icon_state = "steel_panel"; name = "steel pannel"},/obj/structure/disposalpipe/segment,/turf/open/floor/plasteel/cafeteria,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "uj" = (/obj/effect/turf_decal/tile/brown,/obj/effect/turf_decal/tile/brown{dir = 4},/obj/structure/sign/poster/contraband/pwr_game{pixel_x = 32},/obj/machinery/light/small{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/bar{name = "Restaurant Main Area"})
 "uk" = (/obj/structure/sign/departments/cargo,/turf/closed/wall,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
-"ul" = (/obj/machinery/door/airlock/glass_large,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 1},/turf/open/floor/mineral/calorite_hide,/area/ruin/space/has_grav/hotel/bar)
+"ul" = (/obj/machinery/door/airlock/glass_large,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/bar)
 "uu" = (/obj/structure/reagent_dispensers/watertank,/turf/open/floor/plating,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "uv" = (/obj/effect/turf_decal/tile/brown{dir = 4},/obj/effect/turf_decal/tile/brown{dir = 1},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/bar)
 "uw" = (/turf/closed/wall,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "uy" = (/obj/structure/table/wood,/obj/item/storage/backpack/cheeseburgerbackpack,/turf/open/floor/carpet/gato,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
+"uB" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/mineral/calorite_hide,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "uC" = (/obj/effect/spawner/structure/window/reinforced,/turf/open/floor/plating,/area/ruin/space/has_grav/hotel/bar)
 "uS" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 9},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "vc" = (/obj/effect/turf_decal/tile/brown{dir = 1},/obj/effect/turf_decal/tile/brown{dir = 4},/obj/effect/turf_decal/tile/brown{dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/bar)
@@ -181,7 +184,7 @@
 "vR" = (/obj/structure/disposalpipe/segment{dir = 4},/turf/open/floor/plasteel/cafeteria,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "vS" = (/obj/structure/window/fulltile,/obj/structure/flora/junglebush/c,/obj/structure/sign/poster/contraband/corn_oil{pixel_y = -32},/obj/machinery/light/floor,/turf/open/floor/grass,/area/ruin/space/has_grav/hotel/bar)
 "vV" = (/obj/effect/turf_decal/tile/brown{dir = 8},/obj/effect/turf_decal/tile/brown,/obj/effect/turf_decal/tile/brown{dir = 1},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/bar)
-"vW" = (/obj/structure/table/reinforced,/obj/machinery/door/poddoor/shutters/old/preopen,/obj/item/reagent_containers/food/drinks/bottle/blazaam{pixel_x = 7},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
+"vW" = (/obj/structure/table/reinforced,/obj/machinery/door/poddoor/shutters/old/preopen{id = "fastfood_bar"},/obj/item/reagent_containers/food/drinks/bottle/blazaam{pixel_x = 7},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "wb" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "wj" = (/obj/machinery/light/small{dir = 4},/obj/structure/cable{icon_state = "1-8"},/turf/open/floor/plating,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "wm" = (/obj/effect/turf_decal/tile/brown{dir = 8},/obj/effect/turf_decal/tile/brown{dir = 1},/obj/item/twohanded/required/kirbyplants,/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/bar)
@@ -229,7 +232,7 @@
 "Db" = (/obj/effect/turf_decal/tile/brown{dir = 4},/obj/effect/turf_decal/tile/brown,/obj/structure/disposalpipe/segment,/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/bar)
 "Df" = (/obj/machinery/door/window/brigdoor/southright{name = "Pete Containment Unit"},/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "Dg" = (/obj/effect/turf_decal/tile/brown{dir = 1},/obj/effect/turf_decal/tile/brown{dir = 4},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 6},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/bar)
-"Dj" = (/obj/structure/closet/secure_closet/personal/cabinet,/obj/item/ammo_box/magazine/m45/kitchengun,/obj/item/gun/ballistic/automatic/pistol/m1911/kitchengun,/turf/open/floor/wood,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
+"Dj" = (/obj/item/ammo_box/magazine/m45/kitchengun,/obj/item/gun/ballistic/automatic/pistol/m1911/kitchengun,/obj/structure/closet/wardrobe,/obj/item/clothing/neck/tie/black,/turf/open/floor/wood,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "Dp" = (/obj/machinery/light{dir = 1},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "Du" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/wood,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "Dv" = (/turf/closed/mineral/random,/area/ruin/unpowered/no_grav)
@@ -239,7 +242,7 @@
 "DJ" = (/obj/structure/sign/poster/official/gato_logo,/turf/closed/wall,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "DT" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on{dir = 8},/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "DY" = (/obj/effect/turf_decal/tile/brown,/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/bar)
-"Ea" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on,/turf/open/floor/plasteel/checker,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
+"Ea" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on,/obj/machinery/button/door{pixel_x = -28; id = "fastfood_bar"},/turf/open/floor/plasteel/checker,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "El" = (/turf/open/floor/plating,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "Eq" = (/obj/structure/table,/obj/item/kitchen/rollingpin,/obj/item/kitchen/knife/butcher,/obj/structure/disposalpipe/segment{dir = 4},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "EC" = (/obj/structure/flora/rock/pile,/turf/open/floor/plating/asteroid/airless,/area/ruin/unpowered/no_grav)
@@ -298,8 +301,9 @@
 "KT" = (/obj/effect/turf_decal/tile/brown{dir = 1},/obj/effect/turf_decal/tile/brown{dir = 4},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/bar)
 "Lc" = (/obj/effect/turf_decal/tile/brown{dir = 4},/obj/effect/turf_decal/tile/brown{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/bar)
 "Ld" = (/obj/structure/window/fulltile,/obj/structure/flora/ausbushes/grassybush,/turf/open/floor/grass,/area/ruin/space/has_grav/hotel/bar)
+"Lf" = (/obj/effect/turf_decal/tile/brown{dir = 4},/obj/effect/turf_decal/tile/brown{dir = 1},/turf/open/floor/mineral/calorite_hide,/area/ruin/space/has_grav/hotel/bar)
 "Lg" = (/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/hotel/bar)
-"Lk" = (/obj/structure/table/reinforced,/obj/machinery/door/poddoor/shutters/old/preopen,/obj/item/reagent_containers/food/snacks/cubannachos,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 1},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
+"Lk" = (/obj/structure/table/reinforced,/obj/machinery/door/poddoor/shutters/old/preopen{id = "fastfood_kitchen"},/obj/item/reagent_containers/food/snacks/cubannachos,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 1},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "Ln" = (/obj/structure/rack/shelf,/obj/effect/spawner/lootdrop/maintenance,/obj/effect/spawner/lootdrop/maintenance,/obj/effect/spawner/lootdrop/maintenance,/obj/effect/spawner/lootdrop/maintenance,/obj/effect/spawner/lootdrop/maintenance,/obj/effect/spawner/lootdrop/maintenance,/obj/effect/spawner/lootdrop/maintenance,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "Lo" = (/obj/effect/spawner/structure/window/reinforced,/turf/open/space/basic,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "Ls" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 10},/turf/open/floor/plating,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
@@ -334,7 +338,7 @@
 "Qp" = (/obj/structure/flora/junglebush/large,/turf/open/floor/plating/asteroid/airless,/area/ruin/unpowered/no_grav)
 "Qv" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 5},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "QG" = (/obj/effect/turf_decal/loading_area{dir = 1; icon_state = "drain"; name = "drain"},/obj/machinery/light{dir = 1},/obj/machinery/airalarm/syndicate{pixel_y = 32},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 1},/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
-"QH" = (/obj/structure/table/reinforced,/obj/structure/table/reinforced,/obj/machinery/door/poddoor/shutters/old/preopen,/obj/item/storage/fancy/donut_box{pixel_y = 4},/obj/structure/disposalpipe/segment{dir = 4},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
+"QH" = (/obj/structure/table/reinforced,/obj/structure/table/reinforced,/obj/machinery/door/poddoor/shutters/old/preopen{id = "fastfood_kitchen"},/obj/item/storage/fancy/donut_box{pixel_y = 4},/obj/structure/disposalpipe/segment{dir = 4},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "QR" = (/obj/structure/table/plaswood,/obj/item/reagent_containers/food/drinks/soda_cans/dr_gibb{pixel_y = 7},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/hotel/bar)
 "Ra" = (/obj/machinery/atmospherics/components/unary/vent_pump/on{dir = 4},/turf/open/floor/plasteel/cafeteria,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "Rj" = (/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
@@ -389,7 +393,7 @@
 "WO" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/manifold/supply{dir = 8},/turf/open/floor/plating,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "WP" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 8},/turf/open/floor/plating,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "Xk" = (/obj/structure/disposalpipe/segment{dir = 4},/turf/closed/wall,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
-"Xl" = (/obj/structure/disposalpipe/junction/yjunction{dir = 4},/turf/open/floor/plasteel/cafeteria,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
+"Xl" = (/obj/structure/disposalpipe/junction/yjunction{dir = 4},/obj/machinery/button/door{pixel_x = -28; id = "fastfood_kitchen"},/turf/open/floor/plasteel/cafeteria,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "Xq" = (/obj/structure/flora/junglebush/c,/turf/open/floor/plating/asteroid/airless,/area/ruin/unpowered/no_grav)
 "XH" = (/obj/machinery/door/airlock/public{dir = 4},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/obj/structure/disposalpipe/segment{dir = 4},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/hotel/bar)
 "XJ" = (/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
@@ -428,8 +432,8 @@ JLJLJLJLvpDvDvDvJLJLJLJLJLJLJLJLJLuwduEluwifsWVNUduwiQiQiQwJqjCpiQiQiQiQtXuwJLJL
 JLJLJLJLJLJLJLJLJLJLJLuwuwuwuwuwJLuwsBEluwYaGcxfDuuwmxqhqhIWCVpiiQiQiQiQvnuwJLJLJLJLJLJLJL
 JLJLJLJLJLJLJLJLJLJLuwuwIEUIIEuwuwuwkXRuuwniniwKSluwwbBcHXCrSbHXHXWwNMuwuwuwJLJLJLJLJLJLJL
 JLJLJLJLJLJLJLJLJLuwuwgQWuWuFcHXDIlxHXkQDpHXHXSbSPPqSbKyukwJROLnhDQvZsiNLsuwJLJLJLJLJLJLJL
-JLJLJLJLJLJLJLJLJLuwsJiQUEqhYwqhqhqhqhqhqhqhqhRjqhqhuSsNuwuwwKuwuwuwNTuwcaniJLJLJLJLJLJLJL
-JLJLJLJLJLJLJLJLJLuwKCiQiQjpjpIDuwuwuwuwuwuwuwuwuwuwiQsNuwBDQGYnCPYMBvuwvMuwuwJLJLJLJLJLJL
+JLJLJLJLJLJLJLJLJLuwsJiQUEtZYwqhqhqhqhqhqhqhqhRjqhqhuSsNuwuwwKuwuwuwNTuwcaniJLJLJLJLJLJLJL
+JLJLJLJLJLJLJLJLJLuwKCiQiQjpjpIDuwuwuwuwuwuwuwuwuwuwiQuBuwBDQGYnCPYMBvuwvMuwuwJLJLJLJLJLJL
 JLJLJLJLJLJLJLJLJLuwiliQbcbbuybVuwImarXVovJzxnScUTuwYLsNuwHPpJXJXJjVTeuwFTWpniJLJLJLJLJLJL
 JLJLJLJLJLJLJLJLJLuwfeiQbcUVNDFpuwkOudLJLJLJLJLJLJouiQlbdWXJhrISDTXJfTuwFTWpniJLJLJLJLJLJL
 JLJLJLJLJLJLJLJLJLuwuwiQOoSJAvkGuwlpYgXQRaMAfVMAMAiNZlLRuwDfpaucwHFMlEuwFTuwuwJLJLJLJLJLJL
@@ -437,17 +441,17 @@ JLJLJLJLJLJLJLJLJLJLuwwwuwuwuwuwuwuwWBXQlOlOlMzsMvuwuwNuuwvhuwuwuwuwuwuwFTLoJLJL
 JLJLJLJLJLJLJLJLJLJLuwiCHLcAGkVMmbuwXlvREqchoKhGFhQHPZMpuwuwGMBfqXbZXOWPApuwJLJLJLJLJLJLJL
 JLJLJLJLJLJLJLJLJLuwuwEaHzHzHzHzVKgfgRXQizlaTqHvfAtQhXujuwlLwzSwdauwFTuwuwuwJLJLJLJLJLJLJL
 JLJLJLJLJLJLJLJLJLuwhlxdqtcncncnaFuwXQXQXQlOJKlOqWtQhXTdCxkfpSmSGyCxLPKkscJLJLJLJLJLJLJLJL
-JLJLJLJLJLJLYmYmYmYmYmwNdouwnJtQvWwuUBwODJtQLkhKtQyaBLFUuwVPgWRksuuwFTuwuwuwJLJLJLJLJLJLJL
+JLJLJLJLJLJLYmYmYmYmYmwNdouwnJcVvWwuUBwODJtQLkhKtQyaBLFUuwVPgWRksuuwFTuwuwuwJLJLJLJLJLJLJL
 JLJLJLJLJLJLYmhqeckDqIvcPycCcCcCDgDEVyKTVyVyzEcCcCkccycHuwuuzFEloruwFTnfUcuwJLJLJLJLJLJLJL
 JLJLJLJLJLJLYmTIkhkhbFbAHkiYLKLKopYSYSZjYSYStALKLKTbohiXuwaOhLRHwjuwWOeleLuwJLJLJLDvDvJLJL
 JLJLJLJLJLJLYmDHBaBamVriRMsZrggteyxtTVUaeyHnTVgtrgNVDbeauwbvjJUFEluwFTfbUcuwJLJLDvDvDvDvJL
-JLJLJLJLJLJLYmYmYmYmjSvVUQsZkeNqiUxtfjnniUEQfjlohfNVDbVxYmYmYmuwgCuwFTuwuwuwJLJLECDvDvDvJL
+JLJLJLJLJLJLYmYmYmYmjSvVUQsZkeNqiUxtfjnniUEQfjlohflPDbVxYmYmYmuwgCuwFTuwuwuwJLJLECDvDvDvJL
 JLJLJLJLJLJLJLJLJLuCZaNGnHsZvkLdEILDgGgtEIxtgGUavkNVFlGNXHPkxSaXaXeJYNXkHtJLJLJLGCGCGCGCJL
-JLJLDvDvDvDvJLJLJLuCQROlnHMDLcLcLcLcLcKqLcLcLcLcLcakRMruYmYmYmYmYmYmRuuwuwJLJLJLGCvpDvDvJL
+JLJLDvDvDvDvJLJLJLuCQROlnHMDLfLcLcLcLcKqLcLcLcLcLcakRMruYmYmYmYmYmYmRuuwuwJLJLJLGCvpDvDvJL
 JLDvDvECQpeWJLJLJLuCFuOlTuDYXRXRXRXRXRgUXRXRXRXRhzVlmjgybDgXavavLYYmElcPuwJLJLJLDvDvDvJLJL
 JLDvIjVOGCeWJLJLJLYmTsuvFbsZqIxseyjtTVvqeyefTVBujjoEOwjIlIFyIvIvaIYmgEuwuwJLJLJLDvDvDvJLJL
 JLDvECXqDvDvJLJLJLYmwmESRMbKjSvSiUxtfjRyiUxtfjnBJeZqBsWDYmYmYmXWAHYmeUeUJLJLJLJLDvDvJLJLJL
-JLDvDvDvDvJLJLtKYmYmYmullPYmYmYmuCuCuCYmuCuCuCYmuCuCuCYmYmztqBJIxwYmeUeUJLJLJLJLDvJLJLJLJL
+JLDvDvDvDvJLJLtKYmYmYmulRMYmYmYmuCuCuCYmuCuCuCYmuCuCuCYmYmztqBJIxwYmeUeUJLJLJLJLDvJLJLJLJL
 JLJLDvJLJLJLJLtKSKfmgdIBwAiFYmJLJLJLJLGwJLJLJLGwJLJLJLJLYmYmYmJIgDYmJLJLJLJLJLJLJLJLJLJLJL
 JLJLJLJLJLJLJLtKSKzQzQsHiqpBYmJLJLJLJLGwJLJLJLGwJLJLJLJLYmpDqBJIxwYmJLJLJLJLJLJLJLJLJLJLJL
 JLJLJLJLJLJLJLtKYmryYjPBzhYmYmGwUfUfUfGwUfUfUfGwUfUfUfGwYmYmYmYmYmYmJLJLJLJLJLJLJLJLJLJLJL
