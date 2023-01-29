@@ -13,6 +13,8 @@
 #define FILE_DIR "code/modules/research/xenoarch/xenobotany"
 #define FILE_DIR "code/modules/research/xenoarch/xenobotany/icons"
 #define FILE_DIR "config"
+#define FILE_DIR "config/jukebox_music"
+#define FILE_DIR "config/jukebox_music/sounds"
 #define FILE_DIR "config/title_screens"
 #define FILE_DIR "GainStation13"
 #define FILE_DIR "GainStation13/icons"
