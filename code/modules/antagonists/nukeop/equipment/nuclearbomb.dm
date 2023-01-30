@@ -663,7 +663,7 @@ This is here to make the tiles around the station mininuke change when it's arme
 			if(istype(loneop))
 				loneop.weight += 1
 				if(loneop.weight % 5 == 0)
-					message_admins("[src] is stationary in [ADMIN_VERBOSEJMP(newturf)]. The weight of Lone Operative is now [loneop.weight].")
+					// message_admins("[src] is stationary in [ADMIN_VERBOSEJMP(newturf)]. The weight of Lone Operative is now [loneop.weight].") // Commenting this out because it's a fucking pain for the admins - Sono
 				log_game("[src] is stationary for too long in [loc_name(newturf)], and has increased the weight of the Lone Operative event to [loneop.weight].")
 	else
 		lastlocation = newturf

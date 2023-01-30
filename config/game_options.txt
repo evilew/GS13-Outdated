@@ -221,7 +221,7 @@ BROTHER_OBJECTIVES_AMOUNT 2
 
 ## Uncomment to prohibit jobs that start with loyalty
 ## implants from being most antagonists.
-#PROTECT_ROLES_FROM_ANTAGONIST
+PROTECT_ROLES_FROM_ANTAGONIST
 
 ## Uncomment to prohibit assistants from becoming most antagonists.
 #PROTECT_ASSISTANT_FROM_ANTAGONIST
@@ -440,8 +440,8 @@ ROUNDSTART_RACES felinid
 #ROUNDSTART_RACES skeleton
 #ROUNDSTART_RACES zombie
 #ROUNDSTART_RACES slime
-#ROUNDSTART_RACES pod
-#ROUNDSTART_RACES military_synth
+ROUNDSTART_RACES pod
+ROUNDSTART_RACES military_synth
 #ROUNDSTART_RACES agent
 
 ## CITADEL Races
@@ -525,7 +525,7 @@ BOMBCAP 20
 LAVALAND_BUDGET 60
 
 ## Space Ruin Budged
-Space_Budget 16
+Space_Budget 30
 
 ## Time in ds from when a player latejoins till the arrival shuttle docks at the station
 ## Must be at least 30. At least 55 recommended to be visually/aurally appropriate
@@ -579,7 +579,7 @@ BOX_RANDOM_ENGINE Box Singulo,3
 BOX_RANDOM_ENGINE Box SM 1x3,1
 BOX_RANDOM_ENGINE Box SM 5x5,1
 BOX_RANDOM_ENGINE Box SM 3x,1
-BOX_RANDOM_ENGINE Box TEG,2
-BOX_RANDOM_ENGINE Box Empty,0
-BOX_RANDOM_ENGINE Box Antimatter,0
-BOX_RANDOM_ENGINE Box P.A.C.M.A.N,0
+BOX_RANDOM_ENGINE Box TEG,1
+BOX_RANDOM_ENGINE Box Empty,1
+BOX_RANDOM_ENGINE Box Antimatter,1
+BOX_RANDOM_ENGINE Box P.A.C.M.A.N,1

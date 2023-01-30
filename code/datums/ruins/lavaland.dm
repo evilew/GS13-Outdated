@@ -263,4 +263,4 @@
 	description = "All your dreams about spending a night in a snack store finally came true! Though judging by your situation, you might spend a bit longer than just one night here..."
 	suffix = "lavaland_surface_snack_store.dmm"
 	allow_duplicates = FALSE
-	cost = 5
+	cost = 0

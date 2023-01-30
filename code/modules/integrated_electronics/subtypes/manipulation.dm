@@ -372,6 +372,7 @@
 		"Solid Plasma"			= IC_PINTYPE_NUMBER,
 		"Bluespace Mesh"		= IC_PINTYPE_NUMBER,
 		"Bananium"				= IC_PINTYPE_NUMBER,
+		"Calorite"				= IC_PINTYPE_NUMBER,
 		"Titanium"				= IC_PINTYPE_NUMBER,
 		)
 	outputs = list(
@@ -386,6 +387,7 @@
 		"Solid Plasma"			= IC_PINTYPE_NUMBER,
 		"Bluespace Mesh"		= IC_PINTYPE_NUMBER,
 		"Bananium"				= IC_PINTYPE_NUMBER,
+		"Calorite"				= IC_PINTYPE_NUMBER,
 		"Titanium"				= IC_PINTYPE_NUMBER
 		)
 	activators = list(
@@ -400,11 +402,11 @@
 	power_draw_per_use = 40
 	ext_cooldown = 1
 	cooldown_per_use = 10
-	var/list/mtypes = list(MAT_METAL, MAT_GLASS, MAT_SILVER, MAT_GOLD, MAT_DIAMOND, MAT_PLASMA, MAT_URANIUM, MAT_BANANIUM, MAT_TITANIUM, MAT_BLUESPACE)
+	var/list/mtypes = list(MAT_METAL, MAT_GLASS, MAT_SILVER, MAT_GOLD, MAT_DIAMOND, MAT_PLASMA, MAT_URANIUM, MAT_BANANIUM, MAT_CALORITE, MAT_TITANIUM, MAT_BLUESPACE)
 
 /obj/item/integrated_circuit/manipulation/matman/Initialize()
 	var/datum/component/material_container/materials = AddComponent(/datum/component/material_container,
-	list(MAT_METAL, MAT_GLASS, MAT_SILVER, MAT_GOLD, MAT_DIAMOND, MAT_PLASMA, MAT_URANIUM, MAT_BANANIUM, MAT_TITANIUM, MAT_BLUESPACE), 0,
+	list(MAT_METAL, MAT_GLASS, MAT_SILVER, MAT_GOLD, MAT_DIAMOND, MAT_PLASMA, MAT_URANIUM, MAT_BANANIUM, MAT_CALORITE, MAT_TITANIUM, MAT_BLUESPACE), 0,
 	FALSE, /obj/item/stack, CALLBACK(src, .proc/is_insertion_ready), CALLBACK(src, .proc/AfterMaterialInsert))
 	materials.max_amount =100000
 	materials.precise_insertion = TRUE

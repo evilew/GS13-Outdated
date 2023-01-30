@@ -274,6 +274,11 @@
 	unit_name = "Clown statue"
 	export_types = list(/obj/structure/statue/bananium/clown)
 
+/datum/export/large/fattystatue //GS13
+	cost = 2000
+	unit_name = "Fatty statue"
+	export_types = list(/obj/structure/statue/calorite/fatty)
+
 /datum/export/large/sandstatue
 	cost = 90 //Big cash
 	unit_name = "sandstone statue"

@@ -263,6 +263,43 @@
 	walltype = /turf/closed/wall/mineral/bananium
 	canSmoothWith = list(/obj/structure/falsewall/bananium, /turf/closed/wall/mineral/bananium)
 
+/obj/structure/falsewall/calorite            //GS13
+	name = "calorite wall"
+	desc = "A wall with calorite plating. Burp."
+	icon = 'icons/turf/walls/calorite_wall.dmi'
+	icon_state = "calorite"
+	mineral = /obj/item/stack/sheet/mineral/calorite
+	walltype = /turf/closed/wall/mineral/calorite
+	canSmoothWith = list(/obj/structure/falsewall/calorite, /turf/closed/wall/mineral/calorite)
+	var/active = null
+	var/last_event = 0
+
+/obj/structure/falsewall/calorite/proc/fatten()
+	if(!active)
+		if(world.time > last_event+15)
+			active = 1
+			for(var/mob/living/carbon/human/M in orange(3,src))
+				if(HAS_TRAIT(M, TRAIT_LIPOIFIER_IMMUNE))
+					return
+				else
+					M.fatness = M.fatness + 50
+			last_event = world.time
+			active = null
+			return
+	return
+
+/obj/structure/falsewall/calorite/Bumped(atom/movable/AM)
+	fatten()
+	..()
+
+/obj/structure/falsewall/calorite/attackby(obj/item/W, mob/user, params)
+	fatten()
+	return ..()
+
+/obj/structure/falsewall/calorite/attack_hand(mob/user)
+	fatten()
+	. = ..()
+
 
 /obj/structure/falsewall/sandstone
 	name = "sandstone wall"

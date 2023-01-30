@@ -224,7 +224,6 @@
 "eq" = (/obj/structure/table,/obj/item/razor,/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation)
 "er" = (/obj/machinery/washing_machine,/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation)
 "es" = (/obj/structure/closet/crate/bin,/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral,/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation)
-"et" = (/obj/item/toy/plush/mammal/chemlight,/obj/item/toy/plush/mammal/winfre{pixel_x = -4; pixel_y = -3},/turf/open/floor/plating/asteroid/airless,/area/ruin/space/has_grav/listeningstation)
 "eu" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4; piping_layer = 3; pixel_x = 5; pixel_y = 5},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/obj/effect/decal/cleanable/dirt,/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 1},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation)
 "ev" = (/obj/structure/chair/stool,/obj/machinery/light/small{brightness = 2; dir = 8},/obj/effect/decal/cleanable/dirt,/turf/open/floor/wood,/area/ruin/space/has_grav/listeningstation)
 "ey" = (/obj/machinery/light/small{brightness = 2; dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral,/obj/structure/chair/sofa/right{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/has_grav/listeningstation)
@@ -265,7 +264,7 @@ aaaaababababababacdMdJdNacaccKcKcKacacdAacacdndndnacacababababaa
 aaaaababababababacdOeAdQaccocScqbTcBcTcDcFaccGbVdKacabababababaa
 aaaaabababababacacacacacacevbZcVcVcJdcdedichcicjdPacabababababaa
 aaaaabababababaceedYdZeaaccMcacPdkcbdodpeyacacacacacababababaaaa
-aaaaabababababababebetedacacacacacacdzdpezaccGbVbWacababababaaaa
+aaaaabababababababebccedacacacacacacdzdpezaccGbVbWacababababaaaa
 aaaaaaabababababababeeefegedacdEdFctdXehemchcicjdVacababababaaaa
 aaaaababababababababababeneoeiepcxaceqeresacacacacacabababaaaaaa
 aaaaabababababababababababacaccyacacdGdGdGacabababababababaaaaaa
