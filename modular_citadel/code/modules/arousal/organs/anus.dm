@@ -26,6 +26,8 @@
 
 	//Reflect the size of dat ass on examine.
 	switch(round(size))
+		if(0)
+			size_name = "normal"
 		if(1)
 			size_name = "average"
 		if(2)
@@ -34,8 +36,36 @@
 			size_name = "squeezable"
 		if(4)
 			size_name = "hefty"
-		if(5)
+		if(6)
 			size_name = "godly"
+		if(7)
+			size_name = "huge"
+		if(8)
+			size_name = "colossal"
+		if(9)
+			size_name = "globular"
+		if(10)
+			size_name = "gargantuan"
+		if(11)
+			size_name = "gargantuan11"
+		if(12)
+			size_name = "gargantuan12"
+		if(13)
+			size_name = "gargantuan13"
+		if(14)
+			size_name = "gargantuan14"
+		if(15)
+			size_name = "gargantuan15"
+		if(16)
+			size_name = "gargantuan16"
+		if(17)
+			size_name = "gargantuan17"
+		if(18)
+			size_name = "gargantuan18"
+		if(19)
+			size_name = "gargantuan19"
+		if(20)
+			size_name = "gargantuan20"
 		else
 			size_name = "nonexistant"
 

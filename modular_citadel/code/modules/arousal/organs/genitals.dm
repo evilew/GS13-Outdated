@@ -464,7 +464,7 @@
 			if(G.slot == "penis" || G.slot == "testicles")
 				if(G.size < 3)		//is actually "less than 11 inches"
 					genital_overlay.layer = -GENITALS_UNDER_LAYER
-					
+
 			//GS13 Commented out as it clashes with the Belly Sprites and its fucking stupid and looks dumb
 			//if(G.slot == "breasts")
 
@@ -472,7 +472,7 @@
 				//if(B.cached_size < 8)	//anything smaller than a g-cup
 					//genital_overlay.layer = -GENITALS_UNDER_LAYER
 
-			//Get the icon
+/*			//Get the icon
 			genital_overlay.icon_state = "[G.slot]_[S.icon_state]_[size]_[aroused_state]_[layertext]"
 			colourcode = S.color_src
 
@@ -492,6 +492,41 @@
 				genital_overlay_directional.icon = 'hyperstation/icons/obj/genitals/butt.dmi'
 				genital_overlay_directional.icon_state = "butt_[round(size)]_NORTH"
 				genital_overlay_directional.layer = -NECK_LAYER
+
+				colourcode = "butt_color"
+				if(use_skintones) //butts are forced a colour, either skin tones, or main colour. how ever, mutants use a darker version, because of their body tone.
+					genital_overlay.color = "#[skintone2hex(H.skin_tone)]"
+					genital_overlay.icon_state = "butt_[round(size)]_OTHER"
+					genital_overlay_directional.icon_state = "butt_[round(size)]_NORTH"
+				else
+					genital_overlay.color = "#[H.dna.features["mcolor"]]"
+					genital_overlay.icon_state = "butt_[round(size)]_OTHER_m"
+					genital_overlay_directional.icon_state = "butt_[round(size)]_NORTH_m"
+*/
+			genital_overlay.icon_state = "[G.slot]_[S.icon_state]_[size]_[aroused_state]_[layertext]"
+			colourcode = S.color_src
+
+			if(G.slot == "belly") //we have a different size system
+				genital_overlay.icon = 'hyperstation/icons/obj/genitals/belly.dmi'
+				genital_overlay.icon_state = "belly_[size]"
+				genital_overlay.layer = -UNDER_BACK_LAYER
+				colourcode = "belly_color"
+		//	if(HAS_TRAIT(src, TRAIT_BLOB))
+		//		genital_overlay.icon = 'hyperstation/icons/obj/genitals/belly.dmi'
+		//		genital_overlay.icon_state = "belly_10"
+				//bellyfaticon
+
+			//sizecheck added to prevent rendering blank icons
+			if(G.slot == "anus" && G.size > 0) //we have a different size system
+
+				genital_overlay.icon = 'hyperstation/icons/obj/genitals/butt.dmi'
+				genital_overlay.icon_state = "butt_[round(size)]_OTHER"
+				genital_overlay.layer = -UNDER1_BACK_LAYER //in front of suit, behind bellies.
+
+				//creates directional layering by rendering twice. North has higher layer priority to occlude hands.
+				genital_overlay_directional.icon = 'hyperstation/icons/obj/genitals/butt.dmi'
+				genital_overlay_directional.icon_state = "butt_[round(size)]_NORTH"
+				genital_overlay_directional.layer = -UNDER1_BACK_LAYER
 
 				colourcode = "butt_color"
 				if(use_skintones) //butts are forced a colour, either skin tones, or main colour. how ever, mutants use a darker version, because of their body tone.
