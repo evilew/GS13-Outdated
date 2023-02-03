@@ -76,6 +76,8 @@
 		color = "#[skintone2hex(H.skin_tone)]"
 
 		if(ishuman(owner))
+			if(size > 10)
+				size = 10
 			icon_state = sanitize_text(string)
 			H.update_genitals()
 
