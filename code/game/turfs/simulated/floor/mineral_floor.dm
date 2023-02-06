@@ -5,6 +5,7 @@
  * Silver floor
  * Bananium floor
  * Diamond floor
+ * Calorite floor
  * Uranium floor
  * Shuttle floor (Titanium)
  * Sand floors
@@ -202,6 +203,41 @@
 
 /turf/open/floor/mineral/bananium/airless
 	initial_gas_mix = AIRLESS_ATMOS
+
+
+//calorite floor - GS13
+
+/turf/open/floor/mineral/calorite
+	name = "Calorite floor"
+	icon_state = "calorite"
+	floor_tile = /obj/item/stack/tile/mineral/calorite
+	icons = list("calorite","calorite_dam")
+	var/last_event = 0
+	var/active = null
+	///How much fatness is added to the user upon crossing?
+	var/fat_to_add = 50
+
+/turf/open/floor/mineral/calorite/Entered(mob/living/carbon/M)
+	if(!istype(M, /mob/living/carbon) || HAS_TRAIT(M, TRAIT_LIPOIFIER_IMMUNE))
+		return FALSE
+	else
+		M.fatness = M.fatness + fat_to_add 
+
+// calorite floor, disguised version - GS13
+
+/turf/open/floor/mineral/calorite/hide
+	name = "Steel floor"
+	icon_state = "calorite_hide"
+	floor_tile = /obj/item/stack/tile/mineral/calorite/hide
+	icons = list("calorite_hide","calorite_hide_dam")
+
+// calorite floor, powerful version - GS13
+
+/turf/open/floor/mineral/calorite/strong
+	name = "Infused calorite floor"
+	icon_state = "calorite_strong"
+	floor_tile = /obj/item/stack/tile/mineral/calorite/strong
+	icons = list("calorite_strong","calorite_strong_dam")
 
 //DIAMOND
 

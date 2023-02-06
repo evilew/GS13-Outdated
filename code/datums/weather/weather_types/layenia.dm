@@ -1,3 +1,5 @@
+//GS13 EDIT
+/*
 /datum/weather/ash_storm/layenia //because fuck writing my own code
 	name = "Layenia Weather"
 	desc = "A subset of weather affecting Layenia"
@@ -24,6 +26,8 @@
 	barometer_predictable = TRUE
 
 	aesthetic = TRUE
+
+*/
 
 //datum/weather/layenia/telegraph()
 

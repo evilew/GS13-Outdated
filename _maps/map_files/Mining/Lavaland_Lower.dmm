@@ -106,6 +106,9 @@
 	name = "Theatre air alarm";
 	pixel_y = 24
 	},
+/obj/structure/chair/comfy/black{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "aw" = (
@@ -193,12 +196,12 @@
 /turf/open/floor/plasteel,
 /area/xenoarch/gen)
 "aL" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
 /obj/machinery/door/airlock/maintenance{
 	dir = 4;
 	name = "Theather Room"
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel,
 /area/xenoarch/gen)
@@ -225,14 +228,11 @@
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "aQ" = (
-/obj/structure/chair/comfy/black{
-	dir = 8
+/obj/item/shield/riot/egyptian{
+	pixel_x = 20
 	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/dark,
-/area/xenoarch/gen)
+/turf/open/indestructible/necropolis,
+/area/lavaland/surface/outdoors)
 "aR" = (
 /obj/machinery/holopad,
 /obj/effect/turf_decal/loading_area{
@@ -425,16 +425,17 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark,
-/area/xenoarch/gen)
-"bv" = (
 /obj/structure/chair/comfy/black{
 	dir = 8
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /turf/open/floor/plasteel/dark,
+/area/xenoarch/gen)
+"bv" = (
+/obj/machinery/door/airlock/maintenance{
+	dir = 4;
+	name = "Theather Room"
+	},
+/turf/open/floor/plasteel,
 /area/xenoarch/gen)
 "bw" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
@@ -479,6 +480,9 @@
 	c_tag = "Xenoarch Theather";
 	dir = 1;
 	network = list("ss13","rd","mine")
+	},
+/obj/structure/chair/comfy/black{
+	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
@@ -6586,6 +6590,12 @@
 /area/xenoarch/bot{
 	name = "Demon Teleporter"
 	})
+"sI" = (
+/obj/item/melee/cultblade{
+	pixel_x = -20
+	},
+/turf/open/indestructible/necropolis,
+/area/lavaland/surface/outdoors)
 "sO" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -6664,6 +6674,12 @@
 /area/xenoarch/bot{
 	name = "Demon Teleporter"
 	})
+"Dd" = (
+/obj/structure/sign/poster/official/random{
+	pixel_x = -32
+	},
+/turf/open/floor/carpet/red,
+/area/xenoarch/gen)
 "Ed" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -6735,10 +6751,9 @@
 /turf/open/floor/plasteel/grimy,
 /area/xenoarch/nothinghere)
 "GS" = (
-/obj/effect/turf_decal/tile{
-	color = "8F96AD"
+/turf/open/floor/plasteel/dark/side{
+	dir = 9
 	},
-/turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "Hx" = (
 /turf/open/floor/carpet,
@@ -6773,11 +6788,9 @@
 	name = "Demon Teleporter"
 	})
 "Kd" = (
-/obj/effect/turf_decal/tile{
-	color = "#8F96AD";
-	dir = 8
+/turf/open/floor/plasteel/dark/side{
+	dir = 5
 	},
-/turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "Ku" = (
 /turf/closed/wall/r_wall/rust,
@@ -8926,7 +8939,7 @@ as
 fK
 aM
 fK
-fK
+ba
 Sy
 bW
 Sy
@@ -9182,7 +9195,7 @@ Sy
 at
 aE
 aM
-ba
+fK
 bs
 Sy
 bX
@@ -9439,7 +9452,7 @@ Sy
 Sy
 Sy
 aL
-Sy
+bv
 kP
 Sy
 ar
@@ -9482,7 +9495,7 @@ ay
 ms
 mz
 mz
-mz
+aQ
 mz
 mz
 mz
@@ -9698,7 +9711,7 @@ ik
 aO
 ik
 bt
-lR
+Dd
 ar
 cj
 cH
@@ -9955,7 +9968,7 @@ ik
 aO
 ik
 bt
-el
+ik
 ar
 ck
 cI
@@ -9996,7 +10009,7 @@ ay
 ms
 mz
 mz
-mz
+sI
 mz
 mz
 mz
@@ -10212,7 +10225,7 @@ ik
 aO
 ik
 bt
-el
+ik
 ar
 cl
 cJ
@@ -10468,7 +10481,7 @@ au
 ik
 aO
 ik
-bu
+bt
 bC
 ar
 ar
@@ -10722,7 +10735,7 @@ ab
 ab
 Sy
 av
-el
+ax
 aP
 el
 bu
@@ -10980,10 +10993,10 @@ ab
 Sy
 ax
 ax
-aQ
-ax
-bv
+aP
 el
+bu
+ax
 ar
 ck
 cN
@@ -11237,10 +11250,10 @@ ab
 Sy
 ax
 ax
-aQ
-ax
-bv
+aP
 el
+bu
+ax
 ar
 cn
 cO

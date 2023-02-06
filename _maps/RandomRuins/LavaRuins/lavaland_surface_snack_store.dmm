@@ -1,0 +1,1785 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/obj/structure/window/reinforced/survival_pod{
+	dir = 1
+	},
+/obj/item/trash/popcorn,
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"ab" = (
+/obj/machinery/vending/gato,
+/obj/structure/sign/poster/contraband/robust_softdrinks{
+	pixel_y = -32
+	},
+/obj/machinery/light,
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"ac" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"ad" = (
+/obj/structure/table,
+/obj/item/stack/spacecash/c1,
+/obj/item/stack/spacecash/c1,
+/obj/item/stack/spacecash/c20{
+	pixel_y = 10
+	},
+/obj/item/coin/gold,
+/obj/machinery/camera{
+	c_tag = "Security - Prison Port";
+	dir = 2
+	},
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"ae" = (
+/obj/structure/fans/tiny,
+/obj/machinery/door/airlock/public/glass,
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"af" = (
+/turf/open/floor/concrete,
+/area/lavaland/surface/outdoors)
+"ag" = (
+/obj/machinery/smartfridge/food,
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"ah" = (
+/obj/item/cardboard_cutout{
+	icon_state = "cutout_viva";
+	pixel_x = 6
+	},
+/obj/item/cardboard_cutout{
+	icon_state = "cutout_wizard";
+	pixel_x = -10
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"aj" = (
+/obj/structure/chair/stool/brass,
+/turf/open/floor/concrete,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"ak" = (
+/obj/item/cardboard_cutout{
+	icon_state = "cutout_lusty"
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"al" = (
+/obj/structure/window/reinforced/tinted{
+	dir = 4
+	},
+/obj/structure/filingcabinet/security,
+/obj/structure/fluff/paper,
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"an" = (
+/obj/machinery/computer/slot_machine,
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"ap" = (
+/obj/machinery/vending/kink,
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"aq" = (
+/obj/machinery/vending/snack/random,
+/obj/structure/sign/poster/contraband/shamblers_juice{
+	pixel_y = -32
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"as" = (
+/obj/structure/sign/poster/contraband/energy_swords{
+	pixel_x = 32
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"au" = (
+/obj/structure/closet,
+/obj/item/gun/ballistic/shotgun,
+/obj/item/ammo_casing/shotgun/beanbag,
+/obj/item/ammo_casing/shotgun/beanbag,
+/obj/item/ammo_casing/shotgun/beanbag,
+/obj/item/ammo_casing/shotgun,
+/obj/item/ammo_casing/shotgun/buckshot,
+/obj/item/ammo_casing/shotgun/buckshot,
+/obj/item/storage/firstaid,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"aw" = (
+/obj/machinery/vending/coffee,
+/obj/structure/sign/poster/contraband/eat{
+	pixel_x = -32
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"ax" = (
+/obj/structure/window/reinforced/tinted{
+	dir = 4
+	},
+/obj/structure/table,
+/obj/item/flashlight/lamp,
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"az" = (
+/turf/open/floor/concrete,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"aB" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"aF" = (
+/obj/machinery/door/airlock/public,
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"aJ" = (
+/obj/machinery/vending/games,
+/obj/structure/sign/poster/contraband/space_cola{
+	pixel_y = -32
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"aK" = (
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"aL" = (
+/obj/machinery/computer/arcade/orion_trail{
+	dir = 4
+	},
+/obj/machinery/camera{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"aO" = (
+/turf/template_noop,
+/area/template_noop)
+"aP" = (
+/obj/structure/ore_box,
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"aS" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -26
+	},
+/obj/structure/mirror{
+	pixel_y = 32
+	},
+/obj/structure/sink{
+	pixel_y = 22
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/freezer,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"aT" = (
+/obj/effect/spawner/structure/window,
+/turf/open/floor/plating,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"aU" = (
+/obj/machinery/computer/arcade/amputation{
+	dir = 4
+	},
+/obj/structure/sign/poster/contraband/smoke{
+	pixel_x = -32
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"aV" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/poddoor/shutters/preopen,
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"aX" = (
+/obj/structure/sign/poster/contraband/eat{
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"aY" = (
+/turf/closed/wall,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bb" = (
+/obj/machinery/door/window/southright,
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bc" = (
+/obj/machinery/vending/mealdor,
+/obj/structure/sign/poster/contraband/donut_corp{
+	pixel_x = -32
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"be" = (
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bg" = (
+/obj/structure/rack/shelf,
+/obj/structure/rack/shelf,
+/obj/item/stack/packageWrap,
+/obj/item/stack/packageWrap,
+/obj/item/stack/packageWrap,
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bh" = (
+/obj/structure/closet/crate/large,
+/turf/open/floor/concrete,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bi" = (
+/obj/item/cigbutt{
+	pixel_x = -10;
+	pixel_y = -10
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/concrete,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bk" = (
+/obj/structure/closet/crate/freezer,
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bl" = (
+/obj/structure/rack/shelf,
+/obj/item/reagent_containers/food/snacks/popcorn,
+/obj/item/reagent_containers/food/snacks/popcorn{
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/food/snacks/popcorn{
+	pixel_x = 7
+	},
+/obj/machinery/light,
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bm" = (
+/obj/structure/rack/shelf,
+/obj/structure/sign/poster/contraband/corn_oil{
+	pixel_x = 32
+	},
+/obj/item/reagent_containers/food/snacks/cannedpeaches,
+/obj/item/reagent_containers/food/snacks/cannedpeaches{
+	pixel_x = -4
+	},
+/obj/item/reagent_containers/food/snacks/cannedpeaches{
+	pixel_x = 4
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bn" = (
+/turf/open/floor/plasteel/freezer,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bp" = (
+/obj/item/cardboard_cutout{
+	icon_state = "cutout_clown"
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bq" = (
+/obj/structure/rack,
+/obj/item/camera,
+/obj/item/camera_film,
+/obj/item/camera_film,
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bu" = (
+/obj/structure/sign/poster/contraband/pwr_game{
+	pixel_x = 32
+	},
+/obj/item/trash/raisins,
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bv" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bx" = (
+/obj/structure/rack/shelf,
+/obj/item/reagent_containers/food/snacks/soyfood,
+/obj/item/reagent_containers/food/snacks/soyfood{
+	pixel_x = -6
+	},
+/obj/item/reagent_containers/food/snacks/soyfood{
+	pixel_x = 6
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bA" = (
+/obj/structure/sign/poster/official/cohiba_robusto_ad{
+	pixel_x = 32
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bB" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/item/newspaper{
+	pixel_x = 13;
+	pixel_y = -7
+	},
+/turf/open/floor/plasteel/freezer,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bF" = (
+/obj/structure/rack/shelf,
+/obj/item/vending_refill/kink,
+/obj/item/vending_refill/cigarette{
+	pixel_y = 4
+	},
+/obj/item/vending_refill/cola{
+	pixel_y = 4
+	},
+/obj/item/vending_refill/boozeomat,
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bG" = (
+/obj/structure/window/reinforced/survival_pod{
+	dir = 9
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bH" = (
+/obj/structure/table,
+/obj/machinery/microwave,
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bI" = (
+/obj/structure/rack/shelf,
+/obj/structure/rack/shelf,
+/obj/item/reagent_containers/food/drinks/soda_cans/grey_bull{
+	pixel_x = -4
+	},
+/obj/item/reagent_containers/food/drinks/soda_cans/grey_bull{
+	pixel_x = -8
+	},
+/obj/item/reagent_containers/food/drinks/soda_cans/monkey_energy{
+	pixel_x = 4
+	},
+/obj/item/reagent_containers/food/drinks/soda_cans/monkey_energy{
+	pixel_x = 8
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bM" = (
+/obj/structure/closet/crate/secure/loot,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bT" = (
+/obj/structure/table,
+/obj/machinery/chem_dispenser/drinks/fullupgrade{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bW" = (
+/obj/machinery/vending/cola/shamblers,
+/turf/open/floor/concrete,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bX" = (
+/obj/structure/chair/office/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"bZ" = (
+/obj/machinery/vending/boozeomat/all_access,
+/obj/structure/sign/poster/contraband/red_rum{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"ca" = (
+/obj/structure/rack/shelf,
+/obj/item/reagent_containers/food/snacks/cheesiehonkers,
+/obj/item/reagent_containers/food/snacks/cheesiehonkers{
+	pixel_x = -4
+	},
+/obj/item/reagent_containers/food/snacks/cheesiehonkers{
+	pixel_x = 4
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"ci" = (
+/obj/item/trash/boritos,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/concrete,
+/area/lavaland/surface/outdoors)
+"cj" = (
+/obj/structure/rack/shelf,
+/obj/item/storage/bag/trash/bluespace,
+/obj/item/mop/advanced,
+/obj/item/stack/sheet/cardboard,
+/obj/item/stack/sheet/cardboard,
+/obj/item/stack/sheet/cardboard,
+/obj/item/stack/sheet/cardboard,
+/obj/item/stack/sheet/cardboard,
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"cl" = (
+/obj/structure/fluff/paper/stack,
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"cp" = (
+/obj/machinery/door/window/survival_pod{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"cs" = (
+/obj/machinery/smartfridge/chemistry/preloaded,
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"cx" = (
+/obj/effect/mapping_helpers/no_lava,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
+"cC" = (
+/obj/machinery/vending/cola/starkist,
+/turf/open/floor/concrete,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"cD" = (
+/obj/structure/fans/tiny,
+/obj/machinery/door/airlock/public,
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"cG" = (
+/obj/machinery/vending/cigarette,
+/turf/open/floor/concrete,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"cH" = (
+/obj/structure/table,
+/obj/item/paper_bin{
+	pixel_x = -5
+	},
+/obj/item/pen,
+/obj/item/folder/red{
+	pixel_x = 16;
+	pixel_y = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"eo" = (
+/obj/structure/mirror{
+	icon_state = "mirror_broke";
+	pixel_y = 32
+	},
+/obj/structure/sink{
+	pixel_y = 22
+	},
+/turf/open/floor/plasteel/freezer,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"eE" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/item/trash/pistachios,
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"eF" = (
+/obj/machinery/door/airlock/public,
+/turf/open/floor/plasteel/freezer,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"fI" = (
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"ga" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/concrete,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"gU" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"ha" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/concrete,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"ix" = (
+/obj/structure/closet/crate/trashcart,
+/obj/item/seeds/cannabis/rainbow,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/concrete,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"iL" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/drinks/sillycup/smallcarton,
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"iO" = (
+/obj/structure/rack,
+/obj/item/storage/fancy/candle_box,
+/obj/item/storage/box/matches,
+/obj/item/lighter,
+/obj/item/storage/fancy/cigarettes/smokekins,
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"jn" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -26
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"mG" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/concrete,
+/area/lavaland/surface/outdoors)
+"mK" = (
+/obj/structure/fans/tiny,
+/obj/machinery/door/poddoor/shutters,
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"np" = (
+/obj/item/radio{
+	pixel_x = 8
+	},
+/turf/open/floor/concrete,
+/area/lavaland/surface/outdoors)
+"oC" = (
+/obj/structure/closet/crate/large,
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"pb" = (
+/obj/structure/closet/emcloset,
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"pg" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/poddoor/shutters/preopen,
+/obj/machinery/computer/security/telescreen{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"pQ" = (
+/obj/structure/table,
+/obj/item/reagent_containers/food/snacks/carneburrito{
+	pixel_x = -6;
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/food/snacks/taco{
+	pixel_x = 5
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"qt" = (
+/obj/machinery/camera{
+	c_tag = "Courtroom - Aft";
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"qD" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown,
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"sq" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/freezer,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"tc" = (
+/obj/structure/rack/shelf,
+/obj/item/reagent_containers/food/snacks/chips,
+/obj/item/reagent_containers/food/snacks/chips{
+	pixel_x = -4
+	},
+/obj/item/reagent_containers/food/snacks/chips{
+	pixel_x = 4
+	},
+/obj/machinery/camera,
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"uq" = (
+/obj/structure/toilet{
+	dir = 1
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/plasteel/freezer,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"uC" = (
+/obj/structure/rack/shelf,
+/obj/item/reagent_containers/food/snacks/syndicake,
+/obj/item/reagent_containers/food/snacks/syndicake{
+	pixel_y = -4
+	},
+/obj/item/reagent_containers/food/snacks/syndicake{
+	pixel_y = 4
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"uO" = (
+/obj/structure/closet/crate/trashcart,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/concrete,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"vf" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/concrete,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"xX" = (
+/obj/structure/rack/shelf,
+/obj/item/reagent_containers/food/drinks/soda_cans/cola{
+	pixel_x = -4
+	},
+/obj/item/reagent_containers/food/drinks/soda_cans/cola{
+	pixel_x = -8
+	},
+/obj/item/reagent_containers/food/drinks/soda_cans/dr_gibb{
+	pixel_x = 4
+	},
+/obj/item/reagent_containers/food/drinks/soda_cans/dr_gibb{
+	pixel_x = 8
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"yU" = (
+/obj/machinery/computer/security/telescreen/entertainment,
+/turf/closed/wall,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"zP" = (
+/obj/item/cigbutt,
+/turf/open/floor/concrete,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"Al" = (
+/obj/item/storage/toolbox/mechanical{
+	pixel_x = -3;
+	pixel_y = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"AT" = (
+/obj/structure/safe,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/item/stack/spacecash/c1000,
+/obj/item/stack/spacecash/c1000,
+/obj/item/stack/spacecash/c200,
+/obj/item/stack/spacecash/c200,
+/obj/item/stack/spacecash/c100,
+/obj/item/clothing/mask/chameleon,
+/obj/item/clothing/head/chameleon,
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"Bp" = (
+/obj/machinery/door/airlock/public,
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"BC" = (
+/obj/structure/rack,
+/obj/item/toy/cards/deck/syndicate{
+	pixel_y = 6
+	},
+/obj/item/toy/plush/random{
+	pixel_x = 4
+	},
+/obj/item/toy/plush/random{
+	pixel_x = -4
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"Dz" = (
+/obj/structure/rack/shelf,
+/obj/item/reagent_containers/food/drinks/soda_cans/thirteenloko{
+	pixel_x = 4
+	},
+/obj/item/reagent_containers/food/drinks/soda_cans/thirteenloko{
+	pixel_x = 8
+	},
+/obj/item/reagent_containers/food/drinks/soda_cans/tonic{
+	pixel_x = -4
+	},
+/obj/item/reagent_containers/food/drinks/soda_cans/tonic{
+	pixel_x = -8
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"EY" = (
+/obj/structure/rack/shelf,
+/obj/structure/rack/shelf,
+/obj/item/reagent_containers/food/drinks/soda_cans/pwr_game{
+	pixel_x = -4
+	},
+/obj/item/reagent_containers/food/drinks/soda_cans/pwr_game{
+	pixel_x = -8
+	},
+/obj/item/reagent_containers/food/drinks/soda_cans/shamblers{
+	pixel_x = 4
+	},
+/obj/item/reagent_containers/food/drinks/soda_cans/shamblers{
+	pixel_x = 8
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"Ff" = (
+/obj/structure/rack/shelf,
+/obj/item/reagent_containers/food/snacks/cornchips,
+/obj/item/reagent_containers/food/snacks/cornchips{
+	pixel_x = -4
+	},
+/obj/item/reagent_containers/food/snacks/cornchips{
+	pixel_x = 4
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"HD" = (
+/obj/item/trash/semki,
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"HK" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/poddoor/shutters/preopen,
+/obj/item/storage/fancy/cigarettes/cigpack_robust,
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"Jq" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"Kz" = (
+/obj/machinery/smartfridge/chemistry/preloaded,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"Lx" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/poddoor/shutters/preopen,
+/obj/item/stack/spacecash/c1{
+	pixel_y = 8;
+	pixel_x = 3
+	},
+/obj/item/coin/silver{
+	pixel_x = -8
+	},
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"Nj" = (
+/obj/structure/rack,
+/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/maintenance,
+/obj/effect/spawner/lootdrop/maintenance,
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"Nm" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel/freezer,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"NQ" = (
+/obj/structure/rack/shelf,
+/obj/item/reagent_containers/food/snacks/candy,
+/obj/item/reagent_containers/food/snacks/candy{
+	pixel_x = -4
+	},
+/obj/item/reagent_containers/food/snacks/candy{
+	pixel_x = 4
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"OH" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 4
+	},
+/turf/open/floor/concrete,
+/area/lavaland/surface/outdoors)
+"Po" = (
+/obj/item/trash/candy,
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"Qg" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"QR" = (
+/obj/machinery/door/window/survival_pod{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"Rg" = (
+/obj/effect/mapping_helpers/no_lava,
+/obj/effect/mapping_helpers/no_lava,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
+"Rt" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/concrete,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"RA" = (
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/trash/plate,
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"Ux" = (
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"VJ" = (
+/obj/structure/toilet{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/mob_spawn/human/skeleton/alive,
+/turf/open/floor/plasteel/freezer,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"VL" = (
+/obj/item/cigbutt{
+	pixel_x = -1
+	},
+/obj/item/cigbutt{
+	pixel_x = 4;
+	pixel_y = 3
+	},
+/obj/item/cigbutt{
+	pixel_y = 8;
+	pixel_x = -5
+	},
+/obj/item/cigbutt{
+	pixel_x = 9;
+	pixel_y = -6
+	},
+/turf/open/floor/concrete,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"Wy" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/trash/sosjerky,
+/turf/open/floor/plasteel,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"Zb" = (
+/obj/structure/closet/firecloset/full,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"Zi" = (
+/obj/structure/rack/shelf,
+/obj/item/reagent_containers/food/snacks/no_raisin,
+/obj/item/reagent_containers/food/snacks/no_raisin{
+	pixel_x = -8
+	},
+/obj/item/reagent_containers/food/snacks/no_raisin{
+	pixel_x = 9
+	},
+/turf/open/floor/mineral/titanium,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+"ZG" = (
+/obj/structure/closet/crate/freezer,
+/obj/machinery/light/small,
+/turf/open/floor/plasteel/dark,
+/area/ruin/powered/seedvault{
+	name = "Snack Store"
+	})
+
+(1,1,1) = {"
+aO
+aO
+cx
+cx
+aO
+aO
+aO
+cx
+cx
+aO
+aO
+aO
+cx
+cx
+cx
+cx
+cx
+cx
+aO
+aO
+cx
+cx
+cx
+cx
+cx
+cx
+aO
+aO
+"}
+(2,1,1) = {"
+aO
+cx
+cx
+cx
+cx
+cx
+cx
+cx
+cx
+cx
+cx
+cx
+Rg
+cx
+cx
+cx
+af
+cx
+af
+mG
+cx
+cx
+cx
+cx
+af
+cx
+cx
+aO
+"}
+(3,1,1) = {"
+aO
+cx
+Rg
+cx
+af
+np
+cx
+cx
+cx
+cx
+cx
+cx
+cx
+cx
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+aT
+aT
+aY
+cx
+cx
+cx
+"}
+(4,1,1) = {"
+cx
+cx
+cx
+mG
+aY
+aY
+aY
+aY
+aY
+cx
+af
+mG
+cx
+af
+aY
+Kz
+ag
+ag
+cs
+aa
+aw
+bc
+pQ
+iL
+aT
+cx
+cx
+cx
+"}
+(5,1,1) = {"
+cx
+cx
+cx
+mG
+aT
+an
+aU
+aL
+aY
+aY
+aT
+aT
+aT
+aY
+yU
+QR
+cp
+cp
+cp
+bG
+ac
+ac
+RA
+bT
+aT
+af
+cx
+aO
+"}
+(6,1,1) = {"
+aO
+cx
+cx
+af
+aT
+HD
+Wy
+bv
+bv
+aK
+aK
+aK
+aK
+jn
+bv
+aK
+aK
+aK
+aK
+bv
+bv
+bv
+qD
+bH
+aY
+mG
+cx
+aO
+"}
+(7,1,1) = {"
+cx
+cx
+cx
+mG
+aT
+ah
+aK
+aK
+aK
+aX
+bv
+fI
+Ux
+fI
+gU
+bp
+xX
+Nj
+iO
+bg
+Dz
+aK
+aK
+aK
+aY
+af
+cx
+aO
+"}
+(8,1,1) = {"
+cx
+cx
+cx
+af
+aY
+aY
+ae
+ae
+aY
+aY
+aY
+pg
+Lx
+aV
+Jq
+aK
+Po
+aK
+aK
+bv
+bv
+aK
+qD
+aq
+aY
+cx
+cx
+cx
+"}
+(9,1,1) = {"
+aO
+aO
+cx
+cx
+vf
+az
+ga
+az
+ga
+aY
+bZ
+aB
+be
+HK
+Jq
+ak
+Zi
+bq
+BC
+bI
+EY
+aK
+Qg
+ab
+aY
+cx
+Rg
+cx
+"}
+(10,1,1) = {"
+aO
+cx
+cx
+cx
+cx
+cx
+af
+af
+ga
+aY
+ad
+be
+aB
+bb
+Jq
+bv
+aK
+aK
+aK
+bA
+qt
+aK
+eE
+aJ
+aY
+cx
+cx
+cx
+"}
+(11,1,1) = {"
+aO
+aO
+cx
+cx
+cx
+cx
+af
+af
+cC
+aY
+aY
+yU
+aF
+aY
+tc
+aK
+uC
+aK
+bx
+aY
+aY
+Bp
+aY
+aY
+aY
+af
+cx
+aO
+"}
+(12,1,1) = {"
+aO
+aO
+aO
+aO
+cx
+cx
+cx
+af
+bW
+aY
+au
+cl
+aB
+aY
+NQ
+aK
+Ff
+bv
+bl
+aY
+aS
+bn
+eF
+uq
+aY
+cx
+cx
+aO
+"}
+(13,1,1) = {"
+aO
+aO
+aO
+cx
+cx
+cx
+ha
+ga
+cG
+aY
+cH
+bX
+aB
+aY
+ca
+as
+bm
+bu
+ap
+aY
+Nm
+bn
+aY
+aY
+aY
+mG
+cx
+aO
+"}
+(14,1,1) = {"
+aO
+aO
+aO
+aO
+cx
+cx
+aY
+aY
+aY
+aY
+ax
+al
+aB
+aY
+aY
+aY
+aY
+aY
+aY
+aY
+eo
+sq
+eF
+bB
+aY
+mG
+cx
+aO
+"}
+(15,1,1) = {"
+aO
+aO
+aO
+cx
+cx
+cx
+aY
+pb
+aB
+aY
+oC
+Al
+be
+cj
+bF
+aY
+bh
+aj
+VL
+aY
+aY
+aY
+aY
+VJ
+aY
+af
+cx
+aO
+"}
+(16,1,1) = {"
+aO
+cx
+cx
+cx
+cx
+mG
+aY
+AT
+be
+aF
+aB
+aB
+be
+aB
+aB
+cD
+ga
+bi
+zP
+aY
+ix
+uO
+aY
+aY
+aY
+cx
+cx
+cx
+"}
+(17,1,1) = {"
+aO
+aO
+cx
+cx
+cx
+mG
+aY
+Zb
+aB
+aY
+bM
+be
+aP
+bk
+ZG
+aY
+Rt
+mG
+af
+mG
+ci
+af
+af
+af
+cx
+cx
+cx
+cx
+"}
+(18,1,1) = {"
+aO
+aO
+aO
+cx
+cx
+cx
+aY
+aY
+aY
+aY
+aY
+mK
+mK
+aY
+aY
+aY
+bh
+af
+af
+cx
+cx
+cx
+cx
+cx
+cx
+cx
+cx
+aO
+"}
+(19,1,1) = {"
+aO
+aO
+aO
+aO
+cx
+mG
+cx
+cx
+cx
+af
+cx
+OH
+OH
+mG
+af
+cx
+cx
+cx
+cx
+cx
+cx
+cx
+aO
+aO
+cx
+cx
+aO
+aO
+"}
+(20,1,1) = {"
+aO
+aO
+aO
+aO
+aO
+aO
+aO
+cx
+cx
+cx
+cx
+aO
+aO
+aO
+cx
+aO
+cx
+cx
+cx
+cx
+cx
+aO
+aO
+aO
+aO
+aO
+aO
+aO
+"}

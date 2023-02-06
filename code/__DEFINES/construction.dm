@@ -69,9 +69,10 @@
 #define MAT_PLASMA		"$plasma"
 #define MAT_BLUESPACE	"$bluespace"
 #define MAT_BANANIUM	"$bananium"
+#define MAT_CALORITE 	"$calorite"           //GS13
 #define MAT_TITANIUM	"$titanium"
 #define MAT_BIOMASS		"$biomass"
-#define MAT_PLASTIC	"$plastic"
+#define MAT_PLASTIC	    "$plastic"
 //The amount of materials you get from a sheet of mineral like iron/diamond/glass etc
 #define MINERAL_MATERIAL_AMOUNT 2000
 //The maximum size of a stack object.

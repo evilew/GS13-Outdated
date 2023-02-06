@@ -318,3 +318,15 @@
 	suffix = "wizardden.dmm"
 	name = "Wizards Cabin"
 	description = "The wooden cabin of a wizard in space, it smells like mana in there."
+
+/datum/map_template/ruin/space/feeders_den //GS13
+	id = "feeders_den"
+	suffix = "feeders_den.dmm"
+	name = "Feeder Den"
+	description = "What used to be a small Syndicate prison and interrogration facility has been taken over by a degenerate madman and turned into a den fit for one purpose - to fatten up its captives."
+
+/datum/map_template/ruin/space/fastfood //GS13
+	id = "fastfood"
+	suffix = "fastfood.dmm"
+	name = "Fast Food Restaurant"
+	description = "In GATO controlled space, it isn't uncommon to find various space restaurants, famous for the abundance of corn oil in their foods."

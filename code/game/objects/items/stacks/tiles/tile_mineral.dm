@@ -52,6 +52,30 @@
 	mineralType = "bananium"
 	materials = list(MAT_BANANIUM=500)
 
+/obj/item/stack/tile/mineral/calorite  //GS13
+	name = "Calorite tile"
+	singular_name = "Calorite floor tile"
+	desc = "A tile made out of calorite. Bwoomph."
+	icon_state = "tile_calorite"
+	turf_type = /turf/open/floor/mineral/calorite
+	mineralType = "calorite"
+	materials = list(MAT_CALORITE=500)
+
+/obj/item/stack/tile/mineral/calorite/hide  //GS13 - disguised variant
+	name = "Floor tile"
+	singular_name = "calorite floor tile"
+	desc = "A tile totally made out of steel."
+	icon_state = "tile"
+	turf_type = /turf/open/floor/mineral/calorite/hide
+
+/obj/item/stack/tile/mineral/calorite/strong  //GS13 - strong variant
+	name = "Infused calorite tile"
+	singular_name = "Infused calorite floor tile"
+	desc = "A tile made out of stronger variant of calorite. Bwuurp."
+	icon_state = "tile_calorite_strong"
+	turf_type = /turf/open/floor/mineral/calorite/strong
+
+
 /obj/item/stack/tile/mineral/abductor
 	name = "alien floor tile"
 	singular_name = "alien floor tile"

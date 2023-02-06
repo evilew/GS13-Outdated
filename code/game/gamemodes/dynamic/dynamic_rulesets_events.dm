@@ -112,13 +112,13 @@
 	required_enemies = list(3,3,2,2,2,1,1,1,1,0)
 	weight = 3
 	cost = 0
-	earliest_start = 50 MINUTES
+	earliest_start = 120 MINUTES
 	blocking_rules = list(/datum/dynamic_ruleset/roundstart/nuclear,/datum/dynamic_ruleset/midround/from_ghosts/nuclear)
 	requirements = list(101,30,25,20,20,20,15,10,10,10)
 	//property_weights = list("story_potential" = 1, "trust" = 1, "chaos" = 1)
 	high_population_requirement = 15
 	occurances_max = 1
-	chaos_min = 2.0
+	chaos_min = 3.0
 	map_blacklist = list("LayeniaStation.dmm")
 
 /datum/dynamic_ruleset/event/pirates/ready(forced = FALSE)
@@ -143,9 +143,9 @@
 	requirements = list(101,20,15,10,10,10,10,10,10,10)
 	high_population_requirement = 15
 	//property_weights = list("chaos" = 1, "valid" = 1)
-	earliest_start = 30 MINUTES //Skyrat change.
+	earliest_start = 40 MINUTES //Skyrat change.
 	occurances_max = 2
-	chaos_min = 1.5
+	chaos_min = 2.0
 
 //////////////////////////////////////////////
 //                                          //
@@ -162,9 +162,9 @@
 	cost = 5
 	requirements = list(101,20,15,10,10,10,10,10,10,10)
 	high_population_requirement = 15
-	earliest_start = 30 MINUTES
+	earliest_start = 60 MINUTES
 	occurances_max = 2
-	chaos_min = 2
+	chaos_min = 2.5
 
 //////////////////////////////////////////////
 //                                          //
@@ -186,7 +186,7 @@
 	repeatable = TRUE
 	//property_weights = list("chaos" = 1, "extended" = 2)
 	occurances_max = 2
-	chaos_min = 1.2
+	chaos_min = 1.5
 
 /datum/dynamic_ruleset/event/ventclog/ready()
 	if(mode.threat_level > 30 && mode.threat >= 5 && prob(20))
@@ -194,13 +194,13 @@
 		cost = 8
 		required_enemies = list(3,3,3,2,2,2,1,1,0,0)
 		typepath = /datum/round_event/vent_clog/threatening
-		chaos_min = 1.5
+		chaos_min = 1.7
 	else if(mode.threat_level > 15 && mode.threat > 15 && prob(30))
 		name = "Clogged Vents: Catastrophic"
 		cost = 15
 		required_enemies = list(4,4,4,3,3,3,2,1,1,1)
 		typepath = /datum/round_event/vent_clog/catastrophic
-		chaos_min = 1.8
+		chaos_min = 2.0
 	else
 		cost = 0
 		name = "Clogged Vents: Normal"
@@ -297,7 +297,7 @@
 	repeatable = TRUE
 	//property_weights = list("extended" = 1)
 	occurances_max = 2
-	chaos_min = 1.2
+	chaos_min = 1.5
 
 /datum/dynamic_ruleset/event/anomaly_flux
 	name = "Anomaly: Hyper-Energetic Flux"
@@ -314,7 +314,7 @@
 	repeatable = TRUE
 	//property_weights = list("extended" = 1)
 	occurances_max = 2
-	chaos_min = 1.0
+	chaos_min = 1.5
 
 /datum/dynamic_ruleset/event/anomaly_gravitational
 	name = "Anomaly: Gravitational"
@@ -345,7 +345,7 @@
 	repeatable = TRUE
 	//property_weights = list("extended" = 1)
 	occurances_max = 2
-	chaos_min = 1.5
+	chaos_min = 1.8
 
 /datum/dynamic_ruleset/event/anomaly_vortex
 	name = "Anomaly: Vortex"
@@ -362,7 +362,7 @@
 	repeatable = TRUE
 	//property_weights = list("extended" = 1)
 	occurances_max = 1
-	chaos_min = 1.5
+	chaos_min = 1.8
 
 //////////////////////////////////////////////
 //                                          //
@@ -376,10 +376,10 @@
 	typepath = /datum/round_event/ghost_role/operative
 	required_enemies = list(0,0,0,0,0,0,0,0,0,0)
 	weight = 0 //This is changed in nuclearbomb.dm
-	occurances_max = 0 //Turned off. For now.
+	occurances_max = 3
 	requirements = list(10,10,10,10,10,10,10,10,10,10) //SECURE THAT DISK
 	cost = 50
-	chaos_min = 3
+	chaos_min = 4
 	map_blacklist = list("LayeniaStation.dmm")
 
 /datum/dynamic_ruleset/event/operative/get_weight()
@@ -436,7 +436,7 @@
 	name = "Communications Blackout"
 	//config_tag = "communications_blackout"
 	typepath = /datum/round_event/communications_blackout
-	cost = 2
+	cost = 3
 	weight = 10
 	repeatable_weight_decrease = 2
 	enemy_roles = list("Chief Engineer","Station Engineer")
@@ -453,7 +453,7 @@
 	typepath = /datum/round_event/processor_overload
 	cost = 4
 	weight = 2
-	earliest_start = 30 MINUTES
+	earliest_start = 90 MINUTES
 	repeatable_weight_decrease = 3
 	enemy_roles = list("Chief Engineer","Station Engineer")
 	required_enemies = list(2,2,2,2,1,1,1,1,1,1)
@@ -462,7 +462,7 @@
 	repeatable = TRUE
 	//property_weights = list("extended" = 1, "chaos" = 1)
 	//always_max_weight = TRUE
-	occurances_max = 2
+	occurances_max = 1
 
 /datum/dynamic_ruleset/event/space_dust
 	name = "Minor Space Dust"
@@ -476,7 +476,7 @@
 	requirements = list(5,5,5,5,5,5,5,0,0,0)
 	high_population_requirement = 5
 	repeatable = TRUE
-	earliest_start = 0 MINUTES
+	earliest_start = 10 MINUTES
 	//property_weights = list("extended" = 1)
 	//always_max_weight = TRUE
 	occurances_max = 0
@@ -495,7 +495,7 @@
 	high_population_requirement = 10
 	repeatable = TRUE
 	//property_weights = list("extended" = 1)
-	occurances_max = 3
+	occurances_max = 2
 	map_blacklist = list("LayeniaStation.dmm")
 
 
@@ -512,34 +512,34 @@
 	repeatable = TRUE
 	occurances_max = 10
 
-/datum/dynamic_ruleset/event/heart_attack
-	name = "Random Heart Attack"
-	typepath = /datum/round_event/heart_attack
-	cost = 0
-	weight = 2
-	earliest_start = 30 MINUTES
-	repeatable_weight_decrease = 1
-	enemy_roles = list("Medical Doctor","Chief Medical Officer", "Chemist")
-	required_enemies = list(3,3,2,2,2,2,2,2,2,1)
-	requirements = list(101,101,101,10,5,5,5,5,5,5)
-	high_population_requirement = 5
-	repeatable = TRUE
-	occurances_max = 2
-	chaos_min = 1.0
+// /datum/dynamic_ruleset/event/heart_attack
+// 	name = "Random Heart Attack"
+// 	typepath = /datum/round_event/heart_attack
+// 	cost = 0
+// 	weight = 2
+// 	earliest_start = 30 MINUTES
+// 	repeatable_weight_decrease = 1
+// 	enemy_roles = list("Medical Doctor","Chief Medical Officer", "Chemist")
+// 	required_enemies = list(3,3,2,2,2,2,2,2,2,1)
+// 	requirements = list(101,101,101,10,5,5,5,5,5,5)
+// 	high_population_requirement = 5
+// 	repeatable = TRUE
+// 	occurances_max = 2
+// 	chaos_min = 1.0
 
-/datum/dynamic_ruleset/event/radiation_storm
-	name = "Radiation Storm"
-	//config_tag = "radiation_storm"
-	typepath = /datum/round_event/radiation_storm
-	cost = 6
-	weight = 1
-	repeatable_weight_decrease = 1
-	enemy_roles = list("Chemist","Chief Medical Officer","Geneticist","Medical Doctor")
-	required_enemies = list(2,2,2,2,1,1,1,1,1,0)
-	requirements = list(5,5,5,5,5,5,5,5,5,5)
-	high_population_requirement = 10
-	//property_weights = list("extended" = 1,"chaos" = 1)
-	occurances_max = 1
+// /datum/dynamic_ruleset/event/radiation_storm
+// 	name = "Radiation Storm"
+// 	//config_tag = "radiation_storm"
+// 	typepath = /datum/round_event/radiation_storm
+// 	cost = 6
+// 	weight = 0
+// 	repeatable_weight_decrease = 1
+// 	enemy_roles = list("Chemist","Chief Medical Officer","Geneticist","Medical Doctor")
+// 	required_enemies = list(2,2,2,2,1,1,1,1,1,0)
+// 	requirements = list(5,5,5,5,5,5,5,5,5,5)
+// 	high_population_requirement = 100
+// 	//property_weights = list("extended" = 1,"chaos" = 1)
+// 	occurances_max = 0
 
 
 /datum/dynamic_ruleset/event/portal_storm_syndicate
@@ -552,7 +552,7 @@
 	required_enemies = list(2,2,2,2,2,2,2,2,2,2)
 	requirements = list(101,101,40,35,30,30,30,30,25,20)
 	high_population_requirement =  30
-	earliest_start = 40 MINUTES
+	earliest_start = 120 MINUTES
 	//property_weights = list("teamwork" = 1,"chaos" = 1, "extended" = -1)
 	occurances_max = 1
 	chaos_min = 1.5
@@ -571,7 +571,7 @@
 	high_population_requirement =  5
 	//property_weights = list("extended" = 1)
 	occurances_max = 2
-	chaos_min = 1.0
+	chaos_min = 1.3
 	map_blacklist = list("LayeniaStation.dmm")
 
 /datum/dynamic_ruleset/event/swarmers
@@ -604,7 +604,7 @@
 	//property_weights = list("story_potential" = 1, "extended" = 1, "valid" = -2)
 	high_population_requirement = 5
 	occurances_max = 1
-	chaos_min = 2
+	chaos_min = 2.5
 
 /datum/dynamic_ruleset/event/revenant
 	name = "Revenant"
@@ -619,7 +619,7 @@
 	high_population_requirement = 15
 	//property_weights = list("story_potential" = -2, "extended" = -1)
 	occurances_max = 1 //Skyrat change.
-	chaos_min = 1.9
+	chaos_min = 2.5
 
 /datum/dynamic_ruleset/event/immovable_rod
 	name = "Immovable Rod"
@@ -633,7 +633,7 @@
 	occurances_max = 2
 	weight = 3
 	repeatable_weight_decrease = 2
-	chaos_min = 1.5
+	chaos_min = 2.5
 	var/atom/special_target
 	map_blacklist = list("LayeniaStation.dmm")
 
@@ -649,7 +649,7 @@
 	occurances_max = 2
 	weight = 3
 	repeatable_weight_decrease = 2
-	chaos_min = 1.5
+	chaos_min = 2.0
 	var/atom/special_target
 	map_whitelist = list("LayeniaStation.dmm")
 
@@ -686,7 +686,7 @@
 	high_population_requirement = 0
 	weight = 10
 	repeatable = TRUE
-	occurances_max = 3
+	occurances_max = 6
 
 /datum/dynamic_ruleset/event/bureaucratic_error
 	name = "Bureaucratic Error"
@@ -704,7 +704,7 @@
 	weight = 100
 	repeatable_weight_decrease = 1 //Slightly drop the weight each time it is called to keep the pool from getting too diluted as the round goes on.
 	repeatable = TRUE
-	occurances_max = 200 //Our rounds can go for a WHILE
+	occurances_max = 100 //Our rounds can go for a WHILE
 
 /datum/dynamic_ruleset/event/disease_outbreak
 	name = "Disease Outbreak"
@@ -792,7 +792,7 @@
 	weight = 5
 	repeatable_weight_decrease = 3
 	repeatable = TRUE
-	occurances_max = 2
+	occurances_max = 4
 
 /datum/dynamic_ruleset/event/spacevine
 	name = "Spacevine"

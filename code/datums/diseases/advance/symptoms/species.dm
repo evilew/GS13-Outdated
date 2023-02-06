@@ -31,3 +31,19 @@
 
 /datum/symptom/inorganic_adaptation/OnRemove(datum/disease/advance/A)
 	A.infectable_biotypes &= ~MOB_INORGANIC
+
+/datum/symptom/robotic_adaptation //GS13
+	name = "Electronic propagation"
+	desc = "The virus learns to feed off and utilize electric signals to create computer virus copies of itself, allowing it to work inside of robotic hosts. Any reports stating the virus have tiny programmer socks attached to their cell's membranes are not scientifically accurate and false."
+	stealth = 1
+	resistance = -1
+	stage_speed = 3
+	transmittable = 0
+	level = 5
+	severity = 0
+
+/datum/symptom/robotic_adaptation/OnAdd(datum/disease/advance/A)
+	A.infectable_biotypes |= MOB_ROBOTIC
+
+/datum/symptom/robotic_adaptation/OnRemove(datum/disease/advance/A)
+	A.infectable_biotypes &= ~MOB_ROBOTIC

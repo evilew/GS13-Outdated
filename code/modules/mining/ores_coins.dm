@@ -179,6 +179,15 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	materials = list(MAT_BANANIUM=MINERAL_MATERIAL_AMOUNT)
 	refined_type = /obj/item/stack/sheet/mineral/bananium
 
+/obj/item/stack/ore/calorite //GS13
+	name = "calorite ore"
+	icon_state = "calorite ore"
+	item_state = "calorite ore"
+	singular_name = "Calorite ore chunk"
+	points = 40
+	materials = list(MAT_CALORITE=MINERAL_MATERIAL_AMOUNT)
+	refined_type = /obj/item/stack/sheet/mineral/calorite
+
 /obj/item/stack/ore/titanium
 	name = "titanium ore"
 	icon_state = "Titanium ore"

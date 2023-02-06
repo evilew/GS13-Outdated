@@ -1895,6 +1895,18 @@
 		F.PlaceOnTop(/turf/open/floor/carpet/purple)
 	..()
 
+/datum/reagent/carpet/purple //GS13
+	name = "Liquid GATO-style Carpet"
+	color = "#6d3392"
+
+/datum/reagent/carpet/gato/reaction_turf(turf/T, reac_volume)
+	if(isplatingturf(T) || istype(T, /turf/open/floor/plasteel))
+		var/turf/open/floor/F = T
+		F.PlaceOnTop(/turf/open/floor/carpet/gato)
+	..()
+
+
+
 /datum/reagent/carpet/red
 	name = "Liquid Red Carpet"
 	color = "#871515"
