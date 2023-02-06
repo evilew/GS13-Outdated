@@ -1,4 +1,3 @@
-
 /obj/code/game/mobs/unusualtentical
 	name = "unusualtentical"
 	desc = "Whats this doing here?"

@@ -23,10 +23,6 @@
 
 	refill_canister = /obj/item/vending_refill/mealdor
 
-obj/item/vending_refill/mealdor
+/obj/item/vending_refill/mealdor
 	machine_name = "Meal Vendor Refill"
 	icon_state = "refill_mealdor"
-
-#define STANDARD_CHARGE 1
-#define CONTRABAND_CHARGE 2
-#define COIN_CHARGE 3
