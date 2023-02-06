@@ -65,9 +65,8 @@
 	name = "Floor tile"
 	singular_name = "calorite floor tile"
 	desc = "A tile totally made out of steel."
-	icon_state = "tile_calorite_hide"
+	icon_state = "tile"
 	turf_type = /turf/open/floor/mineral/calorite/hide
-
 
 /obj/item/stack/tile/mineral/calorite/strong  //GS13 - strong variant
 	name = "Infused calorite tile"
