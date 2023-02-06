@@ -214,40 +214,30 @@
 	icons = list("calorite","calorite_dam")
 	var/last_event = 0
 	var/active = null
+	///How much fatness is added to the user upon crossing?
+	var/fat_to_add = 50
 
 /turf/open/floor/mineral/calorite/Entered(mob/living/carbon/M)
-	if(HAS_TRAIT(M, TRAIT_LIPOIFIER_IMMUNE))
-		return
+	if(!istype(M, /mob/living/carbon) || HAS_TRAIT(M, TRAIT_LIPOIFIER_IMMUNE))
+		return FALSE
 	else
-		M.fatness = M.fatness + 50
+		M.fatness = M.fatness + fat_to_add 
 
 // calorite floor, disguised version - GS13
 
-/turf/open/floor/mineral/calorite_hide
+/turf/open/floor/mineral/calorite/hide
 	name = "Steel floor"
 	icon_state = "calorite_hide"
-	floor_tile = /obj/item/stack/tile/mineral/calorite_hide
+	floor_tile = /obj/item/stack/tile/mineral/calorite/hide
 	icons = list("calorite_hide","calorite_hide_dam")
-
-/turf/open/floor/mineral/calorite_hide/Entered(mob/living/carbon/M)
-	if(HAS_TRAIT(M, TRAIT_LIPOIFIER_IMMUNE))
-		return
-	else
-		M.fatness = M.fatness + 50
 
 // calorite floor, powerful version - GS13
 
-/turf/open/floor/mineral/calorite_strong
+/turf/open/floor/mineral/calorite/strong
 	name = "Infused calorite floor"
 	icon_state = "calorite_strong"
-	floor_tile = /obj/item/stack/tile/mineral/calorite_strong
+	floor_tile = /obj/item/stack/tile/mineral/calorite/strong
 	icons = list("calorite_strong","calorite_strong_dam")
-
-/turf/open/floor/mineral/calorite_strong/Entered(mob/living/carbon/M)
-	if(HAS_TRAIT(M, TRAIT_LIPOIFIER_IMMUNE))
-		return
-	else
-		M.fatness = M.fatness + 50
 
 //DIAMOND
 

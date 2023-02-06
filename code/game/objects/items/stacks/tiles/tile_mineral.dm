@@ -61,20 +61,20 @@
 	mineralType = "calorite"
 	materials = list(MAT_CALORITE=500)
 
-/obj/item/stack/tile/mineral/calorite_hide  //GS13 - disguised variant
+/obj/item/stack/tile/mineral/calorite/hide  //GS13 - disguised variant
 	name = "Floor tile"
 	singular_name = "calorite floor tile"
 	desc = "A tile totally made out of steel."
 	icon_state = "tile_calorite_hide"
-	turf_type = /turf/open/floor/mineral/calorite_hide
+	turf_type = /turf/open/floor/mineral/calorite/hide
 
 
-/obj/item/stack/tile/mineral/calorite_strong  //GS13 - strong variant
+/obj/item/stack/tile/mineral/calorite/strong  //GS13 - strong variant
 	name = "Infused calorite tile"
 	singular_name = "Infused calorite floor tile"
 	desc = "A tile made out of stronger variant of calorite. Bwuurp."
 	icon_state = "tile_calorite_strong"
-	turf_type = /turf/open/floor/mineral/calorite_strong
+	turf_type = /turf/open/floor/mineral/calorite/strong
 
 
 /obj/item/stack/tile/mineral/abductor
