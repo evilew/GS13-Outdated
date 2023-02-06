@@ -58,9 +58,10 @@
 "kC" = (/obj/machinery/portable_atmospherics/canister/oxygen,/turf/open/floor/plating,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "kK" = (/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "ls" = (/turf/open/floor/plasteel,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
+"lR" = (/obj/machinery/vending/kink{free = 1},/turf/template_noop,/area/template_noop)
 "ma" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plating,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "mf" = (/obj/structure/table/reinforced,/obj/item/reagent_containers/food/snacks/pizzaslice/margherita,/obj/item/reagent_containers/food/snacks/burger/superbite,/turf/open/floor/mineral/basaltstone_floor,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
-"mm" = (/obj/machinery/vending/mealdor,/obj/machinery/light{dir = 4},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
+"mm" = (/obj/machinery/vending/mealdor{free = 1},/obj/machinery/light{dir = 4},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "mD" = (/obj/machinery/door/airlock/glass_large,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{piping_layer = 3; pixel_x = 5; pixel_y = 5},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "mJ" = (/obj/structure/scale,/turf/open/floor/carpet/orange,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "mU" = (/obj/structure/sink/kitchen{dir = 8; pixel_x = 11},/obj/effect/turf_decal/tile/bar,/obj/effect/turf_decal/tile/bar{dir = 1},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
@@ -76,7 +77,7 @@
 "oY" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 9},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 9; piping_layer = 3; pixel_x = 5; pixel_y = 5},/obj/effect/turf_decal/tile/bar,/obj/effect/turf_decal/tile/bar{dir = 1},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "pc" = (/turf/open/floor/wood{icon_state = "wood-broken6"},/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "pf" = (/obj/item/trash/candy,/turf/open/floor/carpet/black,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
-"ph" = (/obj/machinery/vending/gato,/turf/open/floor/wood,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
+"ph" = (/obj/machinery/vending/gato{free = 1},/turf/open/floor/wood,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "qh" = (/obj/machinery/food_cart,/obj/effect/turf_decal/tile/brown{dir = 1},/obj/effect/turf_decal/tile/brown{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "qi" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on{piping_layer = 3; pixel_x = 5; pixel_y = 5},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "qq" = (/obj/machinery/atmospherics/pipe/manifold/supply,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4; piping_layer = 3; pixel_x = 5; pixel_y = 5},/obj/machinery/light,/obj/structure/disposalpipe/segment{dir = 6},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
@@ -107,7 +108,7 @@
 "tI" = (/obj/structure/table,/obj/machinery/reagentgrinder,/obj/effect/turf_decal/tile/bar,/obj/effect/turf_decal/tile/bar{dir = 1},/obj/structure/disposalpipe/segment,/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "tP" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "tV" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 8},/obj/machinery/door/airlock/public,/obj/effect/turf_decal{dir = 8},/turf/open/floor/plating,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
-"tZ" = (/obj/machinery/vending/mealdor,/obj/machinery/light{dir = 8},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
+"tZ" = (/obj/machinery/vending/mealdor{free = 1},/obj/machinery/light{dir = 8},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "uc" = (/obj/structure/rack/shelf,/obj/item/storage/box/donkpockets,/obj/item/storage/box/donkpockets/donkpocketberry{pixel_y = 4},/obj/item/storage/box/donkpockets/donkpocketgondola{pixel_y = 8},/turf/open/floor/plasteel,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "uy" = (/obj/machinery/feeding_tube,/obj/machinery/airalarm/syndicate{pixel_y = 32},/turf/open/floor/carpet/black,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "uA" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 8},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 2; piping_layer = 3; pixel_x = 5; pixel_y = 5},/obj/effect/turf_decal/tile/red,/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
@@ -166,7 +167,7 @@
 "Ex" = (/obj/item/trash/boritos,/obj/effect/turf_decal/tile/red{dir = 8},/turf/open/floor/wood,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "Ff" = (/obj/structure/sign/poster/contraband/eat{pixel_y = 32},/turf/open/floor/carpet/black,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "Fm" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4; piping_layer = 3; pixel_x = 5; pixel_y = 5},/obj/item/storage/toolbox/syndicate,/obj/effect/turf_decal/box/red,/obj/machinery/power/port_gen/pacman/super,/obj/structure/cable,/obj/structure/cable{icon_state = "1-8"},/turf/open/floor/plating,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
-"FD" = (/obj/machinery/vending/dinnerware,/obj/machinery/light{dir = 1},/obj/effect/turf_decal/tile/bar,/obj/effect/turf_decal/tile/bar{dir = 1},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
+"FD" = (/obj/machinery/vending/dinnerware{free = 1},/obj/machinery/light{dir = 1},/obj/effect/turf_decal/tile/bar,/obj/effect/turf_decal/tile/bar{dir = 1},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "FE" = (/turf/template_noop,/area/template_noop)
 "FH" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 5},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{piping_layer = 3; pixel_x = 5; pixel_y = 5},/obj/structure/disposalpipe/segment,/turf/open/floor/plating,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "GZ" = (/obj/structure/table/reinforced,/obj/item/reagent_containers/food/snacks/burger/superbite,/turf/open/floor/mineral/basaltstone_floor,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
@@ -174,14 +175,14 @@
 "Hp" = (/obj/structure/closet/crate/secure/loot,/turf/open/floor/plating,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "HQ" = (/obj/structure/sign/poster/contraband/eat,/turf/closed/wall/r_wall/syndicate,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "Iq" = (/obj/machinery/chem_master/condimaster{name = "CondiMaster Neo"},/obj/effect/turf_decal/tile/bar,/obj/effect/turf_decal/tile/bar{dir = 1},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
-"It" = (/obj/machinery/vending/cola,/turf/open/floor/wood,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
+"It" = (/obj/machinery/vending/cola{free = 1},/turf/open/floor/wood,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "IC" = (/obj/machinery/atmospherics/pipe/manifold/supply{dir = 8},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{piping_layer = 3; pixel_x = 5; pixel_y = 5},/obj/structure/cable{icon_state = "4-8"},/obj/structure/disposalpipe/segment,/turf/open/floor/plating,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "IS" = (/obj/structure/flora/junglebush/large,/turf/open/floor/plating/asteroid/airless,/area/ruin/unpowered/no_grav)
 "Jh" = (/turf/open/floor/plating,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "Jx" = (/obj/item/trash/can,/obj/effect/turf_decal/tile/red{dir = 8},/obj/effect/turf_decal/tile/red,/turf/open/floor/wood,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "JW" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{piping_layer = 3; pixel_x = 5; pixel_y = 5},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "Ko" = (/obj/machinery/light{dir = 1},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
-"Ku" = (/obj/machinery/vending/mealdor,/turf/open/floor/wood,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
+"Ku" = (/obj/machinery/vending/mealdor{free = 1},/turf/open/floor/wood,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "KK" = (/obj/vehicle/ridden/wheelchair,/obj/effect/turf_decal/tile/red{dir = 8},/obj/effect/turf_decal/tile/red,/turf/open/floor/wood,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "KR" = (/turf/open/floor/carpet/orange,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "KW" = (/obj/machinery/atmospherics/pipe/manifold/supply,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4; piping_layer = 3; pixel_x = 5; pixel_y = 5},/obj/effect/turf_decal/tile/red,/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
@@ -241,7 +242,7 @@
 "YE" = (/obj/structure/rack,/obj/item/storage/toolbox/syndicate,/obj/item/multitool,/obj/item/clothing/head/welding,/obj/effect/turf_decal/tile/brown{dir = 4},/obj/effect/turf_decal/tile/brown{dir = 1},/turf/open/floor/plasteel,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "YU" = (/obj/structure/table,/obj/item/reagent_containers/food/snacks/burger/cheese,/obj/effect/turf_decal/tile/bar,/obj/effect/turf_decal/tile/bar{dir = 1},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "YX" = (/obj/structure/rack/shelf,/obj/item/stack/sheet/cardboard{amount = 3},/obj/item/stack/sheet/cardboard{amount = 3},/obj/item/stack/sheet/cardboard{amount = 3},/obj/item/stack/sheet/cardboard{amount = 3},/obj/item/stack/rods/twentyfive,/obj/item/stock_parts/cell/high/plus,/obj/item/stock_parts/cell/high/plus,/obj/item/stack/cable_coil{pixel_x = 3; pixel_y = -7},/obj/item/stack/cable_coil{pixel_x = 3; pixel_y = -7},/obj/machinery/power/terminal{dir = 1},/obj/structure/cable{icon_state = "0-2"},/turf/open/floor/plating,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
-"Zn" = (/obj/machinery/vending/kink,/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
+"Zn" = (/obj/machinery/vending/kink{free = 1},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "Zw" = (/obj/machinery/atmospherics/components/unary/vent_pump/on,/turf/open/floor/mineral/basaltstone_floor,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
 "ZC" = (/obj/structure/flora/ausbushes/grassybush,/turf/open/floor/plating/asteroid/airless,/area/ruin/unpowered/no_grav)
 "ZO" = (/obj/structure/reagent_dispensers/fueltank,/obj/effect/turf_decal/box/red,/turf/open/floor/plasteel,/area/ruin/space/has_grav/listeningstation{name = "Feeder Den"})
@@ -262,7 +263,7 @@ FEFEFEFEFEFEBrBrBrnrNAsqsqsqHQHiUEaqnrBrBrDcnrDcsIaMrWndNvKRKRTHpcCuItnrnrDcBrBr
 FEFEFEebebebqFBrBrnrfMsqelzCnrLMelZwnrBrDcnrgoNzPLExwAvvtfOcrSSpDMoKrtDUbUnrDcBrnrLMelZwnrelZwCHfMnrBrBrFEFEFE
 FEFEFEFEFEFEFEBrBrDcnrTKmDSmDcsTmDSmDcnrDctEegvkkKdHPLPLPLPLJxrtKKiWkKkKkKzsnrnrnrdCmDSmnrmDSmwnnrDcBrBrFEFEFE
 FEFEFEFEFEFEFEBrBrBrnrtZgntPkKkKJWtPkKKokKkKkKkKkKkKkKqikKkKkKXhkKkKkKkKkKkKkKKokKkKJWtPkKgntPmmnrBrBrFEFEFEFE
-FEFEFEFEFEFEfmBrBrBrnrZnNBLvYAYAuAKWYAYAYAYAYAYAYABDTGXWTGTGTGqquOuOkakakaybYAYAYAYAuAKWYAxJLfZnnrqFebebebFEFE
+FElRFEFEFEFEfmBrBrBrnrZnNBLvYAYAuAKWYAYAYAYAYAYAYABDTGXWTGTGTGqquOuOkakakaybYAYAYAYAuAKWYAxJLfZnnrqFebebebFEFE
 FEFEFEFEFEfmfmBrBrBrDcDcNJNJDcnrnrnrnrnrnrnrnrnrnrDxvYNxgUSsgUuXvYvYnrnrnrgqnrnrnrnrnrnrDciuiuDcDcBrFEFEFEFEFE
 FEFEFEFEBrZCfmISBrBrBrnrMaEqnrxGHpxGnrWNYEfncnbanrDxvYFDLNvYsRiNvYsanrrJZOWrkoPgnrridlnunrfNginrBrBrBrFEFEFEFE
 FEFEFEFEBrBrfmfmBrBrBrnrtyEqnrikJhJhWsDOlslslslsvtDxvYSyIqvYrjtIvYmUnrcWmaICrscxtVNgbXkCnrfNdAnrBrBrBrFEFEFEFE
