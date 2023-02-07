@@ -12,4 +12,5 @@
 /datum/reagent/consumable/lipoifier/on_mob_life(mob/living/carbon/M)
 	if(M && !HAS_TRAIT(M, TRAIT_LIPOIFIER_IMMUNE))
 		M.fatness = M.fatness + 10
-		return ..()
+
+	return ..()
