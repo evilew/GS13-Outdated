@@ -471,7 +471,7 @@ mob/visible_message(message, self_message, blind_message, vision_distance = DEFA
 		qdel(M)
 		return
 
-	usr.client.lastrespawn = world.time + 1800 SECONDS
+	usr.client.lastrespawn = world.time + 180 SECONDS
 	usr.client.respawn_observing = 0
 	message_admins("[client.ckey] respawned.")
 	M.ckey = ckey //shamelessly copied to

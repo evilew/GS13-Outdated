@@ -289,7 +289,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	if(istype(loc, /obj/machinery/cryopod))
 		var/response = alert(src, "Are you -sure- you want to ghost?\n(If you ghost now, you will have to wait 30 minutes before you are able to respawn!)","Are you sure you want to ghost?","Ghost","Stay in body")
 		if(response != "Ghost")//darn copypaste
-			client.lastrespawn = world.time + 1800 SECONDS //set respawn time
+			client.lastrespawn = world.time + 180 SECONDS //set respawn time
 			return
 		var/obj/machinery/cryopod/C = loc
 		C.despawn_occupant()
