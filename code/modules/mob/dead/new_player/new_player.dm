@@ -288,7 +288,7 @@
 
 	observer.started_as_observer = TRUE
 	src.client.respawn_observing = 1
-	src.client.lastrespawn = world.time + 1800 SECONDS //reset respawn.
+	src.client.lastrespawn = world.time + 180 SECONDS //reset respawn.
 	close_spawn_windows()
 	var/obj/effect/landmark/observer_start/O = locate(/obj/effect/landmark/observer_start) in GLOB.landmarks_list
 	to_chat(src, "<span class='notice'>Now teleporting.</span>")
