@@ -129,7 +129,7 @@
 	backpack_contents = list(/obj/item/storage/box/syndie=1,\
 		/obj/item/kitchen/knife/combat/survival)
 
-	var/tc = 25
+	var/tc = 20
 	var/command_radio = FALSE
 	var/uplink_type = /obj/item/uplink/nuclear
 
@@ -192,4 +192,4 @@
 	/obj/item/gun/ballistic/automatic/pistol=1,\
 	/obj/item/kitchen/knife/combat/survival)
 
-	tc = 40
+	tc = 25 //Lone ops had too much TC for a station with such low player count
