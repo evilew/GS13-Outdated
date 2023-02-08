@@ -1,3 +1,5 @@
+//GS13 Edit
+/*
 /datum/weather/oxygen_rain
 	name = "oxygen rain"
 	desc = "The weather of Layenia can be quite unpredictable. Given the natural low temperature of Layenia, the formation of natural croxygenic liquid gases is possible."
@@ -88,3 +90,4 @@
 	start_length = 130
 	end_sound = 'sound/weather/oxygenrain/inside/weak_end.ogg'
 	volume = 30
+*/

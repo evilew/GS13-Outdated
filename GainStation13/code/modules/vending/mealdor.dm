@@ -39,7 +39,7 @@
 				/obj/item/reagent_containers/food/snacks/cookie = 10,
 				/obj/item/reagent_containers/food/snacks/salad/fruit = 15,
 				/obj/item/reagent_containers/food/snacks/salad = 20,
-				/obj/item/reagent_containers/food/snacks/salad/hellcobb =10,
+				/obj/item/reagent_containers/food/snacks/salad/hellcobb = 10,
 				/obj/item/clothing/under/cowkini = 5,
 				)
 	premium = list(
@@ -48,11 +48,3 @@
 				)
 
 	refill_canister = /obj/item/vending_refill/mealdor
-
-obj/item/vending_refill/mealdor
-	machine_name = "Meal Vendor Refill"
-	icon_state = "refill_mealdor"
-
-#define STANDARD_CHARGE 1
-#define CONTRABAND_CHARGE 2
-#define COIN_CHARGE 3
