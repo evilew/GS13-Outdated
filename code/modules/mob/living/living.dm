@@ -517,7 +517,6 @@
 	radiation = 0
 	nutrition = NUTRITION_LEVEL_FED + 50
 	fullness = FULLNESS_LEVEL_HALF_FULL // GS13
-	fatness = 0 // GS13
 	thirst = THIRST_LEVEL_QUENCHED + 50
 	bodytemperature = BODYTEMP_NORMAL
 	set_blindness(0)

@@ -42,7 +42,7 @@ Bonus
 /datum/symptom/weight_loss/Activate(datum/disease/advance/A)
 	if(!..())
 		return
-	var/mob/living/M = A.affected_mob
+	var/mob/living/carbon/M = A.affected_mob
 	switch(A.stage)
 		if(1, 2, 3, 4)
 			if(prob(base_message_chance))
@@ -74,9 +74,9 @@ Bonus
 /datum/symptom/weight_gain/Activate(datum/disease/advance/A)
 	if(!..())
 		return
-	var/mob/living/M = A.affected_mob
-	if(HAS_TRAIT(M, TRAIT_LIPOIFIER_IMMUNE))
-		return
+	var/mob/living/carbon/M = A.affected_mob
+	if(!(M?.client?.prefs?.weight_gain_viruses))
+		return FALSE
 	switch(A.stage)
 		if(1, 2, 3, 4)
 			if(prob(base_message_chance))

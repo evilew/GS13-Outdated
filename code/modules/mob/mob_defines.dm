@@ -61,6 +61,8 @@
 	var/dizziness = 0//Carbon
 	var/jitteriness = 0//Carbon
 
+	///How full is the parent mob?
+	var/fullness = FULLNESS_LEVEL_HALF_FULL
 	var/nutrition = NUTRITION_LEVEL_START_MIN // randomised in Initialize
 	var/thirst = THIRST_LEVEL_START_MIN	//same for this
 	var/satiety = 0//Carbon

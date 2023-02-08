@@ -127,16 +127,6 @@
 	lose_text = "<span class='notice'>You don't feel as prudish as before.</span>"
 	medical_record_text = "Patient exhibits a special gene that makes them immune to Crocin and Hexacrocin."
 
-/datum/quirk/lipoifier_immunity
-	name = "Lipoifier Immunity"
-	desc = "Your body is mostly immune to widening properties of Lipoifier chemical and its cheaper alternative: corn oil."
-	mob_trait = TRAIT_LIPOIFIER_IMMUNE
-	value = 0
-	category = CATEGORY_SEXUAL
-	gain_text = "<span class='notice'>You feel less prone to sudden weight gain.</span>"
-	lose_text = "<span class='notice'>You don't feel that resistant to gaining sudden weight anymore.</span>"
-	medical_record_text = "Patient exhibits a special gene that makes them immune to Lipoifier and Corn Oil."
-
 /datum/quirk/assblastusa
 	name = "Buns of Steel"
 	desc = "You've never skipped ass day. With this trait, you are completely immune to all forms of ass slapping and anyone who tries to slap your rock hard ass usually gets a broken hand."
