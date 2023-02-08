@@ -363,7 +363,7 @@
 	if(HAS_TRAIT(M, TRAIT_LIPOIFIER_IMMUNE))
 		to_chat(M, "<span class='warning'>Nothing happens.</span>")
 	else
-		M.fatness = M.fatness + 20
+		M.adjust_fatness(20, FATTENING_TYPE_ITEM)
 		if(M.fatness < 200)
 			to_chat(M, "<span class='warning'>The moment your hand meets the statue, you feel a little warmer...</span>")
 		if(HAS_TRAIT(M, TRAIT_FAT))
@@ -381,7 +381,7 @@
 	if(HAS_TRAIT(M, TRAIT_LIPOIFIER_IMMUNE))
 		to_chat(M, "<span class='warning'>Nothing happens.</span>")
 	else
-		M.fatness = M.fatness + 20
+		M.adjust_fatness(20, FATTENING_TYPE_ITEM)
 		if(M.fatness < 200)
 			to_chat(M, "<span class='warning'>The moment your hand meets the statue, you feel a little warmer...</span>")
 		if(HAS_TRAIT(M, TRAIT_FAT))
@@ -399,7 +399,7 @@
 	if(HAS_TRAIT(M, TRAIT_LIPOIFIER_IMMUNE))
 		to_chat(M, "<span class='warning'>Nothing happens.</span>")
 	else
-		M.fatness = M.fatness + 20
+		M.adjust_fatness(20, FATTENING_TYPE_ITEM)
 		if(M.fatness < 200)
 			to_chat(M, "<span class='warning'>The moment your hand meets the statue, you feel a little warmer...</span>")
 		if(HAS_TRAIT(M, TRAIT_FAT))

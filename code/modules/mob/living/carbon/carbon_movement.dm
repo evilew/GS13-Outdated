@@ -46,7 +46,7 @@
 				fat_burned = min(HUNGER_FACTOR/20, fatness)
 				nutrition_lost_divider = 5
 			nutrition -= (HUNGER_FACTOR/nutrition_lost_divider - fat_burned)
-			fatness -= fat_burned
+			adjust_fatness(fat_burned, FATTENING_TYPE_WEIGHT_LOSS)	
 
 
 		if(HAS_TRAIT(src, TRAIT_NOTHIRST))

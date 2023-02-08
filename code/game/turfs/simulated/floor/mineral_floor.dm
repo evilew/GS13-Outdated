@@ -221,7 +221,7 @@
 	if(!istype(M, /mob/living/carbon) || HAS_TRAIT(M, TRAIT_LIPOIFIER_IMMUNE))
 		return FALSE
 	else
-		M.fatness = M.fatness + fat_to_add 
+		M.adjust_fatness(fat_to_add, FATTENING_TYPE_ITEM)	
 
 // calorite floor, disguised version - GS13
 

@@ -180,7 +180,6 @@
 #define	TRAIT_PHOTOGRAPHER		"photographer"
 #define	TRAIT_MUSICIAN			"musician"
 #define	TRAIT_CROCRIN_IMMUNE    "crocin_immune"
-#define	TRAIT_LIPOIFIER_IMMUNE  "lipoifier_immune"
 #define TRAIT_NYMPHO			"nymphomania"
 #define TRAIT_DISTANT			"headpat_hater"
 //#define TRAIT_FLUID_LEAK	"leaky_fluids" removed because milk snail trails are not okay
@@ -214,6 +213,20 @@
 #define TRAIT_FREESPRINT		"free_sprinting"
 #define TRAIT_NO_TELEPORT		"no-teleport" //you just can't
 #define TRAIT_NO_ALCOHOL		"alcohol_intolerance"
+
+//GS13
+
+//Weight gain immunity traits
+#define	TRAIT_GAIN_FOOD_IMMUNE  "food_gain_immune"
+#define	TRAIT_GAIN_CHEM_IMMUNE  "chem_gain_immune"
+#define	TRAIT_GAIN_ITEM_IMMUNE  "item_gain_immune"
+#define	TRAIT_GAIN_WEAPON_IMMUNE  "weapon_gain_immune"
+#define	TRAIT_GAIN_MAGIC_IMMUNE  "magic_gain_immune"
+#define TRAIT_GAIN_VIRUS_IMMUNE "virus_gain_immune"
+
+#define TRIAT_WEIGHT_LOSS_IMMUNE "weight_loss_immune"
+#define TRAIT_UNIVERSAL_GAINER "universal_gainer"
+
 
 // common trait sources
 #define TRAIT_GENERIC "generic"
