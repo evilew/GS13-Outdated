@@ -43,7 +43,7 @@
 					return FALSE
 
 			if(FATTENING_TYPE_WEIGHT_LOSS)
-				if(!HAS_TRAIT(src, TRAIT_WEIGHT_LOSS_IMMUNE))
+				if(HAS_TRAIT(src, TRAIT_WEIGHT_LOSS_IMMUNE))
 					return FALSE
 
 	var/amount_to_change = adjustment_amount
