@@ -291,7 +291,10 @@
 /datum/component/mood/proc/hud_click(datum/source, location, control, params, mob/user)
 	print_mood(user)
 
-/datum/component/mood/proc/HandleFatness(mob/living/L)
+/datum/component/mood/proc/HandleFatness(mob/living/carbon/L)
+	if(!L)
+		return FALSE
+		
 	switch(L.fatness)
 		if(FATNESS_LEVEL_FAT to INFINITY)
 			add_event(null, "fatness", /datum/mood_event/fat)

@@ -114,7 +114,8 @@
 /obj/item/gun/fatbeam/proc/on_beam_tick(var/mob/living/target)
 	if(target.health != target.maxHealth)
 		new /obj/effect/temp_visual/heal(get_turf(target), "#FFC2F8")
-	target.nutrition += 50
+	if(target?.client?.prefs?.weight_gain_weapons)
+		target.nutrition += 50
 	return
 
 /obj/item/gun/fatbeam/proc/on_beam_release(var/mob/living/target)

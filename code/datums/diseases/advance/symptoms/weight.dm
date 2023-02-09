@@ -42,7 +42,7 @@ Bonus
 /datum/symptom/weight_loss/Activate(datum/disease/advance/A)
 	if(!..())
 		return
-	var/mob/living/M = A.affected_mob
+	var/mob/living/carbon/M = A.affected_mob
 	switch(A.stage)
 		if(1, 2, 3, 4)
 			if(prob(base_message_chance))
@@ -51,12 +51,9 @@ Bonus
 			to_chat(M, "<span class='warning'><i>[pick("So hungry...", "You'd kill someone for a bite of food...", "Hunger cramps seize you...")]</i></span>")
 			M.overeatduration = max(M.overeatduration - 100, 0)
 			M.nutrition = max(M.nutrition - 100, 0)
-			M.fatness = M.fatness - 30
-
-
+			M.adjust_fatness(-30, FATTENING_TYPE_WEIGHT_LOSS)	
 
 /datum/symptom/weight_gain
-
 	name = "Weight Gain"
 	desc = "The virus mutates and merges itself with the host's adipocytes, allowing them to perform a form of mitosis and replicate on their own."
 	stealth = -3
@@ -77,9 +74,9 @@ Bonus
 /datum/symptom/weight_gain/Activate(datum/disease/advance/A)
 	if(!..())
 		return
-	var/mob/living/M = A.affected_mob
-	if(HAS_TRAIT(M, TRAIT_LIPOIFIER_IMMUNE))
-		return
+	var/mob/living/carbon/M = A.affected_mob
+	if(!(M?.client?.prefs?.weight_gain_viruses))
+		return FALSE
 	switch(A.stage)
 		if(1, 2, 3, 4)
 			if(prob(base_message_chance))
@@ -87,8 +84,8 @@ Bonus
 		else
 			to_chat(M, "<span class='warning'><i>[pick("You feel your body churn...", "You feel heavier...", "You hear an ominous gurgle from your belly...", "You feel bulkier...")]</i></span>")
 			if(A.properties["transmittable"] >= 12) //get chunkier quicker
-				M.fatness = M.fatness + 70
+				M.adjust_fatness(70, FATTENING_TYPE_VIRUS)	
 			else if(A.properties["transmittable"] >= 7)
-				M.fatness = M.fatness + 40
+				M.adjust_fatness(40, FATTENING_TYPE_VIRUS)	
 			else
-				M.fatness = M.fatness + 15
+				M.adjust_fatness(15, FATTENING_TYPE_VIRUS)

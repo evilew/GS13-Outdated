@@ -369,6 +369,9 @@
 		if(digitalcamo)
 			msg += "[t_He] [t_is] moving [t_his] body in an unnatural and blatantly inhuman manner.\n"
 
+	if(client?.prefs?.noncon_weight_gain)
+		msg += "<span class='purple'><b>Non-con fattening is allowed</b></span>\n"	
+
 	if (length(msg))
 		. += "<span class='warning'>[msg.Join("")]</span>"
 	msg += common_trait_examine()
@@ -419,7 +422,7 @@
 							"<a href='?src=[REF(src)];hud=s;add_comment=1'>\[Add comment\]</a>"), "")
 	else if(isobserver(user) && traitstring)
 		. += "<span class='info'><b>Traits:</b> [traitstring]</span>"
-
+	
 	SEND_SIGNAL(src, COMSIG_PARENT_EXAMINE, user, .) //This also handles flavor texts now
 	. += "*---------*</span>"
 

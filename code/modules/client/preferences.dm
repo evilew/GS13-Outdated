@@ -1018,6 +1018,18 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Screen Shake:</b> <a href='?_src_=prefs;preference=screenshake'>[(screenshake==100) ? "Full" : ((screenshake==0) ? "None" : "[screenshake]")]</a><br>"
 			if (user && user.client && !user.client.prefs.screenshake==0)
 				dat += "<b>Damage Screen Shake:</b> <a href='?_src_=prefs;preference=damagescreenshake'>[(damagescreenshake==1) ? "On" : ((damagescreenshake==0) ? "Off" : "Only when down")]</a><br>"
+			//GS13 stuff goes here
+			dat += "<h2>GS13 Preferences</h2>"
+			dat += "<b>NonCon - Weight Gain:</b><a href='?_src_=prefs;preference=noncon_weight_gain'>[noncon_weight_gain == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+
+			dat += "<h2>GS13 Weight Gain</h2>"
+			dat += "<b>Weight Gain - Food:</b><a href='?_src_=prefs;preference=weight_gain_food'>[weight_gain_food == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+			dat += "<b>Weight Gain - Items:</b><a href='?_src_=prefs;preference=weight_gain_items'>[weight_gain_items == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+			dat += "<b>Weight Gain - Chems:</b><a href='?_src_=prefs;preference=weight_gain_chems'>[weight_gain_chems == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+			dat += "<b>Weight Gain - Weapons:</b><a href='?_src_=prefs;preference=weight_gain_weapons'>[weight_gain_weapons == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+			dat += "<b>Weight Gain - Magic:</b><a href='?_src_=prefs;preference=weight_gain_magic'>[weight_gain_magic == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+			dat += "<b>Weight Gain - Viruses:</b><a href='?_src_=prefs;preference=weight_gain_viruses'>[weight_gain_viruses == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+
 			//Add the Hyper stuff below here
 			dat += "<h2>Hyper Preferences</h2>"
 			dat += "<b>NonCon - Bottom:</b><a href='?_src_=prefs;preference=noncon'>[noncon == TRUE ? "Enabled" : "Disabled"]</a><BR>"
@@ -2531,6 +2543,22 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						features["hide_belly"] = FALSE
 						features["inflatable_belly"] = FALSE
 						features["belly_size"] = 1
+					
+				if("weight_gain_items")
+					weight_gain_items = !weight_gain_items
+				if("weight_gain_chems")
+					weight_gain_chems = !weight_gain_chems
+				if("weight_gain_food")
+					weight_gain_food = !weight_gain_food
+				if("weight_gain_weapons")
+					weight_gain_weapons = !weight_gain_weapons
+				if("weight_gain_magic")
+					weight_gain_magic = !weight_gain_magic
+				if("weight_gain_viruses")
+					weight_gain_viruses = !weight_gain_viruses
+				
+				if("noncon_weight_gain")
+					noncon_weight_gain = !noncon_weight_gain
 
 				if("inflatable_belly")
 					features["inflatable_belly"] = !features["inflatable_belly"]

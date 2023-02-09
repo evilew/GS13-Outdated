@@ -60,8 +60,9 @@
 	var/drowsyness = 0//Carbon
 	var/dizziness = 0//Carbon
 	var/jitteriness = 0//Carbon
-	var/fatness = 0//Carbon, GS13 addition
-	var/fullness = FULLNESS_LEVEL_HALF_FULL//Carbon, GS13 addition
+
+	///How full is the parent mob?
+	var/fullness = FULLNESS_LEVEL_HALF_FULL
 	var/nutrition = NUTRITION_LEVEL_START_MIN // randomised in Initialize
 	var/thirst = THIRST_LEVEL_START_MIN	//same for this
 	var/satiety = 0//Carbon

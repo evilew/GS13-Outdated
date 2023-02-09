@@ -517,3 +517,14 @@ GLOBAL_LIST_INIT(lighter_reskins, list(ZIPPO_SKIN_PLAIN = "plain", ZIPPO_SKIN_DA
 #define FOURSPACES "&nbsp;&nbsp;&nbsp;&nbsp;"
 
 #define CANT_REENTER_ROUND -1
+
+//GS13 WEIGHT GAIN TYPES
+#define MINIMUM_FATNESS_LEVEL 0
+
+#define FATTENING_TYPE_ITEM "item" 
+#define FATTENING_TYPE_FOOD "food"
+#define FATTENING_TYPE_CHEM "chem"
+#define FATTENING_TYPE_WEAPON "weapon"
+#define FATTENING_TYPE_MAGIC "magic"
+#define FATTENING_TYPE_VIRUS "virus"
+#define FATTENING_TYPE_WEIGHT_LOSS "weight_loss" 

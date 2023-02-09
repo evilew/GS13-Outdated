@@ -453,7 +453,7 @@
 	taste_description = "slime"
 
 /datum/reagent/consumable/cornoil/on_mob_life(mob/living/carbon/M)
-	if(M && !HAS_TRAIT(M, TRAIT_LIPOIFIER_IMMUNE))
+	if(M && M?.client?.prefs.weight_gain_chems)
 		M.nutrition += 20 * REAGENTS_METABOLISM
 	else
 		M.nutrition += 1
