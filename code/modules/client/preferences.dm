@@ -1020,7 +1020,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				dat += "<b>Damage Screen Shake:</b> <a href='?_src_=prefs;preference=damagescreenshake'>[(damagescreenshake==1) ? "On" : ((damagescreenshake==0) ? "Off" : "Only when down")]</a><br>"
 			//GS13 stuff goes here
 			dat += "<h2>GS13 Preferences</h2>"
-			dat += "<b>NonCon - Weight Gain:</b><a href='?_src_=prefs;preference=noncon'>[noncon_weight_gain == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+			dat += "<b>NonCon - Weight Gain:</b><a href='?_src_=prefs;preference=noncon_weight_gain'>[noncon_weight_gain == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 
 			dat += "<h2>GS13 Weight Gain</h2>"
 			dat += "<b>Weight Gain - Food:</b><a href='?_src_=prefs;preference=weight_gain_food'>[weight_gain_food == TRUE ? "Enabled" : "Disabled"]</a><BR>"
@@ -2559,8 +2559,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				
 				if("noncon_weight_gain")
 					noncon_weight_gain = !noncon_weight_gain
-
-
 
 				if("inflatable_belly")
 					features["inflatable_belly"] = !features["inflatable_belly"]
