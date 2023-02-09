@@ -146,6 +146,15 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["importantroles"]		>> importantroles
 	S["pins"]				>> pins
 
+	//GS13 code
+	S["weight_gain_food"] >> weight_gain_food
+	S["weight_gain_chems"] >> weight_gain_chems
+	S["weight_gain_items"] >> weight_gain_items
+	S["weight_gain_magic"] >> weight_gain_magic
+	S["weight_gain_viruses"] >> weight_gain_viruses
+	S["weight_gain_weapons"] >> weight_gain_weapons
+	S["noncon_weight_gain"] >> noncon_weight_gain
+
 	//try to fix any outdated data if necessfary
 	if(needs_update >= 0)
 		update_preferences(needs_update, S)		//needs_update = savefile_version if we need an update (positive integer)
@@ -268,6 +277,14 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	//Hyper
 	WRITE_FILE(S["noncon"], noncon)
 	WRITE_FILE(S["pins"], pins)
+	//GS13
+	WRITE_FILE(S["weight_gain_food"], weight_gain_food)
+	WRITE_FILE(S["weight_gain_items"], weight_gain_items)
+	WRITE_FILE(S["weight_gain_magic"], weight_gain_magic)
+	WRITE_FILE(S["weight_gain_viruses"], weight_gain_viruses)
+	WRITE_FILE(S["weight_gain_chems"], weight_gain_chems)
+	WRITE_FILE(S["weight_gain_weapons"], weight_gain_weapons)
+	WRITE_FILE(S["noncon_weight_gain"], noncon_weight_gain)
 
 	return 1
 
