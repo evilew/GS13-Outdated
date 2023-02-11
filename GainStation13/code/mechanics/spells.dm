@@ -1,37 +1,39 @@
 /obj/effect/proc_holder/spell/targeted/touch/add_weight
-	name = "Fattening touch"
+	name = "Fattening"
 	desc = "Channel fattening energy to your hand to fatten people with."
 	drawmessage = "You channel fattening energy into your hand."
 	dropmessage = "You let the fattening energy from your hand dissipate."
 	hand_path = /obj/item/melee/touch_attack/fattening
-	charge_max = 400
+	action_icon_state = "spell_default"
+	charge_max = 200
 	clothes_req = FALSE
-	action_icon_state = "zap"
 
 /obj/effect/proc_holder/spell/targeted/touch/add_weight/transfer
 	name = "Weight transfer"
 	hand_path = /obj/item/melee/touch_attack/fattening/transfer
+	charge_max = 100
 
 /obj/effect/proc_holder/spell/targeted/touch/add_weight/steal
 	name = "Weight steal"
 	hand_path = /obj/item/melee/touch_attack/fattening/steal
-
+	charge_max = 100
 
 /obj/item/melee/touch_attack/fattening
 	name = "\improper fattening touch"
 	desc = "The calories from multiple donuts compressed into pure energy."
 	catchphrase = null
-	on_use_sound = 'sound/weapons/zapbang.ogg'
-	icon_state = "zapper"
-	item_state = "zapper"
+	on_use_sound = 'sound/weapons/pulse.ogg'
+	icon = 'GainStation13/icons/obj/spells/spell_items.dmi'
+	icon_state = "add-hand"
 	///How much weight is added?
 	var/weight_to_add = 100
 	///What verb is used for the spell?
 	var/fattening_verb = "fattens"
 	///Is weight being transfered from the user to another mob?
 
+
 /obj/item/melee/touch_attack/fattening/afterattack(atom/target, mob/living/carbon/user, proximity)
-	if(!proximity || !isliving(target))
+	if(!proximity || !isliving(target) || target == user)
 		return FALSE
 	
 	var/mob/living/carbon/gainer = target
@@ -49,8 +51,12 @@
 	name = "\improper weight transfer touch"
 	desc = "Your weight compressed into a fattening energy."
 	fattening_verb = "transfers weight to"
+	icon_state = "transfer-hand"
 
 /obj/item/melee/touch_attack/fattening/transfer/afterattack(atom/target, mob/living/carbon/user, proximity)
+	if(!proximity || !target || target == user)
+		return FALSE
+
 	if(weight_to_add > user.fatness || !user.adjust_fatness(-weight_to_add, FATTENING_TYPE_MAGIC))
 		to_chat(user, "<span class='warning'You don't have enough spare weight to transfer</span>")
 		return FALSE
@@ -62,9 +68,13 @@
 	desc = "Energy that is eager to take weight."
 	fattening_verb = "steals weight from"
 	weight_to_add = -100
+	icon_state = "steal-hand"
 
 /obj/item/melee/touch_attack/fattening/steal/afterattack(atom/target, mob/living/carbon/user, proximity)
 	var/mob/living/carbon/loser = target
+	if(!proximity || !loser || target == user)
+		return FALSE
+
 	if(loser.fatness < -weight_to_add)
 		to_chat(user, "<span class='warning'[loser] doesn't have enough spare weight to transfer</span>")
 		return FALSE
@@ -79,17 +89,19 @@
 /obj/item/book/granter/spell/fattening
 	spell = /obj/effect/proc_holder/spell/targeted/touch/add_weight
 	spellname = "fattening"
-	icon_state ="bookfireball"
+	icon = 'GainStation13/icons/obj/spells/spellbooks.dmi'
+	icon_state = "add_weight"
 	desc = "This book feels warm to the touch."
+	page_time = 10
 
 /obj/item/book/granter/spell/fattening/transfer
 	spell = /obj/effect/proc_holder/spell/targeted/touch/add_weight/transfer
 	spellname = "weight transfer"
-	icon_state ="bookfireball"
+	icon_state = "transfer_weight"
 	desc = "This book feels warm to the touch."
 
 /obj/item/book/granter/spell/fattening/steal
 	spell = /obj/effect/proc_holder/spell/targeted/touch/add_weight/steal
 	spellname = "weight steal"
-	icon_state ="bookfireball"
+	icon_state = "steal_weight"
 	desc = "This book feels warm to the touch."
