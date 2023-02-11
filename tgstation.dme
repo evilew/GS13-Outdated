@@ -3316,6 +3316,7 @@
 #include "code\modules\VR\vr_sleeper.dm"
 #include "code\modules\zombie\items.dm"
 #include "code\modules\zombie\organs.dm"
+#include "GainStation13\code\clothing\calorite_collar.dm"
 #include "GainStation13\code\mechanics\fatness.dm"
 #include "GainStation13\code\modules\client\preferences\preferences.dm"
 #include "GainStation13\code\modules\mob\living\emote.dm"
