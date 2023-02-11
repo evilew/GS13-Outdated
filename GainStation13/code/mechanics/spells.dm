@@ -33,7 +33,7 @@
 
 
 /obj/item/melee/touch_attack/fattening/afterattack(atom/target, mob/living/carbon/user, proximity)
-	if(!proximity || !isliving(target) || target == user)
+	if(!proximity || !iscarbon(target) || target == user)
 		return FALSE
 	
 	var/mob/living/carbon/gainer = target
@@ -72,7 +72,7 @@
 
 /obj/item/melee/touch_attack/fattening/steal/afterattack(atom/target, mob/living/carbon/user, proximity)
 	var/mob/living/carbon/loser = target
-	if(!proximity || !loser || target == user)
+	if(!proximity || !iscarbon(target) || target == user)
 		return FALSE
 
 	if(loser.fatness < -weight_to_add)
@@ -87,6 +87,7 @@
 
 ///Spellbooks
 /obj/item/book/granter/spell/fattening
+	name = "fattening tome"
 	spell = /obj/effect/proc_holder/spell/targeted/touch/add_weight
 	spellname = "fattening"
 	icon = 'GainStation13/icons/obj/spells/spellbooks.dmi'
@@ -95,12 +96,14 @@
 	page_time = 10
 
 /obj/item/book/granter/spell/fattening/transfer
+	name = "weight transfer tome"
 	spell = /obj/effect/proc_holder/spell/targeted/touch/add_weight/transfer
 	spellname = "weight transfer"
 	icon_state = "transfer_weight"
 	desc = "This book feels warm to the touch."
 
 /obj/item/book/granter/spell/fattening/steal
+	name = "weight steal tome"
 	spell = /obj/effect/proc_holder/spell/targeted/touch/add_weight/steal
 	spellname = "weight steal"
 	icon_state = "steal_weight"
