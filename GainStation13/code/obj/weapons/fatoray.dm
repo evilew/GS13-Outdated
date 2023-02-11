@@ -13,7 +13,7 @@
 
 ///The base projectile used by the fatoray
 /obj/item/projectile/energy/fattening
-	name = "concentrated fat"
+	name = "fat energy"
 	icon = 'GainStation13/icons/obj/fatoray.dmi'
 	icon_state = "ray"
 	///How much fat is added to the target mob?
@@ -23,7 +23,7 @@
 	. = ..()
 	
 	var/mob/living/carbon/gainer = target
-	if(!gainer)
+	if(!iscarbon(gainer))
 		return FALSE
 	
 	if(!gainer.adjust_fatness(fat_added, FATTENING_TYPE_WEAPON))
