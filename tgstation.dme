@@ -3324,6 +3324,7 @@
 #include "GainStation13\code\modules\vending\gatocola.dm"
 #include "GainStation13\code\modules\vending\mealdor.dm"
 #include "GainStation13\code\obj\structure\scale.dm"
+#include "GainStation13\code\obj\weapons\fatoray.dm"
 #include "hyperstation\code\__DEFINES\economy.dm"
 #include "hyperstation\code\__DEFINES\wendigo.dm"
 #include "hyperstation\code\controllers\subsystem\economy.dm"
