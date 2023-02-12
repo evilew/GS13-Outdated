@@ -50,6 +50,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 		)), \
 	//END OF CIT CHANGES
 	new/datum/stack_recipe("bed", /obj/structure/bed, 2, one_per_turf = TRUE, on_floor = TRUE), \
+	new/datum/stack_recipe("double bed", /obj/structure/double_bed, 2, one_per_turf = TRUE, on_floor = TRUE), \
 	null, \
 	//add this when I can find a way to make them easily constructible > new/datum/stack_recipe("sink", /obj/structure/sink, 2, one_per_turf = TRUE, on_floor = TRUE),
 	new/datum/stack_recipe("shower", /obj/machinery/shower/crafted, 2, one_per_turf = TRUE, on_floor = TRUE), \
