@@ -35,3 +35,19 @@
 	name = "locked calorite collar"
 	desc = "A modified locked collar infused with calorite, magnifying the caloric impact of any food the wearer eats"
 	weight_gain_rate_modifier = 1.5
+
+/datum/crafting_recipe/calorite_collar
+	name = "Calorite Collar"
+	result = /obj/item/clothing/neck/petcollar/calorite
+	time = 25
+	reqs = list(/obj/item/clothing/neck/petcollar = 1,
+				/obj/item/stack/sheet/mineral/calorite = 3)
+	category = CAT_CLOTHING
+
+/datum/crafting_recipe/locked_calorite_collar
+	name = "Locked Calorite Collar"
+	result = /obj/item/clothing/neck/petcollar/locked/calorite
+	time = 25
+	reqs = list(/obj/item/clothing/neck/petcollar/locked = 1,
+				/obj/item/stack/sheet/mineral/calorite = 3)
+	category = CAT_CLOTHING
