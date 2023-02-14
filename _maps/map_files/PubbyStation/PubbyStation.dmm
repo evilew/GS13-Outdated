@@ -59037,7 +59037,7 @@
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
 "iuj" = (
-/obj/machinery/feeding_tube,
+/obj/machinery/iv_drip/feeding_tube,
 /turf/open/floor/plating,
 /area/maintenance/department/crew_quarters/dorms)
 "iuM" = (
@@ -64157,7 +64157,7 @@
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "vjK" = (
-/obj/machinery/feeding_tube,
+/obj/machinery/iv_drip/feeding_tube,
 /turf/open/floor/plating,
 /area/maintenance/department/science)
 "vlF" = (
@@ -65149,7 +65149,7 @@
 /area/space/nearstation)
 "xuZ" = (
 /obj/effect/turf_decal/stripes/line,
-/obj/machinery/feeding_tube,
+/obj/machinery/iv_drip/feeding_tube,
 /turf/open/floor/plating,
 /area/maintenance/disposal)
 "xvK" = (

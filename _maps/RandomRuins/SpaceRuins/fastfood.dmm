@@ -135,7 +135,7 @@
 "pJ" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 1},/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "pS" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 8},/turf/open/floor/plating,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "qh" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 8},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
-"qj" = (/obj/structure/medkit_cabinet{pixel_y = 27},/obj/effect/turf_decal/bot,/obj/machinery/feeding_tube,/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
+"qj" = (/obj/structure/medkit_cabinet{pixel_y = 27},/obj/effect/turf_decal/bot,/obj/machinery/iv_drip/feeding_tube,/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "qt" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 10},/obj/structure/disposalpipe/segment{dir = 4},/turf/open/floor/plasteel/checker,/area/ruin/space/has_grav/hotel/custodial{name = "Restaurant Employee Area"})
 "qB" = (/obj/machinery/door/airlock/public{dir = 4},/turf/open/floor/plasteel,/area/ruin/space/has_grav/hotel/bar)
 "qI" = (/obj/machinery/computer/security/telescreen/entertainment,/turf/closed/wall,/area/ruin/space/has_grav/hotel/bar)
