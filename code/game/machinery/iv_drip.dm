@@ -15,6 +15,11 @@
 									/obj/item/reagent_containers/food,
 									/obj/item/reagent_containers/glass,
 									/obj/item/reagent_containers/chem_pack))
+	//GS13 EDIT
+	///What kind of attachment point is used?
+	var/attachment_point = "needle"
+	//GS13 EDIT END
+	
 /obj/machinery/iv_drip/Initialize(mapload)
 	. = ..()
 	update_icon()
@@ -78,7 +83,7 @@
 		return
 
 	if(!target.has_dna())
-		to_chat(usr, "<span class='danger'>The drip beeps: Warning, incompatible creature!</span>")
+		to_chat(usr, "<span class='danger'>[src] beeps: Warning, incompatible creature!</span>")
 		return
 
 	if(Adjacent(target) && usr.Adjacent(target))
@@ -90,7 +95,7 @@
 			START_PROCESSING(SSmachines, src)
 			update_icon()
 		else
-			to_chat(usr, "<span class='warning'>There's nothing attached to the IV drip!</span>")
+			to_chat(usr, "<span class='warning'>There's nothing attached to [src]!</span>") //gs13 edit
 
 
 /obj/machinery/iv_drip/attackby(obj/item/W, mob/user, params)
@@ -119,7 +124,7 @@
 		return PROCESS_KILL
 
 	if(!(get_dist(src, attached) <= 1 && isturf(attached.loc)))
-		to_chat(attached, "<span class='userdanger'>The IV drip needle is ripped out of you!</span>")
+		to_chat(attached, "<span class='userdanger'>[src] [attachment_point] is ripped out of you!</span>")
 		attached.apply_damage(3, BRUTE, pick(BODY_ZONE_R_ARM, BODY_ZONE_L_ARM))
 		attached = null
 		update_icon()
@@ -174,7 +179,7 @@
 
 /obj/machinery/iv_drip/verb/eject_beaker()
 	set category = "Object"
-	set name = "Remove IV Container"
+	set name = "Remove Container" //GS13 EDIT
 	set src in view(1)
 
 	if(!isliving(usr))

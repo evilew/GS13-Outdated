@@ -264,7 +264,7 @@
 	name = "Feeding Tube Crate"
 	desc = "Contains a feeding tube machine, originally meant for supplying nutrition to farm animals. However, you could probably use it for your own, nefarious deeds..."
 	cost = 2000
-	contains = list(/obj/machinery/feeding_tube)
+	contains = list(/obj/machinery/iv_drip/feeding_tube)
 	crate_name = "feeding tube crate"
 
 /datum/supply_pack/service/lightbulbs

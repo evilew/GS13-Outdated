@@ -32,7 +32,7 @@
 "ke" = (/obj/item/stack/cable_coil/cut/yellow,/turf/open/space/basic,/area/space)
 "lf" = (/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 1},/turf/open/floor/mineral/plastitanium/red,/area/space)
 "lh" = (/obj/structure/chair/comfy/shuttle,/turf/open/floor/mineral/plastitanium/red,/area/space)
-"lS" = (/obj/machinery/feeding_tube,/turf/open/floor/mineral/abductor,/area/space)
+"lS" = (/obj/machinery/iv_drip/feeding_tube,/turf/open/floor/mineral/abductor,/area/space)
 "mP" = (/obj/machinery/door/airlock/external{name = "Escape Airlock"},/obj/effect/mapping_helpers/airlock/cyclelink_helper,/obj/structure/fans/tiny,/turf/open/floor/plating,/area/space)
 "mT" = (/mob/living/simple_animal/hostile/syndicate/ranged/smg/space,/turf/open/floor/mineral/plastitanium/red,/area/space)
 "ou" = (/obj/machinery/light,/turf/open/floor/mineral/basaltstone_floor,/area/space)
