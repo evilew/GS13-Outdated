@@ -221,7 +221,7 @@
 	if(!istype(M, /mob/living/carbon))
 		return FALSE
 	else
-		M.adjust_fatness(fat_to_add, FATTENING_TYPE_ITEM)	
+		M.adjust_fatness(fat_to_add, FATTENING_TYPE_ITEM)
 
 // calorite floor, disguised version - GS13
 
@@ -229,7 +229,7 @@
 	name = "Steel floor"
 	icon_state = "calorite_hide"
 	floor_tile = /obj/item/stack/tile/mineral/calorite/hide
-	icons = list("calorite_hide","calorite_hide_dam")
+	icons = list("calorite_hide","calorite_dam")
 
 // calorite floor, powerful version - GS13
 
@@ -237,7 +237,7 @@
 	name = "Infused calorite floor"
 	icon_state = "calorite_strong"
 	floor_tile = /obj/item/stack/tile/mineral/calorite/strong
-	icons = list("calorite_strong","calorite_strong_dam")
+	icons = list("calorite_strong","calorite_dam")
 
 //DIAMOND
 
