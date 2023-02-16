@@ -2438,3 +2438,19 @@ datum/reagent/consumable/ethanol/creme_de_coconut
 	boozepwr = 65
 	taste_description = "viscous cream"
 	glass_desc = "The name is probably exactly what it is."
+
+///GS13 drinks!
+
+/datum/reagent/consumable/ethanol/oily_oafs
+	name = "Oily oafs"
+	description = "The oily oaf. while it isn't as strong as some of the other drinks on station, Its buttery aftertaste and affordability make it a staple of any good miner's diet."
+	color = "#ffc75f"
+	boozepwr = 30
+	taste_description = "rich butter and red sugar"
+	quality = DRINK_NICE
+	glass_icon_state = "oily_oafs"
+	glass_name = "oily oafs"
+	glass_desc = "The oily oaf. A dwarvern classic beloved by miners around the cosmos."
+	shot_glass_icon_state = "shotglassbrown"
+	pH = 4.5
+	value = 0.1
