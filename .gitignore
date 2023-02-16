@@ -221,3 +221,9 @@ tools/MapAtmosFixer/MapAtmosFixer/bin/*
 !/config/title_screens/images/exclude
 config/admins.txt
 _maps/RandomRuins_SpaceRuins_TheDerelictProject.dmm
+_maps/kamenstation.dmm
+_maps/mosbstation.dmm
+code/modules/food_and_drinks/recipes/tablecraft/recipes_cake.dm
+code/modules/mob/living/simple_animal/friendly/cakegolem.dm
+code/modules/projectiles/projectile/magic.dm
+icons/turf/floors.dmi
