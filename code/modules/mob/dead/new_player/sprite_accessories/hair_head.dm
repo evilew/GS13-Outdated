@@ -379,7 +379,7 @@
 
 /datum/sprite_accessory/hair/gloomylong
 	name = "Gloomy (Long)"
-	icon_state = "hair_gloomy"
+	icon_state = "hair_gloomylong"
 
 /datum/sprite_accessory/hair/glossy
 	name = "Glossy"
@@ -535,7 +535,7 @@
 
 /datum/sprite_accessory/hair/mohawk
 	name = "Mohawk"
-	icon_state = "hair_mohawk"
+	icon_state = "hair_d"
 
 /datum/sprite_accessory/hair/reversemohawk
 	name = "Mohawk (Reverse)"
