@@ -2285,7 +2285,6 @@ datum/sprite_accessory/mam_tails/insect
 /datum/sprite_accessory/mam_tails/shark/datashark
 	name = "DataShark"
 	icon_state = "datashark"
-	ckeys_allowed = list("rubyflamewing")
 
 /datum/sprite_accessory/mam_tails_animated/shark/datashark
 	name = "DataShark"
@@ -2294,7 +2293,6 @@ datum/sprite_accessory/mam_tails/insect
 /datum/sprite_accessory/mam_body_markings/shark/datashark
 	name = "DataShark"
 	icon_state = "datashark"
-	ckeys_allowed = list("rubyflamewing")
 
 //Sabresune
 /datum/sprite_accessory/mam_ears/sabresune
