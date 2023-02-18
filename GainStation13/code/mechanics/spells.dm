@@ -26,7 +26,7 @@
 	icon = 'GainStation13/icons/obj/spells/spell_items.dmi'
 	icon_state = "add-hand"
 	///How much weight is added?
-	var/weight_to_add = 100
+	var/weight_to_add = 300
 	///What verb is used for the spell?
 	var/fattening_verb = "fattens"
 	///Is weight being transfered from the user to another mob?
