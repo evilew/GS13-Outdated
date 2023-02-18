@@ -204,6 +204,23 @@
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
+
+/turf/open/indestructible/chocolate
+	name = "chocolate floor"
+	desc = "A rather tasty floor, hopefully it does not ruin your shoes."
+	icon = 'Gainstation13/icons/turf/floor_candy.dmi'
+	icon_state = "choclit_alt2"
+
+
+/turf/open/indestructible/bubblegum
+	name = "bubblegum floor"
+	desc = "A rather tasty floor, hopefully it does not ruin your shoes."
+	icon = 'Gainstation13/icons/turf/floor_candy.dmi'
+	icon_state = "floor_pinkgum"
+
+
+
+
 /turf/open/indestructible/clock_spawn_room/Entered()
 	..()
 	START_PROCESSING(SSfastprocess, src)
