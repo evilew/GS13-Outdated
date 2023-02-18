@@ -67,7 +67,7 @@
 	name = "\improper weight theft touch"
 	desc = "Energy that is eager to take weight."
 	fattening_verb = "steals weight from"
-	weight_to_add = -100
+	weight_to_add = -300
 	icon_state = "steal-hand"
 
 /obj/item/melee/touch_attack/fattening/steal/afterattack(atom/target, mob/living/carbon/user, proximity)
