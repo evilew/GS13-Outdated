@@ -154,6 +154,8 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["weight_gain_viruses"] >> weight_gain_viruses
 	S["weight_gain_weapons"] >> weight_gain_weapons
 	S["noncon_weight_gain"] >> noncon_weight_gain
+	S["max_weight"] >> max_weight 
+
 
 	//try to fix any outdated data if necessfary
 	if(needs_update >= 0)
@@ -285,6 +287,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["weight_gain_chems"], weight_gain_chems)
 	WRITE_FILE(S["weight_gain_weapons"], weight_gain_weapons)
 	WRITE_FILE(S["noncon_weight_gain"], noncon_weight_gain)
+	WRITE_FILE(S["max_weight"], max_weight)
 
 	return 1
 
