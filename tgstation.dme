@@ -13,6 +13,7 @@
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
+#include "cakegolem.dm"
 #include "_maps\_basemap.dm"
 #include "_maps\map_files\generic\CentCom.dmm"
 #include "code\_compile_options.dm"
@@ -2286,6 +2287,7 @@
 #include "code\modules\mob\living\simple_animal\bot\secbot.dm"
 #include "code\modules\mob\living\simple_animal\bot\SuperBeepsky.dm"
 #include "code\modules\mob\living\simple_animal\friendly\butterfly.dm"
+#include "code\modules\mob\living\simple_animal\friendly\cakegolem.dm"
 #include "code\modules\mob\living\simple_animal\friendly\cat.dm"
 #include "code\modules\mob\living\simple_animal\friendly\cockroach.dm"
 #include "code\modules\mob\living\simple_animal\friendly\crab.dm"
