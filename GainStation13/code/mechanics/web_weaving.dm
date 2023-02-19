@@ -9,7 +9,6 @@
 	var/datum/action/innate/wrap_target/linked_action
 
 /datum/quirk/web_weaving/post_add()
-	to_chat(quirk_holder, "<span class='warning'>Web Weaving is intended as an ERP mechanic. Please be responsible.</span>")
 	linked_action = new
 	linked_action.Grant(quirk_holder)
 
@@ -76,6 +75,11 @@
 	equip_delay_other = 0
 	equip_delay_self = 0
 	mutantrace_variation = NO_MUTANTRACE_VARIATION
+
+/obj/item/clothing/suit/straight_jacket/web/equipped(mob/user, slot)
+	. = ..()	
+	if((user.get_item_by_slot(SLOT_WEAR_SUIT)) != src && !QDELETED(src))
+		qdel(src)
 
 /obj/structure/spider/cocoon/quirk
 	max_integrity = 20
