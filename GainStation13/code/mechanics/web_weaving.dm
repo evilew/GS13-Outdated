@@ -37,7 +37,16 @@
 	if(target.wear_suit)
 		var/obj/item/clothing/suit = target.wear_suit 
 		if(istype(suit, /obj/item/clothing/suit/straight_jacket/web))
-			//Code goes here :)
+			user.visible_message("<span class='warning'>[user] begins to fully encase [target] in a cocoon!</span>", "<span class='warning'>You begin to fully encase [target] in a cocoon.</span>")
+			if(!do_after_mob(user, target, 30 SECONDS))
+				return FALSE
+
+			var/obj/structure/spider/cocoon/quirk/spawned_cocoon = new(target.loc)
+			if(!target.forceMove(spawned_cocoon))
+				qdel(spawned_cocoon)
+				return FALSE
+
+			spawned_cocoon.icon_state = pick("cocoon_large1","cocoon_large2","cocoon_large3")
 			return TRUE 
 
 		user.visible_message("<span class='warning'>[user] attempts to remove [target]'s [target.wear_suit]!</span>", "<span class='warning'>You attempt to remove [target]'s [target.wear_suit].</span>")
@@ -67,3 +76,6 @@
 	equip_delay_other = 0
 	equip_delay_self = 0
 	mutantrace_variation = NO_MUTANTRACE_VARIATION
+
+/obj/structure/spider/cocoon/quirk
+	max_integrity = 20
