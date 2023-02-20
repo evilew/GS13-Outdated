@@ -1020,6 +1020,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				dat += "<b>Damage Screen Shake:</b> <a href='?_src_=prefs;preference=damagescreenshake'>[(damagescreenshake==1) ? "On" : ((damagescreenshake==0) ? "Off" : "Only when down")]</a><br>"
 			//GS13 stuff goes here
 			dat += "<h2>GS13 Preferences</h2>"
+
+			dat += "<b>Maximum Weight:</b><a href='?_src_=prefs;preference=max_fatness'>[max_weight == FALSE ? "None" : max_weight]</a><BR>"
 			dat += "<b>NonCon - Weight Gain:</b><a href='?_src_=prefs;preference=noncon_weight_gain'>[noncon_weight_gain == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 
 			dat += "<h2>GS13 Weight Gain</h2>"
@@ -2559,6 +2561,30 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				
 				if("noncon_weight_gain")
 					noncon_weight_gain = !noncon_weight_gain
+				if("max_fatness")
+					var/pickedweight = input(user, "Choose your max fatness level, your weight will not go beyond this. None will let you gain without a limit", "Character Preference", "None")  as null|anything in list("None", "Fat", "Fatter", "Very Fat", "Obese", "Morbidly Obese", "Extremely Obese", "Barely Mobile", "Immobile")
+					if(pickedweight)
+						switch(pickedweight)
+							if("None")
+								max_weight = FALSE 
+							if("Fat")
+								max_weight = FATNESS_LEVEL_FATTER 
+							if("Fatter")
+								max_weight = FATNESS_LEVEL_VERYFAT
+							if("Very Fat")
+								max_weight = FATNESS_LEVEL_OBESE
+							if("Obese")
+								max_weight = FATNESS_LEVEL_MORBIDLY_OBESE
+							if("Morbidly Obese")
+								max_weight = FATNESS_LEVEL_EXTREMELY_OBESE
+							if("Extremely Obese")
+								max_weight = FATNESS_LEVEL_BARELYMOBILE
+							if("Barely Mobile")
+								max_weight = FATNESS_LEVEL_IMMOBILE
+							if("Immobile")
+								max_weight = FATNESS_LEVEL_BLOB
+
+
 
 				if("inflatable_belly")
 					features["inflatable_belly"] = !features["inflatable_belly"]
