@@ -6632,6 +6632,17 @@
 	dir = 1
 	},
 /area/xenoarch/gen)
+"xt" = (
+/obj/structure/cable,
+/obj/machinery/quantumpad{
+	map_pad_id = "quantum hub xenoarch";
+	map_pad_link_id = "quantum hub";
+	mapped_quantum_pads = list("ldemone","demone")
+	},
+/turf/open/floor/plasteel,
+/area/xenoarch/bot{
+	name = "Demon Teleporter"
+	})
 "xG" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/grimy{
@@ -6730,6 +6741,17 @@
 "FE" = (
 /turf/open/floor/plasteel/grimy,
 /area/xenoarch/nothinghere)
+"FL" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plasteel,
+/area/xenoarch/bot{
+	name = "Demon Teleporter"
+	})
 "FT" = (
 /obj/machinery/light/broken{
 	dir = 4
@@ -18477,10 +18499,10 @@ jN
 jN
 jN
 FZ
-sO
-VE
-VE
-VE
+FL
+Ed
+Ed
+xt
 Fl
 Gq
 Gq

@@ -330,3 +330,11 @@
 	suffix = "fastfood.dmm"
 	name = "Fast Food Restaurant"
 	description = "In GATO controlled space, it isn't uncommon to find various space restaurants, famous for the abundance of corn oil in their foods."
+
+/datum/map_template/ruin/space/quantum_hub //GS13
+	id = "quantum_hub"
+	suffix = "quantum_hub.dmm"
+	name = "Quantum Hub"
+	description = "A small hub containing a quantum pad connected to xenoarch along with three other rooms containing unlinked quantum pads and the parts needed to make new quantum pads."
+	cost = 0
+	always_place = TRUE
