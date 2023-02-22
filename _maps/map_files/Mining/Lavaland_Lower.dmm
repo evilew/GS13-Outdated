@@ -6734,6 +6734,7 @@
 	pixel_y = 8;
 	pixel_x = -4
 	},
+/obj/item/crowbar,
 /turf/open/floor/plating,
 /area/xenoarch/bot{
 	name = "Demon Teleporter"
