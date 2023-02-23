@@ -43,6 +43,7 @@
 
 /mob/living/simple_animal/friendly/cakegolem/attack_hand(mob/living/L)
 	. = ..()
+
 	//if(.) //the attack was blocked
 		//return
 	if(L.a_intent == INTENT_HARM && L.reagents && !stat)

@@ -66,8 +66,8 @@ Bonus
 	symptom_delay_min = 15
 	symptom_delay_max = 45
 	threshold_desc = list(
-		"Transmission 7" = "Increases the rate of cell replication.",
-		"Transmission 12" = "Increases the rate of cell replication further"
+		"Stage Speed 7" = "Increases the rate of cell replication.",
+		"Stage Speed 12" = "Increases the rate of cell replication further"
 	)
 
 
@@ -83,9 +83,9 @@ Bonus
 				to_chat(M, "<span class='warning'>[pick("You feel oddly full...", "You feel more plush...", "You feel more huggable...", "You hear an odd gurgle from your stomach")]</span>")
 		else
 			to_chat(M, "<span class='warning'><i>[pick("You feel your body churn...", "You feel heavier...", "You hear an ominous gurgle from your belly...", "You feel bulkier...")]</i></span>")
-			if(A.properties["transmittable"] >= 12) //get chunkier quicker
+			if(A.properties["stage_rate"] >= 12) //get chunkier quicker
 				M.adjust_fatness(70, FATTENING_TYPE_VIRUS)	
-			else if(A.properties["transmittable"] >= 7)
+			else if(A.properties["stage_rate"] >= 7)
 				M.adjust_fatness(40, FATTENING_TYPE_VIRUS)	
 			else
 				M.adjust_fatness(15, FATTENING_TYPE_VIRUS)

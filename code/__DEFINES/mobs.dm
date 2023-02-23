@@ -167,6 +167,11 @@
 #define FATNESS_LEVEL_FATTER 250
 #define FATNESS_LEVEL_FAT 170
 
+//Math stuff for fatness movement speed
+#define FATNESS_DIVISOR 860 
+#define FATNESS_MAX_MOVE_PENALTY 4
+#define FATNESS_WEAKLEGS_MODIFIER 20
+
 //Nutrition levels for humans
 #define NUTRITION_LEVEL_FULL 550
 #define NUTRITION_LEVEL_WELL_FED 450
