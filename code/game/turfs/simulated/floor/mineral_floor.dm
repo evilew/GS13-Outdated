@@ -239,6 +239,14 @@
 	floor_tile = /obj/item/stack/tile/mineral/calorite/strong
 	icons = list("calorite_strong","calorite_dam")
 
+// calorite dance floor, groovy! - GS13
+
+/turf/open/floor/mineral/calorite/dance
+	name = "Infused calorite floor"
+	icon_state = "calorite_dance"
+	floor_tile = /obj/item/stack/tile/mineral/calorite/dance
+	icons = list("calorite_dance","calorite_dam")
+
 //DIAMOND
 
 /turf/open/floor/mineral/diamond
