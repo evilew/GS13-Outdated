@@ -75,6 +75,13 @@
 	icon_state = "tile_calorite_strong"
 	turf_type = /turf/open/floor/mineral/calorite/strong
 
+/obj/item/stack/tile/mineral/calorite/dance  //GS13 - glamourous variant!
+	name = "Calorite dance floor"
+	singular_name = "Calorite dance floor tile"
+	desc = "A dance floor made out of calorite, for a party both you and your waistline will never forget!."
+	icon_state = "tile_calorite_dance"
+	turf_type = /turf/open/floor/mineral/calorite/dance
+
 
 /obj/item/stack/tile/mineral/abductor
 	name = "alien floor tile"
