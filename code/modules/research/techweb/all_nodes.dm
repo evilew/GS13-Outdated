@@ -1158,7 +1158,9 @@
 	prereq_ids = list("biotech") //remember to add "engineering"
 	design_ids = list("alien_scalpel")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10)
+	boost_item_paths = list(/obj/item/gun/energy/fatoray)
 	export_price = 5000
+	hidden = TRUE
 
 /datum/techweb_node/nutri_tools
 	id = "nutritech_tools"
