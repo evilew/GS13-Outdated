@@ -17,7 +17,7 @@
 	icon = 'GainStation13/icons/obj/fatoray.dmi'
 	icon_state = "ray"
 	///How much fat is added to the target mob?
-	var/fat_added = 25 //Around 6.25 pounds per hit.
+	var/fat_added = 50 //Around 12.5 pounds per hit.
 
 /obj/item/projectile/energy/fattening/on_hit(atom/target, blocked)
 	. = ..()

@@ -1146,3 +1146,25 @@
 		var/datum/techweb_node/TN = i
 		TW.add_point_list(TN.research_costs)
 	return TW.printout_points()
+
+
+
+/////////////// GS13 - NUTRITIONAL TECHNOLOGY
+
+/datum/techweb_node/nutri_tech
+	id = "nutritech"
+	display_name = "Nutritional Technology"
+	description = "Ending world hunger was never made easier!"
+	prereq_ids = list("biotech") //remember to add "engineering"
+	design_ids = list("alien_scalpel")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10)
+	export_price = 5000
+
+/datum/techweb_node/nutri_tools
+	id = "nutritech_tools"
+	display_name = "Nutri-Tech Tools"
+	description = "Ever wanted to reach your daily caloric intake in just 5 seconds?"
+	prereq_ids = list("nutritech") //remember to add "adv_engi"
+	design_ids = list("fatoray_weak")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 20)
+	export_price = 10000
