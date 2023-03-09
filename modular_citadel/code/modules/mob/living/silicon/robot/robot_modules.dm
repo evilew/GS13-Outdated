@@ -524,7 +524,8 @@
 			"BootyF" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootyservice"),
 			"BootyM" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootyserviceM"),
 			"BootyS" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootyserviceS"),
-			"Fat" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "fat_service")
+			"Fat" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "fat_service"),
+			"Busty" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "busty_service")
 		)
 		butler_models = sortList(butler_models)
 	var/butler_borg_icon = show_radial_menu(R, R , butler_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
@@ -569,6 +570,10 @@
 			cyborg_base_icon = "fat_service"
 			cyborg_icon_override = 'GainStation13/icons/mob/robots.dmi'
 			hat_offset = 3
+		if("Busty")
+			cyborg_base_icon = "busty_service"
+			cyborg_icon_override = 'GainStation13/icons/mob/robots.dmi'
+			hat_offset = 0
 	return ..()
 
 /obj/item/robot_module/engineering/be_transformed_to(obj/item/robot_module/old_module)
