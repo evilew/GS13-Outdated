@@ -573,7 +573,7 @@
 		if("Busty")
 			cyborg_base_icon = "busty_service"
 			cyborg_icon_override = 'GainStation13/icons/mob/robots.dmi'
-			hat_offset = 0
+			hat_offset = 1
 	return ..()
 
 /obj/item/robot_module/engineering/be_transformed_to(obj/item/robot_module/old_module)
