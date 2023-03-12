@@ -1157,7 +1157,7 @@
 	description = "Ending world hunger was never made easier!"
 	prereq_ids = list("biotech") //remember to add "engineering"
 	design_ids = list("alien_scalpel")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10)
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10) //REMEMBER TO TWEAK VALUES!
 	boost_item_paths = list(/obj/item/gun/energy/fatoray)
 	export_price = 5000
 	hidden = TRUE
