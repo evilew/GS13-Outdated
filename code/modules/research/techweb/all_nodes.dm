@@ -1166,7 +1166,7 @@
 	id = "nutritech_tools"
 	display_name = "Nutri-Tech Tools"
 	description = "Ever wanted to reach your daily caloric intake in just 5 seconds?"
-	prereq_ids = list("nutritech") //remember to add "adv_engi"
+	prereq_ids = list("nutritech") //remember to add "adv_engi" and weapons
 	design_ids = list("fatoray_weak")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 20)
 	export_price = 10000
