@@ -27,28 +27,46 @@
 	///How much fat is added to the target mob?
 	var/fat_added = 50 //Around 12.5 pounds per hit.
 
-/obj/item/projectile/energy/fattening/on_hit(atom/target, blocked)
-	. = ..()
-	
-	var/mob/living/carbon/gainer = target
-	if(!iscarbon(gainer))
-		return FALSE
-	
-	if(!gainer.adjust_fatness(fat_added, FATTENING_TYPE_WEAPON))
-		return FALSE
 
-	return TRUE
+////// Fatoray - cannon variant, strong but can be charged
+
+/obj/item/gun/energy/fatoray/cannon
+	name = "Fatoray Cannon"
+	desc = "An energy gun that fattens up anyone it hits. This version functions as a glass cannon of some sorts."
+	icon = 'GainStation13/icons/obj/fatoray.dmi'               /// REPLACE THESE LATER WITH UNIQUE SPRITES - Sono
+	icon_state = "fatoray_cannon"
+	recoil = 3
+	slowdown = 1
+	// charge_sections = 3
+	weapon_weight = WEAPON_HEAVY
+	ammo_type = list(/obj/item/ammo_casing/energy/fattening/cannon)
+
+
+/obj/item/ammo_casing/energy/fattening/cannon
+	name = "one-shot fattening weapon lens"
+	select_name = "fatten"
+	e_cost = 100
+	projectile_type = /obj/item/projectile/energy/fattening/cannon
+
+/obj/item/projectile/energy/fattening/cannon
+	name = "fat energy"            
+	icon = 'GainStation13/icons/obj/fatoray.dmi'
+	icon_state = "cannon_ray"
+	///How much fat is added to the target mob?
+	fat_added = 1000
+
+
 
 ////////////////////////////////////////////////////////////////////
 ////////FATORAYS THAT CAN BE MADE BY LATHES OR RESEARCHED///////////
 ////////////////////////////////////////////////////////////////////
 
-///Weaker version of fatoray, can be produced by lathes
+///Weaker version of fatoray
 /obj/item/gun/energy/fatoray/weak
 	name = "Basic Fatoray"
 	desc = "An energy gun that fattens up anyone it hits. This version is considerably weaker than its original counterpart, the technology behind it seemingly still not  perfected."
 	icon = 'GainStation13/icons/obj/fatoray.dmi'               /// REPLACE THESE LATER WITH UNIQUE SPRITES - Sono
-	icon_state = "fatoray"
+	icon_state = "fatoray_weak"
 	ammo_type = list(/obj/item/ammo_casing/energy/fattening/weak)
 
 /obj/item/ammo_casing/energy/fattening/weak
@@ -67,26 +85,25 @@
 ///////////////////////////////////////////////////
 
 ///Single shot glass cannon fatoray
-/obj/item/gun/energy/fatoray/cannon
-	name = "One-Shot Fatoray"
+/obj/item/gun/energy/fatoray/cannon_weak
+	name = "Basic Fatoray Cannon"
 	desc = "An energy gun that fattens up anyone it hits. This version functions as a glass cannon of some sorts."
-	icon = 'GainStation13/icons/obj/fatoray.dmi'               /// REPLACE THESE LATER WITH UNIQUE SPRITES - Sono
-	icon_state = "fatoray_cannon"
+	icon = 'GainStation13/icons/obj/fatoray.dmi'
+	icon_state = "fatoray_cannon_weak"
 	can_charge = 0
 	recoil = 3
 	slowdown = 1
-	charge_sections = 3
+	// charge_sections = 3
 	weapon_weight = WEAPON_HEAVY
-	ammo_type = list(/obj/item/ammo_casing/energy/fattening/oneshot)
+	ammo_type = list(/obj/item/ammo_casing/energy/fattening/cannon_weak)
 
-
-/obj/item/ammo_casing/energy/fattening/oneshot
+/obj/item/ammo_casing/energy/fattening/cannon_weak
 	name = "one-shot fattening weapon lens"
 	select_name = "fatten"
 	e_cost = 300
-	projectile_type = /obj/item/projectile/energy/fattening/oneshot
+	projectile_type = /obj/item/projectile/energy/fattening/cannon_weak
 
-/obj/item/projectile/energy/fattening/oneshot
+/obj/item/projectile/energy/fattening/cannon_weak
 	name = "fat energy"            
 	icon = 'GainStation13/icons/obj/fatoray.dmi'
 	icon_state = "cannon_ray"
@@ -94,3 +111,18 @@
 	fat_added = 500
 
 ///////////////////////////////////////
+//////PROJECTILE MECHANICS/////////////
+///////////////////////////////////////
+
+
+/obj/item/projectile/energy/fattening/on_hit(atom/target, blocked)
+	. = ..()
+	
+	var/mob/living/carbon/gainer = target
+	if(!iscarbon(gainer))
+		return FALSE
+	
+	if(!gainer.adjust_fatness(fat_added, FATTENING_TYPE_WEAPON))
+		return FALSE
+
+	return TRUE

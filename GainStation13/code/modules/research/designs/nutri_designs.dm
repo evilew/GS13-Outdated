@@ -12,13 +12,13 @@
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
 
-/datum/design/fatoray_oneshot
+/datum/design/fatoray_cannon_weak
 	name = "Cannonshot Fatoray"
 	id = "fatoray_cannon"
 	build_type = PROTOLATHE
 	materials = list(MAT_METAL = 5000, MAT_GLASS = 2000, MAT_CALORITE = 10000)
 	construction_time = 200
-	build_path = /obj/item/gun/energy/fatoray/cannon
+	build_path = /obj/item/gun/energy/fatoray/cannon_weak
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
 
