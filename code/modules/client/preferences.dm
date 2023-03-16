@@ -2922,6 +2922,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.skin_tone = skin_tone
 	character.hair_style = hair_style
 	character.facial_hair_style = facial_hair_style
+
+	character.grad_style = grad_style
+	character.grad_color = grad_color
 	character.underwear = underwear
 
 	character.saved_underwear = underwear

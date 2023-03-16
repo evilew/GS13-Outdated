@@ -833,6 +833,9 @@
 	icon_state = "hair_tailhair2"
 	ckeys_allowed = list("quotefox")
 
+//Hair gradients
+
+
 /datum/sprite_accessory/hair_gradient
 	icon = 'icons/mob/hair_gradients.dmi'
 

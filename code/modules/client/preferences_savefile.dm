@@ -349,6 +349,8 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["skin_tone"]			>> skin_tone
 	S["hair_style_name"]	>> hair_style
 	S["facial_style_name"]	>> facial_hair_style
+	S["grad_style"]			>> grad_style
+	S["grad_color"]			>> grad_color
 	S["underwear"]			>> underwear
 	S["undie_color"]		>> undie_color
 	S["undershirt"]			>> undershirt
@@ -609,6 +611,8 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["skin_tone"]			, skin_tone)
 	WRITE_FILE(S["hair_style_name"]	, hair_style)
 	WRITE_FILE(S["facial_style_name"]	, facial_hair_style)
+	WRITE_FILE(S["grad_style"]				, grad_style)
+	WRITE_FILE(S["grad_color"]				, grad_color)
 	WRITE_FILE(S["underwear"]			, underwear)
 	WRITE_FILE(S["body_size"]			, body_size)
 	WRITE_FILE(S["starting_weight"]		, starting_weight)
