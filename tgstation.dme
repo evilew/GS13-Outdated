@@ -914,6 +914,7 @@
 #include "code\game\machinery\syndicatebomb.dm"
 #include "code\game\machinery\teleporter.dm"
 #include "code\game\machinery\transformer.dm"
+#include "code\game\objects\items\dyekit.dm"
 #include "code\game\machinery\washing_machine.dm"
 #include "code\game\machinery\wishgranter.dm"
 #include "code\game\machinery\camera\camera.dm"
