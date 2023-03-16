@@ -135,7 +135,7 @@
 	pH = 8
 
 /datum/reagent/toxin/minttoxin/on_mob_life(mob/living/carbon/M)
-	if(HAS_TRAIT(M, TRAIT_FAT))
+	if(HAS_TRAIT(M, TRAIT_BLOB))
 		M.gib()
 	return ..()
 
@@ -623,7 +623,7 @@
 		M.nutrition = max(M.nutrition - 3, 0) // making the chef more valuable, one meme trap at a time
 	else
 		M.adjust_fatness(-10, FATTENING_TYPE_WEIGHT_LOSS)
-		
+
 	M.overeatduration = 0
 	return ..()
 

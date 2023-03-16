@@ -28,6 +28,9 @@
 
 	fatness += amount_to_change 
 	fatness = max(fatness, MINIMUM_FATNESS_LEVEL) //It would be a little silly if someone got negative fat.
+	if(client.prefs.max_weight)
+		fatness = min(fatness, (client.prefs.max_weight - 1))
+
 	return TRUE
 
 

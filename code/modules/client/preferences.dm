@@ -96,6 +96,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/eye_color = "000"				//Eye color
 	var/wing_color = "fff"				//Wing color
 
+	var/grad_style						//Hair gradient style
+	var/grad_color = "FFFFFF"			//Hair gradient color
+
 	//HS13
 	var/body_size = 100					//Body Size in percent
 	var/can_get_preg = 0				//if they can get preggers
@@ -510,6 +513,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				dat += "<a style='display:block;width:100px' href='?_src_=prefs;preference=facial_hair_style;task=input'>[facial_hair_style]</a>"
 				dat += "<a href='?_src_=prefs;preference=previous_facehair_style;task=input'>&lt;</a> <a href='?_src_=prefs;preference=next_facehair_style;task=input'>&gt;</a><BR>"
 				dat += "<span style='border: 1px solid #161616; background-color: #[facial_hair_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=facial;task=input'>Change</a><BR>"
+
+
+				dat += "<h3>Hair Gradient</h3>"
+
+				dat += "<a style='display:block;width:100px' href='?_src_=prefs;preference=grad_style;task=input'>[grad_style]</a>"
+				dat += "<a href='?_src_=prefs;preference=previous_grad_style;task=input'>&lt;</a> <a href='?_src_=prefs;preference=next_grad_style;task=input'>&gt;</a><BR>"
+				dat += "<span style='border: 1px solid #161616; background-color: #[grad_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=grad_color;task=input'>Change</a><BR>"
+
 
 				dat += "</td>"
 			//Mutant stuff
@@ -1020,6 +1031,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				dat += "<b>Damage Screen Shake:</b> <a href='?_src_=prefs;preference=damagescreenshake'>[(damagescreenshake==1) ? "On" : ((damagescreenshake==0) ? "Off" : "Only when down")]</a><br>"
 			//GS13 stuff goes here
 			dat += "<h2>GS13 Preferences</h2>"
+
+			dat += "<b>Maximum Weight:</b><a href='?_src_=prefs;preference=max_fatness'>[max_weight == FALSE ? "None" : max_weight]</a><BR>"
 			dat += "<b>NonCon - Weight Gain:</b><a href='?_src_=prefs;preference=noncon_weight_gain'>[noncon_weight_gain == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 
 			dat += "<h2>GS13 Weight Gain</h2>"
@@ -1866,6 +1879,26 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				if("previous_facehair_style")
 					facial_hair_style = previous_list_item(facial_hair_style, GLOB.facial_hair_styles_list)
 
+
+				if("grad_color")
+					var/new_grad_color = input(user, "Choose your character's gradient colour:", "Character Preference","#"+grad_color) as color|null
+					if(new_grad_color)
+						grad_color = sanitize_hexcolor(new_grad_color, 6)
+
+				if("grad_style")
+					var/new_grad_style
+					new_grad_style = input(user, "Choose your character's hair gradient style:", "Character Preference") as null|anything in GLOB.hair_gradients_list
+					if(new_grad_style)
+						grad_style = new_grad_style
+
+				if("next_grad_style")
+					grad_style = next_list_item(grad_style, GLOB.hair_gradients_list)
+
+				if("previous_grad_style")
+					grad_style = previous_list_item(grad_style, GLOB.hair_gradients_list)
+
+
+
 				if("cycle_bg")
 					bgstate = next_list_item(bgstate, bgstate_options)
 
@@ -2559,6 +2592,30 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				
 				if("noncon_weight_gain")
 					noncon_weight_gain = !noncon_weight_gain
+				if("max_fatness")
+					var/pickedweight = input(user, "Choose your max fatness level, your weight will not go beyond this. None will let you gain without a limit", "Character Preference", "None")  as null|anything in list("None", "Fat", "Fatter", "Very Fat", "Obese", "Morbidly Obese", "Extremely Obese", "Barely Mobile", "Immobile")
+					if(pickedweight)
+						switch(pickedweight)
+							if("None")
+								max_weight = FALSE 
+							if("Fat")
+								max_weight = FATNESS_LEVEL_FATTER 
+							if("Fatter")
+								max_weight = FATNESS_LEVEL_VERYFAT
+							if("Very Fat")
+								max_weight = FATNESS_LEVEL_OBESE
+							if("Obese")
+								max_weight = FATNESS_LEVEL_MORBIDLY_OBESE
+							if("Morbidly Obese")
+								max_weight = FATNESS_LEVEL_EXTREMELY_OBESE
+							if("Extremely Obese")
+								max_weight = FATNESS_LEVEL_BARELYMOBILE
+							if("Barely Mobile")
+								max_weight = FATNESS_LEVEL_IMMOBILE
+							if("Immobile")
+								max_weight = FATNESS_LEVEL_BLOB
+
+
 
 				if("inflatable_belly")
 					features["inflatable_belly"] = !features["inflatable_belly"]
@@ -2865,6 +2922,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.skin_tone = skin_tone
 	character.hair_style = hair_style
 	character.facial_hair_style = facial_hair_style
+
+	character.grad_style = grad_style
+	character.grad_color = grad_color
 	character.underwear = underwear
 
 	character.saved_underwear = underwear

@@ -85,8 +85,6 @@
 	if(!mob.Process_Spacemove(direct))
 		return FALSE
 		
-	if(HAS_TRAIT(mob,TRAIT_BLOB) && HAS_TRAIT(mob,TRAIT_WEAKLEGS)) // GS13 are we too fat to move? 
-		return FALSE	
 	//We are now going to move
 	var/add_delay = mob.movement_delay()
 	mob.set_glide_size(DELAY_TO_GLIDE_SIZE(add_delay * (((direct & 3) && (direct & 12)) ? 2 : 1))) // set it now in case of pulled objects
