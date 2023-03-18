@@ -1,11 +1,11 @@
 /obj/item/gun/magic/wand/food
-	name = "wand of gluttony"
-	desc = "summons delicious fattening foods"
+	name = "Wand of Gluttony"
+	desc = "Summons delicious fattening foods"
 	max_charges = 15
 	ammo_type = /obj/item/ammo_casing/magic/food
 
 /obj/item/gun/magic/wand/food/overpowered //This is a more overpowered version of the item
-	name = "strong wand of gluttony"
+	name = "Strong wand of Gluttony"
 	max_charges = 100
 	ammo_type = /obj/item/ammo_casing/magic/food/strong
 
@@ -24,7 +24,6 @@
 		/obj/item/reagent_containers/food/snacks/donut/plain,
 		/obj/item/reagent_containers/food/snacks/donut/glaze,
 		/obj/item/reagent_containers/food/snacks/store/cake/cheese,
-		/obj/item/reagent_containers/food/snacks/store/cake/birthday,
 		/obj/item/reagent_containers/food/snacks/store/cake/chocolate,
 		/obj/item/reagent_containers/food/snacks/hotdog,
 		/obj/item/reagent_containers/food/snacks/pizza/margherita,
