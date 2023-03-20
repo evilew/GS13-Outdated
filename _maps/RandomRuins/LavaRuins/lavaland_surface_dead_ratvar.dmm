@@ -155,6 +155,12 @@
 /obj/item/stack/tile/brass/fifty,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors/unexplored)
+"H" = (
+/obj/item/trash/fatoray_scrap2,
+/turf/open/floor/clockwork{
+	initial_gas_mix = "o2=14;n2=23;TEMP=300"
+	},
+/area/lavaland/surface/outdoors/unexplored)
 
 (1,1,1) = {"
 a
@@ -716,7 +722,7 @@ b
 h
 h
 h
-h
+H
 h
 m
 b

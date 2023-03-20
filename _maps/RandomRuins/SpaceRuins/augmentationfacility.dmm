@@ -288,6 +288,12 @@
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plasteel,
 /area/ruin/powered)
+"Z" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/trash/fatoray_scrap1,
+/turf/open/floor/plasteel,
+/area/ruin/powered)
 
 (1,1,1) = {"
 a
@@ -451,7 +457,7 @@ c
 d
 g
 o
-o
+Z
 y
 Q
 S

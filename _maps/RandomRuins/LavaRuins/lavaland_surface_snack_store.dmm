@@ -1090,6 +1090,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/item/trash/fatoray_scrap1,
 /turf/open/floor/concrete,
 /area/ruin/powered/seedvault{
 	name = "Snack Store"
