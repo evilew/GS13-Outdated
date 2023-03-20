@@ -3334,6 +3334,7 @@
 #include "GainStation13\code\modules\research\designs\nutri_designs.dm"
 #include "GainStation13\code\modules\vending\gatocola.dm"
 #include "GainStation13\code\modules\vending\mealdor.dm"
+#include "GainStation13\code\obj\items\minor_items.dm"
 #include "GainStation13\code\obj\structure\scale.dm"
 #include "GainStation13\code\obj\weapons\fatoray.dm"
 #include "hyperstation\code\__DEFINES\economy.dm"

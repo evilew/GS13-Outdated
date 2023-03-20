@@ -1155,9 +1155,9 @@
 	id = "nutritech"
 	display_name = "Nutritional Technology"
 	description = "Ending world hunger was never made easier!"
-	prereq_ids = list("biotech") //remember to add "engineering"
+	prereq_ids = list("biotech") // add "engineering" if the designs get complicated later on
 	design_ids = list("calorite_collar")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10) //REMEMBER TO TWEAK VALUES!
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	boost_item_paths = list(/obj/item/gun/energy/fatoray, /obj/item/gun/energy/fatoray/cannon, /obj/item/trash/fatoray_scrap1, /obj/item/trash/fatoray_scrap2)
 	export_price = 5000
 	hidden = TRUE
@@ -1166,9 +1166,9 @@
 	id = "nutritech_tools"
 	display_name = "Nutri-Tech Tools"
 	description = "Ever wanted to reach your daily caloric intake in just 5 seconds?"
-	prereq_ids = list("biotech") //remember to add "adv_engi" and weapons
-	design_ids = list("fatoray_weak", "fatoray_cannon")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 20)
+	prereq_ids = list("biotech", "adv_engi")
+	design_ids = list("fatoray_weak", "fatoray_cannon_weak")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
 	boost_item_paths = list(/obj/item/gun/energy/fatoray, /obj/item/gun/energy/fatoray/cannon, /obj/item/trash/fatoray_scrap1, /obj/item/trash/fatoray_scrap2)
 	export_price = 10000
 	hidden = TRUE
