@@ -24,6 +24,8 @@
 		/obj/item/reagent_containers/food/snacks/donut/plain,
 		/obj/item/reagent_containers/food/snacks/donut/glaze,
 		/obj/item/reagent_containers/food/snacks/store/cake/cheese,
+		/obj/item/reagent_containers/food/snacks/store/cake/bscc,
+		/obj/item/reagent_containers/food/snacks/store/cake/bsvc,
 		/obj/item/reagent_containers/food/snacks/store/cake/chocolate,
 		/obj/item/reagent_containers/food/snacks/hotdog,
 		/obj/item/reagent_containers/food/snacks/pizza/margherita,

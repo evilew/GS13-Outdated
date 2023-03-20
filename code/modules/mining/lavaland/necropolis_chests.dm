@@ -65,6 +65,8 @@
 			new /obj/item/circuitboard/machine/plantgenes/vault
 		if(23)
 			new /obj/item/grenade/clusterbuster/soap(src)
+			new /obj/item/grenade/chem_grenade/glitter/pink(src)
+			new /obj/item/grenade/chem_grenade/glitter/blue(src)
 		if(24)
 			new /obj/item/reagent_containers/food/drinks/bottle/holywater/hell(src)
 			new /obj/item/clothing/suit/space/hardsuit/ert/paranormal/inquisitor/miner(src)
@@ -79,7 +81,7 @@
 			new /obj/item/clothing/neck/necklace/memento_mori(src)
 		if(29)
 			new /obj/item/book/granter/spell/fattening(src)
-			new /obj/item/reagent_containers/glass/bottle/weightgain(src)
+			new /obj/item/grenade/chem_grenade/lipoifier_weak(src)
 		if(30)
 			new /obj/item/book/granter/spell/fattening/transfer(src)
 			new /obj/item/book/granter/spell/fattening/steal (src)

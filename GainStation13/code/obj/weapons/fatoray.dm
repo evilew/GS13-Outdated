@@ -36,7 +36,7 @@
 	icon = 'GainStation13/icons/obj/fatoray.dmi'               /// REPLACE THESE LATER WITH UNIQUE SPRITES - Sono
 	icon_state = "fatoray_cannon"
 	recoil = 3
-	can charge = 0
+	can_charge = 0
 	slowdown = 1
 	// charge_sections = 3
 	weapon_weight = WEAPON_HEAVY

@@ -74,6 +74,8 @@
 			/obj/item/cigbutt = 1,
 			/obj/item/trash/cheesie = 1,
 			/obj/item/trash/candy = 1,
+			/obj/item/trash/fatoray_scrap1 = 1,
+			/obj/item/trash/fatoray_scrap2 = 1,
 			/obj/item/trash/chips = 1,
 			/obj/item/reagent_containers/food/snacks/deadmouse = 1,
 			/obj/item/trash/pistachios = 1,
