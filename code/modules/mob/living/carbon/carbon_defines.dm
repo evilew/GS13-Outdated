@@ -64,3 +64,4 @@
 
 
 	var/drunkenness = 0 //Overall drunkenness - check handle_alcohol() in life.dm for effects
+	var/burpyness = 0 // GS13 - dumb name, I know. Trying to keep it closely related to "drunkenness"

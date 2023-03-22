@@ -3337,6 +3337,7 @@
 #include "GainStation13\code\obj\items\minor_items.dm"
 #include "GainStation13\code\obj\structure\scale.dm"
 #include "GainStation13\code\obj\weapons\fatoray.dm"
+#include "GainStation13\code\modules\food_and_drinks\drinks\drinks.dm"
 #include "hyperstation\code\__DEFINES\economy.dm"
 #include "hyperstation\code\__DEFINES\wendigo.dm"
 #include "hyperstation\code\controllers\subsystem\economy.dm"

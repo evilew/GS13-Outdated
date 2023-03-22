@@ -18,7 +18,8 @@
 				)
 	premium = list(
 				/obj/item/reagent_containers/food/drinks/soda_cans/air = 20,
-
+				/obj/item/reagent_containers/food/drinks/soda_cans/fizzwiz = 5,
+				/obj/item/reagent_containers/food/drinks/soda_cans/soothseltz = 8,
 				)
 
 	refill_canister = /obj/item/vending_refill/mealdor
