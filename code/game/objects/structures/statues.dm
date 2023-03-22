@@ -333,7 +333,7 @@
 	var/active = null
 	var/last_event = 0
 
-/obj/structure/statue/calorite/fatty/proc/beacon()
+/obj/structure/statue/calorite/fatty/proc/beckon()
 	if(!active)
 		if(world.time > last_event+15)
 			active = 1
@@ -344,70 +344,43 @@
 			return
 	return
 
+/obj/structure/statue/calorite/fatty/proc/statue_fatten(mob/living/carbon/M)
+	if(!M.adjust_fatness(20, FATTENING_TYPE_ITEM))
+		to_chat(M, "<span class='warning'>Nothing happens.</span>")
+		return 
+
+	if(M.fatness < FATNESS_LEVEL_FATTER)
+		to_chat(M, "<span class='warning'>The moment your hand meets the statue, you feel a little warmer...</span>")
+	else if(M.fatness < FATNESS_LEVEL_OBESE)
+		to_chat(M, "<span class='warning'>Upon each poke of the statue, you feel yourself get a little heavier.</span>")
+	else if(M.fatness < FATNESS_LEVEL_EXTREMELY_OBESE)
+		to_chat(M, "<span class='warning'>With each touch you keep getting fatter... But the fatter you grow, the more enticed you feel to poke the statue.</span>")
+	else if(M.fatness < FATNESS_LEVEL_BARELYMOBILE)
+		to_chat(M, "<span class='warning'>The world around you blurs as you focus on prodding the statue, your waistline widening further...</span>")
+	else if(M.fatness < FATNESS_LEVEL_IMMOBILE)
+		to_chat(M, "<span class='warning'>A whispering voice gently compliments your massive body, your own mind begging to touch the statue more.</span>")
+	else
+		to_chat(M, "<span class='warning'>You can barely reach the statue past your floor-covering stomach! And yet, it still calls to you...</span>")
+
 /obj/structure/statue/calorite/fatty/Bumped(atom/movable/AM)
-	beacon()
+	beckon()
 	..()
 
 /obj/structure/statue/calorite/fatty/Crossed(var/mob/AM)
 	.=..()
 	if(!.)
 		if(istype(AM))
-			beacon()
+			beckon()
 
 /obj/structure/statue/calorite/fatty/Moved(atom/movable/AM)
-	beacon()
+	beckon()
 	..()
 
 /obj/structure/statue/calorite/fatty/attackby(obj/item/W, mob/living/carbon/M, params)
-	if(!M.adjust_fatness(20, FATTENING_TYPE_ITEM))
-		to_chat(M, "<span class='warning'>Nothing happens.</span>")
-		return
-
-	if(M.fatness < 200)
-		to_chat(M, "<span class='warning'>The moment your hand meets the statue, you feel a little warmer...</span>")
-	if(HAS_TRAIT(M, TRAIT_FAT))
-		to_chat(M, "<span class='warning'>Upon each poke of the statue, you feel yourself get a little heavier.</span>")
-	if(HAS_TRAIT(M, TRAIT_OBESE))
-		to_chat(M, "<span class='warning'>With each touch you keep getting fatter... But the fatter you grow, the more enticed you feel to poke the statue.</span>")
-	if(HAS_TRAIT(M, TRAIT_MORBIDLYOBESE))
-		to_chat(M, "<span class='warning'>The world around you blurs as you focus on prodding the statue, your waistline widening further...</span>")
-	if(HAS_TRAIT(M, TRAIT_IMMOBILE))
-		to_chat(M, "<span class='warning'>A whispering voice gently compliments your massive body, your own mind begging to touch the statue more.</span>")
-	if(HAS_TRAIT(M, TRAIT_BLOB))
-		to_chat(M, "<span class='warning'>You can barely reach the statue past your floor-covering stomach! And yet, it still calls to you...</span>")
+	statue_fatten(M)
 
 /obj/structure/statue/calorite/fatty/attack_hand(mob/living/carbon/M)
-	if(!M.adjust_fatness(20, FATTENING_TYPE_ITEM))
-		to_chat(M, "<span class='warning'>Nothing happens.</span>")
-		return
-
-	if(M.fatness < 200)
-		to_chat(M, "<span class='warning'>The moment your hand meets the statue, you feel a little warmer...</span>")
-	if(HAS_TRAIT(M, TRAIT_FAT))
-		to_chat(M, "<span class='warning'>Upon each poke of the statue, you feel yourself get a little heavier.</span>")
-	if(HAS_TRAIT(M, TRAIT_OBESE))
-		to_chat(M, "<span class='warning'>With each touch you keep getting fatter... But the fatter you grow, the more enticed you feel to poke the statue.</span>")
-	if(HAS_TRAIT(M, TRAIT_MORBIDLYOBESE))
-		to_chat(M, "<span class='warning'>The world around you blurs as you focus on prodding the statue, your waistline widening further...</span>")
-	if(HAS_TRAIT(M, TRAIT_IMMOBILE))
-		to_chat(M, "<span class='warning'>A whispering voice gently compliments your massive body, your own mind begging to touch the statue more.</span>")
-	if(HAS_TRAIT(M, TRAIT_BLOB))
-		to_chat(M, "<span class='warning'>You can barely reach the statue past your floor-covering stomach! And yet, it still calls to you...</span>")
+	statue_fatten(M)
 
 /obj/structure/statue/calorite/fatty/attack_paw(mob/living/carbon/M)
-	if(!M.adjust_fatness(20, FATTENING_TYPE_ITEM))
-		to_chat(M, "<span class='warning'>Nothing happens.</span>")
-		return
-
-	if(M.fatness < 200)
-		to_chat(M, "<span class='warning'>The moment your hand meets the statue, you feel a little warmer...</span>")
-	if(HAS_TRAIT(M, TRAIT_FAT))
-		to_chat(M, "<span class='warning'>Upon each poke of the statue, you feel yourself get a little heavier.</span>")
-	if(HAS_TRAIT(M, TRAIT_OBESE))
-		to_chat(M, "<span class='warning'>With each touch you keep getting fatter... But the fatter you grow, the more enticed you feel to poke the statue.</span>")
-	if(HAS_TRAIT(M, TRAIT_MORBIDLYOBESE))
-		to_chat(M, "<span class='warning'>The world around you blurs as you focus on prodding the statue, your waistline widening further...</span>")
-	if(HAS_TRAIT(M, TRAIT_IMMOBILE))
-		to_chat(M, "<span class='warning'>A whispering voice gently compliments your massive body, your own mind begging to touch the statue more.</span>")
-	if(HAS_TRAIT(M, TRAIT_BLOB))
-		to_chat(M, "<span class='warning'>You can barely reach the statue past your floor-covering stomach! And yet, it still calls to you...</span>")
+	statue_fatten(M)
