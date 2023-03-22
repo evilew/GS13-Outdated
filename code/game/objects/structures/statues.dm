@@ -349,17 +349,17 @@
 		to_chat(M, "<span class='warning'>Nothing happens.</span>")
 		return 
 
-	if(M.fatness < FATNESS_LEVEL_FAT)
+	if(M.fatness < FATNESS_LEVEL_FATTER)
 		to_chat(M, "<span class='warning'>The moment your hand meets the statue, you feel a little warmer...</span>")
-	else if(M.fatness < FATNESS_LEVEL_VERYFAT)
+	else if(M.fatness < FATNESS_LEVEL_OBESE)
 		to_chat(M, "<span class='warning'>Upon each poke of the statue, you feel yourself get a little heavier.</span>")
-	else if(M.fatness < FATNESS_LEVEL_MORBIDLY_OBESE)
+	else if(M.fatness < FATNESS_LEVEL_EXTREMELY_OBESE)
 		to_chat(M, "<span class='warning'>With each touch you keep getting fatter... But the fatter you grow, the more enticed you feel to poke the statue.</span>")
 	else if(M.fatness < FATNESS_LEVEL_BARELYMOBILE)
 		to_chat(M, "<span class='warning'>The world around you blurs as you focus on prodding the statue, your waistline widening further...</span>")
 	else if(M.fatness < FATNESS_LEVEL_IMMOBILE)
 		to_chat(M, "<span class='warning'>A whispering voice gently compliments your massive body, your own mind begging to touch the statue more.</span>")
-	else if(M.fatness < FATNESS_LEVEL_BLOB)
+	else
 		to_chat(M, "<span class='warning'>You can barely reach the statue past your floor-covering stomach! And yet, it still calls to you...</span>")
 
 /obj/structure/statue/calorite/fatty/Bumped(atom/movable/AM)
@@ -384,5 +384,3 @@
 
 /obj/structure/statue/calorite/fatty/attack_paw(mob/living/carbon/M)
 	statue_fatten(M)
-
-
