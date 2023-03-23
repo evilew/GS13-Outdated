@@ -5,9 +5,7 @@
 	},
 /obj/item/trash/popcorn,
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "ab" = (
 /obj/machinery/vending/gato,
 /obj/structure/sign/poster/contraband/robust_softdrinks{
@@ -15,9 +13,7 @@
 	},
 /obj/machinery/light,
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "ac" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
@@ -26,9 +22,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "ad" = (
 /obj/structure/table,
 /obj/item/stack/spacecash/c1,
@@ -45,25 +39,19 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "ae" = (
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/public/glass,
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "af" = (
 /turf/open/floor/concrete,
 /area/lavaland/surface/outdoors)
 "ag" = (
 /obj/machinery/smartfridge/food,
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "ah" = (
 /obj/item/cardboard_cutout{
 	icon_state = "cutout_viva";
@@ -74,63 +62,47 @@
 	pixel_x = -10
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "aj" = (
 /obj/structure/chair/stool/brass,
 /turf/open/floor/concrete,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "ak" = (
 /obj/item/cardboard_cutout{
 	icon_state = "cutout_lusty"
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "al" = (
 /obj/structure/window/reinforced/tinted{
 	dir = 4
 	},
-/obj/structure/filingcabinet/security,
+/obj/structure/filingcabinet,
 /obj/structure/fluff/paper,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "an" = (
 /obj/machinery/computer/slot_machine,
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "ap" = (
 /obj/machinery/vending/kink,
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "aq" = (
 /obj/machinery/vending/snack/random,
 /obj/structure/sign/poster/contraband/shamblers_juice{
 	pixel_y = -32
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "as" = (
 /obj/structure/sign/poster/contraband/energy_swords{
 	pixel_x = 32
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "au" = (
 /obj/structure/closet,
 /obj/item/gun/ballistic/shotgun,
@@ -145,18 +117,14 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "aw" = (
 /obj/machinery/vending/coffee,
 /obj/structure/sign/poster/contraband/eat{
 	pixel_x = -32
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "ax" = (
 /obj/structure/window/reinforced/tinted{
 	dir = 4
@@ -164,40 +132,28 @@
 /obj/structure/table,
 /obj/item/flashlight/lamp,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "az" = (
 /turf/open/floor/concrete,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "aB" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "aF" = (
 /obj/machinery/door/airlock/public,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "aJ" = (
 /obj/machinery/vending/games,
 /obj/structure/sign/poster/contraband/space_cola{
 	pixel_y = -32
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "aK" = (
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "aL" = (
 /obj/machinery/computer/arcade/orion_trail{
 	dir = 4
@@ -206,18 +162,14 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "aO" = (
 /turf/template_noop,
 /area/template_noop)
 "aP" = (
 /obj/structure/ore_box,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "aS" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -26
@@ -230,15 +182,11 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/freezer,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "aT" = (
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "aU" = (
 /obj/machinery/computer/arcade/amputation{
 	dir = 4
@@ -250,35 +198,25 @@
 	dir = 8
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "aV" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "aX" = (
 /obj/structure/sign/poster/contraband/eat{
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "aY" = (
 /turf/closed/wall,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bb" = (
 /obj/machinery/door/window/southright,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bc" = (
 /obj/machinery/vending/mealdor,
 /obj/structure/sign/poster/contraband/donut_corp{
@@ -288,14 +226,10 @@
 	dir = 8
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "be" = (
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bg" = (
 /obj/structure/rack/shelf,
 /obj/structure/rack/shelf,
@@ -303,15 +237,11 @@
 /obj/item/stack/packageWrap,
 /obj/item/stack/packageWrap,
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bh" = (
 /obj/structure/closet/crate/large,
 /turf/open/floor/concrete,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bi" = (
 /obj/item/cigbutt{
 	pixel_x = -10;
@@ -319,15 +249,11 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/concrete,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bk" = (
 /obj/structure/closet/crate/freezer,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bl" = (
 /obj/structure/rack/shelf,
 /obj/item/reagent_containers/food/snacks/popcorn,
@@ -339,9 +265,7 @@
 	},
 /obj/machinery/light,
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bm" = (
 /obj/structure/rack/shelf,
 /obj/structure/sign/poster/contraband/corn_oil{
@@ -355,46 +279,34 @@
 	pixel_x = 4
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bn" = (
 /turf/open/floor/plasteel/freezer,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bp" = (
 /obj/item/cardboard_cutout{
 	icon_state = "cutout_clown"
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bq" = (
 /obj/structure/rack,
 /obj/item/camera,
 /obj/item/camera_film,
 /obj/item/camera_film,
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bu" = (
 /obj/structure/sign/poster/contraband/pwr_game{
 	pixel_x = 32
 	},
 /obj/item/trash/raisins,
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bv" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bx" = (
 /obj/structure/rack/shelf,
 /obj/item/reagent_containers/food/snacks/soyfood,
@@ -405,18 +317,14 @@
 	pixel_x = 6
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bA" = (
 /obj/structure/sign/poster/official/cohiba_robusto_ad{
 	pixel_x = 32
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bB" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -426,9 +334,7 @@
 	pixel_y = -7
 	},
 /turf/open/floor/plasteel/freezer,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bF" = (
 /obj/structure/rack/shelf,
 /obj/item/vending_refill/kink,
@@ -440,24 +346,18 @@
 	},
 /obj/item/vending_refill/boozeomat,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bG" = (
 /obj/structure/window/reinforced/survival_pod{
 	dir = 9
 	},
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bH" = (
 /obj/structure/table,
 /obj/machinery/microwave,
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bI" = (
 /obj/structure/rack/shelf,
 /obj/structure/rack/shelf,
@@ -474,50 +374,38 @@
 	pixel_x = 8
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bM" = (
 /obj/structure/closet/crate/secure/loot,
 /obj/machinery/light/small{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bT" = (
 /obj/structure/table,
 /obj/machinery/chem_dispenser/drinks/fullupgrade{
 	dir = 1
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bW" = (
 /obj/machinery/vending/cola/shamblers,
 /turf/open/floor/concrete,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bX" = (
 /obj/structure/chair/office/light{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "bZ" = (
 /obj/machinery/vending/boozeomat/all_access,
 /obj/structure/sign/poster/contraband/red_rum{
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "ca" = (
 /obj/structure/rack/shelf,
 /obj/item/reagent_containers/food/snacks/cheesiehonkers,
@@ -528,9 +416,7 @@
 	pixel_x = 4
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "ci" = (
 /obj/item/trash/boritos,
 /obj/effect/decal/cleanable/dirt,
@@ -546,15 +432,11 @@
 /obj/item/stack/sheet/cardboard,
 /obj/item/stack/sheet/cardboard,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "cl" = (
 /obj/structure/fluff/paper/stack,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "cp" = (
 /obj/machinery/door/window/survival_pod{
 	dir = 8
@@ -567,15 +449,11 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "cs" = (
 /obj/machinery/smartfridge/chemistry/preloaded,
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "cx" = (
 /obj/effect/mapping_helpers/no_lava,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
@@ -583,22 +461,16 @@
 "cC" = (
 /obj/machinery/vending/cola/starkist,
 /turf/open/floor/concrete,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "cD" = (
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/public,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "cG" = (
 /obj/machinery/vending/cigarette,
 /turf/open/floor/concrete,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "cH" = (
 /obj/structure/table,
 /obj/item/paper_bin{
@@ -610,9 +482,7 @@
 	pixel_y = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "eo" = (
 /obj/structure/mirror{
 	icon_state = "mirror_broke";
@@ -622,9 +492,7 @@
 	pixel_y = 22
 	},
 /turf/open/floor/plasteel/freezer,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "eE" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
@@ -632,61 +500,45 @@
 /obj/effect/turf_decal/tile/brown,
 /obj/item/trash/pistachios,
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "eF" = (
 /obj/machinery/door/airlock/public,
 /turf/open/floor/plasteel/freezer,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "fI" = (
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "ga" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/concrete,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "gU" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "ha" = (
 /obj/machinery/light/small{
 	dir = 4
 	},
 /turf/open/floor/concrete,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "ix" = (
 /obj/structure/closet/crate/trashcart,
 /obj/item/seeds/cannabis/rainbow,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/concrete,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "iL" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/sillycup/smallcarton,
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "iO" = (
 /obj/structure/rack,
 /obj/item/storage/fancy/candle_box,
@@ -694,18 +546,14 @@
 /obj/item/lighter,
 /obj/item/storage/fancy/cigarettes/smokekins,
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "jn" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -26
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "mG" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/concrete,
@@ -714,9 +562,7 @@
 /obj/structure/fans/tiny,
 /obj/machinery/door/poddoor/shutters,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "np" = (
 /obj/item/radio{
 	pixel_x = 8
@@ -726,15 +572,11 @@
 "oC" = (
 /obj/structure/closet/crate/large,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "pb" = (
 /obj/structure/closet/emcloset,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "pg" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen,
@@ -742,9 +584,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "pQ" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/snacks/carneburrito{
@@ -755,33 +595,25 @@
 	pixel_x = 5
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "qt" = (
 /obj/machinery/camera{
 	c_tag = "Courtroom - Aft";
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "qD" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/brown,
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "sq" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/freezer,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "tc" = (
 /obj/structure/rack/shelf,
 /obj/item/reagent_containers/food/snacks/chips,
@@ -793,9 +625,7 @@
 	},
 /obj/machinery/camera,
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "uq" = (
 /obj/structure/toilet{
 	dir = 1
@@ -804,9 +634,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/freezer,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "uC" = (
 /obj/structure/rack/shelf,
 /obj/item/reagent_containers/food/snacks/syndicake,
@@ -817,24 +645,18 @@
 	pixel_y = 4
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "uO" = (
 /obj/structure/closet/crate/trashcart,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/concrete,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "vf" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/open/floor/concrete,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "xX" = (
 /obj/structure/rack/shelf,
 /obj/item/reagent_containers/food/drinks/soda_cans/cola{
@@ -850,30 +672,22 @@
 	pixel_x = 8
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "yU" = (
 /obj/machinery/computer/security/telescreen/entertainment,
 /turf/closed/wall,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "zP" = (
 /obj/item/cigbutt,
 /turf/open/floor/concrete,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "Al" = (
 /obj/item/storage/toolbox/mechanical{
 	pixel_x = -3;
 	pixel_y = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "AT" = (
 /obj/structure/safe,
 /obj/machinery/light/small{
@@ -887,15 +701,11 @@
 /obj/item/clothing/mask/chameleon,
 /obj/item/clothing/head/chameleon,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "Bp" = (
 /obj/machinery/door/airlock/public,
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "BC" = (
 /obj/structure/rack,
 /obj/item/toy/cards/deck/syndicate{
@@ -908,9 +718,7 @@
 	pixel_x = -4
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "Dz" = (
 /obj/structure/rack/shelf,
 /obj/item/reagent_containers/food/drinks/soda_cans/thirteenloko{
@@ -926,9 +734,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "EY" = (
 /obj/structure/rack/shelf,
 /obj/structure/rack/shelf,
@@ -945,9 +751,7 @@
 	pixel_x = 8
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "Ff" = (
 /obj/structure/rack/shelf,
 /obj/item/reagent_containers/food/snacks/cornchips,
@@ -958,23 +762,17 @@
 	pixel_x = 4
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "HD" = (
 /obj/item/trash/semki,
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "HK" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen,
 /obj/item/storage/fancy/cigarettes/cigpack_robust,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "Jq" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
@@ -983,18 +781,14 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "Kz" = (
 /obj/machinery/smartfridge/chemistry/preloaded,
 /obj/machinery/light{
 	dir = 1
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "Lx" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen,
@@ -1006,9 +800,7 @@
 	pixel_x = -8
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "Nj" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/maintenance,
@@ -1018,17 +810,13 @@
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "Nm" = (
 /obj/machinery/light{
 	dir = 1
 	},
 /turf/open/floor/plasteel/freezer,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "NQ" = (
 /obj/structure/rack/shelf,
 /obj/item/reagent_containers/food/snacks/candy,
@@ -1042,9 +830,7 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "OH" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 4
@@ -1054,9 +840,7 @@
 "Po" = (
 /obj/item/trash/candy,
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "Qg" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
@@ -1064,9 +848,7 @@
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "QR" = (
 /obj/machinery/door/window/survival_pod{
 	dir = 8
@@ -1078,9 +860,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "Rg" = (
 /obj/effect/mapping_helpers/no_lava,
 /obj/effect/mapping_helpers/no_lava,
@@ -1092,9 +872,7 @@
 	},
 /obj/item/trash/fatoray_scrap1,
 /turf/open/floor/concrete,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "RA" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
@@ -1106,9 +884,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/trash/plate,
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "Ux" = (
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
@@ -1116,9 +892,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "VJ" = (
 /obj/structure/toilet{
 	dir = 8
@@ -1126,9 +900,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/mob_spawn/human/skeleton/alive,
 /turf/open/floor/plasteel/freezer,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "VL" = (
 /obj/item/cigbutt{
 	pixel_x = -1
@@ -1146,23 +918,17 @@
 	pixel_y = -6
 	},
 /turf/open/floor/concrete,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "Wy" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/trash/sosjerky,
 /turf/open/floor/plasteel,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "Zb" = (
 /obj/structure/closet/firecloset/full,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "Zi" = (
 /obj/structure/rack/shelf,
 /obj/item/reagent_containers/food/snacks/no_raisin,
@@ -1173,16 +939,12 @@
 	pixel_x = 9
 	},
 /turf/open/floor/mineral/titanium,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 "ZG" = (
 /obj/structure/closet/crate/freezer,
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/dark,
-/area/ruin/powered/seedvault{
-	name = "Snack Store"
-	})
+/area/lavaland/surface/snackstore)
 
 (1,1,1) = {"
 aO
