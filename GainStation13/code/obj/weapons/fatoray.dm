@@ -5,8 +5,12 @@
 	name = "Fatoray"
 	desc = "An energy gun that fattens up anyone it hits."
 	icon = 'GainStation13/icons/obj/fatoray.dmi'
+	lefthand_file = 'GainStation13/icons/obj/guns_lefthand.dmi'
+	righthand_file = 'GainStation13/icons/obj/guns_righthand.dmi'
 	icon_state = "fatoray"
+	item_state = "fatoray"
 	pin = null
+	fire_sound = 'sound/weapons/plasma_cutter.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/fattening)
 
 /obj/item/ammo_casing/energy/fattening
@@ -21,6 +25,8 @@
 	icon_state = "ray"
 	ricochets_max = 50
 	ricochet_chance = 80
+	hitsound = 'sound/weapons/sear.ogg'
+	hitsound_wall = 'sound/weapons/effects/searwall.ogg'
 	is_reflectable = TRUE
 	light_range = 2
 	light_color = LIGHT_COLOR_ORANGE
