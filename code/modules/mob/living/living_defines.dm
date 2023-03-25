@@ -100,6 +100,7 @@
 	//Speech
 	var/stuttering = 0
 	var/slurring = 0
+	var/burpslurring = 0 //GS13
 	var/cultslurring = 0
 	var/derpspeech = 0
 

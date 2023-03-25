@@ -654,12 +654,11 @@
 "sz" = (/obj/structure/table/reinforced,/obj/item/retractor,/obj/item/hemostat,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/white/side{dir = 6},/area/ruin/unpowered/syndicate_lava_base/medbay)
 "sZ" = (/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{dir = 1; frequency = 1442; id_tag = "syndie_lavaland_tox_out"; name = "toxin out"},/turf/open/floor/plating/airless,/area/ruin/unpowered/syndicate_lava_base/engineering)
 "tW" = (/obj/machinery/light/small{dir = 4},/obj/machinery/atmospherics/components/binary/pump/on{target_pressure = 4500},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 8},/obj/machinery/airlock_sensor/incinerator_syndicatelava{pixel_x = 22},/turf/open/floor/engine,/area/ruin/unpowered/syndicate_lava_base/engineering)
-"un" = (/obj/item/toy/plush/awakenedplushie,/obj/effect/decal/cleanable/semen,/turf/open/floor/circuit/green,/area/ruin/unpowered/syndicate_lava_base/telecomms)
+"un" = (/obj/item/toy/plush/nukeplushie,/turf/open/floor/circuit/green,/area/ruin/unpowered/syndicate_lava_base/telecomms)
 "us" = (/obj/effect/turf_decal/loading_area{dir = 9; icon_state = "steel_panel"; name = "steel pannel"},/obj/effect/turf_decal/tile/green{dir = 4},/obj/effect/turf_decal/tile/green,/obj/item/reagent_containers/glass/bucket,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel,/area/ruin/unpowered/syndicate_lava_base/arrivals)
 "ut" = (/obj/effect/decal/cleanable/dirt,/obj/structure/table/reinforced,/obj/item/scalpel,/obj/item/circular_saw{pixel_y = 9},/turf/open/floor/plasteel/white/side{dir = 4},/area/ruin/unpowered/syndicate_lava_base/medbay)
 "uB" = (/obj/item/storage/box/donkpockets{pixel_x = -2; pixel_y = 6},/obj/item/storage/box/donkpockets{pixel_y = 3},/obj/item/storage/box/donkpockets{pixel_x = 2},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 9},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{dir = 9},/obj/structure/cable/yellow{icon_state = "1-8"},/obj/effect/decal/cleanable/dirt,/obj/structure/closet/secure_closet/freezer/kitchen/maintenance{req_access = null},/turf/open/floor/plasteel/dark,/area/ruin/unpowered/syndicate_lava_base/bar)
 "uX" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 9},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{dir = 9},/obj/structure/cable/yellow{icon_state = "4-8"},/turf/open/floor/plasteel,/area/ruin/unpowered/syndicate_lava_base/medbay)
-"vh" = (/obj/item/condom/filled,/turf/open/floor/circuit/green,/area/ruin/unpowered/syndicate_lava_base/telecomms)
 "vx" = (/obj/structure/table/wood,/obj/machinery/chem_dispenser/drinks/beer/fullupgrade{dir = 1},/obj/structure/sign/barsign{pixel_y = -32; req_access = null; req_access_txt = "0"},/turf/open/floor/wood,/area/ruin/unpowered/syndicate_lava_base/bar)
 "vD" = (/obj/structure/closet/emcloset/anchored,/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 6},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3{dir = 6},/obj/structure/cable/yellow{icon_state = "2-4"},/obj/effect/decal/cleanable/dirt,/obj/effect/turf_decal/tile/red{dir = 1},/obj/effect/turf_decal/tile/red{dir = 4},/obj/effect/turf_decal/tile/red{dir = 8},/turf/open/floor/plasteel,/area/ruin/unpowered/syndicate_lava_base/arrivals)
 "wN" = (/obj/machinery/hydroponics/constructable,/obj/structure/window/reinforced{dir = 8},/obj/effect/turf_decal/loading_area{icon_state = "drain"; name = "drain"},/obj/effect/decal/cleanable/dirt,/obj/machinery/firealarm{dir = 1; pixel_y = 24},/turf/open/floor/plasteel/dark,/area/ruin/unpowered/syndicate_lava_base/arrivals)
@@ -764,7 +763,7 @@ aaabababababababababababdGleopjyorjZjNlhlilZlkouovllozjyjDkQaDlnmElooAnclqlrlslt
 aaabababababababababababhalwlwjyjyoHjZlzlAlBlCaklElFuBjyjDkQlHlImElKkQlLlMlNlOEZlPSulQlRnGjuabababaa
 aaababababmnmnmnRuRuRuRumnlTgsmOjynSlVlWlXlYlZmajymcjyjyTpkQmeUgmfYjkUncmhmimjmkmlDGjujujujuabababaa
 aaabababiimnmMmnmpmpIaNZmnmsmsmTjymvmumvjyvxmxjyjyjyjymzocmAmBmCmEmEutncmGmHmImJmKnjjuababababababaa
-aaabababmnunvhmPTimQmRWtmSzVzVyqMYmUEFZvjyjyMnjyvDXamXmYzymZnauXnbnbRancjuneRVngsZNHjuababababababaa
+aaabababmnunmMmPTimQmRWtmSzVzVyqMYmUEFZvjyjyMnjyvDXamXmYzymZnauXnbnbRancjuneRVngsZNHjuababababababaa
 aaabababmnFbnkaEnknlnmmonnrFnonpBkamnrpiQmjPJAnsntRsfDnwhWnynzloRYmECDZInDnEtWnFnGRDjuababababababaa
 aaabababmnmMmMmnnInJnKnLmnmTnQmTfPfPaoarPanTnUnXnXnXfKauhXmTobfkaVcDszjujuofOYjujujuhBababababababaa
 aaabababgmmnmMmnoiojokmnmnmTGYPaPaPaPaJccIPamTgWgWgWgWgXmTmTmTmTmTmTmTmTotFlFRpVabababababababababaa

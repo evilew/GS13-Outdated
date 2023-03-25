@@ -83,7 +83,7 @@
 /obj/effect/gluttony/CanPass(atom/movable/mover, turf/target)//So bullets will fly over and stuff.
 	if(ishuman(mover))
 		var/mob/living/carbon/human/H = mover
-		if(H.nutrition >= FATNESS_LEVEL_FAT)
+		if(H.fatness >= 1000)
 			H.visible_message("<span class='warning'>[H] pushes through [src]!</span>", "<span class='notice'>You've seen and eaten worse than this.</span>")
 			return TRUE
 		else

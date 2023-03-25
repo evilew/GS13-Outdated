@@ -35,7 +35,7 @@
 	var/icon_state_inuse
 	//GS13 EDIT
 	///How much fatness is lost when using the machine?
-	var/loss_per_use = 15 
+	var/loss_per_use = 30
 
 /obj/structure/weightmachine/proc/AnimateMachine(mob/living/user)
 	return

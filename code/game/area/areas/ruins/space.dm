@@ -468,3 +468,38 @@
 /area/ruin/space/has_grav/powered/advancedlab
 	name = "Abductor Replication Lab"
 	icon_state = "yellow"
+
+
+//GS13 RUINS AND OTHER EXCLUSIVE AREAS
+//We should probably move this to our own file later - Sono
+
+/area/crew_quarters/fitness/sauna
+	name = "Saunas"
+	icon_state = "dk_yellow"
+
+/area/xenoarch/caloriteresearch_powered
+	name = "Research Facility Ruins"
+	icon_state = "dk_yellow"
+	power_light = TRUE
+
+/area/xenoarch/caloriteresearch_unpowered
+	name = "Research Facility Ruins"
+	icon_state = "dk_yellow"
+	power_light = TRUE
+
+/area/ruin/space/has_grav/fastfood_main
+	name = "Restaurant Main Area"
+	has_gravity = TRUE
+
+/area/ruin/space/has_grav/fastfood_employee
+	name = "Restaurant Employee Area"
+	has_gravity = TRUE
+
+/area/lavaland/surface/snackstore
+	name = "Snack Store"
+	icon_state = "mining"
+	power_light = TRUE
+
+/area/ruin/space/has_grav/feedersden
+	name = "Unknown Outpost"
+	has_gravity = TRUE

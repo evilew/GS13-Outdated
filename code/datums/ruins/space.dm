@@ -324,6 +324,7 @@
 	suffix = "feeders_den.dmm"
 	name = "Feeder Den"
 	description = "What used to be a small Syndicate prison and interrogration facility has been taken over by a degenerate madman and turned into a den fit for one purpose - to fatten up its captives."
+	placement_weight = 5
 
 /datum/map_template/ruin/space/fastfood //GS13
 	id = "fastfood"

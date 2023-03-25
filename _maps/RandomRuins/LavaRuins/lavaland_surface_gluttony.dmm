@@ -13,6 +13,7 @@
 /area/ruin/powered/gluttony)
 "f" = (
 /obj/item/reagent_containers/syringe/gluttony,
+/obj/item/reagent_containers/glass/bottle/weightgain,
 /turf/open/floor/plasteel/freezer,
 /area/ruin/powered/gluttony)
 "g" = (

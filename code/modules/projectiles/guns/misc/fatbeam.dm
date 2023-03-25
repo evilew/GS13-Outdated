@@ -1,6 +1,6 @@
 /obj/item/gun/fatbeam
 	name = "Fatbeam Gun"
-	desc = "New invention of this sector's most degenerate engineers."
+	desc = "Apparently used to treat malnourished patients from a safe distance... But we all know what it will truly be used for."
 	icon = 'icons/obj/fatbeam.dmi'
 	icon_state = "fatbeam"
 	item_state = "fatbeam"
@@ -113,7 +113,7 @@
 
 /obj/item/gun/fatbeam/proc/on_beam_tick(var/mob/living/target)
 	if(target.health != target.maxHealth)
-		new /obj/effect/temp_visual/heal(get_turf(target), "#FFC2F8")
+		new /obj/effect/temp_visual/heal(get_turf(target), "#fabb62")
 	if(target?.client?.prefs?.weight_gain_weapons)
 		target.nutrition += 50
 	return
