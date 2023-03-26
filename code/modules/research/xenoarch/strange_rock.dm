@@ -122,5 +122,5 @@
 	mineralSpawnChanceList = list(
 		/turf/closed/mineral/uranium/volcanic = 2, /turf/closed/mineral/diamond/volcanic = 1, /turf/closed/mineral/gold/volcanic = 4, /turf/closed/mineral/titanium/volcanic = 4,
 		/turf/closed/mineral/silver/volcanic = 10, /turf/closed/mineral/plasma/volcanic = 15, /turf/closed/mineral/bscrystal/volcanic = 1, /turf/closed/mineral/gibtonite/volcanic = 2,
-		/turf/closed/mineral/iron/volcanic = 40, /turf/closed/mineral/strange = 15)
+		/turf/closed/mineral/iron/volcanic = 40, /obj/item/stack/ore/calorite = 1, /turf/closed/mineral/strange = 15)
 

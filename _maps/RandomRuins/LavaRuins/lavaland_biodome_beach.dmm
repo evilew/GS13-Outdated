@@ -116,7 +116,7 @@
 "sy" = (/obj/effect/turf_decal/caution{dir = 4},/obj/effect/turf_decal/sand,/turf/open/floor/plasteel,/area/ruin/powered/beach)
 "sO" = (/obj/machinery/jukebox/disco/indestructible,/turf/open/floor/light/colour_cycle,/area/ruin/powered/beach)
 "tK" = (/obj/machinery/vending/cola/red,/turf/open/floor/wood,/area/ruin/powered/beach)
-"uH" = (/obj/machinery/vending/snack/orange,/turf/open/floor/wood,/area/ruin/powered/beach)
+"uH" = (/obj/machinery/vending/mealdor,/turf/open/floor/wood,/area/ruin/powered/beach)
 "vl" = (/obj/structure/closet/athletic_mixed,/turf/open/floor/pod/dark,/area/ruin/powered/beach)
 "vY" = (/obj/machinery/hydroponics/constructable,/turf/open/floor/wood,/area/ruin/powered/beach)
 "wY" = (/turf/open/floor/pod/light,/area/ruin/powered/beach)
@@ -138,8 +138,8 @@
 "QR" = (/obj/machinery/vending/autodrobe/all_access,/turf/open/floor/wood,/area/ruin/powered/beach)
 "QS" = (/turf/closed/wall/mineral/wood,/area/ruin/powered/beach)
 "RO" = (/obj/machinery/light,/turf/open/floor/wood,/area/ruin/powered/beach)
-"SX" = (/obj/effect/decal/cleanable/semen,/obj/item/clothing/head/condom,/turf/open/floor/plating/beach/sand,/area/ruin/powered/beach)
-"Tt" = (/obj/structure/bed,/obj/item/bedsheet/brown,/obj/effect/decal/cleanable/femcum,/obj/effect/decal/cleanable/semen,/turf/open/floor/carpet/orange,/area/ruin/powered/beach)
+"SX" = (/obj/effect/turf_decal/sand,/obj/machinery/vending/gato,/turf/open/floor/plasteel,/area/ruin/powered/beach)
+"Tt" = (/obj/structure/bed,/obj/item/bedsheet/brown,/obj/effect/decal/cleanable/femcum,/turf/open/floor/carpet/orange,/area/ruin/powered/beach)
 "TP" = (/obj/machinery/vending/kink,/turf/open/floor/wood,/area/ruin/powered/beach)
 "UM" = (/obj/effect/overlay/palmtree_l,/obj/machinery/light{dir = 4},/turf/open/floor/plating/beach/sand,/area/ruin/powered/beach)
 "VN" = (/obj/machinery/light/small{dir = 4},/turf/open/floor/pod/dark,/area/ruin/powered/beach)
@@ -158,8 +158,8 @@ aaaabWapararazarcefEajaCaDhYaFaEaHaIajaJaKcearQSbebeTtQSaCaCaCQSQSfrQSQSQSbWaaaa
 aabWbWarararararaAaKajaCaCaCaCaCaCaMajaNaKaAapQSQSQSQSQSaCaCaCQSaAaAaAarmHbWbWaa
 aabWaparaOaraOaraAgSajaPaQaPaRajaCaSajaTaKaAapQSpUacqTQSaCaCaCQSaUararaqarapbWaa
 aabWcgararaVararaAaKOlaWaWaWaWajaCaXajaYaKaAarQSmLbebezwaCaCaGQSarbEaZaVarchbWaa
-lFbWararbbarbbaraAaKaKaKoKaKaKbcRObdajaKaKaAarQSbebeKfQSaCaCAIQSarararoDarapbWXr
-aabWararararararaAaKaKGasOsygSajbgajajCPaKaAaUQSQSQSQSQSaCaCuHQSarararararSXbWaa
+lFbWararbbarbbaraAaKaKaKoKaKaKbcRObdajSXaKaAarQSbebeKfQSaCaCAIQSarararoDarapbWXr
+aabWararararararaAaKaKGasOsygSajbgajajCPaKaAaUQSQSQSQSQSaCaCuHQSararararararbWaa
 bWbWbWbWcgarararaAaKaKaKblaKaKcjaBaBcjaKaKaAarQSpUacqTQSaCaCtKQSarbzarchbWbWbWbW
 bWvlHCmhararararaAypaKaKaKaKaKaKaKaKaKaKaKaAarQSmLbebezwaCaCcWQSararararmhDcHCbW
 bWiwVOmhararaUaraAaAaAaAaAaAaAaAaAaAaAaAaAaAarQSbebeKfQSaCaCaCQSararararmhVONMbW

@@ -233,6 +233,7 @@
 "ux" = (/obj/machinery/telecomms/relay/preset/ruskie{use_power = 0},/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/listeningstation)
 "Bs" = (/turf/open/floor/plasteel,/area/ruin/space/has_grav/listeningstation)
 "Lx" = (/obj/effect/turf_decal/stripes/line{dir = 5},/obj/effect/decal/cleanable/blood/drip,/obj/machinery/atmospherics/components/unary/tank/air{dir = 1},/obj/effect/turf_decal/bot,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plating,/area/ruin/space/has_grav/listeningstation)
+"Ny" = (/obj/item/trash/fatoray_scrap2,/turf/open/floor/plating/asteroid/airless,/area/ruin/space/has_grav/listeningstation)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababaaaaaaaaaaaaaaaaaaaa
@@ -264,7 +265,7 @@ aaaaababababababacdMdJdNacaccKcKcKacacdAacacdndndnacacababababaa
 aaaaababababababacdOeAdQaccocScqbTcBcTcDcFaccGbVdKacabababababaa
 aaaaabababababacacacacacacevbZcVcVcJdcdedichcicjdPacabababababaa
 aaaaabababababaceedYdZeaaccMcacPdkcbdodpeyacacacacacababababaaaa
-aaaaabababababababebccedacacacacacacdzdpezaccGbVbWacababababaaaa
+aaaaabababababababebNyedacacacacacacdzdpezaccGbVbWacababababaaaa
 aaaaaaabababababababeeefegedacdEdFctdXehemchcicjdVacababababaaaa
 aaaaababababababababababeneoeiepcxaceqeresacacacacacabababaaaaaa
 aaaaabababababababababababacaccyacacdGdGdGacabababababababaaaaaa

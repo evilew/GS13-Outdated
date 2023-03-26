@@ -573,6 +573,11 @@
 /obj/effect/gibspawner/human,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/ruin/unpowered/xenonest)
+"XC" = (
+/obj/structure/alien/weeds,
+/obj/item/trash/fatoray_scrap2,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/ruin/unpowered/xenonest)
 "ZT" = (
 /obj/effect/mob_spawn/human/corpse/syndicatesoldier,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
@@ -907,7 +912,7 @@ an
 an
 an
 ac
-ag
+XC
 ac
 ac
 an

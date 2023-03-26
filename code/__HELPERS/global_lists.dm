@@ -88,6 +88,16 @@
 
 	init_subtypes(/datum/crafting_recipe, GLOB.crafting_recipes)
 
+
+
+	// Hair Gradients - Initialise all /datum/sprite_accessory/hair_gradient into an list indexed by gradient-style name
+	for(var/path in subtypesof(/datum/sprite_accessory/hair_gradient))
+		var/datum/sprite_accessory/hair_gradient/H = new path()
+		GLOB.hair_gradients_list[H.name] = H
+
+	init_subtypes(/datum/crafting_recipe, GLOB.crafting_recipes)
+
+
 //creates every subtype of prototype (excluding prototype) and adds it to list L.
 //if no list/L is provided, one is created.
 /proc/init_subtypes(prototype, list/L)

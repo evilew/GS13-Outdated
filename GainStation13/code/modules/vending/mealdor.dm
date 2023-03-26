@@ -8,9 +8,10 @@
 	products = list(
 
 				/obj/item/reagent_containers/food/snacks/store/cake/cheese = 10,
-				/obj/item/reagent_containers/food/snacks/store/cake/birthday = 10,
 				/obj/item/reagent_containers/food/snacks/store/cake/pumpkinspice = 10,
 				/obj/item/reagent_containers/food/snacks/store/cake/pound_cake = 8,
+				/obj/item/reagent_containers/food/snacks/cakeslice/bsvc = 5,
+				/obj/item/reagent_containers/food/snacks/cakeslice/bscc = 5,
 //				/obj/item/reagent_containers/food/snacks/donut/purefat = 10,
 				/obj/item/reagent_containers/food/snacks/fries = 10,
 				/obj/item/reagent_containers/food/snacks/donut = 20,

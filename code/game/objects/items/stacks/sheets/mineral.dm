@@ -290,7 +290,7 @@ GLOBAL_LIST_INIT(bananium_recipes, list ( \
 	sheettype = "calorite"
 	materials = list(MAT_CALORITE=MINERAL_MATERIAL_AMOUNT)
 	novariants = TRUE
-	grind_results = list(/datum/reagent/consumable/lipoifier = 10)
+	grind_results = list(/datum/reagent/consumable/lipoifier = 5)
 	point_value = 40
 	merge_type = /obj/item/stack/sheet/mineral/calorite
 

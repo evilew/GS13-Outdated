@@ -247,6 +247,11 @@
 	desc = "A small bottle. Contains XY-rhinovirus culture in synthblood medium."
 	spawned_disease = /datum/disease/advance/cold
 
+/obj/item/reagent_containers/glass/bottle/weightgain //GS13
+	name = "Weight gain culture bottle"
+	desc = "A small bottle. Contains a disease that multiplies victim's adipose."
+	spawned_disease = /datum/symptom/weight_gain
+
 /obj/item/reagent_containers/glass/bottle/flu_virion
 	name = "Flu virion culture bottle"
 	desc = "A small bottle. Contains H13N1 flu virion culture in synthblood medium."

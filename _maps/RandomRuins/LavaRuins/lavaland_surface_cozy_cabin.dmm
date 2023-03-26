@@ -7,7 +7,7 @@
 "k" = (/obj/structure/dresser,/turf/open/floor/carpet/royalblack,/area/survivalpod)
 "l" = (/obj/structure/fireplace,/turf/open/floor/carpet/royalblack,/area/survivalpod)
 "o" = (/obj/item/soap/deluxe,/obj/machinery/shower{dir = 1},/turf/open/floor/plasteel/showroomfloor,/area/survivalpod)
-"p" = (/obj/structure/bed,/obj/item/bedsheet/random,/obj/effect/decal/cleanable/semen,/turf/open/floor/carpet/royalblack,/area/survivalpod)
+"p" = (/obj/structure/bed,/obj/item/bedsheet/random,/turf/open/floor/carpet/royalblack,/area/survivalpod)
 "q" = (/obj/structure/bed/dogbed,/obj/item/toy/plush/beeplushie{pixel_y = -3},/turf/open/floor/grass,/area/survivalpod)
 "r" = (/obj/structure/window/reinforced/tinted,/turf/open/floor/wood,/area/survivalpod)
 "s" = (/obj/structure/flora/ausbushes/lavendergrass,/turf/open/floor/grass,/area/survivalpod)
