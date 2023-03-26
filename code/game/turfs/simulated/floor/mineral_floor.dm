@@ -243,7 +243,7 @@
 // calorite dance floor, groovy! - GS13
 
 /turf/open/floor/mineral/calorite/dance
-	name = "Calorite dancefloor"
+	name = "Calorite dance floor"
 	icon_state = "calorite_dance"
 	floor_tile = /obj/item/stack/tile/mineral/calorite/dance
 	icons = list("calorite_dance","calorite_dam")

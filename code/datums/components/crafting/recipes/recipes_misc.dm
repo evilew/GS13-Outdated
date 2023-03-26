@@ -400,3 +400,11 @@
 	result = /obj/item/bouquet/rose
 	reqs = list(/obj/item/grown/rose = 6)
 	category = CAT_MISC
+
+// ################ GS13 things! ################
+
+/datum/crafting_recipe/caloritedancefloor
+	name = "Calorite dance floor"
+	result = /obj/item/stack/tile/mineral/calorite/dance
+	reqs = list(/obj/item/stack/cable_coil = 3, /obj/item/stack/tile/mineral/calorite = 1)
+	category = CAT_MISC
