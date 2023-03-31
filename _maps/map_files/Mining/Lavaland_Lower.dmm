@@ -6725,9 +6725,7 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 8
 	},
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
-	},
+/turf/open/floor/plating/lavaland_baseturf,
 /area/xenoarch/caloriteresearch_powered)
 "ro" = (
 /obj/machinery/jukebox,
@@ -6804,7 +6802,7 @@
 "sh" = (
 /obj/structure/chair/stool,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/airless,
+/turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "si" = (
 /obj/effect/turf_decal/tile/bar,
@@ -6863,9 +6861,7 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/plasteel,
-/area/xenoarch/bot{
-	name = "Demon Teleporter"
-	})
+/area/ruin/space/has_grav/powered)
 "sx" = (
 /obj/structure/fluff/paper,
 /obj/structure/filingcabinet,
@@ -6986,9 +6982,9 @@
 /turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
 "tz" = (
-/obj/structure/table,
-/turf/open/floor/plasteel/airless,
-/area/xenoarch/caloriteresearch_powered)
+/obj/item/flashlight/lantern,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
 "tA" = (
 /obj/structure/table,
 /obj/item/paper_bin{
@@ -7013,7 +7009,7 @@
 /obj/structure/table,
 /obj/item/storage/box/donkpockets,
 /obj/item/storage/box/donkpockets,
-/turf/open/floor/plasteel/airless,
+/turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "tG" = (
 /obj/structure/chair/office,
@@ -7072,9 +7068,7 @@
 /area/xenoarch/caloriteresearch_powered)
 "uk" = (
 /obj/item/shard,
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
-	},
+/turf/open/floor/plating/lavaland_baseturf,
 /area/xenoarch/caloriteresearch_powered)
 "um" = (
 /obj/structure/table/wood,
@@ -7086,7 +7080,7 @@
 "uq" = (
 /obj/structure/table,
 /obj/machinery/light/small,
-/turf/open/floor/plasteel/airless,
+/turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "ur" = (
 /obj/item/trash/can,
@@ -7330,7 +7324,7 @@
 /area/xenoarch/caloriteresearch_powered)
 "wx" = (
 /obj/structure/tank_dispenser/oxygen,
-/turf/open/floor/plasteel/airless,
+/turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "wy" = (
 /obj/effect/turf_decal/tile/bar{
@@ -7475,9 +7469,7 @@
 	mapped_quantum_pads = list("ldemone","demone")
 	},
 /turf/open/floor/plasteel,
-/area/xenoarch/bot{
-	name = "Demon Teleporter"
-	})
+/area/ruin/space/has_grav/powered)
 "xu" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -7673,7 +7665,7 @@
 	dir = 1;
 	id = "fatchamber"
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plating/lavaland_baseturf,
 /area/xenoarch/caloriteresearch_powered)
 "yN" = (
 /obj/structure/closet/secure_closet/personal,
@@ -7709,7 +7701,7 @@
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "yZ" = (
-/turf/open/floor/plating/airless,
+/turf/open/floor/plating/lavaland_baseturf,
 /area/xenoarch/caloriteresearch_powered)
 "za" = (
 /obj/structure/table,
@@ -7847,7 +7839,7 @@
 "Al" = (
 /obj/structure/holosign/barrier/atmos,
 /obj/structure/lattice,
-/turf/open/floor/plating/airless,
+/turf/open/floor/plating/lavaland_baseturf,
 /area/xenoarch/caloriteresearch_unpowered)
 "Aq" = (
 /obj/structure/table,
@@ -8083,7 +8075,7 @@
 "BG" = (
 /obj/structure/chair/sofa/right,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/airless,
+/turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "BK" = (
 /obj/structure/window/reinforced{
@@ -8117,9 +8109,8 @@
 /turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
 "BV" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/airless,
+/obj/structure/girder,
+/turf/open/floor/plating/lavaland_baseturf,
 /area/xenoarch/caloriteresearch_powered)
 "Cc" = (
 /obj/effect/turf_decal/loading_area,
@@ -8228,7 +8219,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/plasteel/airless,
+/turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "CI" = (
 /obj/effect/decal/cleanable/dirt,
@@ -8315,7 +8306,7 @@
 /area/xenoarch/gen)
 "De" = (
 /obj/machinery/suit_storage_unit/mining,
-/turf/open/floor/plasteel/airless,
+/turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "Dg" = (
 /obj/structure/lattice,
@@ -8346,7 +8337,7 @@
 "Dt" = (
 /obj/effect/decal/cleanable/glass,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/airless,
+/turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "DF" = (
 /obj/structure/fans/tiny/invisible,
@@ -8417,9 +8408,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
-	},
+/turf/open/floor/plating/lavaland_baseturf,
 /area/xenoarch/caloriteresearch_unpowered)
 "Em" = (
 /obj/effect/turf_decal/tile/bar,
@@ -8436,7 +8425,7 @@
 /obj/item/shard{
 	icon_state = "small"
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plating/lavaland_baseturf,
 /area/xenoarch/caloriteresearch_powered)
 "Eq" = (
 /obj/structure/rack/shelf,
@@ -8556,7 +8545,7 @@
 /obj/structure/window/reinforced/tinted{
 	dir = 4
 	},
-/turf/open/floor/plating/airless,
+/turf/open/floor/plating/lavaland_baseturf,
 /area/xenoarch/caloriteresearch_powered)
 "Fk" = (
 /obj/machinery/iv_drip/feeding_tube,
@@ -9001,10 +8990,6 @@
 /obj/machinery/door/airlock/maintenance_hatch,
 /turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
-"IY" = (
-/obj/structure/chair/stool,
-/turf/open/floor/plasteel/airless,
-/area/xenoarch/caloriteresearch_powered)
 "IZ" = (
 /obj/machinery/light/floor,
 /turf/open/floor/pod,
@@ -9070,7 +9055,7 @@
 /obj/machinery/microwave{
 	pixel_y = 6
 	},
-/turf/open/floor/plasteel/airless,
+/turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "Jv" = (
 /obj/structure/cable{
@@ -9325,7 +9310,7 @@
 /area/xenoarch/caloriteresearch_powered)
 "Lj" = (
 /obj/structure/closet/secure_closet/miner,
-/turf/open/floor/plasteel/airless,
+/turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "Lk" = (
 /obj/structure/scale,
@@ -9349,12 +9334,6 @@
 /obj/structure/table,
 /obj/item/clothing/glasses/sunglasses/blindfold,
 /turf/open/floor/plasteel,
-/area/xenoarch/caloriteresearch_powered)
-"LF" = (
-/obj/structure/girder,
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
-	},
 /area/xenoarch/caloriteresearch_powered)
 "LH" = (
 /turf/open/floor/mineral/calorite/strong,
@@ -9402,7 +9381,7 @@
 /area/xenoarch/caloriteresearch_powered)
 "LT" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/airless,
+/turf/open/floor/plating/lavaland_baseturf,
 /area/xenoarch/caloriteresearch_powered)
 "LU" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -9453,9 +9432,7 @@
 /area/xenoarch/caloriteresearch_powered)
 "Ml" = (
 /obj/structure/girder,
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
-	},
+/turf/open/floor/plating/lavaland_baseturf,
 /area/xenoarch/caloriteresearch_unpowered)
 "Mm" = (
 /obj/structure/sink{
@@ -9843,10 +9820,9 @@
 /turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
 "Pc" = (
-/obj/structure/table,
-/obj/machinery/reagentgrinder,
-/turf/open/floor/plasteel/airless,
-/area/xenoarch/caloriteresearch_powered)
+/obj/structure/lattice,
+/turf/open/floor/plating/lavaland_baseturf,
+/area/xenoarch/caloriteresearch_unpowered)
 "Pf" = (
 /obj/structure/table,
 /obj/item/pen,
@@ -9890,7 +9866,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/plasteel/airless,
+/turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "Pr" = (
 /obj/structure/sink{
@@ -10002,12 +9978,8 @@
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/caloriteresearch_powered)
 "Qr" = (
-/obj/machinery/conveyor{
-	dir = 1;
-	id = "fatchamber"
-	},
-/turf/open/floor/plating/airless,
-/area/xenoarch/caloriteresearch_powered)
+/turf/open/floor/plating/lavaland_baseturf,
+/area/xenoarch/caloriteresearch_unpowered)
 "Qy" = (
 /obj/machinery/shower{
 	pixel_y = 19
@@ -10318,7 +10290,7 @@
 /obj/machinery/conveyor{
 	dir = 6
 	},
-/turf/open/floor/plating/airless,
+/turf/open/floor/plating/lavaland_baseturf,
 /area/xenoarch/caloriteresearch_powered)
 "SF" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -10400,7 +10372,7 @@
 /area/xenoarch/caloriteresearch_powered)
 "Tk" = (
 /obj/structure/holosign/barrier/atmos,
-/turf/open/floor/plating/airless,
+/turf/open/floor/plating/lavaland_baseturf,
 /area/xenoarch/caloriteresearch_unpowered)
 "Tn" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
@@ -10466,7 +10438,7 @@
 	dir = 2;
 	id = "fatchamber"
 	},
-/turf/open/floor/plating/airless,
+/turf/open/floor/plating/lavaland_baseturf,
 /area/xenoarch/caloriteresearch_powered)
 "TC" = (
 /obj/structure/table/wood,
@@ -10504,7 +10476,7 @@
 "TM" = (
 /obj/machinery/suit_storage_unit/mining,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/airless,
+/turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "TO" = (
 /obj/structure/window/reinforced/tinted{
@@ -10519,7 +10491,7 @@
 "TP" = (
 /obj/machinery/vending/cigarette,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/airless,
+/turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "TR" = (
 /obj/machinery/light/small{
@@ -10665,7 +10637,7 @@
 /area/xenoarch/caloriteresearch_powered)
 "Vi" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/open/floor/plasteel/airless,
+/turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "Vj" = (
 /obj/structure/table/wood,
@@ -10709,7 +10681,7 @@
 /obj/machinery/conveyor{
 	dir = 2
 	},
-/turf/open/floor/plating/airless,
+/turf/open/floor/plating/lavaland_baseturf,
 /area/xenoarch/caloriteresearch_powered)
 "VD" = (
 /obj/effect/decal/cleanable/blood/innards{
@@ -10731,7 +10703,8 @@
 /turf/open/floor/mineral/calorite,
 /area/xenoarch/caloriteresearch_powered)
 "VL" = (
-/turf/open/floor/plasteel/airless,
+/obj/structure/window/reinforced/fulltile,
+/turf/open/floor/plating/lavaland_baseturf,
 /area/xenoarch/caloriteresearch_powered)
 "VN" = (
 /obj/effect/turf_decal/stripes{
@@ -10923,7 +10896,7 @@
 /area/xenoarch/caloriteresearch_powered)
 "Xo" = (
 /obj/structure/chair/sofa/left,
-/turf/open/floor/plasteel/airless,
+/turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "Xq" = (
 /obj/machinery/computer/crew{
@@ -11181,7 +11154,7 @@
 /obj/item/shard{
 	icon_state = "medium"
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plating/lavaland_baseturf,
 /area/xenoarch/caloriteresearch_powered)
 "ZC" = (
 /obj/machinery/light{
@@ -58125,7 +58098,7 @@ ab
 ab
 ab
 ab
-lQ
+tz
 lQ
 ab
 ab
@@ -58395,7 +58368,7 @@ ab
 ab
 lQ
 lQ
-lQ
+tz
 lQ
 lQ
 BP
@@ -58404,7 +58377,7 @@ ab
 ab
 lQ
 lQ
-lQ
+tz
 ab
 ab
 ab
@@ -61741,7 +61714,7 @@ ab
 ab
 ab
 ab
-lQ
+tz
 lQ
 lQ
 lQ
@@ -62244,7 +62217,7 @@ HJ
 Rh
 Pv
 Pv
-lQ
+tz
 ab
 ab
 BP
@@ -62524,7 +62497,7 @@ yw
 ab
 ab
 lQ
-lQ
+tz
 ab
 ab
 ab
@@ -62730,8 +62703,8 @@ ay
 ay
 ay
 ay
-tZ
-Ou
+Ml
+Qr
 OA
 xY
 Yd
@@ -62987,8 +62960,8 @@ ay
 ay
 ay
 ay
-tZ
-Ou
+Ml
+Qr
 HJ
 Tj
 Cm
@@ -63245,7 +63218,7 @@ ay
 ay
 FV
 Dg
-wF
+Pc
 HJ
 zz
 wI
@@ -63502,7 +63475,7 @@ PJ
 Hz
 Hz
 NN
-Ou
+Qr
 HJ
 Mn
 BL
@@ -63749,17 +63722,17 @@ lQ
 lQ
 lQ
 UO
-tZ
-Ou
-Ou
-Ou
+Ml
+Qr
+Qr
+Qr
 Tk
-wF
-Ou
-Ou
-Ou
-Ou
-Ou
+Pc
+Qr
+Qr
+Qr
+Qr
+Qr
 HJ
 Li
 Vh
@@ -64006,8 +63979,8 @@ lQ
 lQ
 lQ
 lQ
-tZ
-tC
+Ml
+Qr
 yZ
 Gn
 OA
@@ -64263,19 +64236,19 @@ lQ
 lQ
 AQ
 lQ
-tC
-tC
+Qr
+Qr
 yZ
 LT
-NU
+LT
 ZA
-yg
+yZ
 yL
-Qr
-Qr
-Qr
-Qr
-Qr
+yL
+yL
+yL
+yL
+yL
 tH
 Vl
 MV
@@ -64520,20 +64493,20 @@ lQ
 lQ
 lQ
 lQ
-tC
+Qr
 El
 yZ
 yZ
 uk
-SG
-BS
+yZ
+VL
 rk
-yg
-Tt
+yZ
+LT
 En
-Sj
-yg
-yg
+VL
+yZ
+yZ
 Ls
 HJ
 qt
@@ -64778,8 +64751,8 @@ lQ
 lQ
 lQ
 Ml
-Ou
-Gn
+Qr
+BV
 SE
 Fj
 Vy
@@ -65035,7 +65008,7 @@ Cg
 BP
 lQ
 PJ
-Ou
+Qr
 OA
 AT
 Kt
@@ -65292,7 +65265,7 @@ yw
 lQ
 lQ
 PJ
-Ou
+Qr
 Sc
 VU
 Sj
@@ -65549,7 +65522,7 @@ yw
 yw
 yw
 PJ
-Ou
+Qr
 OA
 XI
 If
@@ -65806,7 +65779,7 @@ yw
 yw
 yw
 PJ
-Ou
+Qr
 OA
 Sf
 Kt
@@ -66063,7 +66036,7 @@ yw
 yw
 yw
 PJ
-Ou
+Qr
 RG
 zW
 Sj
@@ -66320,7 +66293,7 @@ yw
 yw
 yw
 PJ
-Ou
+Qr
 OA
 EH
 BM
@@ -66580,10 +66553,10 @@ PJ
 Al
 OA
 OA
-Gn
-yZ
-yZ
-Gn
+OA
+OA
+OA
+OA
 OA
 OA
 OA
@@ -66838,9 +66811,9 @@ Dg
 Dg
 Dg
 Hz
-Hz
-Hz
-Hz
+Qr
+Qr
+Qr
 Oq
 Eg
 DF
@@ -67649,13 +67622,13 @@ At
 Oa
 OA
 xQ
-CI
-VL
+Tt
+Ls
 De
 TM
 Tj
-VL
-VL
+Ls
+Ls
 sh
 sh
 OA
@@ -67906,14 +67879,14 @@ Zs
 Oa
 OA
 wx
-CI
+Tt
 KL
 Ys
-CI
+Tt
 Tj
 Dt
-IY
-tz
+UA
+Cj
 uq
 OA
 ab
@@ -68163,7 +68136,7 @@ Zw
 Oa
 OA
 Pq
-CI
+Tt
 Oq
 Oq
 Oq
@@ -68171,7 +68144,7 @@ Oq
 Oq
 Oq
 Oq
-tz
+Cj
 OA
 ay
 ay
@@ -68420,8 +68393,8 @@ SG
 SG
 OA
 Vi
-CI
-BV
+Tt
+BB
 Oq
 vC
 Tj
@@ -68429,7 +68402,7 @@ KL
 qB
 Oq
 Oq
-LF
+KL
 ay
 ay
 ay
@@ -68678,9 +68651,9 @@ Oa
 OA
 xQ
 Lj
-VL
+Ls
 Lj
-CI
+Tt
 Tj
 BG
 AV
@@ -68940,8 +68913,8 @@ OA
 OA
 OA
 CG
-CI
-CI
+Tt
+Tt
 TP
 OA
 lQ
@@ -69197,9 +69170,9 @@ Ve
 Xq
 Tj
 Xo
-CI
-VL
-Pc
+Tt
+Ls
+IE
 OA
 ab
 ab
@@ -69453,10 +69426,10 @@ wR
 Oa
 On
 Tj
-VL
-VL
-VL
-tz
+Ls
+Ls
+Ls
+Cj
 OA
 ab
 ab
@@ -69710,8 +69683,8 @@ wR
 It
 Oa
 OF
-VL
-VL
+Ls
+Ls
 tE
 Ju
 OA
