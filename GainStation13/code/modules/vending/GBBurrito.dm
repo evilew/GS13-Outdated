@@ -1,5 +1,5 @@
 /obj/item/reagent_containers/food/snacks/gbburrito
-	name = "\improper Gato GutBuster Burrito"
+	name = "\improper Gato's Gas Giant Burrito"
 	icon_state = "gbburrito"
 	desc = "More than three pounds of beans, meat, and cheese wrapped in a greasy tortilla. It's piping hot."
 	trash = null
