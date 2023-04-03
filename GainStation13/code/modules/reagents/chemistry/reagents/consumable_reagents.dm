@@ -53,3 +53,25 @@
 	else
 		M.fullness -= 0
 	..()
+
+//FARTY CHEM
+
+/datum/reagent/consumable/flatulose
+	name = "Flatulose"
+	description = "A sugar largely indigestible to most known organic organisms. Causes frequent flatulence."
+	color = "#634500"
+	reagent_state = LIQUID
+	taste_description = "sulfury sweetness"
+	metabolization_rate = 0.5 * REAGENTS_METABOLISM //Done by Zestyspy, Jan 2023
+
+/datum/reagent/consumable/flatulose/on_mob_life(mob/living/carbon/M)
+	if(M && M?.client?.prefs.weight_gain_chems)
+		if(M.reagents.get_reagent_amount(/datum/reagent/consumable/flatulose) < 1)
+			to_chat(M,"<span class='notice'>You feel substantially bloated...</span>")
+		if(M.reagents.get_reagent_amount(/datum/reagent/consumable/flatulose) > 3)
+			to_chat(M,"<span class='notice'>You feel pretty gassy...</span>")
+			M.emote(pick("brap","fart"))
+		..()
+	else
+		return ..()
+
