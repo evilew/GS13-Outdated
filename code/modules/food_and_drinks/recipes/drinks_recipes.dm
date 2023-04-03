@@ -917,11 +917,3 @@
     id = /datum/reagent/consumable/orange_creamsicle
     results = list(/datum/reagent/consumable/orange_creamsicle = 4)
     required_reagents = list(/datum/reagent/consumable/vanilla = 1, /datum/reagent/consumable/milk = 1, /datum/reagent/consumable/ice = 1, /datum/reagent/consumable/orangejuice = 1)
-
-/datum/chemical_reaction/oily_oafs
-	name = "Oily oafs"
-	id = /datum/reagent/consumable/ethanol/oily_oafs
-	results = list(/datum/reagent/consumable/ethanol/oily_oafs = 2)
-	required_reagents = list(/datum/reagent/consumable/ethanol/beer = 1, /datum/reagent/consumable/cream = 1)
-
-	//b
