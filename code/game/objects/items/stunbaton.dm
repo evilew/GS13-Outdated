@@ -187,8 +187,8 @@
 		stunpwr *= round(stuncharge/hitcost, 0.1)
 
 
-	L.Knockdown(stunpwr)
-	L.adjustStaminaLoss(stunpwr*0.1, affected_zone = (istype(user) ? user.zone_selected : BODY_ZONE_CHEST))//CIT CHANGE - makes stunbatons deal extra staminaloss. Todo: make this also deal pain when pain gets implemented.
+	//L.Knockdown(stunpwr) GS13 change, stun batons now need to hit a person twice to take them down - Eye
+	L.adjustStaminaLoss(stunpwr*0.5, affected_zone = (istype(user) ? user.zone_selected : BODY_ZONE_CHEST))//CIT CHANGE - makes stunbatons deal extra staminaloss. Todo: make this also deal pain when pain gets implemented. //0.1
 	L.apply_effect(EFFECT_STUTTER, stunforce)
 	SEND_SIGNAL(L, COMSIG_LIVING_MINOR_SHOCK)
 	if(user)
