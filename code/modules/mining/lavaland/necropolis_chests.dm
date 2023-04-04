@@ -11,7 +11,7 @@
 	desc = "It's watching you suspiciously."
 
 /obj/structure/closet/crate/necropolis/tendril/PopulateContents()
-	var/loot = rand(1,33)
+	var/loot = rand(1,34)
 	switch(loot)
 		if(1)
 			new /obj/item/shared_storage/red(src)
@@ -91,6 +91,8 @@
 			new /obj/item/gun/energy/fatoray/cannon(src)
 		if(33)
 			new /obj/item/gun/magic/wand/food(src)
+		if(34)
+			new /obj/item/karl_pickaxe(src)
 //		if(29)
 //			new /obj/item/clothing/gloves/gauntlets(src)
 
@@ -268,6 +270,26 @@
 		to_chat(owner, "<span class='warning'>You try to free your lifeforce from the pendant...</span>")
 		if(do_after(owner, 40, target = owner))
 			MM.mori()
+
+//Karl's pickaxe
+/obj/item/karl_pickaxe //GS13 addition!
+	name = "karl's pickaxe"
+	desc = "You can never dig too deep"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "karlpick"
+	flags_1 = CONDUCT_1
+	slot_flags = ITEM_SLOT_BELT | ITEM_SLOT_BACK
+	force = 30
+	throwforce = 20
+	item_state = "pickaxe"
+	lefthand_file = 'icons/mob/inhands/equipment/mining_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/mining_righthand.dmi'
+	w_class = WEIGHT_CLASS_SMALL
+	materials = list(MAT_METAL=2000)
+	tool_behaviour = TOOL_MINING
+	toolspeed = 0.01
+	usesound = list('sound/effects/picaxe1.ogg', 'sound/effects/picaxe2.ogg', 'sound/effects/picaxe3.ogg')
+	attack_verb = list("hit", "pierced", "sliced", "attacked", "rocked", "stoned", "power attacked")
 
 //Wisp Lantern
 /obj/item/wisp_lantern
