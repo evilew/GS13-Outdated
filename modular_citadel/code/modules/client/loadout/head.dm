@@ -13,6 +13,26 @@
 	category = SLOT_HEAD
 	path = /obj/item/clothing/head/beret/black
 
+/datum/gear/rose //GS13: added bunch of flowers :) - Sono
+	name = "Rose"
+	category = SLOT_HEAD
+	path = /obj/item/grown/rose
+
+/datum/gear/sunflower
+	name = "Sunflower"
+	category = SLOT_HEAD
+	path = /obj/item/grown/sunflower
+
+/datum/gear/poppy
+	name = "Poppy"
+	category = SLOT_HEAD
+	path = /obj/item/reagent_containers/food/snacks/grown/poppy
+
+/datum/gear/harebell
+	name = "Harebell"
+	category = SLOT_HEAD
+	path = /obj/item/reagent_containers/food/snacks/grown/harebell
+
 /datum/gear/flatcap
 	name = "Flat cap"
 	category = SLOT_HEAD
