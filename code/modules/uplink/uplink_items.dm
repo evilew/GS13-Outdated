@@ -290,6 +290,18 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 /datum/uplink_item/dangerous
 	category = "Conspicuous Weapons"
 
+/datum/uplink_item/dangerous/fatoray //GS13
+	name = "Fatoray Pistol"
+	desc = "A ray-pistol with capability to fire fattening projectiles, with intention of slowing down your target."
+	item = /obj/item/gun/energy/fatoray
+	cost = 6
+
+/datum/uplink_item/dangerous/fatocannon //GS13
+	name = "Fatoray Cannon"
+	desc = "An energy projectile cannon with capability to fire powerful fattening projectiles, with intention of immobilizing your target."
+	item = /obj/item/gun/energy/fatoray/cannon
+	cost = 8
+
 /datum/uplink_item/dangerous/pistol
 	name = "Stechkin Pistol"
 	desc = "A small, easily concealable handgun that uses 10mm auto rounds in 8-round magazines and is compatible \
@@ -1363,6 +1375,13 @@ datum/uplink_item/stealthy_weapons/taeclowndo_shoes
 // Devices and Tools
 /datum/uplink_item/device_tools
 	category = "Misc. Gadgets"
+
+
+/datum/uplink_item/device_tools/fatnade //GS13
+	name = "Fattening Grenade"
+	desc = "A smoke grenade with a special caloric mix inside it. Remember to wear internals upon using."
+	item = /obj/item/card/emag
+	cost = 2
 
 /datum/uplink_item/device_tools/emag
 	name = "Cryptographic Sequencer"

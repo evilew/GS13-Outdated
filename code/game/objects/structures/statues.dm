@@ -356,9 +356,9 @@
 	else if(M.fatness < FATNESS_LEVEL_EXTREMELY_OBESE)
 		to_chat(M, "<span class='warning'>With each touch you keep getting fatter... But the fatter you grow, the more enticed you feel to poke the statue.</span>")
 	else if(M.fatness < FATNESS_LEVEL_BARELYMOBILE)
-		to_chat(M, "<span class='warning'>The world around you blurs as you focus on prodding the statue, your waistline widening further...</span>")
+		to_chat(M, "<span class='warning'>The world around you blur slightly as you focus on prodding the statue, your waistline widening further...</span>")
 	else if(M.fatness < FATNESS_LEVEL_IMMOBILE)
-		to_chat(M, "<span class='warning'>A whispering voice gently compliments your massive body, your own mind begging to touch the statue more.</span>")
+		to_chat(M, "<span class='warning'>A whispering voice gently compliments your massive body, your own mind begging to touch the statue.</span>")
 	else
 		to_chat(M, "<span class='warning'>You can barely reach the statue past your floor-covering stomach! And yet, it still calls to you...</span>")
 

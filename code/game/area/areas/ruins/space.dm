@@ -499,6 +499,8 @@
 	name = "Snack Store"
 	icon_state = "mining"
 	power_light = TRUE
+	power_equip = TRUE
+	power_environ = TRUE
 
 /area/ruin/space/has_grav/feedersden
 	name = "Unknown Outpost"

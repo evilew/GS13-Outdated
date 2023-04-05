@@ -151,16 +151,27 @@
 	icon_state = "too_much_tox"
 //End gas alerts
 
-//GS13 fat alerts
+//GS13 - fatness alerts
+
 /obj/screen/alert/blob
-	name = "Fatty blob"
-	desc = "Every last piece of your corpulent body is now flush and bloated with vast globs of blubber. Your corpulence is such that you are akin to a gigantic, towering wad of dough. Your thoughts are scattered, and the only thing in your mind is that you want to eat more and more"
+	name = "Fatty Blob"
+	desc = "Every last piece of your corpulent body is now plush and bloated with vast rolls of blubber. Your corpulence is such that you are akin to a gigantic, towering wad of dough. Your thoughts are scattered, and the only thing in your mind is that you want to eat more and more"
 	icon_state = "blob"
 
 /obj/screen/alert/immobile
 	name = "Immobile"
 	desc = "Fat has taken over your body, now colossal in size and loaded with cumbersome flab. You are completely unable to move the bulk that has set upon your body. But for whatever reason, you can't help but blush with strange fascination at every moment you're aware of your tremendous size..."
 	icon_state = "immobile"
+
+/obj/screen/alert/barelymobile
+	name = "Barely Mobile"
+	desc = "Your fat legs barely allow you to waddle, continuing to slow your pace with each pound that you gain. If you continue gaining weight, you might find yourself unable to move at all."
+	icon_state = "barelymobile"
+
+/obj/screen/alert/extremelyobese
+	name = "Extremely Obese"
+	desc = "In your journey through crossing further borders of obesity, your movement continues to get more and more restricted, body overcome with overwhelming amounts of adipose."
+	icon_state = "extremelyobese"
 
 /obj/screen/alert/morbidlyobese
 	name = "Morbidly Obese"
@@ -172,11 +183,23 @@
 	desc = "Your body is swollen with lard, and it's challenging to move. Despite this, there's something... pleasing about being so large."
 	icon_state = "obese"
 
-/obj/screen/alert/fat
+/obj/screen/alert/veryfat
+	name = "Very fat"
+	desc = "You're beginning to inch closer and closer to proper obesity. The way your thighs rub against each and the rumble your stomach produces suggests that you won't remain in this state for long..."
+	icon_state = "veryfat"
+
+/obj/screen/alert/fatter
 	name = "Fat"
-	desc = "You ate too much food, and now your body has plumped up, let's hope your clothes don't rip."
+	desc = "Clothes begin to cling onto your frame tighter and tighter, as your body begins to display first signs of fatness. It's still no big deal, right?"
+	icon_state = "fatter"
+
+/obj/screen/alert/fat
+	name = "Rounded"
+	desc = "Your body's beginning to display the first signes of softened curves, though they're barely noticeable."
 	icon_state = "fat"
 
+
+//GS13 - fullness alerts
 /obj/screen/alert/bloated
 	name = "Bloated stomach"
 	desc = "Your stomach is a bit too full"

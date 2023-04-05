@@ -192,7 +192,7 @@
 		to_chat(itemUser, failText)
 		return
 	if(do_after(itemUser, 30, target = itemUser))
-		itemUser.say("I will remember that I remain a member of society, with special obligations to all my fellow human beings, those sound of mind and body as well as the infirm.", forced = "hippocratic oath")
+		itemUser.say("I will remember that I remain a member of society, with special obligations to all my fellow sentient creatures, those sound of mind and body as well as the infirm.", forced = "hippocratic oath")
 	else
 		to_chat(itemUser, failText)
 		return

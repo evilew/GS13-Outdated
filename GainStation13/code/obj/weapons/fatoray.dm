@@ -9,7 +9,7 @@
 	righthand_file = 'GainStation13/icons/obj/guns_righthand.dmi'
 	icon_state = "fatoray"
 	item_state = "fatoray"
-	pin = null
+	pin = /obj/item/firing_pin
 	fire_sound = 'sound/weapons/plasma_cutter.ogg'
 	ammo_type = list(/obj/item/ammo_casing/energy/fattening)
 
@@ -44,6 +44,7 @@
 	recoil = 3
 	can_charge = 0
 	slowdown = 1
+	pin = /obj/item/firing_pin
 	// charge_sections = 3
 	weapon_weight = WEAPON_HEAVY
 	ammo_type = list(/obj/item/ammo_casing/energy/fattening/cannon)
@@ -74,6 +75,7 @@
 	desc = "An energy gun that fattens up anyone it hits. This version is considerably weaker than its original counterpart, the technology behind it seemingly still not  perfected."
 	icon = 'GainStation13/icons/obj/fatoray.dmi'               /// REPLACE THESE LATER WITH UNIQUE SPRITES - Sono
 	icon_state = "fatoray_weak"
+	pin = null
 	ammo_type = list(/obj/item/ammo_casing/energy/fattening/weak)
 
 /obj/item/ammo_casing/energy/fattening/weak
@@ -100,6 +102,7 @@
 	can_charge = 0
 	recoil = 3
 	slowdown = 1
+	pin = null
 	// charge_sections = 3
 	weapon_weight = WEAPON_HEAVY
 	ammo_type = list(/obj/item/ammo_casing/energy/fattening/cannon_weak)
