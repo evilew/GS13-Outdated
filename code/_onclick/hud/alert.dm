@@ -185,7 +185,7 @@
 
 /obj/screen/alert/veryfat
 	name = "Very fat"
-	desc = "You're beginning to inch closer and closer to proper obesity. The way your thighs rub against each and the rumble your stomach produces suggests that you won't remain in this state for long..."
+	desc = "You're beginning to inch closer and closer to proper obesity. The way your thighs rub against each and the rumbles your stomach produces suggests that you won't remain in this state for long..."
 	icon_state = "veryfat"
 
 /obj/screen/alert/fatter
@@ -195,7 +195,7 @@
 
 /obj/screen/alert/fat
 	name = "Rounded"
-	desc = "Your body's beginning to display the first signes of softened curves, though they're barely noticeable."
+	desc = "Your body's beginning to display the first signs of softened curves, though they're barely noticeable."
 	icon_state = "fat"
 
 
