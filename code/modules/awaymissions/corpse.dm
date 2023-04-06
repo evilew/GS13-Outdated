@@ -749,5 +749,5 @@
 /obj/effect/mob_spawn/human/feeders_den/victim/special(mob/living/carbon/human/new_spawn)
 	ADD_TRAIT(new_spawn,TRAIT_EXEMPT_HEALTH_EVENTS,GHOSTROLE_TRAIT)
 
-/obj/effect/mob_spawn/proc/startfat(mob/M) //move this somewhere else later when we're cleaning up our content - Sono
+/obj/effect/mob_spawn/proc/startfat(mob/M) //move this somewhere else later when we're cleaning up our content - GLDW
 	return

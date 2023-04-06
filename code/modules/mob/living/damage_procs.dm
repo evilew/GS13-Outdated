@@ -94,8 +94,6 @@
 			radiation += max(effect * hit_percent, 0)
 		if(EFFECT_SLUR)
 			slurring = max(slurring,(effect * hit_percent))
-		if(EFFECT_BURPSLUR)
-			burpslurring = max(burpslurring,(effect * hit_percent)) //GS13
 		if(EFFECT_STUTTER)
 			if((status_flags & CANSTUN) && !HAS_TRAIT(src, TRAIT_STUNIMMUNE)) // stun is usually associated with stutter
 				stuttering = max(stuttering,(effect * hit_percent))
@@ -109,7 +107,7 @@
 	return 1
 
 
-/mob/living/proc/apply_effects(stun = 0, knockdown = 0, unconscious = 0, irradiate = 0, slur = 0, burpslur = 0, stutter = 0, eyeblur = 0, drowsy = 0, blocked = FALSE, stamina = 0, jitter = 0, kd_stamoverride, kd_stammax)
+/mob/living/proc/apply_effects(stun = 0, knockdown = 0, unconscious = 0, irradiate = 0, slur = 0, stutter = 0, eyeblur = 0, drowsy = 0, blocked = FALSE, stamina = 0, jitter = 0, kd_stamoverride, kd_stammax)
 	if(blocked >= 100)
 		return 0
 	if(stun)
@@ -122,8 +120,6 @@
 		apply_effect(irradiate, EFFECT_IRRADIATE, blocked)
 	if(slur)
 		apply_effect(slur, EFFECT_SLUR, blocked)
-	if(burpslur)
-		apply_effect(burpslur, EFFECT_BURPSLUR, blocked) //GS13
 	if(stutter)
 		apply_effect(stutter, EFFECT_STUTTER, blocked)
 	if(eyeblur)

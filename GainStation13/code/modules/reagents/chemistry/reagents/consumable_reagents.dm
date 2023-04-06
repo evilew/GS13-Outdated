@@ -70,7 +70,7 @@
 			to_chat(M,"<span class='notice'>You feel substantially bloated...</span>")
 		if(M.reagents.get_reagent_amount(/datum/reagent/consumable/flatulose) > 3)
 			to_chat(M,"<span class='notice'>You feel pretty gassy...</span>")
-			M.emote(pick("brap","fart"))
+			M.emote(pick("brap","fart")) // we gotta categorize this into "slob" category or something later! - GDLW2
 		..()
 	else
 		return ..()
