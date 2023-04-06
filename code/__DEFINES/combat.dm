@@ -19,16 +19,16 @@
 #define SHAME 			(1<<4)
 #define MANUAL_SUICIDE	(1<<5)	//suicide_act will do the actual killing.
 
-#define EFFECT_STUN		"stun"
-#define EFFECT_KNOCKDOWN		"knockdown"
+#define EFFECT_STUN			"stun"
+#define EFFECT_KNOCKDOWN	"knockdown"
 #define EFFECT_UNCONSCIOUS	"unconscious"
 #define EFFECT_IRRADIATE	"irradiate"
 #define EFFECT_STUTTER		"stutter"
 #define EFFECT_SLUR 		"slur"
-#define EFFECT_BURPSLUR 		"burpslur"   //GS13 - uncontrolled burp effect
-#define EFFECT_EYE_BLUR	"eye_blur"
+#define EFFECT_EYE_BLUR		"eye_blur"
 #define EFFECT_DROWSY		"drowsy"
 #define EFFECT_JITTER		"jitter"
+#define EFFECT_BURPSLUR 	"burpslur"   //GS13 - uncontrolled burp effect
 
 //Bitflags defining which status effects could be or are inflicted on a mob
 #define CANSTUN			(1<<0)

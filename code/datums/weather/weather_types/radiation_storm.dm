@@ -66,4 +66,4 @@
 
 
 
-// GS13 tweak: Removed radstorms due to how disruptive they were to QoL and RP quality - Sono
+// GS13 tweak: Removed radstorms due to how disruptive they were to QoL and RP quality - GLDW

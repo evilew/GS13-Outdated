@@ -471,7 +471,7 @@
 
 
 //GS13 RUINS AND OTHER EXCLUSIVE AREAS
-//We should probably move this to our own file later - Sono
+//We should probably move this to our own file later - GLDW
 
 /area/crew_quarters/fitness/sauna
 	name = "Saunas"

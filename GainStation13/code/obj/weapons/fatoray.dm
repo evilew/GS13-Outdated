@@ -39,7 +39,7 @@
 /obj/item/gun/energy/fatoray/cannon
 	name = "Fatoray Cannon"
 	desc = "An energy gun that fattens up anyone it hits. This version functions as a glass cannon of some sorts. It cannot be recharged."
-	icon = 'GainStation13/icons/obj/fatoray.dmi'               /// REPLACE THESE LATER WITH UNIQUE SPRITES - Sono
+	icon = 'GainStation13/icons/obj/fatoray.dmi'
 	icon_state = "fatoray_cannon"
 	recoil = 3
 	can_charge = 0
@@ -73,7 +73,7 @@
 /obj/item/gun/energy/fatoray/weak
 	name = "Basic Fatoray"
 	desc = "An energy gun that fattens up anyone it hits. This version is considerably weaker than its original counterpart, the technology behind it seemingly still not  perfected."
-	icon = 'GainStation13/icons/obj/fatoray.dmi'               /// REPLACE THESE LATER WITH UNIQUE SPRITES - Sono
+	icon = 'GainStation13/icons/obj/fatoray.dmi'
 	icon_state = "fatoray_weak"
 	pin = null
 	ammo_type = list(/obj/item/ammo_casing/energy/fattening/weak)

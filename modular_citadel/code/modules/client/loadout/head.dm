@@ -13,7 +13,7 @@
 	category = SLOT_HEAD
 	path = /obj/item/clothing/head/beret/black
 
-/datum/gear/rose //GS13: added bunch of flowers :) - Sono
+/datum/gear/rose //GS13: added bunch of flowers :) - GLDW
 	name = "Rose"
 	category = SLOT_HEAD
 	path = /obj/item/grown/rose
