@@ -240,7 +240,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/unlock_content = 0
 	var/vip = 0
 
-	//visable pins!
+	//visible pins!
 	var/list/pins = list()
 
 	var/list/ignoring = list()
