@@ -26,7 +26,8 @@ PROCESSING_SUBSYSTEM_DEF(quirks)
 			list("Ananas Affinity","Ananas Aversion"),
 			list("Alcohol Tolerance","Light Drinker"),
 			list("Social Anxiety","Mute"),
-			list("Prosthetic Limb (Left Arm)","Prosthetic Limb (Right Arm)","Prosthetic Limb (Left Leg)","Prosthetic Limb (Right Leg)","Prosthetic Limb")
+			list("Prosthetic Limb (Left Arm)","Prosthetic Limb (Right Arm)","Prosthetic Limb (Left Leg)","Prosthetic Limb (Right Leg)","Prosthetic Limb"),
+			list("Fat Affinity","Fat Aversion")
 			)
 	return ..()
 
