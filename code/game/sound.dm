@@ -227,4 +227,13 @@
 			if("slosh")
 				soundin = pick('sound/effects/slosh1.ogg', 'sound/effects/slosh2.ogg')
 			//END OF CIT CHANGES
+			if("fart") //GS13
+				soundin = pick(	'GainStation13/sound/voice/brap1.ogg',
+								'GainStation13/sound/voice/brap2.ogg',
+								'GainStation13/sound/voice/brap3.ogg',
+								'GainStation13/sound/voice/brap4.ogg',
+								'GainStation13/sound/voice/brap5.ogg',
+								'GainStation13/sound/voice/brap6.ogg',
+								'GainStation13/sound/voice/brap7.ogg',
+								'GainStation13/sound/voice/brap8.ogg')
 	return soundin

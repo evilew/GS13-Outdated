@@ -1021,6 +1021,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Exhibitionist:</b><a href='?_src_=prefs;preference=exhibitionist'>[features["exhibitionist"] == TRUE ? "Yes" : "No"]</a><BR>"
 			dat += "<b>Hear Vore Sounds:</b> <a href='?_src_=prefs;preference=toggleeatingnoise'>[(cit_toggles & EATING_NOISES) ? "Yes" : "No"]</a><br>"
 			dat += "<b>Hear Vore Digestion Sounds:</b> <a href='?_src_=prefs;preference=toggledigestionnoise'>[(cit_toggles & DIGESTION_NOISES) ? "Yes" : "No"]</a><br>"
+			dat += "<b>Hear Fart Sounds:</b> <a href='?_src_=prefs;preference=togglefartingnoise'>[(cit_toggles & FARTING_NOISES) ? "Yes" : "No"]</a><br>"
 			dat += "<b>Allow trash forcefeeding (requires Trashcan quirk)</b> <a href='?_src_=prefs;preference=toggleforcefeedtrash'>[(cit_toggles & TRASH_FORCEFEED) ? "Yes" : "No"]</a><br>"
 			dat += "<b>Lewdchem:</b><a href='?_src_=prefs;preference=lewdchem'>[lewdchem == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Widescreen:</b> <a href='?_src_=prefs;preference=widescreenpref'>[widescreenpref ? "Enabled ([CONFIG_GET(string/default_view)])" : "Disabled (15x15)"]</a><br>"
@@ -2797,14 +2798,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				// Citadel edit - Prefs don't work outside of this. :c
 				if("hound_sleeper")
 					cit_toggles ^= MEDIHOUND_SLEEPER
-
 				if("toggleeatingnoise")
 					cit_toggles ^= EATING_NOISES
-
 				if("toggledigestionnoise")
 					cit_toggles ^= DIGESTION_NOISES
-				if("toggleforcefeedtrash") //gs13 added for flint
+				if("toggleforcefeedtrash") //GS13
 					cit_toggles ^= TRASH_FORCEFEED
+				if("togglefartingnoise") //GS13
+					cit_toggles ^= FARTING_NOISES
 				//END CITADEL EDIT
 
 				if("ambientocclusion")
