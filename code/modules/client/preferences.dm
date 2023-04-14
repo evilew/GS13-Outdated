@@ -240,7 +240,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/unlock_content = 0
 	var/vip = 0
 
-	//visable pins!
+	//visible pins!
 	var/list/pins = list()
 
 	var/list/ignoring = list()
@@ -946,7 +946,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						dat += "<b>Color:</b></a><BR>"
 						dat += "<span style='border: 1px solid #161616; background-color: #[features["belly_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=belly_color;task=input'>Change</a><br>"
 					dat += "<b>Hide on Round-Start:</b><a style='display:block;width:50px' href='?_src_=prefs;preference=hide_belly'>[features["hide_belly"] == 1 ? "Yes" : "No"]</a>"
-					dat += "<b>Manual belly size change (Found in Climax menu):</b><a style='display:block;width:50px' href='?_src_=prefs;preference=inflatable_belly'>[features["inflatable_belly"] == 1 ? "Yes" : "No"]</a>"
+					dat += "<b>Inflation (climax with and manual belly size change in arousal menu):</b><a style='display:block;width:50px' href='?_src_=prefs;preference=inflatable_belly'>[features["inflatable_belly"] == 1 ? "Yes" : "No"]</a>"
 
 				dat += "</td>"
 
@@ -1021,6 +1021,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Exhibitionist:</b><a href='?_src_=prefs;preference=exhibitionist'>[features["exhibitionist"] == TRUE ? "Yes" : "No"]</a><BR>"
 			dat += "<b>Hear Vore Sounds:</b> <a href='?_src_=prefs;preference=toggleeatingnoise'>[(cit_toggles & EATING_NOISES) ? "Yes" : "No"]</a><br>"
 			dat += "<b>Hear Vore Digestion Sounds:</b> <a href='?_src_=prefs;preference=toggledigestionnoise'>[(cit_toggles & DIGESTION_NOISES) ? "Yes" : "No"]</a><br>"
+			dat += "<b>Hear Fart Sounds:</b> <a href='?_src_=prefs;preference=togglefartingnoise'>[(cit_toggles & FARTING_NOISES) ? "Yes" : "No"]</a><br>"
 			dat += "<b>Allow trash forcefeeding (requires Trashcan quirk)</b> <a href='?_src_=prefs;preference=toggleforcefeedtrash'>[(cit_toggles & TRASH_FORCEFEED) ? "Yes" : "No"]</a><br>"
 			dat += "<b>Lewdchem:</b><a href='?_src_=prefs;preference=lewdchem'>[lewdchem == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Widescreen:</b> <a href='?_src_=prefs;preference=widescreenpref'>[widescreenpref ? "Enabled ([CONFIG_GET(string/default_view)])" : "Disabled (15x15)"]</a><br>"
@@ -2797,14 +2798,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				// Citadel edit - Prefs don't work outside of this. :c
 				if("hound_sleeper")
 					cit_toggles ^= MEDIHOUND_SLEEPER
-
 				if("toggleeatingnoise")
 					cit_toggles ^= EATING_NOISES
-
 				if("toggledigestionnoise")
 					cit_toggles ^= DIGESTION_NOISES
-				if("toggleforcefeedtrash") //gs13 added for flint
+				if("toggleforcefeedtrash") //GS13
 					cit_toggles ^= TRASH_FORCEFEED
+				if("togglefartingnoise") //GS13
+					cit_toggles ^= FARTING_NOISES
 				//END CITADEL EDIT
 
 				if("ambientocclusion")

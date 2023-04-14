@@ -197,9 +197,10 @@
 #define TRAIT_CUM_PLUS			"cum_plus"
 #define TRAIT_NEVER_CLONE       "donotclone"
 #define TRAIT_COLDBLOODED		"coldblooded"	// Your body is literal room temperature. Does not make you immune to the temp.
-#define TRAIT_FLIMSY		"flimsy" //you have 20% less maxhealth
-#define TRAIT_TRASHCAN		"trashcan" //Im the TRASH MAN! (Shamlessly stolen from hyper for local trash eater, flint)
-
+#define TRAIT_FLIMSY			"flimsy" //you have 20% less maxhealth
+#define TRAIT_TRASHCAN			"trashcan" //Im the TRASH MAN! (Shamlessly stolen from hyper for local trash eater, flint)
+#define TRAIT_FAT_GOOD			"fat_good"
+#define TRAIT_FAT_BAD			"fat_bad"
 
 //Hyper
 #define TRAIT_VIRILE		"virile" //you have 20% more chance of impreg

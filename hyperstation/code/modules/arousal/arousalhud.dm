@@ -11,7 +11,7 @@
 	for(var/obj/item/organ/genital/G in U.internal_organs)
 		if(!G.nochange)
 			if(!G.dontlist)
-				dat	+= "<a href='byond://?src=[REF(src)];hide[G.name]=1'>[G.mode == "hidden" ? "[G.name] <font color='red'>(Hidden)</font>" : (G.mode == "clothes" ? "[G.name] <font color='yellow'>(Hidden by Clothes)</font>" : (G.mode == "visable" ? "[G.name] <font color='green'>(Visable)</font>" : "[G.name] <font color='green'>(Visable)</font>"))]</a><BR>"
+				dat	+= "<a href='byond://?src=[REF(src)];hide[G.name]=1'>[G.mode == "hidden" ? "[G.name] <font color='red'>(Hidden)</font>" : (G.mode == "clothes" ? "[G.name] <font color='yellow'>(Hidden by Clothes)</font>" : (G.mode == "visible" ? "[G.name] <font color='green'>(Visible)</font>" : "[G.name] <font color='green'>(Visible)</font>"))]</a><BR>"
 
 	dat	+=	{"<BR><B>Contexual Options</B><BR><HR>"}
 	var/obj/item/organ/genital/penis/P = user.getorganslot("penis")
@@ -40,7 +40,7 @@
 	var/obj/item/organ/genital/belly/Belly = user.getorganslot("belly")
 	if(Belly)
 		if(Belly.inflatable)
-			dat	+= "<a href='byond://?src=[REF(src)];shrink_belly=1'>Decrease belly</A>"
+			dat	+= "<a href='byond://?src=[REF(src)];shrink_belly=1'>Decrease belly size</A>"
 			dat	+=	"(Shrink your belly down a size)<BR>"
 			dat	+= "<a href='byond://?src=[REF(src)];inflate_belly=1'>Increase belly size</A>"
 			dat	+=	"(Bloat your belly up a size)<BR>"

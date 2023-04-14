@@ -207,3 +207,19 @@
 	if(H)
 		var/datum/species/species = H.dna.species
 		species.disliked_food = initial(species.disliked_food)
+
+/datum/quirk/fatness_liker
+	name = "Fat Affinity"
+	desc = "You like being fat, alot, maybe even a little bit too much. Being fat gives you a bigger mood boost."
+	mob_trait = TRAIT_FAT_GOOD
+	value = 0
+	category = CATEGORY_MOODS
+	medical_record_text = "Patient seems overly content with gaining weight."
+
+/datum/quirk/fatness_hater
+	name = "Fat Aversion"
+	desc = "You dislike being fat. Being fat brings your mood down, alot."
+	mob_trait = TRAIT_FAT_BAD
+	value = 0
+	category = CATEGORY_MOODS
+	medical_record_text = "Patient seems distressed by gaining weight."

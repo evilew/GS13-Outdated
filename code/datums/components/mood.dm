@@ -297,7 +297,10 @@
 		
 	switch(L.fatness)
 		if(FATNESS_LEVEL_FAT to INFINITY)
-			add_event(null, "fatness", /datum/mood_event/fat)
+			if(HAS_TRAIT(L, TRAIT_FAT_GOOD))
+				add_event(null, "fatness", /datum/mood_event/fat_good)
+			else if(HAS_TRAIT(L, TRAIT_FAT_BAD))
+				add_event(null, "fatness", /datum/mood_event/fat_bad)
 
 /datum/component/mood/proc/HandleNutrition(mob/living/L)
 	switch(L.nutrition)

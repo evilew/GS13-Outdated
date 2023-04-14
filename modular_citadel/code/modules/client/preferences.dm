@@ -21,6 +21,7 @@
 	//vore prefs
 	var/toggleeatingnoise = TRUE
 	var/toggledigestionnoise = TRUE
+	var/togglefartingnoise = TRUE
 	var/hound_sleeper = TRUE
 	var/cit_toggles = TOGGLES_CITADEL
 
