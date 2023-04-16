@@ -1021,16 +1021,18 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Exhibitionist:</b><a href='?_src_=prefs;preference=exhibitionist'>[features["exhibitionist"] == TRUE ? "Yes" : "No"]</a><BR>"
 			dat += "<b>Hear Vore Sounds:</b> <a href='?_src_=prefs;preference=toggleeatingnoise'>[(cit_toggles & EATING_NOISES) ? "Yes" : "No"]</a><br>"
 			dat += "<b>Hear Vore Digestion Sounds:</b> <a href='?_src_=prefs;preference=toggledigestionnoise'>[(cit_toggles & DIGESTION_NOISES) ? "Yes" : "No"]</a><br>"
-			dat += "<b>Hear Fart Sounds:</b> <a href='?_src_=prefs;preference=togglefartingnoise'>[(cit_toggles & FARTING_NOISES) ? "Yes" : "No"]</a><br>"
-			dat += "<b>Allow trash forcefeeding (requires Trashcan quirk)</b> <a href='?_src_=prefs;preference=toggleforcefeedtrash'>[(cit_toggles & TRASH_FORCEFEED) ? "Yes" : "No"]</a><br>"
 			dat += "<b>Lewdchem:</b><a href='?_src_=prefs;preference=lewdchem'>[lewdchem == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Widescreen:</b> <a href='?_src_=prefs;preference=widescreenpref'>[widescreenpref ? "Enabled ([CONFIG_GET(string/default_view)])" : "Disabled (15x15)"]</a><br>"
 			dat += "<b>Auto stand:</b> <a href='?_src_=prefs;preference=autostand'>[autostand ? "Enabled" : "Disabled"]</a><br>"
 			dat += "<b>Screen Shake:</b> <a href='?_src_=prefs;preference=screenshake'>[(screenshake==100) ? "Full" : ((screenshake==0) ? "None" : "[screenshake]")]</a><br>"
 			if (user && user.client && !user.client.prefs.screenshake==0)
 				dat += "<b>Damage Screen Shake:</b> <a href='?_src_=prefs;preference=damagescreenshake'>[(damagescreenshake==1) ? "On" : ((damagescreenshake==0) ? "Off" : "Only when down")]</a><br>"
-			//GS13 stuff goes here
+
+			//GS13
 			dat += "<h2>GS13 Preferences</h2>"
+			dat += "<b>Hear Burp Sounds:</b> <a href='?_src_=prefs;preference=toggleburpingnoise'>[(cit_toggles & BURPING_NOISES) ? "Yes" : "No"]</a><br>"
+			dat += "<b>Hear Fart Sounds:</b> <a href='?_src_=prefs;preference=togglefartingnoise'>[(cit_toggles & FARTING_NOISES) ? "Yes" : "No"]</a><br>"
+			dat += "<b>Trashcan Forcefeeding:</b> <a href='?_src_=prefs;preference=toggleforcefeedtrash'>[(cit_toggles & TRASH_FORCEFEED) ? "Yes" : "No"]</a><br>"
 
 			dat += "<b>Maximum Weight:</b><a href='?_src_=prefs;preference=max_fatness'>[max_weight == FALSE ? "None" : max_weight]</a><BR>"
 			dat += "<b>NonCon - Weight Gain:</b><a href='?_src_=prefs;preference=noncon_weight_gain'>[noncon_weight_gain == TRUE ? "Enabled" : "Disabled"]</a><BR>"
@@ -2804,6 +2806,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					cit_toggles ^= DIGESTION_NOISES
 				if("toggleforcefeedtrash") //GS13
 					cit_toggles ^= TRASH_FORCEFEED
+				if("toggleburpingnoise") //GS13
+					cit_toggles ^= BURPING_NOISES
 				if("togglefartingnoise") //GS13
 					cit_toggles ^= FARTING_NOISES
 				//END CITADEL EDIT

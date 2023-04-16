@@ -19,7 +19,7 @@
 	if(!ishuman(user))
 		return FALSE 
 	
-	make_noise(user, "belch", 0)
+	make_noise(user, "belch", BURPING_NOISES)
 
 	. = ..()	
 
@@ -50,7 +50,7 @@
 	if(!ishuman(user))
 		return FALSE
 	
-	make_noise(user, "burp", 0)
+	make_noise(user, "burp", BURPING_NOISES)
 
 	. = ..()
 
