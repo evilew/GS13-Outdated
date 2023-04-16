@@ -29,7 +29,10 @@ sound/music/thewizard.ogg
 sound/music/thesettler.ogg
 sound/music/thelessImichael.ogg
 sound/music/PigstepSilva.ogg
-sound/music/Sam.ogg
 sound/music/credits.ogg
 sound/music/TinTinOnMark2.ogg
 sound/music/CInferno.ogg
+sound/music/eek.ogg
+sound/music/davesprite.ogg
+sound/music/byebyethere.ogg
+sound/music/nuclear_mission_jam.ogg
