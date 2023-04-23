@@ -162,13 +162,6 @@
 	// If we got this far, nom successful! Announce it!
 	user.visible_message(success_msg)
 
-	// incredibly contentious eating noises time
-	var/turf/source = get_turf(user)
-	var/sound/eating = GLOB.vore_sounds[belly.vore_sound]
-	for(var/mob/living/M in get_hearers_in_view(3, source))
-		if(M.client && M.client.prefs.cit_toggles & EATING_NOISES)
-			SEND_SOUND(M, eating)
-
 	// Actually shove prey into the belly.
 	belly.nom_mob(prey, user)
 	stop_pulling()

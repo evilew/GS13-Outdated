@@ -6,7 +6,7 @@
 	var/sound/noise = sound(gs13_get_sfx(noise_name))
 	for(var/mob/living/M in get_hearers_in_view(3, source))
 		if ((pref_toggle == 0) || (M.client && M.client.prefs.cit_toggles & pref_toggle))
-			SEND_SOUND(M, noise)
+			M.playsound_local(source, noise_name, 50, 1, S = noise)
 
 /datum/emote/living/belch
 	key = "belch"
