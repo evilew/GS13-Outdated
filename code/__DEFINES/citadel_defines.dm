@@ -125,15 +125,19 @@
 #define STAMINA_SOFTCRIT_TRADITIONAL		0	//same as STAMINA_SOFTCRIT except for the more traditional health calculations
 #define STAMINA_CRIT_TRADITIONAL			-40 //ditto, but for STAMINA_CRIT
 
-#define CRAWLUNDER_DELAY							30 //Delay for crawling under a standing mob
+#define CRAWLUNDER_DELAY					30 //Delay for crawling under a standing mob
 
 //Citadel toggles because bitflag memes
 #define MEDIHOUND_SLEEPER	(1<<0)
-#define EATING_NOISES		(1<<1)
-#define DIGESTION_NOISES	(1<<2)
-#define TRASH_FORCEFEED		(1<<3)
+#define EATING_NOISES		(1<<1) //Vore
+#define DIGESTION_NOISES	(1<<2) //Vore
 
-#define TOGGLES_CITADEL (EATING_NOISES|DIGESTION_NOISES)
+#define TRASH_FORCEFEED		(1<<3) //GS13
+#define FARTING_NOISES		(1<<4) //GS13
+#define BURPING_NOISES		(1<<5) //GS13
+
+//toggles on by default
+#define TOGGLES_CITADEL (EATING_NOISES|DIGESTION_NOISES|FARTING_NOISES|BURPING_NOISES)
 
 //component stuff
 #define COMSIG_COMBAT_TOGGLED "combatmode_toggled" //called by combat mode toggle on all equipped items. args: (mob/user, combatmode)

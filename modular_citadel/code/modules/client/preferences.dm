@@ -19,9 +19,13 @@
 	var/lewdchem = TRUE
 
 	//vore prefs
+	var/hound_sleeper = TRUE
 	var/toggleeatingnoise = TRUE
 	var/toggledigestionnoise = TRUE
-	var/hound_sleeper = TRUE
+	//GS13
+	var/toggleburpingnoise = TRUE
+	var/togglefartingnoise = TRUE
+	//default toggles
 	var/cit_toggles = TOGGLES_CITADEL
 
 	//Hyper prefs
