@@ -154,7 +154,7 @@
 	medical_record_text = "Patient cares little with or dislikes being touched."
 
 /datum/quirk/weak_legs
-	name = "Weak legs"
+	name = "Weak Legs"
 	desc = "Your legs can't handle the heaviest of charges. Being too fat will render you unable to move at all."
 	mob_trait = TRAIT_WEAKLEGS
 	value = 0
