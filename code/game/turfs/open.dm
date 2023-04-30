@@ -209,7 +209,7 @@
 	name = "chocolate floor"
 	desc = "A rather tasty floor, hopefully it does not ruin your shoes."
 	icon = 'Gainstation13/icons/turf/floor_candy.dmi'
-	icon_state = "choclit_alt2"
+	icon_state = "choclit_2"
 
 
 /turf/open/indestructible/bubblegum

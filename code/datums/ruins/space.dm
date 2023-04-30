@@ -339,3 +339,10 @@
 	description = "A small hub containing a quantum pad connected to xenoarch along with three other rooms containing unlinked quantum pads and the parts needed to make new quantum pads."
 	cost = 0
 	always_place = TRUE
+
+/datum/map_template/ruin/space/biodome/beach
+	name = "Biodome Beach"
+	id = "biodome-beach"
+	description = "Seemingly plucked from a tropical destination, this beach is calm and cool, with the salty waves roaring softly in the background. \
+	Comes with a rustic wooden bar and suicidal bartender."
+	suffix = "space_biodome_beach.dmm"
