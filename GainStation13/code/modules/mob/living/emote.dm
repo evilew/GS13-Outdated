@@ -8,6 +8,18 @@
 		if ((pref_toggle == 0) || (M.client && M.client.prefs.cit_toggles & pref_toggle))
 			M.playsound_local(source, noise_name, 50, 1, S = noise)
 
+/datum/emote/living/proc/reduce_fullness(var/mob/living/user, fullness_amount) // fullness_amount should be between 5 and 20 for balance and below 80 for functionality
+	if(!ishuman(user))
+		return FALSE	
+
+	var/mob/living/N = user
+	if(N.fullness >= FULLNESS_LEVEL_BLOATED && N.fullness_reducion_timer + FULLNESS_REDUCTION_COOLDOWN < world.time)
+		N.fullness -= fullness_amount
+		if(fullness_amount <= 5)
+			to_chat(N, "You felt that make some space")
+		if(fullness_amount > 5)
+			to_chat(N, "You felt that make a lot of space")
+
 /datum/emote/living/belch
 	key = "belch"
 	key_third_person = "belches loudly"
@@ -22,6 +34,7 @@
 	make_noise(user, "belch", BURPING_NOISES)
 
 	. = ..()	
+	reduce_fullness(user, rand(6,12))
 
 /datum/emote/living/brap
     key = "brap"
@@ -53,6 +66,7 @@
 	make_noise(user, "burp", BURPING_NOISES)
 
 	. = ..()
+	reduce_fullness(user, rand(4,8))
 
 /datum/emote/living/fart
 	key = "fart"

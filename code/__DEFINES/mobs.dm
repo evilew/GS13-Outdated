@@ -156,6 +156,9 @@
 #define FULLNESS_LEVEL_HALF_FULL 20
 #define FULLNESS_LEVEL_EMPTY 0
 
+//Fullness emote cooldown
+#define FULLNESS_REDUCTION_COOLDOWN 50
+
 //Fatness levels, Here we go!
 #define FATNESS_LEVEL_BLOB 3440
 #define FATNESS_LEVEL_IMMOBILE 2540
