@@ -1863,6 +1863,9 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			if(H.fatness < FATNESS_LEVEL_BARELYMOBILE)
 				fatness_delay = fatness_delay - flight
 			
+			if(HAS_TRAIT(H, TRAIT_STRONGLEGS))
+				fatness_delay = fatness_delay * FATNESS_STRONGLEGS_MODIFIER
+
 			fatness_delay = min(fatness_delay, FATNESS_MAX_MOVE_PENALTY)
 			if(HAS_TRAIT(H, TRAIT_WEAKLEGS) && (H.fatness > FATNESS_LEVEL_BLOB))
 				fatness_delay += ((H.fatness - FATNESS_LEVEL_BLOB) * FATNESS_WEAKLEGS_MODIFIER) / FATNESS_DIVISOR	

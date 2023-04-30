@@ -61,15 +61,15 @@
 	lose_text = "<span class='danger'>You feel clumsy again.</span>"
 	medical_record_text = "Patient scored highly on cardio tests."
 
-// /datum/quirk/strong_legs
-// 	name = "Strong Legs"
-// 	desc = "Your body is able to handle heavier sizes very well."
-// 	mob_trait = TRAIT_STRONGLEGS
-// 	value = 2
-// 	category = CATEGORY_SEXUAL
-// 	gain_text = "<span class='notice'>You feel like you can carry more weight.</span>"
-// 	lose_text = "<span class='notice'>Your legs cannot bear heavier loads anymore.</span>"
-// 	medical_record_text = "Patient exhibits increased muscle strength in their legs."
+/datum/quirk/strong_legs
+	name = "Strong Legs"
+	desc = "Your body is able to handle heavier sizes very well."
+	value = 2
+	category = CATEGORY_SEXUAL
+	mob_trait = TRAIT_STRONGLEGS
+	gain_text = "<span class='notice'>You feel like you can carry more weight.</span>"
+	lose_text = "<span class='notice'>Your legs cannot bear heavier loads anymore.</span>"
+	medical_record_text = "Patient exhibits increased muscle strength in their legs."
 
 /datum/quirk/friendly
 	name = "Friendly"

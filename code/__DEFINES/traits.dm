@@ -116,6 +116,7 @@
 #define TRAIT_JOLLY				"jolly"
 #define TRAIT_HEADPAT_SLUT		"headpat_slut"
 #define TRAIT_WEAKLEGS			"weak_legs"
+#define TRAIT_STRONGLEGS		"strong_legs"
 #define TRAIT_NOCRITDAMAGE		"no_crit"
 #define TRAIT_NOSLIPWATER		"noslip_water"
 #define TRAIT_NOSLIPALL			"noslip_all"
