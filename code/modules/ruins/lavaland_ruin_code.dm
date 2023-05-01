@@ -86,7 +86,8 @@
 		/obj/item/stack/sheet/cardboard				= /datum/species/golem/cardboard,
 		/obj/item/stack/sheet/leather				= /datum/species/golem/leather,
 		/obj/item/stack/sheet/bone					= /datum/species/golem/bone,
-		/obj/item/stack/sheet/cotton/durathread		= /datum/species/golem/durathread)
+		/obj/item/stack/sheet/cotton/durathread		= /datum/species/golem/durathread,
+		/obj/item/stack/sheet/mineral/calorite		= /datum/species/golem/calorite)
 
 	if(istype(I, /obj/item/stack))
 		var/obj/item/stack/O = I
