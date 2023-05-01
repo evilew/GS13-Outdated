@@ -18,6 +18,7 @@ map boxstation
 endmap
 
 map metastation
+	default
 	minplayers 25
 	#voteweight 0.5
 endmap
@@ -26,7 +27,6 @@ map pubbystation
 endmap
 
 map omegastation
-	default
 	maxplayers 35
 endmap
 
