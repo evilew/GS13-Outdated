@@ -124,19 +124,19 @@ var/charges = 3
 				if(L.health < L.maxHealth)
 					new /obj/effect/temp_visual/heal(get_turf(L), "#375637")
 				if(iscarbon(L))
-					L.adjustBruteLoss(-3.5)
-					L.adjustFireLoss(-3.5)
-					L.adjustToxLoss(-3.5, forced = TRUE) //Because Slime People are people too
-					L.adjustOxyLoss(-3.5)
-					L.adjustStaminaLoss(-3.5)
-					L.adjustOrganLoss(ORGAN_SLOT_BRAIN, -3.5)
+					L.adjustBruteLoss(-3)
+					L.adjustFireLoss(-3)
+					L.adjustToxLoss(-3, forced = TRUE) //Because Slime People are people too
+					L.adjustOxyLoss(-3)
+					L.adjustStaminaLoss(-3)
+					L.adjustOrganLoss(ORGAN_SLOT_BRAIN, -3)
 					L.adjustCloneLoss(-1) //Becasue apparently clone damage is the bastion of all health
 				else if(issilicon(L))
-					L.adjustBruteLoss(-3.5)
-					L.adjustFireLoss(-3.5)
+					L.adjustBruteLoss(-3)
+					L.adjustFireLoss(-3)
 				else if(isanimal(L))
 					var/mob/living/simple_animal/SM = L
-					SM.adjustHealth(-3.5, forced = TRUE)
+					SM.adjustHealth(-3, forced = TRUE)
 
 
 
