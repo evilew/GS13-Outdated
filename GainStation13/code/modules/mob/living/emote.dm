@@ -52,6 +52,7 @@
 	make_noise(user, "brap", FARTING_NOISES)
 
 	. = ..()	
+	reduce_fullness(user, rand(6,12))
 
 /datum/emote/living/burp
 	key = "burp"
@@ -82,6 +83,7 @@
 	make_noise(user, "fart", FARTING_NOISES)
 		
 	. = ..()	
+	reduce_fullness(user, rand(4,8))
 
 /datum/emote/living/gurgle
 	key = "gurgle"
@@ -111,3 +113,14 @@
 	make_noise(user, "burunyu", 0)
 
 	. = ..()
+
+/datum/emote/living/bellyrub
+	key = "bellyrub"
+	key_third_person = "bellyrubs"
+	message = "rubs their belly"
+
+/datum/emote/living/bellyrub/run_emote(mob/living/user, params)
+	if(!ishuman(user))
+		return FALSE
+	. = ..()
+	reduce_fullness(user, rand(4,16))
