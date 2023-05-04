@@ -3081,6 +3081,7 @@
 #include "GainStation13\code\mechanics\wand.dm"
 #include "GainStation13\code\mechanics\web_weaving.dm"
 #include "GainStation13\code\mobs\cakegolem.dm"
+#include "GainStation13\code\mobs\chocoslime.dm"
 #include "GainStation13\code\mobs\races\caloritegolem.dm"
 #include "GainStation13\code\modules\client\preferences\preferences.dm"
 #include "GainStation13\code\modules\food_and_drinks\drinks\drinks.dm"
