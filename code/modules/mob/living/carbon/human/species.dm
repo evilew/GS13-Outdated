@@ -1867,8 +1867,12 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				fatness_delay = fatness_delay * FATNESS_STRONGLEGS_MODIFIER
 
 			fatness_delay = min(fatness_delay, FATNESS_MAX_MOVE_PENALTY)
-			if(HAS_TRAIT(H, TRAIT_WEAKLEGS) && (H.fatness > FATNESS_LEVEL_BLOB))
-				fatness_delay += ((H.fatness - FATNESS_LEVEL_BLOB) * FATNESS_WEAKLEGS_MODIFIER) / FATNESS_DIVISOR	
+			if(HAS_TRAIT(H, TRAIT_WEAKLEGS))
+				if(H.fatness <= FATNESS_LEVEL_IMMOBILE)
+					fatness_delay += fatness_delay * FATNESS_WEAKLEGS_MODIFIER / 100
+				if(H.fatness > FATNESS_LEVEL_IMMOBILE)
+					fatness_delay += (H.fatness / FATNESS_LEVEL_IMMOBILE) * FATNESS_WEAKLEGS_MODIFIER
+					fatness_delay = min(fatness_delay, 60)
 	
 			. += fatness_delay 
 
