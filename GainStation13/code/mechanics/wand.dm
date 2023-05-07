@@ -1,6 +1,8 @@
 /obj/item/gun/magic/wand/food
 	name = "Wand of Gluttony"
 	desc = "Summons delicious fattening foods"
+	icon = 'GainStation13/icons/obj/magic.dmi'
+	icon_state = "food_wand"
 	max_charges = 15
 	ammo_type = /obj/item/ammo_casing/magic/food
 

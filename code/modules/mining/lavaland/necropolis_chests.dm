@@ -26,7 +26,7 @@
 		if(6)
 			new /obj/item/reagent_containers/glass/bottle/potion/flight(src)
 		if(7)
-			new /obj/item/pickaxe/diamond(src)
+			new /obj/item/karl_pickaxe(src) //GS13
 		if(8)
 			if(prob(50))
 				new /obj/item/disk/design_disk/modkit_disc/resonator_blast(src)
@@ -80,7 +80,7 @@
 		if(28)
 			new /obj/item/clothing/neck/necklace/memento_mori(src)
 		if(29)
-			new /obj/item/book/granter/spell/fattening(src)
+			new /obj/item/book/granter/spell/fattening(src) //GS13 STUFF
 			new /obj/item/grenade/chem_grenade/lipoifier_weak(src)
 		if(30)
 			new /obj/item/book/granter/spell/fattening/transfer(src)
@@ -91,8 +91,6 @@
 			new /obj/item/gun/energy/fatoray/cannon(src)
 		if(33)
 			new /obj/item/gun/magic/wand/food(src)
-		if(34)
-			new /obj/item/karl_pickaxe(src)
 //		if(29)
 //			new /obj/item/clothing/gloves/gauntlets(src)
 
