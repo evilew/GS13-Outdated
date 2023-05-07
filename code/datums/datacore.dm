@@ -15,6 +15,7 @@
 /datum/data/record
 	name = "record"
 	var/list/fields = list()
+	var/status = FALSE // GS13
 
 /datum/data/record/Destroy()
 	if(src in GLOB.data_core.medical)
@@ -89,7 +90,13 @@
 	if(foundrecord)
 		foundrecord.fields["rank"] = assignment
 
+/datum/datacore/proc/manifest_modify_status(name, status)
+	var/datum/data/record/foundrecord = find_record("name", name, GLOB.data_core.general)
+	if(foundrecord)
+		foundrecord.status = status
+
 /datum/datacore/proc/get_manifest(monochrome, OOC)
+	var/list/status = list()
 	var/list/heads = list()
 	var/list/sec = list()
 	var/list/eng = list()
@@ -109,7 +116,7 @@
 		.manifest tr.alt td {[monochrome?"border-top-width: 2px":"background-color: #DEF"]}
 	</style></head>
 	<table class="manifest" width='350px'>
-	<tr class='head'><th>Name</th><th>Rank</th></tr>
+	<tr class='head'><th>Name</th><th>Rank</th><th>Status</th></tr>
 	"}
 	var/even = 0
 	// sort mobs
@@ -117,6 +124,7 @@
 		var/name = t.fields["name"]
 		var/rank = t.fields["rank"]
 		var/department = 0
+		status[name] = t.status
 		if(rank in GLOB.command_positions)
 			heads[name] = rank
 			department = 1
@@ -146,49 +154,49 @@
 	if(heads.len > 0)
 		dat += "<tr><th colspan=3>Heads</th></tr>"
 		for(var/name in heads)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[heads[name]]</td></tr>"
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[heads[name]]</td><td>[status[name] ? "Inactive" : "Active"]</td></tr>"
 			even = !even
 	if(sec.len > 0)
 		dat += "<tr><th colspan=3>Security</th></tr>"
 		for(var/name in sec)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[sec[name]]</td></tr>"
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[sec[name]]</td><td>[status[name] ? "Inactive" : "Active"]</td></tr>"
 			even = !even
 	if(eng.len > 0)
 		dat += "<tr><th colspan=3>Engineering</th></tr>"
 		for(var/name in eng)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[eng[name]]</td></tr>"
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[eng[name]]</td><td>[status[name] ? "Inactive" : "Active"]</td></tr>"
 			even = !even
 	if(med.len > 0)
 		dat += "<tr><th colspan=3>Medical</th></tr>"
 		for(var/name in med)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[med[name]]</td></tr>"
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[med[name]]</td><td>[status[name] ? "Inactive" : "Active"]</td></tr>"
 			even = !even
 	if(sci.len > 0)
 		dat += "<tr><th colspan=3>Science</th></tr>"
 		for(var/name in sci)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[sci[name]]</td></tr>"
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[sci[name]]</td><td>[status[name] ? "Inactive" : "Active"]</td></tr>"
 			even = !even
 	if(sup.len > 0)
 		dat += "<tr><th colspan=3>Supply</th></tr>"
 		for(var/name in sup)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[sup[name]]</td></tr>"
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[sup[name]]</td><td>[status[name] ? "Inactive" : "Active"]</td></tr>"
 			even = !even
 	if(civ.len > 0)
 		dat += "<tr><th colspan=3>Civilian</th></tr>"
 		for(var/name in civ)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[civ[name]]</td></tr>"
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[civ[name]]</td><td>[status[name] ? "Inactive" : "Active"]</td></tr>"
 			even = !even
 	// in case somebody is insane and added them to the manifest, why not
 	if(bot.len > 0)
 		dat += "<tr><th colspan=3>Silicon</th></tr>"
 		for(var/name in bot)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[bot[name]]</td></tr>"
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[bot[name]]</td><td>[status[name] ? "Inactive" : "Active"]</td></tr>"
 			even = !even
 	// misc guys
 	if(misc.len > 0)
 		dat += "<tr><th colspan=3>Miscellaneous</th></tr>"
 		for(var/name in misc)
-			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[misc[name]]</td></tr>"
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[misc[name]]</td><td>[status[name] ? "Inactive" : "Active"]</td></tr>"
 			even = !even
 
 	dat += "</table>"
