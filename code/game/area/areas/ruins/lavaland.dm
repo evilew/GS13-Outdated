@@ -102,3 +102,7 @@
 /area/ruin/unpowered/caloriteshrine
 	name = "Calorite Shrine"
 	icon_state = "away"
+
+/area/ruin/powered/snackstore
+	name = "Snack Store"
+	icon_state = "away"
