@@ -517,3 +517,11 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 /datum/quirk/flimsy/remove() //how do admins even remove traits?
 	if(quirk_holder)
 		quirk_holder.maxHealth += healthchange
+
+/datum/quirk/weak_legs
+	name = "Weak Legs"
+	desc = "Your legs can't handle the heaviest of charges. Being too fat will render you unable to move at all."
+	mob_trait = TRAIT_WEAKLEGS
+	value = -1
+	category = CATEGORY_SEXUAL
+	medical_record_text = "Patient's legs seem to lack strength"
