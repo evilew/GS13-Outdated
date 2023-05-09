@@ -93,3 +93,20 @@
 /datum/reagent/consumable/caloriteblessing/on_mob_end_metabolize(mob/living/L)
 	REMOVE_TRAIT(L, TRAIT_GOTTAGOFAST, type)
 	..()
+
+
+//BLUEBERRY CHEM - ONLY CHANGES PLAYER'S COLOR AND NOTHING MORE
+
+/datum/reagent/blueberry_juice
+	name = "Blueberry Juice"
+	description = "Non-infectious. Hopefully."
+	reagent_state = LIQUID
+	color = "#0004ff"
+	var/list/random_color_list = list("#0058db","#5d00c7","#0004ff","#0057e7")
+	taste_description = "blueberry pie"
+	var/no_mob_color = FALSE
+
+/datum/reagent/blueberry_juice/on_mob_life(mob/living/carbon/M)
+	if(!no_mob_color)
+		M.add_atom_colour(pick(random_color_list), WASHABLE_COLOUR_PRIORITY)
+	..()

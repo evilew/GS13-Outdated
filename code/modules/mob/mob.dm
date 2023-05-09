@@ -451,10 +451,12 @@ mob/visible_message(message, self_message, blind_message, vision_distance = DEFA
 	//if they didnt join as a observer, add their name to the past character list so they cannot play them again.
 
 	if(!usr.client.respawn_observing)
-		var/responserespawn = alert(src,"If you respawn now, you cannot rejoin the game as your current character! Are you sure you want to respawn?","Warning","Yes","No")
-		if(responserespawn != "Yes")
-			return
-		usr.client.pastcharacters += usr.real_name
+		var/responserespawn = alert(src,"Are you sure you want to respawn?","Warning","Yes","No")
+		// if(responserespawn != "Yes")
+		// 	return
+		// usr.client.pastcharacters += usr.real_name
+
+		//GS13 - commented out to allow players to rejoin with the same char
 
 	if(!client)
 		log_game("[key_name(usr)] AM failed due to disconnect.")

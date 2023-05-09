@@ -31,7 +31,7 @@
 	light_range = 2
 	light_color = LIGHT_COLOR_ORANGE
 	///How much fat is added to the target mob?
-	var/fat_added = 50 //Around 12.5 pounds per hit.
+	var/fat_added = 100
 
 
 ////// Fatoray - cannon variant, strong but can be charged
@@ -75,7 +75,7 @@
 	desc = "An energy gun that fattens up anyone it hits. This version is considerably weaker than its original counterpart, the technology behind it seemingly still not  perfected."
 	icon = 'GainStation13/icons/obj/fatoray.dmi'
 	icon_state = "fatoray_weak"
-	pin = null
+	pin = /obj/item/firing_pin
 	ammo_type = list(/obj/item/ammo_casing/energy/fattening/weak)
 
 /obj/item/ammo_casing/energy/fattening/weak
@@ -89,7 +89,7 @@
 	icon = 'GainStation13/icons/obj/fatoray.dmi'
 	icon_state = "ray"
 	///How much fat is added to the target mob?
-	fat_added = 20
+	fat_added = 50
 
 ///////////////////////////////////////////////////
 
@@ -102,7 +102,7 @@
 	can_charge = 0
 	recoil = 3
 	slowdown = 1
-	pin = null
+	pin = /obj/item/firing_pin
 	// charge_sections = 3
 	weapon_weight = WEAPON_HEAVY
 	ammo_type = list(/obj/item/ammo_casing/energy/fattening/cannon_weak)
@@ -110,7 +110,7 @@
 /obj/item/ammo_casing/energy/fattening/cannon_weak
 	name = "one-shot fattening weapon lens"
 	select_name = "fatten"
-	e_cost = 300
+	e_cost = 200
 	projectile_type = /obj/item/projectile/energy/fattening/cannon_weak
 
 /obj/item/projectile/energy/fattening/cannon_weak
