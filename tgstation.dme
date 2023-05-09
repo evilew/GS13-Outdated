@@ -3322,6 +3322,7 @@
 #include "GainStation13\code\clothing\calorite_collar.dm"
 #include "GainStation13\code\game\sound.dm"
 #include "GainStation13\code\game\area\ruins.dm"
+#include "GainStation13\code\machinery\fattening_turret.dm"
 #include "GainStation13\code\machinery\feeding_tube.dm"
 #include "GainStation13\code\mechanics\fatness.dm"
 #include "GainStation13\code\mechanics\spells.dm"

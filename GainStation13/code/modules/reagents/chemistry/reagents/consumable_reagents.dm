@@ -75,6 +75,8 @@
 	else
 		return ..()
 
+// calorite blessing chem, used in the golem ability
+
 /datum/reagent/consumable/caloriteblessing
 	name = "Calorite blessing"
 	description = "A strange, viscous liquid derived from calorite. It is said to have physically enhancing properties surprisingly unrelated to weight gain when consumed"
