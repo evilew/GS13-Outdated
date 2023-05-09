@@ -153,14 +153,6 @@
 	category = CATEGORY_SEXUAL	//Any better place to put it? Doesn't really affect gameplay
 	medical_record_text = "Patient cares little with or dislikes being touched."
 
-/datum/quirk/weak_legs
-	name = "Weak Legs"
-	desc = "Your legs can't handle the heaviest of charges. Being too fat will render you unable to move at all."
-	mob_trait = TRAIT_WEAKLEGS
-	value = 0
-	category = CATEGORY_SEXUAL
-	medical_record_text = "Patient's legs seem to lack strength"
-
 /datum/quirk/SpawnWithWheelchair
 	name = "Mobility Assistance"
 	desc = "After your last failed fitness test, you were advised to start using a hoverchair"

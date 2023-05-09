@@ -14,6 +14,7 @@
 #define BREAKFAST	(1<<13)
 #define CLOTH 		(1<<14)
 #define ANTITOXIC 	(1<<15)
+#define BLESSED 	(1<<16)
 
 #define DRINK_NICE	1
 #define DRINK_GOOD	2

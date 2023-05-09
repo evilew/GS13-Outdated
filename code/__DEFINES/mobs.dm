@@ -156,6 +156,9 @@
 #define FULLNESS_LEVEL_HALF_FULL 20
 #define FULLNESS_LEVEL_EMPTY 0
 
+//Fullness emote cooldown
+#define FULLNESS_REDUCTION_COOLDOWN 50
+
 //Fatness levels, Here we go!
 #define FATNESS_LEVEL_BLOB 3440
 #define FATNESS_LEVEL_IMMOBILE 2540
@@ -170,7 +173,7 @@
 //Math stuff for fatness movement speed
 #define FATNESS_DIVISOR 860 
 #define FATNESS_MAX_MOVE_PENALTY 4
-#define FATNESS_WEAKLEGS_MODIFIER 20
+#define FATNESS_WEAKLEGS_MODIFIER 35
 #define FATNESS_STRONGLEGS_MODIFIER 0.5
 
 //Nutrition levels for humans

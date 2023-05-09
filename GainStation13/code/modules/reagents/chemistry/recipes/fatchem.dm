@@ -23,4 +23,4 @@
 	name = "extilphite"
 	id = /datum/reagent/consumable/extilphite
 	results = list(/datum/reagent/consumable/extilphite = 3)
-	required_reagents = list(/datum/reagent/consumable/sugar = 1, /datum/reagent/sodium = 2, /datum/reagent/carbon = 2)
+	required_reagents = list(/datum/reagent/consumable/sugar = 1, /datum/reagent/hydrogen = 2, /datum/reagent/carbon = 2)
