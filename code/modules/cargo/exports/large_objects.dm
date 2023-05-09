@@ -275,7 +275,7 @@
 	export_types = list(/obj/structure/statue/bananium/clown)
 
 /datum/export/large/fattystatue //GS13
-	cost = 2000
+	cost = 1500
 	unit_name = "Fatty statue"
 	export_types = list(/obj/structure/statue/calorite/fatty)
 
