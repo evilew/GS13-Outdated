@@ -1,5 +1,5 @@
 /mob/living/simple_animal/hostile/feed
-	var/food_per_feeding = 5
+	var/food_per_feeding = 10
 	var/food_fed = /datum/reagent/consumable/nutriment
 
 /mob/living/simple_animal/hostile/feed/AttackingTarget()
@@ -26,8 +26,8 @@
 	response_help  = "pets"
 	response_disarm = "shoos"
 	response_harm   = "hits"
-	maxHealth = 100
-	health = 100
+	maxHealth = 20
+	health = 20
 	obj_damage = 0
 	melee_damage_lower = 1
 	melee_damage_upper = 1
@@ -35,14 +35,13 @@
 	pass_flags = PASSTABLE
 	move_to_delay = 7
 	ventcrawler = VENTCRAWLER_ALWAYS
-	attacktext = "glorps"
-	attack_sound = 'sound/weapons/tap.ogg'
+	attacktext = "feeds itself to"
+	attack_sound = 'sound/items/eat.ogg'
 	unique_name = 1
 	gold_core_spawnable = HOSTILE_SPAWN
-	see_in_dark = 4
+	see_in_dark = 3
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE
 	initial_language_holder = /datum/language_holder/slime
-	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
 
 
 
