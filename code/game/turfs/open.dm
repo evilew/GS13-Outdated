@@ -218,7 +218,11 @@
 	icon = 'Gainstation13/icons/turf/floor_candy.dmi'
 	icon_state = "floor_pinkgum"
 
-
+/turf/open/candyfloor
+	name = "candy grass"
+	desc = "This weird grass smells of cinnamon and liquorice."
+	icon = 'Gainstation13/icons/turf/floor_candy.dmi'
+	icon_state = "candyfloor"
 
 
 /turf/open/indestructible/clock_spawn_room/Entered()
