@@ -42,10 +42,11 @@
 				/obj/item/reagent_containers/food/snacks/salad = 20,
 				/obj/item/reagent_containers/food/snacks/salad/hellcobb = 10,
 				/obj/item/clothing/under/cowkini = 5,
+				/obj/item/reagent_containers/food/snacks/blueberry_gum = 5
 				)
 	premium = list(
-				/obj/item/reagent_containers/food/drinks/soda_cans/air = 1,
-				/obj/item/reagent_containers/food/snacks/donut/chaos = 2
+				/obj/item/reagent_containers/food/drinks/soda_cans/air = 3,
+				/obj/item/reagent_containers/food/snacks/donut/chaos = 3
 				)
 
 	refill_canister = /obj/item/vending_refill/mealdor

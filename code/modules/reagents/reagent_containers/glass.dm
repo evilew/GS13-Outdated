@@ -254,12 +254,6 @@
 /obj/item/reagent_containers/glass/beaker/synthflesh
 	list_reagents = list(/datum/reagent/medicine/synthflesh = 50)
 
-/obj/item/reagent_containers/glass/beaker/lipoifier
-	list_reagents = list(/datum/reagent/consumable/lipoifier = 50) //GS13
-
-/obj/item/reagent_containers/glass/beaker/cornoil
-	list_reagents = list(/datum/reagent/consumable/cornoil = 50) //GS13
-
 /obj/item/reagent_containers/glass/bucket
 	name = "bucket"
 	desc = "It's a bucket."
