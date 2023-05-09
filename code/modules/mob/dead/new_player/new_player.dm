@@ -122,9 +122,11 @@
 			LateChoices()
 			return
 
-		if(client.prefs.real_name in client.pastcharacters) //if character has been spawned before
-			to_chat(usr, "<span class='notice'>You have played that character before this round, please select a new one!</span>")
-			return
+		// if(client.prefs.real_name in client.pastcharacters) //if character has been spawned before
+		// 	to_chat(usr, "<span class='notice'>You have played that character before this round, please select a new one!</span>")
+		// 	return
+
+		//GS13 - commented it out to allow players to rejoin
 
 		if(SSticker.queued_players.len || (relevant_cap && living_player_count() >= relevant_cap && !(ckey(key) in GLOB.admin_datums)))
 			to_chat(usr, "<span class='danger'>[CONFIG_GET(string/hard_popcap_message)]</span>")
