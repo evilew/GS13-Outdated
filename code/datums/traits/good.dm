@@ -61,7 +61,7 @@
 	lose_text = "<span class='danger'>You feel clumsy again.</span>"
 	medical_record_text = "Patient scored highly on cardio tests."
 
-/datum/quirk/strong_legs
+/datum/quirk/strong_legs //GS13
 	name = "Strong Legs"
 	desc = "Your body is able to handle heavier sizes very well."
 	value = 2

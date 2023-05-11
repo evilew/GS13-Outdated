@@ -32,8 +32,8 @@ PROCESSING_SUBSYSTEM_DEF(quirks)
 			list("Prosthetic Limb","Prosthetic Limb (Right Leg)"),
 			list("Paraplegic","Prosthetic Limb (Left Leg)"),
 			list("Paraplegic","Prosthetic Limb (Right Leg)"),
-			list("Fat Affinity","Fat Aversion"),
-			list("Weak Legs", "Strong Legs")
+			list("Fat Affinity","Fat Aversion"), //GS13
+			list("Weak Legs", "Strong Legs") //GS13
 			)
 	return ..()
 

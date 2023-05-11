@@ -452,8 +452,8 @@ mob/visible_message(message, self_message, blind_message, vision_distance = DEFA
 
 	if(!usr.client.respawn_observing)
 		var/responserespawn = alert(src,"Are you sure you want to respawn?","Warning","Yes","No")
-		// if(responserespawn != "Yes")
-		// 	return
+		if(responserespawn != "Yes")
+			return
 		// usr.client.pastcharacters += usr.real_name
 
 		//GS13 - commented out to allow players to rejoin with the same char

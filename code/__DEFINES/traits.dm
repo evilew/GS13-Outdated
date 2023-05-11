@@ -115,8 +115,6 @@
 #define TRAIT_DEPRESSION		"depression"
 #define TRAIT_JOLLY				"jolly"
 #define TRAIT_HEADPAT_SLUT		"headpat_slut"
-#define TRAIT_WEAKLEGS			"weak_legs"
-#define TRAIT_STRONGLEGS		"strong_legs"
 #define TRAIT_NOCRITDAMAGE		"no_crit"
 #define TRAIT_NOSLIPWATER		"noslip_water"
 #define TRAIT_NOSLIPALL			"noslip_all"
@@ -200,8 +198,13 @@
 #define TRAIT_COLDBLOODED		"coldblooded"	// Your body is literal room temperature. Does not make you immune to the temp.
 #define TRAIT_FLIMSY			"flimsy" //you have 20% less maxhealth
 #define TRAIT_TRASHCAN			"trashcan" //Im the TRASH MAN! (Shamlessly stolen from hyper for local trash eater, flint)
+
+//GS13 quirks
 #define TRAIT_FAT_GOOD			"fat_good"
-#define TRAIT_FAT_BAD			"fat_bad"
+#define TRAIT_FAT_BAD			"fat_bad" 
+#define TRAIT_LIPOLICIDE_TOLERANCE "lipolicide_tolerance"
+#define TRAIT_WEAKLEGS			"weak_legs"
+#define TRAIT_STRONGLEGS		"strong_legs"
 
 //Hyper
 #define TRAIT_VIRILE		"virile" //you have 20% more chance of impreg

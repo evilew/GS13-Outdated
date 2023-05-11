@@ -23,19 +23,19 @@
 /obj/item/reagent_containers/glass/beaker/cornoil
 	list_reagents = list(/datum/reagent/consumable/cornoil = 50)
 
-/obj/item/reagent_containers/glass/beaker/cornoil
+/obj/item/reagent_containers/glass/beaker/blueberry_juice
 	list_reagents = list(/datum/reagent/blueberry_juice = 50)
 
-/obj/item/reagent_containers/glass/beaker/cornoil
+/obj/item/reagent_containers/glass/beaker/fizulphite
 	list_reagents = list(/datum/chemical_reaction/fizulphite = 50)
 
-/obj/item/reagent_containers/glass/beaker/cornoil
+/obj/item/reagent_containers/glass/beaker/extilphite
 	list_reagents = list(/datum/chemical_reaction/extilphite = 50)
 
-/obj/item/reagent_containers/glass/beaker/cornoil
+/obj/item/reagent_containers/glass/beaker/calorite_blessing
 	list_reagents = list(/datum/reagent/consumable/caloriteblessing = 50)
 
-/obj/item/reagent_containers/glass/beaker/cornoil
+/obj/item/reagent_containers/glass/beaker/flatulose
 	list_reagents = list(/datum/reagent/consumable/flatulose = 50)
 
 //blueberry gum snack

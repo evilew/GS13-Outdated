@@ -36,7 +36,7 @@
 	move_to_delay = 7
 	ventcrawler = VENTCRAWLER_ALWAYS
 	attacktext = "feeds itself to"
-	attack_sound = 'sound/items/eat.ogg'
+	attack_sound = 'sound/items/eatfood.ogg'
 	unique_name = 1
 	gold_core_spawnable = HOSTILE_SPAWN
 	see_in_dark = 3
