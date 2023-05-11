@@ -29,8 +29,8 @@
 	maxHealth = 20
 	health = 20
 	obj_damage = 0
-	melee_damage_lower = 1
-	melee_damage_upper = 1
+	melee_damage_lower = 0.001
+	melee_damage_upper = 0.001
 	faction = list("slime")
 	pass_flags = PASSTABLE
 	move_to_delay = 7
