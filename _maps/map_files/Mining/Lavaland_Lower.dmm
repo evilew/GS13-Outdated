@@ -6708,6 +6708,9 @@
 /obj/machinery/door/airlock/public,
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/caloriteresearch_powered)
+"rh" = (
+/turf/open/floor/plating/lavaland_baseturf,
+/area/lavaland/surface/outdoors)
 "ri" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -6750,6 +6753,16 @@
 	layer = 2.9
 	},
 /turf/open/floor/engine,
+/area/xenoarch/caloriteresearch_powered)
+"ry" = (
+/obj/item/bodypart/l_leg{
+	pixel_y = 8;
+	pixel_x = -5
+	},
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
 /area/xenoarch/caloriteresearch_powered)
 "rB" = (
 /obj/structure/chair/stool{
@@ -6865,6 +6878,8 @@
 "sx" = (
 /obj/structure/fluff/paper,
 /obj/structure/filingcabinet,
+/obj/item/paper/fluff/ruins/calorite_facility/note1,
+/obj/item/paper/fluff/ruins/calorite_facility/note18,
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/caloriteresearch_powered)
 "sy" = (
@@ -6929,6 +6944,17 @@
 /obj/effect/turf_decal/tile/purple,
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
+"tc" = (
+/obj/structure/window/reinforced/tinted{
+	dir = 4
+	},
+/obj/machinery/conveyor{
+	dir = 2;
+	id = "fatchamber"
+	},
+/obj/item/projectile/energy/fattening/cannon,
+/turf/open/floor/plating,
+/area/xenoarch/caloriteresearch_powered)
 "ti" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -7100,9 +7126,7 @@
 /obj/effect/turf_decal/stripes{
 	dir = 8
 	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
 "uv" = (
@@ -7128,6 +7152,10 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
+/area/xenoarch/caloriteresearch_powered)
+"uG" = (
+/obj/item/projectile/energy/fattening/cannon,
+/turf/open/floor/mineral/calorite,
 /area/xenoarch/caloriteresearch_powered)
 "uH" = (
 /obj/structure/table,
@@ -7265,6 +7293,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
+"vU" = (
+/obj/structure/cable,
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
+/area/xenoarch/caloriteresearch_powered)
 "vX" = (
 /obj/machinery/light{
 	dir = 1
@@ -7375,6 +7409,7 @@
 /obj/machinery/light/small/broken{
 	dir = 1
 	},
+/obj/item/autosurgeon/nutripump_turbo,
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/caloriteresearch_powered)
 "wR" = (
@@ -8019,6 +8054,7 @@
 "Bl" = (
 /obj/structure/filingcabinet,
 /obj/structure/fluff/paper,
+/obj/item/paper/fluff/ruins/calorite_facility/note4,
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/caloriteresearch_powered)
 "Bm" = (
@@ -8111,6 +8147,10 @@
 "BV" = (
 /obj/structure/girder,
 /turf/open/floor/plating/lavaland_baseturf,
+/area/xenoarch/caloriteresearch_powered)
+"BY" = (
+/obj/structure/mineral_door/calorite,
+/turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
 "Cc" = (
 /obj/effect/turf_decal/loading_area,
@@ -9064,6 +9104,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/item/paper/fluff/ruins/calorite_facility/engineer_note,
 /turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
 "Jy" = (
@@ -9151,8 +9192,10 @@
 	dir = 5
 	},
 /area/xenoarch/gen)
+"Kf" = (
+/turf/open/floor/mineral/basaltstone_floor,
+/area/xenoarch/caloriteresearch_powered)
 "Kh" = (
-/obj/structure/cable,
 /obj/effect/turf_decal/box/white,
 /turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
@@ -9351,6 +9394,10 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/open/floor/grass,
 /area/xenoarch/caloriteresearch_powered)
+"LM" = (
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/plating,
+/area/xenoarch/caloriteresearch_powered)
 "LN" = (
 /obj/structure/chair/stool{
 	pixel_y = 8
@@ -9494,6 +9541,10 @@
 	},
 /turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
+"MF" = (
+/obj/machinery/porta_turret/fattening,
+/turf/open/floor/plasteel,
+/area/xenoarch/caloriteresearch_unpowered)
 "MH" = (
 /obj/structure/tank_dispenser,
 /obj/machinery/light/small{
@@ -9556,6 +9607,10 @@
 	icon_state = "engine"
 	},
 /area/xenoarch/nothinghere)
+"Ng" = (
+/obj/item/paper/fluff/ruins/calorite_facility/charred,
+/turf/open/floor/plasteel,
+/area/xenoarch/caloriteresearch_powered)
 "Nh" = (
 /obj/structure/table,
 /obj/item/plant_analyzer,
@@ -9649,6 +9704,10 @@
 	icon_state = "crateopen"
 	},
 /turf/open/floor/plasteel,
+/area/xenoarch/caloriteresearch_powered)
+"NX" = (
+/obj/structure/mineral_door/calorite,
+/turf/open/floor/mineral/calorite,
 /area/xenoarch/caloriteresearch_powered)
 "NZ" = (
 /obj/structure/rack,
@@ -9888,6 +9947,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/item/clothing/accessory/armband/science,
 /turf/open/floor/carpet/royalblue,
 /area/xenoarch/caloriteresearch_powered)
 "Pv" = (
@@ -9905,6 +9965,11 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel,
+/area/xenoarch/caloriteresearch_powered)
+"PC" = (
+/obj/structure/closet/cabinet,
+/obj/item/clothing/accessory/armband/medblue,
+/turf/open/floor/wood,
 /area/xenoarch/caloriteresearch_powered)
 "PF" = (
 /obj/structure/table,
@@ -10121,6 +10186,12 @@
 /obj/machinery/mineral/processing_unit_console,
 /turf/closed/wall,
 /area/xenoarch/caloriteresearch_powered)
+"RK" = (
+/obj/structure/closet/cabinet,
+/obj/item/clothing/under/rank/chief_engineer,
+/obj/item/clothing/shoes/workboots/toeless,
+/turf/open/floor/wood,
+/area/xenoarch/caloriteresearch_powered)
 "RL" = (
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
@@ -10240,6 +10311,10 @@
 /obj/effect/turf_decal/box,
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
+"Ss" = (
+/obj/machinery/porta_turret/fattening,
+/turf/open/floor/plating/lavaland_baseturf,
+/area/lavaland/surface/outdoors)
 "St" = (
 /obj/machinery/light/broken{
 	dir = 1
@@ -10318,6 +10393,11 @@
 /obj/item/xenoarch/clean/brush,
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
+"SP" = (
+/obj/structure/table,
+/obj/item/paper/fluff/ruins/calorite_facility/note37,
+/turf/open/floor/plasteel/dark,
+/area/xenoarch/caloriteresearch_powered)
 "SR" = (
 /obj/machinery/door/airlock/public/glass{
 	dir = 4
@@ -10349,6 +10429,10 @@
 "Te" = (
 /obj/structure/table/wood,
 /obj/item/trash/candle,
+/obj/item/paper/fluff/ruins/calorite_facility/security_note{
+	pixel_y = -7;
+	pixel_x = 9
+	},
 /turf/open/floor/wood,
 /area/xenoarch/caloriteresearch_powered)
 "Tg" = (
@@ -10375,7 +10459,9 @@
 /turf/open/floor/plating/lavaland_baseturf,
 /area/xenoarch/caloriteresearch_unpowered)
 "Tn" = (
-/obj/structure/closet/secure_closet/personal/cabinet,
+/obj/structure/closet/cabinet,
+/obj/item/clothing/under/plasmaman/science,
+/obj/item/clothing/head/helmet/space/plasmaman/science,
 /turf/open/floor/carpet/royalblue,
 /area/xenoarch/caloriteresearch_powered)
 "To" = (
@@ -10604,13 +10690,24 @@
 /turf/open/floor/plasteel/freezer,
 /area/xenoarch/caloriteresearch_powered)
 "UL" = (
-/obj/structure/closet/secure_closet/personal/cabinet,
+/obj/structure/closet/cabinet,
 /turf/open/floor/wood,
 /area/xenoarch/caloriteresearch_powered)
 "UM" = (
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
+/area/xenoarch/caloriteresearch_powered)
+"UN" = (
+/obj/structure/window/reinforced/tinted{
+	dir = 8
+	},
+/obj/machinery/conveyor{
+	dir = 1;
+	id = "fatchamber"
+	},
+/obj/item/projectile/energy/fattening/cannon,
+/turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
 "UO" = (
 /turf/closed/wall/r_wall,
@@ -11000,12 +11097,12 @@
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "XY" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
 /obj/item/storage/toolbox/mechanical{
 	pixel_x = 4;
 	pixel_y = 9
+	},
+/obj/structure/cable{
+	icon_state = "0-8"
 	},
 /turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
@@ -11063,6 +11160,11 @@
 	icon_state = "platingdmg1"
 	},
 /area/xenoarch/caloriteresearch_powered)
+"Yz" = (
+/obj/structure/closet/cabinet,
+/obj/item/clothing/accessory/armband/science,
+/turf/open/floor/carpet/royalblue,
+/area/xenoarch/caloriteresearch_powered)
 "YC" = (
 /obj/structure/rack/shelf,
 /turf/open/floor/plasteel,
@@ -11096,12 +11198,24 @@
 	},
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
+"YV" = (
+/obj/machinery/porta_turret/fattening,
+/turf/open/floor/mineral/basaltstone_floor,
+/area/xenoarch/caloriteresearch_powered)
 "YW" = (
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
+/area/xenoarch/caloriteresearch_powered)
+"YX" = (
+/obj/structure/closet/cabinet,
+/obj/item/clothing/under/rank/security/blueshirt,
+/obj/item/clothing/head/helmet/blueshirt,
+/obj/item/clothing/suit/armor/vest/blueshirt,
+/obj/item/clothing/shoes/jackboots,
+/turf/open/floor/wood,
 /area/xenoarch/caloriteresearch_powered)
 "Zh" = (
 /obj/structure/closet/crate/trashcart,
@@ -63767,9 +63881,9 @@ yw
 sn
 DX
 DX
-DX
-DX
-DX
+YV
+Kf
+YV
 DX
 sn
 jV
@@ -64749,7 +64863,7 @@ ab
 ab
 lQ
 lQ
-lQ
+rh
 Ml
 Qr
 BV
@@ -65006,7 +65120,7 @@ ab
 ab
 Cg
 BP
-lQ
+Ss
 PJ
 Qr
 OA
@@ -65018,7 +65132,7 @@ tN
 Kt
 Kt
 Kt
-Kt
+UN
 tN
 Kt
 Fq
@@ -65262,8 +65376,8 @@ ab
 ab
 ab
 yw
-lQ
-lQ
+rh
+rh
 PJ
 Qr
 Sc
@@ -65528,7 +65642,7 @@ XI
 If
 If
 If
-If
+tc
 If
 If
 If
@@ -65547,7 +65661,7 @@ Ls
 YF
 Ht
 Wx
-Vt
+uG
 LH
 Vt
 Vt
@@ -66059,8 +66173,8 @@ OB
 Ls
 Ls
 YF
-SG
-Vt
+BY
+uG
 Vt
 Vt
 SG
@@ -66319,8 +66433,8 @@ YF
 Ht
 LH
 Wx
-Vt
-Vt
+uG
+NX
 SG
 TF
 Ls
@@ -68117,7 +68231,7 @@ OA
 EV
 Np
 sJ
-zz
+SP
 zz
 QH
 wI
@@ -68131,7 +68245,7 @@ KL
 Gc
 xl
 KL
-SG
+LM
 Zw
 Oa
 OA
@@ -68386,7 +68500,7 @@ SG
 Kp
 Oa
 Iu
-KL
+ry
 Sn
 KU
 SG
@@ -68651,7 +68765,7 @@ Oa
 OA
 xQ
 Lj
-Ls
+Ng
 Lj
 Tt
 Tj
@@ -69402,7 +69516,7 @@ SG
 xd
 YW
 Kq
-KL
+vU
 Zw
 Kq
 Kq
@@ -69414,7 +69528,7 @@ Jq
 ON
 Kq
 Zw
-KL
+vU
 SG
 KL
 Kq
@@ -70192,7 +70306,7 @@ Ls
 OA
 AJ
 KL
-SG
+Pw
 Kq
 Kq
 Pw
@@ -70704,7 +70818,7 @@ OA
 DL
 Ls
 OA
-UL
+YX
 Fw
 Bg
 OA
@@ -70954,7 +71068,7 @@ JN
 Tt
 tp
 OA
-Tn
+Yz
 WM
 Br
 OA
@@ -71218,7 +71332,7 @@ zl
 uz
 Tt
 OA
-UL
+PC
 rb
 we
 OA
@@ -71732,7 +71846,7 @@ OA
 Ls
 Ls
 OA
-UL
+RK
 rb
 we
 OA
@@ -74541,7 +74655,7 @@ ay
 Hz
 tZ
 Ej
-NT
+MF
 tC
 Hz
 Hz
@@ -75840,7 +75954,7 @@ Hz
 Hz
 Hz
 tC
-NT
+MF
 NN
 ay
 ay
