@@ -1376,12 +1376,17 @@ datum/uplink_item/stealthy_weapons/taeclowndo_shoes
 /datum/uplink_item/device_tools
 	category = "Misc. Gadgets"
 
-
 /datum/uplink_item/device_tools/fatnade //GS13
 	name = "Fattening Grenade"
 	desc = "A smoke grenade with a special caloric mix inside it. Remember to wear internals upon using."
-	item = /obj/item/card/emag
+	item = /obj/item/grenade/chem_grenade/lipoifier_strong
 	cost = 2
+
+/datum/uplink_item/device_tools/nutritech_turbo //GS13
+	name = "Nutri-Pump TURBO Autosurgeon"
+	desc = "This implant was meant to prevent people from going hungry, but due to a flaw in its designs, it permanently produces a small amount of nutriment overtime."
+	item = /obj/item/autosurgeon/nutripump_turbo
+	cost = 3
 
 /datum/uplink_item/device_tools/emag
 	name = "Cryptographic Sequencer"

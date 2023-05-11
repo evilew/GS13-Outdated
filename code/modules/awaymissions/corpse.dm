@@ -686,7 +686,7 @@
 	important_info = "Keep your den in one piece and away from curious eyes! YOU AREN'T ALLOWED TO CAPTURE / FATTEN UP PEOPLE WHO DON'T DO NON-CON OR DIDN'T AGREE TO IT!!"
 	outfit = /datum/outfit/feeders_den/fanatic
 	mirrorcanloadappearance = TRUE
-	assignedrole = "Space fanatic"
+	assignedrole = "Space Agent"
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper_s"
 	death = FALSE
@@ -719,7 +719,7 @@
 
 /obj/effect/mob_spawn/human/feeders_den/victim
 	name = "Grease stained cryopod"
-	mob_name = "feeder victim"
+	mob_name = "Syndicate Prisoner"
 	desc = "Through the grease-stained cryopod glass, you can see someone obese sleeping inside..."
 	job_description = "Den Victim"
 	short_desc = "You don't remember how you even got here."
@@ -743,7 +743,7 @@
 	..()
 
 /obj/effect/mob_spawn/human/feeders_den/victim/startfat(mob/living/carbon/human/new_spawn)
-	new_spawn.fatness = 1000
+	new_spawn.fatness = 300
 	return ..()
 
 /obj/effect/mob_spawn/human/feeders_den/victim/special(mob/living/carbon/human/new_spawn)
