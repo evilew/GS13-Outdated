@@ -39,12 +39,10 @@
 					CAT_SANDWICH,
 					CAT_SOUP,
 					CAT_SPAGHETTI,
-					CAT_MEGAFOODS, //GS13 change, big foods for bigger people -Eye
 				),
 				CAT_DRINK = CAT_NONE,
 				CAT_CLOTHING = CAT_NONE,
 				CAT_CARPENTRY = CAT_NONE,
-
 			)
 
 	var/cur_category = CAT_NONE
