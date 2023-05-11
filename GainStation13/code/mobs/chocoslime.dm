@@ -1,5 +1,5 @@
 /mob/living/simple_animal/hostile/feed
-	var/food_per_feeding = 5
+	var/food_per_feeding = 10
 	var/food_fed = /datum/reagent/consumable/nutriment
 
 /mob/living/simple_animal/hostile/feed/AttackingTarget()
@@ -26,11 +26,11 @@
 	response_help  = "pets"
 	response_disarm = "shoos"
 	response_harm   = "hits"
-	maxHealth = 100
-	health = 100
+	maxHealth = 20
+	health = 20
 	obj_damage = 0
-	melee_damage_lower = 1
-	melee_damage_upper = 1
+	melee_damage_lower = 0.001
+	melee_damage_upper = 0.001
 	faction = list("slime")
 	pass_flags = PASSTABLE
 	move_to_delay = 7
