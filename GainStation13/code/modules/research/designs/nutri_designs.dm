@@ -35,7 +35,7 @@
 
 /datum/design/cyberimp_nutriment_turbo
 	name = "Nutriment Pump Implant TURBO"
-	desc = "This implant with synthesize and pump into your bloodstream a small amount of nutriment when you are hungry."
+	desc = "This implant was meant to prevent people from going hungry, but due to a flaw in its designs, it permanently produces a small amount of nutriment overtime."
 	id = "ci-nutrimentturbo"
 	build_type = PROTOLATHE | MECHFAB
 	construction_time = 100
@@ -43,3 +43,4 @@
 	build_path = /obj/item/organ/cyberimp/chest/nutriment/turbo
 	category = list("Misc", "Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL
+

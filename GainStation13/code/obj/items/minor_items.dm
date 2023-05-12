@@ -62,6 +62,6 @@
 // nutriment pump turbo
 
 /obj/item/autosurgeon/nutripump_turbo
-	desc = "A single use autosurgeon that contains a turbo version of nutriment pump of. A screwdriver can be used to remove it, but implants can't be placed back in."
+	desc = "A single use autosurgeon that contains a turbo version of the nutriment pump. A screwdriver can be used to remove it, but implants can't be placed back in."
 	uses = 1
 	starting_organ = /obj/item/organ/cyberimp/chest/nutriment/turbo
