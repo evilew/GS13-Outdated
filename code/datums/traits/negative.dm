@@ -518,7 +518,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	if(quirk_holder)
 		quirk_holder.maxHealth += healthchange
 
-/datum/quirk/weak_legs
+/datum/quirk/weak_legs //GS13
 	name = "Weak Legs"
 	desc = "Your legs can't handle the heaviest of charges. Being too fat will render you unable to move at all."
 	mob_trait = TRAIT_WEAKLEGS

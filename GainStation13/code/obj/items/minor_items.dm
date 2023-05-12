@@ -23,19 +23,19 @@
 /obj/item/reagent_containers/glass/beaker/cornoil
 	list_reagents = list(/datum/reagent/consumable/cornoil = 50)
 
-/obj/item/reagent_containers/glass/beaker/cornoil
+/obj/item/reagent_containers/glass/beaker/blueberry_juice
 	list_reagents = list(/datum/reagent/blueberry_juice = 50)
 
-/obj/item/reagent_containers/glass/beaker/cornoil
+/obj/item/reagent_containers/glass/beaker/fizulphite
 	list_reagents = list(/datum/chemical_reaction/fizulphite = 50)
 
-/obj/item/reagent_containers/glass/beaker/cornoil
+/obj/item/reagent_containers/glass/beaker/extilphite
 	list_reagents = list(/datum/chemical_reaction/extilphite = 50)
 
-/obj/item/reagent_containers/glass/beaker/cornoil
+/obj/item/reagent_containers/glass/beaker/calorite_blessing
 	list_reagents = list(/datum/reagent/consumable/caloriteblessing = 50)
 
-/obj/item/reagent_containers/glass/beaker/cornoil
+/obj/item/reagent_containers/glass/beaker/flatulose
 	list_reagents = list(/datum/reagent/consumable/flatulose = 50)
 
 //blueberry gum snack
@@ -58,3 +58,10 @@
 	name = "chewed gum"
 	icon = 'GainStation13/icons/obj/gum.dmi'
 	icon_state = "gum_chewed"
+
+// nutriment pump turbo
+
+/obj/item/autosurgeon/nutripump_turbo
+	desc = "A single use autosurgeon that contains a turbo version of nutriment pump of. A screwdriver can be used to remove it, but implants can't be placed back in."
+	uses = 1
+	starting_organ = /obj/item/organ/cyberimp/chest/nutriment/turbo
