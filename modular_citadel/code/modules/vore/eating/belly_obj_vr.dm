@@ -157,8 +157,9 @@
 	return ..()
 
 /obj/belly/proc/Remove(mob/living/owner)
-	owner.vore_organs -= src
-	owner = null
+	if(owner)
+		owner.vore_organs -= src
+		owner = null
 
 // Called whenever an atom enters this belly
 /obj/belly/Entered(var/atom/movable/thing,var/atom/OldLoc)
