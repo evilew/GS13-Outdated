@@ -94,7 +94,7 @@
 	var/list/mob/living/carbon/human/targets = list()
 
 	for(var/mob/dead/new_player/target in GLOB.player_list)
-		if(target.client.prefs.noncon)
+		if(target.client?.prefs?.noncon)
 			targets += target
 
 	if(candidates.len)

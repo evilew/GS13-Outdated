@@ -52,7 +52,7 @@
 		if(!mode.check_age(M.client, minimum_required_age))
 			trimmed_list.Remove(M)
 			continue
-		if (!(antag_name in M.client.prefs.be_special) || jobban_isbanned(M.ckey, list(antag_name, ROLE_SYNDICATE)))//are they willing and not antag-banned?
+		if (!(antag_name in M.client?.prefs?.be_special) || jobban_isbanned(M.ckey, list(antag_name, ROLE_SYNDICATE)))//are they willing and not antag-banned?
 			trimmed_list.Remove(M)
 			continue
 		if (M.mind)
@@ -77,11 +77,11 @@
 			trimmed_list.Remove(M)
 			continue
 		if(antag_flag_override)
-			if(!(antag_flag_override in M.client.prefs.be_special) || jobban_isbanned(M.ckey, antag_flag_override))
+			if(!(antag_flag_override in M.client?.prefs?.be_special) || jobban_isbanned(M.ckey, antag_flag_override))
 				trimmed_list.Remove(M)
 				continue
 		else
-			if(!(antag_flag in M.client.prefs.be_special) || jobban_isbanned(M.ckey, antag_flag))
+			if(!(antag_flag in M.client?.prefs?.be_special) || jobban_isbanned(M.ckey, antag_flag))
 				trimmed_list.Remove(M)
 				continue
 	return trimmed_list
@@ -257,7 +257,7 @@
 		if(issilicon(player)) // Your assigned role doesn't change when you are turned into a silicon.
 			living_players -= player
 			continue
-		if(player.client.prefs.allow_midround_antag == 0) //Do they have midround traitor prefs enabled? If not, trim.
+		if(player.client?.prefs?.allow_midround_antag == 0) //Do they have midround traitor prefs enabled? If not, trim.
 			living_players -= player
 			continue
 		if(is_centcom_level(player.z))
@@ -361,7 +361,7 @@
 		if(!mode.check_age(M.client, minimum_required_age))
 			trimmed_list.Remove(M)
 			continue
-		if (!(antag_name in M.client.prefs.be_special) || jobban_isbanned(M.ckey, list(antag_name, ROLE_SYNDICATE)))//are they willing and not antag-banned?
+		if (!(antag_name in M.client?.prefs?.be_special) || jobban_isbanned(M.ckey, list(antag_name, ROLE_SYNDICATE)))//are they willing and not antag-banned?
 			trimmed_list.Remove(M)
 			continue
 		if (M.mind)
@@ -378,7 +378,7 @@
 
 /datum/dynamic_ruleset/midround/autotraitor/lewd/ready()
 	for(var/mob/living/target in living_players)
-		if(target.client.prefs.noncon)
+		if(target.client?.prefs?.noncon)
 			targets += target
 
 	if(lewd_candidates.len)

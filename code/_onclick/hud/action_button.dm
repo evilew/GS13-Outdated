@@ -54,7 +54,7 @@
 		locked = !locked
 		to_chat(usr, "<span class='notice'>Action button \"[name]\" [locked ? "" : "un"]locked.</span>")
 		if(id && usr.client) //try to (un)remember position
-			usr.client.prefs.action_buttons_screen_locs["[name]_[id]"] = locked ? moved : null
+			usr.client?.prefs?.action_buttons_screen_locs["[name]_[id]"] = locked ? moved : null
 		return TRUE
 	if(usr.next_click > world.time)
 		return
@@ -89,7 +89,7 @@
 		locked = !locked
 		to_chat(usr, "<span class='notice'>Action button \"[name]\" [locked ? "" : "un"]locked.</span>")
 		if(id && usr.client) //try to (un)remember position
-			usr.client.prefs.action_buttons_screen_locs["[name]_[id]"] = locked ? moved : null
+			usr.client?.prefs?.action_buttons_screen_locs["[name]_[id]"] = locked ? moved : null
 		return TRUE
 	if(modifiers["alt"])
 		for(var/V in usr.actions)
@@ -97,12 +97,12 @@
 			var/obj/screen/movable/action_button/B = A.button
 			B.moved = FALSE
 			if(B.id && usr.client)
-				usr.client.prefs.action_buttons_screen_locs["[B.name]_[B.id]"] = null
-			B.locked = usr.client.prefs.buttons_locked
-		locked = usr.client.prefs.buttons_locked
+				usr.client?.prefs?.action_buttons_screen_locs["[B.name]_[B.id]"] = null
+			B.locked = usr.client?.prefs?.buttons_locked
+		locked = usr.client?.prefs?.buttons_locked
 		moved = FALSE
 		if(id && usr.client)
-			usr.client.prefs.action_buttons_screen_locs["[name]_[id]"] = null
+			usr.client?.prefs?.action_buttons_screen_locs["[name]_[id]"] = null
 		usr.update_action_buttons(TRUE)
 		to_chat(usr, "<span class='notice'>Action button positions have been reset.</span>")
 		return TRUE

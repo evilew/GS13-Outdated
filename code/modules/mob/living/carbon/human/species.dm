@@ -313,7 +313,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		C.canbearoused = FALSE
 	else
 		if(C.client)
-			C.canbearoused = C.client.prefs.arousable
+			C.canbearoused = C.client?.prefs?.arousable
 	if(ishuman(C))
 		var/mob/living/carbon/human/H = C
 		if(NOGENITALS in H.dna.species.species_traits)

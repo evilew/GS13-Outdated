@@ -288,7 +288,7 @@
 		for(var/mob/M in GLOB.player_list)
 			if(M.stat != DEAD)
 				continue	//we are not dead!
-			if(!(ROLE_ALIEN in M.client.prefs.be_special))
+			if(!(ROLE_ALIEN in M.client?.prefs?.be_special))
 				continue	//we don't want to be an alium
 			if(M.client.is_afk())
 				continue	//we are afk

@@ -143,7 +143,7 @@
 		return
 
 	if (src.client)
-		if(client.prefs.muted & MUTE_IC)
+		if(client?.prefs?.muted & MUTE_IC)
 			to_chat(src, "You cannot send IC messages (muted).")
 			return
 		if (!(ignore_spam || forced) && src.client.handle_spam_prevention(message,MUTE_IC))
@@ -152,7 +152,7 @@
 	friend_talk(message)
 
 /mob/camera/imaginary_friend/Hear(message, atom/movable/speaker, datum/language/message_language, raw_message, radio_freq, list/spans, message_mode, atom/movable/source)
-	if (client?.prefs.chat_on_map && (client.prefs.see_chat_non_mob || ismob(speaker)))
+	if (client?.prefs.chat_on_map && (client?.prefs?.see_chat_non_mob || ismob(speaker)))
 		create_chat_message(speaker, message_language, raw_message, spans, message_mode)
 	to_chat(src, compose_message(speaker, message_language, raw_message, radio_freq, spans, message_mode, FALSE, source))
 

@@ -25,7 +25,7 @@
 	log_whisper("[src.name]/[src.key] : [message]")
 
 	if (src.client)
-		if (src.client.prefs.muted & MUTE_IC)
+		if (src.client?.prefs?.muted & MUTE_IC)
 			to_chat(src, "<span class='danger'>You cannot whisper (muted).</span>")
 			return
 
@@ -54,7 +54,7 @@
 
 	var/list/listening_dead = list()
 	for(var/mob/M in GLOB.player_list)
-		if(M.stat == DEAD && M.client && ((M.client.prefs.chat_toggles & CHAT_GHOSTWHISPER) || (get_dist(M, src) <= 7)))
+		if(M.stat == DEAD && M.client && ((M.client?.prefs?.chat_toggles & CHAT_GHOSTWHISPER) || (get_dist(M, src) <= 7)))
 			listening_dead |= M
 
 	var/list/listening = get_hearers_in_view(1, src)

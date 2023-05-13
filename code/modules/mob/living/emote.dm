@@ -410,7 +410,7 @@
 		return FALSE
 	else if(QDELETED(user))
 		return FALSE
-	else if(user.client && user.client.prefs.muted & MUTE_IC)
+	else if(user.client && user.client?.prefs?.muted & MUTE_IC)
 		to_chat(user, "You cannot send IC messages (muted).")
 		return FALSE
 	else if(!params)

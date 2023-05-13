@@ -51,7 +51,7 @@
 	blend_mode = BLEND_OVERLAY
 
 /obj/screen/plane_master/game_world/backdrop(mob/mymob)
-	if(istype(mymob) && mymob.client && mymob.client.prefs && mymob.client.prefs.ambientocclusion)
+	if(istype(mymob) && mymob.client && mymob.client.prefs && mymob.client?.prefs?.ambientocclusion)
 		add_filter("ambient_occlusion", 0, AMBIENT_OCCLUSION)
 	else
 		remove_filter("ambient_occlusion")

@@ -107,7 +107,7 @@
 
 	// Remove titlebar and resize handles for a fancy window
 	var/have_title_bar
-	if(user.client.prefs.tgui_fancy)
+	if(user.client?.prefs?.tgui_fancy)
 		have_title_bar = "titlebar=0;can_resize=0;"
 	else
 		have_title_bar = "titlebar=1;can_resize=1;"
@@ -219,8 +219,8 @@
 		"screen" = ui_screen,
 		"style" = style,
 		"interface" = interface,
-		"fancy" = user.client.prefs.tgui_fancy,
-		"locked" = user.client.prefs.tgui_lock && !custom_browser_id,
+		"fancy" = user.client?.prefs?.tgui_fancy,
+		"locked" = user.client?.prefs?.tgui_lock && !custom_browser_id,
 		"observer" = isobserver(user),
 		"window" = window_id,
 		// NOTE: Intentional \ref usage; tgui datums can't/shouldn't
@@ -269,9 +269,9 @@
 		if("tgui:link")
 			user << link(params["url"])
 		if("tgui:fancy")
-			user.client.prefs.tgui_fancy = TRUE
+			user.client?.prefs?.tgui_fancy = TRUE
 		if("tgui:nofrills")
-			user.client.prefs.tgui_fancy = FALSE
+			user.client?.prefs?.tgui_fancy = FALSE
 		else
 			update_status(push = FALSE) // Update the window state.
 			if(src_object.ui_act(action, params, src, state)) // Call ui_act() on the src_object.

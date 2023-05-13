@@ -128,7 +128,7 @@ GLOBAL_LIST_INIT(hyper_special_roles, list(
 					candidates += applicant
 
 	for(var/mob/living/carbon/human/target in GLOB.player_list)
-		if(target.client.prefs.noncon)
+		if(target.client?.prefs?.noncon)
 			if(!(target.job in temp.restricted_jobs))
 				targets += target
 
@@ -212,7 +212,7 @@ GLOBAL_LIST_INIT(hyper_special_roles, list(
 	var/list/datum/mind/owners = get_owners()
 	for(var/datum/mind/candidate in SSticker.minds)
 		if (!(candidate in owners) && ishuman(candidate.current) && (candidate.current.client))
-			if(candidate.current.client.prefs.noncon == 1)
+			if(candidate.current.client?.prefs?.noncon == 1)
 				targets += candidate
 	if(targets.len > 0)
 		target = pick(targets)

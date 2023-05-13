@@ -488,11 +488,11 @@ mob/visible_message(message, self_message, blind_message, vision_distance = DEFA
 	if(!ckey)
 		return
 	SEND_SIGNAL(new_mob, COMSIG_MOB_PRE_PLAYER_CHANGE, new_mob, src)
-	if (client && client.prefs && client.prefs.auto_ooc)
-		if (client.prefs.chat_toggles & CHAT_OOC && isliving(new_mob))
-			client.prefs.chat_toggles ^= CHAT_OOC
-		if (!(client.prefs.chat_toggles & CHAT_OOC) && isdead(new_mob))
-			client.prefs.chat_toggles ^= CHAT_OOC
+	if (client && client.prefs && client?.prefs?.auto_ooc)
+		if (client?.prefs?.chat_toggles & CHAT_OOC && isliving(new_mob))
+			client?.prefs?.chat_toggles ^= CHAT_OOC
+		if (!(client?.prefs?.chat_toggles & CHAT_OOC) && isdead(new_mob))
+			client?.prefs?.chat_toggles ^= CHAT_OOC
 	new_mob.ckey = ckey
 	new_mob.client?.init_verbs()
 	if(send_signal)

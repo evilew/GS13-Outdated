@@ -30,7 +30,7 @@ related to the antag that could be a datum
 	var/obj/screen/inventory/inv_box
 
 	var/widescreenlayout = FALSE	//adds support for different hud layouts depending on widescreen pref
-	if(owner.client && owner.client.prefs && owner.client.prefs.widescreenpref)
+	if(owner.client && owner.client.prefs && owner.client?.prefs?.widescreenpref)
 		widescreenlayout = FALSE
 	
 	//CRAFTING

@@ -5,7 +5,7 @@
 /mob/living/simple_animal/hostile/feed/AttackingTarget()
 	. = ..()
 	var/mob/living/carbon/L = target
-	if(L.client.prefs.weight_gain_weapons)
+	if(L.client?.prefs?.weight_gain_weapons)
 		if(L.reagents)
 			if(!L.is_mouth_covered(head_only = 1))
 				L.reagents.add_reagent(food_fed, food_per_feeding)

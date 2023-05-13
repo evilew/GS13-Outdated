@@ -202,7 +202,7 @@
 	// Convert to HUMAN (along with ID and PDA)
 	if (!am_valid)
 		H.set_species(/datum/species/human)
-		H.real_name = H.client.prefs.custom_names["human"]
+		H.real_name = H.client?.prefs?.custom_names["human"]
 		var/obj/item/card/id/ID = H.wear_id?.GetID()
 		if(ID)
 			ID.registered_name = H.real_name

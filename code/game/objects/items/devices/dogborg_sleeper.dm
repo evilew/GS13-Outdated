@@ -78,7 +78,7 @@
 	if(!iscarbon(target))
 		return
 	var/voracious = TRUE
-	if(!target.client || !(target.client.prefs.cit_toggles & MEDIHOUND_SLEEPER) || !hound.client || !(hound.client.prefs.cit_toggles & MEDIHOUND_SLEEPER))
+	if(!target.client || !(target.client?.prefs?.cit_toggles & MEDIHOUND_SLEEPER) || !hound.client || !(hound.client?.prefs?.cit_toggles & MEDIHOUND_SLEEPER))
 		voracious = FALSE
 	if(target.buckled)
 		to_chat(user, "<span class='warning'>The user is buckled and can not be put into your [src].</span>")
@@ -121,7 +121,7 @@
 	if(user.a_intent == INTENT_HELP)
 		return
 	var/voracious = TRUE
-	if(!user.client || !(user.client.prefs.cit_toggles & MEDIHOUND_SLEEPER) || !hound.client || !(hound.client.prefs.cit_toggles & MEDIHOUND_SLEEPER))
+	if(!user.client || !(user.client?.prefs?.cit_toggles & MEDIHOUND_SLEEPER) || !hound.client || !(hound.client?.prefs?.cit_toggles & MEDIHOUND_SLEEPER))
 		voracious = FALSE
 	user.visible_message("<span class='notice'>You see [voracious ? "[user] struggling against the expanded material of [hound]'s gut!" : "and hear [user] pounding against something inside of [hound]'s [src.name]!"]</span>", \
 		"<span class='notice'>[voracious ? "You start struggling inside of [src]'s tight, flexible confines," : "You start pounding against the metallic walls of [src],"] trying to trigger the release... (this will take about [DisplayTimeText(breakout_time)].)</span>", \
@@ -136,11 +136,11 @@
 	var/list/targets = target && hound ? list(target) : contents
 	if(hound)
 		//hound.setClickCooldown(50) Not needed?
-		if(!hound.client || !(hound.client.prefs.cit_toggles & MEDIHOUND_SLEEPER))
+		if(!hound.client || !(hound.client?.prefs?.cit_toggles & MEDIHOUND_SLEEPER))
 			voracious = FALSE
 		else
 			for(var/mob/M in targets)
-				if(!M.client || !(M.client.prefs.cit_toggles & MEDIHOUND_SLEEPER))
+				if(!M.client || !(M.client?.prefs?.cit_toggles & MEDIHOUND_SLEEPER))
 					voracious = FALSE
 	if(length(targets))
 		if(hound)
@@ -263,7 +263,7 @@
 				patient_laststat = patient.stat
 			prociconupdate = TRUE
 
-		if(!patient.client || !(patient.client.prefs.cit_toggles & MEDIHOUND_SLEEPER) || !hound.client || !(hound.client.prefs.cit_toggles & MEDIHOUND_SLEEPER))
+		if(!patient.client || !(patient.client?.prefs?.cit_toggles & MEDIHOUND_SLEEPER) || !hound.client || !(hound.client?.prefs?.cit_toggles & MEDIHOUND_SLEEPER))
 			hound.sleeper_nv = TRUE
 		else
 			hound.sleeper_nv = FALSE
@@ -288,7 +288,7 @@
 				hound.sleeper_g = 1
 				patient_laststat = patient.stat
 
-			if(!patient.client || !(patient.client.prefs.cit_toggles & MEDIHOUND_SLEEPER) || !hound.client || !(hound.client.prefs.cit_toggles & MEDIHOUND_SLEEPER))
+			if(!patient.client || !(patient.client?.prefs?.cit_toggles & MEDIHOUND_SLEEPER) || !hound.client || !(hound.client?.prefs?.cit_toggles & MEDIHOUND_SLEEPER))
 				hound.sleeper_nv = TRUE
 			else
 				hound.sleeper_nv = FALSE
@@ -345,7 +345,7 @@
 						var/turf/source = get_turf(hound)
 						LAZYCLEARLIST(hearing_mobs)
 						for(var/mob/H in get_hearers_in_view(3, source))
-							if(!H.client || !(H.client.prefs.cit_toggles & DIGESTION_NOISES))
+							if(!H.client || !(H.client?.prefs?.cit_toggles & DIGESTION_NOISES))
 								continue
 							LAZYADD(hearing_mobs, H)
 						last_hearcheck = world.time
@@ -389,7 +389,7 @@
 			var/turf/source = get_turf(hound)
 			LAZYCLEARLIST(hearing_mobs)
 			for(var/mob/H in get_hearers_in_view(3, source))
-				if(!H.client || !(H.client.prefs.cit_toggles & DIGESTION_NOISES))
+				if(!H.client || !(H.client?.prefs?.cit_toggles & DIGESTION_NOISES))
 					continue
 				LAZYADD(hearing_mobs, H)
 			last_hearcheck = world.time

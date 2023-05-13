@@ -85,10 +85,10 @@ GLOBAL_LIST_EMPTY(vore_preferences_datums)
 /datum/vore_preferences/proc/load_vore()
 	if(!client || !client_ckey)
 		return 0 //No client, how can we save?
-	if(!client.prefs || !client.prefs.default_slot)
+	if(!client.prefs || !client?.prefs?.default_slot)
 		return 0 //Need to know what character to load!
 
-	slot = client.prefs.default_slot
+	slot = client?.prefs?.default_slot
 
 	load_path(client_ckey,slot)
 

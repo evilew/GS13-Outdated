@@ -39,7 +39,7 @@ Captain
 		throw EXCEPTION("[H.nameless ? "Captain" : "Captain [H.real_name]"] ([H.x],[H.y],[H.z]) has no client.")
 		return
 
-	var/displayed_rank = H.client.prefs.alt_titles_preferences[title]
+	var/displayed_rank = H.client?.prefs?.alt_titles_preferences[title]
 	if(!displayed_rank)	//Default to Captain
 		displayed_rank = "Captain"
 

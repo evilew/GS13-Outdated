@@ -227,7 +227,7 @@ GLOBAL_LIST_INIT(available_depts, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICAL, S
 	// Assign department security
 	var/department
 	if(M && M.client && M.client.prefs)
-		department = M.client.prefs.prefered_security_department
+		department = M.client?.prefs?.prefered_security_department
 		if(!LAZYLEN(GLOB.available_depts) || department == "None")
 			return
 		else if(department in GLOB.available_depts)
@@ -387,7 +387,7 @@ Junior Security Officer
 	// Assign department security
 	var/department
 	if(M && M.client && M.client.prefs)
-		department = M.client.prefs.prefered_security_department
+		department = M.client?.prefs?.prefered_security_department
 		if(!LAZYLEN(GLOB.available_depts) || department == "None")
 			return
 		else if(department in GLOB.available_depts)

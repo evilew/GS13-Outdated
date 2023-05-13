@@ -51,7 +51,7 @@
 	set name = "Rest"
 	set category = "IC"
 
-	if(client && client.prefs && client.prefs.autostand)
+	if(client && client.prefs && client?.prefs?.autostand)
 		intentionalresting = !intentionalresting
 		to_chat(src, "<span class='notice'>You are now attempting to [intentionalresting ? "[!resting ? "lay down and ": ""]stay down" : "[resting ? "get up and ": ""]stay up"].</span>")
 		if(intentionalresting && !resting)

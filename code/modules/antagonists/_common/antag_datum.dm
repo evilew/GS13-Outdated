@@ -181,7 +181,7 @@ GLOBAL_LIST_EMPTY(antagonists)
 
 /datum/antagonist/proc/enabled_in_preferences(datum/mind/M)
 	if(job_rank)
-		if(M.current && M.current.client && (job_rank in M.current.client.prefs.be_special))
+		if(M.current && M.current.client && (job_rank in M.current.client?.prefs?.be_special))
 			return TRUE
 		else
 			return FALSE

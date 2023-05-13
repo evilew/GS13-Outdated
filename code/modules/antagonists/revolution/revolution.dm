@@ -286,7 +286,7 @@
 			var/list/datum/mind/promotable = list()
 			for(var/datum/mind/khrushchev in non_heads)
 				if(khrushchev.current && !khrushchev.current.incapacitated() && !khrushchev.current.restrained() && khrushchev.current.client && khrushchev.current.stat != DEAD)
-					if(ROLE_REV in khrushchev.current.client.prefs.be_special)
+					if(ROLE_REV in khrushchev.current.client?.prefs?.be_special)
 						promotable += khrushchev
 			if(promotable.len)
 				var/datum/mind/new_leader = pick(promotable)

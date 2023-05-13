@@ -175,8 +175,8 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 /mob/dead/observer/update_icon(new_form)
 	. = ..()
 	if(client) //We update our preferences in case they changed right before update_icon was called.
-		ghost_accs = client.prefs.ghost_accs
-		ghost_others = client.prefs.ghost_others
+		ghost_accs = client?.prefs?.ghost_accs
+		ghost_others = client?.prefs?.ghost_others
 
 	if(hair_overlay)
 		cut_overlay(hair_overlay)
@@ -268,9 +268,9 @@ Works together with spawning an observer, noted above.
 	var/mob/dead/observer/ghost = new(get_turf(src), src)	// Transfer safety to observer spawning proc.
 	SStgui.on_transfer(src, ghost) // Transfer NanoUIs.
 	ghost.can_reenter_corpse = can_reenter_corpse
-	if (client && client.prefs && client.prefs.auto_ooc)
-		if (!(client.prefs.chat_toggles & CHAT_OOC))
-			client.prefs.chat_toggles ^= CHAT_OOC
+	if (client && client.prefs && client?.prefs?.auto_ooc)
+		if (!(client?.prefs?.chat_toggles & CHAT_OOC))
+			client?.prefs?.chat_toggles ^= CHAT_OOC
 	transfer_ckey(ghost, FALSE)
 	ghost.AddElement(/datum/element/ghost_role_eligibility,penalize) // technically already run earlier, but this adds the penalty
 	// needs to be done AFTER the ckey transfer, too
@@ -378,8 +378,8 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		if(source)
 			var/obj/screen/alert/A = throw_alert("[REF(source)]_notify_cloning", /obj/screen/alert/notify_cloning)
 			if(A)
-				if(client && client.prefs && client.prefs.UI_style)
-					A.icon = ui_style2icon(client.prefs.UI_style)
+				if(client && client.prefs && client?.prefs?.UI_style)
+					A.icon = ui_style2icon(client?.prefs?.UI_style)
 				A.desc = message
 				var/old_layer = source.layer
 				var/old_plane = source.plane
@@ -506,7 +506,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	set name = "View Range"
 	set desc = "Change your view range."
 
-	var/max_view = client.prefs.unlock_content ? GHOST_MAX_VIEW_RANGE_MEMBER : GHOST_MAX_VIEW_RANGE_DEFAULT
+	var/max_view = client?.prefs?.unlock_content ? GHOST_MAX_VIEW_RANGE_MEMBER : GHOST_MAX_VIEW_RANGE_DEFAULT
 	if(client.view == CONFIG_GET(string/default_view))
 		var/list/views = list()
 		for(var/i in 7 to max_view)
@@ -520,7 +520,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 /mob/dead/observer/verb/add_view_range(input as num)
 	set name = "Add View Range"
 	set hidden = TRUE
-	var/max_view = client.prefs.unlock_content ? GHOST_MAX_VIEW_RANGE_MEMBER : GHOST_MAX_VIEW_RANGE_DEFAULT
+	var/max_view = client?.prefs?.unlock_content ? GHOST_MAX_VIEW_RANGE_MEMBER : GHOST_MAX_VIEW_RANGE_DEFAULT
 	if(input)
 		client.rescale_view(input, 15, (max_view*2)+1)
 
@@ -573,7 +573,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 
 /mob/dead/observer/update_sight()
 	if(client)
-		ghost_others = client.prefs.ghost_others //A quick update just in case this setting was changed right before calling the proc
+		ghost_others = client?.prefs?.ghost_others //A quick update just in case this setting was changed right before calling the proc
 
 	if (!ghostvision)
 		see_invisible = SEE_INVISIBLE_LIVING
@@ -601,11 +601,11 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 				client.images -= GLOB.ghost_images_default
 			if(GHOST_OTHERS_SIMPLE)
 				client.images -= GLOB.ghost_images_simple
-	lastsetting = client.prefs.ghost_others
+	lastsetting = client?.prefs?.ghost_others
 	if(!ghostvision)
 		return
-	if(client.prefs.ghost_others != GHOST_OTHERS_THEIR_SETTING)
-		switch(client.prefs.ghost_others)
+	if(client?.prefs?.ghost_others != GHOST_OTHERS_THEIR_SETTING)
+		switch(client?.prefs?.ghost_others)
 			if(GHOST_OTHERS_DEFAULT_SPRITE)
 				client.images |= (GLOB.ghost_images_default-ghostimage_default)
 			if(GHOST_OTHERS_SIMPLE)
@@ -741,23 +741,23 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 
 	set_ghost_appearance()
 	if(client && client.prefs)
-		deadchat_name = client.prefs.real_name
+		deadchat_name = client?.prefs?.real_name
 
 /mob/dead/observer/proc/set_ghost_appearance()
 	if((!client) || (!client.prefs))
 		return
 
-	if(client.prefs.be_random_name)
-		client.prefs.real_name = random_unique_name(gender)
-	if(client.prefs.be_random_body)
-		client.prefs.random_character(gender)
+	if(client?.prefs?.be_random_name)
+		client?.prefs?.real_name = random_unique_name(gender)
+	if(client?.prefs?.be_random_body)
+		client?.prefs?.random_character(gender)
 
-	if(HAIR in client.prefs.pref_species.species_traits)
-		hair_style = client.prefs.hair_style
-		hair_color = brighten_color(client.prefs.hair_color)
-	if(FACEHAIR in client.prefs.pref_species.species_traits)
-		facial_hair_style = client.prefs.facial_hair_style
-		facial_hair_color = brighten_color(client.prefs.facial_hair_color)
+	if(HAIR in client?.prefs?.pref_species.species_traits)
+		hair_style = client?.prefs?.hair_style
+		hair_color = brighten_color(client?.prefs?.hair_color)
+	if(FACEHAIR in client?.prefs?.pref_species.species_traits)
+		facial_hair_style = client?.prefs?.facial_hair_style
+		facial_hair_color = brighten_color(client?.prefs?.facial_hair_color)
 
 	update_icon()
 
