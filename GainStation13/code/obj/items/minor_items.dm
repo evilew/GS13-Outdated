@@ -27,10 +27,10 @@
 	list_reagents = list(/datum/reagent/blueberry_juice = 50)
 
 /obj/item/reagent_containers/glass/beaker/fizulphite
-	list_reagents = list(/datum/chemical_reaction/fizulphite = 50)
+	list_reagents = list(/datum/reagent/consumable/fizulphite = 50)
 
 /obj/item/reagent_containers/glass/beaker/extilphite
-	list_reagents = list(/datum/chemical_reaction/extilphite = 50)
+	list_reagents = list(/datum/reagent/consumable/extilphite = 50)
 
 /obj/item/reagent_containers/glass/beaker/calorite_blessing
 	list_reagents = list(/datum/reagent/consumable/caloriteblessing = 50)
