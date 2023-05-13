@@ -196,3 +196,13 @@
 	name = "City of Cogs"
 	icon_state = "purple"
 	hidden = FALSE
+
+
+/area/fatlab //GS13 - move this elsewhere later
+	name = "Mysterious Facility"
+	icon_state = "centcom"
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	requires_power = FALSE
+	has_gravity = STANDARD_GRAVITY
+	noteleport = TRUE
+	flags_1 = NONE
