@@ -15,6 +15,7 @@
 	resistance_flags = FLAMMABLE
 	var/foodtype = NONE
 	var/last_check_time
+	var/blessed = 0 // GS13
 
 /obj/item/reagent_containers/food/Initialize(mapload)
 	. = ..()

@@ -79,23 +79,19 @@ var/charges = 3
 		to_chat(owner, "<span class='notice'>You recharge yourself with magical energy!</span>")
 
 
-
 /datum/action/innate/bless/Activate()
 	if(charges != 0)
 		charges -= 1
 		if(ishuman(owner))
 			to_chat(owner, "<span class='notice'>You bless the food around you!</span>")
 
-		for(var/obj/item/reagent_containers/food/O  in view(1, owner))
-			if(O.foodtype != BLESSED)
+		for(var/obj/item/reagent_containers/food/O in view(1, owner))
+			if(!O.blessed)
 				O.reagents.add_reagent(/datum/reagent/consumable/nutriment, 10)
 				O.desc += " It faintly glows with warm, orange energy..."
-				O.foodtype = BLESSED
-
+				O.blessed = 1
 	else
 		to_chat(owner, "<span class='notice'>You need to recharge...</span>")
-
-
 
 /datum/action/innate/unburden/Activate()
 	if(charges != 0)
