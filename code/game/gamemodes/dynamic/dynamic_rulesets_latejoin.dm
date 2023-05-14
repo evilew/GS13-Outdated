@@ -12,7 +12,7 @@
 		if(!mode.check_age(P.client, minimum_required_age))
 			candidates.Remove(P)
 			continue
-		if (!(antag_flag in P.client.prefs.be_special) || jobban_isbanned(P.ckey, list(antag_flag, ROLE_SYNDICATE)) || (antag_flag_override && jobban_isbanned(P.ckey, list(antag_flag_override))))//are they willing and not antag-banned?
+		if (!(antag_flag in P.client?.prefs?.be_special) || jobban_isbanned(P.ckey, list(antag_flag, ROLE_SYNDICATE)) || (antag_flag_override && jobban_isbanned(P.ckey, list(antag_flag_override))))//are they willing and not antag-banned?
 			candidates.Remove(P)
 			continue
 		if (P.mind.assigned_role in restricted_roles) // Does their job allow for it?

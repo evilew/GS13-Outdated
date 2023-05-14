@@ -85,7 +85,7 @@
 	owner.overlay_fullscreen("see_through_darkness", /obj/screen/fullscreen/see_through_darkness)
 
 	var/widescreenlayout = FALSE //CIT CHANGE - adds support for different hud layouts depending on widescreen pref
-	if(owner.client && owner.client.prefs && owner.client.prefs.widescreenpref) //CIT CHANGE - ditto
+	if(owner.client && owner.client.prefs && owner.client?.prefs?.widescreenpref) //CIT CHANGE - ditto
 		widescreenlayout = FALSE // CIT CHANGE - ditto
 
 	var/obj/screen/using

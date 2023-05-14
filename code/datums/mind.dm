@@ -138,7 +138,7 @@
 	if(isliving(new_character)) //New humans and such are by default enabled arousal. Let's always use the new mind's prefs.
 		var/mob/living/L = new_character
 		if(L.client && L.client.prefs)
-			L.canbearoused = L.client.prefs.arousable //Technically this should make taking over a character mean the body gain the new minds setting...
+			L.canbearoused = L.client?.prefs?.arousable //Technically this should make taking over a character mean the body gain the new minds setting...
 			L.update_arousal_hud() //Removes the old icon
 
 	hide_ckey = current.client?.prefs?.hide_ckey
@@ -290,7 +290,7 @@
 	var/obj/item/uplink_loc
 
 	if(traitor_mob.client && traitor_mob.client.prefs)
-		switch(traitor_mob.client.prefs.uplink_spawn_loc)
+		switch(traitor_mob.client?.prefs?.uplink_spawn_loc)
 			if(UPLINK_PDA)
 				uplink_loc = PDA
 				if(!uplink_loc)

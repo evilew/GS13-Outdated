@@ -157,8 +157,9 @@
 	return ..()
 
 /obj/belly/proc/Remove(mob/living/owner)
-	owner.vore_organs -= src
-	owner = null
+	if(owner)
+		owner.vore_organs -= src
+		owner = null
 
 // Called whenever an atom enters this belly
 /obj/belly/Entered(var/atom/movable/thing,var/atom/OldLoc)
@@ -173,7 +174,7 @@
 		var/turf/source = get_turf(owner)
 		var/sound/eating = sound(GLOB.vore_sounds[vore_sound])
 		for(var/mob/living/M in get_hearers_in_view(3, source))
-			if(M.client && M.client.prefs.cit_toggles & EATING_NOISES)
+			if(M.client && M.client?.prefs?.cit_toggles & EATING_NOISES)
 				M.playsound_local(source, vore_sound, 50, 1, S = eating)
 				recent_sound = (world.time + 20 SECONDS)
 
@@ -213,7 +214,7 @@
 	var/turf/source = get_turf(owner)
 	var/sound/releasement = sound(GLOB.release_sounds[release_sound])
 	for(var/mob/living/M in get_hearers_in_view(2, source))
-		if(M.client && (M.client.prefs.cit_toggles & EATING_NOISES))
+		if(M.client && (M.client?.prefs?.cit_toggles & EATING_NOISES))
 			M.playsound_local(source, release_sound, 50, 1, S = releasement)
 
 	//Clean up our own business
@@ -241,7 +242,7 @@
 		var/turf/source = get_turf(owner)
 		var/sound/releasement = sound(GLOB.release_sounds[release_sound])
 		for(var/mob/living/H in get_hearers_in_view(2, source))
-			if(H.client && (H.client.prefs.cit_toggles & EATING_NOISES))
+			if(H.client && (H.client?.prefs?.cit_toggles & EATING_NOISES))
 				H.playsound_local(source, release_sound, 50, 1, S = releasement)
 
 	if(istype(M,/mob/living))
@@ -322,7 +323,7 @@
 		var/turf/source = get_turf(owner)
 		var/sound/eating = sound(GLOB.vore_sounds[vore_sound])
 		for(var/mob/living/M in get_hearers_in_view(3, source))
-			if(M.client && M.client.prefs.cit_toggles & EATING_NOISES)
+			if(M.client && M.client?.prefs?.cit_toggles & EATING_NOISES)
 				M.playsound_local(source, vore_sound, 50, 1, S = eating)
 
 	owner.updateVRPanel()
@@ -534,17 +535,17 @@
 
 	if(is_wet)
 		for(var/mob/living/M in get_hearers_in_view(3, source))
-			if(M.client && M.client.prefs.cit_toggles & EATING_NOISES)
+			if(M.client && M.client?.prefs?.cit_toggles & EATING_NOISES)
 				M.playsound_local(source, "struggle_sound", 50, 1, S = struggle_snuggle)
 
 	else
 		for(var/mob/living/M in get_hearers_in_view(3, source))
-			if(M.client && M.client.prefs.cit_toggles & EATING_NOISES)
+			if(M.client && M.client?.prefs?.cit_toggles & EATING_NOISES)
 				M.playsound_local(source, "rustle", 50, 1, S = struggle_rustle)
 
 	var/list/watching = hearers(3, owner)
 	for(var/mob/living/M in watching)
-		if(M.client && (M.client.prefs.cit_toggles & EATING_NOISES)) //Might as well censor the normies here too.
+		if(M.client && (M.client?.prefs?.cit_toggles & EATING_NOISES)) //Might as well censor the normies here too.
 			M.show_message(struggle_outer_message, MSG_VISUAL) // visible
 
 	to_chat(R,struggle_user_message)

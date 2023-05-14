@@ -249,7 +249,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 		deaf_message = "<span class='notice'>You can't hear yourself!</span>"
 		deaf_type = 2 // Since you should be able to hear yourself without looking
 		// Create map text prior to modifying message for goonchat
-	if (client?.prefs.chat_on_map && stat != UNCONSCIOUS && (client.prefs.see_chat_non_mob || ismob(speaker)) && can_hear())
+	if (client?.prefs.chat_on_map && stat != UNCONSCIOUS && (client?.prefs?.see_chat_non_mob || ismob(speaker)) && can_hear())
 		create_chat_message(speaker, message_language, raw_message, spans, message_mode)
 	if (client?.prefs.radiosounds && stat != UNCONSCIOUS && can_hear() && radio_freq)
 		playsound_local(src,'sound/voice/radio.ogg', 30, 0)
@@ -281,9 +281,9 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 		if(!M.client || !client) //client is so that ghosts don't have to listen to mice
 			continue
 		if(get_dist(M, source) > 7 || M.z != z) //they're out of range of normal hearing
-			if(eavesdropping_modes[message_mode] && !(M.client.prefs.chat_toggles & CHAT_GHOSTWHISPER)) //they're whispering and we have hearing whispers at any range off
+			if(eavesdropping_modes[message_mode] && !(M.client?.prefs?.chat_toggles & CHAT_GHOSTWHISPER)) //they're whispering and we have hearing whispers at any range off
 				continue
-			if(!(M.client.prefs.chat_toggles & CHAT_GHOSTEARS)) //they're talking normally and we have hearing at any range off
+			if(!(M.client?.prefs?.chat_toggles & CHAT_GHOSTEARS)) //they're talking normally and we have hearing at any range off
 				continue
 		listening |= M
 		the_dead[M] = TRUE
@@ -306,7 +306,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	//speech bubble
 	var/list/speech_bubble_recipients = list()
 	for(var/mob/M in listening)
-		if(M.client && !M.client.prefs.chat_on_map)
+		if(M.client && !M.client?.prefs?.chat_on_map)
 			speech_bubble_recipients.Add(M.client)
 	var/image/I = image('icons/mob/talk.dmi', src, "[bubble_type][say_test(message)]", FLY_LAYER)
 	I.appearance_flags = APPEARANCE_UI_IGNORE_ALPHA
@@ -321,7 +321,7 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 
 /mob/living/proc/can_speak_basic(message, ignore_spam = FALSE) //Check BEFORE handling of xeno and ling channels
 	if(client)
-		if(client.prefs.muted & MUTE_IC)
+		if(client?.prefs?.muted & MUTE_IC)
 			to_chat(src, "<span class='danger'>You cannot speak in IC (muted).</span>")
 			return 0
 		if(!ignore_spam && client.handle_spam_prevention(message,MUTE_IC))

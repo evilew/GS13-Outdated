@@ -37,8 +37,8 @@
 			postfix = "soon"
 		to_chat(src, "Please set up your character and select \"Ready\". The game will start [postfix].")
 
-	if(client.prefs.path)	//Hyper edit: notify of a newer preference version
-		var/savefile/S = new /savefile(client.prefs.path)
+	if(client?.prefs?.path)	//Hyper edit: notify of a newer preference version
+		var/savefile/S = new /savefile(client?.prefs?.path)
 		if(S)
 			S.cd = "/"
 			var/slot

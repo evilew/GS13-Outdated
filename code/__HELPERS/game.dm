@@ -456,7 +456,7 @@
 		if(!M.key || !M.client || (ignore_category && GLOB.poll_ignore[ignore_category] && (M.ckey in GLOB.poll_ignore[ignore_category])))
 			continue
 		if(be_special_flag)
-			if(!(M.client.prefs) || !(be_special_flag in M.client.prefs.be_special))
+			if(!(M.client.prefs) || !(be_special_flag in M.client?.prefs?.be_special))
 				continue
 		if(gametypeCheck)
 			if(!gametypeCheck.age_check(M.client))
@@ -504,7 +504,7 @@
 	var/mob/living/carbon/human/new_character = new//The mob being spawned.
 	SSjob.SendToLateJoin(new_character)
 
-	G_found.client.prefs.copy_to(new_character)
+	G_found.client?.prefs?.copy_to(new_character)
 	new_character.dna.update_dna_identity()
 	G_found.transfer_ckey(new_character, FALSE)
 
@@ -538,8 +538,8 @@
 		return
 
 	var/displayed_rank = rank
-	if(character.client && character.client.prefs && character.client.prefs.alt_titles_preferences[rank])
-		displayed_rank = character.client.prefs.alt_titles_preferences[rank]
+	if(character.client && character.client.prefs && character.client?.prefs?.alt_titles_preferences[rank])
+		displayed_rank = character.client?.prefs?.alt_titles_preferences[rank]
 	var/obj/machinery/announcement_system/announcer = pick(GLOB.announcement_systems)
 	announcer.announce("ARRIVAL", character.real_name, rank, displayed_rank, list()) //make the list empty to make it announce it in common
 

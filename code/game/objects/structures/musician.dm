@@ -67,7 +67,7 @@
 	if((world.time - MUSICIAN_HEARCHECK_MINDELAY) > last_hearcheck)
 		LAZYCLEARLIST(hearing_mobs)
 		for(var/mob/M in get_hearers_in_view(15, source))
-			if(!M.client || !(M.client.prefs.toggles & SOUND_INSTRUMENTS))
+			if(!M.client || !(M.client?.prefs?.toggles & SOUND_INSTRUMENTS))
 				continue
 			LAZYADD(hearing_mobs, M)
 		last_hearcheck = world.time

@@ -28,8 +28,8 @@
 
 	fatness += amount_to_change 
 	fatness = max(fatness, MINIMUM_FATNESS_LEVEL) //It would be a little silly if someone got negative fat.
-	if(client.prefs.max_weight)
-		fatness = min(fatness, (client.prefs.max_weight - 1))
+	if(client?.prefs?.max_weight)
+		fatness = min(fatness, (client?.prefs?.max_weight - 1))
 
 	return TRUE
 
@@ -48,27 +48,27 @@
 
 	switch(type_of_fattening)
 		if(FATTENING_TYPE_ITEM)
-			if(!client.prefs.weight_gain_items)
+			if(!client?.prefs?.weight_gain_items)
 				return FALSE
 
 		if(FATTENING_TYPE_FOOD)
-			if(!client.prefs.weight_gain_food)
+			if(!client?.prefs?.weight_gain_food)
 				return FALSE
 
 		if(FATTENING_TYPE_CHEM) 
-			if(!client.prefs.weight_gain_chems)
+			if(!client?.prefs?.weight_gain_chems)
 				return FALSE
 
 		if(FATTENING_TYPE_WEAPON)
-			if(!client.prefs.weight_gain_weapons)
+			if(!client?.prefs?.weight_gain_weapons)
 				return FALSE
 
 		if(FATTENING_TYPE_MAGIC)
-			if(!client.prefs.weight_gain_magic)
+			if(!client?.prefs?.weight_gain_magic)
 				return FALSE
 
 		if(FATTENING_TYPE_VIRUS)
-			if(!client.prefs.weight_gain_viruses)
+			if(!client?.prefs?.weight_gain_viruses)
 				return FALSE
 
 		if(FATTENING_TYPE_WEIGHT_LOSS)

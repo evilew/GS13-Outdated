@@ -5,7 +5,7 @@
 	var/turf/source = get_turf(user)
 	var/sound/noise = sound(gs13_get_sfx(noise_name))
 	for(var/mob/living/M in get_hearers_in_view(3, source))
-		if ((pref_toggle == 0) || (M.client && M.client.prefs.cit_toggles & pref_toggle))
+		if ((pref_toggle == 0) || (M.client && M.client?.prefs?.cit_toggles & pref_toggle))
 			M.playsound_local(source, noise_name, 50, 1, S = noise)
 
 /datum/emote/living/proc/reduce_fullness(var/mob/living/user, fullness_amount) // fullness_amount should be between 5 and 20 for balance and below 80 for functionality

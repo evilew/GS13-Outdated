@@ -32,7 +32,7 @@
 /datum/admins/proc/isReadytoRumble(mob/living/carbon/human/applicant, targetrole, onstation = TRUE, conscious = TRUE)
 	if(applicant.mind.special_role)
 		return FALSE
-	if(!(targetrole in applicant.client.prefs.be_special))
+	if(!(targetrole in applicant.client?.prefs?.be_special))
 		return FALSE
 	if(onstation)
 		var/turf/T = get_turf(applicant)
@@ -412,7 +412,7 @@
 
 				//Spawn the body
 				var/mob/living/carbon/human/ERTOperative = new ertemplate.mobtype(spawnloc)
-				chosen_candidate.client.prefs.copy_to(ERTOperative)
+				chosen_candidate.client?.prefs?.copy_to(ERTOperative)
 				ERTOperative.key = chosen_candidate.key
 
 				if(ertemplate.enforce_human || ERTOperative.dna.species.dangerous_existence) // Don't want any exploding plasmemes

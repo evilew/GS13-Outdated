@@ -433,7 +433,7 @@
 	. = ..()
 	if(active)
 		for(var/mob/living/M in range(10,src))
-			if(!M.client || !(M.client.prefs.toggles & SOUND_INSTRUMENTS))
+			if(!M.client || !(M.client?.prefs?.toggles & SOUND_INSTRUMENTS))
 				continue
 			if(!(M in rangers))
 				rangers += M

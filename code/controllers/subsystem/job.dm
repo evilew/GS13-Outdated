@@ -111,13 +111,13 @@ SUBSYSTEM_DEF(job)
 		if(job.required_playtime_remaining(player.client))
 			JobDebug("FOC player not enough xp, Player: [player]")
 			continue
-		if(flag && (!(flag in player.client.prefs.be_special)))
+		if(flag && (!(flag in player.client?.prefs?.be_special)))
 			JobDebug("FOC flag failed, Player: [player], Flag: [flag], ")
 			continue
 		if(player.mind && job.title in player.mind.restricted_roles)
 			JobDebug("FOC incompatible with antagonist role, Player: [player]")
 			continue
-		if(player.client.prefs.GetJobDepartment(job, level) & job.flag)
+		if(player.client?.prefs?.GetJobDepartment(job, level) & job.flag)
 			JobDebug("FOC pass, Player: [player], Level:[level]")
 			candidates += player
 	return candidates
@@ -333,7 +333,7 @@ SUBSYSTEM_DEF(job)
 					continue
 
 				// If the player wants that job on this level, then try give it to him.
-				if(player.client.prefs.GetJobDepartment(job, level) & job.flag)
+				if(player.client?.prefs?.GetJobDepartment(job, level) & job.flag)
 					// If the job isn't filled
 					if((job.current_positions < job.spawn_positions) || job.spawn_positions == -1)
 						JobDebug("DO pass, Player: [player], Level:[level], Job:[job.title]")
@@ -360,17 +360,17 @@ SUBSYSTEM_DEF(job)
 /datum/controller/subsystem/job/proc/HandleUnassigned(mob/dead/new_player/player)
 	if(PopcapReached())
 		RejectPlayer(player)
-	else if(player.client.prefs.joblessrole == BEOVERFLOW)
+	else if(player.client?.prefs?.joblessrole == BEOVERFLOW)
 		var/allowed_to_be_a_loser = !jobban_isbanned(player, SSjob.overflow_role)
 		if(QDELETED(player) || !allowed_to_be_a_loser)
 			RejectPlayer(player)
 		else
 			if(!AssignRole(player, SSjob.overflow_role))
 				RejectPlayer(player)
-	else if(player.client.prefs.joblessrole == BERANDOMJOB)
+	else if(player.client?.prefs?.joblessrole == BERANDOMJOB)
 		if(!GiveRandomJob(player))
 			RejectPlayer(player)
-	else if(player.client.prefs.joblessrole == RETURNTOLOBBY)
+	else if(player.client?.prefs?.joblessrole == RETURNTOLOBBY)
 		RejectPlayer(player)
 	else //Something gone wrong if we got here.
 		var/message = "DO: [player] fell through handling unassigned"
@@ -441,8 +441,8 @@ SUBSYSTEM_DEF(job)
 
 		//Flavortext
 		var/display_rank = rank
-		if(M.client && M.client.prefs && M.client.prefs.alt_titles_preferences[rank])
-			display_rank = M.client.prefs.alt_titles_preferences[rank]
+		if(M.client && M.client.prefs && M.client?.prefs?.alt_titles_preferences[rank])
+			display_rank = M.client?.prefs?.alt_titles_preferences[rank]
 
 		to_chat(M, "<b>You are the [display_rank].</b>")
 
@@ -522,11 +522,11 @@ SUBSYSTEM_DEF(job)
 			if(job.required_playtime_remaining(player.client))
 				young++
 				continue
-			if(player.client.prefs.GetJobDepartment(job, 1) & job.flag)
+			if(player.client?.prefs?.GetJobDepartment(job, 1) & job.flag)
 				high++
-			else if(player.client.prefs.GetJobDepartment(job, 2) & job.flag)
+			else if(player.client?.prefs?.GetJobDepartment(job, 2) & job.flag)
 				medium++
-			else if(player.client.prefs.GetJobDepartment(job, 3) & job.flag)
+			else if(player.client?.prefs?.GetJobDepartment(job, 3) & job.flag)
 				low++
 			else never++ //not selected
 		SSblackbox.record_feedback("nested tally", "job_preferences", high, list("[job.title]", "high"))

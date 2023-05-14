@@ -164,8 +164,8 @@ GLOBAL_LIST_EMPTY(PDAs)
 	if(equipped)
 		return
 	if(user.client)
-		background_color = user.client.prefs.pda_color
-		switch(user.client.prefs.pda_style)
+		background_color = user.client?.prefs?.pda_color
+		switch(user.client?.prefs?.pda_style)
 			if(MONO)
 				font_index = MODE_MONO
 				font_mode = FONT_MONO
@@ -181,7 +181,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 			else
 				font_index = MODE_MONO
 				font_mode = FONT_MONO
-		var/pref_skin = GLOB.pda_reskins[user.client.prefs.pda_skin]
+		var/pref_skin = GLOB.pda_reskins[user.client?.prefs?.pda_skin]
 		if(icon != pref_skin)
 			icon = pref_skin
 			update_icon(FALSE, TRUE)
@@ -778,7 +778,7 @@ GLOBAL_LIST_EMPTY(PDAs)
 	// Show it to ghosts
 	var/ghost_message = "<span class='name'>[owner] </span><span class='game say'>PDA Message</span> --> <span class='name'>[target_text]</span>: <span class='message'>[signal.format_message(TRUE)]</span>"
 	for(var/mob/M in GLOB.player_list)
-		if(isobserver(M) && M.client && (M.client.prefs.chat_toggles & CHAT_GHOSTPDA))
+		if(isobserver(M) && M.client && (M.client?.prefs?.chat_toggles & CHAT_GHOSTPDA))
 			to_chat(M, "[FOLLOW_LINK(M, user)] [ghost_message]")
 	// Log in the talk log
 	user.log_talk(message, LOG_PDA, tag="PDA: [initial(name)] to [target_text]")

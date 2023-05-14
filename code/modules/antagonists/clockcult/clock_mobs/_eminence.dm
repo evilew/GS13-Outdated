@@ -80,7 +80,7 @@
 
 /mob/camera/eminence/say(message, bubble_type, var/list/spans = list(), sanitize = TRUE, datum/language/language = null, ignore_spam = FALSE, forced = null)
 	if(client)
-		if(client.prefs.muted & MUTE_IC)
+		if(client?.prefs?.muted & MUTE_IC)
 			to_chat(src, "You cannot send IC messages (muted).")
 			return
 		if(client.handle_spam_prevention(message,MUTE_IC))

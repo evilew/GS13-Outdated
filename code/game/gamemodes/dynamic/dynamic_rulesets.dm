@@ -194,7 +194,7 @@
 		if(P.mind.special_role) // We really don't want to give antag to an antag.
 			candidates.Remove(P)
 			continue
-		if (!(antag_flag in P.client.prefs.be_special) || jobban_isbanned(P.ckey, list(antag_flag, ROLE_SYNDICATE)) || (antag_flag_override && jobban_isbanned(P.ckey, list(antag_flag_override, ROLE_SYNDICATE))))//are they willing and not antag-banned?
+		if (!(antag_flag in P.client?.prefs?.be_special) || jobban_isbanned(P.ckey, list(antag_flag, ROLE_SYNDICATE)) || (antag_flag_override && jobban_isbanned(P.ckey, list(antag_flag_override, ROLE_SYNDICATE))))//are they willing and not antag-banned?
 			candidates.Remove(P)
 			continue
 
@@ -214,7 +214,7 @@
 		if(P.mind.special_role || P.mind.antag_datums?.len > 0) // Are they an antag already?
 			candidates.Remove(P)
 			continue
-		if (!(antag_flag in P.client.prefs.be_special) || jobban_isbanned(P.ckey, list(antag_flag, ROLE_SYNDICATE)) || (antag_flag_override && jobban_isbanned(P.ckey, list(antag_flag_override, ROLE_SYNDICATE))))//are they willing and not antag-banned?
+		if (!(antag_flag in P.client?.prefs?.be_special) || jobban_isbanned(P.ckey, list(antag_flag, ROLE_SYNDICATE)) || (antag_flag_override && jobban_isbanned(P.ckey, list(antag_flag_override, ROLE_SYNDICATE))))//are they willing and not antag-banned?
 			candidates.Remove(P)
 			continue
 		if ((exclusive_roles.len > 0) && !(P.mind.assigned_role in exclusive_roles)) // Is the rule exclusive to their job?

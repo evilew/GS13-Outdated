@@ -383,7 +383,7 @@
 		if(IsAdminGhost(user))
 			attack_ai(user)
 			return FALSE
-		else if(user.client.prefs.inquisitive_ghost)
+		else if(user.client?.prefs?.inquisitive_ghost)
 			user.examinate(src)
 			return FALSE
 	return FALSE

@@ -8,7 +8,7 @@
 
 		var/list/queued_to_equip = list()		//Items that will equip onto the player
 		. = list()	//Items that will be stored into the player's backpack, handled by EquipRank()
-		for(var/i in the_mob.client.prefs.chosen_gear)	//Prepare the player's loadout gear
+		for(var/i in the_mob.client?.prefs?.chosen_gear)	//Prepare the player's loadout gear
 			var/datum/gear/G = i
 			G = GLOB.loadout_items[slot_to_string(initial(G.category))][initial(G.name)]
 			if(!G)

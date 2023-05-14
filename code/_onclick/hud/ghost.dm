@@ -89,7 +89,7 @@
 	if(!.)
 		return
 	var/mob/screenmob = viewmob || mymob
-	if(!screenmob.client.prefs.ghost_hud)
+	if(!screenmob.client?.prefs?.ghost_hud)
 		screenmob.client.screen -= static_inventory
 	else
 		screenmob.client.screen += static_inventory

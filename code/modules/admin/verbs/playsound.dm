@@ -33,7 +33,7 @@
 	message_admins("[key_name_admin(src)] played sound [S]")
 
 	for(var/mob/M in GLOB.player_list)
-		if(M.client.prefs.toggles & SOUND_MIDI)
+		if(M.client?.prefs?.toggles & SOUND_MIDI)
 			var/user_vol = M.client.chatOutput.adminMusicVolume
 			if(user_vol)
 				admin_sound.volume = vol * (user_vol / 100)

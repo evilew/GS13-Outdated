@@ -25,7 +25,7 @@
 	sender_override = "GATO Meteorology Division")
 	for(var/V in GLOB.player_list)
 		var/mob/M = V
-		if((M.client.prefs.toggles & SOUND_MIDI) && is_station_level(M.z))
+		if((M.client?.prefs?.toggles & SOUND_MIDI) && is_station_level(M.z))
 			M.playsound_local(M, pick('sound/ambience/aurora_caelus_new.ogg','sound/ambience/aurora_caelus.ogg'), 40, FALSE, pressure_affected = FALSE) //ogg is "The Fire is Gone" by Heaven Pierce Her, used in the videogame ULTRAKILL. All respects and credits to the equivalent artists who worked on it.
 	start_checking()
 

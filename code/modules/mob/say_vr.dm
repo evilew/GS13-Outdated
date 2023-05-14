@@ -36,7 +36,7 @@ proc/get_top_level_mob(var/mob/S)
 	if(jobban_isbanned(user, "emote"))
 		to_chat(user, "You cannot send subtle emotes (banned).")
 		return FALSE
-	else if(user.client && user.client.prefs.muted & MUTE_IC)
+	else if(user.client && user.client?.prefs?.muted & MUTE_IC)
 		to_chat(user, "You cannot send IC messages (muted).")
 		return FALSE
 	else if(!params)
@@ -69,7 +69,7 @@ proc/get_top_level_mob(var/mob/S)
 		if(!M.client || isnewplayer(M))
 			continue
 		var/T = get_turf(src)
-		if(M.stat == DEAD && M.client && (M.client.prefs.chat_toggles & CHAT_GHOSTSIGHT) && !(M in viewers(T, null)))
+		if(M.stat == DEAD && M.client && (M.client?.prefs?.chat_toggles & CHAT_GHOSTSIGHT) && !(M in viewers(T, null)))
 			M.show_message(message)
 
 	if(emote_type == EMOTE_AUDIBLE)
@@ -100,7 +100,7 @@ proc/get_top_level_mob(var/mob/S)
 	if(jobban_isbanned(user, "emote"))
 		to_chat(user, "You cannot send subtle emotes (banned).")
 		return FALSE
-	else if(user.client && user.client.prefs.muted & MUTE_IC)
+	else if(user.client && user.client?.prefs?.muted & MUTE_IC)
 		to_chat(user, "You cannot send IC messages (muted).")
 		return FALSE
 	else if(!params)

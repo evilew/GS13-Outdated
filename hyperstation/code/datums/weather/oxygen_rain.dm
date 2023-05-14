@@ -34,7 +34,7 @@
 	sender_override = "GATO Meteorology Division")
 	for(var/V in GLOB.player_list)
 		var/mob/M = V
-		if((M.client.prefs.toggles & SOUND_MIDI) && is_station_level(M.z))
+		if((M.client?.prefs?.toggles & SOUND_MIDI) && is_station_level(M.z))
 			M.playsound_local(M, 'hyperstation/sound/ambience/embrace.ogg', 40, FALSE, pressure_affected = FALSE)
 			/*
 			"Sappheiros - Embrace" is under a Creative Commons license (CC BY 3.0)
