@@ -30,7 +30,7 @@
 /obj/machinery/atmospherics/pipe/build_network()
 	if(QDELETED(parent))
 		parent = new
-		parent.build_pipeline(src)
+		parent?.build_pipeline(src)
 
 /obj/machinery/atmospherics/pipe/atmosinit()
 	var/turf/T = loc			// hide if turf is not intact
@@ -49,10 +49,10 @@
 		air_update_turf()
 
 /obj/machinery/atmospherics/pipe/return_air()
-	return parent.air
+	return parent?.air
 
 /obj/machinery/atmospherics/pipe/remove_air(amount)
-	return parent.air.remove(amount)
+	return parent?.air.remove(amount)
 
 /obj/machinery/atmospherics/pipe/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/pipe_meter))
@@ -63,7 +63,7 @@
 		return ..()
 
 /obj/machinery/atmospherics/pipe/analyzer_act(mob/living/user, obj/item/I)
-	atmosanalyzer_scan(parent.air, user, src)
+	atmosanalyzer_scan(parent?.air, user, src)
 	return TRUE
 
 /obj/machinery/atmospherics/pipe/returnPipenet()
@@ -116,6 +116,6 @@
 /obj/machinery/atmospherics/pipe/attack_ghost(mob/dead/observer/O)
 	. = ..()
 	if(parent)
-		atmosanalyzer_scan(parent.air, O, src, FALSE)
+		atmosanalyzer_scan(parent?.air, O, src, FALSE)
 	else
 		to_chat(O, "<span class='warning'>[src] doesn't have a pipenet, which is probably a bug.</span>")
