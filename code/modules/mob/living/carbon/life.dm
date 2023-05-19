@@ -562,13 +562,14 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 
 	if(ckey)
 		if(!client && !(stat == DEAD))
-			GLOB.data_core.manifest_modify_status(real_name, TRUE)
-			add_status_indicator("ssd")
-			SSD = TRUE
+			if (!SSD)
+				add_status_indicator("ssd")
+				GLOB.data_core.manifest_modify_status(real_name, TRUE)
+				SSD = TRUE
 		else
 			if(SSD)
-				GLOB.data_core.manifest_modify_status(real_name, FALSE)
 				remove_status_indicator("ssd")
+				GLOB.data_core.manifest_modify_status(real_name, FALSE)
 				SSD = FALSE
 
 	//Dizziness
