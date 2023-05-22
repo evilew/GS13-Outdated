@@ -252,7 +252,7 @@
 	if(!getorganslot("anus"))
 		var/obj/item/organ/genital/anus/A = new
 		if(dna.features["butt_size"])
-			A.size = dna.features["butt_size"]
+			A.size = dna.features["butt_size"]-1
 		A.Insert(src)
 		if(A)
 			if(dna.species.use_skintones && dna.features["genitals_use_skintone"])
