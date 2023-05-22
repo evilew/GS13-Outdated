@@ -1884,6 +1884,11 @@ datum/sprite_accessory/mam_tails/insect
 	icon_state = "naga"
 	taur_mode = SNEK_TAURIC
 
+/datum/sprite_accessory/taur/naga/fat //ported from Vorestation
+	name = "Fat Naga"
+	icon_state = "fatnaga"
+	taur_mode = SNEK_TAURIC
+
 /datum/sprite_accessory/taur/otie
 	name = "Otie"
 	icon_state = "otie"
