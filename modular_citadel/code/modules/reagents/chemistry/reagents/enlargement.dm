@@ -115,21 +115,22 @@
 
 	if(M.gender == MALE)
 		M.gender = FEMALE
-		M.visible_message("<span class='boldnotice'>[M] suddenly looks more feminine!</span>", "<span class='boldwarning'>You suddenly feel more feminine!</span>")
-
-	if(P)
-		P.cached_length = P.cached_length - 0.05
-		P.update()
-	if(T)
-		T.Remove(M)
-	if(!V)
-		var/obj/item/organ/genital/vagina/nV = new
-		nV.Insert(M)
-		V = nV
-	if(!W)
-		var/obj/item/organ/genital/womb/nW = new
-		nW.Insert(M)
-		W = nW
+		M.visible_message(
+			"<span class='boldnotice'>[M] suddenly looks more feminine!</span>",
+			"<span class='boldwarning'>You suddenly feel more feminine!</span>")
+		if(P)
+			P.cached_length = P.cached_length - 0.05
+			P.update()
+		if(T)
+			T.Remove(M)
+		if(!V)
+			var/obj/item/organ/genital/vagina/nV = new
+			nV.Insert(M)
+			V = nV
+		if(!W)
+			var/obj/item/organ/genital/womb/nW = new
+			nW.Insert(M)
+			W = nW
 	..()
 
 /datum/reagent/fermi/BEsmaller
@@ -308,19 +309,20 @@
 
 	if(M.gender == FEMALE)
 		M.gender = MALE
-		M.visible_message("<span class='boldnotice'>[M] suddenly looks more masculine!</span>", "<span class='boldwarning'>You suddenly feel more masculine!</span>")
-
-	if(B)
-		B.cached_size = B.cached_size - 0.05
-		B.update()
-	if(V)
-		V.Remove(M)
-	if(W)
-		W.Remove(M)
-	if(!T)
-		var/obj/item/organ/genital/testicles/nT = new
-		nT.Insert(M)
-		T = nT
+		M.visible_message(
+			"<span class='boldnotice'>[M] suddenly looks more masculine!</span>",
+			"<span class='boldwarning'>You suddenly feel more masculine!</span>")
+		if(B)
+			B.cached_size = B.cached_size - 0.05
+			B.update()
+		if(V)
+			V.Remove(M)
+		if(W)
+			W.Remove(M)
+		if(!T)
+			var/obj/item/organ/genital/testicles/nT = new
+			nT.Insert(M)
+			T = nT
 	..()
 
 /datum/reagent/fermi/PEsmaller // Due to cozmo's request...!
