@@ -60347,6 +60347,20 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/engine)
+"lVZ" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/item/pipe_dispenser,
+/turf/open/floor/plasteel/dark,
+/area/science/mixing)
 "lWy" = (
 /turf/open/floor/plating,
 /area/maintenance/department/science)
@@ -107974,7 +107988,7 @@ bAF
 bBS
 bDc
 bEc
-bGu
+lVZ
 bGu
 bGu
 bIL
