@@ -3509,6 +3509,22 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/open/floor/plasteel,
 /area/xenoarch/gen)
+"iQ" = (
+/obj/structure/window/plasma/reinforced/spawner{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/xenoarch/caloriteresearch_powered)
 "iR" = (
 /obj/structure/sign/poster/official/random{
 	pixel_x = 32
@@ -6613,6 +6629,20 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/caloriteresearch_powered)
+"qI" = (
+/obj/structure/window/plasma/reinforced/spawner,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/xenoarch/caloriteresearch_powered)
 "qK" = (
 /obj/machinery/door/airlock/vault{
 	name = "secured door";
@@ -7717,6 +7747,22 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/mineral/basaltstone_floor,
 /area/xenoarch/caloriteresearch_powered)
+"yP" = (
+/obj/structure/window/plasma/reinforced/spawner{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown,
+/turf/open/floor/plasteel,
+/area/xenoarch/caloriteresearch_powered)
 "yT" = (
 /obj/structure/table,
 /turf/open/floor/carpet/red,
@@ -7745,6 +7791,10 @@
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
+/area/xenoarch/caloriteresearch_powered)
+"zd" = (
+/obj/machinery/light/floor,
+/turf/open/floor/mineral/calorite/dance,
 /area/xenoarch/caloriteresearch_powered)
 "zg" = (
 /obj/item/crowbar,
@@ -7904,6 +7954,22 @@
 	},
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
+"Aw" = (
+/obj/structure/window/plasma/reinforced/spawner{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown,
+/turf/open/floor/plasteel,
+/area/xenoarch/caloriteresearch_powered)
 "AA" = (
 /obj/structure/table,
 /obj/effect/turf_decal/loading_area{
@@ -8058,7 +8124,7 @@
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/caloriteresearch_powered)
 "Bm" = (
-/turf/closed/mineral/random,
+/turf/closed/mineral/random/volcanic/strangerock,
 /area/xenoarch/caloriteresearch_powered)
 "Bq" = (
 /obj/structure/window/reinforced,
@@ -8261,6 +8327,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
+"CH" = (
+/obj/item/cardboard_cutout{
+	icon_state = "cutout_new_servant"
+	},
+/turf/open/floor/mineral/calorite/dance,
+/area/xenoarch/caloriteresearch_powered)
 "CI" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/airless,
@@ -8393,6 +8465,22 @@
 /area/xenoarch/caloriteresearch_powered)
 "DP" = (
 /obj/machinery/disposal/bin,
+/turf/open/floor/plasteel,
+/area/xenoarch/caloriteresearch_powered)
+"DV" = (
+/obj/structure/window/plasma/reinforced/spawner{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/yellow,
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "DW" = (
@@ -8863,6 +8951,12 @@
 /obj/machinery/vending/coffee,
 /turf/open/floor/mineral/basaltstone_floor,
 /area/xenoarch/caloriteresearch_powered)
+"Hm" = (
+/obj/item/cardboard_cutout{
+	icon_state = "cutout_servant"
+	},
+/turf/open/floor/mineral/calorite/dance,
+/area/xenoarch/caloriteresearch_powered)
 "Hr" = (
 /obj/structure/chair/sofa/right,
 /turf/open/floor/holofloor/carpet,
@@ -8903,6 +8997,22 @@
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/public/glass{
 	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/xenoarch/caloriteresearch_powered)
+"HN" = (
+/obj/structure/window/plasma/reinforced/spawner{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
 	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
@@ -9195,6 +9305,22 @@
 "Kf" = (
 /turf/open/floor/mineral/basaltstone_floor,
 /area/xenoarch/caloriteresearch_powered)
+"Kg" = (
+/obj/structure/window/plasma/reinforced/spawner{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/yellow,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/xenoarch/caloriteresearch_powered)
 "Kh" = (
 /obj/effect/turf_decal/box/white,
 /turf/open/floor/plating,
@@ -9323,6 +9449,20 @@
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
+/area/xenoarch/caloriteresearch_powered)
+"KW" = (
+/obj/structure/window/plasma/reinforced/spawner,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "Ld" = (
 /obj/structure/chair/wood{
@@ -9504,6 +9644,9 @@
 "Ms" = (
 /obj/structure/closet/toolcloset,
 /turf/open/floor/plating,
+/area/xenoarch/caloriteresearch_powered)
+"Mt" = (
+/turf/open/floor/mineral/calorite/dance,
 /area/xenoarch/caloriteresearch_powered)
 "Mv" = (
 /obj/item/restraints/legcuffs/beartrap,
@@ -9999,6 +10142,22 @@
 	},
 /obj/effect/turf_decal/box/white,
 /turf/open/floor/plating,
+/area/xenoarch/caloriteresearch_powered)
+"PW" = (
+/obj/structure/window/plasma/reinforced/spawner{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "PZ" = (
 /obj/effect/turf_decal/stripes/line{
@@ -10597,6 +10756,22 @@
 	},
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
+"TX" = (
+/obj/structure/window/plasma/reinforced/spawner{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/yellow,
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/xenoarch/caloriteresearch_powered)
 "Ui" = (
 /obj/structure/flora/ashtree/ashtreee,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
@@ -10805,6 +10980,20 @@
 /area/xenoarch/caloriteresearch_powered)
 "VN" = (
 /obj/effect/turf_decal/stripes{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/xenoarch/caloriteresearch_powered)
+"VP" = (
+/obj/structure/window/plasma/reinforced/spawner,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/yellow{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -11285,6 +11474,22 @@
 /area/xenoarch/gen)
 "ZF" = (
 /obj/item/trash/plate,
+/turf/open/floor/plasteel,
+/area/xenoarch/caloriteresearch_powered)
+"ZH" = (
+/obj/structure/window/plasma/reinforced/spawner{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/yellow,
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "ZK" = (
@@ -37790,11 +37995,11 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
-ab
+Ht
+TX
+Kg
+yP
+Ht
 ab
 ab
 ab
@@ -38047,11 +38252,11 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
-ab
+DV
+Mt
+CH
+Mt
+qI
 ab
 ab
 ab
@@ -38304,11 +38509,11 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
-ab
+ZH
+Mt
+zd
+Mt
+VP
 ab
 ab
 ab
@@ -38561,11 +38766,11 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
-ab
+Aw
+Mt
+Hm
+Mt
+KW
 ab
 ab
 ab
@@ -38818,11 +39023,11 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
-ab
+Ht
+iQ
+PW
+HN
+Ht
 ab
 ab
 ab
@@ -56941,7 +57146,7 @@ ab
 ab
 ab
 ab
-lQ
+ab
 lQ
 lQ
 lQ
@@ -58700,8 +58905,8 @@ ab
 yw
 yw
 yw
-yw
-yw
+ab
+ab
 ab
 ab
 ab
@@ -58957,8 +59162,8 @@ ab
 yw
 yw
 yw
-yw
-yw
+ab
+ab
 ab
 ab
 ab
@@ -59214,8 +59419,8 @@ ab
 yw
 yw
 yw
-yw
-yw
+ab
+ab
 ab
 ab
 ab
@@ -59471,8 +59676,8 @@ ab
 yw
 yw
 yw
-yw
-yw
+ab
+ab
 ab
 ab
 ab
@@ -59728,8 +59933,8 @@ ab
 yw
 yw
 yw
-yw
-yw
+ab
+ab
 ab
 ab
 ab
@@ -59985,8 +60190,8 @@ ab
 yw
 yw
 yw
-yw
-yw
+ab
+ab
 ab
 ab
 ab
@@ -60242,8 +60447,8 @@ yw
 yw
 yw
 yw
-yw
-yw
+ab
+ab
 ab
 ab
 ab
@@ -60758,34 +60963,34 @@ lQ
 ay
 ay
 ay
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
 ab
 ab
 ab
@@ -61015,14 +61220,14 @@ lQ
 lQ
 ay
 ay
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
 HJ
 HJ
 HJ
@@ -61043,7 +61248,7 @@ HJ
 HJ
 HJ
 HJ
-yw
+ab
 ab
 ab
 lQ
@@ -61272,14 +61477,14 @@ jY
 lQ
 BP
 lQ
-yw
-yw
-yw
-yw
-yw
-yw
-yw
-yw
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
 HJ
 Mm
 QV
@@ -61300,7 +61505,7 @@ Zt
 Fk
 Bq
 HJ
-yw
+ab
 ab
 ab
 BP
@@ -61530,10 +61735,10 @@ lQ
 lQ
 lQ
 jB
-yw
-yw
-yw
-yw
+ab
+ab
+ab
+ab
 HJ
 HJ
 HJ
@@ -61788,9 +61993,9 @@ lQ
 lQ
 lQ
 lQ
-yw
-yw
-yw
+ab
+ab
+ab
 HJ
 UK
 Tp
@@ -61833,10 +62038,10 @@ lQ
 lQ
 lQ
 BP
-yw
-yw
-yw
-yw
+ab
+ab
+ab
+ab
 ab
 ab
 lQ
@@ -62046,8 +62251,8 @@ Ui
 ay
 ay
 lQ
-yw
-yw
+ab
+ab
 HJ
 xW
 Wa
@@ -62090,10 +62295,10 @@ lQ
 lQ
 lQ
 lQ
-yw
-yw
-yw
-yw
+ab
+ab
+ab
+ab
 ab
 ab
 lQ
@@ -62347,10 +62552,10 @@ lQ
 lQ
 lQ
 lQ
-yw
-yw
-yw
-yw
+ab
+ab
+ab
+ab
 ab
 ab
 lQ
@@ -62604,10 +62809,10 @@ lQ
 lQ
 lQ
 lQ
-yw
-yw
-yw
-yw
+ab
+ab
+ab
+ab
 ab
 ab
 lQ
@@ -62849,7 +63054,7 @@ HJ
 HJ
 HJ
 ab
-yw
+ab
 BP
 lQ
 lQ
@@ -62861,10 +63066,10 @@ lQ
 lQ
 lQ
 jY
-yw
-yw
-yw
-yw
+ab
+ab
+ab
+ab
 ab
 ab
 lQ
@@ -63105,8 +63310,8 @@ KL
 SG
 KE
 HJ
-yw
-yw
+ab
+ab
 lQ
 lQ
 lQ
@@ -63118,10 +63323,10 @@ lQ
 lQ
 lQ
 ab
-yw
-yw
-yw
-yw
+ab
+ab
+ab
+ab
 ab
 ab
 ab
@@ -63362,8 +63567,8 @@ uO
 CB
 XZ
 HJ
-yw
-yw
+ab
+ab
 jV
 lQ
 lQ
@@ -63375,10 +63580,10 @@ lQ
 lQ
 BP
 ab
-yw
-yw
-yw
-yw
+ab
+ab
+ab
+ab
 ab
 ab
 ab
@@ -63619,8 +63824,8 @@ VF
 RU
 XH
 HJ
-yw
-yw
+ab
+ab
 lQ
 lQ
 lQ
@@ -63632,10 +63837,10 @@ lQ
 lQ
 ab
 yw
-yw
-yw
-yw
-yw
+ab
+ab
+ab
+ab
 ab
 ab
 ab
@@ -63876,8 +64081,8 @@ uO
 rW
 Zt
 HJ
-yw
-yw
+ab
+ab
 sn
 DX
 DX
@@ -63889,10 +64094,10 @@ sn
 jV
 ab
 yw
-yw
-yw
-yw
-yw
+ab
+ab
+ab
+ab
 ab
 ab
 ab
@@ -64143,13 +64348,13 @@ HJ
 HJ
 WN
 HJ
-yw
-yw
-yw
-yw
-yw
-yw
-yw
+ab
+ab
+ab
+ab
+ab
+ab
+ab
 ab
 ab
 ab
@@ -64400,13 +64605,13 @@ Bt
 VN
 Ls
 OA
-yw
-yw
-yw
-yw
-yw
-yw
-yw
+ab
+ab
+ab
+ab
+ab
+ab
+ab
 ab
 ab
 ab
@@ -64657,13 +64862,13 @@ HH
 VN
 Tt
 OA
-yw
-yw
-yw
-yw
-yw
-yw
-yw
+ab
+ab
+ab
+ab
+ab
+ab
+ab
 ab
 ab
 ab
@@ -64917,10 +65122,10 @@ OA
 Bm
 Bm
 Bm
-yw
-yw
-yw
-yw
+ab
+ab
+ab
+ab
 ab
 ab
 ab
@@ -65174,10 +65379,10 @@ OA
 OA
 OA
 OA
-yw
-yw
-yw
-yw
+ab
+ab
+ab
+ab
 ab
 ab
 ab
@@ -65431,8 +65636,8 @@ wP
 YC
 YC
 OA
-yw
-yw
+ab
+ab
 ab
 ab
 ab

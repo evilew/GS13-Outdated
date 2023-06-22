@@ -858,6 +858,20 @@
 "KN" = (
 /turf/template_noop,
 /area/space/nearstation)
+"VY" = (
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/mob/living/simple_animal/hostile/feed/chocolate_slime,
+/turf/open/floor/plasteel/dark,
+/area/ruin/space/has_grav/abandonedzoo)
 
 (1,1,1) = {"
 ab
@@ -952,7 +966,7 @@ ar
 ac
 at
 aS
-ay
+VY
 ay
 be
 at
@@ -1032,7 +1046,7 @@ aa
 aa
 aa
 ag
-ay
+VY
 aH
 aO
 ay
