@@ -283,6 +283,12 @@
 	credit_cost = 4000
 	description = "A fairly standard shuttle, though larger and slightly better equipped than the Box Station variant."
 
+/datum/map_template/shuttle/emergency/kilo
+	suffix = "kilo"
+	name = "Kilo Station Emergency Shuttle"
+	credit_cost = 5000
+	description = "A fully functional shuttle including a complete infirmary, storage facilties and regular amenities."
+
 /datum/map_template/shuttle/emergency/mini
 	suffix = "mini"
 	name = "Ministation emergency shuttle"
@@ -398,6 +404,11 @@
 	suffix = "fancy"
 	name = "fancy transport ferry"
 	description = "At some point, someone upgraded the ferry to have fancier flooring... and less seats."
+
+/datum/map_template/shuttle/ferry/kilo
+	suffix = "kilo"
+	name = "kilo transport ferry"
+	description = "Standard issue CentCom Ferry for Kilo pattern stations. Includes additional equipment and rechargers."
 
 /datum/map_template/shuttle/whiteship/box
 	suffix = "box"

@@ -14,7 +14,6 @@ Format:
 endmap
 
 map boxstation
-	default
 	#voteweight 1.5
 endmap
 
@@ -24,10 +23,6 @@ map metastation
 endmap
 
 map pubbystation
-endmap
-
-map omegastation
-	maxplayers 35
 endmap
 
 map deltastation
@@ -41,4 +36,8 @@ map multiz_debug
 endmap
 
 map syndieboxstation
+endmap
+
+map kilostation
+	default
 endmap
