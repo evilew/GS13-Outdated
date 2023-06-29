@@ -43428,19 +43428,6 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/crew_quarters/bar/atrium)
-"brS" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/weightmachine/stacklifter,
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
 "brT" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -44311,9 +44298,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/chapel/office)
-"btq" = (
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
 "btr" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -44358,6 +44342,9 @@
 	dir = 10
 	},
 /obj/structure/punching_bag,
+/turf/open/floor/wood,
+/area/crew_quarters/fitness/recreation)
+"btv" = (
 /turf/open/floor/wood,
 /area/crew_quarters/fitness/recreation)
 "btw" = (
@@ -46720,6 +46707,12 @@
 	},
 /turf/open/floor/grass,
 /area/chapel/main)
+"bxE" = (
+/obj/item/stack/sheet/mineral/calorite{
+	amount = 5
+	},
+/turf/open/floor/mineral/calorite/strong,
+/area/space/nearstation)
 "bxF" = (
 /obj/structure/table_frame,
 /turf/open/floor/plating,
@@ -47459,9 +47452,6 @@
 /obj/machinery/light/small,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
-"byL" = (
-/turf/open/floor/mineral/calorite,
-/area/space/nearstation)
 "byM" = (
 /obj/structure/table,
 /obj/item/aiModule/reset,
@@ -47533,6 +47523,9 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/storage/primary)
+"byR" = (
+/turf/open/floor/mineral/calorite,
+/area/space/nearstation)
 "byT" = (
 /turf/closed/wall{
 	color = green
@@ -48103,6 +48096,9 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/wood,
 /area/crew_quarters/fitness/recreation)
+"bzR" = (
+/turf/closed/wall/mineral/calorite,
+/area/space/nearstation)
 "bzS" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/transit_tube/crossing,
@@ -51124,6 +51120,10 @@
 /obj/structure/fans/tiny,
 /turf/open/floor/plating,
 /area/engine/atmos)
+"bEK" = (
+/obj/item/clothing/neck/petcollar/calorite,
+/turf/open/floor/mineral/calorite/strong,
+/area/space/nearstation)
 "bEL" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
@@ -52205,9 +52205,18 @@
 /turf/open/floor/plasteel,
 /area/crew_quarters/locker)
 "bGB" = (
-/obj/item/clothing/neck/petcollar/calorite,
-/turf/open/floor/mineral/calorite/strong,
-/area/space/nearstation)
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
+	dir = 1
+	},
+/obj/structure/weightmachine/weightlifter,
+/turf/open/floor/wood,
+/area/crew_quarters/fitness/recreation)
 "bGC" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -52410,8 +52419,8 @@
 /turf/open/floor/plasteel,
 /area/security/processing)
 "bGT" = (
-/turf/closed/wall/mineral/calorite,
-/area/space/nearstation)
+/turf/open/pool,
+/area/crew_quarters/fitness/pool)
 "bGU" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/grille,
@@ -55095,13 +55104,13 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
-	dir = 1
-	},
-/obj/structure/weightmachine/weightlifter,
+/obj/structure/weightmachine/stacklifter,
 /turf/open/floor/wood,
 /area/crew_quarters/fitness/recreation)
 "bLh" = (
@@ -55544,8 +55553,11 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/prison)
 "bLR" = (
-/turf/open/pool,
-/area/crew_quarters/fitness/pool)
+/obj/item/stack/ore/calorite{
+	amount = 17
+	},
+/turf/open/floor/mineral/calorite/strong,
+/area/space/nearstation)
 "bLS" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
@@ -55556,10 +55568,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
-"bLT" = (
-/obj/structure/statue/calorite/fatty,
-/turf/open/floor/mineral/calorite,
-/area/space/nearstation)
 "bLU" = (
 /obj/structure/sign/warning/fire,
 /turf/closed/wall{
@@ -55619,10 +55627,8 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "bMa" = (
-/obj/item/stack/sheet/mineral/calorite{
-	amount = 5
-	},
-/turf/open/floor/mineral/calorite/strong,
+/obj/structure/statue/calorite/fatty,
+/turf/open/floor/mineral/calorite,
 /area/space/nearstation)
 "bMb" = (
 /obj/effect/turf_decal/tile/red{
@@ -83610,12 +83616,6 @@
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
 /area/solar/port/fore)
-"cNl" = (
-/obj/item/stack/ore/calorite{
-	amount = 17
-	},
-/turf/open/floor/mineral/calorite/strong,
-/area/space/nearstation)
 "cNn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -103325,11 +103325,11 @@ ble
 cnL
 awD
 bLd
-btq
-btq
+btv
+btv
 bvw
 bxC
-btq
+btv
 bAz
 bLU
 awD
@@ -103838,13 +103838,13 @@ amA
 cFW
 awD
 bKD
-brS
-btq
+bLg
+btv
 btr
 bvz
 bvx
-bLR
-bLR
+bGT
+bGT
 bBu
 bMd
 bDo
@@ -104096,12 +104096,12 @@ cuB
 awD
 bKH
 bLb
-btq
+btv
 btu
 bLW
 bLC
-bLR
-bLR
+bGT
+bGT
 bBw
 bHG
 bDs
@@ -104354,10 +104354,10 @@ cnJ
 bLa
 bLh
 bLO
-btq
+btv
 bLV
-bLR
-bLR
+bGT
+bGT
 bGI
 bBx
 awD
@@ -104609,13 +104609,13 @@ cnJ
 cni
 awD
 bKN
-bLg
+bGB
 bLm
 bty
 bvz
-bLR
-bLR
-bLR
+bGT
+bGT
+bGT
 bMg
 awD
 bDt
@@ -104870,9 +104870,9 @@ bLc
 bMi
 bLP
 bHx
-bLR
-bLR
-bLR
+bGT
+bGT
+bGT
 bMx
 awD
 afz
@@ -134575,9 +134575,9 @@ aeu
 aeu
 aeu
 aeu
-bGT
-bGT
-bGT
+bzR
+bzR
+bzR
 aeu
 aeu
 aeu
@@ -134831,11 +134831,11 @@ aeu
 aeu
 aeu
 aeu
-bGT
-byL
-bMa
-byL
-bGT
+bzR
+byR
+bxE
+byR
+bzR
 aeu
 aeu
 aeu
@@ -135088,11 +135088,11 @@ aeu
 aeu
 aeu
 aeu
-bGT
-bGB
-bLT
-byL
-bGT
+bzR
+bEK
+bMa
+byR
+bzR
 aeu
 aeu
 aeu
@@ -135345,11 +135345,11 @@ aeu
 aeu
 aeu
 aeu
-bGT
-byL
-byL
-cNl
-bGT
+bzR
+byR
+byR
+bLR
+bzR
 aeu
 aeu
 aeu
@@ -135603,9 +135603,9 @@ aeu
 aeu
 aeu
 aeu
-bGT
-bGT
-bGT
+bzR
+bzR
+bzR
 aeu
 aeu
 aeu
