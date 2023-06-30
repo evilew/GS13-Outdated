@@ -45540,8 +45540,8 @@
 /obj/machinery/computer/holodeck{
 	dir = 4
 	},
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/turf/open/floor/plasteel,
+/area/crew_quarters/fitness/pool)
 "bvx" = (
 /obj/machinery/pool/filter{
 	pixel_y = 24
@@ -45559,8 +45559,8 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/turf/open/floor/plasteel/yellowsiding,
+/area/crew_quarters/fitness/pool)
 "bvA" = (
 /obj/machinery/status_display/evac,
 /turf/closed/wall{
@@ -45588,8 +45588,10 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
 	},
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/turf/open/floor/plasteel/yellowsiding/corner{
+	dir = 8
+	},
+/area/crew_quarters/fitness/pool)
 "bvD" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -46699,8 +46701,8 @@
 /obj/item/clipboard,
 /obj/item/paper/fluff/holodeck/disclaimer,
 /obj/item/pen,
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/turf/open/floor/plasteel,
+/area/crew_quarters/fitness/pool)
 "bxD" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 8
@@ -46813,8 +46815,10 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/turf/open/floor/plasteel/yellowsiding{
+	dir = 8
+	},
+/area/crew_quarters/fitness/pool)
 "bxO" = (
 /turf/open/floor/plasteel/showroomfloor,
 /area/crew_quarters/toilet/restrooms)
@@ -46879,8 +46883,8 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/turf/open/floor/plasteel/yellowsiding/corner,
+/area/crew_quarters/fitness/pool)
 "bxV" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -47537,8 +47541,10 @@
 	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/turf/open/floor/plasteel/yellowsiding{
+	dir = 8
+	},
+/area/crew_quarters/fitness/pool)
 "byV" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable{
@@ -48094,8 +48100,10 @@
 "bzQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment,
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/turf/open/floor/plasteel/yellowsiding{
+	dir = 4
+	},
+/area/crew_quarters/fitness/pool)
 "bzR" = (
 /turf/closed/wall/mineral/calorite,
 /area/space/nearstation)
@@ -48492,8 +48500,8 @@
 "bAz" = (
 /obj/structure/table,
 /obj/machinery/light,
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/turf/open/floor/plasteel,
+/area/crew_quarters/fitness/pool)
 "bAA" = (
 /obj/machinery/firealarm{
 	dir = 8;
@@ -48501,8 +48509,10 @@
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/turf/open/floor/plasteel/yellowsiding{
+	dir = 8
+	},
+/area/crew_quarters/fitness/pool)
 "bAB" = (
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
@@ -49074,8 +49084,10 @@
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/turf/open/floor/plasteel/yellowsiding{
+	dir = 1
+	},
+/area/crew_quarters/fitness/pool)
 "bBv" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
@@ -49093,8 +49105,10 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/turf/open/floor/plasteel/yellowsiding{
+	dir = 1
+	},
+/area/crew_quarters/fitness/pool)
 "bBx" = (
 /obj/machinery/status_display/ai{
 	pixel_y = -32
@@ -49107,8 +49121,10 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/turf/open/floor/plasteel/yellowsiding{
+	dir = 1
+	},
+/area/crew_quarters/fitness/pool)
 "bBy" = (
 /obj/structure/sign/poster/contraband/random,
 /turf/closed/wall{
@@ -51193,11 +51209,13 @@
 	name = "Recreation Area"
 	},
 /turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/area/crew_quarters/fitness/pool)
 "bER" = (
 /obj/structure/disposalpipe/segment,
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/turf/open/floor/plasteel/yellowsiding{
+	dir = 4
+	},
+/area/crew_quarters/fitness/pool)
 "bES" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -51725,8 +51743,10 @@
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/turf/open/floor/plasteel/yellowsiding/corner{
+	dir = 4
+	},
+/area/crew_quarters/fitness/pool)
 "bFO" = (
 /obj/machinery/bluespace_beacon,
 /obj/effect/turf_decal/tile/blue,
@@ -52766,8 +52786,8 @@
 	dir = 5
 	},
 /obj/effect/landmark/event_spawn,
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/turf/open/floor/plasteel/yellowsiding,
+/area/crew_quarters/fitness/pool)
 "bHy" = (
 /obj/effect/turf_decal/box,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
@@ -52885,7 +52905,7 @@
 	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/area/crew_quarters/fitness/pool)
 "bHH" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -53494,7 +53514,7 @@
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/area/crew_quarters/fitness/pool)
 "bII" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer3,
@@ -55469,7 +55489,7 @@
 "bLJ" = (
 /obj/effect/spawner/structure/window/reinforced/tinted,
 /turf/open/floor/plating,
-/area/crew_quarters/fitness/recreation)
+/area/crew_quarters/fitness/pool)
 "bLK" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -55573,14 +55593,14 @@
 /turf/closed/wall{
 	color = green
 	},
-/area/crew_quarters/fitness/recreation)
+/area/crew_quarters/fitness/pool)
 "bLV" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /obj/machinery/pool/controller,
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/turf/open/floor/plasteel/yellowsiding,
+/area/crew_quarters/fitness/pool)
 "bLW" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
@@ -55588,8 +55608,8 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/turf/open/floor/plasteel/yellowsiding,
+/area/crew_quarters/fitness/pool)
 "bLX" = (
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
@@ -55668,7 +55688,7 @@
 /turf/closed/wall{
 	color = green
 	},
-/area/crew_quarters/fitness/recreation)
+/area/crew_quarters/fitness/pool)
 "bMe" = (
 /obj/machinery/hydroponics/soil,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
@@ -55699,8 +55719,10 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/turf/open/floor/plasteel/yellowsiding{
+	dir = 1
+	},
+/area/crew_quarters/fitness/pool)
 "bMh" = (
 /obj/structure/table,
 /obj/item/storage/box/prisoner{
@@ -55728,8 +55750,6 @@
 /turf/open/floor/wood,
 /area/crew_quarters/fitness/recreation)
 "bMj" = (
-/obj/machinery/vending/cola/random,
-/obj/effect/turf_decal/bot,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -55745,8 +55765,10 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
 	},
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/turf/open/floor/plasteel/yellowsiding/corner{
+	dir = 1
+	},
+/area/crew_quarters/fitness/pool)
 "bMk" = (
 /obj/item/radio/intercom{
 	pixel_x = -28
@@ -55914,8 +55936,10 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/turf/open/floor/wood,
-/area/crew_quarters/fitness/recreation)
+/turf/open/floor/plasteel/yellowsiding{
+	dir = 1
+	},
+/area/crew_quarters/fitness/pool)
 "bMy" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -84571,6 +84595,10 @@
 /obj/effect/turf_decal/box/white,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/locker)
+"gCn" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
+/area/crew_quarters/fitness/pool)
 "gIE" = (
 /obj/effect/spawner/structure/window/plasma/reinforced,
 /turf/closed/mineral/random/labormineral,
@@ -84630,6 +84658,11 @@
 /obj/structure/barricade/wooden/crude,
 /turf/open/floor/wood,
 /area/maintenance/port/fore)
+"gWo" = (
+/turf/closed/wall{
+	color = green
+	},
+/area/crew_quarters/fitness/pool)
 "gXD" = (
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -84649,6 +84682,11 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/powered/dinner_for_two)
+"her" = (
+/obj/machinery/vending/cola/random,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/wood,
+/area/crew_quarters/fitness/recreation)
 "hfR" = (
 /obj/machinery/conveyor{
 	dir = 2;
@@ -84759,6 +84797,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
+"iav" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/public/glass{
+	name = "Holodeck"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/fitness/pool)
 "ice" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -85406,6 +85454,9 @@
 /obj/effect/turf_decal/tile/red,
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/prison)
+"mwy" = (
+/turf/open/floor/plasteel,
+/area/crew_quarters/fitness/pool)
 "mys" = (
 /obj/structure/cable,
 /obj/structure/lattice/catwalk,
@@ -85572,6 +85623,12 @@
 /obj/structure/barricade/wooden/crude,
 /turf/open/floor/plasteel/dark,
 /area/quartermaster/warehouse)
+"oec" = (
+/obj/machinery/vending/cola/random,
+/turf/closed/wall{
+	color = green
+	},
+/area/crew_quarters/fitness/pool)
 "ofj" = (
 /obj/machinery/door/airlock/maintenance{
 	req_access_txt = "12"
@@ -103070,12 +103127,12 @@ awD
 aQU
 aQU
 btn
-aQU
-aQU
-btn
-aQU
-aQU
-awD
+gCn
+gCn
+iav
+gCn
+gCn
+gWo
 awD
 ccc
 ajd
@@ -103325,14 +103382,14 @@ ble
 cnL
 awD
 bLd
-btv
+her
 btv
 bvw
 bxC
-btv
+mwy
 bAz
 bLU
-awD
+gWo
 bDn
 caB
 bFk
@@ -103589,7 +103646,7 @@ bzQ
 bER
 bER
 bFN
-awD
+gWo
 ajd
 cdG
 cus
@@ -104360,7 +104417,7 @@ bGT
 bGT
 bGI
 bBx
-awD
+gWo
 afm
 adW
 akh
@@ -104617,7 +104674,7 @@ bGT
 bGT
 bGT
 bMg
-awD
+gWo
 bDt
 bDV
 bFn
@@ -104874,7 +104931,7 @@ bGT
 bGT
 bGT
 bMx
-awD
+oec
 afz
 adZ
 ajd
@@ -105131,7 +105188,7 @@ bxN
 byU
 bAA
 bMj
-awD
+gWo
 csN
 bDW
 bFo
@@ -105386,9 +105443,9 @@ awD
 bIH
 bLJ
 bEP
-awD
-awD
-awD
+gWo
+gWo
+gWo
 csS
 cBI
 bFp
