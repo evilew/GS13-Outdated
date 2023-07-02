@@ -46435,7 +46435,7 @@
 /area/chapel/main)
 "bxE" = (
 /obj/structure/girder,
-/turf/open/floor/mineral/calorite,
+/turf/open/floor/plating,
 /area/space/nearstation)
 "bxF" = (
 /obj/structure/table_frame,
@@ -85335,6 +85335,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
+"pTP" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/floor/plating/asteroid/airless,
+/area/space/nearstation)
 "pWM" = (
 /turf/open/floor/plating,
 /area/quartermaster/warehouse)
@@ -85454,6 +85458,9 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/prison)
+"qRM" = (
+/turf/open/floor/plating,
+/area/space/nearstation)
 "qSk" = (
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -85595,6 +85602,12 @@
 /obj/item/stack/rods,
 /turf/open/floor/carpet/green,
 /area/quartermaster/warehouse)
+"soT" = (
+/obj/structure/flora/rock/pile{
+	icon_state = "lavarocks3"
+	},
+/turf/open/floor/plating/asteroid/airless,
+/area/space/nearstation)
 "swG" = (
 /obj/item/reagent_containers/food/drinks/drinkingglass{
 	pixel_x = 4;
@@ -85767,6 +85780,13 @@
 "uat" = (
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
+	},
+/obj/item/trash/fatoray_scrap2,
+/turf/open/floor/plating/asteroid/airless,
+/area/space/nearstation)
+"ucj" = (
+/obj/structure/flora/rock/pile{
+	icon_state = "lavarocks2"
 	},
 /turf/open/floor/plating/asteroid/airless,
 /area/space/nearstation)
@@ -86053,6 +86073,10 @@
 "wCm" = (
 /turf/open/floor/plasteel,
 /area/maintenance/port/fore)
+"wCt" = (
+/obj/structure/shuttle/engine/propulsion/right,
+/turf/open/floor/plating/asteroid/airless,
+/area/space/nearstation)
 "wHQ" = (
 /obj/structure/chair/sofa/left,
 /turf/open/floor/carpet,
@@ -132588,7 +132612,7 @@ aeu
 aeu
 aeu
 aeU
-aeU
+aUz
 aeu
 aeu
 aeu
@@ -132843,7 +132867,7 @@ aeu
 aeu
 aeu
 aeu
-aeU
+soT
 aeU
 aeU
 aeU
@@ -133102,9 +133126,9 @@ aeu
 aeu
 aeU
 aeU
+pTP
 aeU
-aeU
-aeU
+soT
 aeu
 aeu
 aeu
@@ -133614,11 +133638,11 @@ aeu
 aeu
 aeu
 aeU
+ucj
 aeU
+pTP
 aeU
-aeU
-aeU
-aeU
+wCt
 aeu
 aeu
 aeu
@@ -133870,13 +133894,13 @@ aeu
 aeu
 aeu
 aeu
-aeU
+pTP
 wtT
+qRM
+bxE
 aeU
-dWy
 aeU
-aeU
-aeU
+pTP
 aeu
 aeu
 aeu
@@ -134132,7 +134156,7 @@ bMa
 jWv
 lnV
 bMa
-aeU
+ucj
 aeU
 aeu
 aeu
@@ -134386,7 +134410,7 @@ aeu
 aeu
 aeU
 bzR
-jWv
+qRM
 byR
 bxE
 aeU
