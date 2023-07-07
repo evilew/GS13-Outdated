@@ -570,11 +570,20 @@
 #define COMSIG_HUMAN_MELEE_UNARMED_ATTACKBY "human_melee_unarmed_attackby"
 ///Hit by successful disarm attack (mob/living/carbon/human/attacker,zone_targeted)
 #define COMSIG_HUMAN_DISARM_HIT	"human_disarm_hit"
-#define COMSIG_HUMAN_PREFS_COPIED_TO "human_prefs_copied_to"					//from datum/preferences/copy_to(): (datum/preferences, icon_updates, roundstart_checks)
-#define COMSIG_HUMAN_HARDSET_DNA "human_hardset_dna"							//from mob/living/carbon/human/hardset_dna(): (ui, se, newreal_name, newblood_type, datum/species, newfeatures)
-#define COMSIG_HUMAN_ON_RANDOMIZE "humman_on_randomize"							//from base of proc/randomize_human()
+///from datum/preferences/copy_to(): (datum/preferences, icon_updates, roundstart_checks)
+#define COMSIG_HUMAN_PREFS_COPIED_TO "human_prefs_copied_to"
+///from mob/living/carbon/human/hardset_dna(): (ui, se, newreal_name, newblood_type, datum/species, newfeatures)
+#define COMSIG_HUMAN_HARDSET_DNA "human_hardset_dna"
+///from base of proc/randomize_human()
+#define COMSIG_HUMAN_ON_RANDOMIZE "humman_on_randomize"
 ///Whenever EquipRanked is called, called after job is set
 #define COMSIG_JOB_RECEIVED "job_received"
+
+// GS13: Silicon Examine Text
+// /mob/living/silicon signals
+
+//from datum/preferences/copy_to(): (datum/preferences, icon_updates, roundstart_checks)
+#define COMSIG_SILICON_PREFS_COPIED_TO "silicon_prefs_copied_to"
 
 // /datum/species signals
 
@@ -731,7 +740,6 @@
 //
 ///from datum/action/cyborg_small_sprite and sends when a cyborg changes modules
 #define COMSIG_CYBORG_MODULE_CHANGE "cyborg_module_change"
-
 
 /* Attack signals. They should share the returned flags, to standardize the attack chain. */
 /// tool_act -> pre_attack -> target.attackby (item.attack) -> afterattack

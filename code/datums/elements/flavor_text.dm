@@ -40,9 +40,6 @@ GLOBAL_LIST_EMPTY(mobs_with_editable_flavor_text) //et tu, hacky code
 		LAZYOR(GLOB.mobs_with_editable_flavor_text[M], src)
 		M.verbs |= /mob/proc/manage_flavor_tests
 
-	if(save_key && ishuman(target))
-		RegisterSignal(target, COMSIG_HUMAN_PREFS_COPIED_TO, .proc/update_prefs_flavor_text)
-
 /datum/element/flavor_text/Detach(atom/A)
 	. = ..()
 	UnregisterSignal(A, list(COMSIG_PARENT_EXAMINE, COMSIG_HUMAN_PREFS_COPIED_TO))
@@ -150,9 +147,9 @@ GLOBAL_LIST_EMPTY(mobs_with_editable_flavor_text) //et tu, hacky code
 		return TRUE
 	return FALSE
 
-/datum/element/flavor_text/proc/update_prefs_flavor_text(mob/living/carbon/human/H, datum/preferences/P, icon_updates = TRUE, roundstart_checks = TRUE)
+/datum/element/flavor_text/proc/update_prefs_flavor_text(mob/M, datum/preferences/P, icon_updates = TRUE, roundstart_checks = TRUE)
 	if(P.features.Find(save_key))
-		texts_by_atom[H] = P.features[save_key]
+		texts_by_atom[M] = P.features[save_key]
 
 //subtypes with additional hooks for DNA and preferences.
 /datum/element/flavor_text/carbon
@@ -169,6 +166,7 @@ GLOBAL_LIST_EMPTY(mobs_with_editable_flavor_text) //et tu, hacky code
 	RegisterSignal(target, COMSIG_CARBON_IDENTITY_TRANSFERRED_TO, .proc/update_dna_flavor_text)
 	RegisterSignal(target, COMSIG_MOB_ANTAG_ON_GAIN, .proc/on_antag_gain)
 	if(ishuman(target))
+		RegisterSignal(target, COMSIG_HUMAN_PREFS_COPIED_TO, .proc/update_prefs_flavor_text)
 		RegisterSignal(target, COMSIG_HUMAN_HARDSET_DNA, .proc/update_dna_flavor_text)
 		RegisterSignal(target, COMSIG_HUMAN_ON_RANDOMIZE, .proc/unset_flavor)
 
@@ -193,3 +191,18 @@ GLOBAL_LIST_EMPTY(mobs_with_editable_flavor_text) //et tu, hacky code
 		texts_by_atom[user] = ""
 		if(user.dna)
 			user.dna.features[save_key] = ""
+
+// GS13: Silicon Examine Text
+/datum/element/flavor_text/silicon
+
+/datum/element/flavor_text/silicon/Attach(datum/target, text = "", _name = "Flavor Text", _addendum, _max_len = MAX_FLAVOR_LEN, _always_show = FALSE, _edit = TRUE, _save_key = "flavor_text", _examine_no_preview = FALSE)
+	if(!issilicon(target))
+		return ELEMENT_INCOMPATIBLE
+	. = ..()
+	if(. == ELEMENT_INCOMPATIBLE)
+		return
+	RegisterSignal(target, COMSIG_SILICON_PREFS_COPIED_TO, .proc/update_prefs_flavor_text)
+
+/datum/element/flavor_text/silicon/Detach(mob/living/carbon/C)
+	. = ..()
+	UnregisterSignal(C, list(COMSIG_SILICON_PREFS_COPIED_TO))
