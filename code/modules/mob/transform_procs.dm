@@ -372,9 +372,6 @@
 
 	var/mob/living/silicon/robot/R = new /mob/living/silicon/robot(loc)
 
-	// GS13: Silicon Examine Text
-	SEND_SIGNAL(R, COMSIG_SILICON_PREFS_COPIED_TO, src)
-
 	R.gender = gender
 	R.invisibility = 0
 
