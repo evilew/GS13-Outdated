@@ -68,7 +68,7 @@ GLOBAL_LIST_EMPTY(mobs_with_editable_flavor_text) //et tu, hacky code
 	if(examine_no_preview)
 		examine_list += "<span class='notice'><a href='?src=[REF(src)];show_flavor=[REF(target)]'>\[[flavor_name]\]</a></span>"
 		return
-	var/msg = replacetext(text, "\n", " ")
+	var/msg = replacetext(text, "\n", "<br>") // preserve newlines
 	if(length_char(msg) <= 40)
 		examine_list += "<span class='notice'>[msg]</span>"
 	else
@@ -76,13 +76,21 @@ GLOBAL_LIST_EMPTY(mobs_with_editable_flavor_text) //et tu, hacky code
 
 	//Examine Tab stuff - Hyperstation
 	examineTabOutput = "<center>"
+
 	if(ishuman(target)) //user just returned, y'know, the user's own species. dumb.
 		var/mob/living/carbon/human/L = target
 		if(L.gender)
 			examineTabOutput += "[icon2html('hyperstation/icons/chat/gender.dmi', world, L.gender)]"
-
 		examineTabOutput += "[L.name] "
 		examineTabOutput += "([L.dna.custom_species ? L.dna.custom_species : L.dna.species.name])"
+
+	// GS13: Silicon Examine Text
+	if(iscyborg(target))
+		var/mob/living/silicon/robot/R = target
+		if (R.gender)
+			examineTabOutput += "[icon2html('hyperstation/icons/chat/gender.dmi', world, R.gender)]"
+		examineTabOutput += "[R.name] "
+		examineTabOutput += "([R.get_standard_name()])"
 
 /*		if(L.client?.prefs?.pins) //character has pins
 			var/P = ""
@@ -91,11 +99,13 @@ GLOBAL_LIST_EMPTY(mobs_with_editable_flavor_text) //et tu, hacky code
 */
 	examineTabOutput += "</center>"
 	examineTabOutput += "<br>[url_encode(msg)]"
+
 	if(ismob(target))
 		var/mob/M = target
 		if(M.ooc_text)
 			examineTabOutput += "<br><br><i><b>OOC</b>"
 			examineTabOutput += "<br>[url_encode(M.ooc_text)]"
+
 	user.client << output(examineTabOutput, "statbrowser:update_examine") //open the examine window
 	user.client << output(null, "statbrowser:create_mobexamine") //open the examine window
 
