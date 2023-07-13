@@ -3000,6 +3000,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.update_hair()
 	character.update_body_parts()
 
+// GS13: Silicon Examine Text
+/datum/preferences/proc/copy_to_robot(mob/living/silicon/robot/cyborg, icon_updates = 1, roundstart_checks = TRUE)
+	SEND_SIGNAL(cyborg, COMSIG_SILICON_PREFS_COPIED_TO, src, icon_updates, roundstart_checks)
+	cyborg.ooc_text = features["ooc_text"]
 
 /datum/preferences/proc/get_default_name(name_id)
 	switch(name_id)

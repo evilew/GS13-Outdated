@@ -48,5 +48,9 @@
 			. += "<span class='warning'>It doesn't seem to be responding.</span>"
 		if(DEAD)
 			. += "<span class='deadsay'>It looks like its system is corrupted and requires a reset.</span>"
+
+	// GS13: Silicon Examine Text
+	SEND_SIGNAL(src, COMSIG_PARENT_EXAMINE, user, .)
+
 	. += "*---------*</span>"
 	. += ..()

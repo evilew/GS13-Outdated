@@ -88,3 +88,5 @@ Cyborg
 /datum/job/cyborg/after_spawn(mob/living/silicon/robot/R, mob/M)
 	R.updatename(M.client)
 	R.gender = NEUTER
+	// GS13: Silicon Examine Text
+	M.client?.prefs?.copy_to_robot(R)
