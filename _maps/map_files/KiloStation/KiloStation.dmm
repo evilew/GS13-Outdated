@@ -16824,12 +16824,9 @@
 	name = "mainframe floor"
 	},
 /area/tcommsat/server)
-<<<<<<< Updated upstream
-=======
 "aCe" = (
 /turf/closed/wall,
 /area/crew_quarters/theatre)
->>>>>>> Stashed changes
 "aCf" = (
 /obj/structure/chair/office/light{
 	dir = 4
@@ -30271,14 +30268,6 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-<<<<<<< Updated upstream
-/obj/machinery/door/airlock/engineering/glass{
-	name = "Server Room";
-	req_access_txt = "61"
-	},
-=======
->>>>>>> Stashed changes
-/turf/open/floor/plasteel/dark,
 /area/tcommsat/server)
 "aXN" = (
 /obj/machinery/igniter/incinerator_toxmix,
@@ -30370,9 +30359,9 @@
 /turf/open/floor/engine,
 /area/science/explab)
 "aXV" = (
-/obj/item/storage/box/mousetraps{
-	pixel_y = -6;
-	pixel_x = -9
+/obj/item/storage/box/drinkingglasses{
+	pixel_y = -5;
+	pixel_x = -8
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/bar)
@@ -35391,7 +35380,7 @@
 	},
 /area/maintenance/central/secondary)
 "bfU" = (
-/obj/effect/landmark/blobstart,
+/obj/effect/spawner/lootdrop/fiftypercent_chocoslimespawn,
 /turf/open/floor/engine,
 /area/science/xenobiology)
 "bfV" = (
@@ -36286,7 +36275,6 @@
 /turf/closed/wall,
 /area/science/xenobiology)
 "bho" = (
-/obj/effect/landmark/xeno_spawn,
 /obj/effect/spawner/lootdrop/two_percent_xeno_egg_spawner,
 /turf/open/floor/engine,
 /area/science/xenobiology)

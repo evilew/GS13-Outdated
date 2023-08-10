@@ -1,5 +1,5 @@
 /mob/living/simple_animal/hostile/feed
-	var/food_per_feeding = 10
+	var/food_per_feeding = 5
 	var/food_fed = /datum/reagent/consumable/nutriment
 
 /mob/living/simple_animal/hostile/feed/AttackingTarget()
@@ -40,6 +40,7 @@
 	unique_name = 1
 	gold_core_spawnable = HOSTILE_SPAWN
 	see_in_dark = 3
+	blood_volume = 0
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE
 	initial_language_holder = /datum/language_holder/slime
 
