@@ -286,6 +286,24 @@
 	new_form = /mob/living/simple_animal/hostile/morph
 	infectable_biotypes = MOB_ORGANIC|MOB_INORGANIC|MOB_UNDEAD //magic!
 
+//To be the new transformation for the Gluttony's blessing
+/datum/disease/transformation/cakegolem
+	name = "Gluttony's Blessing"
+	cure_text = "nothing"
+	cures = list(/datum/reagent/medicine/adminordrazine)
+	agent = "Gluttony's Blessing"
+	desc = "A 'gift' from somewhere fattening."
+	stage_prob = 20
+	severity = DISEASE_SEVERITY_BIOHAZARD
+	visibility_flags = 0
+	stage1	= list("You start to taste cake in your mouth")
+	stage2	= list(",span class='danger'>Colored spots start to form all over your body.</span>")
+	stage3	= list("<span class='danger'>Your body begins to puff up.</span>", "<span class='danger'>Your pours start to shoot out a white substance.</span>") //ITS FROSTING NOT CUM SHUSH
+	stage4	= list("<span class='danger'>Your flesh starts to hollow out, while everything that made you, you dissapears.</span>")
+	stage5	= list("<span class='danger'>You have become a cakegolem, with the one though to feed everyone.</span>")
+	new_form = /mob/living/simple_animal/friendly/cakegolem
+	infectable_biotypes = MOB_ORGANIC|MOB_INORGANIC|MOB_UNDEAD //magic!
+
 /datum/disease/transformation/gondola
 	name = "Gondola Transformation"
 	cure_text = "Condensed Capsaicin, ingested or injected." //getting pepper sprayed doesn't help

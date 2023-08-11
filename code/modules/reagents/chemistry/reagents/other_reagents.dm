@@ -850,7 +850,7 @@
 	taste_description = "decay"
 
 /datum/reagent/gluttonytoxin/reaction_mob(mob/living/L, method=TOUCH, reac_volume)
-	L.ForceContractDisease(new /datum/disease/transformation/morph(), FALSE, TRUE)
+	L.ForceContractDisease(new /datum/disease/transformation/cakegolem(), FALSE, TRUE)
 
 /datum/reagent/serotrotium
 	name = "Serotrotium"
