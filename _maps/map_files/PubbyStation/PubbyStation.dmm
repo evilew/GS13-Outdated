@@ -58257,6 +58257,10 @@
 /obj/item/flashlight/lamp/green,
 /turf/open/floor/carpet,
 /area/lawoffice)
+"gCn" = (
+/obj/effect/spawner/lootdrop/fiftypercent_chocoslimespawn,
+/turf/open/floor/engine,
+/area/science/xenobiology)
 "gDZ" = (
 /obj/effect/turf_decal/box/corners{
 	dir = 1
@@ -117229,7 +117233,7 @@ aby
 aaa
 xKc
 blX
-blX
+gCn
 iPj
 tfP
 iPj
