@@ -30268,6 +30268,10 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/turf/open/floor/engine{
+	initial_gas_mix = "n2=100;TEMP=80";
+	name = "mainframe floor"
+	},
 /area/tcommsat/server)
 "aXN" = (
 /obj/machinery/igniter/incinerator_toxmix,
