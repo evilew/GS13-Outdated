@@ -42618,17 +42618,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/bar/atrium)
-"brB" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/structure/chair/stool/bar/brass,
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/red,
-/turf/open/floor/plasteel/dark,
-/area/crew_quarters/bar/atrium)
 "brC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
@@ -120148,7 +120137,7 @@ bqK
 aRp
 brM
 aRp
-brB
+aRp
 aXY
 aZH
 ajt
