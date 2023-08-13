@@ -475,7 +475,7 @@
 		/datum/reagent/consumable/ice,
 		/datum/reagent/consumable/coffee,
 		/datum/reagent/consumable/cream,
-		/datum/reagent/consumable/tea,
+		/datum/reagent/consumable/tea/pinktea,
 		/datum/reagent/consumable/icetea,
 		/datum/reagent/consumable/space_cola,
 		/datum/reagent/consumable/spacemountainwind,
