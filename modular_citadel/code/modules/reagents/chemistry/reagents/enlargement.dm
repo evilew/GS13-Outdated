@@ -113,6 +113,9 @@
 	var/obj/item/organ/genital/vagina/V = M.getorganslot("vagina")
 	var/obj/item/organ/genital/womb/W = M.getorganslot("womb")
 
+	// GS13: Do not touch organs unless transitioning.
+	// Some female characters have breasts but no vagina or womb and do not wish to gain these organs.
+	// The same behaviour should apply to transitioning male characters. 
 	if(M.gender == MALE)
 		M.gender = FEMALE
 		M.visible_message(
@@ -307,6 +310,9 @@
 	var/obj/item/organ/genital/vagina/V = M.getorganslot("vagina")
 	var/obj/item/organ/genital/womb/W = M.getorganslot("womb")
 
+	// GS13: Do not touch organs unless transitioning.
+	// Some female characters have breasts but no vagina or womb and do not wish to gain these organs.
+	// The same behaviour should apply to transitioning male characters. 
 	if(M.gender == FEMALE)
 		M.gender = MALE
 		M.visible_message(
