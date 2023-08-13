@@ -98,6 +98,7 @@ mob/living/get_effective_size()
 
 			//Smaller person being stepped on
 			if(get_effective_size() > tmob.get_effective_size() && iscarbon(src))
+				// GS13: Import Fat Naga from VoreStation
 				if(istype(H) && H.dna.features["taur"] == "Naga" || H.dna.features["taur"] == "Tentacle" || H.dna.features["taur"] == "Fat Naga")
 					tmob.visible_message("<span class='notice'>[src] carefully slithers around [tmob].</span>", "<span class='notice'>[src]'s huge tail slithers besides you.</span>")
 				else

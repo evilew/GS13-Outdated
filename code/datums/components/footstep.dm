@@ -97,6 +97,7 @@
 			var/mob/living/carbon/human/H = LM
 			var/feetCover = (H.wear_suit && (H.wear_suit.body_parts_covered & FEET)) || (H.w_uniform && (H.w_uniform.body_parts_covered & FEET))
 
+			// GS13: Import Fat Naga from VoreStation
 			if (H.dna.features["taur"] == "Naga" || H.dna.features["taur"] == "Tentacle" || H.dna.features["taur"] == "Fat Naga") //are we a naga or tentacle taur creature
 				playsound(T, 'sound/effects/footstep/crawl1.ogg', 15 * v)
 				return

@@ -1884,6 +1884,7 @@ datum/sprite_accessory/mam_tails/insect
 	icon_state = "naga"
 	taur_mode = SNEK_TAURIC
 
+// GS13: Import Fat Naga from VoreStation
 /datum/sprite_accessory/taur/naga/fat //ported from Vorestation
 	name = "Fat Naga"
 	icon_state = "fatnaga"
