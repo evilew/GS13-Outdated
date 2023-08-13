@@ -73,7 +73,7 @@
 	if (ismovableatom(M))
 		if(do_teleport(M, com.target, channel = TELEPORT_CHANNEL_BLUESPACE))
 			use_power(5000)
-
+			// GS13: Remove fly person transformation
 			calibrated = FALSE
 	return
 
