@@ -90,7 +90,7 @@
 	if(foundrecord)
 		foundrecord.fields["rank"] = assignment
 
-/datum/datacore/proc/manifest_modify_status(name, status)
+/datum/datacore/proc/manifest_modify_status(name, status) // GS13
 	var/datum/data/record/foundrecord = find_record("name", name, GLOB.data_core.general)
 	if(foundrecord)
 		foundrecord.status = status
@@ -124,7 +124,7 @@
 		var/name = t.fields["name"]
 		var/rank = t.fields["rank"]
 		var/department = 0
-		status[name] = t.status
+		status[name] = t.status // GS13
 		if(rank in GLOB.command_positions)
 			heads[name] = rank
 			department = 1
