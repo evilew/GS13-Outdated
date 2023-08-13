@@ -2434,11 +2434,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
 
 				if("belly_size") //GS13 Edit here if we add more belly sprites
+					// GS13: Adjust sprite ranges in char setup
 					var/new_bellysize = input(user, "Belly size :\n(1-10)", "Character Preference") as num|null
 					if(new_bellysize)
 						features["belly_size"] = clamp(new_bellysize, 1, 10)
 
 				if("butt_size")
+					// GS13: Adjust sprite ranges in char setup
 					var/new_buttsize = input(user, "Butt size :\n(1-10)", "Character Preference") as num|null
 					if(new_buttsize)
 						features["butt_size"] = clamp(new_buttsize, 1, 10)
