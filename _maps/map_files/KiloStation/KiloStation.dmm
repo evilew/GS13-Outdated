@@ -56283,21 +56283,13 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/obj/structure/table,
-/obj/item/storage/toolbox/electrical{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/stack/rods/fifty{
-	pixel_y = 5
-	},
-/obj/item/storage/toolbox/mechanical,
 /obj/machinery/requests_console{
 	department = "EVA";
 	name = "E.V.A. RC";
 	pixel_x = 30
 	},
 /obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/storage/eva)
 "bOj" = (
@@ -60457,6 +60449,14 @@
 /obj/machinery/airalarm{
 	dir = 1;
 	pixel_y = -22
+	},
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/electrical{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/item/stack/rods/fifty{
+	pixel_y = 5
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/storage/eva)
