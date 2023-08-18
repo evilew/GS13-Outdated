@@ -454,6 +454,9 @@ ROUNDSTART_RACES slimeperson
 ROUNDSTART_RACES guilmon
 ROUNDSTART_RACES ipc
 
+## Races that I, Christian, wanted to make playable.
+ROUNDSTART_RACES dullahan
+
 ##-------------------------------------------------------------------------------------------
 
 ## Uncomment to give players the choice of joining as a human with mutant bodyparts before they join the game
