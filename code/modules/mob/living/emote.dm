@@ -57,6 +57,15 @@
 	if(HAS_TRAIT(user, TRAIT_SOOTHED_THROAT))
 		return FALSE
 
+/datum/emote/living/cough/run_emote(mob/user, params)
+	. = ..()
+	if(. && ishuman(user))
+		var/mob/living/carbon/C = user
+		if(user.gender == FEMALE)
+			playsound(C, pick('hyperstation/sound/voice/emotes/female_cough1.ogg', 'hyperstation/sound/voice/emotes/female_cough2.ogg', 'hyperstation/sound/voice/emotes/female_cough3.ogg', 'hyperstation/sound/voice/emotes/female_cough4.ogg', 'hyperstation/sound/voice/emotes/female_cough5.ogg', 'hyperstation/sound/voice/emotes/female_cough6.ogg'), 50, 1)
+		else
+			playsound(C, pick('hyperstation/sound/voice/emotes/male_cough1.ogg', 'hyperstation/sound/voice/emotes/male_cough2.ogg', 'hyperstation/sound/voice/emotes/male_cough3.ogg', 'hyperstation/sound/voice/emotes/male_cough4.ogg'), 50, 1)
+
 /datum/emote/living/dance
 	key = "dance"
 	key_third_person = "dances"
@@ -214,6 +223,10 @@
 			'sound/voice/catpeople/nyahehe.ogg'),
 			50, 1)
 			return
+		if(isinsect(C))
+			playsound(C, pick('sound/voice/mothlaugh.ogg'),
+			50, 1)
+			return
 		if(ishumanbasic(C))
 			if(user.gender == FEMALE)
 				playsound(C, 'sound/voice/human/womanlaugh.ogg', 50, 1)
@@ -289,6 +302,13 @@
 	message = "sighs."
 	emote_type = EMOTE_AUDIBLE
 
+/datum/emote/living/sigh/run_emote(mob/user, params)
+	. = ..()
+	if(. && iscarbon(user))
+		var/mob/living/carbon/C = user
+		if(!C.mind || C.mind.miming)
+			return
+
 /datum/emote/living/sit
 	key = "sit"
 	key_third_person = "sits"
@@ -305,6 +325,19 @@
 	message = "sneezes."
 	emote_type = EMOTE_AUDIBLE
 
+/datum/emote/living/sneeze/can_run_emote(mob/living/user, status_check = TRUE)
+	. = ..()
+	if(. && iscarbon(user))
+		var/mob/living/carbon/C = user
+		return !C.silent
+
+/datum/emote/living/sneeze/run_emote(mob/user, params)
+	. = ..()
+	if(. && iscarbon(user))
+		var/mob/living/carbon/C = user
+		if(!C.mind || C.mind.miming)//mimes can't sneeze because fuck you that's why
+			return
+
 /datum/emote/living/smug
 	key = "smug"
 	key_third_person = "smugs"
@@ -315,6 +348,16 @@
 	key_third_person = "sniffs"
 	message = "sniffs."
 	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/sniff/run_emote(mob/user, params)
+	. = ..()
+	if(. && iscarbon(user))
+		var/mob/living/carbon/C = user
+		if(!C.mind || C.mind.miming)
+			return
+		if(ishumanbasic(C))
+			playsound(C, pick('hyperstation/sound/voice/emotes/sniff.ogg'), 50, 1)
+
 
 /datum/emote/living/snore
 	key = "snore"
@@ -382,6 +425,13 @@
 	message = "whimpers."
 	message_mime = "appears hurt."
 
+/datum/emote/living/whimper/run_emote(mob/user, params)
+	. = ..()
+	if(. && iscarbon(user))
+		var/mob/living/carbon/C = user
+		if(!C.mind || C.mind.miming)
+			return
+
 /datum/emote/living/wsmile
 	key = "wsmile"
 	key_third_person = "wsmiles"
@@ -392,6 +442,13 @@
 	key_third_person = "yawns"
 	message = "yawns."
 	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/yawn/run_emote(mob/user, params)
+	. = ..()
+	if(. && iscarbon(user))
+		var/mob/living/carbon/C = user
+		if(!C.mind || C.mind.miming)
+			return
 
 /datum/emote/living/custom
 	key = "me"
@@ -504,3 +561,91 @@
 		to_chat(user, "<span class='notice'>You ready your slapping hand.</span>")
 	else
 		to_chat(user, "<span class='warning'>You're incapable of slapping in your current state.</span>")
+
+//Carl wuz here
+//FUCK YOU CARL SUCK MY BALLS YOU WHORE
+/datum/emote/living/tesh_sneeze
+	key = "tesh_sneeze"
+	key_third_person = "sneezes"
+	message = "sneezes."
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/tesh_sneeze/can_run_emote(mob/living/user, status_check = TRUE)
+	. = ..()
+	if(. && iscarbon(user))
+		var/mob/living/carbon/C = user
+		return !C.silent
+
+/datum/emote/living/tesh_sneeze/run_emote(mob/user, params)
+	. = ..()
+	if(. && iscarbon(user))
+		var/mob/living/carbon/C = user
+		if(!C.mind || C.mind.miming)//no cute sneezing for you.
+			return
+		if(ishumanbasic(C))
+			playsound(C, pick('hyperstation/sound/voice/emotes/tesh_sneeze1.ogg', 'hyperstation/sound/voice/emotes/tesh_sneeze1b.ogg'), 50, 1)
+		if(is_species(user, /datum/species/avian))//This is required(related to subtypes), otherwise it doesn't play the noises. Sometimes. Always sometimes. Just how it be.
+			playsound(C, pick('hyperstation/sound/voice/emotes/tesh_sneeze1.ogg', 'hyperstation/sound/voice/emotes/tesh_sneeze1b.ogg'), 50, 1)
+		if(is_species(user, /datum/species/mammal))//Just because the avian subspecies doesn't have proper sprites. Some people can't use it.
+			playsound(C, pick('hyperstation/sound/voice/emotes/tesh_sneeze1.ogg', 'hyperstation/sound/voice/emotes/tesh_sneeze1b.ogg'), 50, 1)
+
+/datum/emote/living/racc
+	key = "racc_chitter"
+	key_third_person = "chitters"
+	message = "chitters."
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/racc/can_run_emote(mob/living/user, status_check = TRUE)
+	. = ..()
+	if(. && iscarbon(user))
+		var/mob/living/carbon/C = user
+		return !C.silent
+
+/datum/emote/living/racc/run_emote(mob/user, params)
+	. = ..()
+	if(. && iscarbon(user))
+		var/mob/living/carbon/C = user
+		if(!C.mind || C.mind.miming)
+			return
+		if(ishumanbasic(C))
+			playsound(C, pick('hyperstation/sound/voice/emotes/racc_chitter_1.ogg', 'hyperstation/sound/voice/emotes/racc_chitter_2.ogg',\
+			'hyperstation/sound/voice/emotes/racc_chitter_3.ogg', 'hyperstation/sound/voice/emotes/racc_chitter_4.ogg', 'hyperstation/sound/voice/emotes/racc_chitter_5.ogg',\
+			'hyperstation/sound/voice/emotes/racc_chitter_6.ogg', 'hyperstation/sound/voice/emotes/racc_chitter_7.ogg', 'hyperstation/sound/voice/emotes/racc_chitter_8.ogg'), 50, 1)
+		if(is_species(user, /datum/species/mammal))
+			playsound(C, pick('hyperstation/sound/voice/emotes/racc_chitter_1.ogg', 'hyperstation/sound/voice/emotes/racc_chitter_2.ogg',\
+			'hyperstation/sound/voice/emotes/racc_chitter_3.ogg', 'hyperstation/sound/voice/emotes/racc_chitter_4.ogg', 'hyperstation/sound/voice/emotes/racc_chitter_5.ogg',\
+			'hyperstation/sound/voice/emotes/racc_chitter_6.ogg', 'hyperstation/sound/voice/emotes/racc_chitter_7.ogg', 'hyperstation/sound/voice/emotes/racc_chitter_8.ogg'), 50, 1)
+
+/datum/emote/living/bat
+	key = "bat_chitter"
+	key_third_person = "chitters"
+	message = "chitters."
+	emote_type = EMOTE_AUDIBLE
+
+/datum/emote/living/bat/can_run_emote(mob/living/user, status_check = TRUE)
+	. = ..()
+	if(. && iscarbon(user))
+		var/mob/living/carbon/C = user
+		return !C.silent
+
+/datum/emote/living/bat/run_emote(mob/user, params)
+	. = ..()
+	if(. && iscarbon(user))
+		var/mob/living/carbon/C = user
+		if(!C.mind || C.mind.miming)
+			return
+		if(ishumanbasic(C))
+			playsound(C, pick('hyperstation/sound/voice/emotes/bat_c1.ogg', 'hyperstation/sound/voice/emotes/bat_c2.ogg', 'hyperstation/sound/voice/emotes/bat_c3.ogg',\
+			'hyperstation/sound/voice/emotes/bat_c4.ogg', 'hyperstation/sound/voice/emotes/bat_c5.ogg',\
+			 'hyperstation/sound/voice/emotes/bat_c6.ogg', 'hyperstation/sound/voice/emotes/bat_c7.ogg', 'hyperstation/sound/voice/emotes/bat_c8.ogg',\
+			 'hyperstation/sound/voice/emotes/bat_c9.ogg'), 50, 1)
+		if(is_species(user, /datum/species/mammal))
+			playsound(C, pick('hyperstation/sound/voice/emotes/bat_c1.ogg', 'hyperstation/sound/voice/emotes/bat_c2.ogg', 'hyperstation/sound/voice/emotes/bat_c3.ogg',\
+			'hyperstation/sound/voice/emotes/bat_c4.ogg', 'hyperstation/sound/voice/emotes/bat_c5.ogg',\
+			 'hyperstation/sound/voice/emotes/bat_c6.ogg', 'hyperstation/sound/voice/emotes/bat_c7.ogg', 'hyperstation/sound/voice/emotes/bat_c8.ogg',\
+			 'hyperstation/sound/voice/emotes/bat_c9.ogg'), 50, 1)
+		if(is_species(user, /datum/species/avian))//this and mammal should be considered the same AAAAAAAAAAAA
+			playsound(C, pick('hyperstation/sound/voice/emotes/bat_c1.ogg', 'hyperstation/sound/voice/emotes/bat_c2.ogg', 'hyperstation/sound/voice/emotes/bat_c3.ogg',\
+			'hyperstation/sound/voice/emotes/bat_c4.ogg', 'hyperstation/sound/voice/emotes/bat_c5.ogg',\
+			 'hyperstation/sound/voice/emotes/bat_c6.ogg', 'hyperstation/sound/voice/emotes/bat_c7.ogg', 'hyperstation/sound/voice/emotes/bat_c8.ogg',\
+			 'hyperstation/sound/voice/emotes/bat_c9.ogg'), 50, 1)
