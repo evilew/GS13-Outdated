@@ -524,3 +524,27 @@
 	category = SLOT_W_UNIFORM
 	path = /obj/item/clothing/under/tunic
 	cost = 1
+
+/datum/gear/overalls
+	name = "form fitting overalls"
+	category = SLOT_W_UNIFORM
+	path = /obj/item/clothing/under/raccveralls
+	cost = 1
+
+/datum/gear/sexyoffice
+	name = "Revealing office uniform"
+	category = SLOT_W_UNIFORM
+	path = /obj/item/clothing/under/officesexy
+	cost = 1
+
+/datum/gear/vaultsuit
+	name = "vault jumpsuit"
+	category = SLOT_W_UNIFORM
+	path = /obj/item/clothing/under/vaultsuit
+	cost = 1
+
+/datum/gear/threepwood
+	name = "threepwood's outfit"
+	category = SLOT_W_UNIFORM
+	path = /obj/item/clothing/under/threepwood
+	cost = 1
