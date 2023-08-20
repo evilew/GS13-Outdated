@@ -167,6 +167,7 @@
 		CHECK_TICK
 
 // Lipoifier variant here
+// GS13
 
 /datum/round_event_control/vent_clog_fat
 	name = "Clogged Vents: Fattening Chems"
@@ -186,7 +187,6 @@
 	var/list/saferChems2 = list(		
 		/datum/reagent/consumable/lipoifier,
 		/datum/reagent/consumable/nutriment,
-		/datum/reagent/consumable/cornoil,
 	)
 
 /datum/round_event/vent_clog_fat/announce()
