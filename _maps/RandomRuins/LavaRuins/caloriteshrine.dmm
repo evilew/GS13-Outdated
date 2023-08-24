@@ -5,16 +5,26 @@
 "h" = (/obj/structure/flora/tree/jungle,/turf/open/floor/grass,/area/ruin/unpowered/caloriteshrine)
 "j" = (/turf/open/floor/plasteel/stairs/left,/area/ruin/unpowered/caloriteshrine)
 "l" = (/obj/structure/flora/ausbushes/sparsegrass,/turf/open/floor/grass,/area/ruin/unpowered/caloriteshrine)
+"m" = (/turf/open/floor/plating/asteroid/basalt,/area/template_noop)
+"o" = (/obj/structure/flora/ausbushes/sparsegrass,/obj/item/flashlight/lantern{anchored = 1; icon_state = null; icon = null},/turf/open/floor/grass,/area/ruin/unpowered/caloriteshrine)
 "p" = (/obj/structure/flora/ausbushes/genericbush,/turf/open/floor/grass,/area/ruin/unpowered/caloriteshrine)
+"q" = (/obj/structure/statue/calorite/fatty{anchored = 1},/turf/open/floor/mineral/crimsonstone_floor,/area/ruin/unpowered/caloriteshrine)
 "r" = (/turf/open/indestructible/cobble/side{dir = 4},/area/ruin/unpowered/caloriteshrine)
 "s" = (/turf/open/floor/wood,/area/ruin/unpowered/caloriteshrine)
 "t" = (/obj/structure/flora/ausbushes/grassybush,/turf/open/floor/grass,/area/ruin/unpowered/caloriteshrine)
 "u" = (/turf/closed/wall/mineral/calorite,/area/lavaland/surface/outdoors)
+"v" = (/turf/open/indestructible/cobble/corner{dir = 8},/area/lavaland/surface/outdoors)
+"w" = (/turf/open/indestructible/cobble,/area/lavaland/surface/outdoors)
 "y" = (/obj/effect/turf_decal/loading_area{icon_state = "drain"; name = "drain"},/turf/open/water,/area/ruin/unpowered/caloriteshrine)
 "z" = (/turf/open/floor/mineral/crimsonstone_floor,/area/ruin/unpowered/caloriteshrine)
+"A" = (/turf/open/indestructible/cobble/side,/area/lavaland/surface/outdoors)
+"C" = (/obj/item/flashlight/lantern{anchored = 1; icon_state = null; icon = null},/turf/open/floor/grass,/area/ruin/unpowered/caloriteshrine)
 "E" = (/turf/open/floor/grass,/area/ruin/unpowered/caloriteshrine)
+"F" = (/turf/open/indestructible/cobble/side{dir = 4},/area/lavaland/surface/outdoors)
 "G" = (/turf/closed/wall/mineral/calorite,/area/ruin/unpowered/caloriteshrine)
 "H" = (/turf/open/indestructible/cobble,/area/ruin/unpowered/caloriteshrine)
+"K" = (/turf/open/indestructible/cobble/side{dir = 8},/area/lavaland/surface/outdoors)
+"L" = (/turf/open/indestructible/cobble/corner{dir = 4},/area/lavaland/surface/outdoors)
 "M" = (/obj/structure/flora/ausbushes/brflowers,/turf/open/floor/grass,/area/ruin/unpowered/caloriteshrine)
 "N" = (/turf/open/water,/area/ruin/unpowered/caloriteshrine)
 "O" = (/turf/open/indestructible/cobble/side{dir = 8},/area/ruin/unpowered/caloriteshrine)
@@ -25,35 +35,36 @@
 "U" = (/obj/effect/turf_decal/loading_area{icon_state = "drain"; name = "drain"},/turf/closed/wall/mineral/calorite,/area/ruin/unpowered/caloriteshrine)
 "V" = (/obj/structure/flora/tree/jungle/small,/turf/open/floor/grass,/area/ruin/unpowered/caloriteshrine)
 "X" = (/turf/template_noop,/area/template_noop)
+"Z" = (/obj/structure/mineral_door/calorite,/turf/open/indestructible/cobble,/area/ruin/unpowered/caloriteshrine)
 
 (1,1,1) = {"
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXXXXXXXXXXXXXXaaaaaaaaaaaaaaaXXXXXXXXXXXXXXX
-XXXXXXXXXXXXXaaaGGGGGGGGGGGGGaaXXXXXXXXXXXXXX
-XXXXXXXXXXXXXaaGGESlEEEEEEEEGGaaXXXXXaaaaXXXX
-XXXXXXXXXXXXXaGGEEEEzzzzzEEEEGGaaaXXaaaaaaXXX
-XXXXXXXXXXXXaaGEEEEzzzzzzzEEEEGaaaXaaaaaaaXXX
-XXXXXXXXXXXXaaGEEEEzzzzzzzEEESGaaaaaaaaaaaXXX
-XXXXXXXXXXXXaaGEEhEzzzzzzzlhEEGaaaaaaaaaaaXXX
-XXXXXXXXXXXXaaGESlEzzzzzzzEElEGaaaaaaaaaaaXXX
-XXXXXXXXXXXXaaGEEEEzzzzzzzEEEEGaaaaaaaaaaaXXX
-XXXXXXXXXXXXaaGGlEEEzzzzzEEEEGGaaaaaaaaaaXXXX
-XXXXXXXXXXXaaaGGGGGEEzzzlEGGGGGaaaaaaaaaXXXXX
-XXXXXXXXXXXaaGGEEtUUUjfcUUUEMEGGaaaaaaXXXXXXX
-XXXXXXXXXXXaaGEtEENNNOHrNNNEEStGaaaaXXXXXXXXX
-XXXXXXXXXXaaGGEEQENTNOHrNTNlEEEGGaaaXXXXXXXXX
-XXXXXXXXXXaaGMESEMNNNOHrNNNEEEEEGaaaXXXXXXXXX
-XXXXXXXXXXaaGEEEEEsssOHrsssEEEQEGaaaXXXXXXXXX
-XXXXXXXXXXaaGEEEEEsssOHrssbEEEEEGaaaXXXXXXXXX
-XXXXXXXXXaaaGEMEEEsssOHrsssEEEMEGaaaXXXXXXXXX
-XXXXXXXXXaaaGGEEtENNROHrNNNEVEEGGaaaXXXXXXXXX
-XXXXXXXXXaaaaGtEESNTNOHrNTNEtSEGaaaXXXXXXXXXX
-XXXXXXXXXXaaaGGEEEyyyOHryyyEEEGGaaXXXXXXXXXXX
-XXXXXXXXXXXaaaGGEpGGGGHGGGGEMGGaaXXXXXXXXXXXX
-XXXXXXXXXXXXaaaGGGGaaaaaaaGGGGaaaXXXXXXXXXXXX
-XXXXXXXXXXXXXaaaaaaauaaauaaaaaaaXXXXXXXXXXXXX
-XXXXXXXXXXXXXXaaaaaaaaaaaaaaaaaaXXXXXXXXXXXXX
-XXXXXXXXXXXXXXXaaaaaaaaaaaaaaaaaXXXXXXXXXXXXX
-XXXXXXXXXXXXXXXXXaaauaaauaaaaaaXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXmmmmmmmmmmmmmmmXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXmmmGGGGGGGGGGGGGmmXXXXXXXXXXXXXX
+XXXXXXXXXXXXXmmGGESlEEEEEEEEGGmmXXXXXXXXXXXXX
+XXXXXXXXXXXXXmGGEEECzzzzzCEEEGGmmmXXXXXXXXXXX
+XXXXXXXXXXXXmmGEEEEzzzzzzzEEEEGmmmXXXXXXXXXXX
+XXXXXXXXXXXXmmGEEEEzzzzzzzEEESGmmmmXXXXXXXXXX
+XXXXXXXXXXXmmmGEEhCzzzqzzzohEEGmmmmXXXXXXXXXX
+XXXXXXXXXmmmmmGESlEzzzzzzzEElEGmmmmXXXXXXXXXX
+XXXXXXXXXmmmmmGEEEEzzzzzzzEEEEGmmmmXXXXXXXXXX
+XXXXXXXXXmmmmGGGlEECzzzzzCEEEGGGmmmXXXXXXXXXX
+XXXXXXXXXmmmGGEEGGGEEzzzlEGGGEEGGmmmXXXXXXXXX
+XXXXXXXXXmmGGEEEEtUUUjfcUUUEMEEEGGmmXXXXXXXXX
+XXXXXXXXXmmGEtEEEENNNOHrNNNEEEEStGmmXXXXXXXXX
+XXXXXXXXmmGGEEEEQENTNOHrNTNlEEEEEGGmXXXXXXXXX
+XXXXXXXXmmGMESEEEMNNNOHrNNNEEEEEEEGmXXXXXXXXX
+XXXXXXXXmmGEEEEEEEsssOHrsssEEEEEQEGmXXXXXXXXX
+XXXXXXXXmmGEEEEEEEsssOHrssbEEEEEEEGmXXXXXXXXX
+XXXXXXXXmmGEMEEEEEsssOHrsssEEEEEMEGmXXXXXXXXX
+XXXXXXXXmmGGEEEEtENNROHrNNNEVEEEEGGmXXXXXXXXX
+XXXXXXXXmmmGtEEEESNTNOHrNTNEtEESEGmmXXXXXXXXX
+XXXXXXXXmmmGGEEEEEyyyOHryyyEEEEEGGmmXXXXXXXXX
+XXXXXXXXmmmmGGEEEpGGGGZGGGGEMEEGGmmmXXXXXXXXX
+XXXXXXXXXXmmmGGGGGGaaKwFaaGGGGGGmmmXXXXXXXXXX
+XXXXXXXXXXXmmaaaaaaauKwFuaaaaaaammXXXXXXXXXXX
+XXXXXXXXXXXXmmaaaaaaaKwFaaaaaaaammXXXXXXXXXXX
+XXXXXXXXXXXXXXXaaaaaaKwFaaaaaaaaXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXaaauvALuaaaaaaXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXaaaaaaaaaaXXXXXXXXXXXXXXXX
 "}
