@@ -20,7 +20,7 @@ TOGGLE_CHECKBOX(/datum/verbs/menu/Settings/Sound, toggledigestionnoise)()
 /datum/verbs/menu/Settings/Sound/toggledigestionnoise/Get_checked(client/C)
 	return C.prefs.cit_toggles & DIGESTION_NOISES
 
-TOGGLE_CHECKBOX(/datum/verbs/menu/Settings/Sound, toggleburpingnoise)()
+TOGGLE_CHECKBOX(/datum/verbs/menu/Settings/Sound, toggleburpingnoise)() // GS13
 	set name = "Toggle Burping Noises"
 	set category = "Preferences"
 	set desc = "Hear Burping noises"
@@ -31,7 +31,7 @@ TOGGLE_CHECKBOX(/datum/verbs/menu/Settings/Sound, toggleburpingnoise)()
 /datum/verbs/menu/Settings/Sound/toggleburpingnoise/Get_checked(client/C)
 	return C.prefs.cit_toggles & BURPING_NOISES
 
-TOGGLE_CHECKBOX(/datum/verbs/menu/Settings/Sound, togglefartingnoise)()
+TOGGLE_CHECKBOX(/datum/verbs/menu/Settings/Sound, togglefartingnoise)() // GS13
 	set name = "Toggle Farting Noises"
 	set category = "Preferences"
 	set desc = "Hear Farting noises"

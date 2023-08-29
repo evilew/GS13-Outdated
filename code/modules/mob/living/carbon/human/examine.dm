@@ -386,7 +386,7 @@
 		if(digitalcamo)
 			msg += "[t_He] [t_is] moving [t_his] body in an unnatural and blatantly inhuman manner.\n"
 
-	if(client?.prefs?.noncon_weight_gain)
+	if(client?.prefs?.noncon_weight_gain) // GS13
 		msg += "<span class='purple'><b>Non-con fattening is allowed</b></span>\n"	
 
 	if (length(msg))

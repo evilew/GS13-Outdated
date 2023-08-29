@@ -36,8 +36,8 @@ GLOBAL_LIST_INIT(disease_ability_singletons, list(
 	new /datum/disease_ability/symptom/powerful/fire,
 	new /datum/disease_ability/symptom/powerful/flesh_eating,
 //	new /datum/disease_ability/symptom/powerful/genetic_mutation,
-	new /datum/disease_ability/symptom/powerful/inorganic_adaptation,
-	new /datum/disease_ability/symptom/medium/undead_adaptation,
+	new /datum/disease_ability/symptom/powerful/inorganic_adaptation, // GS13
+	new /datum/disease_ability/symptom/medium/undead_adaptation, // GS13
 	new /datum/disease_ability/symptom/powerful/heal/starlight,
 	new /datum/disease_ability/symptom/powerful/heal/oxygen,
 	new /datum/disease_ability/symptom/powerful/heal/chem,
@@ -411,12 +411,12 @@ GLOBAL_LIST_INIT(disease_ability_singletons, list(
 	cost = 8
 */
 
-/datum/disease_ability/symptom/powerful/inorganic_adaptation
+/datum/disease_ability/symptom/powerful/inorganic_adaptation // GS13
 	symptoms = list(/datum/symptom/inorganic_adaptation)
 	short_desc = "Allows to infect inorganic races."
 	long_desc = "Allows to infect inorganic races. Includes plasmamen and golems."
 
-/datum/disease_ability/symptom/medium/undead_adaptation
+/datum/disease_ability/symptom/medium/undead_adaptation // GS13
 	symptoms = list(/datum/symptom/undead_adaptation)
 	short_desc = "Allows to infect undead races."
 	long_desc = "Allows to infect undead races. Includes skeletons, zombies, and vampires."
@@ -429,17 +429,15 @@ GLOBAL_LIST_INIT(disease_ability_singletons, list(
 	short_desc = "Cause victims to become eternally young."
 	long_desc = "Cause victims to become eternally young. Provides boosts to all stats except transmissibility."
 
-//GS13 additions
-/datum/disease_ability/symptom/medium/heal/weight_gain
+/datum/disease_ability/symptom/medium/heal/weight_gain // GS13
 	symptoms = list(/datum/symptom/weight_gain)
 	short_desc = "Cause victims to gain weight."
 	long_desc = "Cause victims to gain weight. Boosts stage speed, but weakens all other stats."
 
-/datum/disease_ability/symptom/medium/robotic_adaptation
+/datum/disease_ability/symptom/medium/robotic_adaptation // GS13
 	symptoms = list(/datum/symptom/robotic_adaptation)
 	short_desc = "Allows to infect robotic races."
 	long_desc = "Allows to infect robotic races. Includes synthetic lizards and ipcs."
-//--end here
 
 /****HEALING SUBTYPE****/
 

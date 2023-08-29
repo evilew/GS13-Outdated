@@ -135,7 +135,7 @@
 	pH = 8
 
 /datum/reagent/toxin/minttoxin/on_mob_life(mob/living/carbon/M)
-	if(HAS_TRAIT(M, TRAIT_BLOB))
+	if(HAS_TRAIT(M, TRAIT_BLOB)) // GS13
 		M.gib()
 	return ..()
 
@@ -607,6 +607,7 @@
 	taste_description = "mothballs"
 	reagent_state = LIQUID
 	color = "#F0FFF0"
+	// GS13 tweak
 	metabolization_rate = 0.7 * REAGENTS_METABOLISM
 	overdose_threshold = 105
 

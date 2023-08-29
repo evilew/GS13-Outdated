@@ -287,9 +287,10 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 
 // CITADEL EDIT
 	if(istype(loc, /obj/machinery/cryopod))
-		var/response = alert(src, "Are you -sure- you want to ghost?\n(If you ghost now, you will have to wait a minute before you are able to respawn!)","Are you sure you want to ghost?","Ghost","Stay in body")
+		// GS13: "a minute"
+		var/response = alert(src, "Are you -sure- you want to ghost?\n(If you ghost now, you will have to wait [respawn_time] seconds before you are able to respawn!)","Are you sure you want to ghost?","Ghost","Stay in body")
 		if(response != "Ghost")//darn copypaste
-			client.lastrespawn = world.time + 180 SECONDS //set respawn time
+			client.lastrespawn = world.time + respawn_time SECONDS
 			return
 		var/obj/machinery/cryopod/C = loc
 		C.despawn_occupant()

@@ -9,6 +9,6 @@
 //kevinz000|ALL|Clown|/obj/item/bikehorn=1
 JayEhh|ALL|ALL|/obj/item/custom/ceb_soap=1
 
-
+// GS13
 Sonoida|Dezir Rose|ALL|/obj/item/grown/rose=1
 Sonoida|Desert Rose|ALL|/obj/item/grown/rose=1

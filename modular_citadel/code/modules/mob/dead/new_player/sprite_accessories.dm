@@ -747,6 +747,7 @@ datum/sprite_accessory/ears/human/gret
 /datum/sprite_accessory/mam_snouts
 	color_src = MATRIXED
 	icon = 'modular_citadel/icons/mob/mam_snouts.dmi'
+	// GS13: add pod
 	recommended_species = list("mammal", "slimeperson", "insect", "podweak", "avian", "aquatic", "pod")
 
 /datum/sprite_accessory/mam_snouts/none
@@ -1825,6 +1826,7 @@ datum/sprite_accessory/mam_tails/insect
 	dimension_x = 64
 	var/taur_mode = NOT_TAURIC
 	color_src = MATRIXED
+	// GS13: add pod
 	recommended_species = list("human", "lizard", "insect", "mammal", "xeno", "jelly", "slimeperson", "podweak", "avian", "aquatic", "pod")
 
 /datum/sprite_accessory/taur/none

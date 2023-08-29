@@ -833,8 +833,7 @@
 	icon_state = "hair_tailhair2"
 	ckeys_allowed = list("quotefox")
 
-//Hair gradients
-
+// GS13: Hair gradients from Skyrat
 
 /datum/sprite_accessory/hair_gradient
 	icon = 'icons/mob/hair_gradients.dmi'

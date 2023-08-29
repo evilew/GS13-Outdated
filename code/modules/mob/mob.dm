@@ -1,4 +1,5 @@
-
+/mob
+	var/respawn_time = 60
 
 /mob/Destroy()//This makes sure that mobs with clients/keys are not just deleted from the game.
 	GLOB.mob_list -= src
@@ -473,7 +474,7 @@ mob/visible_message(message, self_message, blind_message, vision_distance = DEFA
 		qdel(M)
 		return
 
-	usr.client.lastrespawn = world.time + 180 SECONDS
+	usr.client.lastrespawn = world.time + respawn_time SECONDS
 	usr.client.respawn_observing = 0
 	message_admins("[client.ckey] respawned.")
 	M.ckey = ckey //shamelessly copied to

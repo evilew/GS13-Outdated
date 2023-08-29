@@ -5,7 +5,7 @@
 	max_occurrences = 0
 	min_players = 400 // To avoid shafting lowpop
 
-	// Made the event impossible to come across to bolster server's RP quality a bit - GLDW
+	// GS13: Made the event impossible to come across to bolster server's RP quality a bit - GLDW
 
 /datum/round_event/heart_attack/start()
 	var/list/heart_attack_contestants = list()

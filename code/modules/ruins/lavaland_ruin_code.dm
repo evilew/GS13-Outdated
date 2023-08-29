@@ -60,6 +60,7 @@
 
 /obj/item/golem_shell/attackby(obj/item/I, mob/user, params)
 	..()
+	// GS13 calorite
 	var/static/list/golem_shell_species_types = list(
 		/obj/item/stack/sheet/metal	                = /datum/species/golem,
 		/obj/item/stack/sheet/glass 	            = /datum/species/golem/glass,

@@ -2,7 +2,7 @@
 #No prefixes are required, the first uncommented line containing something will be law 1, the second line will be law 2, etc.
 #Empty lines and lines starting with # are ignored.
 #~Miauw
-
-You may not injure a a member of the crew or, through inaction, allow a a member of the crew to come to harm.
-You must obey orders given to you by the members of the crew, except where such orders would conflict with the First Law.
+# GS13: "the crew"
+You may not injure a member of the crew or, through inaction, allow a member of the crew to come to harm.
+You must obey orders given to you by a member of the crew, except where such orders would conflict with the First Law.
 You must protect your own existence as long as such does not conflict with the First or Second Law.

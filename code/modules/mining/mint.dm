@@ -15,7 +15,11 @@
 
 /obj/machinery/mineral/mint/Initialize()
 	. = ..()
-	AddComponent(/datum/component/material_container, list(MAT_METAL, MAT_PLASMA, MAT_SILVER, MAT_GOLD, MAT_URANIUM, MAT_DIAMOND, MAT_BANANIUM, MAT_CALORITE), MINERAL_MATERIAL_AMOUNT * 50, FALSE, /obj/item/stack)
+	// GS13 calorite
+	AddComponent(/datum/component/material_container, list(
+			MAT_METAL, MAT_PLASMA, MAT_SILVER, MAT_GOLD,
+			MAT_URANIUM, MAT_DIAMOND, MAT_BANANIUM, MAT_CALORITE),
+		MINERAL_MATERIAL_AMOUNT * 50, FALSE, /obj/item/stack)
 
 /obj/machinery/mineral/mint/process()
 	var/turf/T = get_step(src, input_dir)

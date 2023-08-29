@@ -697,7 +697,7 @@
 	required_reagents = list(/datum/reagent/carpet = 1, /datum/reagent/stable_plasma = 1)
 
 /datum/chemical_reaction/carpet/purple //GS13
-	name = "liquid gato carpet"
+	name = "liquid GATO carpet"
 	id = /datum/reagent/carpet/gato
 	results = list(/datum/reagent/carpet/gato = 2)
 	required_reagents = list(/datum/reagent/carpet = 1, /datum/reagent/consumable/sugar = 1)

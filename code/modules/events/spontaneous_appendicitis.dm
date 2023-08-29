@@ -6,7 +6,7 @@
 	earliest_start = 900 MINUTES
 	min_players = 100
 
-	// I made the event practically impossible, as an RP tweak - GLDW
+	// GS13: Made the event practically impossible, as an RP tweak - GLDW
 
 /datum/round_event/spontaneous_appendicitis
 	fakeable = FALSE

@@ -25,6 +25,7 @@
 	var/lowershape = lowertext(shape)
 
 	//Reflect the size of dat ass on examine.
+	// GS13: Add normal and huge+
 	switch(round(size))
 		if(0)
 			size_name = "normal"
@@ -36,6 +37,7 @@
 			size_name = "squeezable"
 		if(4)
 			size_name = "hefty"
+		// GS13 TODO seems like 5 was lost in the merge
 		if(6)
 			size_name = "godly"
 		if(7)

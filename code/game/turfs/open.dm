@@ -205,20 +205,19 @@
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 
-/turf/open/indestructible/chocolate
+/turf/open/indestructible/chocolate // GS13
 	name = "chocolate floor"
 	desc = "A rather tasty floor, hopefully it does not ruin your shoes."
 	icon = 'Gainstation13/icons/turf/floor_candy.dmi'
 	icon_state = "choclit_2"
 
-
-/turf/open/indestructible/bubblegum
+/turf/open/indestructible/bubblegum // GS13
 	name = "bubblegum floor"
 	desc = "A rather tasty floor, hopefully it does not ruin your shoes."
 	icon = 'Gainstation13/icons/turf/floor_candy.dmi'
 	icon_state = "floor_pinkgum"
 
-/turf/open/candyfloor
+/turf/open/candyfloor // GS13
 	name = "candy grass"
 	desc = "This weird grass smells of cinnamon and liquorice."
 	icon = 'Gainstation13/icons/turf/floor_candy.dmi'

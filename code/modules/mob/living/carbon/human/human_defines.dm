@@ -10,13 +10,9 @@
 	var/hair_color = "000"
 	var/hair_style = "Bald"
 
-
-	///Colour used for the hair gradient.
-	var/grad_color = "000"
-	///Style used for the hair gradient.
-	var/grad_style
-
-
+	// GS13: Hair gradients from Skyrat
+	var/grad_color = "FFFFFF"
+	var/grad_style = "000"
 
 	//Facial hair colour and style
 	var/facial_hair_color = "000"

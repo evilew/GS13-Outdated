@@ -53,11 +53,11 @@ handles linking back and forth.
 
 /datum/component/remote_materials/proc/_MakeLocal()
 	silo = null
-	mat_container = parent.AddComponent(/datum/component/material_container,
-		list(MAT_METAL, MAT_GLASS, MAT_SILVER, MAT_GOLD, MAT_DIAMOND, MAT_PLASMA, MAT_URANIUM, MAT_BANANIUM, MAT_CALORITE, MAT_TITANIUM, MAT_BLUESPACE, MAT_PLASTIC),
-		local_size,
-		FALSE,
-		/obj/item/stack)
+	// GS13 calorite
+	mat_container = parent.AddComponent(/datum/component/material_container, list(
+			MAT_METAL, MAT_GLASS, MAT_SILVER, MAT_GOLD, MAT_DIAMOND, MAT_PLASMA,
+			MAT_URANIUM, MAT_BANANIUM, MAT_CALORITE, MAT_TITANIUM, MAT_BLUESPACE, MAT_PLASTIC),
+		local_size, FALSE, /obj/item/stack)
 
 /datum/component/remote_materials/proc/set_local_size(size)
 	local_size = size

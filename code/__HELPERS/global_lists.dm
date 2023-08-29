@@ -86,13 +86,13 @@
 		var/datum/emote/E = new path()
 		E.emote_list[E.key] = E
 
-	//Crafting Recipes
-	init_subtypes(/datum/crafting_recipe, GLOB.crafting_recipes)
-
-	//Hair Gradients - Initialise all /datum/sprite_accessory/hair_gradient into a list indexed by gradient-style name
+	// GS13: Hair Gradients from Skyrat - Initialise all /datum/sprite_accessory/hair_gradient into a list indexed by gradient-style name
 	for(var/path in subtypesof(/datum/sprite_accessory/hair_gradient))
 		var/datum/sprite_accessory/hair_gradient/H = new path()
 		GLOB.hair_gradients_list[H.name] = H
+
+	//Crafting Recipes
+	init_subtypes(/datum/crafting_recipe, GLOB.crafting_recipes)
 
 //creates every subtype of prototype (excluding prototype) and adds it to list L.
 //if no list/L is provided, one is created.

@@ -1023,6 +1023,7 @@ structure_check() searches for nearby cultist structures required for the invoca
 				var/datum/round_event_control/mice_migration/M = new()
 				D.runEvent()
 				M.runEvent()
+			// GS13: Disable radiation_storm
 			// if(11 to 20)
 			// 	var/datum/round_event_control/radiation_storm/RS = new()
 			// 	RS.runEvent()

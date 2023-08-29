@@ -7,9 +7,7 @@
 	layer = WALL_OBJ_LAYER
 	var/list/hit_sounds = list('sound/weapons/genhit1.ogg', 'sound/weapons/genhit2.ogg', 'sound/weapons/genhit3.ogg',\
 	'sound/weapons/punch1.ogg', 'sound/weapons/punch2.ogg', 'sound/weapons/punch3.ogg', 'sound/weapons/punch4.ogg')
-	//GS13 EDIT
-	///How much fatness is lost when punching?
-	var/loss_per_punch = 2.5
+	var/loss_per_punch = 2.5 // GS13
 
 /obj/structure/punching_bag/attack_hand(mob/user as mob)
 	. = ..()
@@ -22,7 +20,7 @@
 		SEND_SIGNAL(user, COMSIG_ADD_MOOD_EVENT, "exercise", /datum/mood_event/exercise)
 		L.apply_status_effect(STATUS_EFFECT_EXERCISED)
 	
-	//GS13 EDIT
+	//GS13
 	var/mob/living/carbon/puncher = user
 	if(puncher)
 		puncher.adjust_fatness(-loss_per_punch, FATTENING_TYPE_WEIGHT_LOSS)
@@ -33,8 +31,7 @@
 	density = TRUE
 	anchored = TRUE
 	var/icon_state_inuse
-	//GS13 EDIT
-	///How much fatness is lost when using the machine?
+	//GS13
 	var/loss_per_use = 30
 
 /obj/structure/weightmachine/proc/AnimateMachine(mob/living/user)
@@ -66,7 +63,7 @@
 		to_chat(user, finishmessage)
 		user.apply_status_effect(STATUS_EFFECT_EXERCISED)
 		
-		//GS13 Edit
+		//GS13
 		var/mob/living/carbon/lifter = user
 		if(lifter)
 			lifter.adjust_fatness(-loss_per_use, FATTENING_TYPE_WEIGHT_LOSS)

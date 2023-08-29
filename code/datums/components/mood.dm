@@ -291,7 +291,7 @@
 /datum/component/mood/proc/hud_click(datum/source, location, control, params, mob/user)
 	print_mood(user)
 
-/datum/component/mood/proc/HandleFatness(mob/living/carbon/L)
+/datum/component/mood/proc/HandleFatness(mob/living/carbon/L) // GS13
 	if(!L)
 		return FALSE
 		
