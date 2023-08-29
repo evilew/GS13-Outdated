@@ -95,9 +95,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/skin_tone = "caucasian1"		//Skin color
 	var/eye_color = "000"				//Eye color
 	var/wing_color = "fff"				//Wing color
-
-	var/grad_style						//Hair gradient style
+	// GS13: Hair gradients from Skyrat
 	var/grad_color = "FFFFFF"			//Hair gradient color
+	var/grad_style = "000"				//Hair gradient style
 
 	//HS13
 	var/body_size = 100					//Body Size in percent
@@ -514,13 +514,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				dat += "<a href='?_src_=prefs;preference=previous_facehair_style;task=input'>&lt;</a> <a href='?_src_=prefs;preference=next_facehair_style;task=input'>&gt;</a><BR>"
 				dat += "<span style='border: 1px solid #161616; background-color: #[facial_hair_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=facial;task=input'>Change</a><BR>"
 
-
+				// GS13: Hair gradients from Skyrat
 				dat += "<h3>Hair Gradient</h3>"
 
 				dat += "<a style='display:block;width:100px' href='?_src_=prefs;preference=grad_style;task=input'>[grad_style]</a>"
 				dat += "<a href='?_src_=prefs;preference=previous_grad_style;task=input'>&lt;</a> <a href='?_src_=prefs;preference=next_grad_style;task=input'>&gt;</a><BR>"
 				dat += "<span style='border: 1px solid #161616; background-color: #[grad_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=grad_color;task=input'>Change</a><BR>"
-
 
 				dat += "</td>"
 			//Mutant stuff
@@ -948,6 +947,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						dat += "<b>Color:</b></a><BR>"
 						dat += "<span style='border: 1px solid #161616; background-color: #[features["belly_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='?_src_=prefs;preference=belly_color;task=input'>Change</a><br>"
 					dat += "<b>Hide on Round-Start:</b><a style='display:block;width:50px' href='?_src_=prefs;preference=hide_belly'>[features["hide_belly"] == 1 ? "Yes" : "No"]</a>"
+					// GS13: tweak inflation description
 					dat += "<b>Inflation (climax with and manual belly size change in arousal menu):</b><a style='display:block;width:50px' href='?_src_=prefs;preference=inflatable_belly'>[features["inflatable_belly"] == 1 ? "Yes" : "No"]</a>"
 
 				dat += "</td>"
@@ -1883,24 +1883,20 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				if("previous_facehair_style")
 					facial_hair_style = previous_list_item(facial_hair_style, GLOB.facial_hair_styles_list)
 
-
+				// GS13: Hair gradients from Skyrat
 				if("grad_color")
 					var/new_grad_color = input(user, "Choose your character's gradient colour:", "Character Preference","#"+grad_color) as color|null
 					if(new_grad_color)
 						grad_color = sanitize_hexcolor(new_grad_color, 6)
-
 				if("grad_style")
 					var/new_grad_style
 					new_grad_style = input(user, "Choose your character's hair gradient style:", "Character Preference") as null|anything in GLOB.hair_gradients_list
 					if(new_grad_style)
 						grad_style = new_grad_style
-
 				if("next_grad_style")
 					grad_style = next_list_item(grad_style, GLOB.hair_gradients_list)
-
 				if("previous_grad_style")
 					grad_style = previous_list_item(grad_style, GLOB.hair_gradients_list)
-
 
 
 				if("cycle_bg")
@@ -2434,11 +2430,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
 
 				if("belly_size") //GS13 Edit here if we add more belly sprites
+					// GS13: Adjust sprite ranges in char setup
 					var/new_bellysize = input(user, "Belly size :\n(1-10)", "Character Preference") as num|null
 					if(new_bellysize)
 						features["belly_size"] = clamp(new_bellysize, 1, 10)
 
 				if("butt_size")
+					// GS13: Adjust sprite ranges in char setup
 					var/new_buttsize = input(user, "Butt size :\n(1-10)", "Character Preference") as num|null
 					if(new_buttsize)
 						features["butt_size"] = clamp(new_buttsize, 1, 10)
@@ -2585,6 +2583,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						features["inflatable_belly"] = FALSE
 						features["belly_size"] = 1
 					
+				// GS13
 				if("weight_gain_items")
 					weight_gain_items = !weight_gain_items
 				if("weight_gain_chems")
@@ -2597,11 +2596,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					weight_gain_magic = !weight_gain_magic
 				if("weight_gain_viruses")
 					weight_gain_viruses = !weight_gain_viruses
-				
 				if("noncon_weight_gain")
 					noncon_weight_gain = !noncon_weight_gain
 				if("max_fatness")
-					var/pickedweight = input(user, "Choose your max fatness level, your weight will not go beyond this. None will let you gain without a limit", "Character Preference", "None")  as null|anything in list("None", "Fat", "Fatter", "Very Fat", "Obese", "Morbidly Obese", "Extremely Obese", "Barely Mobile", "Immobile")
+					var/pickedweight = input(user,
+						"Choose your max fatness level, your weight will not go beyond this. None will let you gain without a limit",
+						"Character Preference", "None") as null|anything in list(
+							"None", "Fat", "Fatter", "Very Fat", "Obese", "Morbidly Obese", "Extremely Obese", "Barely Mobile", "Immobile")
 					if(pickedweight)
 						switch(pickedweight)
 							if("None")
@@ -2622,8 +2623,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 								max_weight = FATNESS_LEVEL_IMMOBILE
 							if("Immobile")
 								max_weight = FATNESS_LEVEL_BLOB
-
-
 
 				if("inflatable_belly")
 					features["inflatable_belly"] = !features["inflatable_belly"]
@@ -2933,10 +2932,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.hair_style = hair_style
 	character.facial_hair_style = facial_hair_style
 
+	// GS13: Hair gradients from Skyrat
 	character.grad_style = grad_style
 	character.grad_color = grad_color
-	character.underwear = underwear
 
+	character.underwear = underwear
 	character.saved_underwear = underwear
 	character.undershirt = undershirt
 	character.saved_undershirt = undershirt

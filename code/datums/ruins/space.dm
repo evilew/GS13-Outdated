@@ -340,7 +340,7 @@
 	cost = 0
 	always_place = TRUE
 
-/datum/map_template/ruin/space/biodome/beach
+/datum/map_template/ruin/space/biodome/beach // GS13
 	name = "Biodome Beach"
 	id = "biodome-beach"
 	description = "Seemingly plucked from a tropical destination, this beach is calm and cool, with the salty waves roaring softly in the background. \

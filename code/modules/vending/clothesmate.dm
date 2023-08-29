@@ -6,6 +6,7 @@
 	icon_deny = "clothes-deny"
 	product_slogans = "Dress for success!;Prepare to look swagalicious!;Look at all this free swag!;Why leave style up to fate? Use the ClothesMate!"
 	vend_reply = "Thank you for using the ClothesMate!"
+	// GS13: GATO Letterman Jacket
 	products = list(/obj/item/clothing/head/that = 4,
 		            /obj/item/clothing/head/fedora = 3,
 		            /obj/item/clothing/suit/jacket/letterman_gato = 5,

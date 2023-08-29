@@ -1,4 +1,4 @@
-/obj/item/gun/fatbeam
+/obj/item/gun/fatbeam // GS13
 	name = "Fatbeam Gun"
 	desc = "Apparently used to treat malnourished patients from a safe distance... But we all know what it will truly be used for."
 	icon = 'icons/obj/fatbeam.dmi'

@@ -172,10 +172,10 @@
 	//Sound w/ antispam flag setting
 	if(is_wet && (world.time > recent_sound))
 		var/turf/source = get_turf(owner)
-		var/sound/eating = sound(GLOB.vore_sounds[vore_sound])
+		var/sound/eating = sound(GLOB.vore_sounds[vore_sound]) // GS13 fix
 		for(var/mob/living/M in get_hearers_in_view(3, source))
 			if(M.client && M.client?.prefs?.cit_toggles & EATING_NOISES)
-				M.playsound_local(source, vore_sound, 50, 1, S = eating)
+				M.playsound_local(source, vore_sound, 50, 1, S = eating) // GS13 fix
 				recent_sound = (world.time + 20 SECONDS)
 
 	//Messages if it's a mob

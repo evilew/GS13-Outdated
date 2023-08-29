@@ -131,9 +131,19 @@
 	T.ChangeTurf(type)
 
 /turf/closed/mineral/random
-	var/list/mineralSpawnChanceList = list(/turf/closed/mineral/uranium = 5, /turf/closed/mineral/diamond = 1, /turf/closed/mineral/gold = 10,
-		/turf/closed/mineral/silver = 12, /turf/closed/mineral/plasma = 20, /turf/closed/mineral/iron = 40, /turf/closed/mineral/titanium = 11,
-		/turf/closed/mineral/gibtonite = 4, /turf/open/floor/plating/asteroid/airless/cave = 2, /turf/closed/mineral/bscrystal = 1, /turf/closed/mineral/calorite = 1)
+	// GS13 calorite
+	var/list/mineralSpawnChanceList = list(
+		/turf/closed/mineral/uranium = 5,
+		/turf/closed/mineral/diamond = 1,
+		/turf/closed/mineral/gold = 10,
+		/turf/closed/mineral/silver = 12,
+		/turf/closed/mineral/plasma = 20,
+		/turf/closed/mineral/iron = 40,
+		/turf/closed/mineral/titanium = 11,
+		/turf/closed/mineral/gibtonite = 4,
+		/turf/open/floor/plating/asteroid/airless/cave = 2,
+		/turf/closed/mineral/bscrystal = 1,
+		/turf/closed/mineral/calorite = 1)
 		//Currently, Adamantine won't spawn as it has no uses. -Durandan
 	var/mineralChance = 13
 	var/display_icon_state = "rock"
@@ -172,9 +182,17 @@
 	baseturfs = /turf/open/floor/plating/asteroid/basalt/lava_land_surface
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
 	defer_change = 1
+	// GS13 calorite
 	mineralSpawnChanceList = list(
-		/turf/closed/mineral/uranium/volcanic = 35, /turf/closed/mineral/diamond/volcanic = 30, /turf/closed/mineral/calorite = 30, /turf/closed/mineral/gold/volcanic = 45, /turf/closed/mineral/titanium/volcanic = 45,
-		/turf/closed/mineral/silver/volcanic = 50, /turf/closed/mineral/plasma/volcanic = 50, /turf/closed/mineral/bscrystal/volcanic = 20)
+		/turf/closed/mineral/uranium/volcanic = 35,
+		/turf/closed/mineral/diamond/volcanic = 30,
+		/turf/closed/mineral/calorite = 30,
+		/turf/closed/mineral/gold/volcanic = 45,
+		/turf/closed/mineral/titanium/volcanic = 45,
+		/turf/closed/mineral/silver/volcanic = 50,
+		/turf/closed/mineral/plasma/volcanic = 50,
+		/turf/closed/mineral/bscrystal/volcanic = 20
+	)
 
 
 

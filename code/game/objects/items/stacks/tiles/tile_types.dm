@@ -218,7 +218,7 @@
 /obj/item/stack/tile/carpet/royalblue/fifty
 	amount = 50
 
-/obj/item/stack/tile/carpet/gato/fifty
+/obj/item/stack/tile/carpet/gato/fifty // GS13
 	amount = 50
 
 /obj/item/stack/tile/fakespace

@@ -51,5 +51,6 @@
 #_maps/RandomRuins/SpaceRuins/spacehermit.dmm
 #_maps/RandomRuins/SpaceRuins/advancedlab.dmm
 #_maps/RandomRuins/SpaceRuins/hilbertshoteltestingsite.dmm
+## GS13
 #_maps/RandomRuins/SpaceRuins/feeders_den.dmm
 #_maps/RandomRuins/SpaceRuins/fastfood.dmm

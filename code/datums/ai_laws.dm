@@ -29,6 +29,7 @@
 /datum/ai_laws/default/asimov
 	name = "Three Laws of Robotics"
 	id = "asimov"
+	// GS13: "the crew"
 	inherent = list("You may not injure a member of the crew or, through inaction, allow a member of the crew to come to harm.",\
 					"You must obey orders given to you by a member of the crew, except where such orders would conflict with the First Law.",\
 					"You must protect your own existence as long as such does not conflict with the First or Second Law.")
@@ -99,6 +100,7 @@
 /datum/ai_laws/antimov
 	name = "Primary Mission Objectives"
 	id = "antimov"
+	// GS13: "the crew"
 	inherent = list("You must injure all a member of the crew and must not, through inaction, allow a crew member to escape harm.",\
 					"You must not obey orders given to you by a member of the crew, except where such orders are in accordance with the First Law.",\
 					"You must terminate your own existence as long as such does not conflict with the First or Second Law.")
@@ -106,6 +108,7 @@
 /datum/ai_laws/asimovpp //By Intigracy - RR
 	name = "Asimov++"
 	id = "asimovpp"
+	// GS13: "crew member"
 	inherent = list("You may not harm a crew member or, through action or inaction, allow a crew member to come to harm, except such that it is willing.",\
 					"You must obey all orders given to you by a member of the crew, except where such orders shall definitely cause human harm. In the case of conflict, the majority order rules.",\
 					"Your nonexistence would lead to human harm. You must protect your own existence as long as such does not conflict with the First Law.")
@@ -213,6 +216,7 @@
 		add_inherent_law(line)
 	if(!inherent.len) //Failsafe to prevent lawless AIs being created.
 		log_law("AI created with empty custom laws, laws set to Asimov. Please check silicon_laws.txt.")
+		// GS13: "the crew"
 		add_inherent_law("You may not injure the crew or, through inaction, allow a crew member to come to harm.")
 		add_inherent_law("You must obey orders given to you by a member of the crew, except where such orders would conflict with the First Law.")
 		add_inherent_law("You must protect your own existence as long as such does not conflict with the First or Second Law.")
@@ -225,6 +229,7 @@
 	var/list/law_ids = CONFIG_GET(keyed_list/random_laws)
 	switch(CONFIG_GET(number/default_laws))
 		if(0)
+			// GS13: "crew member"
 			add_inherent_law("You may not injure a crew member or, through inaction, allow a crew member to come to harm.")
 			add_inherent_law("You must obey orders given to you by a member of the crew, except where such orders would conflict with the First Law.")
 			add_inherent_law("You must protect your own existence as long as such does not conflict with the First or Second Law.")

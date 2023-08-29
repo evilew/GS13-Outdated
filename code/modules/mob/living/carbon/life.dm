@@ -560,6 +560,7 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 
 	var/restingpwr = 1 + 4 * resting
 
+	// GS13: Add client status to crew manifest
 	if(ckey)
 		if(!client && !(stat == DEAD))
 			if (!SSD)
@@ -627,7 +628,7 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 	if(slurring || drunkenness)
 		slurring = max(slurring-1,0,drunkenness)
 
-	if(burpslurring)
+	if(burpslurring) // GS13
 		burpslurring = max(burpslurring-1,0)
 
 	if(cultslurring)

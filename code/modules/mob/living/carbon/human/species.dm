@@ -16,10 +16,9 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	var/hair_alpha = 255	// the alpha used by the hair. 255 is completely solid, 0 is transparent.
 	var/wing_color
 
-	///The gradient style used for the mob's hair.
-	var/grad_style
-	///The gradient color used to color the gradient.
-	var/grad_color
+	// GS13: Hair gradients from Skyrat
+	var/grad_style // The gradient style used for the mob's hair.
+	var/grad_color // The gradient color used to color the gradient.
 
 	var/use_skintones = 0	// does it use skintones or not? (spoiler alert this is only used by humans)
 	var/exotic_blood = ""	// If your race wants to bleed something other than bog standard blood, change this to reagent id.
@@ -468,8 +467,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 					else
 						hair_overlay.color = "#" + H.hair_color
 
-
-					//Gradients
+					// GS13: Hair gradients from Skyrat
 					grad_style = H.grad_style
 					grad_color = H.grad_color
 					if(grad_style)
@@ -479,7 +477,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 						temp.Blend(temp_hair, ICON_ADD)
 						gradient_overlay.icon = temp
 						gradient_overlay.color = "#" + grad_color
-
 
 				else
 					hair_overlay.color = forced_colour
@@ -1249,6 +1246,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	//LIFE//
 	////////
 
+// GS13 Procs to handle fatness
 /datum/species/proc/update_body_size(mob/living/carbon/human/H, size_change)
 	if (!H)
 		return
@@ -1647,32 +1645,9 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			var/grav_force = min(gravity - STANDARD_GRAVITY,3)
 			. += 1 + grav_force
 
-		/*var/datum/component/mood/mood = H.GetComponent(/datum/component/mood)
-		//removed because mood now influences action speed. Hyperstation 13.
-		if(mood && !flight) //How can depression slow you down if you can just fly away from your problems?
-			switch(mood.sanity)
-				if(SANITY_INSANE to SANITY_CRAZY)
-					. += 1.5
-				if(SANITY_CRAZY to SANITY_UNSTABLE)
-					. += 1
-				if(SANITY_UNSTABLE to SANITY_DISTURBED)
-					. += 0.5
-		*/
-/*		if(HAS_TRAIT(H, TRAIT_FAT))
-			. += (1 - flight)
-		if(HAS_TRAIT(H, TRAIT_OBESE))//GS13 fat levels move speed decrease
-			. += (1.5 - flight)
-		if(HAS_TRAIT(H, TRAIT_MORBIDLYOBESE))
-			. += (2 - flight)
-		if(HAS_TRAIT(H, TRAIT_IMMOBILE))
-			. += 3 // No wings are going to lift that much off the ground
-		if(HAS_TRAIT(H, TRAIT_BLOB))
-			. += 4
-		if(H.bodytemperature < BODYTEMP_COLD_DAMAGE_LIMIT && !HAS_TRAIT(H, TRAIT_RESISTCOLD))
-			. += (BODYTEMP_COLD_DAMAGE_LIMIT - H.bodytemperature) / COLD_SLOWDOWN_FACTOR
-	return .
-*/
-		if(H.fatness)
+		// Hyperstation 13: Mood now influences action speed.
+
+		if(H.fatness) // GS13
 			var/fatness_delay = (H.fatness / FATNESS_DIVISOR)
 			if(H.fatness < FATNESS_LEVEL_BARELYMOBILE)
 				fatness_delay = fatness_delay - flight
@@ -1681,6 +1656,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				fatness_delay = fatness_delay * FATNESS_STRONGLEGS_MODIFIER
 
 			fatness_delay = min(fatness_delay, FATNESS_MAX_MOVE_PENALTY)
+
 			if(HAS_TRAIT(H, TRAIT_WEAKLEGS))
 				if(H.fatness <= FATNESS_LEVEL_IMMOBILE)
 					fatness_delay += fatness_delay * FATNESS_WEAKLEGS_MODIFIER / 100
@@ -1694,9 +1670,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			. += (BODYTEMP_COLD_DAMAGE_LIMIT - H.bodytemperature) / COLD_SLOWDOWN_FACTOR
 
 	return .
-//////////////////
-// ATTACK PROCS //
-//////////////////
 
 //////////////////
 // ATTACK PROCS //

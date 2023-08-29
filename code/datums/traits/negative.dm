@@ -288,6 +288,7 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	var/specific = null
 	medical_record_text = "During physical examination, patient was found to have a prosthetic limb."
 
+// GS13: Allow multiple specific prosthetic limbs
 /datum/quirk/prosthetic_limb/on_spawn()
 	var/mob/living/carbon/human/H = quirk_holder
 	var/limb_slot = null
@@ -333,22 +334,22 @@ GLOBAL_LIST_EMPTY(family_heirlooms)
 	Additionally, you need to use a welding tool and cables to repair it, \
 	instead of bruise packs and ointment.</span>")
 
-/datum/quirk/prosthetic_limb/left_arm
+/datum/quirk/prosthetic_limb/left_arm // GS13
 	name = "Prosthetic Limb (Left Arm)"
 	desc = "An accident caused you to lose your left arm. Because of this, it's replaced with a prosthetic!"
 	specific = BODY_ZONE_L_ARM
 
-/datum/quirk/prosthetic_limb/right_arm
+/datum/quirk/prosthetic_limb/right_arm // GS13
 	name = "Prosthetic Limb (Right Arm)"
 	desc = "An accident caused you to lose your right arm. Because of this, it's replaced with a prosthetic!"
 	specific = BODY_ZONE_R_ARM
 
-/datum/quirk/prosthetic_limb/left_leg
+/datum/quirk/prosthetic_limb/left_leg // GS13
 	name = "Prosthetic Limb (Left Leg)"
 	desc = "An accident caused you to lose your left leg. Because of this, it's replaced with a prosthetic!"
 	specific = BODY_ZONE_L_LEG
 
-/datum/quirk/prosthetic_limb/right_leg
+/datum/quirk/prosthetic_limb/right_leg // GS13
 	name = "Prosthetic Limb (Right Leg)"
 	desc = "An accident caused you to lose your right leg. Because of this, it's replaced with a prosthetic!"
 	specific = BODY_ZONE_R_LEG

@@ -3,6 +3,7 @@
 	name = "Podperson"
 	id = "pod"
 	default_color = "59CE00"
+	// GS13: Podpeople Customisation
 	species_traits = list(MUTCOLORS,EYECOLOR,LIPS,HAIR,FACEHAIR,WINGCOLOR)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	mutant_bodyparts = list("mam_tail", "mam_ears", "mam_body_markings", "mam_snouts","mam_waggingtail","spines", "horns", "frills", "legs", "taur", "deco_wings")
@@ -31,7 +32,7 @@
 	C.faction -= "plants"
 	C.faction -= "vines"
 
-/datum/species/pod/qualifies_for_rank(rank, list/features)
+/datum/species/pod/qualifies_for_rank(rank, list/features) // GS13
 	return TRUE
 
 
@@ -75,6 +76,7 @@
 		if(/obj/item/projectile/energy/florayield)
 			H.nutrition = min(H.nutrition+30, NUTRITION_LEVEL_FULL)
 
+// GS13 edit
 /datum/species/pod/spec_death(gibbed, mob/living/carbon/human/H)
 	if(H)
 		stop_wagging_tail(H)
@@ -101,6 +103,7 @@
 		mutant_bodyparts -= "mam_waggingtail"
 		mutant_bodyparts |= "mam_tail"
 	H.update_body()
+// GS13 edit end
 
 /datum/species/pod/pseudo_weak
 	id = "podweak"

@@ -22,7 +22,8 @@
 
 /datum/round_event/disease_outbreak/start()
 	var/advanced_virus = FALSE
-	max_severity = 3 + CLAMP(FLOOR((world.time - control.earliest_start)/6000, 1),0, 5) //3 symptoms at 20 minutes, plus 1 per 10 minutes, maximum 8 to prevent it getting all symptoms
+	// GS13: 3 symptoms at 20 minutes, plus 1 per 10 minutes, maximum 8 to prevent it getting all symptoms
+	max_severity = 3 + CLAMP(FLOOR((world.time - control.earliest_start)/6000, 1),0, 5)
 	if(prob(20 + (10 * max_severity)))
 		advanced_virus = TRUE
 

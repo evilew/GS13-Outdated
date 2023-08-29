@@ -173,7 +173,7 @@
 //Math stuff for fatness movement speed
 #define FATNESS_DIVISOR 860 
 #define FATNESS_MAX_MOVE_PENALTY 4
-#define FATNESS_WEAKLEGS_MODIFIER 35
+#define FATNESS_WEAKLEGS_MODIFIER 35 // GS13 tweak
 #define FATNESS_STRONGLEGS_MODIFIER 0.5
 
 //Nutrition levels for humans

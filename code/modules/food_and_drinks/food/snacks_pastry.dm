@@ -751,7 +751,7 @@
 	tastes = list("pastry" = 1, "sweetness" = 1)
 	foodtype = GRAIN | SUGAR
 
-#define PANCAKE_MAX_STACK 20 //Doubled the stacking size. Snack away, snacksters! - GLDW
+#define PANCAKE_MAX_STACK 20 // GS13: Doubled the stacking size. Snack away, snacksters! - GLDW
 
 /obj/item/reagent_containers/food/snacks/pancakes
 	name = "pancake"

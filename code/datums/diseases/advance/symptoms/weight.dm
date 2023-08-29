@@ -16,7 +16,7 @@ Bonus
 //////////////////////////////////////
 */
 
-/datum/symptom/weight_loss
+/datum/symptom/weight_loss // GS13
 
 	name = "Weight Loss"
 	desc = "The virus mutates the host's metabolism, making it almost unable to gain nutrition from food."
@@ -33,13 +33,13 @@ Bonus
 		"Stealth 4" = "The symptom is less noticeable."
 	)
 
-/datum/symptom/weight_loss/Start(datum/disease/advance/A)
+/datum/symptom/weight_loss/Start(datum/disease/advance/A) // GS13
 	if(!..())
 		return
 	if(A.properties["stealth"] >= 4) //warn less often
 		base_message_chance = 25
 
-/datum/symptom/weight_loss/Activate(datum/disease/advance/A)
+/datum/symptom/weight_loss/Activate(datum/disease/advance/A) // GS13
 	if(!..())
 		return
 	var/mob/living/carbon/M = A.affected_mob
@@ -53,7 +53,7 @@ Bonus
 			M.nutrition = max(M.nutrition - 100, 0)
 			M.adjust_fatness(-30, FATTENING_TYPE_WEIGHT_LOSS)	
 
-/datum/symptom/weight_gain
+/datum/symptom/weight_gain // GS13
 	name = "Weight Gain"
 	desc = "The virus mutates and merges itself with the host's adipocytes, allowing them to perform a form of mitosis and replicate on their own."
 	stealth = -3
@@ -71,7 +71,7 @@ Bonus
 	)
 
 
-/datum/symptom/weight_gain/Activate(datum/disease/advance/A)
+/datum/symptom/weight_gain/Activate(datum/disease/advance/A) // GS13
 	if(!..())
 		return
 	var/mob/living/carbon/M = A.affected_mob

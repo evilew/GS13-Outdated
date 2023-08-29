@@ -1087,7 +1087,7 @@
 		"Solid Plasma"			= IC_PINTYPE_NUMBER,
 		"Uranium"				= IC_PINTYPE_NUMBER,
 		"Bananium"				= IC_PINTYPE_NUMBER,
-		"Calorite"				= IC_PINTYPE_NUMBER,
+		"Calorite"				= IC_PINTYPE_NUMBER, // GS13
 		"Titanium"				= IC_PINTYPE_NUMBER,
 		"Bluespace Mesh"		= IC_PINTYPE_NUMBER,
 		"Biomass"				= IC_PINTYPE_NUMBER,
@@ -1099,8 +1099,10 @@
 		)
 	spawn_flags = IC_SPAWN_RESEARCH
 	power_draw_per_use = 40
-	var/list/mtypes = list(MAT_METAL, MAT_GLASS, MAT_SILVER, MAT_GOLD, MAT_DIAMOND, MAT_PLASMA, MAT_URANIUM, MAT_BANANIUM, MAT_CALORITE, MAT_TITANIUM, MAT_BLUESPACE, MAT_BIOMASS)
-
+	// GS13 calorite
+	var/list/mtypes = list(
+		MAT_METAL, MAT_GLASS, MAT_SILVER, MAT_GOLD, MAT_DIAMOND, MAT_PLASMA,
+		MAT_URANIUM, MAT_BANANIUM, MAT_CALORITE, MAT_TITANIUM, MAT_BLUESPACE, MAT_BIOMASS)
 
 /obj/item/integrated_circuit/input/matscan/do_work()
 	var/atom/movable/H = get_pin_data_as_type(IC_INPUT, 1, /atom/movable)

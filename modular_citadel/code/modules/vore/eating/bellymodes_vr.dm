@@ -107,16 +107,15 @@
 				M.visible_message("<span class='notice'>You watch as [owner]'s form loses its additions.</span>")
 
 				owner.nutrition += 400 // so eating dead mobs gives you *something*.
-				//GS13 EDIT
-				
+
+				//GS13 edit
 				var/mob/living/carbon/gainer = owner
 				if(iscarbon(gainer) && owner?.client?.prefs?.weight_gain_food)	
 					var/mob/living/carbon/prey = M
 					if(iscarbon(prey) && prey.fatness)
 						var/fatness_to_add = (prey.fatness * 0.75)
 						gainer.adjust_fatness(fatness_to_add, FATTENING_TYPE_FOOD)
-				
-				//GS13 EDIT END
+				//GS13 edit end
 
 				if((world.time - NORMIE_HEARCHECK) > last_hearcheck)
 					LAZYCLEARLIST(hearing_mobs)

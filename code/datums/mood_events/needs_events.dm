@@ -1,9 +1,9 @@
 //nutrition
-/datum/mood_event/fat_bad
+/datum/mood_event/fat_bad // GS13
 	description = "<span class='warning'><B>I'm so fat...</B></span>\n"
 	mood_change = -4
 
-/datum/mood_event/fat_good
+/datum/mood_event/fat_good // GS13
 	description = "<span class='nicegreen'><B>I'm so fat!</B></span>\n"
 	mood_change = 4
 	

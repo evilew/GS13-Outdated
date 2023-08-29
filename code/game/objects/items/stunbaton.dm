@@ -186,9 +186,10 @@
 			return FALSE
 		stunpwr *= round(stuncharge/hitcost, 0.1)
 
-
-	//L.Knockdown(stunpwr) GS13 change, makes stunbatons no longer oneshot people -Eye
-	L.adjustStaminaLoss(stunpwr*0.5, affected_zone = (istype(user) ? user.zone_selected : BODY_ZONE_CHEST))//CIT CHANGE - makes stunbatons deal extra staminaloss. Todo: make this also deal pain when pain gets implemented.
+	// GS13: Make stunbatons no longer oneshot people -Eye
+	//L.Knockdown(stunpwr)
+	// CIT CHANGE - make stunbatons deal extra stamina loss. TODO: make this also deal pain when pain gets implemented.
+	L.adjustStaminaLoss(stunpwr*0.5, affected_zone = (istype(user) ? user.zone_selected : BODY_ZONE_CHEST))
 	L.apply_effect(EFFECT_STUTTER, stunforce)
 	SEND_SIGNAL(L, COMSIG_LIVING_MINOR_SHOCK)
 	if(user)

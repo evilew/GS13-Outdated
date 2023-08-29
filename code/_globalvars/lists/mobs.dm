@@ -59,6 +59,7 @@ GLOBAL_LIST_EMPTY(latejoiners) //CIT CHANGE - All latejoining people, for traito
 		var/mob/M = i
 		M.update_config_movespeed()
 
+// GS13: Import Fat Naga from VoreStation
 GLOBAL_LIST_INIT(noodle_taurs, list(
 		"Naga",
 		"Tentacle",

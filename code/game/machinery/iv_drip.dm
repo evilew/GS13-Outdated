@@ -15,10 +15,7 @@
 									/obj/item/reagent_containers/food,
 									/obj/item/reagent_containers/glass,
 									/obj/item/reagent_containers/chem_pack))
-	//GS13 EDIT
-	///What kind of attachment point is used?
-	var/attachment_point = "needle"
-	//GS13 EDIT END
+	var/attachment_point = "needle" // GS13
 	
 /obj/machinery/iv_drip/Initialize(mapload)
 	. = ..()
@@ -124,7 +121,7 @@
 		return PROCESS_KILL
 
 	if(!(get_dist(src, attached) <= 1 && isturf(attached.loc)))
-		to_chat(attached, "<span class='userdanger'>[src] [attachment_point] is ripped out of you!</span>")
+		to_chat(attached, "<span class='userdanger'>[src] [attachment_point] is ripped out of you!</span>") // GS13
 		attached.apply_damage(3, BRUTE, pick(BODY_ZONE_R_ARM, BODY_ZONE_L_ARM))
 		attached = null
 		update_icon()

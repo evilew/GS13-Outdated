@@ -13,9 +13,7 @@
 	clawfootstep = FOOTSTEP_WATER
 	heavyfootstep = FOOTSTEP_WATER
 
-
-
-/turf/open/chocolateriver
+/turf/open/chocolateriver // GS13
 	gender = PLURAL
 	name = "liquid chocolate"
 	desc = "This is probably used for some kind of huge fountain."

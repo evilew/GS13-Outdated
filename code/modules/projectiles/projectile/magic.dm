@@ -209,7 +209,7 @@
 							/mob/living/simple_animal/hostile/lizard,
 							/mob/living/simple_animal/pet/fox,
 							/mob/living/simple_animal/butterfly,
-							/mob/living/simple_animal/friendly/cakegolem           //pet/cat/cak,
+							/mob/living/simple_animal/friendly/cakegolem,
 							/mob/living/simple_animal/chick)
 			new_mob = new path(M.loc)
 
