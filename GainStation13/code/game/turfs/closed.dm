@@ -18,3 +18,10 @@
 	desc = "Despite being made out of mere candy, this wall is harder than stone!"
 	icon = 'Gainstation13/icons/turf/wall_candy.dmi'
 	icon_state = "candywall"
+
+
+/turf/closed/indestructible/chocolate
+	name = "Chocolate wall"
+	desc = "Somehow, it doesn't melt at all..."
+	icon = 'Gainstation13/icons/turf/wall_candy.dmi'
+	icon_state = "choco_wall1"

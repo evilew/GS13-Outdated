@@ -15,3 +15,20 @@
 	new /obj/item/stock_parts/manipulator/femto(src)
 	new /obj/item/stack/cable_coil(src, 15)
 	new /obj/item/stack/sheet/metal/twenty(src)
+
+/area/ruin/unpowered/caloriteshrine
+	name = "Calorite Shrine"
+	icon_state = "away"
+
+/area/ruin/powered/snackstore
+	name = "Snack Store"
+	icon_state = "away"
+
+/area/ruin/powered/candyland/inside
+	name = "Candy Land"
+	icon_state = "away"
+
+/area/ruin/powered/candyland/outside
+	name = "Candy Land"
+	icon_state = "away"
+	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
