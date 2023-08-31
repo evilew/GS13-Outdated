@@ -36,3 +36,4 @@ sound/music/eek.ogg
 sound/music/davesprite.ogg
 sound/music/byebyethere.ogg
 sound/music/nuclear_mission_jam.ogg
+sound/music/messagesfromthestars.ogg
