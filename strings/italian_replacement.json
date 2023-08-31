@@ -17,15 +17,15 @@
         ], 
         "captain": "capitano", 
         "cheese": [
-            "parmesano", 
+            "parmiggiano", 
             "gorgonzola"
         ], 
-        "cook": "cook-a", 
+        "cook": "cuoco", 
         "could": "could-a", 
-        "dad": "pappa", 
-        "enemy": "friend-a", 
-        "friend": "enemy-a", 
-        "good": "molto bene", 
+        "dad": "papà", 
+        "enemy": "nemico", 
+        "friend": "amico", 
+        "good": "benissimo", 
         "greytide": "curvisti", 
         "greytider": "curvisti",
         "greytiders": "curvisti",
@@ -37,7 +37,8 @@
         "make": "make-a", 
         "meat": [
             "pepperoni", 
-            "prosciutto"
+            "prosciutto",
+	    "salame"
         ], 
         "mom": "mamma", 
         "my": "my-a", 
