@@ -30936,21 +30936,6 @@
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel,
 /area/crew_quarters/kitchen)
-"bfe" = (
-/obj/machinery/deepfryer,
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/red,
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/red{
-	dir = 8
-	},
-/mob/living/carbon/monkey/punpun,
-/turf/open/floor/plasteel,
-/area/crew_quarters/kitchen)
 "bff" = (
 /obj/machinery/holopad,
 /obj/effect/landmark/start/cook,
@@ -164878,7 +164863,7 @@ aLL
 aKz
 bcj
 bdJ
-bfe
+bfg
 bgs
 bhQ
 bjF

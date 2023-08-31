@@ -2,9 +2,9 @@
 	///What level of fatness is the parent mob at?
 	var/fatness = 0
 	///At what rate does the parent mob gain weight? 1 = 100%
-	var/weight_gain_rate = 1
+	var/weight_gain_rate = 0.4 // IMPORTANT!!! due to complaints, I've cut the value in half as a placeholder method of nerfing WG. Set it back to 1 once an actual WG speed preference system is implemented - Lew
 	//At what rate does the parent mob lose weight? 1 = 100%
-	var/weight_loss_rate = 1
+	var/weight_loss_rate = 0.4
 
 /** 
 * Adjusts the fatness level of the parent mob.

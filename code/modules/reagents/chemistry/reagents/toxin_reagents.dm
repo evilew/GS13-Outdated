@@ -623,7 +623,7 @@
 	if(M.fatness == 0)
 		M.nutrition = max(M.nutrition - 3, 0) // making the chef more valuable, one meme trap at a time
 	if(HAS_TRAIT(M, TRAIT_LIPOLICIDE_TOLERANCE)) //GS13 edit
-		M.adjust_fatness(-1, FATTENING_TYPE_WEIGHT_LOSS)
+		M.adjust_fatness(-0.5, FATTENING_TYPE_WEIGHT_LOSS)
 	else
 		M.adjust_fatness(-5, FATTENING_TYPE_WEIGHT_LOSS)
 

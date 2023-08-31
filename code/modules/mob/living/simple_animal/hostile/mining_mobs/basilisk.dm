@@ -150,3 +150,66 @@
 
 /mob/living/simple_animal/hostile/asteroid/basilisk/watcher/tendril
 	fromtendril = TRUE
+
+
+//GS13 - will move this elsewhere - Sono
+/mob/living/simple_animal/hostile/asteroid/basilisk/fudgebeast
+	name = "Fudgebeast"
+	desc = "A strange mass of thick, sweet pudge given some sense of instinct."
+	icon = 'icons/mob/lavaland/lavaland_monsters.dmi'
+	icon_state = "Basilisk"
+	icon_living = "Basilisk"
+	icon_aggro = "Basilisk_alert"
+	icon_dead = "Basilisk_dead"
+	icon_gib = "syndicate_gib"
+	mob_biotypes = MOB_ORGANIC|MOB_BEAST
+	move_to_delay = 20
+	projectiletype = /obj/item/projectile/energy/fattening/fudge
+	projectilesound = 'sound/weapons/pierce.ogg'
+	ranged = 1
+	ranged_message = "schlorps"
+	ranged_cooldown_time = 30
+	throw_message = "does nothing against the malleable body of"
+	vision_range = 2
+	speed = 3
+	maxHealth = 200
+	health = 200
+	harm_intent_damage = 5
+	obj_damage = 60
+	melee_damage_lower = 12
+	melee_damage_upper = 12
+	attacktext = "bites into"
+	a_intent = INTENT_HARM
+	speak_emote = list("chitters")
+	attack_sound = 'sound/weapons/bladeslice.ogg'
+	vision_range = 2
+	aggro_vision_range = 9
+	turns_per_move = 5
+	gold_core_spawnable = HOSTILE_SPAWN
+	loot = list(/obj/item/stack/ore/diamond{layer = ABOVE_MOB_LAYER},
+				/obj/item/stack/ore/diamond{layer = ABOVE_MOB_LAYER})
+
+/obj/item/projectile/energy/fattening/fudge //might as well make use of the energy projectile
+	name = "fudge blob"
+	icon = 'GainStation13/icons/obj/fatoray.dmi'
+	icon_state = "ray"
+	ricochets_max = 0
+	ricochet_chance = 0
+	hitsound = 'sound/weapons/sear.ogg'
+	hitsound_wall = 'sound/weapons/effects/searwall.ogg'
+	is_reflectable = FALSE
+	light_range = 0
+	///How much fat is added to the target mob?
+	var/food_per_feeding = 10
+	var/food_fed = /datum/reagent/consumable/nutriment
+	var/fullness_add = 10
+
+/obj/item/projectile/energy/fattening/fudge/on_hit(atom/target, blocked)
+
+	. = ..()
+	var/mob/living/carbon/L = target
+	if(L.client?.prefs?.weight_gain_weapons)
+		if(L.reagents)
+			if(!L.is_mouth_covered(head_only = 1))
+				L.reagents.add_reagent(food_fed, food_per_feeding)
+				L.fullness += (fullness_add)

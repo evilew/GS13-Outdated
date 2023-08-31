@@ -215,7 +215,7 @@
 	var/last_event = 0
 	var/active = null
 	///How much fatness is added to the user upon crossing?
-	var/fat_to_add = 30
+	var/fat_to_add = 25
 
 /turf/open/floor/mineral/calorite/Entered(mob/living/carbon/M)
 	if(!istype(M, /mob/living/carbon))
