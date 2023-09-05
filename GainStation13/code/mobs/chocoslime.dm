@@ -89,9 +89,9 @@
 	is_reflectable = FALSE
 	light_range = 0
 	///How much fat is added to the target mob?
-	food_per_feeding = 5
-	food_fed = /datum/reagent/consumable/nutriment
-	fullness_add = 10
+	var/food_per_feeding = 5
+	var/food_fed = /datum/reagent/consumable/nutriment
+	var/fullness_add = 10
 
 /obj/item/projectile/energy/fattening/icecream/on_hit(atom/target, blocked)
 	. = ..()
