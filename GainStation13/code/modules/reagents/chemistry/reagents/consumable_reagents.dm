@@ -10,7 +10,7 @@
 	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 
 /datum/reagent/consumable/lipoifier/on_mob_life(mob/living/carbon/M)
-	M.adjust_fatness(10, FATTENING_TYPE_CHEM)
+	M.adjust_fatness(8, FATTENING_TYPE_CHEM)
 	return ..()
 
 

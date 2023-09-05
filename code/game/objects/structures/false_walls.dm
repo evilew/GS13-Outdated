@@ -279,7 +279,7 @@
 		if(world.time > last_event+15)
 			active = 1
 			for(var/mob/living/carbon/human/M in orange(3,src))
-				M.adjust_fatness(50, FATTENING_TYPE_ITEM)
+				M.adjust_fatness(30, FATTENING_TYPE_ITEM)
 			last_event = world.time
 			active = null
 			return
