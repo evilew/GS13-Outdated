@@ -31455,11 +31455,6 @@
 	dir = 1;
 	pixel_y = -26
 	},
-/obj/machinery/quantumpad{
-	map_pad_id = "station";
-	map_pad_link_id = "xenoarch";
-	mapped_quantum_pads = list("station","xenoarch")
-	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/science/lab)
 "aZR" = (
@@ -33491,8 +33486,8 @@
 	pixel_y = 6;
 	req_access_txt = "28"
 	},
-/obj/structure/kitchenspike,
 /obj/effect/turf_decal/bot,
+/obj/structure/closet/secure_closet/freezer/fridge,
 /turf/open/floor/plasteel,
 /area/crew_quarters/kitchen)
 "bda" = (
@@ -34018,7 +34013,11 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "bdP" = (
 /obj/structure/cable{
@@ -34037,6 +34036,9 @@
 /obj/structure/sign/directions/evac{
 	dir = 4;
 	pixel_y = 24
+	},
+/obj/machinery/door/airlock/maintenance{
+	req_access_txt = "12"
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard)
@@ -34712,26 +34714,19 @@
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/theatre)
 "beO" = (
+/obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
-	dir = 8
+	dir = 4
 	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
+/obj/effect/turf_decal/caution/stand_clear{
+	dir = 8;
+	pixel_x = 10
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "beP" = (
-/obj/effect/turf_decal/bot,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/crate,
-/obj/structure/grille/broken,
-/obj/item/clothing/gloves/color/fyellow,
-/obj/item/flashlight,
-/obj/item/flashlight/flare,
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/open/floor/plating,
+/turf/closed/wall/rust,
 /area/maintenance/starboard)
 "beQ" = (
 /obj/structure/cable{
@@ -34750,10 +34745,13 @@
 /area/maintenance/starboard)
 "beS" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/cardboard,
 /obj/structure/sign/warning/nosmoking{
 	pixel_x = 30
 	},
+/obj/structure/closet/crate,
+/obj/item/clothing/gloves/color/fyellow,
+/obj/item/flashlight/flare,
+/obj/item/flashlight,
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "beT" = (
@@ -36178,9 +36176,6 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/crew_quarters/kitchen)
 "bhe" = (
-/obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
@@ -39630,7 +39625,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/red,
-/obj/structure/kitchenspike,
+/obj/structure/closet/secure_closet/freezer/meat,
 /turf/open/floor/plasteel,
 /area/crew_quarters/kitchen)
 "bmI" = (
@@ -39794,8 +39789,8 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 1
 	},
-/obj/machinery/portable_atmospherics/canister/air,
 /obj/item/wrench,
+/obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/plasteel/dark,
 /area/quartermaster/miningoffice)
 "bmX" = (
@@ -83248,6 +83243,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
+/obj/structure/fans/tiny,
 /turf/open/floor/plasteel/dark,
 /area/hallway/secondary/entry)
 "cTF" = (
@@ -85356,6 +85352,18 @@
 /obj/structure/sign/warning,
 /turf/closed/wall/rust,
 /area/space/nearstation)
+"sHl" = (
+/obj/machinery/quantumpad{
+	map_pad_id = "station";
+	map_pad_link_id = "xenoarch";
+	mapped_quantum_pads = list("station","xenoarch")
+	},
+/obj/effect/turf_decal/bot,
+/obj/structure/sign/warning/xeno_mining{
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/dark,
+/area/maintenance/starboard)
 "sNb" = (
 /obj/machinery/door/airlock/public/glass{
 	dir = 4
@@ -123230,7 +123238,7 @@ aYK
 aYK
 aYd
 bhe
-cLt
+sHl
 kmy
 bhX
 bhs

@@ -30,16 +30,12 @@
 /turf/open/floor/carpet/black,
 /area/survivalpod)
 "f" = (
-/obj/machinery/chem_dispenser/drinks/beer{
-	pixel_y = 24
-	},
-/turf/open/floor/carpet/black,
+/obj/machinery/chem_dispenser/drinks/beer,
+/turf/closed/wall/mineral/titanium/survival/pod,
 /area/survivalpod)
 "g" = (
-/obj/machinery/chem_dispenser/drinks{
-	pixel_y = 24
-	},
-/turf/open/floor/carpet/black,
+/obj/machinery/chem_dispenser/drinks,
+/turf/closed/wall/mineral/titanium/survival/pod,
 /area/survivalpod)
 "h" = (
 /obj/machinery/vending/boozeomat/all_access{
@@ -427,8 +423,8 @@ P
 a
 "}
 (8,1,1) = {"
-a
-f
+g
+c
 l
 p
 q
@@ -440,8 +436,8 @@ H
 a
 "}
 (9,1,1) = {"
-a
-g
+f
+c
 m
 p
 q
