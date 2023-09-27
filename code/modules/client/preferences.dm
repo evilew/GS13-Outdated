@@ -105,6 +105,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	//GS13
 	var/starting_weight = 0				//how thicc you wanna be at start
+	var/wg_rate = 0.5
+	var/wl_rate = 0.5
 
 	//HS13 jobs
 	var/sillyroles = TRUE //for clown and mime
@@ -321,9 +323,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 //H13 make body size compatable with the current save.
 	if (body_size == null)
 		body_size = 100
+
+//GS13 same as higher up
 	if (starting_weight == null)
 		starting_weight = 0
-
+	if (wg_rate == null)
+		wg_rate = 0.5
+	if (wl_rate == null)
+		wl_rate = 0.5
 	dat += "</center>"
 
 	dat += "<HR>"
@@ -477,6 +484,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				mutant_colors = TRUE
 			//GS13 fatness
 			dat += "<b>Starting weight :</b> <a href='?_src_=prefs;preference=fatness;task=input'>[starting_weight]</a><br>"
+			dat += "<b>Weight Gain Rate :</b> <a href='?_src_=prefs;preference=wg_rate;task=input'>[wg_rate]</a><br>"
+			dat += "<b>Weight Loss Rate :</b> <a href='?_src_=prefs;preference=wl_rate;task=input'>[wl_rate]</a><br>"
 
 			if((EYECOLOR in pref_species.species_traits) && !(NOEYES in pref_species.species_traits))
 
@@ -526,7 +535,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			var/mutant_category = 0
 
 			dat += APPEARANCE_CATEGORY_COLUMN
-			dat += "<h3>Show mismatched markings</h3>"
+			dat += "<h3>Show mismatched markings (other racial markings)</h3>"
 			dat += "<a style='display:block;width:100px' href='?_src_=prefs;preference=mismatched_markings;task=input'>[show_mismatched_markings ? "Yes" : "No"]</a>"
 			mutant_category++
 			if(mutant_category >= MAX_MUTANT_ROWS) //just in case someone sets the max rows to 1 or something dumb like that
@@ -1987,7 +1996,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							to_chat(user, "<span class='danger'>Invalid color. Your color is not bright enough.</span>")
 
 				if("mutant_color2")
-					var/new_mutantcolor = input(user, "Choose your character's secondary alien/mutant color:", "Character Preference") as color|null
+					var/new_mutantcolor = input(user, "Choose your character's secondary alien/mutant color:", "Character Preference","#"+features["mcolor2"]) as color|null
 					if(new_mutantcolor)
 						var/temp_hsv = RGBtoHSV(new_mutantcolor)
 						if(new_mutantcolor == "#000000")
@@ -2000,7 +2009,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							to_chat(user, "<span class='danger'>Invalid color. Your color is not bright enough.</span>")
 
 				if("mutant_color3")
-					var/new_mutantcolor = input(user, "Choose your character's tertiary alien/mutant color:", "Character Preference") as color|null
+					var/new_mutantcolor = input(user, "Choose your character's tertiary alien/mutant color:", "Character Preference","#"+features["mcolor3"]) as color|null
 					if(new_mutantcolor)
 						var/temp_hsv = RGBtoHSV(new_mutantcolor)
 						if(new_mutantcolor == "#000000")
@@ -2329,7 +2338,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
 
 				if("belly_color")
-					var/new_bellycolor = input(user, "Belly Color:", "Character Preference") as color|null
+					var/new_bellycolor = input(user, "Belly Color:", "Character Preference", "#"+features["belly_color"]) as color|null
 					if(new_bellycolor)
 						var/temp_hsv = RGBtoHSV(new_bellycolor)
 						if(new_bellycolor == "#000000")
@@ -2340,7 +2349,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
 
 				if("butt_color")
-					var/new_buttcolor = input(user, "Butt Color:", "Character Preference") as color|null
+					var/new_buttcolor = input(user, "Butt Color:", "Character Preference","#"+features["butt_color"]) as color|null
 					if(new_buttcolor)
 						var/temp_hsv = RGBtoHSV(new_buttcolor)
 						if(new_buttcolor == "#000000")
@@ -2419,7 +2428,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							features["breasts_fluid"] = /datum/reagent/consumable/pinkmilk
 
 				if("breasts_color")
-					var/new_breasts_color = input(user, "Breast Color:", "Character Preference") as color|null
+					var/new_breasts_color = input(user, "Breast Color:", "Character Preference", "#"+features["breasts_color"]) as color|null
 					if(new_breasts_color)
 						var/temp_hsv = RGBtoHSV(new_breasts_color)
 						if(new_breasts_color == "#000000")
@@ -2527,9 +2536,19 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 //GS13 fatness
 
 				if("fatness")
-					var/new_fatness = input(user, "Choose your amount of fat at start :\n(0-4000), Fat changes appearance and move speed. \nThresholds are 170, 250, 330, 440, 840, 1240, 1840, 2540, 3440. Warning : If using the 'weak legs' trait, being too fat will make you immobile and unable to leave the shuttle without a wheelchair or help", "Character Preference") as num|null
+					var/new_fatness = input(user, "Choose your amount of fat at start :\n(0-8000), Fat changes appearance and move speed. \nThresholds are 170, 250, 330, 440, 840, 1240, 1840, 2540, 3440. Warning : If using the 'weak legs' trait, being too fat will make you immobile and unable to leave the shuttle without a wheelchair or help", "Character Preference") as num|null
 					if (new_fatness)
 						starting_weight = max(min( round(text2num(new_fatness)), 8000),0)
+
+				if("wg_rate")
+					var/new_wg_rate = input(user, "Choose your weight gain rate from 0.1 (10%) to 2 (200%).\n Decimals such as 0.2 indicate 20% rate.\nDefault recommended rate is 0.5 (50%)", "Character Preference", wg_rate) as num|null
+					if (new_wg_rate)
+						wg_rate = max(min(round(text2num(new_wg_rate),0.01),2),0)
+
+				if("wl_rate")
+					var/new_wl_rate = input(user, "Choose your weight loss rate from 0.1 (10%) to 2 (200%).\n Decimals such as 0.2 indicate 20% rate.\nDefault recommended rate is 0.5 (50%)", "Character Preference", wl_rate) as num|null
+					if (new_wl_rate)
+						wl_rate = max(min(round(text2num(new_wl_rate),0.01),2),0)
 
 				if("ui")
 					var/pickedui = input(user, "Choose your UI style.", "Character Preference", UI_style)  as null|anything in GLOB.available_ui_styles
@@ -2913,7 +2932,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.custom_body_size = body_size
 	character.breedable = 0
 
+	//GS13
 	character.fatness = starting_weight
+	character.weight_gain_rate = wg_rate
+	character.weight_loss_rate = wl_rate
 
 	character.gender = gender
 	character.age = age
