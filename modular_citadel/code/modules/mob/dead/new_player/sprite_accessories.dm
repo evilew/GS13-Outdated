@@ -1886,11 +1886,20 @@ datum/sprite_accessory/mam_tails/insect
 	icon_state = "naga"
 	taur_mode = SNEK_TAURIC
 
-// GS13: Import Fat Naga from VoreStation
+// GS13: Import Fat Naga, Alt Naga, Gator Tail from VoreStation
 /datum/sprite_accessory/taur/naga/fat //ported from Vorestation
 	name = "Fat Naga"
 	icon_state = "fatnaga"
 	taur_mode = SNEK_TAURIC
+
+/datum/sprite_accessory/taur/naga/alt //ported from Vorestation
+	name = "Alt Naga"
+	icon_state = "altnaga"
+	taur_mode = SNEK_TAURIC
+
+/datum/sprite_accessory/taur/gator //ported from Vorestation
+	name = "Gator"
+	icon_state = "gator"
 
 /datum/sprite_accessory/taur/otie
 	name = "Otie"

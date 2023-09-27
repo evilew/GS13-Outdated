@@ -302,7 +302,7 @@
 	name = "Space Law"
 	desc = "A set of Kin-Station guidelines for keeping law and order on their space stations."
 	icon_state = "bookSpaceLaw"
-	author = "Kin.Co PMC"
+	author = "GATO PMC"
 	title = "Space Law"
 	page_link = "Space_Law"
 

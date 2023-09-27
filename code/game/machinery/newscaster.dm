@@ -862,7 +862,7 @@ GLOBAL_LIST_EMPTY(allCasters)
 
 /obj/item/newspaper
 	name = "newspaper"
-	desc = "An issue of The Griffon, the newspaper circulating aboard Kin.Co Space Stations."
+	desc = "An issue of The Catpaw, the newspaper circulating aboard GATO's stations."
 	icon = 'icons/obj/bureaucracy.dmi'
 	icon_state = "newspaper"
 	lefthand_file = 'icons/mob/inhands/misc/books_lefthand.dmi'

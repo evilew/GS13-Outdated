@@ -42,7 +42,7 @@
 	dir = 1
 	},
 /obj/structure/closet/secure_closet/personal,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "ak" = (
 /obj/item/toy/prize/mauler,
@@ -58,7 +58,7 @@
 	name = "Theatre backroom air alarm";
 	pixel_y = 24
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "an" = (
 /obj/structure/statue/uranium/nuke,
@@ -75,17 +75,11 @@
 /area/lavaland/surface/outdoors)
 "aq" = (
 /obj/machinery/washing_machine,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "ar" = (
 /turf/closed/wall,
 /area/xenoarch/bot)
-"as" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_y = 28
-	},
-/turf/open/floor/plasteel,
-/area/xenoarch/gen)
 "at" = (
 /obj/machinery/vending/autodrobe{
 	req_access = null
@@ -93,7 +87,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "au" = (
 /obj/machinery/light{
@@ -143,15 +137,15 @@
 /turf/open/floor/plasteel,
 /area/xenoarch/arch)
 "aD" = (
-/obj/structure/table,
 /obj/structure/sign/poster/official/random{
 	pixel_x = -32
 	},
-/turf/open/floor/plasteel,
+/obj/structure/closet/athletic_mixed,
+/turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "aE" = (
 /obj/machinery/vending/kink,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "aF" = (
 /obj/machinery/door/airlock/maintenance{
@@ -194,7 +188,7 @@
 "aK" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1,
 /obj/structure/chair/bench/left,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "aL" = (
 /obj/structure/cable{
@@ -216,15 +210,11 @@
 /area/xenoarch/gen)
 "aN" = (
 /obj/structure/chair/bench/right,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "aO" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel/dark/side{
-	dir = 1
-	},
+/obj/machinery/vending/clothing,
+/turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "aP" = (
 /obj/effect/turf_decal/loading_area{
@@ -241,9 +231,14 @@
 /turf/open/indestructible/necropolis,
 /area/lavaland/surface/outdoors)
 "aR" = (
-/obj/machinery/holopad,
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
 	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 1
@@ -294,13 +289,15 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 5
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "aY" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
-	dir = 8
+/obj/structure/closet/secure_closet/freezer/kitchen/maintenance{
+	name = "xenoarchaeology refrigerator"
 	},
-/turf/open/floor/plasteel,
+/obj/item/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
+/turf/open/floor/plasteel/freezer,
 /area/xenoarch/gen)
 "aZ" = (
 /obj/structure/cable{
@@ -392,7 +389,7 @@
 "bo" = (
 /obj/machinery/light,
 /obj/structure/chair/bench/left,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "bp" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
@@ -418,21 +415,26 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "bt" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /obj/structure/punching_bag,
+/obj/effect/turf_decal/box/red,
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "bu" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
+/obj/effect/turf_decal/loading_area{
+	dir = 4;
+	icon_state = "drain";
+	name = "drain"
 	},
-/obj/structure/table,
-/turf/open/floor/plasteel/dark,
+/obj/machinery/shower{
+	dir = 8
+	},
+/turf/open/floor/plasteel/showroomfloor,
 /area/xenoarch/gen)
 "bv" = (
 /obj/machinery/door/airlock/maintenance{
@@ -451,8 +453,8 @@
 /turf/open/floor/carpet,
 /area/xenoarch/arch)
 "by" = (
-/obj/structure/closet/athletic_mixed,
-/turf/open/floor/plasteel,
+/obj/structure/closet/secure_closet/personal,
+/turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "bz" = (
 /obj/machinery/door/airlock/maintenance{
@@ -1613,7 +1615,7 @@
 /obj/structure/table,
 /obj/item/paper_bin,
 /obj/item/pen,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "ec" = (
 /obj/structure/chair/wood{
@@ -2179,7 +2181,7 @@
 /turf/open/floor/plasteel,
 /area/xenoarch/gen)
 "fp" = (
-/obj/structure/kitchenspike,
+/obj/machinery/deepfryer,
 /turf/open/floor/plasteel/freezer,
 /area/xenoarch/gen)
 "fq" = (
@@ -2338,10 +2340,11 @@
 /turf/open/floor/plasteel/freezer,
 /area/xenoarch/gen)
 "fP" = (
-/obj/structure/table,
-/obj/item/storage/box/donkpockets,
-/obj/item/storage/box/donkpockets,
-/turf/open/floor/plasteel/freezer,
+/obj/effect/turf_decal/tile/bar{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/bar,
+/turf/open/floor/plasteel/dark/side,
 /area/xenoarch/gen)
 "fQ" = (
 /obj/structure/flora/ausbushes/ywflowers,
@@ -2593,8 +2596,10 @@
 /turf/closed/wall,
 /area/xenoarch/gen)
 "gq" = (
-/obj/machinery/vending/boozeomat,
-/turf/closed/wall,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/open/floor/plasteel/showroomfloor,
 /area/xenoarch/gen)
 "gr" = (
 /turf/open/floor/plating{
@@ -2659,9 +2664,10 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/table,
 /obj/structure/disposalpipe/segment,
-/obj/machinery/microwave,
+/obj/structure/closet/secure_closet/freezer/kitchen/maintenance{
+	name = "xenoarchaeology refrigerator"
+	},
 /turf/open/floor/plasteel/cafeteria,
 /area/xenoarch/gen)
 "gA" = (
@@ -2685,8 +2691,15 @@
 /turf/open/floor/carpet/gato,
 /area/xenoarch/gen)
 "gD" = (
-/obj/machinery/deepfryer,
-/turf/open/floor/plasteel/cafeteria,
+/obj/effect/turf_decal/loading_area{
+	dir = 8;
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/machinery/shower{
+	dir = 4
+	},
+/turf/open/floor/plasteel/showroomfloor,
 /area/xenoarch/gen)
 "gE" = (
 /obj/structure/cable{
@@ -3230,12 +3243,14 @@
 "hY" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/food/condiment/peppermill,
+/obj/item/reagent_containers/food/condiment/saltshaker{
+	pixel_x = 5
+	},
 /turf/open/floor/plasteel/cafeteria,
 /area/xenoarch/gen)
 "hZ" = (
 /obj/structure/table/reinforced,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
-/obj/item/reagent_containers/food/condiment/saltshaker,
 /turf/open/floor/plasteel/cafeteria,
 /area/xenoarch/gen)
 "ia" = (
@@ -5396,7 +5411,7 @@
 	network = list("ss13","rd","mine")
 	},
 /obj/structure/chair/bench,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "nj" = (
 /obj/structure/table,
@@ -5580,10 +5595,8 @@
 /turf/open/floor/plasteel,
 /area/xenoarch/gen)
 "nG" = (
-/obj/structure/closet/secure_closet/freezer/kitchen/maintenance{
-	name = "xenoarchaeology refrigerator"
-	},
-/turf/open/floor/plasteel/cafeteria,
+/obj/machinery/door/airlock,
+/turf/open/floor/plasteel/showroomfloor,
 /area/xenoarch/gen)
 "nH" = (
 /obj/effect/turf_decal/arrows{
@@ -7276,6 +7289,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
+"vg" = (
+/obj/structure/table,
+/obj/item/reagent_containers/glass/beaker/waterbottle,
+/turf/open/floor/plasteel/dark,
+/area/xenoarch/gen)
 "vh" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
@@ -7741,6 +7759,11 @@
 "yw" = (
 /turf/closed/mineral/random,
 /area/lavaland/surface/outdoors)
+"yy" = (
+/obj/structure/table,
+/obj/machinery/microwave,
+/turf/open/floor/plasteel/freezer,
+/area/xenoarch/gen)
 "yA" = (
 /obj/machinery/recharge_station,
 /obj/effect/turf_decal/box,
@@ -7918,8 +7941,9 @@
 /turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
 "zY" = (
-/obj/structure/closet/secure_closet/personal,
-/turf/open/floor/plasteel,
+/obj/structure/table,
+/obj/item/reagent_containers/rag/towel,
+/turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "zZ" = (
 /obj/effect/turf_decal/loading_area{
@@ -8460,6 +8484,7 @@
 	icon_state = "drain";
 	name = "drain"
 	},
+/obj/structure/reagent_dispensers/water_cooler,
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "De" = (
@@ -8804,6 +8829,7 @@
 /area/xenoarch/caloriteresearch_powered)
 "FQ" = (
 /obj/structure/weightmachine/weightlifter,
+/obj/effect/turf_decal/box/red,
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "FT" = (
@@ -9191,7 +9217,7 @@
 /area/xenoarch/caloriteresearch_powered)
 "IL" = (
 /obj/structure/chair/bench,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "IM" = (
 /obj/structure/table/wood,
@@ -10178,6 +10204,7 @@
 	dir = 4
 	},
 /obj/structure/scale,
+/obj/effect/turf_decal/bot_red,
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "Pz" = (
@@ -10411,6 +10438,10 @@
 	icon_state = "engine"
 	},
 /area/xenoarch/nothinghere)
+"RB" = (
+/obj/machinery/vending/boozeomat,
+/turf/open/floor/plasteel/freezer,
+/area/xenoarch/gen)
 "RD" = (
 /obj/effect/turf_decal/stripes/full,
 /obj/machinery/conveyor{
@@ -10789,7 +10820,7 @@
 /obj/item/reagent_containers/rag/towel{
 	pixel_y = 3
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "TF" = (
 /obj/effect/turf_decal/stripes/line,
@@ -11410,6 +11441,7 @@
 /area/xenoarch/caloriteresearch_powered)
 "Yf" = (
 /obj/structure/weightmachine/stacklifter,
+/obj/effect/turf_decal/box/red,
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "Yg" = (
@@ -12088,7 +12120,7 @@ ab
 Sy
 Sy
 TD
-ai
+fl
 eb
 aD
 Sy
@@ -12343,7 +12375,7 @@ ab
 ab
 ab
 Sy
-zY
+by
 fK
 fK
 fK
@@ -12860,7 +12892,7 @@ Sy
 by
 fK
 IL
-aY
+dO
 ni
 Sy
 bT
@@ -13109,15 +13141,15 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
+Sy
+Sy
+Sy
+Sy
 Sy
 am
 fK
 aN
-aY
+dO
 aN
 Sy
 bS
@@ -13366,10 +13398,10 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
+Sy
+gD
+gD
+gD
 Sy
 aq
 fK
@@ -13623,16 +13655,16 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
 Sy
-as
+gq
+hJ
+hJ
+nG
+fK
 fK
 aM
 fK
-ba
+aO
 Sy
 bW
 Sy
@@ -13880,10 +13912,10 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
+Sy
+bu
+bu
+bu
 Sy
 at
 aE
@@ -14137,10 +14169,10 @@ ab
 ab
 ab
 ab
-ab
-ab
-ab
-ab
+Sy
+Sy
+Sy
+Sy
 Sy
 Sy
 Sy
@@ -14400,9 +14432,9 @@ ab
 ab
 Sy
 bA
-fl
-aO
-rc
+zY
+aR
+fP
 aA
 Dd
 ar
@@ -14658,8 +14690,8 @@ ab
 Sy
 QL
 FQ
-aO
-rc
+aR
+fP
 bt
 Ax
 ar
@@ -14915,8 +14947,8 @@ ab
 Sy
 aP
 el
-aO
-rc
+aR
+fP
 aA
 Ax
 ar
@@ -15172,8 +15204,8 @@ ab
 Sy
 IH
 Yf
-aO
-rc
+aR
+fP
 Py
 bC
 ar
@@ -15185,11 +15217,11 @@ aw
 eE
 eS
 ar
-kJ
+aY
 fH
 fw
-Sy
-gD
+yy
+gx
 gx
 gx
 hj
@@ -15429,8 +15461,8 @@ ab
 Sy
 av
 el
-aO
-rc
+aR
+fP
 aA
 bD
 ar
@@ -15445,8 +15477,8 @@ ar
 kJ
 fH
 fw
-gq
-nG
+lU
+gx
 gx
 gx
 hO
@@ -15686,8 +15718,8 @@ ab
 Sy
 aP
 FQ
-aO
-rc
+aR
+fP
 bt
 Ax
 ar
@@ -15699,10 +15731,10 @@ eg
 eG
 eP
 ar
-fw
+lU
 fO
 gd
-Sy
+RB
 ip
 gx
 gx
@@ -15942,10 +15974,10 @@ ab
 ab
 Sy
 qJ
-fl
-aO
-rc
-bu
+vg
+aR
+fP
+aA
 Jd
 ar
 cn
@@ -15957,8 +15989,8 @@ eH
 eT
 ar
 lH
-fP
-lU
+fw
+fw
 Sy
 gH
 gS
@@ -16201,7 +16233,7 @@ Sy
 dv
 dv
 aR
-rc
+fP
 cP
 dv
 ar
