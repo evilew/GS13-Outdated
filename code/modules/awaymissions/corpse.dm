@@ -683,8 +683,9 @@
 	job_description = "Fanatical degenerate"
 	short_desc = "You are a member of a niche branch of Syndicate with... strange goals."
 	flavour_text = "After months of construction and gathering equipment, your den is finished - a monument to gluttony, equipped with every tool to turn any sharp body into a quivering mound of lard..."
-	important_info = "Keep your den in one piece and away from curious eyes! YOU AREN'T ALLOWED TO CAPTURE / FATTEN UP PEOPLE WHO DON'T DO NON-CON OR DIDN'T AGREE TO IT!!"
+	important_info = "Keep your den in one piece and away from curious eyes! YOU AREN'T ALLOWED TO CAPTURE / FATTEN UP PEOPLE WHO DON'T DO NON-CON OR DIDN'T AGREE TO IT! Despite being able to leave the outpost, you do NOT have a permission to antag or grief."
 	outfit = /datum/outfit/feeders_den/fanatic
+	faction = ROLE_SYNDICATE
 	mirrorcanloadappearance = TRUE
 	assignedrole = "Space Agent"
 	icon = 'icons/obj/machines/sleeper.dmi'
@@ -701,10 +702,13 @@
 	gloves = /obj/item/clothing/gloves/combat
 	ears = /obj/item/radio/headset/syndicate/alt
 	back = /obj/item/storage/backpack
-	r_hand = /obj/item/melee/transforming/energy/sword/saber
+	r_hand = /obj/item/flashlight
 	r_pocket = /obj/item/gun/ballistic/automatic/pistol
 	id = /obj/item/card/id/syndicate/anyone
 	implants = list(/obj/item/implant/weapons_auth)
+
+/datum/outfit/feeders_den/fanatic/post_equip(mob/living/carbon/human/H)
+	H.faction |= ROLE_SYNDICATE
 
 /datum/outfit/feeders_den/fanatic/Destroy()
 	new/obj/structure/fluff/empty_sleeper/syndicate(get_turf(src))
@@ -741,10 +745,6 @@
 /datum/outfit/feeders_den/victim/Destroy()
 	new/obj/structure/fluff/empty_sleeper/syndicate(get_turf(src))
 	..()
-
-/obj/effect/mob_spawn/human/feeders_den/victim/startfat(mob/living/carbon/human/new_spawn)
-	new_spawn.fatness = 300
-	return ..()
 
 /obj/effect/mob_spawn/human/feeders_den/victim/special(mob/living/carbon/human/new_spawn)
 	ADD_TRAIT(new_spawn,TRAIT_EXEMPT_HEALTH_EVENTS,GHOSTROLE_TRAIT)

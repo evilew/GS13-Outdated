@@ -151,7 +151,7 @@
 			desc = "It's a black ink pen, modified for use with both paper and Nanotransen-brand Digital-Readpads™!"
 		if(41 to 50)
 			name = "newspaper"
-			desc = "An issue of The Griffon, the newspaper circulating aboard Kin.Co Space Stations."
+			desc = "An issue of The Catpaw, the newspaper circulating aboard GATO stations."
 			icon = 'icons/obj/bureaucracy.dmi'
 			icon_state = "newspaper"
 		if(51 to 60)

@@ -71,7 +71,6 @@
 /datum/sprite_accessory/deco_wings/punished
 	name = "Burnt Off"
 	icon_state = "punished"
-	locked = TRUE
 
 /datum/sprite_accessory/deco_wings/firewatch
 	name = "Firewatch"
@@ -124,3 +123,8 @@
 /datum/sprite_accessory/deco_wings/none
 	name = "None"
 	icon_state = "none"
+
+//virgo port
+/datum/sprite_accessory/deco_wings/spider_legs //Not really /WINGS/ but they protrude from the back, kinda. Might as well have them here.
+	name = "Spider"
+	icon_state = "spider"

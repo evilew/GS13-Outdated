@@ -49,7 +49,7 @@
 		if(10)
 			size_name = "gargantuan"
 		if(11)
-			size_name = "gargantuan11"
+			size_name = "omegagigahyper" // might break something (old name: gargantuan11)
 		if(12)
 			size_name = "gargantuan12"
 		if(13)

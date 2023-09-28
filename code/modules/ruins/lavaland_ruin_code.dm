@@ -118,7 +118,7 @@
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper_s"
 	short_desc = "You are a syndicate agent, employed in a top secret research facility developing biological weapons plants and toys."
-	flavour_text = "Fortunately, Nanotrasen's activity in this sector of space is minimal. Continue your research as best you can, and try to keep a low profile from both Nanotrasen and GATO."
+	flavour_text = "Fortunately, GATO's activity in this sector of space is minimal. Continue your research as best you can, and try to keep a low profile from both Nanotrasen and GATO."
 	important_info = "The base is rigged with explosives, DO NOT leave the base or let it fall into enemy hands!" //Changed 'abandon it' to 'leave the base', no more loopholes please, you know who you are.
 	outfit = /datum/outfit/lavaland_syndicate
 	assignedrole = "Lavaland Syndicate"
@@ -148,7 +148,7 @@
 	name = "Syndicate Comms Agent"
 	job_description = "Off-station Syndicate Comms Agent"
 	short_desc = "You are a syndicate comms agent, employed in a top secret research facility developing biological weapons."
-	flavour_text = "Fortunately, Nanotrasen's activity in this sector of space is minimal. Monitor enemy activity as best you can, and try to keep a low profile. Use the communication equipment to provide support to any field agents, and sow disinformation to throw Nanotrasen or GATO off your trail. Do not let the base fall into enemy hands!"
+	flavour_text = "Fortunately, GATO's activity in this sector of space is minimal. Monitor enemy activity as best you can, and try to keep a low profile. Use the communication equipment to provide support to any field agents, and sow disinformation to throw Nanotrasen or GATO off your trail. Do not let the base fall into enemy hands!"
 	important_info = "The base is rigged with explosives, DO NOT leave the base or let it fall into enemy hands!" //Changed 'abandon it' to 'leave the base', no more loopholes please, you know who you are.
 	outfit = /datum/outfit/lavaland_syndicate/comms
 	mirrorcanloadappearance = TRUE

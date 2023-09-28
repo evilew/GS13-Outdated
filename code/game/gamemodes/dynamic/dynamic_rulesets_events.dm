@@ -118,7 +118,7 @@
 	//property_weights = list("story_potential" = 1, "trust" = 1, "chaos" = 1)
 	high_population_requirement = 15
 	occurances_max = 1
-	chaos_min = 3.0
+	chaos_min = 4.0
 	map_blacklist = list("LayeniaStation.dmm")
 
 /datum/dynamic_ruleset/event/pirates/ready(forced = FALSE)
@@ -143,9 +143,9 @@
 	requirements = list(101,20,15,10,10,10,10,10,10,10)
 	high_population_requirement = 15
 	//property_weights = list("chaos" = 1, "valid" = 1)
-	earliest_start = 40 MINUTES //Skyrat change.
+	earliest_start = 60 MINUTES //Skyrat change.
 	occurances_max = 2
-	chaos_min = 2.0
+	chaos_min = 2.5
 
 //////////////////////////////////////////////
 //                                          //
@@ -164,7 +164,7 @@
 	high_population_requirement = 15
 	earliest_start = 60 MINUTES
 	occurances_max = 2
-	chaos_min = 2.5
+	chaos_min = 3
 
 //////////////////////////////////////////////
 //                                          //
@@ -194,13 +194,13 @@
 		cost = 8
 		required_enemies = list(3,3,3,2,2,2,1,1,0,0)
 		typepath = /datum/round_event/vent_clog/threatening
-		chaos_min = 1.7
+		chaos_min = 2.0
 	else if(mode.threat_level > 15 && mode.threat > 15 && prob(30))
 		name = "Clogged Vents: Catastrophic"
 		cost = 15
 		required_enemies = list(4,4,4,3,3,3,2,1,1,1)
 		typepath = /datum/round_event/vent_clog/catastrophic
-		chaos_min = 2.0
+		chaos_min = 2.5
 	else
 		cost = 0
 		name = "Clogged Vents: Normal"
@@ -251,7 +251,7 @@
 	high_population_requirement = 30
 	//property_weights = list("extended" = -2)
 	occurances_max = 2
-	chaos_min = 1.5
+	chaos_min = 3.0
 	map_blacklist = list("LayeniaStation.dmm")
 
 /datum/dynamic_ruleset/event/meteor_wave/ready()
@@ -260,19 +260,19 @@
 		cost = 5
 		typepath = /datum/round_event/meteor_wave/threatening
 		requirements = list(101,101,30,25,20,20,20,20,20,15)
-		chaos_min = 1.8
+		chaos_min = 3.0
 	else if(world.time-SSticker.round_start_time > 45 MINUTES && mode.threat_level > 50 && mode.threat >= 40 && prob(30))
 		name = "Meteor Wave: Catastrophic"
 		cost = 10
 		typepath = /datum/round_event/meteor_wave/catastrophic
 		required_enemies = list(3,3,3,3,3,2,2,2,2,2)
 		requirements = list(101,101,40,30,30,30,30,30,30,30)
-		chaos_min = 2.0
+		chaos_min = 4.0
 	else
 		name = "Meteor Wave: Normal"
 		cost = 5
 		typepath = /datum/round_event/meteor_wave
-		chaos_min = 1.5
+		chaos_min = 2.8
 		required_enemies = list(2,2,2,2,1,1,1,1,0,0)
 	return ..()
 
@@ -313,8 +313,8 @@
 	high_population_requirement = 10
 	repeatable = TRUE
 	//property_weights = list("extended" = 1)
-	occurances_max = 2
-	chaos_min = 1.5
+	occurances_max = 1
+	chaos_min = 2.5
 
 /datum/dynamic_ruleset/event/anomaly_gravitational
 	name = "Anomaly: Gravitational"
@@ -345,7 +345,7 @@
 	repeatable = TRUE
 	//property_weights = list("extended" = 1)
 	occurances_max = 2
-	chaos_min = 1.8
+	chaos_min = 2.3
 
 /datum/dynamic_ruleset/event/anomaly_vortex
 	name = "Anomaly: Vortex"
@@ -376,7 +376,7 @@
 	typepath = /datum/round_event/ghost_role/operative
 	required_enemies = list(0,0,0,0,0,0,0,0,0,0)
 	weight = 0 //This is changed in nuclearbomb.dm
-	occurances_max = 3
+	occurances_max = 1
 	requirements = list(10,10,10,10,10,10,10,10,10,10) //SECURE THAT DISK
 	cost = 50
 	chaos_min = 4
@@ -414,7 +414,7 @@
 	repeatable = TRUE
 	//property_weights = list("extended" = -1, "chaos" = 1)
 	occurances_max = 1
-	chaos_min = 1.8
+	chaos_min = 2.2
 
 /datum/dynamic_ruleset/event/carp_migration
 	name = "Carp Migration"
@@ -527,7 +527,7 @@
 // 	occurances_max = 2
 // 	chaos_min = 1.0
 
-// /datum/dynamic_ruleset/event/radiation_storm
+// /datum/dynamic_ruleset/event/radiation_storm //commented out by GS13
 // 	name = "Radiation Storm"
 // 	//config_tag = "radiation_storm"
 // 	typepath = /datum/round_event/radiation_storm
@@ -555,7 +555,7 @@
 	earliest_start = 120 MINUTES
 	//property_weights = list("teamwork" = 1,"chaos" = 1, "extended" = -1)
 	occurances_max = 1
-	chaos_min = 1.5
+	chaos_min = 3.0
 
 
 /datum/dynamic_ruleset/event/wormholes
@@ -587,7 +587,7 @@
 	high_population_requirement =  5
 	//property_weights = list("extended" = -2)
 	occurances_max = 1
-	chaos_min = 1.5
+	chaos_min = 4.0
 	map_blacklist = list("LayeniaStation.dmm")
 
 /datum/dynamic_ruleset/event/sentient_disease
@@ -619,7 +619,7 @@
 	high_population_requirement = 15
 	//property_weights = list("story_potential" = -2, "extended" = -1)
 	occurances_max = 1 //Skyrat change.
-	chaos_min = 2.5
+	chaos_min = 3.0
 
 /datum/dynamic_ruleset/event/immovable_rod
 	name = "Immovable Rod"
@@ -633,7 +633,7 @@
 	occurances_max = 2
 	weight = 3
 	repeatable_weight_decrease = 2
-	chaos_min = 2.5
+	chaos_min = 3.0
 	var/atom/special_target
 	map_blacklist = list("LayeniaStation.dmm")
 
@@ -649,7 +649,7 @@
 	occurances_max = 2
 	weight = 3
 	repeatable_weight_decrease = 2
-	chaos_min = 2.0
+	chaos_min = 2.5
 	var/atom/special_target
 	map_whitelist = list("LayeniaStation.dmm")
 
@@ -686,7 +686,7 @@
 	high_population_requirement = 0
 	weight = 10
 	repeatable = TRUE
-	occurances_max = 6
+	occurances_max = 8
 
 /datum/dynamic_ruleset/event/bureaucratic_error
 	name = "Bureaucratic Error"
@@ -759,7 +759,7 @@
 	weight = 10
 	repeatable_weight_decrease = 3
 	repeatable = TRUE
-	occurances_max = 3
+	occurances_max = 2
 
 /datum/dynamic_ruleset/event/grey_tide
 	name = "Grey Tide"
@@ -767,7 +767,7 @@
 	enemy_roles = list("Chief Engineer","Station Engineer","Captain","Atmospheric Technician","AI","Cyborg")
 	required_enemies = list(3,2,2,2,2,2,1,1,1,0)
 	requirements = list(101,101,101,5,5,5,5,5,5,5)
-	high_population_requirement = 0
+	high_population_requirement = 30
 	repeatable = TRUE
 	weight = 4
 	repeatable_weight_decrease = 3
@@ -801,12 +801,12 @@
 	required_enemies = list(2,2,2,1,1,1,1,1,1,0)
 	requirements = list(101,101,10,9,8,7,5,5,5,0)
 	cost = 2
-	high_population_requirement = 0
+	high_population_requirement = 18
 	weight = 4
 	repeatable_weight_decrease = 2
 	earliest_start = 20 MINUTES
 	repeatable = TRUE
-	occurances_max = 3
+	occurances_max = 2
 
 // /datum/dynamic_ruleset/event/spontaneous_appendicitis
 // 	name = "Spontaneous Appendicitis"

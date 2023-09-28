@@ -209,8 +209,8 @@
 	spawn_type = /obj/item/clothing/mask/cigarette/dromedary
 
 /obj/item/storage/fancy/cigarettes/smokekins
-	name = "\improper smokekins packet"
-	desc = "Let the Radiance fill your lungs"
+	name = "\improper smoke-gatitos packet"
+	desc = "Strangely delicious aftertaste."
 	icon_state = "smokekins"
 	spawn_type = /obj/item/clothing/mask/cigarette/smokekins
 

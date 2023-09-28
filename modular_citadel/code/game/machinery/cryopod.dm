@@ -361,7 +361,7 @@
 		if(alert(target,"Would you like to enter cryosleep?",,"Yes","No") == "No")
 			return
 
-	var/generic_plsnoleave_message = " Please adminhelp before leaving the round, even if there are no administrators online!"
+	var/generic_plsnoleave_message = "Please make sure you aren't giving other players trouble with your abscence!"
 
 	if(target == user && world.time - target.client.cryo_warned > 5 * 600)//if we haven't warned them in the last 5 minutes
 		var/caught = FALSE
@@ -410,7 +410,7 @@
 	to_chat(target, "<span class='boldnotice'>If you ghost, log out or close your client now, your character will shortly be permanently removed from the round.</span>")
 	name = "[name] ([occupant.name])"
 	log_admin("<span class='notice'>[key_name(target)] entered a stasis pod.</span>")
-	message_admins("[key_name_admin(target)] entered a stasis pod. (<A HREF='?_src_=holder;[HrefToken()];adminplayerobservecoodjump=1;X=[x];Y=[y];Z=[z]'>JMP</a>)")
+	message_admins("[key_name_admin(target)] entered a teleporter pod. (<A HREF='?_src_=holder;[HrefToken()];adminplayerobservecoodjump=1;X=[x];Y=[y];Z=[z]'>JMP</a>)")
 	add_fingerprint(target)
 
 //Attacks/effects.
@@ -446,3 +446,39 @@
 /obj/machinery/cryopod/syndicate/close_machine(mob/user)
 	..()
 	icon_state = "sleeper_s"
+
+//GS13
+/obj/machinery/cryopod/feederden //Pod for Feeder Den - not just for syndies, but for fatsos too
+	name = "subspace cryogenic sleeper"
+	desc = "A special mobility sleeper for storing agents in a disclosed location."
+	icon = 'icons/obj/machines/sleeper.dmi'
+	icon_state = "sleeper_s-open"
+	alert_comms = FALSE
+
+/obj/machinery/cryopod/feederden/open_machine()
+	..()
+	icon_state = "sleeper_s-open"
+
+/obj/machinery/cryopod/feederden/close_machine(mob/user)
+	..()
+	icon_state = "sleeper_s"
+
+/obj/machinery/cryopod/feederden/find_control_computer()	//We don't want to store anything
+	return
+
+
+/obj/machinery/cryopod/tele //lore-friendly cryo thing
+	name = "Long-range Central Command teleporter"
+	desc = "A special mobility sleeper for storing agents in a disclosed location."
+	icon = 'icons/obj/Cryogenic2.dmi'
+	icon_state = "telepod-open"
+	on_store_message = "has teleported back to Central Command."
+	on_store_name = "Teleporter Oversight"
+
+/obj/machinery/cryopod/tele/open_machine()
+	..()
+	icon_state = "telepod-open"
+
+/obj/machinery/cryopod/tele/close_machine(mob/user)
+	..()
+	icon_state = "telepod"

@@ -21,7 +21,7 @@ GLOBAL_LIST_EMPTY(announcement_systems)
 	var/arrivalToggle = TRUE
 	var/newhead = "%PERSON, %DISP_RANK (%RANK), is the department head."
 	var/newheadToggle = TRUE
-	var/cryostorage = "%PERSON, %RANK, has been moved into cryogenic storage." // this shouldnt be changed
+	var/cryostorage = "%PERSON, %RANK, has been teleported back to Central Command." // this shouldnt be changed
 
 	var/greenlight = "Light_Green"
 	var/pinklight = "Light_Pink"

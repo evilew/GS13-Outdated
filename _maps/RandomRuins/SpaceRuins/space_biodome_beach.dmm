@@ -63,7 +63,7 @@
 "bE" = (/obj/item/reagent_containers/spray/spraytan,/turf/open/floor/plating/beach/sand,/area/ruin/powered/beach)
 "bF" = (/obj/item/toy/beach_ball,/turf/open/floor/plating/beach/sand,/area/ruin/powered/beach)
 "bG" = (/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced,/obj/item/megaphone,/turf/open/floor/wood,/area/ruin/powered/beach)
-"bH" = (/obj/structure/window/reinforced{dir = 4},/obj/effect/mob_spawn/human/beach/alive/lifeguard,/turf/open/floor/wood,/area/ruin/powered/beach)
+"bH" = (/obj/structure/window/reinforced{dir = 4},/turf/open/floor/wood,/area/ruin/powered/beach)
 "bJ" = (/obj/structure/chair/comfy/plywood,/turf/open/floor/plating/beach/sand,/area/ruin/powered/beach)
 "bK" = (/obj/item/storage/backpack/duffelbag,/turf/open/floor/plating/beach/sand,/area/ruin/powered/beach)
 "bL" = (/obj/effect/turf_decal/sand{density = 1},/obj/effect/decal/fakelattice,/turf/open/floor/pod/light{density = 1},/area/ruin/powered/beach)
@@ -165,7 +165,7 @@ aaaabWbWadarapchajajajawajaxajajajajajajayajcgQSmLbebezwaCaCcWQSbmaCaCZhbWbWaaaa
 aaaabWapararazarcefEajaCaDhYaFaEaHaIajaJaKcearQSbebeKfQSaCaCaCQSQSfrQSQSQSbWaaaa
 aabWbWarararararaAaKajaCaCaCaCaCaCaMajaNaKaAapQSQSQSQSQSaCaCaCQSaAaAaAaAmHbWbWaa
 aabWaparaOaraOaraAgSajItaQaPaRajaCaSajaTaKaAapQSpUacqTQSaCaCaCQSxUararaqaAapbWaa
-aabWcgararaVararaAaKOlaWaWaWaWDlaCaXajaYaKaAarQSmLbebezwaCaCaGQSaAbEaZaVaAchbWaa
+aabWcgararaVararaAaKOlaWaWaWaWDlaCaXajaYaKaAarQSmLbebezwaCaCaGQSaAbEaZaraAchbWaa
 lFbWararbbarbbaraAaKaKaKoKaKaKbcRObdajSXaKaAarQSbebeKfQSaCaCAIQSaAararoDaAapbWXr
 aabWararararararaAaKaKGasOsygSajbgajajCPaKaAaUQSQSQSQSQSaCaCuHQSaAararaAaAarbWaa
 bWbWbWbWDparararaAaKaKaKblaKaKcjaBaBcjaKaKaAarQSpUacqTQSaCaCtKQSaAbzarWRbWbWbWbW

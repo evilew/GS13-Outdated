@@ -46,7 +46,7 @@
 
 
 //Creambeast - basically a bit tougher mob that has feeding ranged attacks
-/mob/living/simple_animal/hostile/feed/creambeast
+/mob/living/simple_animal/hostile/feed/chocolate_slime/creambeast
 	name = "Creambeast"
 	desc = "A strange mass of thick, creamy ice cream given some sense of instinct."
 	icon = 'GainStation13/icons/mob/candymonster.dmi'
@@ -101,9 +101,3 @@
 			if(!L.is_mouth_covered(head_only = 1))
 				L.reagents.add_reagent(food_fed, food_per_feeding)
 				L.fullness += (fullness_add)
-
-
-/mob/living/simple_animal/hostile/feed/creambeast/GiveTarget(new_target)
-	if(..()) //we have a target
-		if(isliving(target) && !target.Adjacent(targets_from) && ranged_cooldown <= world.time)
-			OpenFire(target)

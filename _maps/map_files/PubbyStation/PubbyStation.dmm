@@ -10913,10 +10913,8 @@
 /obj/machinery/computer/cryopod{
 	pixel_y = 30
 	},
-/obj/machinery/cryopod{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
+/obj/machinery/cryopod/tele,
+/turf/open/floor/plasteel/dark,
 /area/crew_quarters/dorms)
 "avm" = (
 /turf/open/floor/plasteel,
@@ -11977,6 +11975,10 @@
 "axu" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 10
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/dorms)
@@ -14675,15 +14677,14 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 10
 	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
 /turf/open/floor/plasteel/white/side,
 /area/crew_quarters/dorms)
 "aDk" = (
-/obj/machinery/cryopod{
-	dir = 8
-	},
-/turf/open/floor/plasteel/white/corner{
-	dir = 8
-	},
+/obj/machinery/cryopod/tele,
+/turf/open/floor/plasteel/dark,
 /area/crew_quarters/dorms)
 "aDl" = (
 /obj/structure/cable{
@@ -57896,10 +57897,8 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/cryopod{
-	dir = 8
-	},
-/turf/open/floor/plasteel,
+/obj/machinery/cryopod/tele,
+/turf/open/floor/plasteel/dark,
 /area/crew_quarters/dorms)
 "fIN" = (
 /obj/effect/turf_decal/stripes/line{
@@ -62346,6 +62345,16 @@
 /obj/machinery/iv_drip,
 /turf/open/floor/plating,
 /area/maintenance/department/science)
+"qqw" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/turf/open/floor/plasteel,
+/area/crew_quarters/dorms)
 "qtA" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 4
@@ -62970,8 +62979,9 @@
 /turf/open/floor/wood,
 /area/maintenance/department/engine)
 "rTZ" = (
-/obj/machinery/cryopod{
-	dir = 8
+/obj/effect/turf_decal/tile/purple,
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/dorms)
@@ -105365,13 +105375,13 @@ aaa
 asj
 atl
 aum
-avk
-awv
+rTZ
+qqw
 axu
 ays
 azA
-avk
-avk
+rTZ
+rTZ
 aDj
 aEe
 aFa
@@ -105624,11 +105634,11 @@ apX
 apX
 avl
 fIu
-rTZ
+aDk
 aIh
 azA
-rTZ
-rTZ
+aDk
+aDk
 aDk
 aEd
 aFb

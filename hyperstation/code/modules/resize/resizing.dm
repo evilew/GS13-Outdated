@@ -98,8 +98,8 @@ mob/living/get_effective_size()
 
 			//Smaller person being stepped on
 			if(get_effective_size() > tmob.get_effective_size() && iscarbon(src))
-				// GS13: Import Fat Naga from VoreStation
-				if(istype(H) && H.dna.features["taur"] == "Naga" || H.dna.features["taur"] == "Tentacle" || H.dna.features["taur"] == "Fat Naga")
+				// GS13: Import Fat Naga & Alt Naga from VoreStation
+				if(istype(H) && H.dna.features["taur"] == "Naga" || H.dna.features["taur"] == "Tentacle" || H.dna.features["taur"] == "Fat Naga" || H.dna.features["taur"] == "Alt Naga")
 					tmob.visible_message("<span class='notice'>[src] carefully slithers around [tmob].</span>", "<span class='notice'>[src]'s huge tail slithers besides you.</span>")
 				else
 					tmob.visible_message("<span class='notice'>[src] carefully steps over [tmob].</span>", "<span class='notice'>[src] steps over you carefully.</span>")
@@ -142,7 +142,7 @@ mob/living/get_effective_size()
 				H.add_movespeed_modifier(MOVESPEED_ID_STOMP, multiplicative_slowdown = 10) //Full stop
 				addtimer(CALLBACK(H, /mob/.proc/remove_movespeed_modifier, MOVESPEED_ID_STOMP), 3) //0.3 seconds
 				if(get_effective_size() > tmob.get_effective_size() && iscarbon(H))
-					if(istype(H) && H.dna.features["taur"] == "Naga" || H.dna.features["taur"] == "Tentacle" || H.dna.features["taur"] == "Fat Naga")
+					if(istype(H) && H.dna.features["taur"] == "Naga" || H.dna.features["taur"] == "Tentacle" || H.dna.features["taur"] == "Fat Naga" || H.dna.features["taur"] == "Alt Naga")
 						tmob.visible_message("<span class='danger'>[src] carefully rolls their tail over [tmob]!</span>", "<span class='danger'>[src]'s huge tail rolls over you!</span>")
 					else
 						tmob.visible_message("<span class='danger'>[src] carefully steps on [tmob]!</span>", "<span class='danger'>[src] steps onto you with force!</span>")
@@ -171,7 +171,7 @@ mob/living/get_effective_size()
 				addtimer(CALLBACK(H, /mob/.proc/remove_movespeed_modifier, MOVESPEED_ID_STOMP), 10) //1 second
 				//H.Stun(20)
 				if(get_effective_size() > tmob.get_effective_size() && iscarbon(H))
-					if(istype(H) && H.dna.features["taur"] == "Naga" || H.dna.features["taur"] == "Tentacle" || H.dna.features["taur"] == "Fat Naga")
+					if(istype(H) && H.dna.features["taur"] == "Naga" || H.dna.features["taur"] == "Tentacle" || H.dna.features["taur"] == "Fat Naga" || H.dna.features["taur"] == "Alt Naga")
 						tmob.visible_message("<span class='danger'>[src] mows down [tmob] under their tail!</span>", "<span class='userdanger'>[src] plows their tail over you mercilessly!</span>")
 					else
 						tmob.visible_message("<span class='danger'>[src] slams their foot down on [tmob], crushing them!</span>", "<span class='userdanger'>[src] crushes you under their foot!</span>")
@@ -200,13 +200,13 @@ mob/living/get_effective_size()
 				if(get_effective_size() > tmob.get_effective_size() && iscarbon(H))
 					var/feetCover = (H.wear_suit && (H.wear_suit.body_parts_covered & FEET)) || (H.w_uniform && (H.w_uniform.body_parts_covered & FEET) || (H.shoes && (H.shoes.body_parts_covered & FEET)))
 					if(feetCover)
-						if(istype(H) && H.dna.features["taur"] == "Naga" || H.dna.features["taur"] == "Tentacle" || H.dna.features["taur"] == "Fat Naga")
+						if(istype(H) && H.dna.features["taur"] == "Naga" || H.dna.features["taur"] == "Tentacle" || H.dna.features["taur"] == "Fat Naga" || H.dna.features["taur"] == "Alt Naga")
 							tmob.visible_message("<span class='danger'>[src] pins [tmob] under their tail!</span>", "<span class='danger'>[src] pins you beneath their tail!</span>")
 						else
 							tmob.visible_message("<span class='danger'>[src] pins [tmob] helplessly underfoot!</span>", "<span class='danger'>[src] pins you underfoot!</span>")
 						return 1
 					else
-						if(istype(H) && H.dna.features["taur"] == "Naga" || H.dna.features["taur"] == "Tentacle" || H.dna.features["taur"] == "Fat Naga")
+						if(istype(H) && H.dna.features["taur"] == "Naga" || H.dna.features["taur"] == "Tentacle" || H.dna.features["taur"] == "Fat Naga" || H.dna.features["taur"] == "Alt Naga")
 							tmob.visible_message("<span class='danger'>[src] snatches up [tmob] underneath their tail!</span>", "<span class='userdanger'>[src]'s tail winds around you and snatches you in its coils!</span>")
 							//tmob.mob_pickup_micro_feet(H)
 							SEND_SIGNAL(tmob, COMSIG_MICRO_PICKUP_FEET, H)
