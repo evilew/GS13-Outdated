@@ -42931,17 +42931,20 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "bsa" = (
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
 /obj/machinery/firealarm{
 	dir = 4;
 	pixel_x = -26
 	},
-/obj/machinery/vr_sleeper,
-/obj/effect/turf_decal/box/white,
-/turf/open/floor/plasteel/dark,
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/structure/table/wood,
+/obj/item/flashlight/lamp/green{
+	pixel_x = 1;
+	pixel_y = 5
+	},
+/turf/open/floor/wood,
 /area/crew_quarters/locker)
 "bsb" = (
 /obj/effect/landmark/event_spawn,
@@ -47291,7 +47294,16 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/open/floor/plasteel/showroomfloor,
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
 /area/crew_quarters/locker)
 "bzz" = (
 /obj/structure/table/wood,
@@ -53034,25 +53046,23 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "bIX" = (
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
 	},
-/obj/machinery/vr_sleeper,
-/obj/effect/turf_decal/box/white,
-/turf/open/floor/plasteel/dark,
+/obj/structure/chair/sofa/right,
+/turf/open/floor/wood,
 /area/crew_quarters/locker)
 "bIY" = (
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/machinery/vr_sleeper,
-/obj/effect/turf_decal/box/white,
-/turf/open/floor/plasteel/dark,
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/structure/chair/sofa,
+/turf/open/floor/wood,
 /area/crew_quarters/locker)
 "bIZ" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -53780,7 +53790,15 @@
 /turf/open/floor/plasteel/dark,
 /area/security/courtroom)
 "bKj" = (
-/turf/open/floor/plasteel/showroomfloor,
+/obj/machinery/cryopod/tele,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
 /area/crew_quarters/locker)
 "bKk" = (
 /obj/machinery/button/door{
@@ -64678,10 +64696,15 @@
 /obj/machinery/airalarm{
 	pixel_y = 22
 	},
-/obj/machinery/cryopod{
-	dir = 8
+/obj/machinery/cryopod/tele,
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
 	},
-/turf/open/floor/plasteel/showroomfloor,
+/obj/effect/turf_decal/tile/purple{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/plasteel/dark,
 /area/crew_quarters/locker)
 "cbs" = (
 /obj/effect/turf_decal/tile/red{
@@ -77223,18 +77246,19 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
-"cxv" = (
-/obj/machinery/cryopod{
-	dir = 8
-	},
-/turf/open/floor/plasteel/showroomfloor,
-/area/crew_quarters/locker)
 "cxw" = (
 /obj/machinery/computer/cryopod{
 	dir = 1;
 	pixel_y = -26
 	},
-/turf/open/floor/plasteel/showroomfloor,
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/plasteel/dark,
 /area/crew_quarters/locker)
 "cxy" = (
 /obj/structure/girder,
@@ -83734,13 +83758,12 @@
 /turf/open/floor/wood,
 /area/maintenance/port/fore)
 "gxY" = (
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
 	},
-/obj/effect/turf_decal/tile/neutral,
-/obj/machinery/vr_sleeper,
-/obj/effect/turf_decal/box/white,
-/turf/open/floor/plasteel/dark,
+/obj/structure/chair/sofa/left,
+/turf/open/floor/wood,
 /area/crew_quarters/locker)
 "gCn" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -85348,6 +85371,14 @@
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
 /turf/open/floor/wood,
 /area/maintenance/port/fore)
+"sDr" = (
+/obj/machinery/cryopod/tele,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/locker)
 "sDw" = (
 /obj/structure/sign/warning,
 /turf/closed/wall/rust,
@@ -85961,6 +85992,15 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/prison)
+"xtz" = (
+/obj/effect/turf_decal/tile/purple{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/purple{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/locker)
 "xwB" = (
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
@@ -108861,7 +108901,7 @@ bwa
 bxS
 arj
 bzy
-bKj
+xtz
 cxw
 bIV
 ajd
@@ -109118,8 +109158,8 @@ bJk
 cec
 bIV
 cbr
-cxv
-cxv
+sDr
+bKj
 bIV
 afB
 cou

@@ -1,6 +1,6 @@
 /obj/machinery/iv_drip/feeding_tube
 	name = "\improper Feeding tube"
-	desc = "something something test."
+	desc = "Originally meant to automatically feed cattle and farm animals, this model was repurposed for more... personal usage."
 	icon = 'icons/obj/feeding_tube.dmi'
 	icon_state = "feeding_tube"
 	var/static/list/food_containers = typecacheof(list(/obj/item/reagent_containers/food,

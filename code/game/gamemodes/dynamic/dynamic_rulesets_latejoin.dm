@@ -59,10 +59,10 @@
 	weight = 7
 	cost = 5
 	requirements = list(40,30,20,10,10,10,10,10,10,10)
-	high_population_requirement = 10
+	high_population_requirement = 30
 	repeatable = TRUE
 	flags = TRAITOR_RULESET
-	chaos_min = 3.0
+	chaos_min = 4.0
 
 //////////////////////////////////////////////
 //                                          //
