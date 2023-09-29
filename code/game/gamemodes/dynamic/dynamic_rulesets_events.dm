@@ -511,6 +511,7 @@
 	high_population_requirement = 5
 	repeatable = TRUE
 	occurances_max = 10
+	map_blacklist = list("KiloStation.dmm")
 
 // /datum/dynamic_ruleset/event/heart_attack
 // 	name = "Random Heart Attack"
