@@ -43,7 +43,10 @@
 	blood_volume = 0
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE
 	initial_language_holder = /datum/language_holder/slime
-
+	// You are not immune to vore.
+	devourable = 1
+	digestable = 1
+	feeding = 1
 
 //Creambeast - basically a bit tougher mob that has feeding ranged attacks
 /mob/living/simple_animal/hostile/feed/chocolate_slime/creambeast

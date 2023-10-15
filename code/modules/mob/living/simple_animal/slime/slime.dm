@@ -35,6 +35,11 @@
 	verb_exclaim = "loudly blorbles"
 	verb_yell = "loudly blorbles"
 
+	// GS13 modification to make the funy jelly edible
+	devourable = 1
+	digestable = 1
+	feeding = 1
+
 	// canstun and canknockdown don't affect slimes because they ignore stun and knockdown variables
 	// for the sake of cleanliness, though, here they are.
 	status_flags = CANUNCONSCIOUS|CANPUSH
