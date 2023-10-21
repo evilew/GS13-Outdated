@@ -115,7 +115,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	var/smoketime = 300
 	var/chem_volume = 30
 	var/list/list_reagents = list(/datum/reagent/drug/nicotine = 15)
-	heat = 1000
+	heat = 1
 
 /obj/item/clothing/mask/cigarette/suicide_act(mob/user)
 	user.visible_message("<span class='suicide'>[user] is huffing [src] as quickly as [user.p_they()] can! It looks like [user.p_theyre()] trying to give [user.p_them()]self cancer.</span>")
