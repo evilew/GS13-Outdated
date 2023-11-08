@@ -17,12 +17,12 @@
 	if(.)
 		return
 	if(curse_given == 1)
-		to_chat(user, "<span class='notice'>The fountain seems to deject your hand.</span>")
+		to_chat(user, "<span class='notice'>The fountain has dried up.</span>")
 		icon_state = "empty"
 		return
 	if (ishuman(user) && user.has_dna())
 		user.cursed_fat = 1
-		user.fattening_steps_left = 40
+		user.fattening_steps_left = 100
 		icon_state = "empty"
 		to_chat(user, "<span class='notice'>The glittering orange liquid disappears instantly as you touch it. You feel a strange, warm sensation inside, growing stronger the more you move...</span>")
 		curse_given = 1
@@ -37,7 +37,7 @@
 	. = ..()
 	if(cursed_fat == 1)
 		fattening_steps_left -= 1
-		adjust_fatness(50, FATTENING_TYPE_MAGIC)
+		adjust_fatness(20, FATTENING_TYPE_MAGIC)
 
 	if(fattening_steps_left <= 0)
 		cursed_fat = 0

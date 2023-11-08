@@ -257,3 +257,11 @@
 	suffix = "lavaland_surface_snack_store.dmm"
 	allow_duplicates = FALSE
 	cost = 0
+
+/datum/map_template/ruin/lavaland/calorite_altar //GS13
+	name = "Calorite Altar"
+	id = "caloritealtar"
+	description = "A mysterious fountain stands dormant amidst a small calorite shrine... What could it possibly offer?"
+	suffix = "lavaland_surface_caloritealtar.dmm"
+	allow_duplicates = TRUE
+	cost = 0

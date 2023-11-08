@@ -1,0 +1,61 @@
+"a" = (/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors)
+"c" = (/obj/effect/turf_decal/tile/yellow{dir = 1},/obj/effect/turf_decal/tile/yellow{dir = 4},/turf/open/floor/plasteel/cult,/area/ruin/powered/gluttony)
+"d" = (/obj/structure/cursedfatfountain,/turf/open/floor/mineral/calorite/dance,/area/ruin/powered/gluttony)
+"i" = (/obj/effect/turf_decal/tile/yellow{dir = 1},/obj/effect/turf_decal/tile/brown,/turf/open/floor/plasteel/cult,/area/ruin/powered/gluttony)
+"j" = (/obj/effect/turf_decal/tile/yellow{dir = 1},/obj/effect/turf_decal/tile/yellow{dir = 8},/obj/machinery/light{dir = 4; color = "#ffa500"},/turf/open/floor/plasteel/cult,/area/ruin/powered/gluttony)
+"k" = (/obj/effect/turf_decal/tile/yellow{dir = 1},/turf/open/floor/plasteel/cult,/area/ruin/powered/gluttony)
+"l" = (/obj/effect/turf_decal/tile/brown{dir = 8},/obj/effect/turf_decal/tile/yellow{dir = 1},/obj/structure/railing{color = FFA500; dir = 8},/turf/open/floor/plasteel/cult,/area/ruin/powered/gluttony)
+"o" = (/obj/effect/turf_decal/tile/yellow{dir = 8},/obj/effect/turf_decal/tile/yellow,/obj/structure/railing{color = FFA500},/turf/open/floor/plasteel/cult,/area/ruin/powered/gluttony)
+"r" = (/obj/effect/turf_decal/tile/brown,/obj/effect/turf_decal/tile/yellow{dir = 1},/turf/open/floor/plasteel/cult,/area/ruin/powered/gluttony)
+"s" = (/obj/effect/turf_decal/tile/brown{dir = 4},/turf/open/floor/plasteel/cult,/area/ruin/powered/gluttony)
+"v" = (/obj/effect/turf_decal/tile/brown,/obj/effect/turf_decal/tile/brown{dir = 8},/obj/effect/turf_decal/tile/yellow{dir = 1},/obj/effect/turf_decal/tile/yellow{dir = 4},/turf/open/floor/plasteel,/area/ruin/powered/gluttony)
+"w" = (/turf/open/floor/plasteel/cult,/area/ruin/powered/gluttony)
+"y" = (/turf/closed/mineral/volcanic/lava_land_surface,/area/lavaland/surface/outdoors)
+"z" = (/obj/effect/turf_decal/tile/yellow{dir = 4},/turf/open/floor/plasteel/cult,/area/ruin/powered/gluttony)
+"B" = (/obj/effect/turf_decal/tile/brown{dir = 8},/obj/effect/turf_decal/tile/brown{dir = 4},/obj/effect/turf_decal/tile/yellow,/turf/open/floor/plasteel/cult,/area/ruin/powered/gluttony)
+"D" = (/obj/machinery/light/small{dir = 1; pixel_x = 16},/turf/open/floor/plasteel/cult,/area/ruin/powered/gluttony)
+"F" = (/obj/effect/turf_decal/tile/brown,/obj/effect/turf_decal/tile/brown{dir = 1},/obj/effect/turf_decal/tile/yellow{dir = 8},/turf/open/floor/plasteel/cult,/area/ruin/powered/gluttony)
+"G" = (/obj/structure/statue/calorite/fatty,/obj/machinery/light{dir = 4; color = "#ffa500"},/turf/open/floor/mineral/calorite/dance,/area/ruin/powered/gluttony)
+"H" = (/obj/effect/turf_decal/tile/brown,/obj/effect/turf_decal/tile/brown{dir = 8},/obj/effect/turf_decal/tile/yellow{dir = 1},/obj/effect/turf_decal/tile/yellow{dir = 4},/obj/structure/mineral_door/calorite,/obj/structure/fans/tiny/invisible,/turf/open/floor/mineral/calorite/hide,/area/ruin/powered/gluttony)
+"I" = (/turf/open/floor/mineral/calorite/dance,/area/ruin/powered/gluttony)
+"J" = (/obj/effect/turf_decal/tile/yellow{dir = 8},/obj/effect/turf_decal/tile/brown{dir = 4},/turf/open/floor/plasteel/cult,/area/ruin/powered/gluttony)
+"K" = (/turf/closed/wall/mineral/calorite,/area/ruin/powered/gluttony)
+"M" = (/obj/structure/statue/calorite/fatty,/obj/machinery/light{dir = 8; color = "#ffa500"},/turf/open/floor/mineral/calorite/dance,/area/ruin/powered/gluttony)
+"N" = (/obj/effect/turf_decal/tile/brown{dir = 1},/turf/open/floor/plasteel/cult,/area/ruin/powered/gluttony)
+"O" = (/obj/effect/turf_decal/tile/brown,/obj/effect/turf_decal/tile/brown{dir = 8},/obj/effect/turf_decal/tile/yellow{dir = 1},/obj/effect/turf_decal/tile/yellow{dir = 4},/turf/open/floor/mineral/calorite/hide,/area/ruin/powered/gluttony)
+"P" = (/turf/open/lava/smooth/lava_land_surface,/area/ruin/powered/gluttony)
+"R" = (/obj/effect/turf_decal/tile/brown,/obj/effect/turf_decal/tile/yellow{dir = 4},/obj/structure/railing{color = FFA500; dir = 4},/turf/open/floor/plasteel/cult,/area/ruin/powered/gluttony)
+"T" = (/obj/effect/turf_decal/tile/brown{dir = 4},/obj/effect/turf_decal/tile/yellow{dir = 8},/turf/open/floor/plasteel/cult,/area/ruin/powered/gluttony)
+"U" = (/obj/effect/turf_decal/tile/brown{dir = 1},/obj/effect/turf_decal/tile/brown{dir = 4},/obj/structure/railing{color = FFA500; dir = 1},/turf/open/floor/plasteel/cult,/area/ruin/powered/gluttony)
+"V" = (/obj/effect/turf_decal/tile/brown,/obj/effect/turf_decal/tile/brown{dir = 8},/obj/effect/turf_decal/tile/yellow{dir = 1},/obj/effect/turf_decal/tile/yellow{dir = 4},/obj/structure/mineral_door/calorite,/turf/open/floor/mineral/calorite/hide,/area/ruin/powered/gluttony)
+"W" = (/obj/effect/turf_decal/tile/yellow,/obj/effect/turf_decal/tile/brown{dir = 1},/turf/open/floor/plasteel/cult,/area/ruin/powered/gluttony)
+"X" = (/obj/effect/turf_decal/tile/brown,/obj/effect/turf_decal/tile/brown{dir = 4},/obj/machinery/light{dir = 8; color = "#ffa500"},/turf/open/floor/plasteel/cult,/area/ruin/powered/gluttony)
+"Y" = (/obj/effect/turf_decal/tile/brown,/obj/effect/turf_decal/tile/brown{dir = 8},/turf/open/floor/plasteel/cult,/area/ruin/powered/gluttony)
+
+(1,1,1) = {"
+yyyyyyyyyyyyy
+yyyyyyyyyyyyy
+yyyyyyyyyyyyy
+yyyPPPPPPPyyy
+yyyPKKKKKPyyy
+yyyPKrYJKPyyy
+yyyPKXdjKPyyy
+yyyPKTciKPyyy
+yyyPKKVKKPyyy
+yyyPPKOKPPyyy
+yyyyKKOKKyyyy
+yyyKKIOIKKyyy
+yyyKoJvWoKyyy
+yyyKMlvRGKyyy
+yyyKUNvsUKyyy
+yyyKKNvsKKyyy
+ayyyKkvzKyyyy
+ayyyKFOBKyyyy
+ayayKIOIKyyyy
+aaayKKHKKyyya
+aaaaDwwDwyyya
+aaaaKwwwKyyaa
+ayyaaaaayyyaa
+ayyyaaaaaaaaa
+aaaaaaaaaaaay
+"}
