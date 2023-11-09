@@ -6,7 +6,7 @@
 #define PIZZA_DELIVERY 6
 #define ITS_HIP_TO 7
 #define MY_GOD_JC 8
-#define DELTA_CRATES 9
+#define SNACK_ATTACK 9 //GS13 - slime shuttle loan
 
 /datum/round_event_control/shuttle_loan
 	name = "Shuttle Loan"
@@ -24,7 +24,7 @@
 	var/thanks_msg = "The cargo shuttle should return in five minutes. Have some supply points for your trouble."
 
 /datum/round_event/shuttle_loan/setup()
-	dispatch_type = pick(HIJACK_SYNDIE, RUSKY_PARTY, SPIDER_GIFT, DEPARTMENT_RESUPPLY, ANTIDOTE_NEEDED, PIZZA_DELIVERY, ITS_HIP_TO, MY_GOD_JC)
+	dispatch_type = pick(HIJACK_SYNDIE, RUSKY_PARTY, SPIDER_GIFT, DEPARTMENT_RESUPPLY, ANTIDOTE_NEEDED, PIZZA_DELIVERY, ITS_HIP_TO, MY_GOD_JC, SNACK_ATTACK)
 
 /datum/round_event/shuttle_loan/announce(fake)
 	SSshuttle.shuttle_loan = src
@@ -57,10 +57,9 @@
 			message = "Cargo: We have discovered an active Syndicate bomb near our VIP shuttle's fuel lines. If you feel up to the task, we will pay you for defusing it."
 			title = "CentCom Security Division"
 			bonus_points = 45000 //If you mess up, people die and the shuttle gets turned into swiss cheese
-		if(DELTA_CRATES)
-			message = "Cargo: We have discovered a warehouse of DELTA locked crates, we cant store any more of them at CC can you take them for us?."
-			title = "CentCom Security Division"
-			bonus_points = 25000 //If you mess up, people die and the shuttle gets turned into swiss cheese
+		if(SNACK_ATTACK) //GS13 - basically just spawns some slimes and feeder mobs
+			message = "Cargo: Our science division took couple too many samples from one the local candy biohabitats. Would you care to dispose of the unneeded specimen?"
+			title = "CentCom Science Division"
 	if(prob(50))
 		priority_announce(message, title)
 	else
@@ -94,8 +93,8 @@
 			SSshuttle.centcom_message += "Biohazard cleanup incoming."
 		if(MY_GOD_JC)
 			SSshuttle.centcom_message += "Live explosive ordnance incoming. Exercise extreme caution."
-		if(DELTA_CRATES)
-			SSshuttle.centcom_message += "DELTA Locked crates incoming. Exercise extreme caution."
+		if(SNACK_ATTACK)
+			SSshuttle.centcom_message += "Snack attack en route."
 
 /datum/round_event/shuttle_loan/tick()
 	if(dispatched)
@@ -240,14 +239,19 @@
 				else
 					shuttle_spawns.Add(/obj/item/paper/fluff/cargo/bomb/allyourbase)
 
-			if(DELTA_CRATES) //Delta crates can stack on eacher, and are basicly a 1/3/5 bombs
-				for(var/i in 1 to 7) //7 seems fair
-					shuttle_spawns.Add(/obj/structure/closet/crate/secure/loot)
+			if(SNACK_ATTACK) //GS13
+				shuttle_spawns.Add(/mob/living/simple_animal/hostile/feed/chocolate_slime)
+				shuttle_spawns.Add(/mob/living/simple_animal/hostile/feed/chocolate_slime)
+				shuttle_spawns.Add(/mob/living/simple_animal/hostile/feed/chocolate_slime/creambeast)
+				if(prob(50))
+					shuttle_spawns.Add(/mob/living/simple_animal/hostile/feed/chocolate_slime/creambeast)
 
-				for(var/i in 1 to 5)
-					var/turf/T = pick_n_take(empty_shuttle_turfs)
-					new /obj/structure/spider/stickyweb(T)
-					new /obj/effect/decal/cleanable/ash(T)
+				shuttle_spawns.Add(/obj/item/reagent_containers/food/snacks/donut/choco)
+				shuttle_spawns.Add(/obj/item/reagent_containers/food/snacks/donut/choco)
+				shuttle_spawns.Add(/obj/item/reagent_containers/food/snacks/donut/choco)
+				shuttle_spawns.Add(/obj/item/reagent_containers/food/snacks/chocoorange)
+				shuttle_spawns.Add(/obj/item/reagent_containers/food/snacks/chocoorange)
+				shuttle_spawns.Add(/obj/item/paper/fluff/chocoslime_research)
 
 		var/false_positive = 0
 		while(shuttle_spawns.len && empty_shuttle_turfs.len)
@@ -259,7 +263,9 @@
 			var/spawn_type = pick_n_take(shuttle_spawns)
 			new spawn_type(T)
 
-//items that appear only in shuttle loan events
+/obj/item/paper/fluff/chocoslime_research
+	name = "Stained Research Papers"
+	info = "<b>AUDIO LOG OF CHOCOLATE SLIME REPORT NO.3</b>. Despite possessing no obvious combat capabilities, the chocolate slime can feed itself to its victim, possibly rupturing its st-- mmhfph- grhm... ...(AUDIO LOG END)."
 
 /obj/item/storage/belt/fannypack/yellow/bee_terrorist/PopulateContents()
 	new /obj/item/grenade/plastic/c4 (src)
@@ -292,4 +298,4 @@
 #undef PIZZA_DELIVERY
 #undef ITS_HIP_TO
 #undef MY_GOD_JC
-#undef DELTA_CRATES
+#undef SNACK_ATTACK

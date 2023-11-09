@@ -17,7 +17,7 @@
 	alt_titles = list("Civilian", "Morale Officer", "Stripper", "Off-Duty", "Escort", "Visitor", "Businessman", "Trader", "Entertainer", "Tourist")
 
 /datum/job/cook
-	alt_titles = list("Cook", "Culinary Artist", "Butcher", "Chef de partie", "Poissonier")
+	alt_titles = list("Cook", "Culinary Artist", "Butcher", "Chef de partie", "Poissonier", "Baker")
 
 /datum/job/hydro
 	alt_titles = list("Gardener", "Herbalist", "Botanical Researcher", "Hydroponicist", "Farmer", "Beekeeper", "Vintner")
@@ -29,7 +29,7 @@
 	alt_titles = list("Priest", "Priestess", "Bishop", "Prior", "Monk", "Nun", "Counselor")
 
 /datum/job/janitor
-	alt_titles = list("Custodian", "Sanitation Technician", "Maid")
+	alt_titles = list("Custodian", "Sanitation Technician", "Maid", "Trash Can", "Disposal Unit")
 
 /datum/job/lawyer
 	alt_titles = list("Human Resources Agent", "Internal Affairs Agent", "Attorney")
