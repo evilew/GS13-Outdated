@@ -7,7 +7,12 @@
 								'GainStation13/sound/voice/belch3.ogg',
 								'GainStation13/sound/voice/belch4.ogg',
 								'GainStation13/sound/voice/belch5.ogg',
-								'GainStation13/sound/voice/belch6.ogg')
+								'GainStation13/sound/voice/belch6.ogg',
+								'GainStation13/sound/voice/belch7.ogg',
+								'GainStation13/sound/voice/belch8.ogg',
+								'GainStation13/sound/voice/belch9.ogg',
+								'GainStation13/sound/voice/belch10.ogg',
+								'GainStation13/sound/voice/belch11.ogg')
 			if("brap")
 				soundin = pick(	'GainStation13/sound/voice/brap1.ogg',
 								'GainStation13/sound/voice/brap2.ogg',
@@ -28,5 +33,6 @@
 								'GainStation13/sound/voice/fart4.ogg')
 			if("gurgle")
 				soundin = pick(	'GainStation13/sound/voice/gurgle1.ogg',
-								'GainStation13/sound/voice/gurgle2.ogg')
+								'GainStation13/sound/voice/gurgle2.ogg',
+								'GainStation13/sound/voice/gurgle3.ogg')
 	return soundin
