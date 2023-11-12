@@ -190,31 +190,31 @@ mob/living/get_effective_size()
 
 					return 1
 
-			if(H.a_intent == "grab" && H.canmove && !H.buckled)
-				now_pushing = 0
-				H.forceMove(tmob.loc)
-				sizediffStamLoss(tmob)
-				sizediffStun(tmob)
-				H.add_movespeed_modifier(MOVESPEED_ID_STOMP, multiplicative_slowdown = 10)
-				addtimer(CALLBACK(H, /mob/.proc/remove_movespeed_modifier, MOVESPEED_ID_STOMP), 7)//About 3/4th a second
-				if(get_effective_size() > tmob.get_effective_size() && iscarbon(H))
-					var/feetCover = (H.wear_suit && (H.wear_suit.body_parts_covered & FEET)) || (H.w_uniform && (H.w_uniform.body_parts_covered & FEET) || (H.shoes && (H.shoes.body_parts_covered & FEET)))
-					if(feetCover)
-						if(istype(H) && H.dna.features["taur"] == "Naga" || H.dna.features["taur"] == "Tentacle" || H.dna.features["taur"] == "Fat Naga" || H.dna.features["taur"] == "Alt Naga")
-							tmob.visible_message("<span class='danger'>[src] pins [tmob] under their tail!</span>", "<span class='danger'>[src] pins you beneath their tail!</span>")
-						else
-							tmob.visible_message("<span class='danger'>[src] pins [tmob] helplessly underfoot!</span>", "<span class='danger'>[src] pins you underfoot!</span>")
-						return 1
-					else
-						if(istype(H) && H.dna.features["taur"] == "Naga" || H.dna.features["taur"] == "Tentacle" || H.dna.features["taur"] == "Fat Naga" || H.dna.features["taur"] == "Alt Naga")
-							tmob.visible_message("<span class='danger'>[src] snatches up [tmob] underneath their tail!</span>", "<span class='userdanger'>[src]'s tail winds around you and snatches you in its coils!</span>")
-							//tmob.mob_pickup_micro_feet(H)
-							SEND_SIGNAL(tmob, COMSIG_MICRO_PICKUP_FEET, H)
-						else
-							tmob.visible_message("<span class='danger'>[src] stomps down on [tmob], curling their toes and picking them up!</span>", "<span class='userdanger'>[src]'s toes pin you down and curl around you, picking you up!</span>")
-							//tmob.mob_pickup_micro_feet(H)
-							SEND_SIGNAL(tmob, COMSIG_MICRO_PICKUP_FEET, H)
-						return 1
+			// if(H.a_intent == "grab" && H.canmove && !H.buckled)
+			// 	now_pushing = 0
+			// 	H.forceMove(tmob.loc)
+			// 	sizediffStamLoss(tmob)
+			// 	sizediffStun(tmob)
+			// 	H.add_movespeed_modifier(MOVESPEED_ID_STOMP, multiplicative_slowdown = 10)
+			// 	addtimer(CALLBACK(H, /mob/.proc/remove_movespeed_modifier, MOVESPEED_ID_STOMP), 7)//About 3/4th a second
+			// 	if(get_effective_size() > tmob.get_effective_size() && iscarbon(H))
+			// 		var/feetCover = (H.wear_suit && (H.wear_suit.body_parts_covered & FEET)) || (H.w_uniform && (H.w_uniform.body_parts_covered & FEET) || (H.shoes && (H.shoes.body_parts_covered & FEET)))
+			// 		if(feetCover)
+			// 			if(istype(H) && H.dna.features["taur"] == "Naga" || H.dna.features["taur"] == "Tentacle" || H.dna.features["taur"] == "Fat Naga" || H.dna.features["taur"] == "Alt Naga")
+			// 				tmob.visible_message("<span class='danger'>[src] pins [tmob] under their tail!</span>", "<span class='danger'>[src] pins you beneath their tail!</span>")
+			// 			else
+			// 				tmob.visible_message("<span class='danger'>[src] pins [tmob] helplessly underfoot!</span>", "<span class='danger'>[src] pins you underfoot!</span>")
+			// 			return 1
+			// 		else
+			// 			if(istype(H) && H.dna.features["taur"] == "Naga" || H.dna.features["taur"] == "Tentacle" || H.dna.features["taur"] == "Fat Naga" || H.dna.features["taur"] == "Alt Naga")
+			// 				tmob.visible_message("<span class='danger'>[src] snatches up [tmob] underneath their tail!</span>", "<span class='userdanger'>[src]'s tail winds around you and snatches you in its coils!</span>")
+			// 				//tmob.mob_pickup_micro_feet(H)
+			// 				SEND_SIGNAL(tmob, COMSIG_MICRO_PICKUP_FEET, H)
+			// 			else
+			// 				tmob.visible_message("<span class='danger'>[src] stomps down on [tmob], curling their toes and picking them up!</span>", "<span class='userdanger'>[src]'s toes pin you down and curl around you, picking you up!</span>")
+			// 				//tmob.mob_pickup_micro_feet(H)
+			// 				SEND_SIGNAL(tmob, COMSIG_MICRO_PICKUP_FEET, H)
+			// 			return 1
 
 		if(abs(tmob.get_effective_size()/get_effective_size()) >= 2)
 			H.forceMove(tmob.loc)
