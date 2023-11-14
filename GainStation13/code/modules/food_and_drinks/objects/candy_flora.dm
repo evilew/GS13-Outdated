@@ -18,6 +18,23 @@
 	icon = 'GainStation13/icons/turf/decals_candy.dmi'
 	icon_state = "candy_decal3"
 
+/obj/effect/turf_decal/candy/greenwhite1
+	icon = 'GainStation13/icons/turf/decals_candy.dmi'
+	icon_state = "candy_decal_g1"
+
+/obj/effect/turf_decal/candy/greenwhite2
+	icon = 'GainStation13/icons/turf/decals_candy.dmi'
+	icon_state = "candy_decal_g2"
+
+/obj/effect/turf_decal/candy/bluewhite1
+	icon = 'GainStation13/icons/turf/decals_candy.dmi'
+	icon_state = "candy_decal_b1"
+
+/obj/effect/turf_decal/candy/purplewhite1
+	icon = 'GainStation13/icons/turf/decals_candy.dmi'
+	icon_state = "candy_decal_p1"
+
+
 /obj/structure/lollipop //ik it's not necessarily a decal but I'm lazy rn and will (hopefully) move it later
 	name = "Lollipop tree"
 	desc = "A mere snack for people larger than life."
