@@ -23,7 +23,7 @@
 	description = "A volatile collodial mixture derived from milk that encourages mammary production via a potent estrogen mix."
 	color = "#E60584" // rgb: 96, 0, 255
 	taste_description = "a milky ice cream like flavour."
-	overdose_threshold = 17
+	overdose_threshold = 50
 	metabolization_rate = 0.25
 	impure_chem 			= /datum/reagent/fermi/BEsmaller //If you make an inpure chem, it stalls growth
 	inverse_chem_val 		= 0.35

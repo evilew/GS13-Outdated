@@ -36,22 +36,22 @@
     name = "Discretionary Bounty"
     reward = 1500
 
-datum/bounty/lewd/fluid/New()
+datum/bounty/lewd/fluid/New() //GS13 made some edits here that changes stuff into fatty-related junk
     var/reagent_type
     switch(rand(1, 20)) //So we can set probabilities for each kind
-        if(1,2,3,4,5)//Cum bounty
+        if(1,2,3,4,5)//Nutriment bounty
             required_volume = 200
-            reagent_type = /datum/reagent/consumable/semen
+            reagent_type = /datum/reagent/consumable/nutriment
             wanted_reagent = new reagent_type
             name = wanted_reagent.name
-            description = "CentCom is in need of donors for their fertility program."
+            description = "CentCom's food lab requires more nutriment to experiment with."
             reward += rand(2, 7) * 500
-        if(6,7) //Big cum bounty
+        if(6,7) //Big nutriment bounty
             required_volume = 1000
-            reagent_type = /datum/reagent/consumable/semen
+            reagent_type = /datum/reagent/consumable/nutriment
             wanted_reagent = new reagent_type
             name = wanted_reagent.name
-            description = "Yes. We really need that much. We hear you're the best suppliers around."
+            description = "CentCom's food lab have requested vast amounts of nutriment for undisclosed purposes."
             reward += rand(10, 17) * 500
         if(8,9,10,11,12) //Milk
             required_volume = 200
@@ -67,7 +67,7 @@ datum/bounty/lewd/fluid/New()
             name = wanted_reagent.name
             description = "The GATO annual bake sale is soon, and all of our milk has expired. Help us out."
             reward += rand(10, 17) * 500 //Milk is generally easier to get. Make the reward a little lower.
-        if(15,16,17,18,19) //A little romance
+        if(15,16) //A little romance
             var/static/list/possible_reagents = list(\
                 /datum/reagent/drug/aphrodisiac,\
                 /datum/reagent/consumable/ethanol/between_the_sheets,\
@@ -79,12 +79,12 @@ datum/bounty/lewd/fluid/New()
             name = wanted_reagent.name
             description = "A CentCom official wants something to spice up the bedroom. We told them this was a misuse of their power. It went through anyways."
             reward += rand(0, 5) * 500
-        if(20) //Not as popular of a fluid, so we will leave it the lowest chance.
-            required_volume = 30
-            reagent_type = /datum/reagent/consumable/femcum
+        if(17,18,19,20) //Not as popular of a fluid, so we will leave it the lowest chance.
+            required_volume = 50
+            reagent_type = /datum/reagent/consumable/lipoifier
             wanted_reagent = new reagent_type
             name = wanted_reagent.name
-            description = "A CentCom official requested this for undisclosed research purposes."
+            description = "The quality of GATO's meat-related products have diminished. Send us some lipoifier to help with meat production."
             reward += rand(2, 7) * 500
 
 /* //Just not getting this to work.
