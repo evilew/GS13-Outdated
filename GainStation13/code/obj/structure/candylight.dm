@@ -1,4 +1,4 @@
-/obj/structure/tree/candylight //GS13
+/obj/structure/flora/candylight //GS13
 	name = "Peppermint Light"
 	desc = "A light source that's made out of a peppermint tree."
 	icon = 'GainStation13/icons/obj/gslight.dmi'
