@@ -7453,10 +7453,6 @@
 /obj/structure/girder,
 /turf/open/floor/plating/airless,
 /area/xenoarch/caloriteresearch_unpowered)
-"ua" = (
-/obj/structure/flora/candylight,
-/turf/open/candyfloor,
-/area/lavaland/surface/outdoors)
 "uh" = (
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
@@ -7966,10 +7962,6 @@
 	icon_state = "engine"
 	},
 /area/xenoarch/nothinghere)
-"xL" = (
-/obj/structure/flora/candylight,
-/turf/open/indestructible/bubblegum,
-/area/lavaland/surface/outdoors)
 "xQ" = (
 /obj/structure/flora/grass/both,
 /obj/structure/window/reinforced/fulltile,
@@ -9562,7 +9554,6 @@
 /area/xenoarch/caloriteresearch_powered)
 "HZ" = (
 /obj/structure/barricade/wooden,
-/obj/structure/fans/tiny/invisible,
 /turf/open/chocolateriver,
 /area/lavaland/surface/outdoors)
 "Ia" = (
@@ -9643,9 +9634,8 @@
 /turf/open/floor/plasteel/freezer,
 /area/xenoarch/caloriteresearch_powered)
 "IH" = (
-/obj/structure/barricade/wooden,
-/obj/structure/fans/tiny/invisible,
-/turf/open/indestructible/chocolate,
+/obj/structure/tree/candylight,
+/turf/open/candyfloor,
 /area/lavaland/surface/outdoors)
 "IJ" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -9999,6 +9989,10 @@
 /obj/item/reagent_containers/food/snacks/candy_corn,
 /turf/open/indestructible/chocolate,
 /area/lavaland/surface/outdoors)
+"Lc" = (
+/obj/structure/tree/candylight,
+/turf/open/indestructible/chocolate,
+/area/lavaland/surface/outdoors)
 "Ld" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -10045,10 +10039,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
-"Lp" = (
-/obj/structure/flora/candylight,
-/turf/open/indestructible/chocolate,
-/area/lavaland/surface/outdoors)
 "Ls" = (
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
@@ -12121,9 +12111,8 @@
 /turf/open/floor/mineral/basaltstone_floor,
 /area/xenoarch/caloriteresearch_unpowered)
 "Zl" = (
-/obj/structure/barricade/wooden,
-/obj/structure/fans/tiny/invisible,
-/turf/open/candyfloor,
+/obj/structure/tree/candylight,
+/turf/open/indestructible/bubblegum,
 /area/lavaland/surface/outdoors)
 "Zs" = (
 /obj/structure/table/optable,
@@ -57434,10 +57423,10 @@ ab
 Za
 Za
 Za
-IH
-Zl
-Zl
-Zl
+Me
+xb
+xb
+xb
 Za
 Za
 lQ
@@ -57952,8 +57941,8 @@ DE
 WT
 WT
 WT
-ua
-DE
+WT
+Lc
 Rz
 Za
 lQ
@@ -58463,7 +58452,7 @@ Rz
 DE
 xm
 xm
-WT
+IH
 WT
 WT
 WT
@@ -59753,7 +59742,7 @@ xm
 WT
 WT
 WT
-Lp
+DE
 Rz
 Za
 Za
@@ -59995,19 +59984,19 @@ Rz
 Ig
 uD
 WT
-WT
+IH
 Ai
 WT
-ua
+WT
 KX
 Rz
 Za
 Za
 Za
-Lp
+DE
 xm
 xm
-WT
+IH
 WT
 WT
 DE
@@ -60760,7 +60749,7 @@ Za
 Za
 Za
 DE
-WT
+IH
 WT
 zc
 DE
@@ -61282,15 +61271,15 @@ Za
 Rc
 Bp
 Rc
-Lp
+DE
 Za
 Rz
-Lp
-WT
+DE
+IH
 xm
 xm
 We
-xL
+Zl
 WT
 xm
 WT
@@ -61526,7 +61515,7 @@ Za
 Za
 WT
 xX
-ua
+WT
 Za
 Za
 Za
@@ -61551,7 +61540,7 @@ Ai
 xm
 xm
 WT
-WT
+IH
 DE
 Za
 Za
@@ -61787,7 +61776,7 @@ WT
 Px
 Za
 Za
-Lp
+DE
 WT
 JP
 DE
@@ -61810,7 +61799,7 @@ xm
 WT
 JP
 WT
-Lp
+DE
 Za
 Za
 Za
@@ -62035,7 +62024,7 @@ Za
 Za
 Za
 Za
-ua
+WT
 WT
 WT
 wv
@@ -62544,7 +62533,7 @@ lQ
 Za
 Za
 Za
-ua
+WT
 WT
 xm
 xm
@@ -62567,12 +62556,12 @@ xm
 xm
 xm
 xm
-ua
+WT
 WT
 DE
 Za
 Rz
-Lp
+DE
 WT
 WT
 WT
@@ -62800,7 +62789,7 @@ lQ
 lQ
 PB
 xX
-Zl
+xb
 xm
 xm
 xm
@@ -62821,7 +62810,7 @@ WT
 Fb
 Za
 KI
-WT
+IH
 WT
 WT
 uD
@@ -62831,7 +62820,7 @@ Rz
 Za
 Rz
 DE
-WT
+IH
 WT
 WT
 WT
@@ -63314,7 +63303,7 @@ ay
 lQ
 lQ
 WT
-Zl
+xb
 PB
 Uw
 Za
@@ -63590,7 +63579,7 @@ DE
 xX
 WT
 WT
-Lp
+DE
 Za
 Za
 rE
@@ -63600,7 +63589,7 @@ Rc
 DE
 DE
 Za
-Lp
+DE
 WT
 WT
 WT
@@ -63853,7 +63842,7 @@ Za
 Za
 DE
 Rc
-Rc
+Zl
 Rc
 DE
 Za
@@ -64102,7 +64091,7 @@ Za
 Za
 Za
 DE
-WT
+IH
 WT
 WT
 DE
@@ -64120,7 +64109,7 @@ WT
 uD
 WT
 WT
-WT
+IH
 DE
 Za
 Za
@@ -64364,11 +64353,11 @@ We
 WT
 WT
 HC
-DE
+Lc
 Za
 Za
 Tm
-xL
+Rc
 Za
 Za
 DE
@@ -64377,7 +64366,7 @@ WT
 WT
 WT
 WT
-Lp
+DE
 Za
 Za
 Za
@@ -64884,7 +64873,7 @@ DE
 DE
 DE
 DE
-WT
+IH
 WT
 WT
 WT
@@ -65399,7 +65388,7 @@ WT
 WT
 WT
 WT
-Lp
+DE
 DE
 HC
 WT
@@ -65661,7 +65650,7 @@ Za
 DE
 WT
 wW
-Lp
+DE
 Za
 Za
 Za
@@ -66170,9 +66159,9 @@ Za
 Za
 Za
 Za
-Lp
 DE
-WT
+DE
+IH
 WT
 WT
 DE
@@ -66691,7 +66680,7 @@ WT
 WT
 WT
 AP
-Lp
+DE
 Za
 Za
 Za
@@ -67204,7 +67193,7 @@ WT
 WT
 WT
 WT
-WT
+IH
 DE
 Za
 Za
@@ -68225,7 +68214,7 @@ Za
 Za
 Za
 DE
-ua
+IH
 PB
 WT
 WT
@@ -68489,7 +68478,7 @@ WT
 WT
 wW
 Ai
-Lp
+DE
 Za
 Za
 ab
@@ -70026,7 +70015,7 @@ DE
 WT
 xm
 xm
-WT
+IH
 WT
 WT
 WT
@@ -71315,7 +71304,7 @@ xm
 xm
 WT
 WT
-Lp
+DE
 Rz
 Za
 ab
@@ -71564,8 +71553,8 @@ Za
 Za
 Za
 Za
-DE
-ua
+Lc
+WT
 xm
 WT
 xm
@@ -72340,7 +72329,7 @@ Za
 Rz
 Za
 DE
-Lp
+DE
 Za
 Za
 Za
