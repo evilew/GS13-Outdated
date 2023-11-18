@@ -3103,6 +3103,7 @@
 #include "GainStation13\code\modules\vending\mealdor.dm"
 #include "GainStation13\code\obj\items\minor_items.dm"
 #include "GainStation13\code\obj\structure\calorite_doors.dm"
+#include "GainStation13\code\obj\structure\candylight.dm"
 #include "GainStation13\code\obj\structure\fountain.dm"
 #include "GainStation13\code\obj\structure\scale.dm"
 #include "GainStation13\code\obj\weapons\fatoray.dm"

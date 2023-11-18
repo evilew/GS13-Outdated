@@ -32,3 +32,7 @@
 	name = "Candy Land"
 	icon_state = "away"
 	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
+
+/area/ruin/powered/candycaveLower/inside
+	name = "Candy Cave"
+	icon_state = "away"

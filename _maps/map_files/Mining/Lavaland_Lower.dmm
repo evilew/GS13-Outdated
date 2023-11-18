@@ -7101,6 +7101,11 @@
 	},
 /turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
+"rC" = (
+/obj/item/reagent_containers/food/snacks/candyheart,
+/obj/effect/light_emitter,
+/turf/open/indestructible/chocolate,
+/area/lavaland/surface/outdoors)
 "rE" = (
 /mob/living/simple_animal/hostile/feed/chocolate_slime,
 /obj/item/reagent_containers/food/snacks/candy_corn,
@@ -7640,6 +7645,10 @@
 /obj/structure/falsewall,
 /turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
+"vu" = (
+/obj/item/reagent_containers/food/snacks/cakeslice/birthday,
+/turf/open/indestructible/chocolate,
+/area/lavaland/surface/outdoors)
 "vw" = (
 /obj/structure/chair/foldingchair{
 	dir = 1
@@ -8301,6 +8310,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
+"zS" = (
+/obj/item/reagent_containers/food/snacks/store/cake/apple,
+/turf/open/indestructible/chocolate,
+/area/lavaland/surface/outdoors)
 "zW" = (
 /obj/machinery/conveyor{
 	dir = 4;
@@ -8335,6 +8348,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
+"Ad" = (
+/obj/effect/light_emitter,
+/turf/open/chocolateriver,
+/area/lavaland/surface/outdoors)
 "Ah" = (
 /obj/effect/turf_decal/stripes{
 	dir = 8
@@ -9833,6 +9850,10 @@
 /obj/effect/turf_decal/box/white,
 /turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
+"Kc" = (
+/obj/item/reagent_containers/food/snacks/bluecherrycupcake,
+/turf/open/candyfloor,
+/area/lavaland/surface/outdoors)
 "Kd" = (
 /turf/open/floor/plasteel/dark/side{
 	dir = 5
@@ -10225,6 +10246,10 @@
 /obj/item/radio/off,
 /turf/open/floor/circuit,
 /area/xenoarch/caloriteresearch_powered)
+"MD" = (
+/obj/effect/light_emitter,
+/turf/open/candyfloor,
+/area/lavaland/surface/outdoors)
 "ME" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
@@ -10554,6 +10579,15 @@
 /obj/machinery/door/airlock/maintenance_hatch,
 /turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
+"OP" = (
+/obj/structure/lollipop,
+/obj/effect/light_emitter,
+/turf/open/candyfloor,
+/area/lavaland/surface/outdoors)
+"OR" = (
+/obj/effect/light_emitter,
+/turf/open/indestructible/chocolate,
+/area/lavaland/surface/outdoors)
 "OS" = (
 /obj/effect/turf_decal/caution{
 	dir = 4
@@ -10905,6 +10939,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
+"Rp" = (
+/obj/item/reagent_containers/food/snacks/bluecherrycupcake,
+/turf/open/indestructible/bubblegum,
+/area/lavaland/surface/outdoors)
 "Rx" = (
 /obj/structure/girder,
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
@@ -11329,6 +11367,10 @@
 	},
 /turf/open/floor/plating/lavaland_baseturf,
 /area/xenoarch/caloriteresearch_powered)
+"TB" = (
+/obj/item/reagent_containers/food/snacks/cakeslice/bscc,
+/turf/open/indestructible/bubblegum,
+/area/lavaland/surface/outdoors)
 "TC" = (
 /obj/structure/table/wood,
 /turf/open/floor/carpet/orange,
@@ -11460,6 +11502,10 @@
 	icon_state = "engine"
 	},
 /area/xenoarch/nothinghere)
+"Uu" = (
+/obj/item/reagent_containers/food/snacks/cakeslice/chocolate,
+/turf/open/indestructible/chocolate,
+/area/lavaland/surface/outdoors)
 "Uw" = (
 /mob/living/simple_animal/hostile/feed/chocolate_slime,
 /turf/open/candyfloor,
@@ -11750,6 +11796,7 @@
 	pixel_x = -10;
 	pixel_y = 4
 	},
+/obj/effect/light_emitter,
 /turf/open/candyfloor,
 /area/lavaland/surface/outdoors)
 "WH" = (
@@ -58194,7 +58241,7 @@ Za
 Za
 Za
 DE
-xm
+Ad
 xm
 uD
 WT
@@ -58450,7 +58497,7 @@ Za
 Za
 Rz
 DE
-xm
+Ad
 xm
 IH
 WT
@@ -58964,7 +59011,7 @@ Rz
 DE
 DE
 xm
-xm
+Ad
 xX
 WT
 WT
@@ -59479,7 +59526,7 @@ Za
 Za
 DE
 xm
-xm
+Ad
 xm
 WT
 WT
@@ -59994,8 +60041,8 @@ Za
 Za
 Za
 DE
-xm
-xm
+Ad
+Ad
 IH
 WT
 WT
@@ -60508,8 +60555,8 @@ xX
 KX
 Za
 Za
-HC
-xm
+rC
+Ad
 xm
 WT
 DE
@@ -61020,10 +61067,10 @@ Ig
 DE
 WT
 WT
-DE
+OR
 Za
-zc
-xm
+OP
+Ad
 xm
 WT
 HC
@@ -61535,10 +61582,10 @@ xm
 wv
 xm
 xm
-xm
+Ad
 Ai
-xm
-xm
+Ad
+Ad
 WT
 IH
 DE
@@ -61793,7 +61840,7 @@ xm
 xm
 xm
 xm
-xm
+Ad
 xm
 xm
 WT
@@ -62026,10 +62073,10 @@ Za
 Za
 WT
 WT
-WT
+MD
 wv
 xm
-xm
+Ad
 xm
 xm
 xm
@@ -62051,7 +62098,7 @@ WT
 xm
 xm
 xm
-xm
+Ad
 WT
 WT
 WT
@@ -62302,12 +62349,12 @@ xm
 xm
 xm
 xm
-DE
+Uu
 DE
 WT
 WT
 xm
-xm
+Ad
 WT
 WT
 WT
@@ -62535,10 +62582,10 @@ Za
 Za
 WT
 WT
+Ad
 xm
 xm
-xm
-xm
+Ad
 xm
 xm
 xm
@@ -62812,7 +62859,7 @@ Za
 KI
 IH
 WT
-WT
+Kc
 uD
 WT
 DE
@@ -63048,7 +63095,7 @@ WT
 xm
 HZ
 xm
-xm
+Ad
 PB
 qx
 WT
@@ -63324,11 +63371,11 @@ WT
 DE
 Za
 Za
-Rc
+Rp
 Tm
 DE
 DE
-DE
+vu
 Ai
 Rz
 Za
@@ -63841,7 +63888,7 @@ HC
 Za
 Za
 DE
-Rc
+TB
 Zl
 Rc
 DE
@@ -65904,7 +65951,7 @@ Za
 Za
 Za
 Rz
-DE
+zS
 WT
 WT
 DE
@@ -69757,7 +69804,7 @@ Za
 DE
 WT
 Qz
-xm
+Ad
 WT
 WT
 WT
@@ -70270,8 +70317,8 @@ Za
 Za
 DE
 wm
-xm
-xm
+Ad
+Ad
 xm
 xm
 WT
@@ -70529,7 +70576,7 @@ DE
 WT
 xm
 xm
-xm
+Ad
 xm
 xm
 WT
@@ -70784,8 +70831,8 @@ Za
 HC
 wW
 xm
-xm
-xm
+Ad
+Ad
 xm
 xm
 WT
@@ -71043,7 +71090,7 @@ WT
 xm
 xm
 xm
-xm
+Ad
 xm
 WT
 WT
@@ -71299,7 +71346,7 @@ DE
 Uw
 xm
 xm
-xm
+Ad
 xm
 xm
 WT
