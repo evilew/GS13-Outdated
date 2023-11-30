@@ -40049,6 +40049,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/machinery/airalarm{
+	pixel_y = 22
+	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/locker)
 "bns" = (
@@ -51594,8 +51597,8 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/airalarm{
-	pixel_y = 22
+/obj/machinery/atm{
+	pixel_y = 30
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/locker)
@@ -51787,6 +51790,9 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 10
+	},
+/obj/machinery/atm{
+	pixel_y = 30
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
