@@ -284,8 +284,8 @@
 /turf/open/floor/mineral/calorite/hide,
 /area/ruin/powered/gluttony)
 "S" = (
-/obj/machinery/door/airlock/uranium,
 /obj/structure/fans/tiny/invisible,
+/obj/structure/mineral_door/calorite,
 /turf/open/floor/mineral/basaltstone_floor,
 /area/ruin/powered/gluttony)
 "T" = (
