@@ -234,7 +234,7 @@
 
 /obj/item/reagent_containers/syringe/gluttony
 	name = "Gluttony's Abomination"
-	desc = "A syringe recovered from a dread place. It has a transformative chemical, best not to use it... yet...."
+	desc = "A syringe recovered from a dread place. It has a transformative chemical that is said to turn you into a horrible beast."
 	amount_per_transfer_from_this = 1
 	volume = 1
 	list_reagents = list(/datum/reagent/gluttonytoxin = 1)

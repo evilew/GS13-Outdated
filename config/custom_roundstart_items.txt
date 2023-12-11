@@ -10,5 +10,4 @@
 JayEhh|ALL|ALL|/obj/item/custom/ceb_soap=1
 
 // GS13
-Sonoida|Dezir Rose|ALL|/obj/item/grown/rose=1
-Sonoida|Desert Rose|ALL|/obj/item/grown/rose=1
+JohnJimJim|Revvan|ALL|/obj/item/clothing/accessory/medal/gato_badge/middleman=1

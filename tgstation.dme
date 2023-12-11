@@ -3071,6 +3071,7 @@
 #include "code\modules\VR\vr_sleeper.dm"
 #include "code\modules\zombie\items.dm"
 #include "code\modules\zombie\organs.dm"
+#include "GainStation13\code\clothing\accessory.dm"
 #include "GainStation13\code\clothing\calorite_collar.dm"
 #include "GainStation13\code\game\lore_papers.dm"
 #include "GainStation13\code\game\sound.dm"
