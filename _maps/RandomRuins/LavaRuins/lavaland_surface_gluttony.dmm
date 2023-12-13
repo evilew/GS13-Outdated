@@ -281,6 +281,7 @@
 /area/ruin/powered/gluttony)
 "R" = (
 /obj/structure/statue/calorite/fatty,
+/obj/item/book/granter/spell/fattening/transfer,
 /turf/open/floor/mineral/calorite/hide,
 /area/ruin/powered/gluttony)
 "S" = (

@@ -1,3 +1,5 @@
+
+
 /datum/gear/plushcarp
 	name = "Space carp plushie"
 	category = SLOT_IN_BACKPACK
@@ -260,3 +262,10 @@
 	name = "Waistcoat"
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/clothing/accessory/waistcoat
+
+/datum/gear/gato_middleman //GS13 - I'll move this elsewhere eventually, it was a last minute change!! I promise :333
+	name = "GATO Middleman Badge"
+	category = SLOT_IN_BACKPACK
+	path = /obj/item/clothing/accessory/medal/gato_badge/middleman
+	ckeywhitelist = list("sonoida, Sonoida, JohnJimJim")
+	cost = 1
