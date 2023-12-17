@@ -3106,6 +3106,7 @@
 #include "GainStation13\code\obj\structure\calorite_doors.dm"
 #include "GainStation13\code\obj\structure\candylight.dm"
 #include "GainStation13\code\obj\structure\fountain.dm"
+#include "GainStation13\code\obj\structure\gsstatues.dm"
 #include "GainStation13\code\obj\structure\scale.dm"
 #include "GainStation13\code\obj\weapons\fatoray.dm"
 #include "hyperstation\code\__DEFINES\economy.dm"
