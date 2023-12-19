@@ -212,11 +212,6 @@ GLOBAL_DATUM_INIT(ahelp_tickets, /datum/admin_help_tickets, new)
 		log_admin_private("Ticket #[id]: [key_name(initiator)]: [name] - heard by [admin_number_present] non-AFK admins who have +BAN.")
 		if(admin_number_present <= 0)
 			to_chat(C, "<span class='notice'>No active admins are online. **Please send your Adminhelp to the discord channel with an '@Admin'**.</span>")
-			//hyper change, because we have our own bot, the notification has to be loaded into a file, for the bot to read.
-			fdel("Hyperbot/ahelp.txt")
-			var botmsg = "**[initiator_key_name]** *([GLOB.round_id])*```[msg]```"
-			text2file(botmsg,"Hyperbot/ahelp.txt")
-			heard_by_no_admins = TRUE
 	GLOB.ahelp_tickets.active_tickets += src
 
 /datum/admin_help/Destroy()
