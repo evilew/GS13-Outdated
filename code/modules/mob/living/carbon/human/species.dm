@@ -1281,7 +1281,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 /datum/species/proc/handle_fatness_trait(mob/living/carbon/human/H, trait, trait_lose, trait_gain, fatness_lose, fatness_gain, chat_lose, chat_gain)
 	if(H.fatness < fatness_lose)
 		if (chat_lose)
-			to_chat(H, chat_lose) 
+			to_chat(H, chat_lose)
 		if (trait)
 			REMOVE_TRAIT(H, trait, OBESITY)
 		if (trait_lose)
@@ -1514,7 +1514,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 		if(FATNESS_LEVEL_FAT to FATNESS_LEVEL_FATTER)
 			H.throw_alert("fatness", /obj/screen/alert/fat)
-			
+
 		if(0 to FATNESS_LEVEL_FAT)
 			H.clear_alert("fatness")
 
@@ -1651,11 +1651,12 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			var/fatness_delay = (H.fatness / FATNESS_DIVISOR)
 			if(H.fatness < FATNESS_LEVEL_BARELYMOBILE)
 				fatness_delay = fatness_delay - flight
-			
+
+			fatness_delay = min(fatness_delay, FATNESS_MAX_MOVE_PENALTY)
+
 			if(HAS_TRAIT(H, TRAIT_STRONGLEGS))
 				fatness_delay = fatness_delay * FATNESS_STRONGLEGS_MODIFIER
 
-			fatness_delay = min(fatness_delay, FATNESS_MAX_MOVE_PENALTY)
 
 			if(HAS_TRAIT(H, TRAIT_WEAKLEGS))
 				if(H.fatness <= FATNESS_LEVEL_IMMOBILE)
@@ -1663,8 +1664,8 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				if(H.fatness > FATNESS_LEVEL_IMMOBILE)
 					fatness_delay += (H.fatness / FATNESS_LEVEL_IMMOBILE) * FATNESS_WEAKLEGS_MODIFIER
 					fatness_delay = min(fatness_delay, 60)
-	
-			. += fatness_delay 
+
+			. += fatness_delay
 
 		if(H.bodytemperature < BODYTEMP_COLD_DAMAGE_LIMIT && !HAS_TRAIT(H, TRAIT_RESISTCOLD))
 			. += (BODYTEMP_COLD_DAMAGE_LIMIT - H.bodytemperature) / COLD_SLOWDOWN_FACTOR
