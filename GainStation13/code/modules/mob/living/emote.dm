@@ -57,7 +57,7 @@
 /datum/emote/living/burp
 	key = "burp"
 	key_third_person = "burps"
-	message = "burps."
+	message = "burps"
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/burp/run_emote(mob/living/user, params)
@@ -118,6 +118,7 @@
 	key = "bellyrub"
 	key_third_person = "bellyrubs"
 	message = "rubs their belly"
+	emote_type  = EMOTE_VISIBLE
 
 /datum/emote/living/bellyrub/run_emote(mob/living/user, params)
 	if(!ishuman(user))

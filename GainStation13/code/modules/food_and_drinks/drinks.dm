@@ -9,7 +9,7 @@
 	lefthand_file = 'GainStation13/icons/obj/food_lefthand.dmi'
 	righthand_file = 'GainStation13/icons/obj/food_righthand.dmi'
 	icon_state = "fizzwiz"
-	list_reagents = list(/datum/reagent/consumable/space_cola = 25, /datum/reagent/consumable/fizulphite = 15)
+	list_reagents = list(/datum/reagent/consumable/space_cola = 5, /datum/reagent/consumable/fizulphite = 3)
 	foodtype = SUGAR
 	price = 3
 
@@ -21,6 +21,6 @@
 	lefthand_file = 'GainStation13/icons/obj/food_lefthand.dmi'
 	righthand_file = 'GainStation13/icons/obj/food_righthand.dmi'
 	icon_state = "soothseltz"
-	list_reagents = list(/datum/reagent/consumable/space_cola = 25, /datum/reagent/consumable/extilphite = 15)
+	list_reagents = list(/datum/reagent/consumable/space_cola = 5, /datum/reagent/consumable/extilphite = 3)
 	foodtype = SUGAR
 	price = 3
