@@ -121424,36 +121424,29 @@
 /turf/open/floor/plasteel/dark,
 /area/chapel/office)
 "dXE" = (
-/obj/structure/chair/wood,
+/obj/structure/chair/bench/left,
 /turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "chapel"
 	},
 /area/chapel/main)
 "dXF" = (
-/obj/structure/chair/wood,
-/turf/open/floor/plasteel{
-	icon_state = "chapel"
+/obj/structure/chair/bench/left{
+	dir = 1
 	},
-/area/chapel/main)
-"dXG" = (
-/obj/structure/chair/wood,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel{
-	dir = 8;
 	icon_state = "chapel"
 	},
 /area/chapel/main)
 "dXH" = (
-/obj/structure/chair/wood,
 /obj/structure/disposalpipe/segment,
+/obj/structure/chair/bench/left,
 /turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "chapel"
 	},
 /area/chapel/main)
 "dXI" = (
-/obj/structure/chair/wood,
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = 24
@@ -121462,6 +121455,9 @@
 	c_tag = "Chapel - Starboard";
 	dir = 8;
 	name = "chapel camera"
+	},
+/obj/structure/chair/bench/left{
+	dir = 1
 	},
 /turf/open/floor/plasteel{
 	icon_state = "chapel"
@@ -121813,40 +121809,42 @@
 /turf/open/floor/plasteel/dark,
 /area/chapel/office)
 "dYy" = (
-/obj/structure/chair/wood/normal,
 /obj/machinery/newscaster{
 	pixel_x = -32
 	},
+/obj/structure/chair/bench/left,
 /turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "chapel"
 	},
 /area/chapel/main)
 "dYz" = (
-/obj/structure/chair/wood/normal,
+/obj/structure/chair/bench/left{
+	dir = 1
+	},
 /turf/open/floor/plasteel{
 	dir = 4;
 	icon_state = "chapel"
 	},
 /area/chapel/main)
 "dYA" = (
-/obj/structure/chair/wood/normal,
+/obj/structure/chair/bench/left,
 /turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "chapel"
 	},
 /area/chapel/main)
 "dYB" = (
-/obj/structure/chair/wood/normal,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/structure/chair/bench/left,
 /turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "chapel"
 	},
 /area/chapel/main)
 "dYC" = (
-/obj/structure/chair/wood/normal,
 /obj/structure/disposalpipe/segment,
+/obj/structure/chair/bench/left,
 /turf/open/floor/plasteel{
 	dir = 1;
 	icon_state = "chapel"
@@ -122200,10 +122198,10 @@
 /turf/open/floor/plasteel/dark,
 /area/chapel/office)
 "dZj" = (
-/obj/structure/chair/wood,
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/structure/chair/bench/left,
 /turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "chapel"
@@ -122216,18 +122214,21 @@
 /area/chapel/main)
 "dZl" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/structure/chair/bench/left,
 /turf/open/floor/plasteel{
 	dir = 8;
 	icon_state = "chapel"
 	},
 /area/chapel/main)
 "dZm" = (
-/obj/structure/chair/wood,
 /obj/machinery/light{
 	dir = 4
 	},
 /obj/machinery/newscaster{
 	pixel_x = 32
+	},
+/obj/structure/chair/bench/left{
+	dir = 1
 	},
 /turf/open/floor/plasteel{
 	icon_state = "chapel"
@@ -162394,7 +162395,7 @@ dVR
 dWN
 dXF
 dYz
-dZk
+dXF
 dZR
 eaz
 ebh
@@ -162906,7 +162907,7 @@ dUq
 dVe
 dVT
 dWP
-dXG
+dZl
 dYB
 dZl
 dWP

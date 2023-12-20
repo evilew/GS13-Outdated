@@ -52314,10 +52314,10 @@
 /turf/open/floor/plating/asteroid/airless,
 /area/asteroid/nearstation/bomb_site)
 "cku" = (
-/obj/structure/chair/wood/normal,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
+/obj/structure/chair/bench/right,
 /turf/open/floor/carpet,
 /area/chapel/main/monastery)
 "ckv" = (
@@ -55319,18 +55319,18 @@
 /turf/open/floor/plasteel/dark,
 /area/chapel/main/monastery)
 "cvB" = (
-/obj/structure/chair/wood/normal,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
+/obj/structure/chair/bench/left,
 /turf/open/floor/plasteel/dark,
 /area/chapel/main/monastery)
 "cvC" = (
-/obj/structure/chair/wood/normal,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
 	},
+/obj/structure/chair/bench/right,
 /turf/open/floor/plasteel/dark,
 /area/chapel/main/monastery)
 "cvE" = (
@@ -55465,17 +55465,17 @@
 /turf/open/floor/plasteel/dark,
 /area/chapel/main/monastery)
 "cvS" = (
-/obj/structure/chair/wood/normal,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/structure/chair/bench/left,
 /turf/open/floor/plasteel/dark,
 /area/chapel/main/monastery)
 "cvT" = (
-/obj/structure/chair/wood/normal,
+/obj/structure/chair/bench/right,
 /turf/open/floor/carpet,
 /area/chapel/main/monastery)
 "cvV" = (
-/obj/structure/chair/wood/normal,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/chair/bench/right,
 /turf/open/floor/plasteel/dark,
 /area/chapel/main/monastery)
 "cvX" = (
@@ -57216,6 +57216,10 @@
 	},
 /turf/open/floor/engine,
 /area/engine/engineering)
+"dIG" = (
+/obj/structure/chair/bench/left,
+/turf/open/floor/carpet,
+/area/chapel/main/monastery)
 "dJm" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -59724,6 +59728,13 @@
 	},
 /turf/open/floor/engine,
 /area/engine/engineering)
+"jQD" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/chair/bench/left,
+/turf/open/floor/carpet,
+/area/chapel/main/monastery)
 "jRG" = (
 /obj/structure/disposalpipe/segment{
 	dir = 5
@@ -79457,8 +79468,8 @@ bWV
 bWV
 ciz
 ckb
-cku
-cvT
+jQD
+dIG
 cwk
 cwy
 cwF
