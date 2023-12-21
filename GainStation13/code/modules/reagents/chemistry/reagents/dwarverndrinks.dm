@@ -28,9 +28,9 @@
 	value = 0.1
 
 /datum/reagent/consumable/ethanol/belly_bloats
-	name = "Belly bloats"
+	name = "Belly Bloats"
 	description = "A classic of this sector that bloats the waistline. Hard to stop chugging once you start."
-	color = "#000000"
+	color = "#FF3333"
 	boozepwr = 25
 	taste_description = "a heavy mix of cherry and beer"
 	quality = DRINK_GOOD
@@ -48,9 +48,9 @@
 	..()
 
 /datum/reagent/consumable/ethanol/blobby_mary
-	name = "Blobby mary"
+	name = "Blobby Mary"
 	description = "A bloody mary that may make you immobile. Still wondering if it's blood or tomato juice?"
-	color = "#000000"
+	color = "#C2707E"
 	boozepwr = 55
 	taste_description = "tomateos and an anvil on your stomach"
 	quality = DRINK_FANTASTIC
@@ -68,9 +68,9 @@
 	..()
 
 /datum/reagent/consumable/heavy_cafe
-	name = "Heavy cafe"
+	name = "Heavy Cafe"
 	description = "Coffee, milk, sugar and cream. For the days when you really don't want to work."
-	color = "#000000"
+	color = "#663300"
 	taste_description = "coffee, milk and sugar"
 	quality = DRINK_GOOD
 	glass_icon_state = "heavy_cafe"
@@ -94,9 +94,9 @@
 	..()
 
 /datum/reagent/consumable/fruits_tea
-	name = "Fruits tea"
+	name = "Fruits Tea"
 	description = "Somehow this mix of fruits and tea can cause considerable bulking."
-	color = "#000000"
+	color = "#FFCC33"
 	taste_description = "a sweet and sour mix"
 	quality = DRINK_NICE
 	glass_icon_state = "fruits_tea"
@@ -115,7 +115,7 @@
 /datum/reagent/consumable/snakebite
 	name = "Snakebite"
 	description = "Guaranteed to stop 100% of all moving."
-	color = "#000000"
+	color = "#00CC33"
 	taste_description = "bitter immobility"
 	quality = DRINK_VERYGOOD
 	glass_icon_state = "snakebite"
