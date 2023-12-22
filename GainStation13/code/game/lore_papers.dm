@@ -53,3 +53,42 @@
 /obj/item/paper/fluff/ruins/calorite_facility/charred
 	name = "Charred note"
 	info = "They've g-- -all, -- s--en. Cloak-d fig----, ---...(the rest of the note seems unreadable)"
+
+//GS13 Datapads and Books
+/obj/item/book/manual/blubbery_bartender
+	name = "The Blubbery Bartender"
+	icon = 'GainStation13/icons/obj/library.dmi'
+	icon_state ="bookblubberybartender"
+	author = "Anonymous" // Whoever wrote the paper or book, can be changed by pen or PC. It is not automatically assigned.
+	title = "The Blubbery Bartender"
+	//book contents below
+	dat = {"<html>
+				<head>
+				<style>
+				h1 {font-size: 18px; margin: 15px 0px 5px;}
+				h2 {font-size: 15px; margin: 15px 0px 5px;}
+				li {margin: 2px 0px 2px 15px;}
+				ul {list-style: none; margin: 5px; padding: 0px;}
+				ol {margin: 5px; padding: 0px 15px;}
+				</style>
+				</head>
+				<body>
+				<h3>Drinks for Growing Guts</h3>
+
+				Been a bartender for Gato quite a while now. In my time here, I've taken notice of how certain mixes produced...
+				Certain effects, that the same mixtures don't produce elsewhere. I'm writing down my findings here.
+
+				<ol>
+				<li>Belly Bloats: equal parts gibb floats and beer. Really bulks up a belly. Some folks got real bloated with air after drinking this one.</li>
+				<li>Blobby Mary: equal parts tomato juice, vodka and lipoifier. If you want to get back at some rich folks, this is your drink.</li>
+				<li>Heavy Cafe: equal parts latte, either cafe or soy, sugar and cream. One hell of a bomb to start a shift with.</li>
+				<li>Fruits Tea: equal parts berry juice, lemon juice and tea. Even teetotal folks aren't safe from growing. Some folks become... Real sloshy. Note: I once mixed it with blueberry juice from a vendor. Be ready to juice if you do too.</li>
+				<li>Snakebite: equal parts toxins, lime juice and lipoifier. Feels like a snake biting your throat when it goes down. Sure "paralyzes" like some real snake bites.</li>
+				<li>Beltbuster Mead: equal parts mead, ethanol, cream and lipoifier. Very alcoholic and immensely fattening. Clothes won't hold after this one.</li>
+				</ol>
+				<p>
+				Remember, this stuff is quite something. Don't serve these to folks that don't want it.
+
+				</body>
+				</html>
+				"}
