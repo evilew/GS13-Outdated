@@ -97,7 +97,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/wing_color = "fff"				//Wing color
 	// GS13: Hair gradients from Skyrat
 	var/grad_color = "FFFFFF"			//Hair gradient color
-	var/grad_style = "000"				//Hair gradient style
+	var/grad_style = "None"				//Hair gradient style
 
 	//HS13
 	var/body_size = 100					//Body Size in percent
