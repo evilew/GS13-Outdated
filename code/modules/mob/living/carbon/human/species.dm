@@ -468,8 +468,8 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 						hair_overlay.color = "#" + H.hair_color
 
 					// GS13: Hair gradients from Skyrat
-					grad_style = H.grad_style
-					grad_color = H.grad_color
+					var/grad_style = H.grad_style
+					var/grad_color = H.grad_color
 					if(grad_style)
 						var/datum/sprite_accessory/gradient = GLOB.hair_gradients_list[grad_style]
 						var/icon/temp = icon(gradient.icon, gradient.icon_state)

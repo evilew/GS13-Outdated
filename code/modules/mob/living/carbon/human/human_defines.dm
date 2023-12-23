@@ -12,7 +12,7 @@
 
 	// GS13: Hair gradients from Skyrat
 	var/grad_color = "FFFFFF"
-	var/grad_style = "000"
+	var/grad_style = "None"
 
 	//Facial hair colour and style
 	var/facial_hair_color = "000"
