@@ -363,6 +363,11 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 		add_admin_verbs()
 		to_chat(src, get_message_output("memo"))
 		adminGreet()
+	else if(!BC_IsKeyAllowedToConnect(ckey))
+		to_chat(src, "Sorry, but the server is currently only accepting whitelisted players.  Please see the discord to be whitelisted: https://discord.gg/HHxHm6F")
+		log_and_message_admins("[ckey] was denied a connection due to not being whitelisted.")
+		qdel(src)
+		return 0
 
 	add_verbs_from_config()
 	var/cached_player_age = set_client_age_from_db(tdata) //we have to cache this because other shit may change it and we need it's current value now down below.

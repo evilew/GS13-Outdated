@@ -436,3 +436,5 @@
 
 /datum/config_entry/flag/minimaps_enabled
 	config_entry_value = TRUE
+
+/datum/config_entry/number/border_control // If border control is enabled
