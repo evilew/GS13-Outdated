@@ -130,6 +130,6 @@
 		/turf/closed/mineral/bscrystal/volcanic = 1,
 		/turf/closed/mineral/gibtonite/volcanic = 2,
 		/turf/closed/mineral/iron/volcanic = 40,
-		/obj/item/stack/ore/calorite = 1,
+		/turf/closed/mineral/calorite = 1,
 		/turf/closed/mineral/strange = 15)
 

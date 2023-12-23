@@ -53,7 +53,7 @@
 	shot_glass_icon_state = "shotglassgold"
 	hydration = 4
 
-/datum/reagent/consumable/snakebite/on_mob_life(mob/living/carbon/M)
+/datum/reagent/consumable/beltbuster_mead/on_mob_life(mob/living/carbon/M)
 	if(M && M?.client?.prefs.weight_gain_chems) // GS13
 		M.nutrition += 30 * REAGENTS_METABOLISM
 	else
