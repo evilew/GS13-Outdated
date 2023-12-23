@@ -40937,6 +40937,7 @@
 	pixel_y = 32
 	},
 /obj/structure/spider/stickyweb,
+/obj/item/book/manual/blubbery_bartender,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port)
 "boM" = (
@@ -45222,6 +45223,7 @@
 /obj/structure/sign/poster/contraband/red_rum{
 	pixel_y = -30
 	},
+/obj/item/book/manual/blubbery_bartender,
 /turf/open/floor/wood,
 /area/crew_quarters/bar)
 "bvZ" = (
@@ -85882,6 +85884,7 @@
 /area/space/nearstation)
 "wuk" = (
 /obj/structure/table/wood/poker,
+/obj/item/book/manual/blubbery_bartender,
 /turf/open/floor/wood,
 /area/security/vacantoffice)
 "wCm" = (

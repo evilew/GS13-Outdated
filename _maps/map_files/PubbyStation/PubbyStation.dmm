@@ -21592,6 +21592,7 @@
 /obj/item/stack/cable_coil,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/metal/fifty,
+/obj/item/book/manual/blubbery_bartender,
 /turf/open/floor/wood,
 /area/crew_quarters/bar)
 "aQW" = (
@@ -51988,6 +51989,7 @@
 /area/chapel/main/monastery)
 "ciN" = (
 /obj/structure/closet/crate/bin,
+/obj/item/book/manual/blubbery_bartender,
 /turf/open/floor/plasteel/dark,
 /area/chapel/main/monastery)
 "ciR" = (
@@ -59257,6 +59259,7 @@
 /area/maintenance/department/engine)
 "iEU" = (
 /obj/effect/spawner/lootdrop/keg,
+/obj/item/book/manual/blubbery_bartender,
 /turf/open/floor/plating,
 /area/maintenance/department/crew_quarters/dorms)
 "iFI" = (
