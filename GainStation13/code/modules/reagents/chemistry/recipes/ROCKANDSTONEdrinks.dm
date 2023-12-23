@@ -12,6 +12,3 @@
 	id = /datum/reagent/consumable/ethanol/glyphid_slammer
 	results = list(/datum/reagent/consumable/ethanol/glyphid_slammer = 2)
 	required_reagents = list(/datum/reagent/consumable/pwr_game = 1, /datum/reagent/consumable/ethanol/beer = 1)
-
-
-
