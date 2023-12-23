@@ -364,7 +364,7 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 		to_chat(src, get_message_output("memo"))
 		adminGreet()
 	else if(!BC_IsKeyAllowedToConnect(ckey))
-		to_chat(src, "Sorry, but the server is currently only accepting whitelisted players.  Please see the discord to be whitelisted.")
+		to_chat(src, "Sorry, but the server is currently only accepting whitelisted players.  Please see the discord to be whitelisted: https://discord.gg/HHxHm6F")
 		log_and_message_admins("[ckey] was denied a connection due to not being whitelisted.")
 		qdel(src)
 		return 0
