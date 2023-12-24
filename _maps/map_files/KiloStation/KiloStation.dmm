@@ -1439,6 +1439,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
 /obj/structure/grille/broken,
+/obj/item/book/manual/fatty_chems,
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "acM" = (
@@ -29832,6 +29833,7 @@
 /obj/item/storage/box/pillbottles,
 /obj/item/storage/box/pillbottles,
 /obj/effect/turf_decal/bot,
+/obj/item/book/manual/fatty_chems,
 /turf/open/floor/plasteel/dark,
 /area/medical/chemistry)
 "aWU" = (
@@ -35651,6 +35653,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 10
 	},
+/obj/item/book/manual/fatty_chems,
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
@@ -73967,6 +73970,7 @@
 /obj/structure/rack,
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/book/manual/fatty_chems,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port/aft)
 "crz" = (

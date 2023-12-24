@@ -22134,6 +22134,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/item/book/manual/fatty_chems,
 /turf/open/floor/plating,
 /area/maintenance/department/crew_quarters/bar)
 "aSa" = (
@@ -37767,6 +37768,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
+/obj/item/book/manual/fatty_chems,
 /turf/open/floor/plasteel/white,
 /area/medical/chemistry)
 "byx" = (
@@ -58622,6 +58624,11 @@
 	},
 /turf/open/floor/engine,
 /area/engine/engineering)
+"gUW" = (
+/obj/structure/grille/broken,
+/obj/item/book/manual/fatty_chems,
+/turf/open/floor/plating,
+/area/maintenance/department/engine)
 "gVc" = (
 /turf/open/floor/wood{
 	icon_state = "wood-broken4"
@@ -58638,6 +58645,10 @@
 /obj/structure/grille,
 /turf/open/space/basic,
 /area/space/nearstation)
+"gZb" = (
+/obj/item/book/manual/fatty_chems,
+/turf/open/floor/plating,
+/area/maintenance/department/cargo)
 "gZw" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atm{
@@ -90244,7 +90255,7 @@ bva
 iEQ
 bXV
 bDi
-bNK
+gUW
 bva
 bME
 bDi
@@ -109451,7 +109462,7 @@ bsh
 aEj
 aFf
 hUt
-aFi
+gZb
 aFi
 aJs
 aFi

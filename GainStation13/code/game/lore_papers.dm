@@ -79,15 +79,51 @@
 				Certain effects, that the same mixtures don't produce elsewhere. I'm writing down my findings here.
 
 				<ol>
-				<li>Belly Bloats: equal parts gibb floats and beer. Really bulks up a belly. Some folks got real bloated with air after drinking this one.</li>
-				<li>Blobby Mary: equal parts tomato juice, vodka and lipoifier. If you want to get back at some rich folks, this is your drink.</li>
-				<li>Heavy Cafe: equal parts latte, either cafe or soy, sugar and cream. One hell of a bomb to start a shift with.</li>
-				<li>Fruits Tea: equal parts berry juice, lemon juice and tea. Even teetotal folks aren't safe from growing. Some folks become... Real sloshy. Note: I once mixed it with blueberry juice from a vendor. Be ready to juice if you do too.</li>
-				<li>Snakebite: equal parts toxins, lime juice and lipoifier. Feels like a snake biting your throat when it goes down. Sure "paralyzes" like some real snake bites.</li>
-				<li>Beltbuster Mead: equal parts mead, ethanol, cream and lipoifier. Very alcoholic and immensely fattening. Clothes won't hold after this one.</li>
+				<li><b>Belly Bloats:</b> equal parts gibb floats and beer. Really bulks up a belly. Some folks got real bloated with air after drinking this one.</li>
+				<li><b>Blobby Mary:</b> equal parts tomato juice, vodka and lipoifier. If you want to get back at some rich folks, this is your drink.</li>
+				<li><b>Heavy Cafe:</b> equal parts latte, either cafe or soy, sugar and cream. One hell of a bomb to start a shift with.</li>
+				<li><b>Fruits Tea:</b> equal parts berry juice, lemon juice and tea. Even teetotal folks aren't safe from growing. Some folks become... Real sloshy. Note: I once mixed it with blueberry juice from a vendor. Be ready to juice if you do too.</li>
+				<li><b>Snakebite:</b> equal parts toxins, lime juice and lipoifier. Feels like a snake biting your throat when it goes down. Sure "paralyzes" like some real snake bites.</li>
+				<li><b>Beltbuster Mead:</b> equal parts mead, ethanol, cream and lipoifier. Very alcoholic and immensely fattening. Clothes won't hold after this one.</li>
 				</ol>
 				<p>
 				Remember, this stuff is quite something. Don't serve these to folks that don't want it.
+
+				</body>
+				</html>
+				"}
+
+/obj/item/book/manual/fatty_chems
+	name = "The Strange Chems of GATO's Sector"
+	icon = 'GainStation13/icons/obj/library.dmi'
+	icon_state ="bookblubberybartender"
+	author = "Unknown"
+	title = "The Strange Chems of GATO's Sector"
+	//book contents below
+	dat = {"<html>
+				<head>
+				<style>
+				h1 {font-size: 18px; margin: 15px 0px 5px;}
+				h2 {font-size: 15px; margin: 15px 0px 5px;}
+				li {margin: 2px 0px 2px 15px;}
+				ul {list-style: none; margin: 5px; padding: 0px;}
+				ol {margin: 5px; padding: 0px 15px;}
+				</style>
+				</head>
+				<body>
+				<h3>The Strange Chems of GATO-Controlled Sectors</h3>
+
+				Peculiar reactions not found anywhere else taken within the sector of GATO's control, especially within the station of GS13.
+				To ensure that the knowledge isn't lost to time, I've decided some of the simpler reactions here.
+
+				<ol>
+				<li><b>Lipoifier:</b> The opposite of Lipolicide. Seems to multiply fat cells in one's body. Equal parts corn oil, sugar and synthflesh.</li>
+				<li><b>Fizulphite:</b> Seems to stir up a strange reaction in stomachs, making them all bubbly. 1u of nitrogen, 1u sugar and 3u of oxygen.</li>
+				<li><b>Extilphite:</b> Very useful chem! Helps soothe stomach bloat and relieves fullness. 1u sugar, 2u hydrogen, 2u carbon.</li>
+				<li><b>Flatulose:</b> This chemical is similar to Fizulphite, but results in uncontrolled release of rear gasses. 1u sugar, 1u of Bad Food, 1u of Cream.</li>
+				</ol>
+				<p>
+				Remember to be responsible with those chems. They aren't lethal or toxic, but they can be undesired by locals.
 
 				</body>
 				</html>
