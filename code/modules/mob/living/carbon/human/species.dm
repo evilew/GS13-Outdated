@@ -499,7 +499,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	var/list/standing = list()
 
 	var/obj/item/bodypart/head/HD = H.get_bodypart(BODY_ZONE_HEAD)
-	H.handle_cosmetic_parts()
 
 	if(HD && !(HAS_TRAIT(H, TRAIT_HUSK)))
 		// lipstick

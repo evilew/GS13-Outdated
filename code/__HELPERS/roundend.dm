@@ -253,7 +253,7 @@
 	SSblackbox.Seal()
 
 	sleep(50)
-	world.hypermessage(botmsg)
+	// world.hypermessage(botmsg)
 	ready_for_reboot = TRUE
 	standard_reboot()
 

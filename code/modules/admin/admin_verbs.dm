@@ -75,7 +75,7 @@ GLOBAL_LIST_INIT(admin_verbs_admin, world.AVerbsAdmin())
 	/datum/admins/proc/BC_RemoveKeyVerb,
 	/datum/admins/proc/BC_ToggleState,
 	/client/proc/addbunkerbypass,
-	/client/proc/discordmessage,
+	// /client/proc/discordmessage,
 	/client/proc/revokebunkerbypass,
 	/client/proc/stop_sounds,
 	/client/proc/debugstatpanel,
