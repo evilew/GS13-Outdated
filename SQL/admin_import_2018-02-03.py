@@ -30,27 +30,27 @@ def parse_text_flags(text, previous):
         for flag in flags:
             sign = flag[:1]
             if flag[1:] in ("@", "prev"):
-                if sign is "+":
+                if sign == "+":
                     flags_int = previous[0]
-                elif sign is "-":
+                elif sign == "-":
                     exclude_flags_int = previous[1]
-                elif sign is "*":
+                elif sign == "*":
                     can_edit_flags_int = previous[2]
                 continue
             if flag[1:] in ("EVERYTHING", "HOST", "ALL"):
-                if sign is "+":
+                if sign == "+":
                     flags_int = 65535
-                elif sign is "-":
+                elif sign == "-":
                     exclude_flags_int = 65535
-                elif sign is "*":
+                elif sign == "*":
                     can_edit_flags_int = 65535
                 continue
             if flag[1:] in flag_values:
-                if sign is "+":
+                if sign == "+":
                     flags_int += flag_values[flag[1:]]
-                elif sign is "-":
+                elif sign == "-":
                     exclude_flags_int += flag_values[flag[1:]]
-                elif sign is "*":
+                elif sign == "*":
                     can_edit_flags_int += flag_values[flag[1:]]
     flags_int = max(min(65535, flags_int), 0)
     exclude_flags_int = max(min(65535, exclude_flags_int), 0)
