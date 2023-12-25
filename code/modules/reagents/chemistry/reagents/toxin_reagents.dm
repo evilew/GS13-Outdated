@@ -620,7 +620,7 @@
 /datum/reagent/medicine/lipolicide/on_mob_life(mob/living/carbon/M)
 	if(M.nutrition <= NUTRITION_LEVEL_STARVING)
 		M.adjustToxLoss(1*REM, 0)
-	if(M.fatness == 0)
+	if(M.realfatness == 0)
 		M.nutrition = max(M.nutrition - 3, 0) // making the chef more valuable, one meme trap at a time
 	if(HAS_TRAIT(M, TRAIT_LIPOLICIDE_TOLERANCE)) //GS13 edit
 		M.adjust_fatness(-0.5, FATTENING_TYPE_WEIGHT_LOSS)

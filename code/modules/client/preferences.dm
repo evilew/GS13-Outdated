@@ -2934,6 +2934,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	//GS13
 	character.fatness = starting_weight
+	character.realfatness = starting_weight
 	character.weight_gain_rate = wg_rate
 	character.weight_loss_rate = wl_rate
 
