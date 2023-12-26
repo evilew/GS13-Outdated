@@ -2,16 +2,15 @@
 	//Due to the changes needed to create the system to hide fatness, here's some notes:
 	// -If you are making a mob simply gain or lose weight, use adjust_fatness. Try to not touch the variables directly unless you know 'em well
 	// -fatness is the value a mob is being displayed and calculated as by most things. Changes to fatness are not permanent
-	// -realfatness is the value a mob is actually at, even if it's being hidden. For permanent changes, use this one
-	// -overfatnes
+	// -fatness_real is the value a mob is actually at, even if it's being hidden. For permanent changes, use this one
 	//What level of fatness is the parent mob currently at?
 	var/fatness = 0
 	//Is something overriding the actual fatness value of a character?
 	var/fatness_hidden = FALSE
 	//The actual value a mob is at. Is equal to fatness if fatness_hidden is FALSE.
-	var/realfatness = 0
+	var/fatness_real = 0
 	//The value a mob's fatness is being overwritten with if fatness_hidden is TRUE.
-	var/overfatness = 0
+	var/fatness_over = 0
 	///At what rate does the parent mob gain weight? 1 = 100%
 	var/weight_gain_rate = 1
 	//At what rate does the parent mob lose weight? 1 = 100%
@@ -37,19 +36,19 @@
 	else
 		amount_to_change = amount_to_change * weight_loss_rate
 
-	realfatness += amount_to_change 
-	realfatness = max(realfatness, MINIMUM_FATNESS_LEVEL) //It would be a little silly if someone got negative fat.
+	fatness_real += amount_to_change 
+	fatness_real = max(fatness_real, MINIMUM_FATNESS_LEVEL) //It would be a little silly if someone got negative fat.
 
 	if(client?.prefs?.max_weight) // GS13
-		realfatness = min(realfatness, (client?.prefs?.max_weight - 1))
+		fatness_real = min(fatness_real, (client?.prefs?.max_weight - 1))
 
 	if(fatness_hidden)	//If a character's real fatness is being hidden
 		if(client?.prefs?.max_weight) //Check their prefs
-			overfatness = min(overfatness, (client?.prefs?.max_weight - 1)) //And make sure it's not above their preferred max
+			fatness_over = min(fatness_over, (client?.prefs?.max_weight - 1)) //And make sure it's not above their preferred max
 
-		fatness = overfatness //Then, make that value their current fatness
+		fatness = fatness_over //Then, make that value their current fatness
 	else			//If it's not being hidden
-		fatness = realfatness //Make their current fatness their real fatness
+		fatness = fatness_real //Make their current fatness their real fatness
 
 	return TRUE
 
@@ -97,15 +96,15 @@
 		
 	return TRUE
 
-/mob/living/carbon/proc/fat_hide(hide_amount)	//If something wants to hide realfatness, it'll call this method and give it an amount to cover it with
+/mob/living/carbon/proc/fat_hide(hide_amount)	//If something wants to hide fatness_real, it'll call this method and give it an amount to cover it with
 	fatness_hidden = TRUE
-	overfatness = hide_amount
-	fatness = overfatness	//To update a mob's fatness with the new amount to be shown immediately
+	fatness_over = hide_amount
+	fatness = fatness_over	//To update a mob's fatness with the new amount to be shown immediately
 
 	return TRUE
 
 /mob/living/carbon/proc/fat_show()				//If something that hides fatness is removed or expires, it'll call this method
 	fatness_hidden = FALSE
-	fatness = realfatness	//To update a mob's fatness with their real one immediately
+	fatness = fatness_real	//To update a mob's fatness with their real one immediately
 
 	return TRUE

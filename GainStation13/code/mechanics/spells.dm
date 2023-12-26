@@ -57,7 +57,7 @@
 	if(!proximity || !target || target == user)
 		return FALSE
 
-	if(weight_to_add > user.realfatness || !user.adjust_fatness(-weight_to_add, FATTENING_TYPE_MAGIC))
+	if(weight_to_add > user.fatness_real || !user.adjust_fatness(-weight_to_add, FATTENING_TYPE_MAGIC))
 		to_chat(user, "<span class='warning'You don't have enough spare weight to transfer</span>")
 		return FALSE
 
