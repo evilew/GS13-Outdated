@@ -1,6 +1,17 @@
 /mob/living/carbon
-	///What level of fatness is the parent mob at?
+	//Due to the changes needed to create the system to hide fatness, here's some notes:
+	// -If you are making a mob simply gain or lose weight, use adjust_fatness. Try to not touch the variables directly unless you know 'em well
+	// -fatness is the value a mob is being displayed and calculated as by most things. Changes to fatness are not permanent
+	// -realfatness is the value a mob is actually at, even if it's being hidden. For permanent changes, use this one
+	// -overfatnes
+	//What level of fatness is the parent mob currently at?
 	var/fatness = 0
+	//Is something overriding the actual fatness value of a character?
+	var/fatness_hidden = FALSE
+	//The actual value a mob is at. Is equal to fatness if fatness_hidden is FALSE.
+	var/realfatness = 0
+	//The value a mob's fatness is being overwritten with if fatness_hidden is TRUE.
+	var/overfatness = 0
 	///At what rate does the parent mob gain weight? 1 = 100%
 	var/weight_gain_rate = 1
 	//At what rate does the parent mob lose weight? 1 = 100%
@@ -26,11 +37,19 @@
 	else
 		amount_to_change = amount_to_change * weight_loss_rate
 
-	fatness += amount_to_change 
-	fatness = max(fatness, MINIMUM_FATNESS_LEVEL) //It would be a little silly if someone got negative fat.
+	realfatness += amount_to_change 
+	realfatness = max(realfatness, MINIMUM_FATNESS_LEVEL) //It would be a little silly if someone got negative fat.
 
 	if(client?.prefs?.max_weight) // GS13
-		fatness = min(fatness, (client?.prefs?.max_weight - 1))
+		realfatness = min(realfatness, (client?.prefs?.max_weight - 1))
+
+	if(fatness_hidden)	//If a character's real fatness is being hidden
+		if(client?.prefs?.max_weight) //Check their prefs
+			overfatness = min(overfatness, (client?.prefs?.max_weight - 1)) //And make sure it's not above their preferred max
+
+		fatness = overfatness //Then, make that value their current fatness
+	else			//If it's not being hidden
+		fatness = realfatness //Make their current fatness their real fatness
 
 	return TRUE
 
@@ -76,4 +95,17 @@
 			if(HAS_TRAIT(src, TRAIT_WEIGHT_LOSS_IMMUNE))
 				return FALSE
 		
+	return TRUE
+
+/mob/living/carbon/proc/fat_hide(hide_amount)	//If something wants to hide realfatness, it'll call this method and give it an amount to cover it with
+	fatness_hidden = TRUE
+	overfatness = hide_amount
+	fatness = overfatness	//To update a mob's fatness with the new amount to be shown immediately
+
+	return TRUE
+
+/mob/living/carbon/proc/fat_show()				//If something that hides fatness is removed or expires, it'll call this method
+	fatness_hidden = FALSE
+	fatness = realfatness	//To update a mob's fatness with their real one immediately
+
 	return TRUE
