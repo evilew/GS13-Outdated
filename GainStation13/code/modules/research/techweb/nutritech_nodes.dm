@@ -5,7 +5,7 @@
 	display_name = "Nutri-Tech Tools"
 	description = "Ending world hunger was never made easier!"
 	prereq_ids = list("biotech", "adv_engi") // add "engineering" if the designs get complicated later on
-	design_ids = list("calorite_collar", "ci-nutrimentturbo")
+	design_ids = list("calorite_collar", "ci-nutrimentturbo", "bluespace_belt")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	boost_item_paths = list(/obj/item/gun/energy/fatoray, /obj/item/gun/energy/fatoray/cannon, /obj/item/trash/fatoray_scrap1, /obj/item/trash/fatoray_scrap2)
 	export_price = 5000

@@ -3100,6 +3100,7 @@
 #include "GainStation13\code\modules\reagents\chemistry\recipes\fatchem.dm"
 #include "GainStation13\code\modules\reagents\chemistry\recipes\fatdrinks.dm"
 #include "GainStation13\code\modules\reagents\chemistry\recipes\ROCKANDSTONEdrinks.dm"
+#include "GainStation13\code\modules\reagents\reagent_containers\barrel_tank.dm"
 #include "GainStation13\code\modules\research\designs\nutri_designs.dm"
 #include "GainStation13\code\modules\research\techweb\nutritech_nodes.dm"
 #include "GainStation13\code\modules\surgery\organs\augments.dm"
