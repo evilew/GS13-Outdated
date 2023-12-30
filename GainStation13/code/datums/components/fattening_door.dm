@@ -17,8 +17,8 @@
 		var/vis_message_others = ""
 		// determine if mob should get stuck and be fattened
 		if(M.fatness >= FATNESS_LEVEL_FAT)
-			fatten = TRUE
 			if(!M.AmountFatStunned())
+				fatten = TRUE
 				stuck_delay = 5
 				vis_message_self = "You feel your sides briefly brush against the doorway!"
 				vis_message_others = "[M]'s sides briefly brush against the doorway."
@@ -41,4 +41,4 @@
 		// Apply the fatstun
 		if(fatten)
 			M.visible_message("<span class='boldnotice'>[vis_message_others]</span>", "<span class='boldwarning'>[vis_message_self]</span>")
-			M.FatStun(stuck_delay, fatAmount = fat_to_add)
+			M.FatStun(stuck_delay, fatAmount = fat_to_add) // DOOR STUCK
