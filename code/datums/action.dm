@@ -761,3 +761,6 @@
 	target.layer = old_layer
 	target.plane = old_plane
 	current_button.appearance_cache = target.appearance
+
+/datum/action/item_action/toggle_tube //GS13
+	name = "Toggle Tube"

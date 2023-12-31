@@ -44,3 +44,13 @@
 	category = list("Misc", "Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL
 
+/datum/design/bluespace_belt
+	name = "Bluespace Belt"
+	desc = "A belt made using bluespace technology. The power of space and time, used to hide the fact you are fat."
+	id = "bluespace_belt"
+	build_type = PROTOLATHE
+	construction_time = 100
+	materials = list(MAT_SILVER = 4000, MAT_GOLD = 4000, MAT_BLUESPACE = 2000)
+	build_path = /obj/item/bluespace_belt
+	category = list("Misc", "Medical Designs")
+	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
