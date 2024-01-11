@@ -14,7 +14,7 @@
 	hydration = 3
 
 /datum/reagent/consumable/ethanol/belly_bloats/on_mob_life(mob/living/carbon/M)
-	if(M && M?.client?.prefs.weight_gain_chems) // GS13
+	if(M && M?.client?.prefs.weight_gain_food) // GS13
 		M.nutrition += 15 * REAGENTS_METABOLISM
 	else
 		M.nutrition += 1
@@ -34,7 +34,7 @@
 	hydration = 4
 
 /datum/reagent/consumable/ethanol/blobby_mary/on_mob_life(mob/living/carbon/M)
-	if(M && M?.client?.prefs.weight_gain_chems) // GS13
+	if(M && M?.client?.prefs.weight_gain_food) // GS13
 		M.nutrition += 25 * REAGENTS_METABOLISM
 	else
 		M.nutrition += 1
@@ -54,7 +54,7 @@
 	hydration = 4
 
 /datum/reagent/consumable/ethanol/beltbuster_mead/on_mob_life(mob/living/carbon/M)
-	if(M && M?.client?.prefs.weight_gain_chems) // GS13
+	if(M && M?.client?.prefs.weight_gain_food) // GS13
 		M.nutrition += 30 * REAGENTS_METABOLISM
 	else
 		M.nutrition += 1
@@ -80,7 +80,7 @@
 	M.Jitter(5)
 	if(M.getBruteLoss() && prob(20))
 		M.heal_bodypart_damage(1,0, 0)
-	if(M && M?.client?.prefs.weight_gain_chems) // GS13
+	if(M && M?.client?.prefs.weight_gain_food) // GS13
 		M.nutrition += 15 * REAGENTS_METABOLISM
 	else
 		M.nutrition += 1
@@ -99,11 +99,19 @@
 	hydration = 4
 
 /datum/reagent/consumable/fruits_tea/on_mob_life(mob/living/carbon/M)
-	if(M && M?.client?.prefs.weight_gain_chems) // GS13
+	M.dizziness = max(0,M.dizziness-2)
+	M.drowsyness = max(0,M.drowsyness-1)
+	M.jitteriness = max(0,M.jitteriness-3)
+	M.AdjustSleeping(-20, FALSE)
+	if(M.getToxLoss() && prob(20))
+		M.adjustToxLoss(-1, 0)
+	M.adjust_bodytemperature(20 * TEMPERATURE_DAMAGE_COEFFICIENT, 0, BODYTEMP_NORMAL)
+	if(M && M?.client?.prefs.weight_gain_food) // GS13
 		M.nutrition += 15 * REAGENTS_METABOLISM
 	else
 		M.nutrition += 1
 	..()
+	. = 1
 
 /datum/reagent/consumable/snakebite
 	name = "Snakebite"
@@ -118,7 +126,7 @@
 	hydration = 4
 
 /datum/reagent/consumable/snakebite/on_mob_life(mob/living/carbon/M)
-	if(M && M?.client?.prefs.weight_gain_chems) // GS13
+	if(M && M?.client?.prefs.weight_gain_food) // GS13
 		M.nutrition += 25 * REAGENTS_METABOLISM
 	else
 		M.nutrition += 1
