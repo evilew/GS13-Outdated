@@ -46,6 +46,7 @@
 	update_size()
 	update_appearance()
 	update_link()
+	owner.regenerate_icons()
 
 //exposure and through-clothing code
 /mob/living/carbon
