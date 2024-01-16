@@ -2,7 +2,6 @@
 /datum/game_mode
 	var/list/datum/mind/bloodsuckers = list() 		// List of minds belonging to this game mode.
 	var/list/datum/mind/vassals = list() 			// List of minds that have been turned into Vassals.
-	//var/list/datum/mind/vamphunters = list() 		// List of minds hunting vampires. Disabled at the moment
 	var/obj/effect/sunlight/bloodsucker_sunlight	// Sunlight Timer. Created on first Bloodsucker assign. Destroyed on last removed Bloodsucker.
 
 	// LISTS //
@@ -52,15 +51,11 @@
 		if (!antag_candidates.len)
 			break
 		var/datum/mind/bloodsucker = pick(antag_candidates)
-		// Can we even BE a bloodsucker?
-		//if (can_make_bloodsucker(bloodsucker, display_warning=FALSE))
 		bloodsuckers += bloodsucker
 		bloodsucker.restricted_roles = restricted_jobs
 		log_game("[bloodsucker.key] (ckey) has been selected as a Bloodsucker.")
 		antag_candidates.Remove(bloodsucker) // Apparently you can also write antag_candidates -= bloodsucker
 
-	//  Assign Hunters (as many as monsters, plus one)
-	//assign_monster_hunters(bloodsuckers.len, TRUE, bloodsuckers)	// Disabled for now
 
 	// Do we have enough vamps to continue?
 	return bloodsuckers.len >= required_enemies
@@ -76,10 +71,6 @@
 	for(var/datum/mind/bloodsucker in bloodsuckers)
 		// spawn() --> Run block of code but game continues on past it.
 		// sleep() --> Run block of code and freeze code there (including whoever called us) until it's resolved.
-
-		//Clean Bloodsucker Species (racist?)
-		//clean_invalid_species(bloodsucker)
-		// 			TO-DO !!!
 
 		// Add Bloodsucker Antag Datum (or remove from list on Fail)
 		if (!make_bloodsucker(bloodsucker))
@@ -124,8 +115,6 @@
 /datum/game_mode/proc/can_make_bloodsucker(datum/mind/bloodsucker, datum/mind/creator, display_warning=TRUE) // Creator is just here so we can display fail messages to whoever is turning us.
 	// No Mind
 	if(!bloodsucker || !bloodsucker.key) // KEY is client login?
-		//if(creator) // REMOVED. You wouldn't see their name if there is no mind, so why say anything?
-		//	to_chat(creator, "<span class='danger'>[bloodsucker] isn't self-aware enough to be raised as a Bloodsucker!</span>")
 		return FALSE
 	// Current body is invalid
 	if(!ishuman(bloodsucker.current))// && !ismonkey(bloodsucker.current))
@@ -215,21 +204,6 @@
 		return FALSE
 	if (target.stat > UNCONSCIOUS)
 		return FALSE
-				// Check Overdose: Am I even addicted to blood? Do I even have any in me?
-				//if (!target.reagents.addiction_list || !target.reagents.reagent_list)
-					//message_admins("DEBUG2: can_make_vassal() Abort: No reagents")
-				//	return 0
-				// Check Overdose: Did my current volume go over the Overdose threshold?
-				//var/am_addicted = 0
-				//for (var/datum/reagent/blood/vampblood/blood in target.reagents.addiction_list) // overdosed is tracked in reagent_list, not addiction_list.
-					//message_admins("DEBUG3: can_make_vassal() Found Blood! [blood] [blood.overdose]")
-					//if (blood.overdosed)
-				//	am_addicted = 1 // Blood is present in addiction? That's all we need.
-				//	break
-
-				//if (!am_addicted)
-					//message_admins("DEBUG4: can_make_vassal() Abort: No Blood")
-				//	return 0
 	// No Mind!
 	if (!target.mind || !target.mind.key)
 		if (display_warning)
@@ -267,10 +241,7 @@
 	// Does even ONE antag appear in this mind that isn't in the list? Then FAIL!
 	for(var/datum/antagonist/antag_datum in M.antag_datums)
 		if (!(antag_datum.type in vassal_allowed_antags))  // vassal_allowed_antags is a list stored in the game mode, above.
-			//message_admins("DEBUG VASSAL: Found Invalid: [antag_datum] // [antag_datum.type]")
 			return TRUE
-	//message_admins("DEBUG VASSAL: Valid Antags! (total of [M.antag_datums.len])")
-	// WHEN YOU DELETE THE ABOVE: Remove the 3 second timer on converting the vassal too.
 	return FALSE
 
 /datum/game_mode/proc/make_vassal(mob/living/target, datum/mind/creator)
