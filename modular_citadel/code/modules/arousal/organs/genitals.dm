@@ -46,7 +46,7 @@
 	update_size()
 	update_appearance()
 	update_link()
-	owner.regenerate_icons()
+	owner.update_inv_w_uniform() //GS13: rebuild overlays on genitals appearance update, for modular clothes
 
 //exposure and through-clothing code
 /mob/living/carbon
