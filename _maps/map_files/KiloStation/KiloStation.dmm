@@ -2109,14 +2109,6 @@
 /obj/effect/landmark/start/chief_medical_officer,
 /turf/open/floor/plasteel/showroomfloor,
 /area/crew_quarters/heads/cmo)
-"adL" = (
-/obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
-	},
-/obj/structure/barricade/wooden/crude,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/turf/open/floor/plasteel/dark,
-/area/maintenance/port)
 "adM" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -4942,7 +4934,6 @@
 /area/maintenance/starboard)
 "air" = (
 /obj/effect/turf_decal/loading_area,
-/obj/structure/barricade/wooden/crude,
 /obj/machinery/door/window/southleft{
 	name = "cage door"
 	},
@@ -7296,7 +7287,6 @@
 /obj/effect/turf_decal/loading_area{
 	dir = 1
 	},
-/obj/structure/barricade/wooden/crude,
 /obj/machinery/door/window/northleft{
 	name = "cage door"
 	},
@@ -8404,6 +8394,13 @@
 	},
 /obj/machinery/newscaster/security_unit{
 	pixel_x = -28
+	},
+/obj/item/toy/plush/lizardplushie{
+	gender = "male";
+	item_color = "1b1a16";
+	verb_say = "rattles";
+	desc = "An adorable (over)stuffed toy that resembles a certain HoP Gargoyle.";
+	name = "gargoyle plushie"
 	},
 /turf/open/floor/carpet,
 /area/crew_quarters/heads/hop)
@@ -25148,14 +25145,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/storage)
-"aPS" = (
-/obj/structure/grille,
-/obj/structure/barricade/wooden,
-/obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
-	},
-/turf/open/floor/plasteel/dark,
-/area/maintenance/port)
 "aPT" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -49855,6 +49844,9 @@
 	name = "command camera"
 	},
 /obj/structure/disposalpipe/segment,
+/obj/item/toy/plush/lizardplushie{
+	gender = "male"
+	},
 /turf/open/floor/plasteel/dark,
 /area/bridge)
 "bDD" = (
@@ -55917,13 +55909,12 @@
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/starboard)
 "bNB" = (
-/obj/structure/grille,
-/obj/structure/barricade/wooden,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
 /obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
+	req_access_txt = "12";
+	welded = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port/aft)
@@ -65472,10 +65463,9 @@
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "ccL" = (
-/obj/structure/grille,
-/obj/structure/barricade/wooden,
 /obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
+	req_access_txt = "12";
+	welded = 1
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -74041,10 +74031,9 @@
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port/aft)
 "crE" = (
-/obj/structure/grille,
-/obj/structure/barricade/wooden,
 /obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
+	req_access_txt = "12";
+	welded = 1
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -75170,10 +75159,10 @@
 /area/quartermaster/warehouse)
 "ctF" = (
 /obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
+	req_access_txt = "12";
+	welded = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/structure/barricade/wooden/crude,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port)
 "ctG" = (
@@ -75491,12 +75480,12 @@
 /area/maintenance/disposal/incinerator)
 "cum" = (
 /obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
+	req_access_txt = "12";
+	welded = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/structure/barricade/wooden/crude,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port)
 "cun" = (
@@ -75874,9 +75863,9 @@
 /area/engine/engineering)
 "cuZ" = (
 /obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
+	req_access_txt = "12";
+	welded = 1
 	},
-/obj/structure/barricade/wooden/crude,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port)
 "cva" = (
@@ -76010,16 +75999,6 @@
 /obj/machinery/light/small,
 /turf/open/floor/plasteel,
 /area/maintenance/disposal/incinerator)
-"cvl" = (
-/obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
-	},
-/obj/structure/barricade/wooden/crude,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/maintenance/port)
 "cvm" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
 	dir = 4
@@ -76564,9 +76543,9 @@
 /area/maintenance/port/fore)
 "cwg" = (
 /obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
+	req_access_txt = "12";
+	welded = 1
 	},
-/obj/structure/barricade/wooden/crude,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
@@ -76577,9 +76556,9 @@
 /area/maintenance/port/fore)
 "cwh" = (
 /obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
+	req_access_txt = "12";
+	welded = 1
 	},
-/obj/structure/barricade/wooden/crude,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -76964,9 +76943,9 @@
 /area/maintenance/disposal)
 "cwQ" = (
 /obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
+	req_access_txt = "12";
+	welded = 1
 	},
-/obj/structure/barricade/wooden/crude,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/effect/turf_decal/loading_area{
 	dir = 1
@@ -78132,9 +78111,9 @@
 /area/chapel/office)
 "czK" = (
 /obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
+	req_access_txt = "12";
+	welded = 1
 	},
-/obj/structure/barricade/wooden/crude,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -78145,9 +78124,9 @@
 /area/maintenance/port/fore)
 "czL" = (
 /obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
+	req_access_txt = "12";
+	welded = 1
 	},
-/obj/structure/barricade/wooden/crude,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
 /obj/effect/turf_decal/loading_area{
@@ -79767,9 +79746,9 @@
 /area/maintenance/aft)
 "cEp" = (
 /obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
+	req_access_txt = "12";
+	welded = 1
 	},
-/obj/structure/barricade/wooden/crude,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/starboard/fore)
@@ -80020,9 +79999,9 @@
 /area/maintenance/fore)
 "cEW" = (
 /obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
+	req_access_txt = "12";
+	welded = 1
 	},
-/obj/structure/barricade/wooden/crude,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/dark,
@@ -80033,9 +80012,9 @@
 /area/maintenance/fore)
 "cEY" = (
 /obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
+	req_access_txt = "12";
+	welded = 1
 	},
-/obj/structure/barricade/wooden/crude,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/warning/biohazard{
 	pixel_x = 32
@@ -80122,9 +80101,9 @@
 /area/maintenance/starboard/fore)
 "cFp" = (
 /obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
+	req_access_txt = "12";
+	welded = 1
 	},
-/obj/structure/barricade/wooden/crude,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/dark,
@@ -83842,9 +83821,9 @@
 /area/quartermaster/warehouse)
 "gSB" = (
 /obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
+	req_access_txt = "12";
+	welded = 1
 	},
-/obj/structure/barricade/wooden/crude,
 /turf/open/floor/wood,
 /area/maintenance/port/fore)
 "gWo" = (
@@ -100939,7 +100918,7 @@ amR
 amA
 amA
 amA
-aPS
+cuZ
 aEw
 amA
 cnL
@@ -101442,7 +101421,7 @@ cwy
 cwJ
 cwp
 cve
-cvl
+cum
 amA
 cvB
 amA
@@ -102211,7 +102190,7 @@ azi
 cwf
 aGd
 hnn
-adL
+ctF
 aKS
 cvv
 cwV
