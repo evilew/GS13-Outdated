@@ -1204,9 +1204,16 @@
 			return
 	if(safe)
 		for(var/atom/movable/M in get_turf(src))
+			if (failCount > failThreshold) //something is continuously blocking the door
+				do_sparks(5, TRUE, src)
+				visible_message("<span class='warning'>[src]'s timing mechanism fails.</span>")
+				failCount = 0
+				return
 			if(M.density && M != src) //something is blocking the door
 				autoclose_in(60)
+				failCount++
 				return
+		failCount = 0
 
 	if(forced < 2)
 		if(obj_flags & EMAGGED)
