@@ -298,6 +298,14 @@ datum/sprite_accessory/ears/human/gret
 	icon = 'modular_citadel/icons/mob/mam_ears.dmi'
 	color_src = MATRIXED
 
+/datum/sprite_accessory/mam_ears/sylv_pip //ported from Virgo
+    name = "Sylveon"
+    icon_state = "pipears"
+
+/datum/sprite_accessory/mam_ears/dragon //ported from Virgo
+    name = "Dragon Horns"
+    icon_state = "dragon"
+
 /datum/sprite_accessory/ears/fish
 	name = "Fish"
 	icon_state = "fish"
