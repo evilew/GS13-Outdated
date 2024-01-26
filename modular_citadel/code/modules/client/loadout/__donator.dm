@@ -170,3 +170,41 @@ datum/gear/lyricalpawsring
 	ckeywhitelist = list("relquen")
 */
 //Commented out all Donator items
+
+/datum/gear/robes
+	name = "PLOINK PLOINK PLOINK"
+	category = SLOT_IN_BACKPACK
+	path = /obj/item/clothing/suit/hooded/occultrobes
+	ckeywhitelist = list("sonoida")
+
+
+
+//GS13: donator items and other ckey-locked junk
+/datum/gear/gatobadge_employee //these are available only to admins with CC-related characters
+	name = "GATO Badge - Employee"
+	category = SLOT_IN_BACKPACK
+	path = /obj/item/clothing/accessory/medal/gato_badge/employee
+	ckeywhitelist = list("sonoida")
+/datum/gear/gatobadge_middleman //these are available to players who were granted permission to have their characters to CC
+	name = "GATO Badge - Correspondent"
+	category = SLOT_IN_BACKPACK
+	path = /obj/item/clothing/accessory/medal/gato_badge/middleman
+	ckeywhitelist = list("sonoida, johnjimjim")
+
+/datum/gear/halsey_overcoat
+	name = "Halsey's Commander Overcoat"
+	category = SLOT_IN_BACKPACK
+	path = /obj/item/clothing/suit/chloe/halsey
+	ckeywhitelist = list("yeeny")
+
+//sorry for defining this here, just thought it'd be more convenient
+/obj/item/clothing/suit/chloe/halsey //sorry to whoever chloe is, but that coat is far too badass not to be used
+	name = "Halsey's Commander Overcoat"
+	desc = "A Ginormous red overcoat that looks fit for a commander. Has a tag on it that reads: 'Property of Halsey Harmonten. Please return if lost!'"
+	armor = list("melee" = 20, "bullet" = 20, "laser" = 0,"energy" = 20, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0) //worn by a captain player, might as well recompensate not wearing the carapace
+
+/datum/gear/rose_plush
+	name = "Rose Plush"
+	category = SLOT_IN_BACKPACK
+	path = /obj/item/toy/plush/rose
+	ckeywhitelist = list("eremitanovem")

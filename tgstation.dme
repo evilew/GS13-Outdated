@@ -3327,6 +3327,7 @@
 #include "modular_citadel\code\modules\client\preferences.dm"
 #include "modular_citadel\code\modules\client\preferences_savefile.dm"
 #include "modular_citadel\code\modules\client\preferences_toggles.dm"
+#include "modular_citadel\code\modules\client\loadout\__donator.dm"
 #include "modular_citadel\code\modules\client\loadout\_cargo.dm"
 #include "modular_citadel\code\modules\client\loadout\_command.dm"
 #include "modular_citadel\code\modules\client\loadout\_engi.dm"
