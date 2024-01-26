@@ -37,6 +37,10 @@
 	var/poddoor = FALSE
 	var/unres_sides = 0 //Unrestricted sides. A bitflag for which direction (if any) can open the door with no access
 
+	// GS13: Halt autoclose when blocked with static object, like a wooden barricade...
+	var/failCount = 0
+	var/failThreshold = 5
+
 /obj/machinery/door/examine(mob/user)
 	. = ..()
 	if(red_alert_access)
@@ -284,10 +288,16 @@
 		return
 	if(safe)
 		for(var/atom/movable/M in get_turf(src))
+			if (failCount > failThreshold) //something is continuously blocking the door
+				do_sparks(5, TRUE, src)
+				visible_message("<span class='warning'>[src]'s timing mechanism fails.</span>")
+				failCount = 0
+				return
 			if(M.density && M != src) //something is blocking the door
 				if(autoclose)
 					autoclose_in(60)
 				return
+		failCount = 0
 
 	operating = TRUE
 
