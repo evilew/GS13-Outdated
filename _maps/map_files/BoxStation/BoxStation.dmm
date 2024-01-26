@@ -6068,7 +6068,7 @@
 "cnL" = (/turf/open/floor/engine,/area/science/explab)
 "cnM" = (/obj/structure/table,/obj/item/flashlight/lamp,/turf/open/floor/plating,/area/maintenance/starboard/aft)
 "cnN" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plating{icon_state = "platingdmg3"},/area/maintenance/starboard/aft)
-"cnO" = (/obj/machinery/door/airlock/maintenance/abandoned{name = "Incinerator Access"; req_access_txt = "12"},/turf/open/floor/plating,/area/maintenance/port/aft)
+"cnO" = (/obj/machinery/door/airlock/maintenance/abandoned{name = "Incinerator Access"; req_access_txt = "12"; welded = 1}},/turf/open/floor/plating,/area/maintenance/port/aft)
 "cnP" = (/obj/machinery/light/small{dir = 8},/turf/open/floor/wood,/area/maintenance/bar)
 "cnQ" = (/obj/effect/landmark/xeno_spawn,/turf/open/floor/wood,/area/maintenance/bar)
 "cnR" = (/obj/structure/chair/wood/normal{dir = 4},/obj/effect/landmark/blobstart,/turf/open/floor/wood,/area/maintenance/bar)
