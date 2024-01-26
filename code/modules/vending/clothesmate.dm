@@ -10,7 +10,7 @@
 	products = list(/obj/item/clothing/head/that = 4,
 		            /obj/item/clothing/head/fedora = 3,
 		            /obj/item/clothing/suit/jacket/letterman_gato = 5, //GS13
-					/obj/item/clothing/under/color/grey/modular = 6, //GS13
+					// /obj/item/clothing/under/color/grey/modular = 6, //GS13
 		            /obj/item/clothing/glasses/monocle = 3,
 		            /obj/item/clothing/suit/jacket = 4,
 					/obj/item/clothing/suit/jacket/flannel = 4,

@@ -527,8 +527,8 @@
 
 
 	//GS13
-/datum/gear/modular_greysuit
-	name = "Modular Jumpsuit (gray)"
-	category = SLOT_W_UNIFORM
-	path = /obj/item/clothing/under/color/grey/modular
-	cost = 1
+// /datum/gear/modular_greysuit
+// 	name = "Modular Jumpsuit (gray)"
+// 	category = SLOT_W_UNIFORM
+// 	path = /obj/item/clothing/under/color/grey/modular
+// 	cost = 1
