@@ -7024,6 +7024,10 @@
 	},
 /obj/effect/turf_decal/bot,
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "arQ" = (
@@ -34787,6 +34791,13 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/delivery,
+/obj/machinery/button/door{
+	id = "kitchenVEND";
+	name = "MealVendor Shutters Control";
+	pixel_x = 5;
+	pixel_y = -23;
+	desc = "A door remote control switch to block off the station's MealVendors... Dont be too much of an asshole now!"
+	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/kitchen)
 "bls" = (
@@ -44604,6 +44615,10 @@
 	dir = 8
 	},
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plasteel,
 /area/engine/break_room)
 "bAX" = (
@@ -87830,6 +87845,10 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/effect/turf_decal/delivery,
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness/recreation)
 "cRx" = (
@@ -99848,6 +99867,10 @@
 	dir = 4
 	},
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plasteel/white,
 /area/science/misc_lab)
 "dlo" = (

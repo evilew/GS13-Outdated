@@ -4153,6 +4153,10 @@
 	dir = 8
 	},
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plasteel/dark,
 /area/security/main)
 "ahf" = (
@@ -21427,6 +21431,10 @@
 	dir = 4
 	},
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/fore)
 "aJR" = (
@@ -21983,6 +21991,10 @@
 	dir = 1
 	},
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/fore)
 "aKJ" = (
@@ -22063,6 +22075,10 @@
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/decal/cleanable/blood/old,
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/wood,
 /area/maintenance/port)
 "aKP" = (
@@ -26207,6 +26223,10 @@
 	dir = 4
 	},
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plasteel/cafeteria{
 	dir = 5
 	},
@@ -28301,6 +28321,10 @@
 	},
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
 	},
 /turf/open/floor/plasteel/cafeteria{
 	dir = 5
@@ -37909,6 +37933,10 @@
 	dir = 1
 	},
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/captain)
 "bjP" = (
@@ -41813,6 +41841,13 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 8
 	},
+/obj/machinery/button/door{
+	id = "kitchenVEND";
+	name = "MealVendor Shutters Control";
+	pixel_x = 5;
+	pixel_y = -23;
+	desc = "A door remote control switch to block off the station's MealVendors... Dont be too much of an asshole now!"
+	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/crew_quarters/kitchen)
 "bql" = (
@@ -42954,6 +42989,10 @@
 /obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/delivery,
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/locker)
 "bse" = (
@@ -57493,6 +57532,10 @@
 	dir = 10
 	},
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "bQh" = (
@@ -67019,6 +67062,10 @@
 	},
 /obj/effect/turf_decal/tile/neutral,
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
 "cfr" = (
@@ -78378,6 +78425,10 @@
 "cAC" = (
 /obj/machinery/vending/mealdor,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plasteel/dark,
 /area/maintenance/fore)
 "cAD" = (
@@ -83868,6 +83919,10 @@
 "hgX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
@@ -85079,6 +85134,10 @@
 /area/space/nearstation)
 "qmN" = (
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port/fore)
 "qsV" = (
@@ -85612,6 +85671,10 @@
 	dir = 4
 	},
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/primary/port)
 "unX" = (
@@ -85886,6 +85949,10 @@
 	dir = 4
 	},
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit/departure_lounge)
 "wQg" = (

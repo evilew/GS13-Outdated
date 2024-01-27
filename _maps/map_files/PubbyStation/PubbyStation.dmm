@@ -30304,6 +30304,10 @@
 	dir = 8
 	},
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "biS" = (
@@ -30645,6 +30649,10 @@
 /area/crew_quarters/lounge)
 "bjK" = (
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plating,
 /area/maintenance/department/cargo)
 "bjL" = (
@@ -32526,6 +32534,10 @@
 	pixel_y = 16
 	},
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plasteel/white/corner{
 	dir = 1
 	},
@@ -40866,6 +40878,10 @@
 	dir = 8
 	},
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
 "bER" = (
@@ -54709,6 +54725,10 @@
 	network = list("ss13","monastery")
 	},
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plasteel/dark,
 /area/chapel/office)
 "ctK" = (
@@ -58543,6 +58563,10 @@
 	dir = 8
 	},
 /obj/machinery/vending/mealdor,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
+	},
 /turf/open/floor/plasteel/dark,
 /area/hallway/secondary/exit/departure_lounge)
 "gMm" = (
@@ -60120,6 +60144,10 @@
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "kitchenVEND";
+	name = "kitchen shutters"
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
@@ -62901,6 +62929,16 @@
 	icon_state = "panelscorched"
 	},
 /area/maintenance/department/security/brig)
+"rrv" = (
+/obj/machinery/button/door{
+	id = "kitchenVEND";
+	name = "MealVendor Shutters Control";
+	pixel_x = 5;
+	pixel_y = -23;
+	desc = "A door remote control switch to block off the station's MealVendors... Dont be too much of an asshole now!"
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/crew_quarters/kitchen)
 "rrU" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1
@@ -95074,7 +95112,7 @@ aWa
 aRN
 aRN
 rxV
-aYS
+rrv
 cpn
 bch
 bdq
