@@ -200,11 +200,12 @@ datum/gear/lyricalpawsring
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/toy/plush/rose
 	ckeywhitelist = list("eremitanovem", "sonoida")
+
 /datum/gear/grimmy_coat
 	name = "Overcoat of the Destitute"
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/clothing/suit/storage/blueshield/grimmy
-	ckeywhitelist = list("BBGrimmy")
+	ckeywhitelist = list("bbgrimmy")
 
 /obj/item/clothing/suit/storage/blueshield/grimmy
 	name = "Overcoat of the Destitute"
