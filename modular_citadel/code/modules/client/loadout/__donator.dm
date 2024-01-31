@@ -169,14 +169,7 @@ datum/gear/lyricalpawsring
 	path = /obj/item/clothing/suit/hooded/occultrobes
 	ckeywhitelist = list("relquen")
 */
-//Commented out all Donator items
-
-/datum/gear/robes
-	name = "PLOINK PLOINK PLOINK"
-	category = SLOT_IN_BACKPACK
-	path = /obj/item/clothing/suit/hooded/occultrobes
-	ckeywhitelist = list("sonoida")
-
+//Commented out all Donator items from Hyper
 
 
 //GS13: donator items and other ckey-locked junk
@@ -190,7 +183,6 @@ datum/gear/lyricalpawsring
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/clothing/accessory/medal/gato_badge/middleman
 	ckeywhitelist = list("johnjimjim", "sonoida")
-
 /datum/gear/halsey_overcoat
 	name = "Halsey's Commander Overcoat"
 	category = SLOT_IN_BACKPACK
@@ -207,4 +199,32 @@ datum/gear/lyricalpawsring
 	name = "Rose Plush"
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/toy/plush/rose
-	ckeywhitelist = list("eremitanovem")
+	ckeywhitelist = list("eremitanovem", "sonoida")
+/datum/gear/grimmy_coat
+	name = "Overcoat of the Destitute"
+	category = SLOT_IN_BACKPACK
+	path = /obj/item/clothing/suit/storage/blueshield/grimmy
+	ckeywhitelist = list("BBGrimmy")
+
+/obj/item/clothing/suit/storage/blueshield/grimmy
+	name = "Overcoat of the Destitute"
+	desc = "Welcome all to the everlasting all-time low. Please put your hands together for the ever-failing one man show: Domino!"
+
+/datum/gear/tarek_gps
+	name = "Tarek's GPS"
+	category = SLOT_IN_BACKPACK
+	path = /obj/item/gps/mining/tarek
+	ckeywhitelist = list("e926user25")
+
+/obj/item/gps/mining/tarek
+	name = "Tarek's GPS"
+	desc = "Probably leads to free loot and a dead lizard."
+
+/datum/gear/milwaukee_crowbar
+	name = "Milwaukee Pocket Crowbar"
+	category = SLOT_IN_BACKPACK
+	path = /obj/item/crowbar/bronze/glaug
+	ckeywhitelist = list("happytpr")
+/obj/item/crowbar/bronze/glaug
+	name = "Milwaukee Pocket Crowbar"
+	desc = "Much more expensive. Still serves the same function."
