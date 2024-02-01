@@ -214,12 +214,8 @@ datum/gear/lyricalpawsring
 /datum/gear/tarek_gps
 	name = "Tarek's GPS"
 	category = SLOT_IN_BACKPACK
-	path = /obj/item/gps/mining/tarek
+	path = /obj/item/gps/mining
 	ckeywhitelist = list("e926user25")
-
-/obj/item/gps/mining/tarek
-	name = "Tarek's GPS"
-	desc = "Probably leads to free loot and a dead lizard."
 
 /datum/gear/milwaukee_crowbar
 	name = "Milwaukee Pocket Crowbar"
