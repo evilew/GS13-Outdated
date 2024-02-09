@@ -103,7 +103,7 @@
 
 
 /obj/item/station_charter/flag
-	name = "nanotrasen banner"
+	name = "GATO banner"
 	icon = 'icons/obj/items_and_weapons.dmi'
 	name_type = "planet"
 	icon_state = "banner"

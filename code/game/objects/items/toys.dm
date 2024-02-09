@@ -112,7 +112,7 @@
 
 /obj/item/toy/syndicateballoon
 	name = "syndicate balloon"
-	desc = "There is a tag on the back that reads \"FUK NT!11!\"."
+	desc = "There is a tag on the back that reads \"FUK GATO!11!\"."
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "syndballoon"
 	item_state = "syndballoon"

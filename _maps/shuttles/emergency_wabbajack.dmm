@@ -27,7 +27,7 @@
 "aA" = (/obj/structure/table,/obj/item/coin/mythril,/turf/open/floor/mineral/titanium,/area/shuttle/escape)
 "aB" = (/obj/machinery/door/airlock/public/glass{name = "Emergency Shuttle Brig"; req_access_txt = "2"},/turf/open/floor/mineral/plastitanium/red/brig,/area/shuttle/escape)
 "aC" = (/obj/machinery/door/airlock/titanium,/turf/open/floor/mineral/titanium,/area/shuttle/escape)
-"aD" = (/obj/machinery/door/airlock/titanium{name = "Emergency Shuttle Airlock"},/obj/docking_port/mobile/emergency{name = "NT Lepton Violet"},/obj/structure/fans/tiny,/turf/open/floor/plating,/area/shuttle/escape)
+"aD" = (/obj/machinery/door/airlock/titanium{name = "Emergency Shuttle Airlock"},/obj/docking_port/mobile/emergency{name = "GATO Lepton Violet"},/obj/structure/fans/tiny,/turf/open/floor/plating,/area/shuttle/escape)
 "aE" = (/obj/machinery/door/airlock/titanium{name = "Emergency Shuttle Airlock"},/obj/structure/fans/tiny,/turf/open/floor/plating,/area/shuttle/escape)
 "aF" = (/obj/machinery/door/window/eastleft,/turf/open/floor/mineral/titanium,/area/shuttle/escape)
 "aG" = (/obj/structure/extinguisher_cabinet{pixel_x = 27},/obj/structure/table/glass,/obj/item/storage/box/syringes{pixel_x = 3; pixel_y = 3},/obj/item/storage/box/beakers,/turf/open/floor/mineral/titanium/white,/area/shuttle/escape)

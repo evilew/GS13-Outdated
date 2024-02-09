@@ -30,7 +30,7 @@
 	id = "whiteship";
 	launch_status = 0;
 	movement_force = list("KNOCKDOWN"=0,"THROW"=0);
-	name = "NT Frigate";
+	name = "GATO Frigate";
 	port_direction = 8;
 	preferred_direction = 4;
 	width = 27

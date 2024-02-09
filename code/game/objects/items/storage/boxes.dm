@@ -1270,7 +1270,7 @@
 
 /obj/item/storage/box/mre/menu3
 	name = "\improper GATO Ration Kit Menu 3"
-	desc = "The holy grail of MREs. This item contains the fabled MRE pizza, spicy nachos and a sample of coffee instant type 2. Any NT employee lucky enough to get their hands on one of these is truly blessed."
+	desc = "The holy grail of MREs. This item contains the fabled MRE pizza, spicy nachos and a sample of coffee instant type 2. Any GATO employee lucky enough to get their hands on one of these is truly blessed."
 	icon_state = "menu3"
 	can_expire = FALSE //always fresh, never expired.
 	spawner_chance = 1
