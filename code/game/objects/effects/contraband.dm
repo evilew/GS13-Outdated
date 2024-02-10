@@ -229,17 +229,17 @@
 
 /obj/structure/sign/poster/contraband/missing_gloves
 	name = "Missing Gloves"
-	desc = "This poster references the uproar that followed Nanotrasen's financial cuts toward insulated-glove purchases."
+	desc = "This poster references the uproar that followed GATO's financial cuts toward insulated-glove purchases."
 	icon_state = "poster9"
 
 /obj/structure/sign/poster/contraband/hacking_guide
 	name = "Hacking Guide"
-	desc = "This poster details the internal workings of the common Nanotrasen airlock. Sadly, it appears out of date."
+	desc = "This poster details the internal workings of the common GATO airlock. Sadly, it appears out of date."
 	icon_state = "poster10"
 
 /obj/structure/sign/poster/contraband/rip_badger
 	name = "RIP Badger"
-	desc = "This seditious poster references Nanotrasen's genocide of a space station full of badgers."
+	desc = "This seditious poster references GATO's genocide of a space station full of badgers."
 	icon_state = "poster11"
 
 /obj/structure/sign/poster/contraband/ambrosia_vulgaris
@@ -299,7 +299,7 @@
 
 /obj/structure/sign/poster/contraband/rebels_unite
 	name = "Rebels Unite"
-	desc = "A poster urging the viewer to rebel against Nanotrasen."
+	desc = "A poster urging the viewer to rebel against GATO."
 	icon_state = "poster23"
 
 /obj/structure/sign/poster/contraband/c20r
@@ -410,7 +410,7 @@
 
 /obj/structure/sign/poster/official
 	poster_item_name = "motivational poster"
-	poster_item_desc = "An official Nanotrasen-issued poster to foster a compliant and obedient workforce. It comes with state-of-the-art adhesive backing, for easy pinning to any vertical surface."
+	poster_item_desc = "An official GATO-issued poster to foster a compliant and obedient workforce. It comes with state-of-the-art adhesive backing, for easy pinning to any vertical surface."
 	poster_item_icon_state = "rolled_legit"
 
 /obj/structure/sign/poster/official/random
@@ -541,7 +541,7 @@
 
 /obj/structure/sign/poster/official/anniversary_vintage_reprint
 	name = "50th Anniversary Vintage Reprint"
-	desc = "A reprint of a poster from 2505, commemorating the 50th Anniversary of Nanoposters Manufacturing, a subsidiary of Nanotrasen."
+	desc = "A reprint of a poster from 2505, commemorating the 50th Anniversary of Nanoposters Manufacturing, a subsidiary of GATO."
 	icon_state = "poster26_legit"
 
 /obj/structure/sign/poster/official/fruit_bowl

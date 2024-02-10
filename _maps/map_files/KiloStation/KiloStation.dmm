@@ -67739,7 +67739,7 @@
 /obj/effect/landmark/event_spawn,
 /mob/living/simple_animal/bot/medbot{
 	auto_patrol = 1;
-	desc = "A little medical robot, officially part of the Nanotrasen medical inspectorate. He looks somewhat underwhelmed.";
+	desc = "A little medical robot, officially part of the GATO medical inspectorate. He looks somewhat underwhelmed.";
 	name = "Inspector Johnson"
 	},
 /turf/open/floor/plasteel/showroomfloor,
@@ -70120,7 +70120,7 @@
 	pixel_x = 24
 	},
 /mob/living/simple_animal/hostile/retaliate/bat{
-	desc = "A failed experiment of Nanotrasen to create weaponised carp technology. This less than intimidating carp now serves as an authority figure's pet.";
+	desc = "A failed experiment of GATO to create weaponised carp technology. This less than intimidating carp now serves as an authority figure's pet.";
 	emote_taunt = list("gnashes");
 	faction = list("carp");
 	harm_intent_damage = 3;

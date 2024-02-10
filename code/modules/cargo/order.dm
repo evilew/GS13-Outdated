@@ -99,7 +99,7 @@
 //Paperwork for NT
 /obj/item/folder/paperwork
 	name = "Incomplete Paperwork"
-	desc = "These should've been filled out four months ago! Unfinished grant papers issued by Nanotrasen's finance department. Complete this page for additional funding."
+	desc = "These should've been filled out four months ago! Unfinished grant papers issued by GATO's finance department. Complete this page for additional funding."
 	icon = 'icons/obj/bureaucracy.dmi'
 	icon_state = "docs_generic"
 

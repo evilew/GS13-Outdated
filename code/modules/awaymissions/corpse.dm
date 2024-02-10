@@ -488,7 +488,7 @@
 	outfit = /datum/outfit/nanotrasencommandercorpse
 
 /datum/outfit/nanotrasencommandercorpse
-	name = "Nanotrasen Private Security Commander"
+	name = "GATO Private Security Commander"
 	uniform = /obj/item/clothing/under/rank/centcom_commander
 	suit = /obj/item/clothing/suit/armor/bulletproof
 	ears = /obj/item/radio/headset/heads/captain
@@ -502,13 +502,13 @@
 
 
 /obj/effect/mob_spawn/human/nanotrasensoldier
-	name = "Nanotrasen Private Security Officer"
+	name = "GATO Private Security Officer"
 	id_job = "Private Security Force"
 	id_access_list = list(ACCESS_CENT_CAPTAIN, ACCESS_CENT_GENERAL, ACCESS_CENT_SPECOPS, ACCESS_CENT_MEDICAL, ACCESS_CENT_STORAGE, ACCESS_SECURITY)
 	outfit = /datum/outfit/nanotrasensoldiercorpse
 
 /datum/outfit/nanotrasensoldiercorpse
-	name = "NT Private Security Officer Corpse"
+	name = "GATO Private Security Officer Corpse"
 	uniform = /obj/item/clothing/under/rank/security
 	suit = /obj/item/clothing/suit/armor/vest
 	shoes = /obj/item/clothing/shoes/combat
@@ -522,23 +522,23 @@
 /obj/effect/mob_spawn/human/commander/alive
 	death = FALSE
 	roundstart = FALSE
-	job_description = "Nanotrasen Commander"
-	mob_name = "Nanotrasen Commander"
+	job_description = "GATO Commander"
+	mob_name = "GATO Commander"
 	name = "sleeper"
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper"
-	short_desc = "You are a Nanotrasen Commander!"
+	short_desc = "You are a GATO Commander!"
 
 /obj/effect/mob_spawn/human/nanotrasensoldier/alive
 	death = FALSE
 	roundstart = FALSE
 	mob_name = "Private Security Officer"
-	job_description = "Nanotrasen Security"
+	job_description = "GATO Security"
 	name = "sleeper"
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper"
 	faction = "nanotrasenprivate"
-	short_desc = "You are a Nanotrasen Private Security Officer!"
+	short_desc = "You are a GATO Private Security Officer!"
 
 
 /////////////////Spooky Undead//////////////////////

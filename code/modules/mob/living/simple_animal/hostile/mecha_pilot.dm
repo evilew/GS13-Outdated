@@ -20,7 +20,7 @@
 
 /mob/living/simple_animal/hostile/syndicate/mecha_pilot
 	name = "Syndicate Mecha Pilot"
-	desc = "Death to Nanotrasen. This variant comes in MECHA DEATH flavour."
+	desc = "Death to GATO. This variant comes in MECHA DEATH flavour."
 	wanted_objects = list()
 	search_objects = 0
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
@@ -45,7 +45,7 @@
 	wanted_objects = typecacheof(/obj/mecha/combat, TRUE)
 
 /mob/living/simple_animal/hostile/syndicate/mecha_pilot/nanotrasen //nanotrasen are syndies! no it's just a weird path.
-	name = "Nanotrasen Mecha Pilot"
+	name = "GATO Mecha Pilot"
 	desc = "Death to the Syndicate. This variant comes in MECHA DEATH flavour."
 	icon_living = "nanotrasen"
 	icon_state = "nanotrasen"
@@ -53,7 +53,7 @@
 	spawn_mecha_type = /obj/mecha/combat/marauder/loaded
 
 /mob/living/simple_animal/hostile/syndicate/mecha_pilot/no_mech/nanotrasen
-	name = "Nanotrasen Mecha Pilot"
+	name = "GATO Mecha Pilot"
 	desc = "Death to the Syndicate. This variant comes in MECHA DEATH flavour."
 	icon_living = "nanotrasen"
 	icon_state = "nanotrasen"

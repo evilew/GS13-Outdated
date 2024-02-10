@@ -160,7 +160,7 @@ export const CentcomPodLauncher = props => {
               tooltip={multiline`
                 Gives the supplypod an advanced Bluespace Recyling Device.
                 After opening, the supplypod will be warped directly to the
-                surface of a nearby NT-designated trash planet (/r/ss13).
+                surface of a nearby GATO-designated trash planet (/r/ss13).
               `}
               onClick={() => act('effectBluespace')} />
             <Button

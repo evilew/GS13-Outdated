@@ -323,14 +323,14 @@
 
 /obj/item/paper/fluff/awaymissions/snowdin/secnotice
 	name = "Security Notice"
-	info = {"You have been assigned to this Arctic Post with intention of protecting Nanotrasen assets and ensuring vital information is kept secure while the stationed crew obeys protocol. The picked
+	info = {"You have been assigned to this Arctic Post with intention of protecting GATO assets and ensuring vital information is kept secure while the stationed crew obeys protocol. The picked
 		staff for this post have been pre-screened with no prior incidients on record, but incase of an issue you have been given a single holding cell and instructions to contact Central to terminate the
 		offending crewmember."}
 
 /obj/item/paper/fluff/awaymissions/snowdin/mining
 	name = "Assignment Notice"
 	info = {"This cold-ass planet is the new-age equivalent of striking gold. Huge deposits of plasma and literal streams of plasma run through the caverns under all this ice and we're here to mine it all.\
-	 Nanotrasen pays by the pound, so get minin' boys!"}
+	 GATO pays by the pound, so get minin' boys!"}
 
 /obj/item/paper/crumpled/ruins/snowdin/lootstructures
 	name = "scribbled note"

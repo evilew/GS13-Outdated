@@ -59,7 +59,7 @@
 
 /datum/design/inducer
 	name = "Inducer"
-	desc = "The NT-75 Electromagnetic Power Inducer can wirelessly induce electric charge in an object, allowing you to recharge power cells without having to remove them."
+	desc = "The GATO-75 Electromagnetic Power Inducer can wirelessly induce electric charge in an object, allowing you to recharge power cells without having to remove them."
 	id = "inducer"
 	build_type = PROTOLATHE
 	materials = list(MAT_METAL = 3000, MAT_GLASS = 1000)
@@ -69,7 +69,7 @@
 
 /datum/design/inducercombat
 	name = "Combat Ready Inducer"
-	desc = "The improved NT-8475 Electromagnetic Power Inducer can this one has been SCIENCED to allow for combat. It still comes printed with SCIENCED colors!"
+	desc = "The improved GATO-8475 Electromagnetic Power Inducer can this one has been SCIENCED to allow for combat. It still comes printed with SCIENCED colors!"
 	id = "combatinducer"
 	build_type = PROTOLATHE
 	materials = list(MAT_METAL = 13000, MAT_GLASS = 10000,  MAT_SILVER = 1500,  MAT_GOLD = 1250, MAT_DIAMOND = 500, MAT_TITANIUM = 1200)

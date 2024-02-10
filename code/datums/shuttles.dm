@@ -360,12 +360,12 @@
 /datum/map_template/shuttle/emergency/goon
 	suffix = "goon"
 	name = "NES Port"
-	description = "The Nanotrasen Emergency Shuttle Port(NES Port for short) is a shuttle used at other less known Nanotrasen facilities and has a more open inside for larger crowds, but fewer onboard shuttle facilities."
+	description = "The GATO Emergency Shuttle Port(NES Port for short) is a shuttle used at other less known GATO facilities and has a more open inside for larger crowds, but fewer onboard shuttle facilities."
 	credit_cost = 500
 
 /datum/map_template/shuttle/emergency/wabbajack
 	suffix = "wabbajack"
-	name = "NT Lepton Violet"
+	name = "GATO Lepton Violet"
 	description = "The research team based on this vessel went missing one day, and no amount of investigation could discover what happened to them. \
 	The only occupants were a number of dead rodents, who appeared to have clawed each other to death. \
 	Needless to say, no engineering team wanted to go near the thing, and it's only being used as an Emergency Escape Shuttle because there is literally nothing else available."
@@ -420,15 +420,15 @@
 
 /datum/map_template/shuttle/whiteship/pubby
 	suffix = "pubby"
-	name = "NT White UFO"
+	name = "GATO White UFO"
 
 /datum/map_template/shuttle/whiteship/cere
 	suffix = "cere"
-	name = "NT Construction Vessel"
+	name = "GATO Construction Vessel"
 
 /datum/map_template/shuttle/whiteship/delta
 	suffix = "delta"
-	name = "NT Frigate"
+	name = "GATO Frigate"
 
 /datum/map_template/shuttle/whiteship/pod
 	suffix = "whiteship_pod"
