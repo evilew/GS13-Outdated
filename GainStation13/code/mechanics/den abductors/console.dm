@@ -72,7 +72,7 @@
 			if("pie_cannon")
 				Dispense(/obj/item/pneumatic_cannon/pie/selfcharge, cost=500)
 			if("thermals")
-				Dispense(/obj/item/autosurgeon/thermal_eyes, cost=400)
+				Dispense(/obj/item/clothing/glasses/thermal/syndi, cost=400)
 			if("reagent_gun")
 				Dispense(/obj/item/gun/chem, cost=500)
 			if("protolathe_kit")
