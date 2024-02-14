@@ -1,6 +1,6 @@
 /obj/machinery/abductor/feeder_console
 	name = "feeder console"
-	desc = "Get people fat."
+	desc = "You were into feeding enough that you managed to reverse-engineer alien technology to suit your goals, Amazing."
 	icon = 'icons/obj/abductor.dmi'
 	icon_state = "console"
 	density = TRUE
@@ -24,9 +24,9 @@
 
 	var/credits = linked_scale?.credits
 	dat += "Gear Credits: [credits] <br>"
-	dat += "<b>Transfer data in exchange for supplies:</b><br>"
+	dat += "<b>Transfer credits in exchange for supplies:</b><br>"
 	dat += "<a href='?src=[REF(src)];dispense=nutripump_turbo'>Nutri-Pump TURBO Autosurgeon</A><br>"
-	dat += "<a href='?src=[REF(src)];dispense=vending_refill'>Meal Vendor Refill</A><br>"
+	dat += "<a href='?src=[REF(src)];dispense=vendor_refill'>Meal Vendor Refill</A><br>"
 	dat += "<a href='?src=[REF(src)];dispense=baton'>Advanced Baton</A><br>"
 	dat += "<a href='?src=[REF(src)];dispense=tool'>Science Tool</A><br>"
 	dat += "<a href='?src=[REF(src)];dispense=chameleon'>Chameleon Kit</A><br>"
@@ -69,12 +69,12 @@
 				Dispense(/obj/item/vending_refill/mealdor, cost=100)
 			if("chameleon")
 				Dispense(/obj/item/storage/box/syndie_kit/chameleon, cost=300)
-			if("pie_canon")
+			if("pie_cannon")
 				Dispense(/obj/item/pneumatic_cannon/pie/selfcharge, cost=500)
 			if("thermals")
 				Dispense(/obj/item/autosurgeon/thermal_eyes, cost=400)
 			if("reagent_gun")
-				Dispense(/obj/item/autosurgeon/thermal_eyes, cost=500)
+				Dispense(/obj/item/gun/chem, cost=500)
 			if("protolathe_kit")
 				Dispense(/obj/item/storage/box/rndboards, cost=1500)
 
@@ -96,7 +96,6 @@
 	if(pad)
 		pad.teleport_target = location
 		to_chat(user, "<span class='notice'>Location marked as test subject release point.</span>")
-
 
 /obj/machinery/abductor/feeder_console/Initialize(mapload)
 	..()
@@ -128,8 +127,8 @@
 	return TRUE
 
 /obj/machinery/abductor/feeder_console/proc/Dispense(obj/item/new_item, cost = 1)
-	if(!linked_scale?.credits || !linked_scale.credits < cost)
-		say("Insufficent data!")
+	if(!linked_scale?.credits || linked_scale.credits < cost)
+		say("Insufficent credits!")
 		return TRUE
 
 	linked_scale.credits -= cost
@@ -152,13 +151,13 @@
 	
 /obj/structure/scale/credits
 	name = "tracking scale"
-	desc = "A upgraded scale that tracks to weight of all of those that have stepped on it."
+	desc = "A upgraded scale that tracks to weight of all of those that have stepped on it. Using this will add credits to the feeder console"
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	flags_1 = NODECONSTRUCT_1
 	/// How much credits do we currently have?
 	var/credits = 0
 	/// How many credits are we going to reward per pound gained?
-	var/credits_per_pound = 0.25
+	var/credits_per_pound = 1 
 	/// A list containing all of the people we've scanned and their maximum weight.
 	var/list/scanned_people = list()
 	/// What is the current team number?
@@ -190,12 +189,16 @@
 	if(!istype(fatty))
 		return FALSE
 
-	var/credits_to_add = ((lastreading * credits_per_pound) * fatnessToWeight)
+	var/credits_to_add = ((fatty.fatness * credits_per_pound) * fatnessToWeight)
 	var/credits_to_remove = 0
 	if(scanned_people[fatty])
 		credits_to_remove = scanned_people[fatty]
+
+	if(credits_to_add > 0)
+		say("[credits_to_add] credits have been deposited into the console.")
 	
-	credits += (credits_to_add - credits_to_remove)
+	credits += max((credits_to_add - credits_to_remove), 0)
+
 	scanned_people[fatty] = max(credits_to_add, credits_to_remove)
 	return TRUE
 
@@ -209,7 +212,7 @@
 
 /obj/machinery/computer/camera_advanced/abductor/feeder/IsScientist(mob/living/carbon/human/H)
 	return TRUE
-	
+
 /obj/item/abductor/gizmo/feeder
 	mode = GIZMO_MARK
 
