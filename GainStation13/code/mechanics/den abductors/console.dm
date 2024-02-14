@@ -157,12 +157,13 @@
 	/// How much credits do we currently have?
 	var/credits = 0
 	/// How many credits are we going to reward per pound gained?
-	var/credits_per_pound = 1 
+	var/credits_per_fatness = 1 
 	/// A list containing all of the people we've scanned and their maximum weight.
 	var/list/scanned_people = list()
 	/// What is the current team number?
 	var/team_number = 27
-
+	/// What is the maximum ammount of credits that can be gained per person?
+	var/maximum_credits = 900 // A little bit over the fattness for blob.
 
 /obj/structure/scale/credits/Initialize(mapload)
 	..()
@@ -189,17 +190,17 @@
 	if(!istype(fatty))
 		return FALSE
 
-	var/credits_to_add = ((fatty.fatness * credits_per_pound) * fatnessToWeight)
+	var/credits_to_add = min((fatty.fatness * credits_per_fatness), maximum_credits)
 	var/credits_to_remove = 0
 	if(scanned_people[fatty])
 		credits_to_remove = scanned_people[fatty]
 
-	if(credits_to_add > 0)
-		say("[credits_to_add] credits have been deposited into the console.")
+	var/credit_total = max((credits_to_add - credits_to_remove), 0)
+	if(credit_total > 0)
+		say("[credit_total] credits have been deposited into the console.")
 	
-	credits += max((credits_to_add - credits_to_remove), 0)
-
-	scanned_people[fatty] = max(credits_to_add, credits_to_remove)
+	credits += credit_total
+	scanned_people[fatty] = max(credit_total, credits_to_remove)
 	return TRUE
 
 /obj/machinery/abductor/pad/feeder
