@@ -27,7 +27,9 @@
 	dat += "<b>Transfer credits in exchange for supplies:</b><br>"
 	dat += "<a href='?src=[REF(src)];dispense=nutripump_turbo'>Nutri-Pump TURBO Autosurgeon</A><br>"
 	dat += "<a href='?src=[REF(src)];dispense=vendor_refill'>Meal Vendor Refill</A><br>"
-	dat += "<a href='?src=[REF(src)];dispense=baton'>Advanced Baton</A><br>"
+	dat += "<a href='?src=[REF(src)];dispense=grenade_weak'>Lipoifier Grenade (Weak) </A><br>"
+	dat += "<a href='?src=[REF(src)];dispense=grenade_strong'>Lipoifier Grenade (Strong) </A><br>"
+	dat += "<a href='?src=[REF(src)];dispense=fatbeamgun'>Fatbeam Gun</A><br>"
 	dat += "<a href='?src=[REF(src)];dispense=tool'>Science Tool</A><br>"
 	dat += "<a href='?src=[REF(src)];dispense=chameleon'>Chameleon Kit</A><br>"
 	dat += "<a href='?src=[REF(src)];dispense=pie_cannon'>Banana Cream Pie Cannon</A><br>"	
@@ -59,10 +61,14 @@
 		TeleporterSend()
 	if(href_list["dispense"])
 		switch(href_list["dispense"])
-			if("baton")
-				Dispense(/obj/item/abductor_baton, cost=300)
+			if("fatbeam")
+				Dispense(/obj/item/gun/fatbeam, cost=400)
 			if("tool")
 				Dispense(/obj/item/abductor/gizmo, cost=120)
+			if("grenade_weak")
+				Dispense(/obj/item/grenade/chem_grenade/lipoifier_weak, cost=120)
+			if("grenade_strong")
+				Dispense(/obj/item/grenade/chem_grenade/lipoifier_strong, cost=360)
 			if("nutripump_turbo")
 				Dispense(/obj/item/autosurgeon/nutripump_turbo, cost=150)
 			if("vendor_refill")
