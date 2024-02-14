@@ -22,7 +22,7 @@
 	var/dat = ""
 	dat += "<H3> FeederSoft 3000 </H3>"
 
-	var/credits = linked_scale.credits
+	var/credits = linked_scale?.credits
 	dat += "Gear Credits: [credits] <br>"
 	dat += "<b>Transfer data in exchange for supplies:</b><br>"
 	dat += "<a href='?src=[REF(src)];dispense=nutripump_turbo'>Nutri-Pump TURBO Autosurgeon</A><br>"
@@ -164,6 +164,11 @@
 	/// What is the current team number?
 	var/team_number = 27
 
+
+/obj/structure/scale/credits/Initialize(mapload)
+	..()
+	return INITIALIZE_HINT_LATELOAD
+
 /obj/structure/scale/credits/attackby(obj/item/used_tool, mob/user, params)
 	if(!istype(used_tool, /obj/item/wrench))
 		return ..()
@@ -197,5 +202,39 @@
 /obj/machinery/abductor/pad/feeder
 	team_number = 27
 
-/obj/machinery/computer/camera_advanced/abductor/camera/feeder
+/obj/machinery/computer/camera_advanced/abductor/feeder
 	team_number = 27
+	vest_mode_action = null
+	vest_disguise_action = null
+
+/obj/machinery/computer/camera_advanced/abductor/feeder/IsScientist(mob/living/carbon/human/H)
+	return TRUE
+	
+/obj/item/abductor/gizmo/feeder
+	mode = GIZMO_MARK
+
+/obj/item/abductor/gizmo/feeder/ScientistCheck(mob/user)
+	return TRUE
+
+/obj/item/abductor/gizmo/attack_self(mob/user)
+	return
+
+/obj/item/abductor/gizmo/feeder/mark(atom/target, mob/living/user)
+	if(!ishuman(target))
+		return FALSE
+
+	if(target == marked)
+		to_chat(user, "<span class='notice'>You begin to teleport [target]...</span>")
+		if(!do_after(user, 45 SECONDS, target = target)) // You have to be standing still for a while
+			return FALSE
+
+		console?.pad.Retrieve(marked)
+		return TRUE
+
+	if(target == user)
+		marked = user
+		return TRUE
+
+	prepare(target,user)
+	return TRUE
+	
