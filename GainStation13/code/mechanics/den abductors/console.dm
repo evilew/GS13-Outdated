@@ -13,6 +13,8 @@
 	var/obj/item/abductor/gizmo/gizmo
 	/// The current scale linked with the console
 	var/obj/structure/scale/credits/linked_scale
+	/// How much of each goodie have we purchased?
+	var/list/buy_counts = list()
 
 /obj/machinery/abductor/feeder_console/attack_hand(mob/user)
 	. = ..()
@@ -24,18 +26,11 @@
 
 	var/credits = linked_scale?.credits
 	dat += "Gear Credits: [credits] <br>"
-	dat += "<b>Transfer credits in exchange for supplies:</b><br>"
-	dat += "<a href='?src=[REF(src)];dispense=nutripump_turbo'>Nutri-Pump TURBO Autosurgeon</A><br>"
-	dat += "<a href='?src=[REF(src)];dispense=vendor_refill'>Meal Vendor Refill</A><br>"
-	dat += "<a href='?src=[REF(src)];dispense=grenade_weak'>Lipoifier Grenade (Weak) </A><br>"
-	dat += "<a href='?src=[REF(src)];dispense=grenade_strong'>Lipoifier Grenade (Strong) </A><br>"
-	dat += "<a href='?src=[REF(src)];dispense=fatbeamgun'>Fatbeam Gun</A><br>"
-	dat += "<a href='?src=[REF(src)];dispense=tool'>Science Tool</A><br>"
-	dat += "<a href='?src=[REF(src)];dispense=chameleon'>Chameleon Kit</A><br>"
-	dat += "<a href='?src=[REF(src)];dispense=pie_cannon'>Banana Cream Pie Cannon</A><br>"	
-	dat += "<a href='?src=[REF(src)];dispense=thermals'>Thermal Imaging Glasses</A><br>"
-	dat += "<a href='?src=[REF(src)];dispense=reagent_gun'>Reagent Gun</A><br>"
-	dat += "<a href='?src=[REF(src)];dispense=protolathe_kit'>Protolathe Kit</A><br>"
+	dat += "<b>Transfer credits in exchange for supplies:</b><br>"	
+	for(var/goodie in subtypesof(/datum/feeders_den_goodie))
+		var/datum/feeders_den_goodie/temp_goodie = new goodie()
+		dat += "<a href='?src=[REF(src)];dispense=[goodie]'>[temp_goodie.name] (Cost: [temp_goodie.credit_cost])</A><br>"
+		qdel(temp_goodie)
 
 	if(pad)
 		dat += "<span class='bad'>Emergency Teleporter System.</span>"
@@ -60,29 +55,23 @@
 	if(href_list["teleporter_send"])
 		TeleporterSend()
 	if(href_list["dispense"])
-		switch(href_list["dispense"])
-			if("fatbeam")
-				Dispense(/obj/item/gun/fatbeam, cost=400)
-			if("tool")
-				Dispense(/obj/item/abductor/gizmo, cost=120)
-			if("grenade_weak")
-				Dispense(/obj/item/grenade/chem_grenade/lipoifier_weak, cost=120)
-			if("grenade_strong")
-				Dispense(/obj/item/grenade/chem_grenade/lipoifier_strong, cost=360)
-			if("nutripump_turbo")
-				Dispense(/obj/item/autosurgeon/nutripump_turbo, cost=150)
-			if("vendor_refill")
-				Dispense(/obj/item/vending_refill/mealdor, cost=100)
-			if("chameleon")
-				Dispense(/obj/item/storage/box/syndie_kit/chameleon, cost=300)
-			if("pie_cannon")
-				Dispense(/obj/item/pneumatic_cannon/pie/selfcharge, cost=500)
-			if("thermals")
-				Dispense(/obj/item/clothing/glasses/thermal/syndi, cost=400)
-			if("reagent_gun")
-				Dispense(/obj/item/gun/chem, cost=500)
-			if("protolathe_kit")
-				Dispense(/obj/item/storage/box/rndboards, cost=1500)
+		var/datum_path = href_list["dispense"]
+		var/datum/feeders_den_goodie/goodie_datum = new datum_path()
+		var/price = goodie_datum.credit_cost
+		var/item_path = goodie_datum.item_to_dispense
+
+		if(!isnull(goode.datum.initial_stock) && buy_counts[goodie_datum.name] && (buy_counts[goodie_datum.name] >= goodie_datum.initial_stock))
+			say("Unable to purchase more!")
+			return FALSE
+
+		if(!Dispense(item_path, price))	
+			return FALSE
+
+		if(buy_counts[goodie_datum.name] == null)
+			buy_counts[goodie_datum.name] = 0
+
+		buy_counts[goodie_datum.name] += 1
+		qdel(goodie_datum)
 
 	updateUsrDialog()
 
@@ -133,9 +122,12 @@
 	return TRUE
 
 /obj/machinery/abductor/feeder_console/proc/Dispense(obj/item/new_item, cost = 1)
+	if(!ispath(new_item))
+		return FALSE
+
 	if(!linked_scale?.credits || linked_scale.credits < cost)
 		say("Insufficent credits!")
-		return TRUE
+		return FALSE
 
 	linked_scale.credits -= cost
 	say("Incoming supply!")
