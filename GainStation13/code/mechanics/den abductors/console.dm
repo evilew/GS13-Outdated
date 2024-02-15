@@ -60,7 +60,7 @@
 		var/price = goodie_datum.credit_cost
 		var/item_path = goodie_datum.item_to_dispense
 
-		if(!isnull(goode.datum.initial_stock) && buy_counts[goodie_datum.name] && (buy_counts[goodie_datum.name] >= goodie_datum.initial_stock))
+		if(!isnull(goodie_datum.initial_stock) && buy_counts[goodie_datum.name] && (buy_counts[goodie_datum.name] >= goodie_datum.initial_stock))
 			say("Unable to purchase more!")
 			return FALSE
 
