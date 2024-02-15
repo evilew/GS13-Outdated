@@ -24,6 +24,11 @@
 	name = "READ ME!"
 	info = "Don't use this auto-surgeon on yourself, dumbass!"
 
+
+/obj/item/paper/fluff/ruins/feeder_den/tool_warning
+	name = "READ ME!"
+	info = "Please link the science tool to the console before leaving!"
+
 // calorite research facility
 
 /obj/item/paper/fluff/ruins/calorite_facility/note1
