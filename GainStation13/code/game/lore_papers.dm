@@ -24,6 +24,26 @@
 	name = "READ ME!"
 	info = "Don't use this auto-surgeon on yourself, dumbass!"
 
+/obj/item/paper/fluff/ruins/feeder_den/tool_warning
+	name = "READ ME BEFORE USING!"
+	info = "For those interested in grabbing more victims, make sure to read this first<br><br>\n\n\
+	OOC: Your goal here is to capture people to fatten up. Avoid intentionally killing and causing chaos on the station if you can at all help it. <br>\
+	Before capturing someone, be sure to check their preferences and make sure that they are not already occupied. A discord message or LOOC never hurts if you aren't sure. OOC communication is very important. <br>\
+	You have the power to send people back to the station, make sure that you talk with them before sending them back. Especially if they are someone that wasn't on the station in the first place, like a Den Victim. \
+	<br>\
+	It is heavily advised that you find a target before you teleport onto the station as some crew members are not good canidates.<br>\
+	With the camera console you have access to the entire camera network of the station, use this to your advantage to formulate a plan. \
+	<br><br>\
+	Right before heading onto the station, make sure that you grab a science tool and sync it with the feeder console. \
+	Syncing it will allow you to beam both yourself and captives back to the den. \
+	To do this, mark the person you want to mark by touching them with the tool. Once someone is marked you can use the tool on them again to beam them up.<br>\
+	Additionally, if you have someone to help you, they can beam up anyone that is marked, by using the camera console.\
+	<br><br>\
+	Credits can be gained by having someone you fattened up use the tracking scale. Keep in mind that credits can only be gained when someone surpasses their previous max weight.\
+	Additionally, you are only able to get 900 credits from a person.\
+	<br><br>\
+	You are able to use the console and pad to send victims back to the station after you are done with them. Avoid sending them anywhere dangerous or obvious unless you want to risk the ire of GATO. "
+	
 // calorite research facility
 
 /obj/item/paper/fluff/ruins/calorite_facility/note1

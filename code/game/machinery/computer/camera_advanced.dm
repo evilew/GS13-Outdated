@@ -89,7 +89,7 @@
 	return TRUE
 
 /obj/machinery/computer/camera_advanced/abductor/can_use(mob/user)
-	if(!isabductor(user))
+	if(!IsScientist(user)) //GAINSTATION EDIT ORIGINAL: if(!isabductor(user))
 		return FALSE
 	return ..()
 
