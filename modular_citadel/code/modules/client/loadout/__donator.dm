@@ -225,3 +225,24 @@ datum/gear/lyricalpawsring
 /obj/item/crowbar/bronze/glaug
 	name = "Milwaukee Pocket Crowbar"
 	desc = "Much more expensive. Still serves the same function."
+
+
+//metha rossi you fat hog
+
+/datum/gear/wgspell_add
+	name = "Weight Gain Spellbook"
+	category = SLOT_IN_BACKPACK
+	path = /obj/item/book/granter/spell/fattening
+	ckeywhitelist = list("sonoida", "themrsky")
+
+/datum/gear/wgspell_transfer
+	name = "Weight Transfer Spellbook"
+	category = SLOT_IN_BACKPACK
+	path = /obj/item/book/granter/spell/fattening/transfer
+	ckeywhitelist = list("sonoida", "themrsky")
+
+/datum/gear/wgspell_take
+	name = "Weight Steal Spellbook"
+	category = SLOT_IN_BACKPACK
+	path = /obj/effect/proc_holder/spell/targeted/touch/add_weight/steal
+	ckeywhitelist = list("sonoida", "themrsky")

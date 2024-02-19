@@ -342,7 +342,7 @@ Creating a chem with a low purity will make you permanently fall in love with so
 		Lover.mind.store_memory("You are in love with [Love].")
 	Lover.faction |= "[REF(Love)]"
 	Lover.apply_status_effect(STATUS_EFFECT_INLOVE, Love)
-	forge_valentines_objective(Lover, Love, TRUE)
+	// forge_valentines_objective(Lover, Love, TRUE)
 	SSblackbox.record_feedback("tally", "fermi_chem", 1, "Times people have become infatuated.")
 	log_game("FERMICHEM: [Lover] ckey: [Lover.key] has been chemically made to fall for [Love] ckey: [Love.key]")
 	return

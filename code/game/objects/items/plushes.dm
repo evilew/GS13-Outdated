@@ -1050,6 +1050,12 @@
 	item_state = "kinichi"
 	attack_verb = list("hissed","squished", "hugged")
 
+/obj/item/toy/plush/lgo
+	desc = "An attempt to market one of cleaning machines from the local market, in the form of a purchasable plushie."
+	icon_state = "lgo"
+	item_state = "lgo"
+	attack_verb = list("gronkled","beeped", "brushed")
+
 /obj/item/toy/plush/mammal/fox
 	icon_state = "fox"
 	item_state = "fox"

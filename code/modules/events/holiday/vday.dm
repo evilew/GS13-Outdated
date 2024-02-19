@@ -4,56 +4,58 @@
 
 // valentine / candy heart distribution //
 
-/datum/round_event_control/valentines
-	name = "Valentines!"
-	holidayID = VALENTINES
-	typepath = /datum/round_event/valentines
-	weight = -1							//forces it to be called, regardless of weight
-	max_occurrences = 1
-	earliest_start = 0 MINUTES
+// /datum/round_event_control/valentines
+// 	name = "Valentines!"
+// 	holidayID = VALENTINES
+// 	typepath = /datum/round_event/valentines
+// 	weight = -1							//forces it to be called, regardless of weight
+// 	max_occurrences = 1
+// 	earliest_start = 0 MINUTES
 
-/datum/round_event/valentines/start()
-	..()
-	for(var/mob/living/carbon/human/H in GLOB.alive_mob_list)
-		H.put_in_hands(new /obj/item/valentine)
-		var/obj/item/storage/backpack/b = locate() in H.contents
-		new /obj/item/reagent_containers/food/snacks/candyheart(b)
-		new /obj/item/storage/fancy/heart_box(b)
+// /datum/round_event/valentines/start()
+// 	..()
+// 	for(var/mob/living/carbon/human/H in GLOB.alive_mob_list)
+// 		H.put_in_hands(new /obj/item/valentine)
+// 		var/obj/item/storage/backpack/b = locate() in H.contents
+// 		new /obj/item/reagent_containers/food/snacks/candyheart(b)
+// 		new /obj/item/storage/fancy/heart_box(b)
 
-	var/list/valentines = list()
-	for(var/mob/living/M in GLOB.player_list)
-		if(!M.stat && M.client && M.mind)
-			valentines |= M
-
-
-	while(valentines.len)
-		var/mob/living/L = pick_n_take(valentines)
-		if(valentines.len)
-			var/mob/living/date = pick_n_take(valentines)
+// 	var/list/valentines = list()
+// 	for(var/mob/living/M in GLOB.player_list)
+// 		if(!M.stat && M.client && M.mind)
+// 			valentines |= M
 
 
-			forge_valentines_objective(L, date)
-			forge_valentines_objective(date, L)
+// 	while(valentines.len)
+// 		var/mob/living/L = pick_n_take(valentines)
+// 		if(valentines.len)
+// 			var/mob/living/date = pick_n_take(valentines)
 
-			if(valentines.len && prob(4))
-				var/mob/living/notgoodenough = pick_n_take(valentines)
-				forge_valentines_objective(notgoodenough, date)
-		else
-			L.mind.add_antag_datum(/datum/antagonist/heartbreaker)
 
-/proc/forge_valentines_objective(mob/living/lover,mob/living/date,var/chemLove = FALSE)
-	lover.mind.special_role = "valentine"
-	if (chemLove == TRUE)
-		var/datum/antagonist/valentine/chem/V = new //Changes text and EOG check basically.
-		V.date = date.mind
-		lover.mind.add_antag_datum(V)
-	else
-		var/datum/antagonist/valentine/V = new
-		V.date = date.mind
-		lover.mind.add_antag_datum(V) //These really should be teams but i can't be assed to incorporate third wheels right now
+// 			forge_valentines_objective(L, date)
+// 			forge_valentines_objective(date, L)
 
-/datum/round_event/valentines/announce(fake)
-	priority_announce("It's Valentine's Day! Give a valentine to that special someone!")
+// 			if(valentines.len && prob(4))
+// 				var/mob/living/notgoodenough = pick_n_take(valentines)
+// 				forge_valentines_objective(notgoodenough, date)
+// 		else
+// 			L.mind.add_antag_datum(/datum/antagonist/heartbreaker)
+
+// /proc/forge_valentines_objective(mob/living/lover,mob/living/date,var/chemLove = FALSE)
+// 	lover.mind.special_role = "valentine"
+// 	if (chemLove == TRUE)
+// 		var/datum/antagonist/valentine/chem/V = new //Changes text and EOG check basically.
+// 		V.date = date.mind
+// 		lover.mind.add_antag_datum(V)
+// 	else
+// 		var/datum/antagonist/valentine/V = new
+// 		V.date = date.mind
+// 		lover.mind.add_antag_datum(V) //These really should be teams but i can't be assed to incorporate third wheels right now
+
+// /datum/round_event/valentines/announce(fake)
+// 	priority_announce("It's Valentine's Day! Give a valentine to that special someone!")
+
+//GS13 - commented out cuz it's kinda weird and too prefbreaky
 
 /obj/item/valentine
 	name = "valentine"
