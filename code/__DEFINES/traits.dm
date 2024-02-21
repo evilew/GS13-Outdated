@@ -181,8 +181,6 @@
 #define	TRAIT_CROCRIN_IMMUNE    "crocin_immune"
 #define TRAIT_NYMPHO			"nymphomania"
 #define TRAIT_DISTANT			"headpat_hater"
-//#define TRAIT_FLUID_LEAK	"leaky_fluids" removed because milk snail trails are not okay
-#define TRAIT_MASO              "masochism"
 #define TRAIT_CHOKE_SLUT		"choke_slut"
 #define	TRAIT_HIGH_BLOOD        "high_blood"
 #define TRAIT_PHARMA            "hepatic_pharmacokinesis"
@@ -207,7 +205,6 @@
 #define TRAIT_STRONGLEGS		"strong_legs"
 
 //Hyper
-#define TRAIT_VIRILE		"virile" //you have 20% more chance of impreg
 #define TRAIT_MACROPHILE		"macrophile" //likes the big
 #define TRAIT_MICROPHILE		"microphile" //likes the small
 #define TRAIT_APATHETIC			"apathetic" //doesn't care

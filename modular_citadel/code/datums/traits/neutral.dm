@@ -24,15 +24,6 @@
 		to_chat(quirk_holder, "<span class='notice'>Having high libido is useless when you can't feel arousal at all!</span>")
 		qdel(src)
 
-/datum/quirk/maso
-	name = "Masochism"
-	desc = "You are aroused by pain."
-	value = 0
-	category = CATEGORY_SEXUAL
-	mob_trait = TRAIT_MASO
-	gain_text = "<span class='notice'>You desire to be hurt.</span>"
-	lose_text = "<span class='notice'>Pain has become less exciting for you.</span>"
-
 /datum/quirk/choke_slut
 	name = "Choke Slut"
 	desc = "You are aroused by suffocation."
@@ -52,13 +43,3 @@
 	var/active = FALSE
 	var/power = 0
 	var/cachedmoveCalc = 1
-/*
-/datum/quirk/fluid_leak
-	name = "Leaky breasts"
-	desc = "You don't stop making milk, and you have a habit of leaking everywhere when your breasts are full"
-	mob_trait = TRAIT_FLUID_LEAK
-	value = 0
-	medical_record_text = "Patient poorly controls their fluids."
-	gain_text = "<span class='notice'>You feel like your leaking everywhere.</span>"
-	lose_text = "<span class='notice'>You feel like you can control your fluids.</span>"
-*/

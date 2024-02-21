@@ -19,17 +19,6 @@
 	lose_text = "<span class='notice'>You feel the weight of the curse in your blood finally gone.</span>"
 	medical_record_text = "Patient suffers from an unknown type of aversion to holy reagents. Keep them away from a chaplain."
 
-/* Disabled for now, some scripts not working.
-/datum/quirk/heat
-	name = "Estrus Detection"
-	desc = "You have a animalistic sense of detecting if someone is in heat, and can get pregnant."
-	value = 0
-	category = CATEGORY_SEXUAL
-	mob_trait = TRAIT_HEAT_DETECT
-	gain_text = "<span class='notice'>You feel your senses adjust, allowing a animalistic sense of others' fertility.</span>"
-	lose_text = "<span class='notice'>You feel your sense of others' fertility fade.</span>"
-*/
-
 /datum/quirk/inheat
 	name = "In Heat"
 	desc = "Your system burns with the desire to be bred, your body will betray you and alert others' to your desire when examining you. Satisfying your lust will make you happy, but ignoring it may cause you to become sad and needy."
@@ -38,39 +27,6 @@
 	mob_trait = TRAIT_HEAT
 	gain_text = "<span class='notice'>You body burns with the desire to be bred.</span>"
 	lose_text = "<span class='notice'>You feel more in control of your body and thoughts.</span>"
-
-// /datum/quirk/overweight
-// 	name = "Overweight"
-// 	desc = "You're particularly fond of food, and join the round being overweight."
-// 	value = 0
-// 	category = CATEGORY_FOOD
-// 	gain_text = "<span class='notice'>You feel a bit chubby!</span>"
-// 	//no lose_text cause why would there be?
-
-// /datum/quirk/overweight/on_spawn()
-// 	var/mob/living/M = quirk_holder
-// 	M.nutrition = rand(NUTRITION_LEVEL_FULL + NUTRITION_LEVEL_START_MIN, NUTRITION_LEVEL_FULL + NUTRITION_LEVEL_START_MAX)
-// 	M.overeatduration = 100
-// 	ADD_TRAIT(M, TRAIT_FAT, OBESITY)
-
-/datum/quirk/virile
-	name = "Virile"
-	desc = "Either through higher quality sperms, more of them, or just being more horny, your impregnation chance will increase by 20-30%."
-	value = 0
-	category = CATEGORY_SEXUAL
-	medical_record_text = "Patient has a higher sperm count."
-	mob_trait = TRAIT_VIRILE
-	gain_text = "<span class='notice'>You feel more potent."
-	lose_text = "<span class='notice'>You feel less potent."
-	var/ichange = 0
-
-/datum/quirk/virile/add()
-	ichange = rand(20,30)
-	quirk_holder.impregchance += ichange
-
-/datum/quirk/virile/remove()
-	if(quirk_holder)
-		quirk_holder.impregchance -= ichange
 
 /datum/quirk/macrophile
 	name = "Macrophile"
