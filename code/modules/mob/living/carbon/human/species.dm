@@ -1835,8 +1835,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		)
 		if (target.canbearoused)
 			target.adjustArousalLoss(5)
-		if (target.getArousalLoss() >= 100 && ishuman(target) && HAS_TRAIT(target, TRAIT_MASO) && target.has_dna())
-			target.mob_climax(forced_climax=TRUE)
 		if (!HAS_TRAIT(target, TRAIT_NYMPHO))
 			stop_wagging_tail(target)
 
