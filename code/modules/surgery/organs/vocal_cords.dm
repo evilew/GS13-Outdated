@@ -833,10 +833,6 @@
 				addtimer(CALLBACK(GLOBAL_PROC, .proc/to_chat, L, "<span class='love'>[E.enthrallGender] has praised me!!</span>"), 5)
 				if(HAS_TRAIT(L, TRAIT_NYMPHO))
 					L.adjustArousalLoss(2*power_multiplier)
-				if(HAS_TRAIT(L, TRAIT_MASO))
-					E.enthrallTally -= power_multiplier
-					E.resistanceTally += power_multiplier
-					E.cooldown += 1
 			else
 				addtimer(CALLBACK(GLOBAL_PROC, .proc/to_chat, L, "<span class='nicegreen'><b><i>I've been praised for doing a good job!</b></i></span>"), 5)
 			E.resistanceTally -= power_multiplier
@@ -854,11 +850,6 @@
 			if(L == user)
 				continue
 			if (L.client?.prefs.lewdchem)
-				if(HAS_TRAIT(L, TRAIT_MASO))
-					L.adjustArousalLoss(3*power_multiplier)
-					descmessage += "And yet, it feels so good..!</span>" //I don't really understand masco, is this the right sort of thing they like?
-					E.enthrallTally += power_multiplier
-					E.resistanceTally -= power_multiplier
 					addtimer(CALLBACK(GLOBAL_PROC, .proc/to_chat, L, "<span class='love'>I've let [E.enthrallGender] down...!</b></span>"), 5)
 				else
 					addtimer(CALLBACK(GLOBAL_PROC, .proc/to_chat, L, "<span class='warning'>I've let [E.enthrallGender] down...</b></span>"), 5)
