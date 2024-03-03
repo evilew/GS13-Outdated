@@ -15,6 +15,8 @@
 	var/weight_gain_rate = 1
 	//At what rate does the parent mob lose weight? 1 = 100%
 	var/weight_loss_rate = 1
+	//Variable related to door stuckage code
+	var/doorstuck = 0
 
 /** 
 * Adjusts the fatness level of the parent mob.

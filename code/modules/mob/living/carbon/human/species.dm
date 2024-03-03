@@ -1592,6 +1592,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 	gravity = H.has_gravity()
 
+//GS13 - used in door stuckage code
+	if(H.doorstuck)
+		. += 1000
+
 	if(gravity && !flight)	//Check for chemicals and innate speedups and slowdowns if we're on the ground
 		if(HAS_TRAIT(H, TRAIT_GOTTAGOFAST))
 			. -= 1
