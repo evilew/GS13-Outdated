@@ -7225,7 +7225,8 @@
 /obj/machinery/quantumpad{
 	map_pad_id = "ldemone";
 	map_pad_link_id = "demone";
-	mapped_quantum_pads = list("ldemone","demone")
+	mapped_quantum_pads = list("ldemone","demone");
+	name = "Demone Pad"
 	},
 /obj/structure/cable,
 /turf/open/floor/plasteel,
@@ -7935,7 +7936,8 @@
 /obj/machinery/quantumpad{
 	map_pad_id = "quantum hub xenoarch";
 	map_pad_link_id = "quantum hub";
-	mapped_quantum_pads = list("ldemone","demone")
+	mapped_quantum_pads = list("ldemone","demone");
+	name = "Quantum Hub Pad"
 	},
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/powered)
