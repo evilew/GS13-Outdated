@@ -30,8 +30,12 @@
 	is_reflectable = TRUE
 	light_range = 2
 	light_color = LIGHT_COLOR_ORANGE
+	ricochets_max = 50
+	ricochet_chance = 80
+	is_reflectable = TRUE
 	///How much fat is added to the target mob?
 	var/fat_added = 100
+	
 
 
 ////// Fatoray - cannon variant, strong but can be charged

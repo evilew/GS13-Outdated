@@ -22,7 +22,7 @@
 		return
 	if (ishuman(user) && user.has_dna())
 		user.cursed_fat = 1
-		user.fattening_steps_left += 100
+		user.fattening_steps_left += 2000
 		icon_state = "empty"
 		to_chat(user, "<span class='notice'>The glittering orange liquid disappears instantly as you touch it. You feel a strange, warm sensation inside, growing stronger the more you move...</span>")
 		curse_given = 1
