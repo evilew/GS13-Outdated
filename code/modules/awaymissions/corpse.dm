@@ -643,14 +643,17 @@
 	var/arrpee = rand(1,3)
 	switch(arrpee)
 		if(1)
-			flavour_text += "You are this restaurant's manager, taking care of all the necessary paperwork, overseeing all the workers...\
+			flavour_text += "You are this restaurant's manager, taking care of all the necessary paperwork, overseeing all the workers... \
 			But most importantly, you always have to make sure that the restaurant prospers and remains in good shape! "
 			outfit.glasses = /obj/item/clothing/glasses/sunglasses/reagent
 			outfit.uniform = /obj/item/clothing/under/suit_jacket/burgundy 
 			outfit.shoes = /obj/item/clothing/shoes/sneakers/black
 			outfit.back = /obj/item/storage/backpack/satchel/leather
+			outfit.ears = /obj/item/radio/headset
+			outfit.id = /obj/item/card/id/silver
+			
 		if(2)
-			flavour_text += "You are this restaurant's cook, using up the plethora of ingredients to cook up deliciously greasy and caloric foods.\
+			flavour_text += "You are this restaurant's cook, using up the plethora of ingredients to cook up deliciously greasy and caloric foods. \
 			The kitchen and the bar is your turf! Make sure the guests stay fed."
 			outfit.glasses = /obj/item/clothing/glasses/sunglasses/reagent
 			outfit.head = /obj/item/clothing/head/soft/black
@@ -658,13 +661,17 @@
 			outfit.suit = /obj/item/clothing/suit/apron/chef
 			outfit.shoes = /obj/item/clothing/shoes/sneakers/black
 			outfit.back = /obj/item/storage/backpack
+			outfit.ears = /obj/item/radio/headset
+			outfit.id = /obj/item/card/id/silver
 		if(3)
-			flavour_text += "You are this restaurant's waiter, responsible not only for tending to the guests, but also fixing and taking care of station's shape, power and looks.\
+			flavour_text += "You are this restaurant's waiter, responsible not only for tending to the guests, but also fixing and taking care of station's shape, power and looks. \
 			Make sure everything looks squeaky clean and that the restaurant remains powered!"
 			outfit.head = /obj/item/clothing/head/soft/black
 			outfit.uniform = /obj/item/clothing/under/waiter
 			outfit.shoes = /obj/item/clothing/shoes/sneakers/black
 			outfit.back = /obj/item/storage/backpack
+			outfit.ears = /obj/item/radio/headset
+			outfit.id = /obj/item/card/id/silver
 
 /obj/effect/mob_spawn/human/fastfood/special(mob/living/carbon/human/new_spawn)
 	ADD_TRAIT(new_spawn,TRAIT_EXEMPT_HEALTH_EVENTS,GHOSTROLE_TRAIT)
@@ -680,7 +687,7 @@
 	name = "Sleeper pod"
 	desc = "Through the red glass, you can see someone sleeping inside..."
 	mob_name = "fanatical feeder"
-	job_description = "Fanatical degenerate"
+	job_description = "Den's Feeder"
 	short_desc = "You are a member of a niche branch of Syndicate with... strange goals."
 	flavour_text = "After months of construction and gathering equipment, your den is finished - a monument to gluttony, equipped with every tool to turn any sharp body into a quivering mound of lard..."
 	important_info = "Keep your den in one piece and away from curious eyes! YOU AREN'T ALLOWED TO CAPTURE / FATTEN UP PEOPLE WHO DON'T DO NON-CON OR DIDN'T AGREE TO IT! Despite being able to leave the outpost, you do NOT have a permission to antag or grief."
@@ -740,7 +747,8 @@
 
 /datum/outfit/feeders_den/victim
 	name = "Den Victim"
-	uniform = /obj/item/clothing/under/polychromic/shortpants 
+	uniform = /obj/item/clothing/under/gear_harness
+	neck = /obj/item/electropack/shockcollar
 
 /datum/outfit/feeders_den/victim/Destroy()
 	new/obj/structure/fluff/empty_sleeper/syndicate(get_turf(src))

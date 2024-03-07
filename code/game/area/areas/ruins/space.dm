@@ -488,7 +488,7 @@
 	power_light = TRUE
 
 /area/ruin/space/has_grav/fastfood_main
-	name = "Restaurant Main Area"
+	name = "GATO Restaurant - Main Area"
 	has_gravity = TRUE
 
 /area/ruin/space/has_grav/fastfood_employee
