@@ -326,6 +326,13 @@
 	description = "What used to be a small Syndicate prison and interrogration facility has been taken over by a degenerate madman and turned into a den fit for one purpose - to fatten up its captives."
 	placement_weight = 5
 
+/datum/map_template/ruin/space/ //GS13
+	id = "whiteship_cfc01"
+	suffix = "whiteship_CFC01.dmm"
+	name = "CFC-01 Whiteship"
+	description = "A whiteship belonging to representants of CFC Corporation."
+
+//commented out because this has been moved to its own seperate level
 // /datum/map_template/ruin/space/fastfood //GS13
 // 	id = "fastfood"
 // 	suffix = "fastfood.dmm"

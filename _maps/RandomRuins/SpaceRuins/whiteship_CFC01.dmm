@@ -1,0 +1,4528 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/turf/template_noop,
+/area/template_noop)
+"ab" = (
+/obj/effect/decal/cleanable/cobweb{
+	icon_state = "cobweb2"
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1,
+/obj/machinery/food_cart,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"ac" = (
+/obj/structure/rack,
+/obj/item/storage/toolbox/electrical{
+	pixel_x = 1;
+	pixel_y = 6
+	},
+/obj/item/storage/toolbox/mechanical{
+	pixel_x = -2;
+	pixel_y = -1
+	},
+/obj/item/multitool{
+	pixel_x = 7;
+	pixel_y = -4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/delivery,
+/obj/item/stack/cable_coil/red{
+	pixel_x = 2;
+	pixel_y = 6
+	},
+/obj/structure/sign/poster/contraband/hacking_guide{
+	pixel_x = 32
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"ad" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
+	dir = 1
+	},
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"ae" = (
+/obj/structure/sign/poster/contraband/corn_oil,
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"af" = (
+/obj/effect/turf_decal/bot_white,
+/obj/machinery/door/poddoor{
+	id = "whiteship_port"
+	},
+/obj/effect/spawner/structure/window/shuttle,
+/obj/structure/fans/tiny,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"ag" = (
+/obj/machinery/door/airlock/external,
+/obj/structure/fans/tiny,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/turf/open/floor/mineral/basaltstone_floor,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"ah" = (
+/obj/machinery/door/airlock/external,
+/obj/structure/fans/tiny,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/docking_port/mobile{
+	callTime = 250;
+	can_move_docking_ports = 1;
+	dheight = 0;
+	dir = 2;
+	dwidth = 11;
+	height = 17;
+	id = "whiteship";
+	launch_status = 0;
+	movement_force = list("KNOCKDOWN"=0,"THROW"=0);
+	name = "Salvage Ship";
+	port_direction = 8;
+	preferred_direction = 4;
+	width = 33
+	},
+/turf/open/floor/mineral/basaltstone_floor,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"ai" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/vehicle/ridden/grocery_cart,
+/obj/structure/sign/poster/contraband/space_cola{
+	pixel_y = -32
+	},
+/turf/open/floor/plasteel/checker,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"aj" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"ak" = (
+/obj/structure/sign/poster/contraband/communist_state{
+	pixel_y = -32
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/item/twohanded/required/kirbyplants/random,
+/obj/effect/turf_decal/stripes/corner,
+/obj/machinery/power/apc{
+	name = "Food Hall APC";
+	pixel_y = 0;
+	pixel_x = -28
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"al" = (
+/obj/machinery/vending/cola/space_up,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"am" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4
+	},
+/obj/effect/turf_decal/bot,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"an" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"ao" = (
+/turf/open/floor/mineral/basaltstone_floor,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"ap" = (
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"aq" = (
+/obj/effect/decal/cleanable/dirt{
+	desc = "A thin layer of dust coating the floor.";
+	name = "dust"
+	},
+/obj/effect/turf_decal/bot_white,
+/obj/machinery/door/poddoor{
+	id = "whiteship_starboard"
+	},
+/obj/structure/fans/tiny,
+/obj/structure/fans/tiny,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"ar" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/firedoor,
+/obj/item/reagent_containers/food/condiment/saltshaker{
+	pixel_x = -8;
+	pixel_y = 10
+	},
+/obj/item/reagent_containers/food/condiment/peppermill{
+	pixel_x = -8;
+	pixel_y = 4
+	},
+/obj/item/storage/box/drinkingglasses{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/machinery/door/poddoor/shutters/old/preopen{
+	id = "kitchen_CFC1";
+	name = "shutters"
+	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain";
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"as" = (
+/obj/structure/chair/sofa{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"at" = (
+/obj/structure/sign/warning/vacuum/external{
+	pixel_x = 32
+	},
+/turf/open/floor/mineral/basaltstone_floor,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"au" = (
+/obj/structure/toilet{
+	pixel_y = 12;
+	pixel_x = 15
+	},
+/obj/machinery/light/small{
+	brightness = 3;
+	dir = 8
+	},
+/obj/machinery/button/door{
+	id = "Toilet_CFC1";
+	name = "Privacy Lock";
+	normaldoorcontrol = 1;
+	pixel_y = -25;
+	specialfunctions = 4;
+	pixel_x = -25
+	},
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"av" = (
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 11;
+	pixel_y = 8
+	},
+/obj/structure/mirror{
+	pixel_x = 28
+	},
+/obj/structure/sign/poster/official/cleanliness{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"aw" = (
+/obj/effect/decal/cleanable/cobweb,
+/obj/machinery/vending/snack/random{
+	extended_inventory = 1;
+	free = 1
+	},
+/obj/structure/sign/poster/contraband/donut_corp{
+	pixel_x = -32
+	},
+/turf/open/floor/carpet/red,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"ax" = (
+/obj/item/stack/marker_beacon{
+	anchored = 1;
+	icon_state = "markerburgundy-on";
+	light_color = "#FA644B";
+	light_power = 3;
+	light_range = 2;
+	name = "warning light";
+	picked_color = "Burgundy"
+	},
+/obj/effect/turf_decal/stripes/asteroid/box,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"ay" = (
+/obj/effect/turf_decal/bot_white,
+/obj/effect/spawner/structure/window/shuttle,
+/obj/structure/fans/tiny,
+/obj/machinery/door/poddoor{
+	id = "Eng_CFC1";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	icon_state = "pipe11-1";
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"az" = (
+/obj/machinery/computer/arcade/minesweeper,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"aA" = (
+/obj/structure/shuttle/engine/propulsion/left{
+	dir = 8
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"aB" = (
+/obj/structure/tank_dispenser/oxygen,
+/obj/effect/turf_decal/delivery/white,
+/obj/machinery/light/small,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"aC" = (
+/obj/structure/table/plaswood,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"aE" = (
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"aG" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"aI" = (
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/turf/open/floor/mineral/basaltstone_floor,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"aJ" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"aK" = (
+/obj/structure/chair/comfy{
+	dir = 8
+	},
+/obj/machinery/button/door{
+	id = "whiteship_port";
+	name = "Window Blast Door Control";
+	pixel_x = 24
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"aL" = (
+/obj/structure/sign/poster/contraband/donut_corp,
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"aM" = (
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/structure/sign/poster/contraband/eat{
+	pixel_x = -32
+	},
+/obj/structure/chair/comfy{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"aN" = (
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 6
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	icon_state = "pipe11-1";
+	dir = 6
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"aO" = (
+/obj/effect/turf_decal/bot,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/reagent_dispensers/fueltank,
+/obj/item/clothing/head/welding{
+	pixel_x = -2;
+	pixel_y = 1
+	},
+/obj/item/weldingtool,
+/obj/machinery/light/small,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"aP" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	icon_state = "pipe11-1";
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"aQ" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	icon_state = "pipe11-1";
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"aR" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	icon_state = "pipe11-1";
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"aS" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/closet/secure_closet/freezer/meat,
+/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
+/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
+/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
+/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
+/obj/item/reagent_containers/food/snacks/meat/slab/monkey,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"aU" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	icon_state = "pipe11-1";
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"aV" = (
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 24
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"aW" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	icon_state = "pipe11-1";
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"aX" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"aY" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"aZ" = (
+/obj/structure/sign/departments/restroom{
+	pixel_y = 32
+	},
+/turf/open/floor/mineral/basaltstone_floor,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"bb" = (
+/obj/machinery/vending/coffee,
+/turf/open/floor/carpet/red,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"bc" = (
+/obj/item/twohanded/required/kirbyplants/random{
+	pixel_y = 12
+	},
+/turf/open/floor/mineral/basaltstone_floor,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"be" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/open/floor/mineral/basaltstone_floor,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"bh" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 2
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"bi" = (
+/obj/machinery/airalarm/all_access{
+	dir = 1;
+	pixel_y = -24
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/machinery/vending/coffee,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"bj" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/machinery/button/door{
+	id = "whiteship_port";
+	name = "Window Blast Door Control";
+	pixel_y = -24
+	},
+/obj/machinery/vending/snack/random{
+	extended_inventory = 1;
+	free = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"bk" = (
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"bm" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 5;
+	icon_state = "steel_panel";
+	name = "steel pannel"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"bn" = (
+/obj/structure/chair/sofa/left{
+	dir = 8
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/computer/security/telescreen/entertainment{
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"bp" = (
+/obj/structure/window/fulltile,
+/obj/structure/flora/ausbushes/pointybush,
+/turf/open/floor/grass,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"bq" = (
+/obj/structure/reagent_dispensers/cooking_oil,
+/obj/structure/sign/warning/vacuum/external{
+	pixel_y = -32
+	},
+/obj/structure/window/reinforced/tinted{
+	dir = 8
+	},
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"br" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/mineral/basaltstone_floor,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"bs" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/machinery/door/airlock/freezer{
+	name = "Freezer";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"bu" = (
+/turf/open/floor/carpet/red,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"bv" = (
+/obj/machinery/hydroponics/constructable,
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/machinery/airalarm/all_access{
+	pixel_y = 24
+	},
+/turf/open/floor/light,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"bw" = (
+/obj/machinery/light{
+	light_color = "#cee5d2"
+	},
+/obj/effect/turf_decal/stripes/white/corner,
+/obj/structure/closet/crate/bin,
+/obj/item/trash/candy,
+/obj/item/trash/syndi_cakes,
+/obj/item/trash/boritos,
+/obj/item/trash/soy_food,
+/turf/open/floor/mineral/basaltstone_floor,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"bx" = (
+/obj/machinery/door/poddoor{
+	id = "whiteship_windows1"
+	},
+/obj/effect/spawner/structure/window/shuttle,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"by" = (
+/obj/structure/shuttle/engine/propulsion/right{
+	dir = 8
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"bz" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/structure/table/plaswood,
+/obj/item/trash/tray,
+/obj/item/reagent_containers/food/snacks/burger/rib{
+	pixel_y = 3;
+	pixel_x = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"bB" = (
+/obj/machinery/microwave,
+/obj/structure/table/reinforced,
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"bC" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/item/twohanded/required/kirbyplants/random,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"bD" = (
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"bE" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/public/glass{
+	name = "Food Hall"
+	},
+/turf/open/floor/mineral/basaltstone_floor,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"bG" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/vehicle/ridden/grocery_cart,
+/obj/machinery/light/small{
+	pixel_x = 16
+	},
+/obj/structure/sign/poster/contraband/shamblers_juice{
+	pixel_y = -32
+	},
+/turf/open/floor/plasteel/checker,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"bH" = (
+/obj/machinery/firealarm{
+	pixel_y = 24
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 10
+	},
+/obj/effect/turf_decal/delivery,
+/obj/structure/closet/firecloset/full{
+	anchored = 1
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"bI" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1,
+/turf/open/floor/mineral/basaltstone_floor,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"bJ" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -28
+	},
+/obj/item/trash/carbonnanotube_noodles,
+/obj/item/trash/pistachios,
+/obj/item/trash/plate,
+/obj/item/trash/cheesie,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/structure/closet/crate/bin,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"bK" = (
+/obj/machinery/vending/gato,
+/obj/machinery/airalarm/all_access{
+	pixel_y = 24
+	},
+/turf/open/floor/carpet/red,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"bL" = (
+/obj/machinery/door/airlock/silver{
+	id_tag = "Toilet_CFC1";
+	name = "Toilet"
+	},
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"bM" = (
+/obj/structure/chair/sofa/right{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"bN" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/structure/chair/sofa/left,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"bO" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"bP" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"bQ" = (
+/obj/structure/sign/poster/contraband/chefpropaganda,
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"bR" = (
+/obj/machinery/door/poddoor{
+	id = "whiteship_bridge";
+	dir = 4
+	},
+/obj/effect/spawner/structure/window/shuttle,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bridge{
+	name = "Bridge"
+	})
+"bS" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"bT" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/structure/chair/stool/bar,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"bV" = (
+/obj/machinery/light{
+	light_color = "#cee5d2"
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/item/radio/intercom{
+	frequency = 1453;
+	name = "Order - 0";
+	pixel_y = -28;
+	listening = 0
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"bX" = (
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 5
+	},
+/obj/machinery/light{
+	light_color = "#cee5d2"
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 5
+	},
+/obj/structure/scale,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"bY" = (
+/obj/structure/sign/warning/docking{
+	name = "\improper KEEP CLEAR: BLAST DOORS"
+	},
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"bZ" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"cb" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"cc" = (
+/obj/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only,
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"cd" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/shutters/old/preopen{
+	id = "kitchen_CFC1";
+	name = "shutters"
+	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain";
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"ce" = (
+/obj/machinery/door/poddoor{
+	id = "whiteship_windows1";
+	dir = 4
+	},
+/obj/effect/spawner/structure/window/shuttle,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"cf" = (
+/obj/effect/turf_decal/tile/blue,
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#cee5d2"
+	},
+/obj/structure/table/reinforced,
+/obj/item/folder/blue{
+	pixel_x = 6;
+	pixel_y = 9
+	},
+/obj/item/paper_bin{
+	pixel_x = -4
+	},
+/obj/item/pen{
+	pixel_x = -4
+	},
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "Bridge APC";
+	pixel_y = 24;
+	req_access = null
+	},
+/obj/structure/cable{
+	icon_state = "0-2";
+	pixel_y = 1
+	},
+/obj/structure/sign/poster/contraband/chonk{
+	pixel_x = -32
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes{
+	icon_state = "trim";
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Bridge"
+	})
+"cg" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/recharger{
+	pixel_x = -14
+	},
+/obj/machinery/airalarm/all_access{
+	pixel_y = 24
+	},
+/obj/item/radio/intercom{
+	dir = 8;
+	name = "General Radio Broadcast Channel";
+	pixel_x = 5;
+	pixel_y = 6;
+	listening = 0
+	},
+/obj/item/radio/intercom{
+	frequency = 1453;
+	name = "Orders";
+	pixel_y = -5;
+	pixel_x = 5
+	},
+/obj/item/paper{
+	pixel_x = 4;
+	pixel_y = 3;
+	name = "Radio Network Manual";
+	info = "<B>RADIO NETWORK MANUAL</B><BR><BR>Every order intercom is set on 145.3 frequency by default. There are 6 of them, 0-5. It is recommended that you familiarize yourself with the layout of these tables for more efficient ship operation.<br>The general radio broadcast channel is for communicating with nearby crafts and stations. May be used for advertising purposes. It is recommended to temporary mute the order receiver intercom when preparing for general broadcast, as orders may interrupt your transmission."
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/stripes{
+	icon_state = "trim";
+	dir = 5
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Bridge"
+	})
+"ch" = (
+/obj/machinery/power/smes/engineering{
+	charge = 1e+006
+	},
+/obj/effect/turf_decal/delivery,
+/obj/structure/cable,
+/obj/structure/window/reinforced,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"ci" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/effect/turf_decal/bot,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"cj" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/table,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/item/stock_parts/cell/high{
+	pixel_y = 9;
+	pixel_x = 4
+	},
+/obj/structure/cable,
+/obj/item/circuitboard/machine/chem_dispenser{
+	pixel_x = -7;
+	pixel_y = 8
+	},
+/obj/machinery/power/apc{
+	name = "Engineering APC";
+	req_access = null;
+	pixel_x = 24
+	},
+/obj/effect/turf_decal/delivery,
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/machinery/cell_charger,
+/obj/item/stock_parts/cell/high/plus,
+/obj/item/radio/off{
+	pixel_x = 10;
+	pixel_y = 0;
+	name = "radio"
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"ck" = (
+/obj/machinery/power/port_gen/pacman{
+	anchored = 1
+	},
+/obj/effect/turf_decal/delivery,
+/obj/structure/cable,
+/obj/effect/turf_decal/stripes/end,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"cl" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/loading_area{
+	dir = 1;
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/machinery/door/poddoor/shutters/old/preopen{
+	id = "kitchen_CFC1";
+	name = "shutters"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cn" = (
+/obj/structure/table/reinforced,
+/obj/item/kitchen/fork{
+	pixel_x = 12;
+	pixel_y = 3
+	},
+/obj/item/kitchen/fork{
+	pixel_x = 6;
+	pixel_y = 3
+	},
+/obj/machinery/door/firedoor,
+/obj/item/trash/plate{
+	pixel_x = -7;
+	pixel_y = 1
+	},
+/obj/item/trash/plate{
+	pixel_x = -7;
+	pixel_y = 3
+	},
+/obj/item/trash/plate{
+	pixel_x = -7;
+	pixel_y = 5
+	},
+/obj/item/trash/plate{
+	pixel_x = -7;
+	pixel_y = 7
+	},
+/obj/item/trash/plate{
+	pixel_x = -7;
+	pixel_y = 9
+	},
+/obj/machinery/door/poddoor/shutters/old/preopen{
+	id = "kitchen_CFC1";
+	name = "shutters"
+	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain";
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"co" = (
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/chem_dispenser/drinks/beer/fullupgrade{
+	dir = 4
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain";
+	dir = 1
+	},
+/obj/machinery/door/window/westleft{
+	dir = 2;
+	name = "Drinks Access"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cp" = (
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/door/window/westright{
+	dir = 2
+	},
+/obj/machinery/chem_dispenser/drinks/fullupgrade{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain";
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cq" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 9;
+	icon_state = "steel_panel";
+	name = "steel pannel"
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 6;
+	icon_state = "steel_panel";
+	name = "steel pannel"
+	},
+/obj/machinery/vending/boozeomat,
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cr" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 9;
+	icon_state = "steel_panel";
+	name = "steel pannel"
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 8;
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cs" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"ct" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/door/airlock/command{
+	name = "Bridge";
+	dir = 4;
+	id_tag = "whiteship_bridge_door"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Bridge"
+	})
+"cu" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 10
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Bridge"
+	})
+"cv" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/stripes{
+	icon_state = "trim";
+	dir = 4
+	},
+/obj/machinery/computer/shuttle/white_ship{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Bridge"
+	})
+"cw" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 5
+	},
+/obj/effect/turf_decal/bot,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"cx" = (
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = -26
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 5;
+	icon_state = "steel_panel";
+	name = "steel pannel"
+	},
+/obj/structure/sink/kitchen{
+	pixel_y = 0;
+	dir = 4;
+	pixel_x = -12
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cy" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 5;
+	icon_state = "steel_panel";
+	name = "steel pannel"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/button/door{
+	id = "kitchen_CFC1";
+	pixel_y = 22;
+	name = "Free Refills Status";
+	pixel_x = 7
+	},
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -9;
+	pixel_y = 27
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cz" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 5;
+	icon_state = "steel_panel";
+	name = "steel pannel"
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cC" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 5;
+	icon_state = "steel_panel";
+	name = "steel pannel"
+	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain";
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cD" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/bridge{
+	name = "Bridge"
+	})
+"cE" = (
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/structure/chair/stool/bar,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"cF" = (
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/structure/table/reinforced,
+/obj/item/gps{
+	gpstag = "CFC-01";
+	pixel_x = -9;
+	pixel_y = 7
+	},
+/obj/item/radio/off{
+	pixel_x = 6;
+	pixel_y = 7;
+	name = "radio"
+	},
+/obj/machinery/button/door{
+	id = "whiteship_windows1";
+	name = "Arrivals Windows Blast Door Control";
+	pixel_y = -24
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 5
+	},
+/obj/machinery/button/door{
+	id = "whiteship_bridge";
+	name = "Bridge Blast Door Control";
+	pixel_x = 10;
+	pixel_y = -24
+	},
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -26
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/stripes{
+	icon_state = "trim"
+	},
+/obj/machinery/button/door{
+	id = "whiteship_windows2";
+	name = "Botany Window Blast Door Control";
+	pixel_x = -10;
+	pixel_y = -24
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Bridge"
+	})
+"cG" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
+	dir = 8
+	},
+/obj/machinery/computer/security/telescreen/entertainment{
+	pixel_y = -32
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/blue{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/blue{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes{
+	icon_state = "trim";
+	dir = 6
+	},
+/obj/machinery/computer/camera_advanced/shuttle_docker/whiteship{
+	dir = 8;
+	x_offset = -7;
+	y_offset = -8
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bridge{
+	name = "Bridge"
+	})
+"cH" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/closet/emcloset/anchored,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 4
+	},
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"cI" = (
+/obj/machinery/vending/wardrobe/chef_wardrobe,
+/obj/effect/turf_decal/bot_white,
+/obj/structure/sign/poster/official/cleanliness{
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cJ" = (
+/obj/machinery/processor,
+/obj/effect/turf_decal/bot_white,
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cK" = (
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/food/condiment/enzyme{
+	layer = 5;
+	pixel_x = -5;
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/food/condiment/sugar{
+	pixel_x = -3;
+	pixel_y = 6
+	},
+/obj/item/kitchen/knife{
+	pixel_x = 16
+	},
+/obj/item/kitchen/rollingpin{
+	pixel_x = 8
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cL" = (
+/obj/structure/table/reinforced,
+/obj/machinery/reagentgrinder{
+	pixel_y = 9
+	},
+/obj/item/storage/box/beakers{
+	pixel_x = -10;
+	pixel_y = 4
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cM" = (
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 1
+	},
+/obj/effect/turf_decal/delivery,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"cN" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 5;
+	icon_state = "steel_panel";
+	name = "steel pannel"
+	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain";
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 6
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cO" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cP" = (
+/obj/machinery/airalarm/all_access{
+	dir = 4;
+	pixel_x = -24
+	},
+/obj/machinery/light{
+	light_color = "#cee5d2"
+	},
+/obj/machinery/chem_master/condimaster{
+	name = "CondiMaster Neo";
+	pixel_x = -4
+	},
+/obj/effect/turf_decal/bot_white,
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cQ" = (
+/obj/structure/medkit_cabinet{
+	pixel_y = -28;
+	pixel_x = -8
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cR" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "Kitchen APC";
+	req_access = null;
+	pixel_y = -26
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cS" = (
+/obj/machinery/light{
+	light_color = "#cee5d2"
+	},
+/obj/item/radio/intercom{
+	frequency = 1453;
+	name = "Orders";
+	pixel_y = -28
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cT" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cU" = (
+/obj/structure/chair/sofa{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"cV" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 4;
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/reagentgrinder{
+	pixel_y = 6
+	},
+/obj/machinery/firealarm{
+	pixel_y = 24
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cW" = (
+/obj/machinery/door/poddoor{
+	id = "whiteship_windows2";
+	dir = 8
+	},
+/obj/effect/spawner/structure/window/shuttle,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"cX" = (
+/obj/machinery/iv_drip/feeding_tube,
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	icon_state = "pipe11-1";
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"cY" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	external_pressure_bound = 140;
+	name = "server vent";
+	pressure_checks = 0
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
+	icon_state = "manifold-1";
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"cZ" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/firealarm{
+	pixel_y = 24;
+	pixel_x = 24
+	},
+/obj/item/stack/sheet/mineral/calorite{
+	amount = 10
+	},
+/obj/item/trash/soy_food,
+/obj/item/trash/popcorn,
+/obj/item/trash/pistachios,
+/obj/item/trash/raisins,
+/obj/item/trash/waffles,
+/obj/structure/closet/crate/trashcart,
+/obj/item/toy/plush/lgo,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"da" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/vehicle/ridden/grocery_cart,
+/obj/structure/sign/poster/contraband/pwr_game{
+	pixel_y = -32
+	},
+/obj/structure/sign/carts{
+	pixel_x = -30
+	},
+/turf/open/floor/plasteel/checker,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"db" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	icon_state = "pipe11-1";
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"dc" = (
+/obj/structure/shuttle/engine/propulsion/left{
+	dir = 8
+	},
+/turf/template_noop,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"dd" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = -26
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"de" = (
+/obj/effect/turf_decal/stripes/white/line,
+/turf/open/floor/mineral/basaltstone_floor,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"df" = (
+/obj/machinery/door/window/brigdoor/southright{
+	dir = 2;
+	name = "Kitchen"
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 10
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 10
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"dg" = (
+/obj/effect/turf_decal/bot_white,
+/obj/structure/window/reinforced,
+/obj/machinery/deepfryer,
+/obj/machinery/door/firedoor/border_only,
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dh" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/door/window/brigdoor/southright{
+	name = "service hallway"
+	},
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"di" = (
+/obj/effect/turf_decal/bot_white,
+/obj/structure/window/reinforced,
+/obj/machinery/door/firedoor/border_only,
+/obj/item/reagent_containers/food/condiment/flour,
+/obj/item/reagent_containers/food/condiment/flour,
+/obj/item/reagent_containers/food/condiment/rice,
+/obj/item/reagent_containers/food/condiment/rice,
+/obj/item/reagent_containers/food/condiment/soymilk,
+/obj/item/reagent_containers/food/condiment/soymilk,
+/obj/item/reagent_containers/food/condiment/milk,
+/obj/item/reagent_containers/food/condiment/milk,
+/obj/item/reagent_containers/food/snacks/cheesewedge,
+/obj/item/reagent_containers/food/snacks/cheesewedge,
+/obj/item/reagent_containers/food/snacks/cheesewedge,
+/obj/item/reagent_containers/food/condiment/milk,
+/obj/item/reagent_containers/food/condiment/milk,
+/obj/structure/closet/secure_closet/freezer/fridge,
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dj" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/vehicle/ridden/grocery_cart,
+/obj/structure/sign/poster/contraband/space_up{
+	pixel_y = -32
+	},
+/obj/structure/sign/carts{
+	pixel_x = 30
+	},
+/turf/open/floor/plasteel/checker,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"dk" = (
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dl" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 1;
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dm" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_y = 28;
+	pixel_x = 28
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 1;
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dn" = (
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#cee5d2"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dp" = (
+/obj/machinery/portable_atmospherics/canister/air,
+/obj/effect/turf_decal/bot,
+/obj/machinery/airalarm/all_access{
+	dir = 4;
+	pixel_x = -24
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"dr" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"ds" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden,
+/obj/item/stack/cable_coil/cut/red{
+	amount = 2
+	},
+/obj/item/reagent_containers/food/snacks/deadmouse,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"dt" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"du" = (
+/obj/machinery/vending/hydroseeds{
+	use_power = 0
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dv" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/closet/secure_closet/freezer/kitchen,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dw" = (
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 5
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 1;
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dx" = (
+/obj/effect/turf_decal/stripes/white/line,
+/obj/effect/turf_decal/loading_area{
+	dir = 1;
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dy" = (
+/obj/machinery/airalarm/all_access{
+	dir = 1;
+	pixel_y = -24
+	},
+/obj/effect/turf_decal/stripes/white/line,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden,
+/obj/effect/turf_decal/loading_area{
+	dir = 1;
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dz" = (
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 1;
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dA" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/glass{
+	name = "Hydroponics";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/structure/sign/departments/botany{
+	pixel_y = -32
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dB" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dC" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 4;
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	icon_state = "pipe11-1";
+	dir = 9
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dD" = (
+/obj/machinery/hydroponics/constructable,
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/green,
+/turf/open/floor/light,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dE" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 9
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 1;
+	icon_state = "steel_panel";
+	name = "steel pannel"
+	},
+/obj/machinery/light,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	icon_state = "pipe11-1";
+	dir = 9
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dF" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 8;
+	icon_state = "drain";
+	name = "drain"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dG" = (
+/obj/machinery/vending/hydronutrients,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dH" = (
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 4
+	},
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"dI" = (
+/obj/machinery/meter,
+/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden,
+/obj/effect/turf_decal/stripes/line{
+	dir = 10
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"dJ" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"dK" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 10
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"dL" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/closet/crate,
+/obj/item/stack/sheet/cardboard{
+	amount = 5
+	},
+/obj/item/stack/sheet/metal/twenty{
+	amount = 50
+	},
+/obj/item/stack/sheet/glass{
+	amount = 50
+	},
+/obj/item/stack/rods/twentyfive,
+/obj/item/stack/sheet/mineral/plasma{
+	amount = 30
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 1;
+	pixel_y = -6
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
+/obj/machinery/button/door{
+	id = "Eng_CFC1";
+	name = "Blast Door Control";
+	pixel_x = -24
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"dM" = (
+/obj/machinery/door/firedoor/border_only/closed{
+	dir = 4;
+	name = "Pete Containment Unit seal"
+	},
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dN" = (
+/obj/effect/turf_decal/bot_white,
+/obj/structure/window/reinforced,
+/obj/machinery/door/window/brigdoor/westleft{
+	name = "Pete Containment Unit"
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/retaliate/goat{
+	name = "Petah"
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dO" = (
+/obj/structure/closet/firecloset/full{
+	anchored = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dP" = (
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dQ" = (
+/obj/structure/table/reinforced,
+/obj/item/vending_refill/hydroseeds,
+/obj/item/storage/box/beakers{
+	pixel_x = 2;
+	pixel_y = 2
+	},
+/obj/machinery/light{
+	light_color = "#cee5d2";
+	dir = 8
+	},
+/obj/item/plant_analyzer{
+	pixel_y = -11
+	},
+/obj/item/radio/off{
+	pixel_x = 10;
+	pixel_y = -1;
+	name = "radio"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dR" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 10
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 10
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"dS" = (
+/obj/machinery/door/firedoor,
+/obj/effect/turf_decal/bot_white,
+/obj/machinery/biogenerator,
+/obj/structure/table/reinforced,
+/obj/structure/window/reinforced,
+/obj/item/reagent_containers/glass/beaker/large,
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dT" = (
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/structure/chair/sofa/right{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"dU" = (
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/structure/chair/stool/bar,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"dV" = (
+/obj/machinery/seed_extractor,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dW" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"dX" = (
+/obj/effect/turf_decal/delivery,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"dY" = (
+/obj/effect/turf_decal/delivery,
+/obj/structure/closet/crate{
+	name = "food crate"
+	},
+/obj/item/vending_refill/cigarette{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/vending_refill/cigarette,
+/obj/item/vending_refill/coffee{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/obj/item/vending_refill/mealdor,
+/obj/item/vending_refill/boozeomat,
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"dZ" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 1
+	},
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"ea" = (
+/obj/effect/turf_decal/delivery,
+/obj/machinery/button/door{
+	id = "whiteship_starboard";
+	name = "Cargo Blast Door Control";
+	pixel_x = -5;
+	pixel_y = -24
+	},
+/obj/machinery/airalarm/all_access{
+	dir = 8;
+	pixel_x = 24
+	},
+/obj/machinery/gibber,
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"eb" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/delivery,
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
+	dir = 8
+	},
+/obj/machinery/space_heater,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"ec" = (
+/obj/structure/sign/warning/vacuum/external{
+	pixel_x = -32
+	},
+/obj/item/toy/plush/carpplushie,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"ed" = (
+/obj/structure/table/reinforced,
+/obj/machinery/smartfridge/disks{
+	pixel_y = 2
+	},
+/obj/machinery/button/door{
+	id = "whiteship_windows2";
+	name = "Window Blast Door Control";
+	pixel_x = -24;
+	pixel_y = 0
+	},
+/obj/structure/sign/poster/contraband/lusty_xenomorph{
+	pixel_y = -32
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"ee" = (
+/obj/machinery/light/small/built{
+	dir = 4
+	},
+/obj/effect/turf_decal/loading_area{
+	dir = 4;
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/structure/table/reinforced,
+/obj/machinery/plantgenes{
+	pixel_y = 6
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"ef" = (
+/obj/machinery/light/small/built{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/machinery/hydroponics/constructable,
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/green,
+/turf/open/floor/light,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"eg" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 8;
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/machinery/light{
+	light_color = "#cee5d2"
+	},
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -24
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"eh" = (
+/obj/effect/turf_decal/bot_white,
+/obj/machinery/door/poddoor{
+	id = "whiteship_starboard"
+	},
+/obj/structure/fans/tiny,
+/obj/structure/fans/tiny,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"ei" = (
+/obj/effect/decal/cleanable/dirt{
+	desc = "A thin layer of dust coating the floor.";
+	name = "dust"
+	},
+/obj/effect/turf_decal/bot_white,
+/obj/machinery/door/poddoor{
+	id = "whiteship_starboard"
+	},
+/obj/structure/fans/tiny,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"ej" = (
+/obj/machinery/door/airlock/external,
+/obj/structure/fans/tiny,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"el" = (
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 5
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"em" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 4
+	},
+/obj/structure/chair/comfy{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"eq" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/structure/chair/sofa,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"fs" = (
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"hv" = (
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"hK" = (
+/obj/structure/table/plaswood,
+/obj/item/radio/intercom{
+	frequency = 1453;
+	name = "Order - 2";
+	pixel_y = 0;
+	listening = 0
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"iu" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/box/donkpockets{
+	pixel_x = -8
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"kr" = (
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/shuttle/engine/heater{
+	dir = 8
+	},
+/turf/open/floor/plating/airless,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"ky" = (
+/obj/machinery/door/firedoor,
+/obj/effect/turf_decal/bot_white,
+/obj/structure/table/reinforced,
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"kP" = (
+/obj/effect/turf_decal/bot_white,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"mR" = (
+/obj/structure/window/reinforced,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/machinery/door/firedoor/border_only,
+/obj/machinery/vending/cola/blue,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"nM" = (
+/obj/structure/sign/poster/contraband/space_up,
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"nT" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/structure/sign/barsign{
+	pixel_y = 32;
+	req_access = null;
+	req_access_txt = "0";
+	name = "Restaurant Sign"
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"nW" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 1
+	},
+/obj/machinery/icecream_vat,
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"oM" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/door/airlock/engineering{
+	name = "Engine Room - STAFF ONLY"
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"pG" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"pH" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"qq" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/structure/table/plaswood,
+/obj/item/radio/intercom{
+	frequency = 1453;
+	name = "Order - 1";
+	pixel_y = 0;
+	listening = 0
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"qF" = (
+/obj/structure/window/fulltile,
+/obj/structure/flora/ausbushes/fernybush,
+/turf/open/floor/grass,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"qY" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/machinery/vending/mealdor,
+/obj/structure/sign/poster/contraband/eat{
+	pixel_x = 32
+	},
+/obj/machinery/airalarm/all_access{
+	pixel_y = 24
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"rT" = (
+/obj/machinery/door/window/brigdoor/southright{
+	name = "Engine Room";
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 1;
+	pixel_y = -6
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"tC" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/loading_area{
+	dir = 1;
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/machinery/door/poddoor/shutters/old/preopen{
+	id = "kitchen_CFC1";
+	name = "shutters"
+	},
+/obj/machinery/door/firedoor,
+/obj/item/storage/fancy/donut_box{
+	pixel_x = 2;
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/food/snacks/donut/berry{
+	pixel_x = -11;
+	pixel_y = -2
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"tS" = (
+/obj/effect/spawner/structure/window/shuttle,
+/obj/machinery/door/poddoor{
+	id = "whiteship_windows2"
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"tT" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/effect/turf_decal/bot,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"ui" = (
+/obj/structure/window/fulltile,
+/obj/structure/flora/ausbushes/ywflowers,
+/obj/machinery/light/floor,
+/turf/open/floor/grass,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"vQ" = (
+/obj/effect/turf_decal/bot_white,
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"vY" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/food/snacks/cheesyfries{
+	pixel_x = -7;
+	pixel_y = 2
+	},
+/obj/machinery/button/door{
+	id = "whiteship_windows1";
+	name = "Window Blast Door Control";
+	pixel_x = 9;
+	pixel_y = -4
+	},
+/obj/item/reagent_containers/food/drinks/mug/tea{
+	pixel_x = 5;
+	pixel_y = 9
+	},
+/turf/open/floor/mineral/basaltstone_floor,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"xd" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
+	dir = 1
+	},
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"xt" = (
+/obj/structure/table/plaswood,
+/obj/item/radio/intercom{
+	frequency = 1453;
+	name = "Order - 4";
+	pixel_y = 0;
+	listening = 0
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"xu" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on,
+/obj/structure/rack/shelf,
+/obj/item/reagent_containers/spray/cleaner{
+	pixel_x = -5;
+	pixel_y = 7
+	},
+/obj/item/storage/box/lights/mixed,
+/obj/item/lightreplacer,
+/obj/item/flashlight{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"xH" = (
+/obj/structure/window/reinforced/tinted{
+	dir = 8
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"yB" = (
+/obj/machinery/hydroponics/constructable,
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/machinery/computer/security/telescreen/entertainment{
+	pixel_y = 32
+	},
+/turf/open/floor/light,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"yS" = (
+/obj/structure/table/plaswood,
+/obj/item/reagent_containers/food/snacks/pizza/meat{
+	pixel_y = 9
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"zn" = (
+/obj/effect/turf_decal/bot,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/effect/spawner/lootdrop/keg,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"zH" = (
+/obj/structure/chair/comfy,
+/turf/open/floor/carpet/red,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"Ac" = (
+/obj/structure/table/reinforced,
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"AG" = (
+/obj/machinery/atmospherics/components/unary/tank/air{
+	dir = 1
+	},
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"AV" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"Ba" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain"
+	},
+/obj/structure/chair/stool/bar,
+/obj/machinery/computer/security/telescreen/entertainment{
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"Bc" = (
+/obj/machinery/atmospherics/components/unary/outlet_injector/on/layer1{
+	dir = 4
+	},
+/obj/item/stack/marker_beacon{
+	anchored = 1;
+	icon_state = "markerburgundy-on";
+	light_color = "#FA644B";
+	light_power = 3;
+	light_range = 2;
+	name = "warning light";
+	picked_color = "Burgundy"
+	},
+/obj/effect/turf_decal/stripes/asteroid/box,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"BE" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"Cv" = (
+/obj/structure/sign/poster/contraband/sun_kist,
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"DK" = (
+/obj/machinery/hydroponics/constructable,
+/obj/effect/turf_decal/tile/green{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/green{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/green,
+/obj/item/radio/intercom{
+	frequency = 1453;
+	name = "Orders";
+	pixel_y = -28
+	},
+/turf/open/floor/light,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"DU" = (
+/obj/machinery/smartfridge,
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"FG" = (
+/obj/structure/chair/sofa/left{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"Hb" = (
+/obj/machinery/vending/dinnerware,
+/obj/effect/turf_decal/bot_white,
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"He" = (
+/obj/structure/sign/poster/contraband/eat,
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"Jt" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/obj/machinery/door/airlock/public/glass{
+	name = "Food Hall"
+	},
+/turf/open/floor/mineral/basaltstone_floor,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"Lj" = (
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/effect/turf_decal/bot,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"LP" = (
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = 24
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"MZ" = (
+/obj/structure/table/plaswood,
+/obj/item/radio/intercom{
+	frequency = 1453;
+	name = "Order - 5";
+	pixel_y = -28;
+	listening = 0
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"Nx" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/white/line{
+	dir = 1;
+	pixel_y = -6
+	},
+/obj/structure/reagent_dispensers/watertank,
+/obj/item/mop,
+/obj/item/reagent_containers/glass/bucket,
+/obj/item/storage/bag/trash{
+	pixel_x = 6
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"NE" = (
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/structure/chair/sofa{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"NH" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 5;
+	icon_state = "steel_panel";
+	name = "steel pannel"
+	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain";
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
+	dir = 4
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"Ox" = (
+/obj/structure/window/fulltile,
+/obj/structure/flora/ausbushes/grassybush,
+/obj/machinery/light/floor,
+/turf/open/floor/grass,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"OO" = (
+/obj/structure/table,
+/obj/item/storage/bag/plants/portaseeder,
+/obj/item/reagent_containers/glass/bucket,
+/obj/item/shovel/spade,
+/obj/item/cultivator,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"Pl" = (
+/obj/structure/table/plaswood,
+/obj/item/radio/intercom{
+	frequency = 1453;
+	name = "Order - 3";
+	pixel_y = 0;
+	listening = 0
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"PB" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"Qn" = (
+/obj/effect/turf_decal/delivery,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/machinery/computer/monitor{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/airalarm/all_access{
+	pixel_y = 24
+	},
+/obj/effect/turf_decal/stripes/end{
+	dir = 1
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"Rx" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"RP" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/door/airlock/engineering{
+	name = "Atmospherics";
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"Sc" = (
+/obj/machinery/atm{
+	pixel_y = 0;
+	pixel_x = -32
+	},
+/turf/open/floor/carpet/red,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"Su" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/shutters/old/preopen{
+	id = "kitchen_CFC1";
+	name = "shutters"
+	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain";
+	dir = 1
+	},
+/obj/item/storage/bag/tray,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"TM" = (
+/obj/structure/table/plaswood,
+/obj/item/reagent_containers/food/snacks/cakeslice/carrot{
+	pixel_y = 10
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"TW" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/structure/table/plaswood,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"UK" = (
+/obj/effect/turf_decal/delivery/white,
+/obj/machinery/suit_storage_unit/standard_unit,
+/turf/open/floor/plating,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"UR" = (
+/obj/machinery/power/port_gen/pacman{
+	anchored = 1
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/effect/turf_decal/delivery,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"Vg" = (
+/obj/machinery/power/smes/engineering{
+	charge = 1e+006
+	},
+/obj/effect/turf_decal/delivery,
+/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/shuttle/abandoned/engine{
+	name = "Engineering"
+	})
+"VL" = (
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -27;
+	pixel_y = 4
+	},
+/obj/machinery/power/apc{
+	name = "Arrival Hallway APC";
+	pixel_y = -3;
+	pixel_x = -28
+	},
+/turf/open/floor/mineral/basaltstone_floor,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"VZ" = (
+/obj/machinery/light{
+	light_color = "#cee5d2"
+	},
+/obj/structure/chair/comfy{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/white/corner{
+	dir = 1
+	},
+/turf/open/floor/mineral/basaltstone_floor,
+/area/shuttle/abandoned/crew{
+	name = "Arrival Hallway"
+	})
+"Xg" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/freezer{
+	name = "Freezer"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"Xl" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/firealarm{
+	pixel_y = 24
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"Yw" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/reagent_dispensers/cooking_oil,
+/obj/structure/window/reinforced/tinted{
+	dir = 8
+	},
+/turf/open/floor/plasteel/freezer,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"YO" = (
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/bar,
+/obj/structure/chair/sofa/left{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+"Zr" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/poddoor/shutters/old/preopen{
+	id = "kitchen_CFC1";
+	name = "shutters"
+	},
+/obj/effect/turf_decal/loading_area{
+	icon_state = "drain";
+	name = "drain";
+	dir = 1
+	},
+/obj/item/reagent_containers/food/snacks/burger/bigbite{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"ZO" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_y = -30
+	},
+/turf/open/floor/plasteel/cafeteria,
+/area/shuttle/abandoned/bar{
+	name = "Kitchen"
+	})
+"ZS" = (
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
+	},
+/obj/structure/chair/sofa/right,
+/turf/open/floor/plasteel,
+/area/shuttle/abandoned/cargo{
+	name = "Food Hall"
+	})
+
+(1,1,1) = {"
+aa
+aa
+dc
+aa
+ax
+aa
+aA
+aA
+aA
+by
+aA
+aa
+Bc
+aa
+dc
+aa
+aa
+"}
+(2,1,1) = {"
+aa
+aG
+aG
+aG
+aG
+dW
+kr
+kr
+kr
+kr
+kr
+dW
+ay
+dW
+dW
+dW
+aa
+"}
+(3,1,1) = {"
+aG
+aG
+az
+aM
+ak
+dW
+Qn
+Vg
+ch
+UR
+ck
+dL
+cX
+dp
+dH
+dW
+dW
+"}
+(4,1,1) = {"
+nM
+al
+aE
+aN
+bh
+oM
+cw
+Lj
+ci
+tT
+am
+rT
+cY
+el
+dI
+dX
+dW
+"}
+(5,1,1) = {"
+af
+as
+bM
+aP
+bi
+dW
+bH
+eb
+cj
+ac
+cH
+Nx
+cZ
+dr
+dJ
+AG
+dW
+"}
+(6,1,1) = {"
+af
+hK
+aC
+aP
+bj
+aG
+aG
+aG
+an
+an
+an
+dW
+xu
+ds
+dK
+cM
+dW
+"}
+(7,1,1) = {"
+af
+cU
+FG
+aQ
+bS
+dd
+bJ
+Ba
+cl
+cx
+cI
+dW
+ab
+dt
+zn
+aO
+dW
+"}
+(8,1,1) = {"
+aL
+ui
+bp
+aJ
+bk
+bP
+bP
+bT
+tC
+cz
+Hb
+dW
+dW
+RP
+Yw
+bq
+an
+"}
+(9,1,1) = {"
+af
+as
+bM
+db
+ZS
+bz
+dT
+bV
+an
+cy
+cJ
+cP
+an
+Xl
+hv
+dY
+bY
+"}
+(10,1,1) = {"
+af
+Pl
+yS
+aW
+eq
+qq
+NE
+cE
+Su
+cz
+bD
+cQ
+an
+aS
+ap
+nW
+ei
+"}
+(11,1,1) = {"
+af
+cU
+FG
+aU
+bN
+TW
+YO
+dU
+cd
+cz
+bB
+cR
+an
+dv
+AV
+dZ
+aq
+"}
+(12,1,1) = {"
+ae
+Ox
+qF
+aR
+bP
+bP
+fs
+dU
+Zr
+cz
+bB
+pH
+Xg
+ad
+xd
+dZ
+eh
+"}
+(13,1,1) = {"
+af
+as
+bM
+dR
+em
+bC
+aY
+bX
+Cv
+bm
+cK
+cS
+an
+BE
+dM
+ea
+an
+"}
+(14,1,1) = {"
+af
+xt
+TM
+aE
+MZ
+aG
+fs
+pG
+ar
+cz
+iu
+ZO
+an
+bs
+dN
+an
+an
+"}
+(15,1,1) = {"
+af
+cU
+bn
+aV
+aK
+aG
+nT
+bZ
+cn
+cz
+Ac
+bD
+dg
+dw
+xH
+UK
+an
+"}
+(16,1,1) = {"
+He
+aj
+aj
+aj
+aj
+aG
+fs
+pG
+co
+NH
+cL
+bD
+dg
+dx
+dO
+aB
+an
+"}
+(17,1,1) = {"
+ag
+be
+aI
+VL
+br
+bE
+bO
+cb
+cp
+cN
+aX
+cT
+dh
+dy
+an
+an
+an
+"}
+(18,1,1) = {"
+ah
+at
+aI
+ao
+bI
+Jt
+Rx
+cc
+cq
+cC
+cO
+vQ
+di
+dz
+dP
+ec
+ej
+"}
+(19,1,1) = {"
+He
+aj
+aj
+aZ
+bw
+aj
+qY
+df
+cr
+dE
+bQ
+ky
+dS
+dA
+an
+an
+an
+"}
+(20,1,1) = {"
+aj
+au
+bL
+ao
+de
+da
+aj
+mR
+cs
+LP
+DU
+kP
+kP
+dB
+dQ
+ed
+an
+"}
+(21,1,1) = {"
+aj
+av
+bL
+ao
+de
+bG
+aj
+cD
+ct
+cD
+cD
+cV
+PB
+dC
+dk
+ee
+tS
+"}
+(22,1,1) = {"
+aj
+aj
+aj
+bc
+de
+ai
+aj
+cf
+cu
+cF
+cD
+bv
+dl
+dD
+dl
+DK
+an
+"}
+(23,1,1) = {"
+aj
+aw
+Sc
+bu
+de
+dj
+aj
+cg
+cv
+cG
+cD
+yB
+dm
+dD
+dl
+ef
+tS
+"}
+(24,1,1) = {"
+aj
+bK
+bu
+bu
+VZ
+aj
+bR
+bR
+bR
+bR
+bR
+an
+dn
+dF
+dk
+eg
+an
+"}
+(25,1,1) = {"
+bx
+bb
+bu
+zH
+vY
+bx
+aa
+aa
+aa
+aa
+aa
+tS
+du
+dG
+dV
+OO
+tS
+"}
+(26,1,1) = {"
+ce
+ce
+ce
+ce
+ce
+ce
+aa
+aa
+aa
+aa
+aa
+cW
+cW
+cW
+cW
+cW
+cW
+"}
