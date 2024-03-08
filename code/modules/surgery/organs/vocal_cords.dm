@@ -259,6 +259,8 @@
 	var/static/regex/dab_words = regex("dab|mood") //CITADEL CHANGE
 	var/static/regex/snap_words = regex("snap") //CITADEL CHANGE
 	var/static/regex/bwoink_words = regex("what the fuck are you doing|bwoink|hey you got a moment?") //CITADEL CHANGE
+	var/static/regex/gain_words = regex("gain|fatten|widen|get fatter|get fat") //GS13 
+	var/static/regex/inflate_words = regex("blimp|balloon|inflate|bloat") //GS13 
 
 	var/i = 0
 	//STUN
@@ -609,6 +611,20 @@
 		cooldown = COOLDOWN_MEME
 		addtimer(CALLBACK(GLOBAL_PROC, .proc/playsound, get_turf(user), 'sound/effects/adminhelp.ogg', 300, 1), 25)
 	//END CITADEL CHANGES
+
+
+//GS13 STUFF
+	    //INFLATE
+	else if((findtext(message, inflate_words)))
+		cooldown = COOLDOWN_MEME
+		for(var/mob/living/carbon/gainer in listeners)
+			gainer.fullness += 200 //this probably  needs a pref lock...
+	
+		//GAIN
+	else if((findtext(message, gain_words)))
+		cooldown = COOLDOWN_MEME
+		for(var/mob/living/carbon/gainer in listeners)
+			gainer.adjust_fatness(500, FATTENING_TYPE_MAGIC)
 
 	else
 		cooldown = COOLDOWN_NONE
