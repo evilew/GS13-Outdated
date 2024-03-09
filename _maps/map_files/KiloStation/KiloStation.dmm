@@ -11645,7 +11645,9 @@
 	dir = 4;
 	name = "chapel camera"
 	},
-/obj/structure/chair/bench/left,
+/obj/structure/chair/bench/right{
+	dir = 1
+	},
 /turf/open/floor/plasteel/chapel{
 	dir = 8
 	},
@@ -45761,7 +45763,9 @@
 /turf/open/floor/plasteel/dark,
 /area/security/checkpoint/supply)
 "bwY" = (
-/obj/structure/chair/bench/left,
+/obj/structure/chair/bench/right{
+	dir = 1
+	},
 /turf/open/floor/plasteel/chapel{
 	dir = 8
 	},
