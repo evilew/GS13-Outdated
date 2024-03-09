@@ -53,4 +53,4 @@
 #_maps/RandomRuins/SpaceRuins/hilbertshoteltestingsite.dmm
 ## GS13
 #_maps/RandomRuins/SpaceRuins/feeders_den.dmm
-#_maps/RandomRuins/SpaceRuins/fastfood.dmm
+#_maps/RandomRuins/SpaceRuins/whiteship_CFC01.dmm

@@ -97,7 +97,7 @@
 	height = 17;
 	id = "whiteship";
 	launch_status = 0;
-	movement_force = list("KNOCKDOWN"=0,"THROW"=0);
+	movement_force = list("KNOCKDOWN" = 0, "THROW" = 0);
 	name = "Salvage Ship";
 	port_direction = 8;
 	preferred_direction = 4;
@@ -1350,7 +1350,7 @@
 	pixel_x = 4;
 	pixel_y = 3;
 	name = "Radio Network Manual";
-	info = "<B>RADIO NETWORK MANUAL</B><BR><BR>Every order intercom is set on 145.3 frequency by default. There are 6 of them, 0-5. It is recommended that you familiarize yourself with the layout of these tables for more efficient ship operation.<br>The general radio broadcast channel is for communicating with nearby crafts and stations. May be used for advertising purposes. It is recommended to temporary mute the order receiver intercom when preparing for general broadcast, as orders may interrupt your transmission."
+	info = "<B>RADIO NETWORK MANUAL</B><BR><BR><BR>Every order intercom is set on 145.3 frequency by default. There are 6 of them, 0-5. It is recommended that you familiarize yourself with the layout of these tables for more efficient ship operation.<BR><BR>The general radio broadcast channel is for communicating with nearby crafts and stations. May be used for advertising purposes. It is recommended to temporary mute the order receiver intercom when preparing for general broadcast, as orders may interrupt your transmission."
 	},
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/stripes{
@@ -1699,6 +1699,11 @@
 /obj/machinery/computer/shuttle/white_ship{
 	dir = 8
 	},
+/obj/item/paper{
+	pixel_x = -7;
+	name = "paper - printed note";
+	info = "<B>Hello lucky soul!</B><BR><BR>I'm Cynthia! More precisely, one of the Automonus Spacefearring Nutrision Distribution Centers (A.S.N.D.)! One of the Cynthia Fitness Corporation most advanced public assets! I don't have much time, so I'll make it quick! I got hit by a solar flare, lost contact with CFC, and soon being offline from hivemind will trigger my termination protocols!<BR><BR>I'm asking for one thing! Please, continue my mission! Bring 'healthy' yummies to whoever wants (or needs, by your judgment)! CFC will be grateful for your service! Make me proud of you, random explorer!<BR><BR><BR><BR>((PS. Remember my company policy! Clients with BMI equal or higher than 35 gets at least triple servings!))"
+	},
 /turf/open/floor/plasteel/dark,
 /area/shuttle/abandoned/bridge{
 	name = "Bridge"
@@ -1868,9 +1873,11 @@
 	name = "Bridge"
 	})
 "cG" = (
+/obj/structure/closet/emcloset/anchored,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
 	dir = 8
 	},
+/obj/item/crowbar,
 /obj/machinery/computer/security/telescreen/entertainment{
 	pixel_y = -32
 	},
@@ -1887,11 +1894,6 @@
 /obj/effect/turf_decal/stripes{
 	icon_state = "trim";
 	dir = 6
-	},
-/obj/machinery/computer/camera_advanced/shuttle_docker/whiteship{
-	dir = 8;
-	x_offset = -7;
-	y_offset = -8
 	},
 /turf/open/floor/plasteel/dark,
 /area/shuttle/abandoned/bridge{
