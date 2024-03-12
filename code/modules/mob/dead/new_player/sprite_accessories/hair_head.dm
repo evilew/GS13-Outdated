@@ -833,6 +833,9 @@
 	icon_state = "hair_tailhair2"
 	ckeys_allowed = list("quotefox")
 
+/datum/sprite_accessory/hair/twob
+	name = "2b"
+	icon_state = "hair_2b"
 // GS13: Hair gradients from Skyrat
 
 /datum/sprite_accessory/hair_gradient
