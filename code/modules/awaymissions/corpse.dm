@@ -668,7 +668,7 @@
 			outfit.shoes = /obj/item/clothing/shoes/sneakers/black
 			outfit.back = /obj/item/storage/backpack
 			outfit.ears = /obj/item/radio/headset
-			outfit.id = /obj/item/card/id/silver
+			outfit.id = /obj/item/card/id/silver/restaurant
 		if(2)
 			flavour_text += "You are this restaurant's waiter, responsible not only for tending to the guests, but also fixing and taking care of station's shape, power and looks. \
 			Make sure everything looks squeaky clean and that the restaurant remains powered!"
@@ -677,7 +677,7 @@
 			outfit.shoes = /obj/item/clothing/shoes/sneakers/black
 			outfit.back = /obj/item/storage/backpack
 			outfit.ears = /obj/item/radio/headset
-			outfit.id = /obj/item/card/id/silver
+			outfit.id = /obj/item/card/id/silver/restaurant
 
 /obj/effect/mob_spawn/human/fastfoodmanager/Initialize(mapload)
 	. = ..()
@@ -691,7 +691,7 @@
 			outfit.shoes = /obj/item/clothing/shoes/sneakers/black
 			outfit.back = /obj/item/storage/backpack/satchel/leather
 			outfit.ears = /obj/item/radio/headset
-			outfit.id = /obj/item/card/id/silver
+			outfit.id = /obj/item/card/id/silver/restaurant
 			outfit.l_pocket = /obj/item/modular_computer/tablet
 
 		if(2)
@@ -702,7 +702,7 @@
 			outfit.shoes = /obj/item/clothing/shoes/sneakers/black
 			outfit.back = /obj/item/storage/backpack/satchel/leather
 			outfit.ears = /obj/item/radio/headset
-			outfit.id = /obj/item/card/id/silver
+			outfit.id = /obj/item/card/id/silver/restaurant
 			outfit.l_pocket = /obj/item/modular_computer/tablet
 
 /obj/effect/mob_spawn/human/fastfood/special(mob/living/carbon/human/new_spawn)

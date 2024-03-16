@@ -65,3 +65,41 @@
 	desc = "A single use autosurgeon that contains a turbo version of the nutriment pump. A screwdriver can be used to remove it, but implants can't be placed back in."
 	uses = 1
 	starting_organ = /obj/item/organ/cyberimp/chest/nutriment/turbo
+
+//fast food restaurant - closed / open signs
+/obj/item/holosign_creator/restaurant
+	name = "Holosign Projector - Restaurant Adverts"
+	desc = "A holo-sign maker, used for placing signs that advertises the local fast food restaurant."
+	icon = 'GainStation13/icons/obj/holosign.dmi'
+	icon_state = "holo_fastfood"
+	holosign_type = /obj/structure/holosign/restaurant
+	creation_time = 0
+	max_signs = 6
+
+/obj/item/holosign_creator/closed
+	name = "Holosign Projector - Closing Sign"
+	desc = "A holo-sign maker, used for placing signs that inform people of a location being closed off."
+	icon = 'GainStation13/icons/obj/holosign.dmi'
+	icon_state = "holo_closed"
+	holosign_type = /obj/structure/holosign/barrier/closed
+	creation_time = 0
+	max_signs = 6
+
+//holosigns used by the holosign creators
+/obj/structure/holosign/restaurant
+	name = "The Restaurant is OPEN! Come visit!"
+	desc = "A holographic projector that displays a sign advertising the nearby Fast Food Restaurant."
+	icon = 'GainStation13/icons/obj/holosign.dmi'
+	icon_state = "holosign_ad"
+
+/obj/structure/holosign/barrier/closed
+	name = "This Location is Closed!"
+	desc = "A short holographic barrier used to close off areas. Can be passed by walking."
+	icon = 'GainStation13/icons/obj/holosign.dmi'
+	icon_state = "holosign_closed"
+
+//ID for fastfood wagies so they can use the tele
+/obj/item/card/id/silver/restaurant
+	name = "silver identification card"
+	desc = "A silver ID, given to the GATO's fast food restaurant workers. Doesn't grant much besides teleporter access."
+	access = list(ACCESS_MAINT_TUNNELS, ACCESS_TELEPORTER)

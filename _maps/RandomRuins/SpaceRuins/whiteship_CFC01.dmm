@@ -1347,7 +1347,7 @@
 	pixel_x = 5
 	},
 /obj/item/paper{
-	pixel_x = 4;
+	pixel_x = -7;
 	pixel_y = 3;
 	name = "Radio Network Manual";
 	info = "<B>RADIO NETWORK MANUAL</B><BR><BR><BR>Every order intercom is set on 145.3 frequency by default. There are 6 of them, 0-5. It is recommended that you familiarize yourself with the layout of these tables for more efficient ship operation.<BR><BR>The general radio broadcast channel is for communicating with nearby crafts and stations. May be used for advertising purposes. It is recommended to temporary mute the order receiver intercom when preparing for general broadcast, as orders may interrupt your transmission."

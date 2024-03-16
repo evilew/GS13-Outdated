@@ -148,3 +148,9 @@
 				</body>
 				</html>
 				"}
+
+
+//fastfood
+/obj/item/paper/fluff/ruins/fastfood/general_info
+	name = "Welcome to GATO!"
+	info = "We are glad to have you be a part of our galaxy-wide GATO franchise locations! As a restaurant worker / manager, you are a part of the GATO Corp and for security purposes, you may be treated as a part of the General Station 13's crew. Make sure to keep your restaurant clean and well-stocked. Good luck!"
