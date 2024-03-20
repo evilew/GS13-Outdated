@@ -31049,8 +31049,7 @@
 /turf/closed/wall,
 /area/science/lab)
 "aZj" = (
-/obj/effect/turf_decal/bot,
-/obj/machinery/holopad,
+/obj/effect/decal/medium_gato,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit/departure_lounge)
 "aZk" = (
@@ -56647,12 +56646,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
-"bOM" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel,
-/area/hallway/secondary/exit/departure_lounge)
 "bON" = (
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit/departure_lounge)
@@ -65190,6 +65183,7 @@
 	icon_state = "4-8"
 	},
 /obj/item/beacon,
+/obj/effect/decal/medium_gato,
 /turf/open/floor/plasteel/dark,
 /area/bridge)
 "ccf" = (
@@ -126134,7 +126128,7 @@ bQp
 bJR
 bQu
 bMM
-bOM
+cmD
 bQX
 bSe
 bQK

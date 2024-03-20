@@ -11326,6 +11326,7 @@
 "avX" = (
 /obj/structure/table/glass,
 /obj/item/storage/toolbox/emergency,
+/obj/effect/decal/big_gato,
 /turf/open/floor/plasteel/dark,
 /area/bridge)
 "avY" = (
@@ -57694,6 +57695,10 @@
 	icon_state = "platingdmg3"
 	},
 /area/maintenance/department/security/brig)
+"eSF" = (
+/obj/effect/decal/medium_gato,
+/turf/open/floor/plasteel,
+/area/hallway/secondary/entry)
 "eSL" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/item/beacon,
@@ -85324,7 +85329,7 @@ aWK
 aYG
 ovM
 baL
-baK
+eSF
 bcZ
 aZx
 aaa
@@ -85335,7 +85340,7 @@ aaa
 aaa
 aZx
 bkR
-baK
+eSF
 baL
 baK
 bon
