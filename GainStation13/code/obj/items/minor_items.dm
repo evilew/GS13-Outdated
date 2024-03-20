@@ -122,3 +122,24 @@
 	layer = ABOVE_OPEN_TURF_LAYER
 	pixel_y = -16
 	pixel_x = -16
+
+
+//collar voice modulators, based on cow/pig masks
+
+/obj/item/clothing/mask/pig/gag //this one only lets you say "oink" and similar
+	name = "Voice modulator - pig"
+	desc = "A small gag, used to silence people in a rather 'original' way."
+	icon_state = "ballgag"
+	item_state = "ballgag"
+	flags_inv = HIDEFACE
+	clothing_flags = VOICEBOX_TOGGLABLE
+	w_class = WEIGHT_CLASS_SMALL
+	modifies_speech = TRUE
+
+/obj/item/clothing/mask/cowmask/gag //this one only lets you say "moo" and similar
+	name = "Voice modulator - cow"
+	desc = "A small gag, used to silence people in a rather 'original' way."
+	icon = 'icons/obj/clothing/masks.dmi'
+	icon_state = "ballgag"
+	item_state = "ballgag"
+	flags_inv = HIDEFACE

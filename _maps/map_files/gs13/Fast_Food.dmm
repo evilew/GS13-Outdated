@@ -472,7 +472,7 @@
 "SK" = (/obj/structure/table/plaswood,/obj/item/trash/tray,/obj/item/reagent_containers/food/snacks/burger/bigbite,/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/fastfood_main)
 "SM" = (/obj/effect/turf_decal/tile/brown{dir = 8},/obj/effect/turf_decal/tile/brown,/turf/open/floor/plasteel,/area/ruin/space/has_grav/fastfood_main)
 "Te" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 6},/obj/structure/sink/kitchen{dir = 4; pixel_x = -11; pixel_y = 5},/turf/open/floor/plasteel,/area/ruin/space/has_grav/fastfood_employee)
-"Tm" = (/obj/structure/double_bed,/obj/item/restraints/handcuffs/cable/zipties{pixel_y = 6},/obj/item/clothing/mask/muzzle/ballgag{pixel_x = -5; pixel_y = -5},/turf/open/floor/plating,/area/ruin/space/has_grav/fastfood_employee)
+"Tm" = (/obj/structure/double_bed,/obj/item/restraints/handcuffs/cable/zipties{pixel_y = 6},/obj/item/clothing/mask/pig/gag,/obj/item/clothing/mask/cowmask/gag,/turf/open/floor/plating,/area/ruin/space/has_grav/fastfood_employee)
 "Tv" = (/obj/machinery/chem_dispenser/drinks/fullupgrade{dir = 8},/obj/item/reagent_containers/glass/beaker/lipoifier{pixel_x = -12; pixel_y = 5},/turf/open/floor/plating,/area/ruin/space/has_grav/fastfood_employee)
 "TA" = (/obj/machinery/conveyor{dir = 2; id = "fastfood_trash"},/turf/open/floor/plating,/area/ruin/space/has_grav/fastfood_employee)
 "TC" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 8},/obj/item/trash/sosjerky,/turf/open/floor/plasteel/freezer,/area/ruin/space/has_grav/fastfood_main)

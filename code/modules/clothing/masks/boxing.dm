@@ -20,7 +20,7 @@
 	flags_inv = HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	w_class = WEIGHT_CLASS_SMALL
 	mutantrace_variation = MUTANTRACE_VARIATION
-	modifies_speech = TRUE
+	// modifies_speech = TRUE //bad!
 
 /obj/item/clothing/mask/luchador/handle_speech(datum/source, list/speech_args)
 	var/message = speech_args[SPEECH_MESSAGE]

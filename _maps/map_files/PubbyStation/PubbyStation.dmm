@@ -62323,6 +62323,10 @@
 /obj/structure/closet/crate,
 /turf/open/floor/plating,
 /area/maintenance/department/cargo)
+"pMn" = (
+/obj/item/clothing/mask/cowmask/gag,
+/turf/open/floor/plating,
+/area/maintenance/department/engine)
 "pMG" = (
 /obj/structure/sink{
 	dir = 8;
@@ -63881,6 +63885,10 @@
 /obj/structure/sign/warning/docking,
 /turf/open/floor/plating,
 /area/hallway/secondary/entry)
+"tPP" = (
+/obj/item/clothing/mask/pig/gag,
+/turf/open/floor/plating,
+/area/maintenance/department/science)
 "tRc" = (
 /obj/structure/ore_box,
 /turf/open/floor/plating{
@@ -64972,6 +64980,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"wEG" = (
+/obj/item/clothing/mask/cowmask/gag,
+/turf/open/floor/plating,
+/area/maintenance/department/security/brig)
 "wFT" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5
@@ -65017,6 +65029,7 @@
 /obj/effect/spawner/lootdrop/three_course_meal,
 /obj/effect/spawner/lootdrop/three_course_meal,
 /obj/structure/closet/crate,
+/obj/item/clothing/mask/cowmask/gag,
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
@@ -82457,7 +82470,7 @@ aaa
 aaa
 aiu
 aiX
-ajD
+wEG
 aks
 aiu
 ait
@@ -87685,7 +87698,7 @@ aQW
 aRr
 bWZ
 bDi
-bDi
+pMn
 aSt
 aQW
 aht
@@ -111577,7 +111590,7 @@ izF
 bwm
 qnT
 lJr
-lWy
+tPP
 maW
 bwm
 aht

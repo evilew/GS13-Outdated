@@ -46,7 +46,9 @@
 				)
 	premium = list(
 				/obj/item/reagent_containers/food/drinks/soda_cans/air = 3,
-				/obj/item/reagent_containers/food/snacks/donut/chaos = 3
+				/obj/item/reagent_containers/food/snacks/donut/chaos = 3,
+				/obj/item/clothing/mask/cowmask/gag = 2,
+				/obj/item/clothing/mask/pig/gag = 2
 				)
 
 	refill_canister = /obj/item/vending_refill/mealdor
