@@ -744,7 +744,9 @@
 	gloves = /obj/item/clothing/gloves/combat
 	ears = /obj/item/radio/headset/syndicate/alt
 	back = /obj/item/storage/backpack
-	r_hand = /obj/item/flashlight
+	r_hand = /obj/item/storage/box/syndie_kit/soporific_bundle
+	l_hand = /obj/item/gun/ballistic/automatic/pistol
+	l_pocket = /obj/item/crowbar
 	r_pocket = /obj/item/gun/energy/fatoray
 	id = /obj/item/card/id/syndicate/anyone
 	implants = list(/obj/item/implant/weapons_auth)
