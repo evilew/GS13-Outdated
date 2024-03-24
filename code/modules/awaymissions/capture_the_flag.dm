@@ -254,7 +254,7 @@
 		var/turf/T = get_turf(body)
 		new /obj/effect/ctf/ammo(T)
 		recently_dead_ckeys += body.ckey
-		addtimer(CALLBACK(src, .proc/clear_cooldown, body.ckey), respawn_cooldown, TIMER_UNIQUE)
+		addtimer(CALLBACK(src,PROC_REF(clear_cooldown), body.ckey), respawn_cooldown, TIMER_UNIQUE)
 		body.dust()
 
 /obj/machinery/capture_the_flag/proc/clear_cooldown(var/ckey)
@@ -378,7 +378,7 @@
 
 /obj/item/gun/ballistic/automatic/pistol/deagle/ctf/dropped()
 	. = ..()
-	addtimer(CALLBACK(src, .proc/floor_vanish), 1)
+	addtimer(CALLBACK(src,PROC_REF(floor_vanish)), 1)
 
 /obj/item/gun/ballistic/automatic/pistol/deagle/ctf/proc/floor_vanish()
 	if(isturf(loc))
@@ -405,7 +405,7 @@
 
 /obj/item/gun/ballistic/automatic/laser/ctf/dropped()
 	. = ..()
-	addtimer(CALLBACK(src, .proc/floor_vanish), 1)
+	addtimer(CALLBACK(src,PROC_REF(floor_vanish)), 1)
 
 /obj/item/gun/ballistic/automatic/laser/ctf/proc/floor_vanish()
 	if(isturf(loc))
@@ -416,7 +416,7 @@
 
 /obj/item/ammo_box/magazine/recharge/ctf/dropped()
 	. = ..()
-	addtimer(CALLBACK(src, .proc/floor_vanish), 1)
+	addtimer(CALLBACK(src,PROC_REF(floor_vanish)), 1)
 
 /obj/item/ammo_box/magazine/recharge/ctf/proc/floor_vanish()
 	if(isturf(loc))

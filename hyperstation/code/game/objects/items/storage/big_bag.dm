@@ -28,7 +28,7 @@
 /obj/item/storage/backpack/gigantic/equipped(mob/equipper, slot)
     . = ..()
     if(slot == SLOT_BACK)
-        RegisterSignal(equipper, COMSIG_MOBSIZE_CHANGED, .proc/fallOff)
+        RegisterSignal(equipper, COMSIG_MOBSIZE_CHANGED,PROC_REF(fallOff))
     else
         UnregisterSignal(equipper, COMSIG_MOBSIZE_CHANGED)
 

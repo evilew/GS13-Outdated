@@ -102,9 +102,9 @@
 /datum/antagonist/gang/get_admin_commands()
 	. = ..()
 	.["Promote"] = CALLBACK(src,.proc/admin_promote)
-	.["Set Influence"] = CALLBACK(src, .proc/admin_adjust_influence)
+	.["Set Influence"] = CALLBACK(src,PROC_REF(admin_adjust_influence))
 	if(gang.domination_time != NOT_DOMINATING)
-		.["Set domination time left"] = CALLBACK(src, .proc/set_dom_time_left)
+		.["Set domination time left"] = CALLBACK(src,PROC_REF(set_dom_time_left))
 
 /datum/antagonist/gang/admin_add(datum/mind/new_owner,mob/admin)
 	var/new_or_existing = input(admin, "Which gang do you want to be assigned to the user?", "Gangs") as null|anything in list("New","Existing")
@@ -321,7 +321,7 @@
 				CJ.add_antag_datum(bossdatum, src)
 				bossdatum.equip_gang()
 	next_point_time = world.time + INFLUENCE_INTERVAL
-	addtimer(CALLBACK(src, .proc/handle_territories), INFLUENCE_INTERVAL)
+	addtimer(CALLBACK(src,PROC_REF(handle_territories)), INFLUENCE_INTERVAL)
 
 /datum/team/gang/Destroy()
 	GLOB.gangs -= src
@@ -404,7 +404,7 @@
 		influence = new_influence
 		message += "Your gang now has <b>[influence] influence</b>.<BR>"
 	message_gangtools(message)
-	addtimer(CALLBACK(src, .proc/handle_territories), INFLUENCE_INTERVAL)
+	addtimer(CALLBACK(src,PROC_REF(handle_territories)), INFLUENCE_INTERVAL)
 
 /datum/team/gang/proc/total_claimable_territories()
 	var/list/valid_territories = list()

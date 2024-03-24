@@ -10,7 +10,7 @@
 	if(announce && last_lawchange_announce != world.time)
 		to_chat(src, "<span class='big bold'><font color = red>Your laws have been changed.</font color></span>")
 		SEND_SOUND(src, 'hyperstation/sound/misc/ai_laws_update.ogg')
-		addtimer(CALLBACK(src, .proc/show_laws), 0)
+		addtimer(CALLBACK(src,PROC_REF(show_laws)), 0)
 		last_lawchange_announce = world.time
 
 /mob/living/silicon/proc/set_law_sixsixsix(law, announce = TRUE)

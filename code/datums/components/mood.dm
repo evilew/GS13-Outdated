@@ -20,12 +20,12 @@
 
 	START_PROCESSING(SSmood, src)
 
-	RegisterSignal(parent, COMSIG_ADD_MOOD_EVENT, .proc/add_event)
-	RegisterSignal(parent, COMSIG_CLEAR_MOOD_EVENT, .proc/clear_event)
-	RegisterSignal(parent, COMSIG_INCREASE_SANITY, .proc/IncreaseSanity)
-	RegisterSignal(parent, COMSIG_DECREASE_SANITY, .proc/DecreaseSanity)
+	RegisterSignal(parent, COMSIG_ADD_MOOD_EVENT,PROC_REF(add_event))
+	RegisterSignal(parent, COMSIG_CLEAR_MOOD_EVENT,PROC_REF(clear_event))
+	RegisterSignal(parent, COMSIG_INCREASE_SANITY,PROC_REF(IncreaseSanity))
+	RegisterSignal(parent, COMSIG_DECREASE_SANITY,PROC_REF(DecreaseSanity))
 
-	RegisterSignal(parent, COMSIG_MOB_HUD_CREATED, .proc/modify_hud)
+	RegisterSignal(parent, COMSIG_MOB_HUD_CREATED,PROC_REF(modify_hud))
 	var/mob/living/owner = parent
 	if(owner.hud_used)
 		modify_hud()
@@ -252,7 +252,7 @@
 			clear_event(null, category)
 		else
 			if(the_event.timeout)
-				addtimer(CALLBACK(src, .proc/clear_event, null, category), the_event.timeout, TIMER_UNIQUE|TIMER_OVERRIDE)
+				addtimer(CALLBACK(src,PROC_REF(clear_event), null, category), the_event.timeout, TIMER_UNIQUE|TIMER_OVERRIDE)
 			return 0 //Don't have to update the event.
 	the_event = new type(src, param)//This causes a runtime for some reason, was this me? No - there's an event floating around missing a definition.
 
@@ -260,7 +260,7 @@
 	update_mood()
 
 	if(the_event.timeout)
-		addtimer(CALLBACK(src, .proc/clear_event, null, category), the_event.timeout, TIMER_UNIQUE|TIMER_OVERRIDE)
+		addtimer(CALLBACK(src,PROC_REF(clear_event), null, category), the_event.timeout, TIMER_UNIQUE|TIMER_OVERRIDE)
 
 /datum/component/mood/proc/clear_event(datum/source, category)
 	var/datum/mood_event/event = mood_events[category]
@@ -276,8 +276,8 @@
 	var/datum/hud/hud = owner.hud_used
 	screen_obj = new
 	hud.infodisplay += screen_obj
-	RegisterSignal(hud, COMSIG_PARENT_QDELETING, .proc/unmodify_hud)
-	RegisterSignal(screen_obj, COMSIG_CLICK, .proc/hud_click)
+	RegisterSignal(hud, COMSIG_PARENT_QDELETING,PROC_REF(unmodify_hud))
+	RegisterSignal(screen_obj, COMSIG_CLICK,PROC_REF(hud_click))
 
 /datum/component/mood/proc/unmodify_hud(datum/source)
 	if(!screen_obj || !parent)

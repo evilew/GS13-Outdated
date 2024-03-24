@@ -339,7 +339,7 @@
 	assembly.visible_message("<span class='danger'>[assembly] has thrown [A]!</span>")
 	log_attack("[assembly] [REF(assembly)] has thrown [A] with non-lethal force.")
 	A.forceMove(drop_location())
-	A.throw_at(locate(x_abs, y_abs, T.z), range, 3, null, null, null, CALLBACK(src, .proc/post_throw, A))
+	A.throw_at(locate(x_abs, y_abs, T.z), range, 3, null, null, null, CALLBACK(src,PROC_REF(post_throw), A))
 
 	// If the item came from a grabber now we can update the outputs since we've thrown it.
 	if(istype(G))
@@ -413,8 +413,8 @@
 			MAT_METAL, MAT_GLASS, MAT_SILVER, MAT_GOLD, MAT_DIAMOND, MAT_PLASMA,
 			MAT_URANIUM, MAT_BANANIUM, MAT_CALORITE, MAT_TITANIUM, MAT_BLUESPACE),
 		0, FALSE, /obj/item/stack,
-		CALLBACK(src, .proc/is_insertion_ready),
-		CALLBACK(src, .proc/AfterMaterialInsert))
+		CALLBACK(src,PROC_REF(is_insertion_ready)),
+		CALLBACK(src,PROC_REF(AfterMaterialInsert)))
 	materials.max_amount =100000
 	materials.precise_insertion = TRUE
 	.=..()

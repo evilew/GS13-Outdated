@@ -476,7 +476,7 @@ GLOBAL_VAR_INIT(dynamic_chaos_level, 1.5)
 
 	if (istype(starting_rule, /datum/dynamic_ruleset/roundstart/delayed/))
 		var/datum/dynamic_ruleset/roundstart/delayed/rule = starting_rule
-		addtimer(CALLBACK(src, .proc/execute_delayed, rule), rule.delay)
+		addtimer(CALLBACK(src,PROC_REF(execute_delayed), rule), rule.delay)
 
 	starting_rule.trim_candidates()
 	if (starting_rule.pre_execute())

@@ -59,7 +59,7 @@
 	// CAUSES: Target has their back to me, I'm invisible, or I'm in a Closet
 	// Step One: Heatseek toward Target's Turf
 
-	addtimer(CALLBACK(owner, .proc/_walk, 0), 2 SECONDS)
+	addtimer(CALLBACK(owner,PROC_REF(_walk), 0), 2 SECONDS)
 	target.playsound_local(get_turf(owner), 'sound/bloodsucker/lunge_warn.ogg', 60, FALSE, pressure_affected = FALSE) // target-only telegraphing
 	owner.playsound_local(owner, 'sound/bloodsucker/lunge_warn.ogg', 60, FALSE, pressure_affected = FALSE) // audio feedback to the user
 	if(do_mob(owner, owner, 6, TRUE, TRUE))

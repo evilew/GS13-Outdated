@@ -93,7 +93,7 @@ GLOBAL_LIST_EMPTY(blob_nodes)
 		set_security_level("delta")
 		max_blob_points = INFINITY
 		blob_points = INFINITY
-		addtimer(CALLBACK(src, .proc/victory), 450)
+		addtimer(CALLBACK(src,PROC_REF(victory)), 450)
 
 	if(!victory_in_progress && max_count < blobs_legit.len)
 		max_count = blobs_legit.len

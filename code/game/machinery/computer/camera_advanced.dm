@@ -353,7 +353,7 @@
 	user.visible_message("<span class='warning'>[user]'s [target.name] flares!</span>", "<span class='bold sevtug_small'>You begin warping to [AR]...</span>")
 	button_icon_state = "warp_cancel"
 	owner.update_action_buttons()
-	if(!do_after(user, 50, target = warping, extra_checks = CALLBACK(src, .proc/is_canceled)))
+	if(!do_after(user, 50, target = warping, extra_checks = CALLBACK(src,PROC_REF(is_canceled))))
 		to_chat(user, "<span class='bold sevtug_small'>Warp interrupted.</span>")
 		QDEL_NULL(warping)
 		button_icon_state = "warp_down"

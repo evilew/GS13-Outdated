@@ -13,7 +13,7 @@
 /datum/action/sizecode_resize/Grant(mob/M, safety=FALSE)
 	if(ishuman(M) && !safety)	//this probably gets called before a person gets overlays on roundstart, so try again
 		if(!LAZYLEN(M.overlays))
-			addtimer(CALLBACK(src, .proc/Grant, M, TRUE), 5)	//https://www.youtube.com/watch?v=QQ-aYZzlDeo
+			addtimer(CALLBACK(src,PROC_REF(Grant), M, TRUE), 5)	//https://www.youtube.com/watch?v=QQ-aYZzlDeo
 			return
 
 	..()

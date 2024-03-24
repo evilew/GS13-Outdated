@@ -100,7 +100,7 @@
 			visible_message("<span class='danger'>[user] has pressed one of the colorful buttons on [src] and the clown car turns on its singularity disguise system.</span>")
 			icon = 'icons/obj/singularity.dmi'
 			icon_state = "singularity_s1"
-			addtimer(CALLBACK(src, .proc/ResetIcon), 100)
+			addtimer(CALLBACK(src,PROC_REF(ResetIcon)), 100)
 		if(4)
 			visible_message("<span class='danger'>[user] has pressed one of the colorful buttons on [src] and the clown car spews out a cloud of laughing gas.</span>")
 			var/datum/reagents/R = new/datum/reagents(300)
@@ -113,7 +113,7 @@
 		if(5)
 			visible_message("<span class='danger'>[user] has pressed one of the colorful buttons on [src] and the clown car starts dropping an oil trail.</span>")
 			droppingoil = TRUE
-			addtimer(CALLBACK(src, .proc/StopDroppingOil), 30)
+			addtimer(CALLBACK(src,PROC_REF(StopDroppingOil)), 30)
 		if(6)
 			visible_message("<span class='danger'>[user] has pressed one of the colorful buttons on [src] and the clown car lets out a comedic toot.</span>")
 			playsound(src, 'sound/vehicles/clowncar_fart.ogg', 100)

@@ -33,7 +33,7 @@ Captain
 	if(!H)
 		return
 	if(!H.client && !tried)		//Roundstart mobs don't have clients when announce() gets called
-		SSticker.OnRoundstart(CALLBACK(src, .proc/announce, H, TRUE))	//So we try again...
+		SSticker.OnRoundstart(CALLBACK(src,PROC_REF(announce), H, TRUE))	//So we try again...
 		return
 	if(tried && !H.client)	//We don't want to endlessly call ourselves when we don't have a client
 		throw EXCEPTION("[H.nameless ? "Captain" : "Captain [H.real_name]"] ([H.x],[H.y],[H.z]) has no client.")

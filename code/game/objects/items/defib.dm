@@ -296,7 +296,7 @@
 	. = ..()
 	if(!req_defib)
 		return
-	RegisterSignal(user, COMSIG_MOVABLE_MOVED, .proc/check_range)
+	RegisterSignal(user, COMSIG_MOVABLE_MOVED,PROC_REF(check_range))
 
 /obj/item/twohanded/shockpaddles/Moved()
 	. = ..()

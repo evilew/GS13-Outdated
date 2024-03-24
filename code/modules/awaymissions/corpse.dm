@@ -89,7 +89,7 @@
 	return
 
 /obj/effect/mob_spawn/proc/delayusability(deciseconds, showOnMenu) //How many deciseconds until it is enabled, + should it show up on the menu?
-	addtimer(CALLBACK(src, .proc/enableghostrole, showOnMenu), deciseconds)
+	addtimer(CALLBACK(src,PROC_REF(enableghostrole), showOnMenu), deciseconds)
 	
 /obj/effect/mob_spawn/proc/enableghostrole(show)
 	ghost_usable = TRUE

@@ -89,7 +89,7 @@
 			bad_snowflake.pixel_x = -16
 			k9_models["Alina"] = bad_snowflake
 		k9_models = sortList(k9_models)
-	var/k9_borg_icon = show_radial_menu(R, R , k9_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
+	var/k9_borg_icon = show_radial_menu(R, R , k9_models, custom_check = CALLBACK(src,PROC_REF(check_menu), R), radius = 42, require_near = TRUE, tooltips = TRUE)
 	if(!k9_borg_icon)
 		return
 	switch(k9_borg_icon)
@@ -162,7 +162,7 @@
 			bad_snowflake.pixel_x = -16
 			medihound_models["Alina"] = bad_snowflake
 		medihound_models = sortList(medihound_models)
-	var/medihound_borg_icon = show_radial_menu(R, R , medihound_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
+	var/medihound_borg_icon = show_radial_menu(R, R , medihound_models, custom_check = CALLBACK(src,PROC_REF(check_menu), R), radius = 42, require_near = TRUE, tooltips = TRUE)
 	if(!medihound_borg_icon)
 		return
 	switch(medihound_borg_icon)
@@ -216,7 +216,7 @@
 		scrubpup_models = list(
 		"scrubpup" = image(icon = 'modular_citadel/icons/mob/widerobot.dmi', icon_state = "scrubpup")
 		)
-	var/scrubpup_borg_icon = show_radial_menu(R, R , scrubpup_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
+	var/scrubpup_borg_icon = show_radial_menu(R, R , scrubpup_models, custom_check = CALLBACK(src,PROC_REF(check_menu), R), radius = 42, require_near = TRUE, tooltips = TRUE)
 	if(!scrubpup_borg_icon)
 		return
 	switch(scrubpup_borg_icon)
@@ -317,7 +317,7 @@
 				"Fat" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "fat_medical")
 		)
 		med_models = sortList(med_models)
-	var/medi_borg_icon = show_radial_menu(R, R , med_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
+	var/medi_borg_icon = show_radial_menu(R, R , med_models, custom_check = CALLBACK(src,PROC_REF(check_menu), R), radius = 42, require_near = TRUE, tooltips = TRUE)
 	if(!medi_borg_icon)
 		return
 	switch(medi_borg_icon)
@@ -376,7 +376,7 @@
 			"BootyS" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootyjanitorS")
 		)
 		jani_models = sortList(jani_models)
-	var/jani_borg_icon = show_radial_menu(R, R , jani_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
+	var/jani_borg_icon = show_radial_menu(R, R , jani_models, custom_check = CALLBACK(src,PROC_REF(check_menu), R), radius = 42, require_near = TRUE, tooltips = TRUE)
 	if(!jani_borg_icon)
 		return
 	switch(jani_borg_icon)
@@ -421,7 +421,7 @@
 			"Fat" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "fat_peacekeeper")
 		)
 		peace_models = sortList(peace_models)
-	var/peace_borg_icon = show_radial_menu(R, R , peace_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
+	var/peace_borg_icon = show_radial_menu(R, R , peace_models, custom_check = CALLBACK(src,PROC_REF(check_menu), R), radius = 42, require_near = TRUE, tooltips = TRUE)
 	if(!peace_borg_icon)
 		return
 	switch(peace_borg_icon)
@@ -466,7 +466,7 @@
 			"Fat" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "fat_security")
 		)
 		sec_models = sortList(sec_models)
-	var/sec_borg_icon = show_radial_menu(R, R , sec_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
+	var/sec_borg_icon = show_radial_menu(R, R , sec_models, custom_check = CALLBACK(src,PROC_REF(check_menu), R), radius = 42, require_near = TRUE, tooltips = TRUE)
 	if(!sec_borg_icon)
 		return
 	switch(sec_borg_icon)
@@ -528,7 +528,7 @@
 			"Busty" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "busty_service")
 		)
 		butler_models = sortList(butler_models)
-	var/butler_borg_icon = show_radial_menu(R, R , butler_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
+	var/butler_borg_icon = show_radial_menu(R, R , butler_models, custom_check = CALLBACK(src,PROC_REF(check_menu), R), radius = 42, require_near = TRUE, tooltips = TRUE)
 	if(!butler_borg_icon)
 		return
 	switch(butler_borg_icon)
@@ -605,7 +605,7 @@
 			bad_snowflake.pixel_x = -16
 			eng_models["Alina"] = bad_snowflake*/ //removes pupdozer,engihound (this option doesn't work anyways)
 		eng_models = sortList(eng_models)
-	var/eng_borg_icon = show_radial_menu(R, R , eng_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
+	var/eng_borg_icon = show_radial_menu(R, R , eng_models, custom_check = CALLBACK(src,PROC_REF(check_menu), R), radius = 42, require_near = TRUE, tooltips = TRUE)
 	if(!eng_borg_icon)
 		return
 	switch(eng_borg_icon)
@@ -699,7 +699,7 @@
 			"Fat" = image(icon = 'GainStation13/icons/mob/robots.dmi', icon_state = "fat_mining")
 		)
 		miner_models = sortList(miner_models)
-	var/miner_borg_icon = show_radial_menu(R, R , miner_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
+	var/miner_borg_icon = show_radial_menu(R, R , miner_models, custom_check = CALLBACK(src,PROC_REF(check_menu), R), radius = 42, require_near = TRUE, tooltips = TRUE)
 	if(!miner_borg_icon)
 		return
 	switch(miner_borg_icon)
@@ -756,7 +756,7 @@
 			"BootyS" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootystandardS")
 		)
 		stand_models = sortList(stand_models)
-	var/stand_borg_icon = show_radial_menu(R, R , stand_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
+	var/stand_borg_icon = show_radial_menu(R, R , stand_models, custom_check = CALLBACK(src,PROC_REF(check_menu), R), radius = 42, require_near = TRUE, tooltips = TRUE)
 	if(!stand_borg_icon)
 		return
 	switch(stand_borg_icon)
@@ -787,7 +787,7 @@
 			"BootyS" = image(icon = 'modular_citadel/icons/mob/robots.dmi', icon_state = "bootystandardS")
 		)
 		clown_models = sortList(clown_models)
-	var/clown_borg_icon = show_radial_menu(R, R , clown_models, custom_check = CALLBACK(src, .proc/check_menu, R), radius = 42, require_near = TRUE, tooltips = TRUE)
+	var/clown_borg_icon = show_radial_menu(R, R , clown_models, custom_check = CALLBACK(src,PROC_REF(check_menu), R), radius = 42, require_near = TRUE, tooltips = TRUE)
 	if(!clown_borg_icon)
 		return
 	switch(clown_borg_icon)

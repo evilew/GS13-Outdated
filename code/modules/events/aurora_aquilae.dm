@@ -58,16 +58,16 @@
 		var/delay = 0
 		for(var/i in 1 to 50)
 			delay += 3
-			addtimer(CALLBACK(src, .proc/battleflashbacksthree), delay)
+			addtimer(CALLBACK(src,PROC_REF(battleflashbacksthree)), delay)
 
 /datum/round_event/aurora_aquilae/announce()
 	priority_announce("[station_name()]: A ·#HARMLESS#· cloud of ·|$% GLORY AND GUTS¬€#· ions is approaching your ·|%$ station, and will exhaust their energy battering the hull. Central Command has approved a short break for all employees to relax and observe this very rare event. During this time, starlight will be bright but %%%BRUTAL·$ª, shifting between %$$%!ªTHE COMPLETE AND UTTER DESTRUCTION OF THE SENSES$ and %%THE ASHES OF THE GREAT AL-SHAIN%. Any staff who would like to view the %%PRESENCE OF A KING%$ for themselves may proceed to the nearest area with viewing ports to open space.",
 	sound = 'sound/misc/interference.ogg',
 	sender_override = "Kin]·|Aari$s Meteo%&rology DivD··isio#n")
-	addtimer(CALLBACK(src, .proc/flicker_lights), 5 SECONDS)
-	addtimer(CALLBACK(src, .proc/battleflashbacksone), 5 SECONDS)
-	addtimer(CALLBACK(src, .proc/break_lights), 90 SECONDS)
-	addtimer(CALLBACK(src, .proc/battleflashbackstwo), 140 SECONDS)
+	addtimer(CALLBACK(src,PROC_REF(flicker_lights)), 5 SECONDS)
+	addtimer(CALLBACK(src,PROC_REF(battleflashbacksone)), 5 SECONDS)
+	addtimer(CALLBACK(src,PROC_REF(break_lights)), 90 SECONDS)
+	addtimer(CALLBACK(src,PROC_REF(battleflashbackstwo)), 140 SECONDS)
 
 /datum/round_event/aurora_aquilae/tick()
 	if(activeFor % 5 == 0)

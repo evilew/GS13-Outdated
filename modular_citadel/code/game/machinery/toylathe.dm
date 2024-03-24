@@ -37,7 +37,7 @@
 
 /obj/machinery/autoylathe/Initialize()
 	. = ..()
-	AddComponent(/datum/component/material_container, list(MAT_METAL, MAT_GLASS, MAT_PLASTIC), 0, TRUE, null, null, CALLBACK(src, .proc/AfterMaterialInsert))
+	AddComponent(/datum/component/material_container, list(MAT_METAL, MAT_GLASS, MAT_PLASTIC), 0, TRUE, null, null, CALLBACK(src,PROC_REF(AfterMaterialInsert)))
 
 	wires = new /datum/wires/autoylathe(src)
 	stored_research = new /datum/techweb/specialized/autounlocking/autoylathe
@@ -163,7 +163,7 @@
 				use_power(power)
 				icon_state = "autolathe_n"
 				var/time = is_stack ? 32 : 32*coeff*multiplier
-				addtimer(CALLBACK(src, .proc/make_item, power, metal_cost, glass_cost, plastic_cost, multiplier, coeff, is_stack), time)
+				addtimer(CALLBACK(src,PROC_REF(make_item), power, metal_cost, glass_cost, plastic_cost, multiplier, coeff, is_stack), time)
 
 		if(href_list["search"])
 			matching_designs.Cut()

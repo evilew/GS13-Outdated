@@ -467,7 +467,7 @@
 
 /obj/item/reagent_containers/food/snacks/lollipop/cyborg/Initialize()
 	. = ..()
-	addtimer(CALLBACK(src, .proc/spamcheck), 1200)
+	addtimer(CALLBACK(src,PROC_REF(spamcheck)), 1200)
 
 /obj/item/reagent_containers/food/snacks/lollipop/cyborg/equipped(mob/living/user, slot)
 	. = ..(user, slot)
@@ -495,7 +495,7 @@
 
 /obj/item/reagent_containers/food/snacks/gumball/cyborg/Initialize()
 	. = ..()
-	addtimer(CALLBACK(src, .proc/spamcheck), 1200)
+	addtimer(CALLBACK(src,PROC_REF(spamcheck)), 1200)
 
 /obj/item/reagent_containers/food/snacks/gumball/cyborg/equipped(mob/living/user, slot)
 	. = ..(user, slot)
