@@ -11,6 +11,5 @@
 		cumdrip()
 
 /mob/living/carbon/human/proc/cumdrip()
-	.=..()
 	if(isturf(loc))
 		new/obj/effect/decal/cleanable/semendrip(get_turf(src))

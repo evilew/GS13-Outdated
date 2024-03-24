@@ -2243,11 +2243,10 @@ datum/reagent/consumable/ethanol/creme_de_coconut
 	glass_name = "glass of [name]"
 	glass_desc = description
 	for(var/taste in tastes)
-		switch(tastes[taste])
-			if(minimum_percent*2 to INFINITY)
-				primary_tastes += taste
-			if(minimum_percent to minimum_percent*2)
-				secondary_tastes += taste
+		if(tastes[taste] > (minimum_percent * 2)) 
+			primary_tastes += taste
+		else if(tastes[taste] > minimum_percent)
+			secondary_tastes += taste
 
 	var/minimum_name_percent = 0.35
 	name = ""

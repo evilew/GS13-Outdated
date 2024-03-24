@@ -307,7 +307,6 @@ Icons, maybe?
 		step(leash_pet, NORTH, 1)
 
 /obj/item/leash/proc/on_freepet_move()
-	. = ..()
 	//Pet is on the run. Let's drag the leash behind them.
 	if(!leash_master == "null") //If there is a master, don't do this
 		return
