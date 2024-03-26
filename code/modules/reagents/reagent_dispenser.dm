@@ -251,3 +251,10 @@
 	icon_state = "bluekeg"
 	reagent_id = /datum/reagent/consumable/ethanol/gargle_blaster
 	tank_volume = 100
+
+/obj/structure/reagent_dispensers/keg/lipoifier //gs13
+	name = "keg of lipoifier"
+	desc = "Good luck downing that and not getting beached."
+	icon_state = "orangekeg"
+	reagent_id = /datum/reagent/consumable/lipoifier
+	tank_volume = 300

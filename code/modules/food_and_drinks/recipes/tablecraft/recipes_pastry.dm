@@ -727,12 +727,12 @@ datum/crafting_recipe/food/donut/meat
 	result = /obj/item/reagent_containers/food/snacks/honeybun
 	subcategory = CAT_PASTRY
 
-/datum/crafting_recipe/food/donut/semen
-	time = 15
-	name = "Semen donut"
-	reqs = list(
-		/datum/reagent/consumable/semen = 10,
-		/obj/item/reagent_containers/food/snacks/pastrybase = 1
-	)
-	result = /obj/item/reagent_containers/food/snacks/donut/semen
-	subcategory = CAT_PASTRY
+// /datum/crafting_recipe/food/donut/semen
+// 	time = 15
+// 	name = "Semen donut"
+// 	reqs = list(
+// 		/datum/reagent/consumable/semen = 10,
+// 		/obj/item/reagent_containers/food/snacks/pastrybase = 1
+// 	)
+// 	result = /obj/item/reagent_containers/food/snacks/donut/semen
+// 	subcategory = CAT_PASTRY

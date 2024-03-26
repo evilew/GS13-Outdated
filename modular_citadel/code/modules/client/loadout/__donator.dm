@@ -177,12 +177,12 @@ datum/gear/lyricalpawsring
 	name = "GATO Badge - Employee"
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/clothing/accessory/medal/gato_badge/employee
-	ckeywhitelist = list("sonoida")
+	ckeywhitelist = list("sonoida", "yeeny")
 /datum/gear/gatobadge_middleman //these are available to players who were granted permission to have their characters to CC
 	name = "GATO Badge - Correspondent"
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/clothing/accessory/medal/gato_badge/middleman
-	ckeywhitelist = list("johnjimjim", "sonoida")
+	ckeywhitelist = list("johnjimjim", "sonoida", "yeeny")
 /datum/gear/halsey_overcoat
 	name = "Halsey's Commander Overcoat"
 	category = SLOT_IN_BACKPACK
@@ -196,7 +196,7 @@ datum/gear/lyricalpawsring
 	armor = list("melee" = 20, "bullet" = 20, "laser" = 0,"energy" = 20, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 20, "acid" = 0) //worn by a captain player, might as well recompensate not wearing the carapace
 
 /datum/gear/rose_plush
-	name = "Rose Plush"
+	name = "Dezir Rose Plush"
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/toy/plush/rose
 	ckeywhitelist = list("eremitanovem", "sonoida")
@@ -244,5 +244,5 @@ datum/gear/lyricalpawsring
 /datum/gear/wgspell_take
 	name = "Weight Steal Spellbook"
 	category = SLOT_IN_BACKPACK
-	path = /obj/effect/proc_holder/spell/targeted/touch/add_weight/steal
+	path = /obj/item/book/granter/spell/fattening/steal
 	ckeywhitelist = list("sonoida", "themrsky")

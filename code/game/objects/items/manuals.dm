@@ -299,7 +299,7 @@
 	page_link = "Singularity_and_Tesla_engines"
 
 /obj/item/book/manual/wiki/security_space_law
-	name = "Space Law"
+	name = "Space Law (OUTDATED!)"
 	desc = "A set of GATO-Station guidelines for keeping law and order on their space stations."
 	icon_state = "bookSpaceLaw"
 	author = "GATO PMC"

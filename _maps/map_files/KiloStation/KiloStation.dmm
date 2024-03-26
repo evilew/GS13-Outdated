@@ -993,6 +993,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
+/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/plasteel/dark,
 /area/security/detectives_office)
 "abV" = (
@@ -5168,10 +5169,9 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/red,
-/obj/item/clothing/gloves/color/black,
-/obj/item/clothing/head/helmet/justice/escape{
-	name = "justice helmet"
-	},
+/obj/item/book/manual/gato_spacelaw,
+/obj/item/book/manual/gato_spacelaw,
+/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/plasteel,
 /area/security/main)
 "aiK" = (
@@ -11419,12 +11419,12 @@
 /area/security/courtroom)
 "atd" = (
 /obj/structure/table/wood,
-/obj/item/book/manual/wiki/security_space_law,
-/obj/item/hand_tele,
 /obj/structure/mirror{
 	pixel_x = -26
 	},
 /obj/machinery/light,
+/obj/item/book/manual/gato_spacelaw,
+/obj/item/hand_tele,
 /turf/open/floor/wood,
 /area/crew_quarters/heads/captain)
 "ate" = (
@@ -43442,7 +43442,6 @@
 "bsV" = (
 /obj/structure/closet/secure_closet/security/cargo,
 /obj/item/crowbar,
-/obj/item/book/manual/wiki/security_space_law,
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -43464,6 +43463,7 @@
 	pixel_x = 32;
 	pixel_y = 24
 	},
+/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/plasteel/dark,
 /area/security/checkpoint/supply)
 "bsW" = (
@@ -52077,12 +52077,12 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
-/obj/item/book/manual/wiki/security_space_law,
 /obj/machinery/flasher{
 	id = "Cell 6";
 	name = "Prisoner Pacifier";
 	pixel_x = -24
 	},
+/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/warden)
 "bHs" = (
@@ -52111,12 +52111,12 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
-/obj/item/book/manual/wiki/security_space_law,
 /obj/machinery/flasher{
 	id = "Cell 5";
 	name = "Prisoner Pacifier";
 	pixel_x = -24
 	},
+/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/warden)
 "bHu" = (
@@ -52144,12 +52144,12 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
-/obj/item/book/manual/wiki/security_space_law,
 /obj/machinery/flasher{
 	id = "Cell 4";
 	name = "Prisoner Pacifier";
 	pixel_x = -24
 	},
+/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/warden)
 "bHx" = (
@@ -52186,13 +52186,13 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
-/obj/item/book/manual/wiki/security_space_law,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/flasher{
 	id = "Cell 3";
 	name = "Prisoner Pacifier";
 	pixel_x = -24
 	},
+/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/warden)
 "bHA" = (
@@ -52223,12 +52223,12 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
-/obj/item/book/manual/wiki/security_space_law,
 /obj/machinery/flasher{
 	id = "Cell 2";
 	name = "Prisoner Pacifier";
 	pixel_x = -24
 	},
+/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/warden)
 "bHD" = (
@@ -52242,13 +52242,13 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
-/obj/item/book/manual/wiki/security_space_law,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/flasher{
 	id = "Cell 1";
 	name = "Prisoner Pacifier";
 	pixel_x = -24
 	},
+/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/warden)
 "bHE" = (

@@ -5861,6 +5861,7 @@
 /area/security/main)
 "alD" = (
 /obj/machinery/computer/secure_data,
+/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/plasteel,
 /area/security/main)
 "alE" = (
@@ -5868,6 +5869,7 @@
 /area/security/main)
 "alF" = (
 /obj/machinery/computer/security,
+/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/plasteel,
 /area/security/main)
 "alG" = (
@@ -7505,10 +7507,10 @@
 /turf/open/floor/plating,
 /area/security/warden)
 "aoR" = (
-/obj/item/book/manual/wiki/security_space_law,
 /obj/item/clothing/ears/earmuffs,
-/obj/item/clothing/glasses/sunglasses,
 /obj/structure/table/reinforced,
+/obj/item/book/manual/gato_spacelaw,
+/obj/item/clothing/glasses/sunglasses,
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/warden)
 "aoS" = (
@@ -12299,13 +12301,13 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/item/book/manual/wiki/security_space_law,
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
+/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/plasteel/dark,
 /area/security/checkpoint/supply)
 "ayg" = (
@@ -14230,6 +14232,7 @@
 /obj/machinery/airalarm{
 	pixel_y = 22
 	},
+/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/plasteel/grimy,
 /area/security/detectives_office)
 "aCp" = (
@@ -14953,6 +14956,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
+/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/plasteel/dark,
 /area/security/checkpoint/customs)
 "aDI" = (
@@ -17480,7 +17484,6 @@
 /area/security/checkpoint/medical)
 "aIE" = (
 /obj/structure/table,
-/obj/item/book/manual/wiki/security_space_law,
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
 	dir = 4
@@ -17488,6 +17491,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
+/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/plasteel/dark,
 /area/security/checkpoint/medical)
 "aIF" = (
@@ -20299,7 +20303,6 @@
 /area/maintenance/department/engine)
 "aOq" = (
 /obj/structure/table,
-/obj/item/book/manual/wiki/security_space_law,
 /obj/machinery/camera{
 	c_tag = "Engineering Security Post";
 	dir = 4
@@ -20317,6 +20320,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
+/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/plasteel/dark,
 /area/security/checkpoint/engineering)
 "aOr" = (
@@ -64298,9 +64302,10 @@
 /area/engine/engineering)
 "uVf" = (
 /obj/structure/table/wood,
-/obj/item/book/manual/wiki/security_space_law,
 /obj/item/pen/fountain,
 /obj/item/stamp/law,
+/obj/item/book/manual/gato_spacelaw,
+/obj/item/book/manual/gato_spacelaw,
 /turf/open/floor/carpet,
 /area/lawoffice)
 "uWe" = (
