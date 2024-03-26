@@ -143,8 +143,6 @@ GLOBAL_DATUM_INIT(sortInstance, /datum/sortInstance, new())
 		var/list/L = src.L
 		var/last = fetchElement(L,lo)
 		var/current = fetchElement(L,runHi++)
-		SEND_TEXT(world.log, "current = [current]")
-		SEND_TEXT(world.log, "last = [last]")
 
 		if(call(cmp)(current, last) < 0)
 			while(runHi < hi)
