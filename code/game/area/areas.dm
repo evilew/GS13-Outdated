@@ -90,7 +90,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 		if (picked && is_station_level(picked.z))
 			GLOB.teleportlocs[AR.name] = AR
 	if(GLOB.teleportlocs.len) //DON'T TRY TO TIMSORT THINGS THAT HAVE NOTHING. FUCK.
-		sortTim(GLOB.teleportlocs, /proc/cmp_text_dsc)
+		sortTim(GLOB.teleportlocs, GLOBAL_PROC_REF(cmp_text_dsc))
 
 // ===
 
