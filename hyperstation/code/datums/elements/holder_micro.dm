@@ -13,9 +13,9 @@
 	inv_slots = _inv_slots
 	proctype = _proctype
 
-	RegisterSignal(target, COMSIG_CLICK_ALT, .proc/mob_try_pickup_micro, override = TRUE)
-	RegisterSignal(target, COMSIG_PARENT_EXAMINE, .proc/on_examine, override = TRUE)
-	RegisterSignal(target, COMSIG_MICRO_PICKUP_FEET, .proc/mob_pickup_micro_feet)
+	RegisterSignal(target, COMSIG_CLICK_ALT,PROC_REF(mob_try_pickup_micro), override = TRUE)
+	RegisterSignal(target, COMSIG_PARENT_EXAMINE,PROC_REF(on_examine), override = TRUE)
+	RegisterSignal(target, COMSIG_MICRO_PICKUP_FEET,PROC_REF(mob_pickup_micro_feet))
 
 /datum/element/mob_holder/micro/Detach(datum/source, force)
 	. = ..()

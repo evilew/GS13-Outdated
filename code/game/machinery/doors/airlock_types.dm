@@ -8,7 +8,10 @@
 
 
 //GS13 stuckage code
-obj/machinery/door/airlock/Crossed(mob/living/carbon/L)
+/obj/machinery/door/airlock/Crossed(mob/living/carbon/L)
+	if(!istype(L))
+		return ..()
+
 	if(L.fatness > 5000)
 		if(rand(1, 3) == 1)
 			L.doorstuck = 1
@@ -17,12 +20,8 @@ obj/machinery/door/airlock/Crossed(mob/living/carbon/L)
 			sleep(100)
 			L.doorstuck = 0
 			L.Knockdown(1)
-		return
-	else if(L.fatness > 1890)
-		if(rand(1, 5) == 1)
-			L.visible_message("<span class'danger'>[L]'s hips brush against the doorway...</span>")
-			to_chat(L, "<span class='danger'>As you pass through  \the [src], you feel a slight brushing against your hips. The [src] frame accommodates your form, but it's a close fit..</span>")
-			return
+		return ..()
+
 	else if(L.fatness > 3000)
 		if(rand(1, 5) == 1)
 			L.doorstuck = 1
@@ -31,10 +30,18 @@ obj/machinery/door/airlock/Crossed(mob/living/carbon/L)
 			sleep(55)
 			L.doorstuck = 0
 			L.Knockdown(1)
-			return
+			return ..()
 		if(rand(1, 5) == 5)
 			to_chat(L, "<span class='danger'>With great effort, you manage to squeeze your massive form through  \the [src]. It's a tight fit, but you successfully navigate the narrow opening, barely avoiding getting stuck.</span>")
-			return
+			return ..()
+
+	else if(L.fatness > 1890)
+		if(rand(1, 5) == 1)
+			L.visible_message("<span class'danger'>[L]'s hips brush against the doorway...</span>")
+			to_chat(L, "<span class='danger'>As you pass through  \the [src], you feel a slight brushing against your hips. The [src] frame accommodates your form, but it's a close fit..</span>")
+			return ..()
+	else
+		return ..()
 
 /obj/machinery/door/airlock/abandoned
 	abandoned = TRUE

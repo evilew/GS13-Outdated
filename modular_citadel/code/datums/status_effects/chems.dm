@@ -230,8 +230,8 @@
 	master = get_mob_by_key(enthrallID)
 	//if(M.ckey == enthrallID)
 	//	owner.remove_status_effect(src)//At the moment, a user can enthrall themselves, toggle this back in if that should be removed.
-	RegisterSignal(owner, COMSIG_LIVING_RESIST, .proc/owner_resist) //Do resistance calc if resist is pressed#
-	RegisterSignal(owner, COMSIG_MOVABLE_HEAR, .proc/owner_hear)
+	RegisterSignal(owner, COMSIG_LIVING_RESIST,PROC_REF(owner_resist)) //Do resistance calc if resist is pressed#
+	RegisterSignal(owner, COMSIG_MOVABLE_HEAR,PROC_REF(owner_hear))
 	//var/obj/item/organ/brain/B = M.getorganslot(ORGAN_SLOT_BRAIN) //removing this, may cause some issues unsure.
 	mental_capacity = 500 - M.getOrganLoss(ORGAN_SLOT_BRAIN)//It's their brain!
 	var/mob/living/carbon/human/H = owner
@@ -594,7 +594,7 @@
 				var/saytext = "Your mouth moves on it's own before you can even catch it."
 				if(HAS_TRAIT(C, TRAIT_NYMPHO))
 					saytext += " You find yourself fully believing in the validity of what you just said and don't think to question it."
-				addtimer(CALLBACK(GLOBAL_PROC, .proc/to_chat, C, "<span class='notice'><i>[saytext]</i></span>"), 5)
+				addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(to_chat), C, "<span class='notice'><i>[saytext]</i></span>"), 5)
 				addtimer(CALLBACK(C, /atom/movable/proc/say, "[customTriggers[trigger][2]]"), 5)
 				//(C.say(customTriggers[trigger][2]))//trigger3
 				log_game("FERMICHEM: MKULTRA: [owner] ckey: [owner.key] has been forced to say: \"[customTriggers[trigger][2]]\" from previous trigger.")
@@ -602,7 +602,7 @@
 
 			//Echo (repeats message!) allows customisation, but won't display var calls! Defaults to hypnophrase.
 			else if (lowertext(customTriggers[trigger][1]) == "echo")//trigger2
-				addtimer(CALLBACK(GLOBAL_PROC, .proc/to_chat, C, "<span class='velvet'><i>[customTriggers[trigger][2]]</i></span>"), 5)
+				addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(to_chat), C, "<span class='velvet'><i>[customTriggers[trigger][2]]</i></span>"), 5)
 				//(to_chat(owner, "<span class='hypnophrase'><i>[customTriggers[trigger][2]]</i></span>"))//trigger3
 
 			//Shocking truth!

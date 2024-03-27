@@ -309,21 +309,21 @@
 				var/datum/reagent/R = addiction
 				if(C && R)
 					R.addiction_stage++
-					switch(R.addiction_stage)
-						if(1 to R.addiction_stage1_end)
-							need_mob_update += R.addiction_act_stage1(C)
-						if(R.addiction_stage1_end to R.addiction_stage2_end)
-							need_mob_update += R.addiction_act_stage2(C)
-						if(R.addiction_stage2_end to R.addiction_stage3_end)
-							need_mob_update += R.addiction_act_stage3(C)
-						if(R.addiction_stage3_end to R.addiction_stage4_end)
-							need_mob_update += R.addiction_act_stage4(C)
-						if(R.addiction_stage4_end to INFINITY)
-							to_chat(C, "<span class='notice'>You feel like you've gotten over your need for [R.name].</span>")
-							SEND_SIGNAL(C, COMSIG_CLEAR_MOOD_EVENT, "[R.type]_addiction")
-							cached_addictions.Remove(R)
-						else
-							SEND_SIGNAL(C, COMSIG_CLEAR_MOOD_EVENT, "[R.type]_overdose")
+					var/stage = R.addiction_stage
+					if(stage in 1 to R.addiction_stage1_end)
+						need_mob_update += R.addiction_act_stage1(C)
+					else if(stage in R.addiction_stage1_end to R.addiction_stage2_end)
+						need_mob_update += R.addiction_act_stage2(C)
+					else if(stage in R.addiction_stage2_end to R.addiction_stage3_end)
+						need_mob_update += R.addiction_act_stage3(C)
+					else if(stage in R.addiction_stage3_end to R.addiction_stage4_end)
+						need_mob_update += R.addiction_act_stage4(C)
+					else if(stage in R.addiction_stage4_end to INFINITY)
+						to_chat(C, "<span class='notice'>You feel like you've gotten over your need for [R.name].</span>")
+						SEND_SIGNAL(C, COMSIG_CLEAR_MOOD_EVENT, "[R.type]_addiction")
+						cached_addictions.Remove(R)
+					else
+						SEND_SIGNAL(C, COMSIG_CLEAR_MOOD_EVENT, "[R.type]_overdose")
 		addiction_tick++
 	if(C && need_mob_update) //some of the metabolized reagents had effects on the mob that requires some updates.
 		C.updatehealth()

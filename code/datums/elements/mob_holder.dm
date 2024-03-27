@@ -21,8 +21,8 @@
 	inv_slots = _inv_slots
 	proctype = _proctype
 
-	RegisterSignal(target, COMSIG_CLICK_ALT, .proc/mob_try_pickup)
-	RegisterSignal(target, COMSIG_PARENT_EXAMINE, .proc/on_examine)
+	RegisterSignal(target, COMSIG_CLICK_ALT,PROC_REF(mob_try_pickup))
+	RegisterSignal(target, COMSIG_PARENT_EXAMINE,PROC_REF(on_examine))
 
 /datum/element/mob_holder/Detach(datum/source, force)
 	. = ..()

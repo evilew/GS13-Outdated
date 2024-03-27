@@ -29,7 +29,7 @@
 			user.Knockdown(60)
 			user.emote("gasp")
 
-	INVOKE_ASYNC(src, .proc/muscle_loop, user)
+	INVOKE_ASYNC(src,PROC_REF(muscle_loop), user)
 
 	return TRUE
 

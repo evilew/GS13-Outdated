@@ -133,7 +133,7 @@
 	AL.Grant(src)
 	ALM.Grant(src)
 	emittersemicd = TRUE
-	addtimer(CALLBACK(src, .proc/emittercool), 600)
+	addtimer(CALLBACK(src,PROC_REF(emittercool)), 600)
 
 /mob/living/silicon/pai/Life()
 	if(hacking)

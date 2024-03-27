@@ -308,7 +308,8 @@
 
 	if(iscyborg(mob_occupant))
 		var/mob/living/silicon/robot/R = occupant
-		if(!istype(R)) return ..()
+		if(!istype(R))
+			return 
 
 		R.contents -= R.mmi
 		qdel(R.mmi)

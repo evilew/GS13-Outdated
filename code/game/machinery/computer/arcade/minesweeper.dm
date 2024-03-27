@@ -66,7 +66,7 @@
 		if(!spark_spam)
 			do_sparks(5, 1, src)
 			spark_spam = TRUE
-			addtimer(CALLBACK(src, .proc/reset_spark_spam), 30)
+			addtimer(CALLBACK(src,PROC_REF(reset_spark_spam)), 30)
 
 
 	var/startup_sound = CHECK_BITFIELD(obj_flags, EMAGGED) ? 'sound/arcade/minesweeper_emag2.ogg' : 'sound/arcade/minesweeper_startup.ogg'

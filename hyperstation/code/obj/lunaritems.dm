@@ -83,7 +83,7 @@
 		playsound(src.loc, 'hyperstation/sound/misc/helfire_use.ogg', 100, 1, extrarange = 8)
 		icon_state = "helfire_tincture_used"
 		update_icon()
-		addtimer(CALLBACK(src, .proc/restore, user), cooldowntime)
+		addtimer(CALLBACK(src,PROC_REF(restore), user), cooldowntime)
 	else
 		to_chat(user, "<span class='warning'>It's too soon to use this again!</span>")
 

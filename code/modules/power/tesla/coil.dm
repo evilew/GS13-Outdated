@@ -80,7 +80,7 @@
 		tesla_zap(src, 5, power_produced, tesla_flags, shocked_targets)
 		if(istype(linked_techweb))
 			linked_techweb.add_point_type(TECHWEB_POINT_TYPE_DEFAULT, min(power_produced, 1)) // x4 coils = ~240/m point bonus for R&D
-		addtimer(CALLBACK(src, .proc/reset_shocked), 10)
+		addtimer(CALLBACK(src,PROC_REF(reset_shocked)), 10)
 		tesla_buckle_check(power)
 	else
 		..()
@@ -115,7 +115,7 @@
 		tesla_zap(src, 5, power_produced, tesla_flags, shocked_things)
 		if(istype(linked_techweb))
 			linked_techweb.add_point_type(TECHWEB_POINT_TYPE_DEFAULT, min(power_produced, 3)) // x4 coils with a pulse per second or so = ~720/m point bonus for R&D
-		addtimer(CALLBACK(src, .proc/reset_shocked), 10)
+		addtimer(CALLBACK(src,PROC_REF(reset_shocked)), 10)
 		tesla_buckle_check(power)
 	else
 		..()

@@ -127,7 +127,7 @@
 		target.add_overlay(plastic_overlay, TRUE)
 		if(!nadeassembly)
 			to_chat(user, "<span class='notice'>You plant the bomb. Timer counting down from [det_time].</span>")
-			addtimer(CALLBACK(src, .proc/prime), det_time*10)
+			addtimer(CALLBACK(src,PROC_REF(prime)), det_time*10)
 		else
 			qdel(src)	//How?
 

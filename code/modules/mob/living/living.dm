@@ -1106,7 +1106,7 @@
 			client.move_delay = world.time + movement_delay()
 	lying_prev = lying
 	if(canmove && !intentionalresting && iscarbon(src) && client && client.prefs && client?.prefs?.autostand)//CIT CHANGE - adds autostanding as a preference
-		addtimer(CALLBACK(src, .proc/resist_a_rest, TRUE), 0) //CIT CHANGE - ditto
+		addtimer(CALLBACK(src,PROC_REF(resist_a_rest), TRUE), 0) //CIT CHANGE - ditto
 	return canmove
 
 /mob/living/proc/AddAbility(obj/effect/proc_holder/A)

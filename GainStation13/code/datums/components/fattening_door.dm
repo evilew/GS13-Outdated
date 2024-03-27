@@ -6,7 +6,7 @@
 	if(!istype(parent, /obj/structure/mineral_door)) // if the attached object isn't a door, return incompatible!
 		return COMPONENT_INCOMPATIBLE
 	
-	RegisterSignal(parent, list(COMSIG_MOVABLE_CROSSED), .proc/Fatten)
+	RegisterSignal(parent, list(COMSIG_MOVABLE_CROSSED),PROC_REF(Fatten))
 
 /datum/component/fattening_door/proc/Fatten() //GS13
 	var/stuck_delay = 0

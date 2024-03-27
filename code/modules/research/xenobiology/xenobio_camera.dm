@@ -39,7 +39,7 @@
 	. = ..()
 	hotkey_help = new
 	stored_slimes = list()
-	RegisterSignal(src, COMSIG_ATOM_CONTENTS_DEL, .proc/on_contents_del)
+	RegisterSignal(src, COMSIG_ATOM_CONTENTS_DEL,PROC_REF(on_contents_del))
 	for(var/obj/machinery/monkey_recycler/recycler in GLOB.monkey_recyclers)
 		if(get_area(src) == get_area(recycler))
 			connected_recycler = recycler
@@ -89,12 +89,12 @@
 		hotkey_help.Grant(user)
 		actions += hotkey_help
 
-	RegisterSignal(user, COMSIG_XENO_SLIME_CLICK_CTRL, .proc/XenoSlimeClickCtrl)	
-	RegisterSignal(user, COMSIG_XENO_SLIME_CLICK_ALT, .proc/XenoSlimeClickAlt)	
-	RegisterSignal(user, COMSIG_XENO_SLIME_CLICK_SHIFT, .proc/XenoSlimeClickShift)	
-	RegisterSignal(user, COMSIG_XENO_TURF_CLICK_SHIFT, .proc/XenoTurfClickShift)	
-	RegisterSignal(user, COMSIG_XENO_TURF_CLICK_CTRL, .proc/XenoTurfClickCtrl)	
-	RegisterSignal(user, COMSIG_XENO_MONKEY_CLICK_CTRL, .proc/XenoMonkeyClickCtrl)	
+	RegisterSignal(user, COMSIG_XENO_SLIME_CLICK_CTRL,PROC_REF(XenoSlimeClickCtrl))	
+	RegisterSignal(user, COMSIG_XENO_SLIME_CLICK_ALT,PROC_REF(XenoSlimeClickAlt))	
+	RegisterSignal(user, COMSIG_XENO_SLIME_CLICK_SHIFT,PROC_REF(XenoSlimeClickShift))	
+	RegisterSignal(user, COMSIG_XENO_TURF_CLICK_SHIFT,PROC_REF(XenoTurfClickShift))	
+	RegisterSignal(user, COMSIG_XENO_TURF_CLICK_CTRL,PROC_REF(XenoTurfClickCtrl))	
+	RegisterSignal(user, COMSIG_XENO_MONKEY_CLICK_CTRL,PROC_REF(XenoMonkeyClickCtrl))	
 
 /obj/machinery/computer/camera_advanced/xenobio/remove_eye_control(mob/living/user)
 	UnregisterSignal(user, COMSIG_XENO_SLIME_CLICK_CTRL)	

@@ -90,7 +90,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 		if (picked && is_station_level(picked.z))
 			GLOB.teleportlocs[AR.name] = AR
 	if(GLOB.teleportlocs.len) //DON'T TRY TO TIMSORT THINGS THAT HAVE NOTHING. FUCK.
-		sortTim(GLOB.teleportlocs, /proc/cmp_text_dsc)
+		sortTim(GLOB.teleportlocs, GLOBAL_PROC_REF(cmp_text_dsc))
 
 // ===
 
@@ -250,7 +250,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 				if(D.operating)
 					D.nextstate = opening ? FIREDOOR_OPEN : FIREDOOR_CLOSED
 				else if(!(D.density ^ opening))
-					INVOKE_ASYNC(D, (opening ? /obj/machinery/door/firedoor.proc/open : /obj/machinery/door/firedoor.proc/close))
+					INVOKE_ASYNC(D, (opening ? TYPE_PROC_REF(/obj/machinery/door/firedoor,open) : TYPE_PROC_REF(/obj/machinery/door/firedoor,close)))
 
 /area/proc/firealert(obj/source)
 	if(always_unpowered == 1) //no fire alarms in space/asteroid
@@ -325,7 +325,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 		var/mob/living/silicon/SILICON = i
 		if(SILICON.triggerAlarm("Burglar", src, cameras, trigger))
 			//Cancel silicon alert after 1 minute
-			addtimer(CALLBACK(SILICON, /mob/living/silicon.proc/cancelAlarm,"Burglar",src,trigger), 600)
+			addtimer(CALLBACK(SILICON, TYPE_PROC_REF(/mob/living/silicon,cancelAlarm),"Burglar",src,trigger), 600)
 
 /area/proc/set_fire_alarm_effect()
 	fire = TRUE

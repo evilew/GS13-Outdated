@@ -23,7 +23,7 @@
 	if(overmind)
 		update_icon()
 	point_rate = new_rate
-	addtimer(CALLBACK(src, .proc/generate_announcement), 1800)
+	addtimer(CALLBACK(src,PROC_REF(generate_announcement)), 1800)
 	. = ..()
 
 /obj/structure/blob/core/proc/generate_announcement()

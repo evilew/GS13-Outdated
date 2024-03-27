@@ -5,7 +5,7 @@
 	if(!isitem(parent))
 		return COMPONENT_INCOMPATIBLE
 	. = ..()
-	RegisterSignal(parent, COMSIG_ATOM_GET_EXAMINE_NAME, .proc/get_examine_name)
+	RegisterSignal(parent, COMSIG_ATOM_GET_EXAMINE_NAME,PROC_REF(get_examine_name))
 
 /datum/component/decal/blood/proc/get_examine_name(datum/source, mob/user, list/override)
 	var/atom/A = parent

@@ -144,7 +144,7 @@ GLOBAL_LIST_EMPTY(vore_preferences_datums)
 
 	//Write it out
 //#ifdef RUST_G
-//	call(RUST_G, "file_write")(json_to_file, path)
+//	LIBCALL(RUST_G, "file_write")(json_to_file, path)
 //#else
 	// Fall back to using old format if we are not using rust-g
 	if(fexists(path))

@@ -35,7 +35,7 @@
 		return
 	if(slot != SLOT_GLASSES)
 		return
-	RegisterSignal(user, COMSIG_COMBAT_TOGGLED, .proc/injectadrenaline)
+	RegisterSignal(user, COMSIG_COMBAT_TOGGLED,PROC_REF(injectadrenaline))
 
 /obj/item/clothing/glasses/phantomthief/syndicate/dropped(mob/user)
 	. = ..()

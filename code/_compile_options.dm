@@ -31,14 +31,6 @@
 #define FORCE_MAP "_maps/runtimestation.json"
 #endif
 
-//Update this whenever you need to take advantage of more recent byond features
-#define MIN_COMPILER_VERSION 512
-#if DM_VERSION < MIN_COMPILER_VERSION
-//Don't forget to update this part
-#error Your version of BYOND is too out-of-date to compile this project. Go to https://secure.byond.com/download and update.
-#error You need version 512 or higher
-#endif
-
 //Compatability -- These procs were added in 513.1493, not 513.1490
 //Which really shoulda bumped us up to 514 right then and there but instead Lummox is a dumb dumb
 #if DM_BUILD < 1493

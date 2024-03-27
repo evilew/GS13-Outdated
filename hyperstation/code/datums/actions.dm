@@ -36,7 +36,7 @@
 	if(!owner)
 		return
 	update_image()
-	RegisterSignal(owner, COMSIG_CYBORG_MODULE_CHANGE, .proc/update_image)
+	RegisterSignal(owner, COMSIG_CYBORG_MODULE_CHANGE,PROC_REF(update_image))
 
 /datum/action/cyborg_small_sprite/Remove(mob/M)
 	UnregisterSignal(owner, COMSIG_CYBORG_MODULE_CHANGE)
