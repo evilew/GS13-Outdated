@@ -1,5 +1,5 @@
 #define BUCKET_LEN (world.fps*1*60) //how many ticks should we keep in the bucket. (1 minutes worth)
-#define BUCKET_POS(timer) (((round((timer.timeToRun - SStimer.head_offset) + 1) / world.tick_lag) % BUCKET_LEN)||BUCKET_LEN)
+#define BUCKET_POS(timer) ((round((timer.timeToRun - SStimer.head_offset) / world.tick_lag) % BUCKET_LEN)||BUCKET_LEN)
 #define TIMER_MAX (world.time + TICKS2DS(min(BUCKET_LEN-(SStimer.practical_offset-DS2TICKS(world.time - SStimer.head_offset))-1, BUCKET_LEN-1)))
 #define TIMER_ID_MAX (2**24) //max float with integer precision
 
@@ -259,7 +259,7 @@ SUBSYSTEM_DEF(timer)
 	if (!length(alltimers))
 		return
 
-	sortTim(alltimers, .proc/cmp_timer)
+	sortTim(alltimers, PROC_REF(cmp_timer))
 
 	var/datum/timedevent/head = alltimers[1]
 

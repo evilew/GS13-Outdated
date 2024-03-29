@@ -25,7 +25,7 @@
 		ROTATION_ALTCLICK | ROTATION_CLOCKWISE | ROTATION_COUNTERCLOCKWISE | ROTATION_FLIP | ROTATION_VERBS,
 		null,
 		null,
-		CALLBACK(src,.proc/after_rotation)
+		CALLBACK(src, PROC_REF(after_rotation))
 		)
 
 /obj/item/assembly/infra/proc/after_rotation()
