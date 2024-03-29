@@ -34,7 +34,7 @@
 	threat.title = "Business proposition"
 	threat.content = "This is [ship_name]. Pay up [payoff] credits or you'll walk the plank."
 	threat.possible_answers = list("We'll pay.","No way.")
-	threat.answer_callback = CALLBACK(src,.proc/answered)
+	threat.answer_callback = CALLBACK(src, PROC_REF(answered))
 	SScommunications.send_message(threat,unique = TRUE)
 
 /datum/round_event/pirates/proc/answered()
@@ -206,7 +206,7 @@
 	. = ..()
 	if(. == DOCKING_SUCCESS && !is_reserved_level(new_dock.z))
 		engines_cooling = TRUE
-		addtimer(CALLBACK(src,.proc/reset_cooldown),engine_cooldown,TIMER_UNIQUE)
+		addtimer(CALLBACK(src, PROC_REF(reset_cooldown)),engine_cooldown,TIMER_UNIQUE)
 
 /obj/docking_port/mobile/pirate/proc/reset_cooldown()
 	engines_cooling = FALSE
@@ -379,7 +379,7 @@
 	status_report = "Sending..."
 	pad.visible_message("<span class='notice'>[pad] starts charging up.</span>")
 	pad.icon_state = pad.warmup_state
-	sending_timer = addtimer(CALLBACK(src,.proc/send),warmup_time, TIMER_STOPPABLE)
+	sending_timer = addtimer(CALLBACK(src, PROC_REF(send)),warmup_time, TIMER_STOPPABLE)
 
 /obj/machinery/computer/piratepad_control/proc/stop_sending()
 	if(!sending)

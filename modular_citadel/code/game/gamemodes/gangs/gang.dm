@@ -101,7 +101,7 @@
 // Admin commands
 /datum/antagonist/gang/get_admin_commands()
 	. = ..()
-	.["Promote"] = CALLBACK(src,.proc/admin_promote)
+	.["Promote"] = CALLBACK(src, PROC_REF(admin_promote))
 	.["Set Influence"] = CALLBACK(src,PROC_REF(admin_adjust_influence))
 	if(gang.domination_time != NOT_DOMINATING)
 		.["Set domination time left"] = CALLBACK(src,PROC_REF(set_dom_time_left))
@@ -241,9 +241,9 @@
 /datum/antagonist/gang/boss/get_admin_commands()
 	. = ..()
 	. -= "Promote"
-	.["Take gangtool"] = CALLBACK(src,.proc/admin_take_gangtool)
-	.["Give gangtool"] = CALLBACK(src,.proc/admin_give_gangtool)
-	.["Demote"] = CALLBACK(src,.proc/admin_demote)
+	.["Take gangtool"] = CALLBACK(src, PROC_REF(admin_take_gangtool))
+	.["Give gangtool"] = CALLBACK(src, PROC_REF(admin_give_gangtool))
+	.["Demote"] = CALLBACK(src, PROC_REF(admin_demote))
 
 /datum/antagonist/gang/boss/proc/demote()
 	var/old_gang = gang

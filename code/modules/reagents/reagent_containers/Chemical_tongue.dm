@@ -34,7 +34,7 @@
 			log_combat(user, M, "fed", reagents.log_list())
 			var/fraction = min(5/reagents.total_volume, 1)
 			reagents.reaction(M, INGEST, fraction)
-			addtimer(CALLBACK(reagents, /datum/reagents.proc/copy_to, M, 10), 5)
+			addtimer(CALLBACK(reagents, TYPE_PROC_REF(/datum/reagents, copy_to), M, 10), 5)
 		
 	if(user.a_intent == INTENT_GRAB && user.zone_selected == BODY_ZONE_PRECISE_MOUTH)
 		if(M != user)
@@ -52,7 +52,7 @@
 			log_combat(user, M, "fed", reagents.log_list())
 			var/fraction = min(5/reagents.total_volume, 1)
 			reagents.reaction(M, INGEST, fraction)
-			addtimer(CALLBACK(reagents, /datum/reagents.proc/copy_to, M, 5), 5)
+			addtimer(CALLBACK(reagents, TYPE_PROC_REF(/datum/reagents, copy_to), M, 5), 5)
 
 	if(user.a_intent == INTENT_DISARM && user.zone_selected == BODY_ZONE_PRECISE_MOUTH)
 		if(M != user)
@@ -70,7 +70,7 @@
 			log_combat(user, M, "fed", reagents.log_list())
 			var/fraction = min(5/reagents.total_volume, 1)
 			reagents.reaction(M, TOUCH, fraction)
-			addtimer(CALLBACK(reagents, /datum/reagents.proc/copy_to, M, 1), 5)
+			addtimer(CALLBACK(reagents, TYPE_PROC_REF(/datum/reagents, copy_to), M, 1), 5)
 
 	if(user.a_intent == INTENT_HELP)
 		if(M != user && user.zone_selected == BODY_ZONE_PRECISE_MOUTH)
