@@ -114,7 +114,7 @@
 		set_frequency(frequency)
 
 	if(closeOtherId != null)
-		addtimer(CALLBACK(.proc/update_other_id), 5)
+		addtimer(CALLBACK(PROC_REF(update_other_id)), 5)
 	if(glass)
 		airlock_material = "glass"
 	if(security_level > AIRLOCK_SECURITY_METAL)
@@ -1107,11 +1107,11 @@
 		if(!beingcrowbarred) //being fireaxe'd
 			var/obj/item/twohanded/fireaxe/F = I
 			if(F.wielded)
-				INVOKE_ASYNC(src, (density ? .proc/open :PROC_REF(close)), 2)
+				INVOKE_ASYNC(src, (density ? PROC_REF(open) : PROC_REF(close)), 2)
 			else
 				to_chat(user, "<span class='warning'>You need to be wielding the fire axe to do that!</span>")
 		else
-			INVOKE_ASYNC(src, (density ? .proc/open :PROC_REF(close)), 2)
+			INVOKE_ASYNC(src, (density ? PROC_REF(open) :PROC_REF(close)), 2)
 
 	if(istype(I, /obj/item/crowbar/power))
 		if(isElectrified())
