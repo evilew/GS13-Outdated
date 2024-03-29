@@ -3073,6 +3073,7 @@
 #include "code\modules\zombie\organs.dm"
 #include "GainStation13\code\clothing\accessory.dm"
 #include "GainStation13\code\clothing\calorite_collar.dm"
+#include "GainStation13\code\clothing\haydee_suit.dm"
 #include "GainStation13\code\datums\components\fattening_door.dm"
 #include "GainStation13\code\datums\status_effects\fatstun.dm"
 #include "GainStation13\code\game\lore_papers.dm"

@@ -189,6 +189,18 @@ datum/gear/lyricalpawsring
 	path = /obj/item/clothing/suit/chloe/halsey
 	ckeywhitelist = list("yeeny")
 
+/datum/gear/haydee_suit
+	name = "Haydee Suit"
+	category = SLOT_IN_BACKPACK
+	path = /obj/item/clothing/suit/space/hardsuit/engine/haydee
+	ckeywhitelist = list("lumu", "sonoida")
+
+/datum/gear/haydee_pistol
+	name = "Haydee Pistol"
+	category = SLOT_IN_BACKPACK
+	path = /obj/item/gun/ballistic/automatic/toy/pistol/haydee
+	ckeywhitelist = list("lumu", "sonoida")
+
 //sorry for defining this here, just thought it'd be more convenient
 /obj/item/clothing/suit/chloe/halsey //sorry to whoever chloe is, but that coat is far too badass not to be used
 	name = "Halsey's Commander Overcoat"

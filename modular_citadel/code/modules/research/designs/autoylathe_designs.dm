@@ -607,6 +607,14 @@
 	build_path = /obj/item/gun/ballistic/automatic/toy/pistol/stealth
 	category = list("initial", "Pistols")
 
+/datum/design/haydee_pistol //GS13
+	name = "Foam Force Haydee Pistol"
+	id = "haydee_pistol"
+	build_type = AUTOYLATHE
+	materials = list(MAT_PLASTIC = 2000, MAT_METAL = 1000)
+	build_path = /obj/item/gun/ballistic/automatic/toy/pistol/haydee
+	category = list("initial", "Pistols")
+
 /datum/design/toyray
 	name = "RayTag Gun"
 	id = "toyray"

@@ -18,6 +18,7 @@
 		/obj/item/toy/clockwork_watch = ARCADE_WEIGHT_TRICK,
 		/obj/item/toy/dummy = ARCADE_WEIGHT_TRICK,
 		/obj/item/toy/eightball = ARCADE_WEIGHT_USELESS,
+		/obj/item/gun/ballistic/automatic/toy/pistol/haydee = ARCADE_WEIGHT_USELESS, //GS13
 		/obj/item/toy/eightball/haunted = ARCADE_WEIGHT_RARE,
 		/obj/item/storage/box/actionfigure = ARCADE_WEIGHT_USELESS,
 		/obj/item/toy/foamblade = ARCADE_WEIGHT_TRICK,

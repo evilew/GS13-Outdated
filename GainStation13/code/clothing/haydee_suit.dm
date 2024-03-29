@@ -7,7 +7,9 @@
 	item_state = "haydee_helmet"
 	armor = list("melee" = 10, "bullet" = 5, "laser" = 10, "energy" = 5, "bomb" = 0, "bio" = 0, "rad" = 25, "fire" = 25, "acid" = 25)
 	item_color = "white"
+	slowdown = 0
 	mutantrace_variation = NO_MUTANTRACE_VARIATION
+	actions_types = list()
 
 /obj/item/clothing/suit/space/hardsuit/engine/haydee
 	name = "Haydee Suit"
@@ -20,6 +22,7 @@
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals)
 	actions_types = list(/datum/action/item_action/toggle_helmet)
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/engine/haydee
+	slowdown = 0
 	mutantrace_variation = NO_MUTANTRACE_VARIATION
 	var/icon_location = 'GainStation13/icons/obj/clothing/haydee_modular.dmi'
 	var/mob/living/carbon/U
