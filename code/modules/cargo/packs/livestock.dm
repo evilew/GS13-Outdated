@@ -172,3 +172,10 @@
 					/mob/living/simple_animal/hostile/retaliate/bat/secbat,
 					/mob/living/simple_animal/hostile/retaliate/bat/secbat)
 	crate_name = "security bat crate"
+
+/datum/supply_pack/critter/slugcat
+	name = "Slugcat Crate"
+	desc = "It's a cat . . . Thing from another planet, maybe from another world.contain one slugcat."
+	cost = 5000
+	contains = list(/mob/living/simple_animal/pet/slugcat)
+	crate_name = "slugcat crate"
