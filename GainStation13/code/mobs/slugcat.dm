@@ -101,3 +101,19 @@
 		weapon = null
 	update_icons()
 	. = ..()
+
+/mob/living/simple_animal/pet/slugcat/attack_ghost(mob/user)
+	if(key)
+		return
+	if(CONFIG_GET(flag/use_age_restriction_for_jobs))
+		if(!isnum(user.client.player_age))
+			return
+	if(!SSticker.mode)
+		to_chat(user, "Can't become a slugcat before the game has started.")
+		return
+	var/be_scug = alert("Become a slugcat? (Warning, You can no longer be cloned!)",,"Yes","No")
+	if(be_scug == "No" || QDELETED(src) || !isobserver(user))
+		return
+	sentience_act()
+	key = user.key
+
