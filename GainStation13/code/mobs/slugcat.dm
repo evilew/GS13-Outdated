@@ -1,7 +1,7 @@
 /mob/living/simple_animal/pet/slugcat
 	name = "slugcat"
 	desc = "It's a cat . . . Thing from another planet, maybe from another world. You think it's not dangerous, but you can't be sure. "
-	icon = 'GainStation13/icons/mobs/pets.dmi'
+	icon = 'GainStation13/icons/mob/pets.dmi'
 	icon_state = "slugcat"
 	icon_living = "slugcat"
 	icon_dead = "slugcat_dead"
@@ -17,7 +17,7 @@
 	minbodytemp = 200
 	maxbodytemp = 400
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 2)
-	unsuitable_atmos_damage = 0.1
+	unsuitable_atmos_damage = 0.5
 	animal_species = /mob/living/simple_animal/pet/slugcat
 	response_help = "pets"
 	response_disarm = "gently pushes aside"
@@ -101,4 +101,3 @@
 		weapon = null
 	update_icons()
 	. = ..()
-
