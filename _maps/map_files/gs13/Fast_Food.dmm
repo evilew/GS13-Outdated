@@ -135,7 +135,6 @@
 "fZ" = (/obj/item/clothing/head/helmet/skull,/obj/item/stack/sheet/bone{pixel_x = 16},/turf/open/floor/plating/asteroid/airless,/area/space/nearstation)
 "gq" = (/obj/structure/chair/sofa/right{dir = 8},/turf/open/floor/carpet/gato,/area/ruin/space/has_grav/fastfood_employee)
 "gA" = (/obj/machinery/telecomms/relay/preset/mining,/turf/open/floor/bluespace,/area/ruin/space/has_grav/fastfood_employee)
-"gF" = (/obj/docking_port/stationary{dir = 2; dwidth = 11; height = 22; id = "whiteship_home"; name = "GATO Fast Food Restaurant"; width = 35},/turf/open/space/basic,/area/space)
 "gI" = (/obj/effect/turf_decal/stripes/line{dir = 4},/obj/effect/turf_decal/stripes/white/line{dir = 4},/obj/effect/turf_decal/stripes/white/line{dir = 1; icon_state = "steel_decals9"},/obj/effect/turf_decal/stripes/white/line{dir = 8; icon_state = "steel_decals9"},/turf/open/floor/circuit,/area/ruin/space/has_grav/fastfood_employee)
 "gP" = (/obj/machinery/disposal/bin{pixel_x = -8},/obj/machinery/airalarm/syndicate{pixel_y = 32},/turf/open/floor/plating,/area/ruin/space/has_grav/fastfood_employee)
 "gQ" = (/obj/structure/trash_pile,/obj/effect/turf_decal/stripes/line{dir = 8},/turf/open/floor/plating/airless,/area/space/nearstation)
@@ -543,7 +542,7 @@
 
 (1,1,1) = {"
 DhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhaMDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDh
-DhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhgFDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDh
+DhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDh
 DhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDh
 DhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDh
 DhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDhDh

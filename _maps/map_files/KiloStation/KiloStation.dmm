@@ -40415,7 +40415,6 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/machinery/autolathe,
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/plasteel/dark,
 /area/quartermaster/office)
@@ -84935,6 +84934,15 @@
 	icon_state = "wood-broken7"
 	},
 /area/security/vacantoffice)
+"pqr" = (
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "research_shutters";
+	name = "Research Privacy Shutter"
+	},
+/obj/machinery/autolathe,
+/obj/machinery/door/firedoor,
+/turf/open/floor/plating,
+/area/science/lab)
 "pvQ" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable{
@@ -85461,6 +85469,11 @@
 	},
 /turf/open/floor/wood,
 /area/ruin/space/has_grav/powered/dinner_for_two)
+"tcG" = (
+/obj/machinery/autolathe,
+/obj/machinery/door/firedoor,
+/turf/open/floor/plating,
+/area/quartermaster/office)
 "tdM" = (
 /obj/machinery/door/poddoor{
 	id = "chapelgun";
@@ -123267,7 +123280,7 @@ bdJ
 bdJ
 aZr
 aYd
-aYK
+pqr
 aZL
 bch
 aYd
@@ -123281,7 +123294,7 @@ bhX
 bhs
 biM
 bmt
-bhX
+tcG
 bsz
 blf
 bkm
