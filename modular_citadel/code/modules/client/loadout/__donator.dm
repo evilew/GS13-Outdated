@@ -244,6 +244,15 @@ datum/gear/lyricalpawsring
 	path = /obj/item/dnainjector/fatfang
 	ckeywhitelist = list("sonoida")
 
+/obj/item/toy/sword/chloesabre/halsey
+	name = "Halsey's Sabre"
+	desc = "An elegant weapon, similar in design to the Captain's Sabre, but with a platinum hilt and an adamantine blade. the hilt has an engraved hyena on it."
+	force = 16
+
+/obj/item/gun/ballistic/revolver/mateba/moka
+	name = "\improper Custom Unica 6 revolver"
+	desc = "An elegant and ornate revolver belonging to a certain hellcat commander. There are some words carved on its side: 'Dura Lex, Sed Lex'"
+
 //metha rossi you fat hog
 
 /datum/gear/wgspell_add
