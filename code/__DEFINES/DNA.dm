@@ -42,6 +42,7 @@
 #define ANTENNA		/datum/mutation/human/antenna
 #define PARANOIA	/datum/mutation/human/paranoia
 #define MINDREAD	/datum/mutation/human/mindreader
+#define FATFANG		/datum/mutation/human/fatfang
 
 #define UI_CHANGED "ui changed"
 #define UE_CHANGED "ue changed"
