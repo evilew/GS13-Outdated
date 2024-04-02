@@ -37,7 +37,7 @@
 	if(!target || !chem_to_add)
 		return FALSE
 	
-	target.reagents.add_reagent(/datum/reagent/consumable/lipoifier, 5)
+	target.reagents.add_reagent(/datum/reagent/consumable/lipoifier, chem_to_add)
 
 	target.visible_message("<span class='danger'>[user] nibbles [target]!</span>","<span class='userdanger'>[user] nibbles you!</span>")
 	return ..()
