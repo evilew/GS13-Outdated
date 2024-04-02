@@ -50,10 +50,6 @@
     ..()
     U = null
 
-// /obj/item/clothing/suit/space/hardsuit/engine/haydee/jumpsuit_adjust() //when the user adjusts the clothes' style, rebuild the overlays
-//     ..()
-//     worn_overlays()
-
 /obj/item/clothing/suit/space/hardsuit/engine/haydee/worn_overlays(isinhands = FALSE)
 	if(U)
 		if(!isinhands)

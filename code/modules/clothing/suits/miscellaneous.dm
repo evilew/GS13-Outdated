@@ -517,12 +517,6 @@
 	icon_state = "letterman_s"
 	item_state = "letterman_s"
 
-/obj/item/clothing/suit/jacket/letterman_gato // GS13
-	name = "GATO letterman jacket"
-	desc = "A GATO themed letterman jacket. Perfect for repping your pride in the company as you violently murder russian mobsters"
-	icon_state = "letterman_gato"
-	item_state = "letterman_gato"
-
 /obj/item/clothing/suit/jacket/letterman_nanotrasen
 	name = "blue letterman jacket"
 	desc = "A blue letterman jacket with a proud Nanotrasen N on the back. The tag says that it was made in Space China."
