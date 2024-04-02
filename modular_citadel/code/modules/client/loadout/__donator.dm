@@ -238,6 +238,11 @@ datum/gear/lyricalpawsring
 	name = "Milwaukee Pocket Crowbar"
 	desc = "Much more expensive. Still serves the same function."
 
+/datum/gear/fatfang
+	name = "Fattening Fangs Injector"
+	category = SLOT_IN_BACKPACK
+	path = /obj/item/dnainjector/fatfang
+	ckeywhitelist = list("sonoida")
 
 //metha rossi you fat hog
 
