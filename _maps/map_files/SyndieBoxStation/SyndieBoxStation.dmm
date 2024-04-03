@@ -8777,12 +8777,6 @@
 	},
 /turf/open/floor/carpet,
 /area/crew_quarters/fitness)
-"asF" = (
-/obj/structure/flora/bush,
-/obj/structure/flora/ausbushes/grassybush,
-/obj/structure/window/reinforced/fulltile,
-/turf/open/floor/grass,
-/area/hallway/primary/central)
 "asG" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/structure/disposalpipe/segment,
@@ -8803,10 +8797,8 @@
 /turf/open/floor/mineral/basaltstone_floor,
 /area/crew_quarters/fitness)
 "asJ" = (
-/obj/structure/flora/ausbushes/brflowers,
-/obj/structure/flora/ausbushes/sunnybush,
-/obj/structure/window/reinforced/fulltile,
-/turf/open/floor/grass,
+/obj/structure/window/plastitanium,
+/turf/open/lava,
 /area/hallway/primary/central)
 "asK" = (
 /obj/effect/spawner/structure/window/plastitanium,
@@ -31727,7 +31719,7 @@
 	dir = 1;
 	pixel_y = 16
 	},
-/obj/effect/spawner/structure/window/plastitanium,
+/obj/structure/window/plastitanium,
 /turf/open/lava,
 /area/hallway/primary/port)
 "bsx" = (
@@ -55444,17 +55436,6 @@
 /obj/machinery/light/small,
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
-"ctH" = (
-/obj/structure/flora/ausbushes/ywflowers,
-/obj/structure/flora/ausbushes/palebush,
-/obj/structure/window/reinforced/fulltile,
-/turf/open/floor/grass,
-/area/hallway/primary/central)
-"ctI" = (
-/obj/structure/flora/ausbushes/grassybush,
-/obj/structure/window/reinforced/fulltile,
-/turf/open/floor/grass,
-/area/hallway/primary/central)
 "ctJ" = (
 /obj/structure/sign/poster/random{
 	pixel_x = -32
@@ -58880,7 +58861,7 @@
 /turf/open/floor/plasteel/dark,
 /area/engine/engine_smes)
 "cFC" = (
-/obj/effect/spawner/structure/window/plastitanium,
+/obj/structure/window/plastitanium,
 /turf/open/lava,
 /area/hallway/primary/port)
 "cFD" = (
@@ -58912,10 +58893,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/medbay/central)
-"cFH" = (
-/obj/effect/spawner/structure/window/plastitanium,
-/turf/open/lava,
-/area/hallway/primary/central)
 "cFI" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/carpet/red,
@@ -58950,7 +58927,7 @@
 /area/hallway/secondary/entry)
 "cFO" = (
 /obj/machinery/light,
-/obj/effect/spawner/structure/window/plastitanium,
+/obj/structure/window/plastitanium,
 /turf/open/lava,
 /area/hallway/primary/port)
 "cFP" = (
@@ -61538,7 +61515,7 @@
 /turf/open/floor/engine,
 /area/science/xenobiology)
 "inP" = (
-/obj/effect/spawner/structure/window/plastitanium,
+/obj/structure/window/plastitanium,
 /turf/open/lava,
 /area/hallway/secondary/exit)
 "iMG" = (
@@ -87809,10 +87786,10 @@ bmx
 blh
 blh
 bqU
-asF
 asJ
-ctH
-ctI
+asJ
+asJ
+asJ
 bxZ
 aTB
 bYr
@@ -89840,8 +89817,8 @@ aDj
 ayo
 aFO
 ayq
-cFH
-cFH
+asJ
+asJ
 biF
 aLz
 aOs
@@ -90097,8 +90074,8 @@ aAQ
 ayo
 aFP
 ayq
-cFH
-cFH
+asJ
+asJ
 bYr
 aIP
 aOq
@@ -90127,7 +90104,7 @@ aad
 aaa
 aaa
 aTB
-cFH
+asJ
 bXB
 aIP
 bDr
@@ -90354,8 +90331,8 @@ ayq
 ayq
 ayq
 ayq
-cFH
-cFH
+asJ
+asJ
 bYr
 aIP
 aOq
@@ -90384,7 +90361,7 @@ aad
 aaa
 aaa
 aTB
-cFH
+asJ
 bXB
 aIP
 bDs
@@ -90641,7 +90618,7 @@ aTB
 aTB
 aTB
 aTB
-cFH
+asJ
 bXB
 aIP
 bfQ
@@ -92183,7 +92160,7 @@ aTB
 aTB
 aTB
 aTB
-cFH
+asJ
 bYr
 aIP
 bDy
@@ -92410,8 +92387,8 @@ aom
 aom
 aom
 aom
-cFH
-cFH
+asJ
+asJ
 bYr
 aIP
 aOq
@@ -92440,7 +92417,7 @@ aad
 aaa
 aaa
 aTB
-cFH
+asJ
 bYr
 aIP
 bDz
@@ -92667,8 +92644,8 @@ aGg
 aGg
 btS
 aom
-cFH
-cFH
+asJ
+asJ
 bYr
 aIP
 aOq
@@ -92697,7 +92674,7 @@ aad
 aaa
 aaa
 aTB
-cFH
+asJ
 bYr
 aIP
 bDA
@@ -92924,8 +92901,8 @@ aFZ
 aHt
 btT
 aom
-cFH
-cFH
+asJ
+asJ
 cFD
 aLz
 aPP
