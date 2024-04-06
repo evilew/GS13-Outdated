@@ -6551,8 +6551,8 @@
 /obj/structure/sign/warning/electricshock{
 	pixel_y = 32
 	},
-/obj/structure/window/plasma/reinforced/fulltile,
-/turf/open/lava,
+/obj/structure/window/plastitanium,
+/turf/open/floor/plasteel/lava,
 /area/hallway/primary/fore)
 "ana" = (
 /obj/structure/sign/warning/electricshock{
@@ -6571,8 +6571,8 @@
 /turf/open/floor/engine,
 /area/hallway/primary/fore)
 "anc" = (
-/obj/structure/window/plasma/reinforced/fulltile,
-/turf/open/lava,
+/obj/structure/window/plastitanium,
+/turf/open/floor/plasteel/lava,
 /area/hallway/primary/fore)
 "and" = (
 /obj/effect/turf_decal/tile/red{
@@ -6698,8 +6698,8 @@
 /turf/open/floor/engine,
 /area/security/processing)
 "ant" = (
-/obj/structure/window/plasma/reinforced/fulltile,
-/turf/open/lava,
+/obj/structure/window/plastitanium,
+/turf/open/floor/plasteel/lava,
 /area/security/prison)
 "anu" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
@@ -8779,9 +8779,10 @@
 /turf/open/floor/mineral/basaltstone_floor,
 /area/crew_quarters/fitness)
 "asJ" = (
-/obj/structure/window/plasma/reinforced/fulltile,
-/turf/open/lava,
-/area/hallway/primary/central)
+/obj/structure/window/plastitanium,
+/obj/machinery/light,
+/turf/open/floor/plasteel/lava,
+/area/hallway/primary/port)
 "asK" = (
 /obj/effect/spawner/structure/window/plastitanium,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -16752,8 +16753,8 @@
 /turf/open/floor/plasteel/dark,
 /area/hydroponics)
 "aKn" = (
-/obj/structure/window/plasma/reinforced/fulltile,
-/turf/open/lava,
+/obj/structure/window/plastitanium,
+/turf/open/floor/plasteel/lava,
 /area/bridge)
 "aKo" = (
 /obj/machinery/light{
@@ -18166,8 +18167,8 @@
 /turf/open/floor/carpet/black,
 /area/crew_quarters/bar)
 "aOd" = (
-/obj/structure/window/plasma/reinforced/fulltile,
-/turf/open/lava,
+/obj/structure/window/plastitanium,
+/turf/open/floor/plasteel/lava,
 /area/crew_quarters/bar)
 "aOe" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -18682,7 +18683,6 @@
 	icon_state = "drain";
 	name = "drain"
 	},
-/obj/machinery/light,
 /turf/open/floor/engine,
 /area/hallway/primary/port)
 "aPw" = (
@@ -31677,8 +31677,8 @@
 /turf/open/floor/engine,
 /area/hallway/primary/starboard)
 "bsw" = (
-/obj/structure/window/plasma/reinforced/fulltile,
-/turf/open/lava,
+/obj/structure/window/plastitanium,
+/turf/open/floor/plasteel/lava,
 /area/hallway/primary/port)
 "bsx" = (
 /obj/effect/turf_decal/bot,
@@ -31735,7 +31735,8 @@
 /turf/open/floor/carpet/purple,
 /area/crew_quarters/heads/hor)
 "bsC" = (
-/turf/open/lava,
+/obj/structure/window/plastitanium,
+/turf/open/floor/plasteel/lava,
 /area/hallway/primary/central)
 "bsD" = (
 /obj/effect/turf_decal/loading_area{
@@ -61529,8 +61530,8 @@
 /turf/open/floor/engine,
 /area/science/xenobiology)
 "inP" = (
-/obj/structure/window/plasma/reinforced/fulltile,
-/turf/open/lava,
+/obj/structure/window/plastitanium,
+/turf/open/floor/plasteel/lava,
 /area/hallway/secondary/exit)
 "iDI" = (
 /obj/effect/turf_decal/tile/red{
@@ -61753,7 +61754,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat/atmos)
 "lOI" = (
-/obj/effect/spawner/structure/window/plasma/reinforced,
+/obj/effect/spawner/structure/window/plastitanium,
 /turf/open/floor/plating,
 /area/crew_quarters/heads/hop)
 "lOR" = (
@@ -62052,8 +62053,8 @@
 	dir = 1;
 	pixel_y = 16
 	},
-/obj/structure/window/plasma/reinforced/fulltile,
-/turf/open/lava,
+/obj/structure/window/plastitanium,
+/turf/open/floor/plasteel/lava,
 /area/hallway/primary/fore)
 "qhL" = (
 /obj/structure/cable{
@@ -62139,6 +62140,14 @@
 	},
 /turf/open/floor/plating,
 /area/crew_quarters/fitness/pool)
+"rwl" = (
+/obj/structure/window/plastitanium,
+/obj/machinery/light{
+	dir = 1;
+	pixel_y = 16
+	},
+/turf/open/floor/plasteel/lava,
+/area/hallway/primary/port)
 "rxt" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 1;
@@ -62505,7 +62514,7 @@
 /turf/open/floor/pod/light,
 /area/quartermaster/miningdock)
 "wBC" = (
-/obj/effect/spawner/structure/window/plasma/reinforced,
+/obj/effect/spawner/structure/window/plastitanium,
 /turf/open/floor/plating,
 /area/crew_quarters/heads/captain)
 "wHA" = (
@@ -62564,6 +62573,9 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/machinery/light{
 	dir = 1
 	},
 /turf/open/floor/engine,
@@ -78427,13 +78439,13 @@ aCH
 aFx
 bgT
 azc
-bsw
+rwl
 bsw
 aNX
 aLd
 aPn
 bsw
-bsw
+asJ
 aPj
 aQA
 aRT
@@ -87961,10 +87973,10 @@ bmx
 blh
 blh
 bqU
-asJ
-asJ
-asJ
-asJ
+bsC
+bsC
+bsC
+bsC
 bxZ
 aTB
 bYr
@@ -89992,8 +90004,8 @@ aDj
 ayo
 aFO
 ayq
-asJ
-asJ
+bsC
+bsC
 biF
 aLz
 aOs
@@ -90249,8 +90261,8 @@ aAQ
 ayo
 aFP
 ayq
-asJ
-asJ
+bsC
+bsC
 bYr
 aIP
 aOq
@@ -90279,7 +90291,7 @@ bYd
 bYd
 bTo
 aTB
-asJ
+bsC
 bXB
 aIP
 bDr
@@ -90506,8 +90518,8 @@ ayq
 ayq
 ayq
 ayq
-asJ
-asJ
+bsC
+bsC
 bYr
 aIP
 aOq
@@ -90536,7 +90548,7 @@ bYd
 bYd
 bYd
 aTB
-asJ
+bsC
 bXB
 aIP
 bDs
@@ -90793,7 +90805,7 @@ aTB
 aTB
 aTB
 aTB
-asJ
+bsC
 bXB
 aIP
 bfQ
@@ -92335,7 +92347,7 @@ aTB
 aTB
 aTB
 aTB
-asJ
+bsC
 bYr
 aIP
 bDy
@@ -92562,7 +92574,7 @@ aom
 aom
 aom
 aom
-asJ
+bsC
 bsC
 bYr
 aIP
@@ -92592,7 +92604,7 @@ cdi
 cdi
 cdi
 aTB
-asJ
+bsC
 bYr
 aIP
 bDz
@@ -92819,8 +92831,8 @@ aGg
 aGg
 btS
 aom
-asJ
-asJ
+bsC
+bsC
 bYr
 aIP
 aOq
@@ -92849,7 +92861,7 @@ cdi
 cdi
 cdi
 aTB
-asJ
+bsC
 bYr
 aIP
 bDA
@@ -93076,8 +93088,8 @@ aFZ
 aHt
 btT
 aom
-asJ
-asJ
+bsC
+bsC
 cFD
 aLz
 aPP

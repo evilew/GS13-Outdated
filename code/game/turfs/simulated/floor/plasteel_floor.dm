@@ -91,6 +91,10 @@
 /turf/open/floor/plasteel/cafeteria
 	icon_state = "cafeteria"
 
+/turf/open/floor/plasteel/lava
+	name = "lava"
+	icon_state = "lava"
+
 /turf/open/floor/plasteel/airless/cafeteria
 	icon_state = "cafeteria"
 
