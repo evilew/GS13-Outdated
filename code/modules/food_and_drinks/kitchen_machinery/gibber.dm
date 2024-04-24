@@ -152,7 +152,8 @@
 	var/typeofmeat = /obj/item/reagent_containers/food/snacks/meat/slab/human
 	var/typeofskin
 
-	var/obj/item/reagent_containers/food/snacks/meat/slab/allmeat[meat_produced]
+	//var/obj/item/reagent_containers/food/snacks/meat/slab/allmeat[meat_produced] //Gainstation Edit: This has to be moved ahead to account for fatness adding
+	var/fatbonus //Gainstation Edit 2: Instead I'll define fatbonus here, since it needs to be in this scope
 	var/obj/item/stack/sheet/animalhide/skin
 	var/list/datum/disease/diseases = mob_occupant.get_static_viruses()
 
@@ -170,6 +171,15 @@
 			typeofskin = /obj/item/stack/sheet/animalhide/monkey
 		else if(isalien(C))
 			typeofskin = /obj/item/stack/sheet/animalhide/xeno
+
+		//Gainstation Edit Start: Fat people Produce more meat
+		var/efficiency
+		for(var/obj/item/stock_parts/matter_bin/B in component_parts)
+			efficiency += B.rating
+		fatbonus = C.fatness / max(1000 - (200 * efficiency), 200)
+
+	var/obj/item/reagent_containers/food/snacks/meat/slab/allmeat[meat_produced + fatbonus] //And now it gets defined..
+	//Gainstation Edit End
 
 	for (var/i=1 to meat_produced)
 		var/obj/item/reagent_containers/food/snacks/meat/slab/newmeat = new typeofmeat
