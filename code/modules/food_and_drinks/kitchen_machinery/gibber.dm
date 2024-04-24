@@ -152,7 +152,8 @@
 	var/typeofmeat = /obj/item/reagent_containers/food/snacks/meat/slab/human
 	var/typeofskin
 
-	var/obj/item/reagent_containers/food/snacks/meat/slab/allmeat[meat_produced]
+	//var/obj/item/reagent_containers/food/snacks/meat/slab/allmeat[meat_produced] //Gainstation Edit: This has to be moved ahead to account for fatness adding
+	var/fatbonus //Gainstation Edit 2: Instead I'll define fatbonus here, since it needs to be in this scope
 	var/obj/item/stack/sheet/animalhide/skin
 	var/list/datum/disease/diseases = mob_occupant.get_static_viruses()
 
@@ -161,6 +162,8 @@
 		if(gibee.dna && gibee.dna.species)
 			typeofmeat = gibee.dna.species.meat
 			typeofskin = gibee.dna.species.skinned_type
+		
+		fatbonus = calc_fat_bonus(gibee.fatness) //Gainstation Edit: Fat people Produce more meat
 
 	else if(iscarbon(occupant))
 		var/mob/living/carbon/C = occupant
@@ -171,7 +174,13 @@
 		else if(isalien(C))
 			typeofskin = /obj/item/stack/sheet/animalhide/xeno
 
-	for (var/i=1 to meat_produced)
+		
+		fatbonus = calc_fat_bonus(C.fatness) //Gainstation Edit: Fat people Produce more meat
+
+	var/obj/item/reagent_containers/food/snacks/meat/slab/allmeat[meat_produced + fatbonus] //Gainstation Edit: And now it gets defined...
+	
+
+	for (var/i=1 to (meat_produced + fatbonus)) //Gainstation Edit: Fat bonus
 		var/obj/item/reagent_containers/food/snacks/meat/slab/newmeat = new typeofmeat
 		newmeat.name = "[sourcename] [newmeat.name]"
 		if(istype(newmeat))
@@ -210,6 +219,15 @@
 	pixel_x = initial(pixel_x) //return to its spot after shaking
 	operating = FALSE
 	update_icon()
+
+//Gainstation Add: Fat bonus calculation
+/obj/machinery/gibber/proc/calc_fat_bonus(fatness)
+	var/efficiency
+	for(var/obj/item/stock_parts/matter_bin/B in component_parts)
+		efficiency += B.rating
+	var/fatbonus = fatness / max(1000 - (200 * efficiency), 200)	// 800 fatness per bonus at T1, 600 at T2, 400 at T3 and finally capped at 200 fatness per bonus at T4. 
+	return fatbonus													// If a T5 bin is ever real, it'll stay capped at 200 fatness per slice instead of producing infinite meat. 
+//Gainstation Add End
 
 //auto-gibs anything that bumps into it
 /obj/machinery/gibber/autogibber
