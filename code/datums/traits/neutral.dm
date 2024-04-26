@@ -180,7 +180,7 @@
 
 	wheels.buckle_mob(quirk_holder)
 
-/datum/quirk/trashcan //for when you are literally flint (Stolen from hyper)
+/datum/quirk/trashcan //for when you are literally flint (Stolen from hyper) //making this even betterer, because im biased
 	name = "Trashcan"
 	desc = "You are able to consume and digest trash."
 	value = 0
@@ -188,7 +188,13 @@
 	lose_text = "<span class='notice'>You no longer feel like you should be eating trash.</span>"
 	mob_trait = TRAIT_TRASHCAN
 	category = CATEGORY_FOOD
-	medical_record_text = "Patient has been observed eating inedable garbage."
+	medical_record_text = "Patient has been observed eating inedible garbage."
+
+/datum/quirk/trashcan/add()
+	quirk_holder.verbs += /mob/living/proc/eat_trash
+
+/datum/quirk/trashcan/remove()
+	quirk_holder.verbs -= /mob/living/proc/eat_trash
 
 /datum/quirk/universal_diet
 	name = "Universal diet"
