@@ -3085,6 +3085,7 @@
 #include "GainStation13\code\game\objects\effects\spawners\choco_slime_delivery.dm"
 #include "GainStation13\code\game\turfs\closed.dm"
 #include "GainStation13\code\game\turfs\open.dm"
+#include "GainStation13\code\machinery\adipoelectric_transformer.dm"
 #include "GainStation13\code\machinery\fattening_turret.dm"
 #include "GainStation13\code\machinery\feeding_tube.dm"
 #include "GainStation13\code\mechanics\fatness.dm"
