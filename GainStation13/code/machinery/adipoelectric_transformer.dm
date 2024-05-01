@@ -1,14 +1,12 @@
 GLOBAL_LIST_EMPTY(adipoelectric_transformer)
 
 /obj/machinery/adipoelectric_transformer
-	name = "adipoelectric transformer" //change name to adipoelectric generator
+	name = "adipoelectric transformer"
 	desc = "This device uses calorite technology to store excess current in the wire it's placed on into whoever steps on!"
 	icon = 'GainStation13/icons/obj/adipoelectric_transformer.dmi'
 	icon_state = "state_off"
 	density = FALSE
-	use_power = IDLE_POWER_USE
-	idle_power_usage = 0
-	active_power_usage = 0
+	use_power = NO_POWER_USE
 	state_open = TRUE
 	circuit = /obj/item/circuitboard/machine/adipoelectric_transformer
 	occupant_typecache = list(/mob/living/carbon)
