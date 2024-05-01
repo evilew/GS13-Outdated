@@ -893,6 +893,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Femcum</a>"
 							if(/datum/reagent/consumable/alienhoney)
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Honey</a>"
+							if(/datum/reagent/consumable/nutriment)
+								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Nutriment</a>"
 							else
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Nothing?</a>"
 							//This else is a safeguard for errors, and if it happened, they wouldn't be able to change this pref,
@@ -940,6 +942,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Honey</a>"
 							if(/datum/reagent/consumable/pinkmilk)
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Strawberry Milk</a>"
+							if(/datum/reagent/consumable/nutriment)
+								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Nutriment</a>"
 							else
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Nothing?</a>"
 							//This else is a safeguard for errors, and if it happened, they wouldn't be able to change this pref,
@@ -2381,6 +2385,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							features["balls_fluid"] = /datum/reagent/consumable/alienhoney
 						if("Strawberry Milk")
 							features["balls_fluid"] = /datum/reagent/consumable/pinkmilk
+						if("Nutriment")
+							features["balls_fluid"] = /datum/reagent/consumable/nutriment
 
 				if("egg_size")
 					var/new_size
@@ -2426,6 +2432,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							features["breasts_fluid"] = /datum/reagent/consumable/alienhoney
 						if("Strawberry Milk")
 							features["breasts_fluid"] = /datum/reagent/consumable/pinkmilk
+						if("Nutriment")
+							features["breasts_fluid"] = /datum/reagent/consumable/nutriment
 
 				if("breasts_color")
 					var/new_breasts_color = input(user, "Breast Color:", "Character Preference", "#"+features["breasts_color"]) as color|null

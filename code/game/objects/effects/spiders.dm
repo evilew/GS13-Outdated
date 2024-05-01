@@ -36,7 +36,7 @@
 	. = ..()
 
 /obj/structure/spider/stickyweb/CanPass(atom/movable/mover, turf/target)
-	if(istype(mover, /mob/living/simple_animal/hostile/poison/giant_spider))
+	if(istype(mover, /mob/living/simple_animal/hostile/poison/giant_spider) || HAS_TRAIT(mover, TRAIT_WEB_WEAVER))
 		return TRUE
 	else if(isliving(mover))
 		if(istype(mover.pulledby, /mob/living/simple_animal/hostile/poison/giant_spider))
