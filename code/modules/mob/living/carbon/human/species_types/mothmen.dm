@@ -15,6 +15,8 @@
 	disliked_food = FRUIT | GROSS
 	toxic_food = MEAT | RAW
 	exotic_bloodtype = "BUG"
+	
+	screamsound = 'sound/voice/moth/scream_moth.ogg'
 
 /datum/species/moth/on_species_gain(mob/living/carbon/C)
 	. = ..()
