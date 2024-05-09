@@ -483,6 +483,8 @@ GLOBAL_LIST_INIT(cardboard_recipes, list ( \
 	new/datum/stack_recipe("colored yellow", /obj/item/storage/box/yellow), \
 	new/datum/stack_recipe("colored pink", /obj/item/storage/box/pink), \
 	new/datum/stack_recipe("colored purple", /obj/item/storage/box/purple), \
+	null, \
+	new/datum/stack_recipe("open/closed sign", /obj/item/service_sign), \
 	))
 
 /obj/item/stack/sheet/cardboard	//BubbleWrap //it's cardboard you fuck

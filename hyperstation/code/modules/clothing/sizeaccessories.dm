@@ -83,6 +83,7 @@
 	icon = 'hyperstation/icons/obj/clothing/sizeaccessories.dmi'
 	icon_state = "pendant"
 	item_state = "pendant"
+	w_class = WEIGHT_CLASS_SMALL //Gainstation Edit: Small, not normal sized. 
 
 //For neck items
 /obj/item/clothing/neck/syntech/equipped(mob/living/user, slot)
