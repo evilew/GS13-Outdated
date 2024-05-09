@@ -24,7 +24,7 @@
 	else
 		message = "muffles something."
 	. = ..()
-
+/*
 /datum/emote/living/scream/run_emote(mob/living/user, params) //I can't not port this shit, come on.
 	if(user.nextsoundemote >= world.time || user.stat != CONSCIOUS)
 		return
@@ -69,8 +69,8 @@
 	else
 		message = "makes a very loud noise."
 	. = ..()
-
-/datum/emote/sound/carbon/snap
+*/
+/datum/emote/carbon/snap
 	key = "snap"
 	key_third_person = "snaps"
 	muzzle_ignore = TRUE
