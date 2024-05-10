@@ -135,12 +135,12 @@
 
 //Ported from Vorestation
 /datum/emote/living/carbon/teshsqueak
-	key = "teshsqueak" //Originally, It was just "surprised" but I dont think that's very telling of a teshari emote.
-	key_third_person = "teshsqueaks"
+	key = "teshsurprise" //Originally, It was just "surprised" but I dont think that's very telling of a teshari emote.
+	key_third_person = "teshsurprised"
 	message = "chirps in surprise!"
 	message_param = "chirps in surprise at %t!"
 	emote_type = EMOTE_AUDIBLE
-	sound = 'GainStation13/sound/voice/teshari/teshsqueak.ogg'
+	sound = 'GainStation13/sound/voice/teshari/teshsqueak.ogg' // Copyright CC BY 3.0 InspectorJ (freesound.org) for the source audio.
 
 /datum/emote/living/carbon/teshchirp
 	key = "tchirp"
@@ -148,7 +148,7 @@
 	message = "chirps!"
 	message_param = "chirps at %t!"
 	emote_type = EMOTE_AUDIBLE
-	sound = 'GainStation13/sound/voice/teshari/teshchirp.ogg'
+	sound = 'GainStation13/sound/voice/teshari/teshchirp.ogg' // Copyright Sampling+ 1.0 Incarnidine (freesound.org) for the source audio.
 
 /datum/emote/living/carbon/teshtrill
 	key = "trill"
@@ -156,7 +156,7 @@
 	message = "trills."
 	message_param = "trills at %t."
 	emote_type = EMOTE_AUDIBLE
-	sound = 'GainStation13/sound/voice/teshari/teshtrill.ogg'
+	sound = 'GainStation13/sound/voice/teshari/teshtrill.ogg' // Copyright CC BY-NC 3.0 Arnaud Coutancier (freesound.org) for the source audio.
 
 /datum/emote/living/sneeze/teshsneeze //Replace this with a modular species/tongue based sneeze system later. Also piggybacking on normal sneezes
 	key = "teshsneeze"
@@ -184,6 +184,47 @@ return pick('GainStation13/sound/voice/teshari/teshsneeze.ogg', 'GainStation13/s
 	emote_type = EMOTE_AUDIBLE
 	sound = 'GainStation13/sound/voice/teshari/teshscream.ogg'
 
+/datum/emote/living/teppi
+	key = "gyoh"
+	key_third_person = "gyohs"
+	message = "gyohs"
+	var/bigsound = list('GainStation13/sound/voice/teppi/gyooh1.ogg', 'GainStation13/sound/voice/teppi/gyooh2.ogg', \
+						'GainStation13/sound/voice/teppi/gyooh3.ogg', 'GainStation13/sound/voice/teppi/gyooh4.ogg', \
+						'GainStation13/sound/voice/teppi/gyooh5.ogg', 'GainStation13/sound/voice/teppi/gyooh6.ogg')
+	var/smolsound = list('GainStation13/sound/voice/teppi/whine1.ogg', 'GainStation13/sound/voice/teppi/whine2.ogg')
+
+/datum/emote/living/teppi/run_emote(mob/living/user, params)
+	/* //If we port teppi later, Enable this.
+	if(istype(user, /mob/living/simple_mob/vore/alienanimals/teppi))
+		if(istype(user, /mob/living/simple_mob/vore/alienanimals/teppi/baby))
+			sound = pick(smolsound)
+		else
+			sound = pick(bigsound)
+		return ..()
+	*/
+	if(user.size_multipler >= 1.5)
+		sound = pick(bigsound)
+	else
+		sound = pick(smolsound)
+	. = ..()
+
+/datum/emote/living/teppi/rumble
+	key = "rumble"
+	key_third_person = "rumbles"
+	message = "rumbles contentedly."
+	sound = 'GainStation13/sound/voice/teppi/cute_rumble.ogg'
+	var/bigsound = list('GainStation13/sound/voice/teppi/rumble.ogg')
+	var/smolsound = list('GainStation13/sound/voice/teppi/cute_rumble.ogg')
+
 //Vorestation ports end.
 
+//Ported from Chompstation
+/datum/emote/living/wawa
+	key = "wawa"
+	key_third_person = "wawas"
+	message = "wawas."
+	message_param = "wawas at %t."
+	emote_type = EMOTE_AUDIBLE
+	sound = 'GainStation13/sound/voice/emotes/wawa.ogg'
 
+//Chompstation ports end.
