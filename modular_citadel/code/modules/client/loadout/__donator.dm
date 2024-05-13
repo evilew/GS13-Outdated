@@ -182,7 +182,7 @@ datum/gear/lyricalpawsring
 	name = "GATO Badge - Correspondent"
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/clothing/accessory/medal/gato_badge/middleman
-	ckeywhitelist = list("johnjimjim", "sonoida", "yeeny")
+	ckeywhitelist = list("johnjimjim", "sonoida", "yeeny", "notnumber")
 /datum/gear/halsey_overcoat
 	name = "Halsey's Commander Overcoat"
 	category = SLOT_IN_BACKPACK
