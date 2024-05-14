@@ -34,9 +34,19 @@
 	if(user.pulling)
 		dat	+= "<a href='byond://?src=[REF(src)];kiss=1'>Kiss [user.pulling]</A>"
 		dat	+=	"(Kiss a partner, or object.)<BR>"
+		dat	+= "<a href='byond://?src=[REF(src)];feed=1'>Feed [user.pulling]</A>"
+		dat	+=	"(Feed a partner.)<BR>"
+		dat	+= "<a href='byond://?src=[REF(src)];feedfrom=1'>Feed from [user.pulling]</A>"
+		dat	+=	"(Feed a partner.)<BR>"
 	else
 		dat	+= "<span class='linkOff'>Kiss</span></A>"
 		dat	+=	"(Requires a partner)<BR>"
+		dat	+= "<span class='linkOff'>Feed others</span></A>"
+		dat	+=	"(Requires a partner)<BR>"
+		dat	+= "<span class='linkOff'>Feed from others</span></A>"
+		dat	+=	"(Requires a partner)<BR>"
+	dat	+= "<a href='byond://?src=[REF(src)];feedyourself=1'>Feed yourself</A>"
+	dat	+=	"(Feed yourself with your own genitals)<BR>"
 
 	var/obj/item/organ/genital/belly/Belly = user.getorganslot("belly")
 	if(Belly)
@@ -202,6 +212,24 @@
 			to_chat(usr, "<span class='warning'>You cannot do this alone!</span>")
 		return
 
+	if(href_list["feed"])
+		if(usr.pulling)
+			feed()
+		else
+			to_chat(usr, "<span class='warning'>You cannot do this alone!</span>")
+		return
+
+	if(href_list["feedfrom"])
+		if(usr.pulling)
+			feedfrom()
+		else
+			to_chat(usr, "<span class='warning'>You cannot do this alone!</span>")
+		return
+
+	if(href_list["feedyourself"])
+		feedyourself()
+		return
+
 	if(href_list["shrink_belly"])
 		var/obj/item/organ/genital/belly/E = usr.getorganslot("belly")
 		if(E.size > 0)
@@ -281,6 +309,30 @@ obj/screen/arousal/proc/kiss()
 	var/mob/living/carbon/human/H = usr
 	if (H)
 		H.kisstarget(H.pulling)
+
+obj/screen/arousal/proc/feed()
+	if(usr.restrained(TRUE))
+		to_chat(usr, "<span class='warning'>You can't do that while restrained!</span>")
+		return
+	var/mob/living/carbon/human/H = usr
+	if (H)
+		H.genitalfeed(H.pulling)
+
+obj/screen/arousal/proc/feedfrom()
+	if(usr.restrained(TRUE))
+		to_chat(usr, "<span class='warning'>You can't do that while restrained!</span>")
+		return
+	var/mob/living/carbon/human/H = usr
+	if (H)
+		H.genitalfeedfrom(H.pulling)
+
+obj/screen/arousal/proc/feedyourself()
+	if(usr.restrained(TRUE))
+		to_chat(usr, "<span class='warning'>You can't do that while restrained!</span>")
+		return
+	var/mob/living/carbon/human/H = usr
+	if (H)
+		H.genitalfeedyourself()
 
 
 /mob/living/carbon/human/proc/menuremovecondom()
@@ -517,3 +569,136 @@ obj/screen/arousal/proc/kiss()
 	if(cum_splatter_icon)
 		cut_overlay(cum_splatter_icon)
 	return TRUE
+
+/mob/living/carbon/human/proc/genitalfeed(mob/living/L, mb_time = 30)
+	if(isliving(L)) //is your target living? Living people can resist your advances if they want to via moving.
+		if(iscarbon(L))
+			var/obj/item/organ/genital/picked_organ
+			var/total_fluids = 0
+			var/datum/reagents/fluid_source = null
+			src << browse(null, "window=arousal")
+			picked_organ = pick_climax_genitals() //Gotta be climaxable, not just masturbation, to fill with fluids.
+			if(picked_organ)
+				//Good, got an organ, time to pick a container
+				if(picked_organ.name == "penis")//if the select organ is a penis
+					var/obj/item/organ/genital/penis/P = src.getorganslot("penis")
+					if(P.condom) //if the penis is condomed
+						to_chat(src, "<span class='warning'>You cannot feed someone when there is a condom over your [picked_organ.name].</span>")
+						return
+					if(P.sounding) //if the penis is sounded
+						to_chat(src, "<span class='warning'>You cannot feed someone when there is a rod inside your [picked_organ.name].</span>")
+						return
+				if(picked_organ.producing) //Can it produce its own fluids, such as breasts?
+					fluid_source = picked_organ.reagents
+				else
+					if(!picked_organ.linked_organ)
+						to_chat(src, "<span class='warning'>Your [picked_organ.name] is unable to produce it's own fluids, it's missing the organs for it.</span>")
+						return
+					fluid_source = picked_organ.linked_organ.reagents
+				total_fluids = fluid_source.total_volume
+
+				src.visible_message("<span class='love'>[src] starts to feed [L.name] with their [picked_organ.name].</span>", \
+									"<span class='userlove'>You feed [L.name] with your [picked_organ.name].</span>")
+				if(do_after(src, mb_time, target = src) && in_range(src, L))
+					fluid_source.trans_to(L, total_fluids)
+					src.visible_message("<span class='love'>[src] uses [p_their()] [picked_organ.name] to feed [L.name]!</span>", \
+										"<span class='userlove'>You used your [picked_organ.name] to feed [L.name] a total of [total_fluids]u's.</span>")
+					SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "orgasm", /datum/mood_event/orgasm)
+					if(picked_organ.can_climax)
+						setArousalLoss(min_arousal)
+
+			else //They either lack organs that can climax, or they didn't pick one.
+				to_chat(src, "<span class='warning'>You cannot fill anything without choosing exposed genitals.</span>")
+				return
+
+/mob/living/carbon/human/proc/genitalfeedfrom(mob/living/target, mb_time = 30)
+	var/mob/living/carbon/human/L = target
+	var/obj/item/organ/genital/picked_organ
+	var/total_fluids = 0
+	var/datum/reagents/fluid_source = null
+	src << browse(null, "window=arousal")
+
+	var/list/genitals_list = list()
+	var/list/worn_stuff = L.get_equipped_items()
+
+	for(var/obj/item/organ/genital/G in L.internal_organs)
+		if(G.can_climax) //filter out what you can't masturbate with
+			if(G.is_exposed(worn_stuff)) //Nude or through_clothing
+				if(!G.dontlist)
+					genitals_list += G
+	if(genitals_list.len)
+		picked_organ = input(src, "with what?", "Climax", null)  as null|obj in genitals_list
+	else
+		return
+	
+	if(picked_organ)
+		//Good, got an organ, time to pick a container
+		if(picked_organ.name == "penis")//if the select organ is a penis
+			var/obj/item/organ/genital/penis/P = L.getorganslot("penis")
+			if(P.condom) //if the penis is condomed
+				to_chat(src, "<span class='warning'>You cannot feed from [picked_organ.name] when there is a condom over it.</span>")
+				return
+			if(P.sounding) //if the penis is sounded
+				to_chat(src, "<span class='warning'>You cannot feed from [picked_organ.name] when there is a rod inside it.</span>")
+				return
+		if(picked_organ.producing) //Can it produce its own fluids, such as breasts?
+			fluid_source = picked_organ.reagents
+		else
+			if(!picked_organ.linked_organ)
+				to_chat(src, "<span class='warning'>The [picked_organ.name] is unable to produce it's own fluids, it's missing the organs for it.</span>")
+				return
+			fluid_source = picked_organ.linked_organ.reagents
+		total_fluids = fluid_source.total_volume
+
+		src.visible_message("<span class='love'>[src] starts to feed from [L.name]'s [picked_organ.name].</span>", \
+							"<span class='userlove'>You feed from [L.name]'s '[picked_organ.name].</span>")
+		if(do_after(src, mb_time, target = src) && in_range(src, L))
+			fluid_source.trans_to(src, total_fluids)
+			src.visible_message("<span class='love'>[src] feeds from [L.name]'s [picked_organ.name]!</span>", \
+								"<span class='userlove'>You used [L.name]'s [picked_organ.name] to feed with a total of [total_fluids]u's.</span>")
+			SEND_SIGNAL(L, COMSIG_ADD_MOOD_EVENT, "orgasm", /datum/mood_event/orgasm)
+			if(picked_organ.can_climax)
+				L.setArousalLoss(min_arousal)
+
+	else //They either lack organs that can climax, or they didn't pick one.
+		to_chat(src, "<span class='warning'>You cannot fill anything without choosing exposed genitals.</span>")
+		return
+
+/mob/living/carbon/human/proc/genitalfeedyourself(mb_time = 30)
+	var/obj/item/organ/genital/picked_organ
+	var/total_fluids = 0
+	var/datum/reagents/fluid_source = null
+	src << browse(null, "window=arousal")
+	picked_organ = pick_climax_genitals() //Gotta be climaxable, not just masturbation, to fill with fluids.
+	if(picked_organ)
+		//Good, got an organ, time to pick a container
+		if(picked_organ.name == "penis")//if the select organ is a penis
+			var/obj/item/organ/genital/penis/P = src.getorganslot("penis")
+			if(P.condom) //if the penis is condomed
+				to_chat(src, "<span class='warning'>You cannot feed yourself when there is a condom over your [picked_organ.name].</span>")
+				return
+			if(P.sounding) //if the penis is sounded
+				to_chat(src, "<span class='warning'>You cannot feed yourself when there is a rod inside your [picked_organ.name].</span>")
+				return
+		if(picked_organ.producing) //Can it produce its own fluids, such as breasts?
+			fluid_source = picked_organ.reagents
+		else
+			if(!picked_organ.linked_organ)
+				to_chat(src, "<span class='warning'>Your [picked_organ.name] is unable to produce it's own fluids, it's missing the organs for it.</span>")
+				return
+			fluid_source = picked_organ.linked_organ.reagents
+		total_fluids = fluid_source.total_volume
+
+		src.visible_message("<span class='love'>[src] starts to feed themselves with their [picked_organ.name].</span>", \
+							"<span class='userlove'>You feed yourself with your [picked_organ.name].</span>")
+		if(do_after(src, mb_time))
+			fluid_source.trans_to(src, total_fluids)
+			src.visible_message("<span class='love'>[src] uses [p_their()] [picked_organ.name] to feed themselves!</span>", \
+								"<span class='userlove'>You used your [picked_organ.name] to feed yourself a total of [total_fluids]u's.</span>")
+			SEND_SIGNAL(src, COMSIG_ADD_MOOD_EVENT, "orgasm", /datum/mood_event/orgasm)
+			if(picked_organ.can_climax)
+				setArousalLoss(min_arousal)
+
+	else //They either lack organs that can climax, or they didn't pick one.
+		to_chat(src, "<span class='warning'>You cannot fill anything without choosing exposed genitals.</span>")
+		return

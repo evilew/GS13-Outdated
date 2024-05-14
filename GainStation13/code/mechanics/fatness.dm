@@ -52,6 +52,9 @@
 	else			//If it's not being hidden
 		fatness = fatness_real //Make their current fatness their real fatness
 
+	if(client?.prefs?.weight_gain_extreme)
+		xwg_resize()
+
 	return TRUE
 
 
@@ -102,11 +105,21 @@
 	fatness_hidden = TRUE
 	fatness_over = hide_amount
 	fatness = fatness_over	//To update a mob's fatness with the new amount to be shown immediately
+	if(client?.prefs?.weight_gain_extreme)
+		xwg_resize()
 
 	return TRUE
 
 /mob/living/carbon/proc/fat_show()				//If something that hides fatness is removed or expires, it'll call this method
 	fatness_hidden = FALSE
 	fatness = fatness_real	//To update a mob's fatness with their real one immediately
+	if(client?.prefs?.weight_gain_extreme)
+		xwg_resize()
 
 	return TRUE
+
+/mob/living/carbon/proc/xwg_resize()
+	var/xwg_size = sqrt(fatness/FATNESS_LEVEL_BLOB)
+	xwg_size = min(xwg_size, RESIZE_MACRO)
+	xwg_size = max(xwg_size, custom_body_size*0.01)
+	resize(xwg_size)

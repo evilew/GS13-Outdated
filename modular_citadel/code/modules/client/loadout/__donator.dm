@@ -182,7 +182,7 @@ datum/gear/lyricalpawsring
 	name = "GATO Badge - Correspondent"
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/clothing/accessory/medal/gato_badge/middleman
-	ckeywhitelist = list("johnjimjim", "sonoida", "yeeny")
+	ckeywhitelist = list("johnjimjim", "sonoida", "yeeny", "not number")
 /datum/gear/halsey_overcoat
 	name = "Halsey's Commander Overcoat"
 	category = SLOT_IN_BACKPACK
@@ -259,16 +259,16 @@ datum/gear/lyricalpawsring
 	name = "Weight Gain Spellbook"
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/book/granter/spell/fattening
-	ckeywhitelist = list("sonoida", "themrsky")
+	ckeywhitelist = list("sonoida", "themrsky", "not number")
 
 /datum/gear/wgspell_transfer
 	name = "Weight Transfer Spellbook"
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/book/granter/spell/fattening/transfer
-	ckeywhitelist = list("sonoida", "themrsky")
+	ckeywhitelist = list("sonoida", "themrsky", "not number")
 
 /datum/gear/wgspell_take
 	name = "Weight Steal Spellbook"
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/book/granter/spell/fattening/steal
-	ckeywhitelist = list("sonoida", "themrsky")
+	ckeywhitelist = list("sonoida", "themrsky", "not number")

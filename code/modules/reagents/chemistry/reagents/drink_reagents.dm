@@ -222,6 +222,7 @@
 	glass_desc = "White and nutritious goodness!"
 	pH = 6.5
 	hydration = 3
+	nutriment_factor = 15 * REAGENTS_METABOLISM
 
 /datum/reagent/consumable/milk/on_mob_life(mob/living/carbon/M)
 	if(HAS_TRAIT(M, TRAIT_CALCIUM_HEALER))
