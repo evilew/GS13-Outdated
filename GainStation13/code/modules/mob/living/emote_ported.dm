@@ -97,15 +97,6 @@
 
 
 //Rewrites of the above start.
-/datum/emote/living/carbon/teshsneeze
-	key = "teshsneeze"
-	key_third_person = "sneezes"
-	message = "sneezes."
-	emote_type = EMOTE_AUDIBLE
-
-/datum/emote/living/carbon/teshsneeze/get_sound()
-	return pick('GainStation13/sound/voice/teshari/teshsneeze.ogg', 'GainStation13/sound/voice/teshari/teshsneezeb.ogg')
-
 /datum/emote/living/carbon/racc
 	key = "racc_chitter"
 	key_third_person = "raccchitters"
@@ -174,7 +165,7 @@
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/cough/teshcough/get_sound()
-	return pick('GainStation13/sound/voice/teshari/teshcougha.ogg', 'GainStation13/sound/voice/teshari/teshcoughb.ogg')
+	return pick('GainStation13/sound/voice/teshari/tesharicougha.ogg', 'GainStation13/sound/voice/teshari/tesharicoughb.ogg')
 
 /datum/emote/living/carbon/teshscream
 	key = "teshscream"
@@ -202,7 +193,7 @@
 			sound = pick(bigsound)
 		return ..()
 	*/
-	if(user.size_multipler >= 1.5)
+	if(user.size_multiplier >= 1.5)
 		sound = pick(bigsound)
 	else
 		sound = pick(smolsound)
