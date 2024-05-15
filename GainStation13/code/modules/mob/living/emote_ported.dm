@@ -213,8 +213,8 @@
 	key_third_person = "rumbles"
 	message = "rumbles contentedly."
 	sound = 'GainStation13/sound/voice/teppi/cute_rumble.ogg'
-	var/bigsound = list('GainStation13/sound/voice/teppi/rumble.ogg')
-	var/smolsound = list('GainStation13/sound/voice/teppi/cute_rumble.ogg')
+	bigsound = list('GainStation13/sound/voice/teppi/rumble.ogg')
+	smolsound = list('GainStation13/sound/voice/teppi/cute_rumble.ogg')
 
 //Vorestation ports end.
 
