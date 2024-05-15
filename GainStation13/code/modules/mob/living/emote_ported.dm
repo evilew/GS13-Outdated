@@ -165,7 +165,7 @@
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/sneeze/teshsneeze/get_sound()
-return pick('GainStation13/sound/voice/teshari/tesharisneeze.ogg', 'GainStation13/sound/voice/teshari/tesharisneezeb.ogg')
+return pick('GainStation13/sound/voice/teshari/teshsneeze.ogg', 'GainStation13/sound/voice/teshari/teshsneezeb.ogg')
 
 /datum/emote/living/cough/teshcough //Same as above. Replace with a modular system later.
 	key = "teshcough"

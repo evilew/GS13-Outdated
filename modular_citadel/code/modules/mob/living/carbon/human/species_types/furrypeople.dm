@@ -22,8 +22,8 @@
 		return pick(female_screams)
 	else
 		if(prob(1))
-			return pick('modular_citadel/sound/voice/scream_m1.ogg', 'modular_citadel/sound/voice/scream_m2.ogg', \
-						'sound/voice/human/wilhelm_scream.ogg')
+			return sound = pick('modular_citadel/sound/voice/scream_m1.ogg', 'modular_citadel/sound/voice/scream_m2.ogg', \
+								'sound/voice/human/wilhelm_scream.ogg')
 		return pick(male_screams)
 
 //Curiosity killed the cat's wagging tail.
