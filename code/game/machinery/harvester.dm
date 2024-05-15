@@ -101,17 +101,7 @@
 	if(!LAZYLEN(operation_order)) //The list is empty, so we're done here
 		end_harvesting()
 		return
-	var/turf/target
-	for(var/adir in list(EAST,NORTH,SOUTH,WEST))
-		var/turf/T = get_step(src,adir)
-		if(!T)
-			continue
-		if(istype(T, /turf/closed))
-			continue
-		target = T
-		break
-	if(!target)
-		target = get_turf(src)
+	var/turf/target = get_turf(src)
 	for(var/obj/item/bodypart/BP in operation_order) //first we do non-essential limbs
 		BP.drop_limb()
 		C.emote("scream")
@@ -145,6 +135,11 @@
 	if(default_deconstruction_screwdriver(user, "[initial(icon_state)]-o", initial(icon_state), I))
 		return
 	return FALSE
+
+/obj/machinery/harvester/wrench_act(mob/living/user, obj/item/I)
+	. = ..()
+	if(default_change_direction_wrench(user, I))
+		return TRUE
 
 /obj/machinery/harvester/crowbar_act(mob/living/user, obj/item/I)
 	if(default_pry_open(I))
@@ -190,3 +185,5 @@
 		. += "<span class='notice'>[src] must be closed before harvesting.</span>"
 	else if(!harvesting)
 		. += "<span class='notice'>Alt-click [src] to start harvesting.</span>"
+	if(in_range(user, src) || isobserver(user))
+		. += "<span class='notice'>The status display reads: Harvest speed at <b>[interval*0.1]</b> seconds per organ.<span>"
