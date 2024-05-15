@@ -12,8 +12,6 @@
 	liked_food = GROSS
 	exotic_bloodtype = "BUG"
 
-	screamsound = 'modular_citadel/sound/voice/scream_moth.ogg'
-
 /datum/species/fly/handle_chemicals(datum/reagent/chem, mob/living/carbon/human/H)
 	if(chem.type == /datum/reagent/toxin/pestkiller)
 		H.adjustToxLoss(3)

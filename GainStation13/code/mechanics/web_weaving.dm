@@ -5,20 +5,15 @@
 	gain_text = "<span class='notice'>You find yourself able to weave webs.</span>"
 	lose_text = "<span class='notice'>You are no longer able to weave webs.</span>"
 	category = CATEGORY_SEXUAL
-	mob_trait = TRAIT_WEB_WEAVER
 	///What action is linked with this quirk?
-	var/datum/action/innate/wrap_target/linked_action1
-	var/datum/action/innate/make_web/linked_action2
+	var/datum/action/innate/wrap_target/linked_action
 
 /datum/quirk/web_weaving/post_add()
-	linked_action1 = new
-	linked_action1.Grant(quirk_holder)
-	linked_action2 = new
-	linked_action2.Grant(quirk_holder)
+	linked_action = new
+	linked_action.Grant(quirk_holder)
 
 /datum/quirk/web_weaving/remove()
-	linked_action1.Remove(quirk_holder)
-	linked_action2.Remove(quirk_holder)
+	linked_action.Remove(quirk_holder)
 	return ..()
 	
 /datum/action/innate/wrap_target
@@ -88,20 +83,3 @@
 
 /obj/structure/spider/cocoon/quirk
 	max_integrity = 20
-
-/datum/action/innate/make_web
-	name = "weave"
-	desc = "spins a sticky web."
-	icon_icon = 'icons/effects/effects.dmi'
-	button_icon_state = "stickyweb1"
-	background_icon_state = "bg_alien"
-
-/datum/action/innate/make_web/Activate()
-	var/turf/T = get_turf(owner)
-	owner.visible_message("<span class='warning'>[owner] begins spinning a web!</span>", "<span class='warning'>You begin spinning a web.</span>")
-	if(!do_after(owner, 10 SECONDS, 1, null, 1))
-		owner.visible_message("<span class='warning'>[owner] fails to spin a web!</span>", "<span class='warning'>You fail to spin web.</span>")
-		return FALSE
-	T.ChangeTurf(/obj/structure/spider/stickyweb)
-	owner.visible_message("<span class='warning'>[owner] spin a sticky web!</span>", "<span class='warning'>You spin a sticky web.</span>")
-	return TRUE

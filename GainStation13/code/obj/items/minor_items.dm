@@ -143,17 +143,3 @@
 	icon_state = "ballgag"
 	item_state = "ballgag"
 	flags_inv = HIDEFACE
-
-/obj/item/service_sign
-	name = "service sign"
-	desc = "A sign that reads 'closed'"
-	icon = 'GainStation13/icons/obj/service_sign.dmi'
-	icon_state = "sign_closed"
-
-/obj/item/service_sign/attack_self()
-	if(icon_state == "sign_closed")
-		icon_state = "sign_open"
-		desc = "A sign that reads 'open'"
-	else
-		icon_state = "sign_closed"
-		desc = "A sign that reads 'closed'"

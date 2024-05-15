@@ -3,150 +3,91 @@
 GLOBAL_LIST_EMPTY(roundstart_races)
 
 /datum/species
-	/// if the game needs to manually check your race to do something not included in a proc here, it will use this
-	var/id
-	///this is used if you want to use a different species limb sprites. Mainly used for angels as they look like humans.
-	var/limbs_id
-	/// this is the fluff name. these will be left generic (such as 'Lizardperson' for the lizard race) so servers can change them to whatever
-	var/name
-	/// if alien colors are disabled, this is the color that will be used by that race
-	var/default_color = "#FFF"
-	/// whether or not the race has sexual characteristics. at the moment this is only 0 for skeletons and shadows
-	var/sexes = 1
+	var/id	// if the game needs to manually check your race to do something not included in a proc here, it will use this
+	var/limbs_id		//this is used if you want to use a different species limb sprites. Mainly used for angels as they look like humans.
+	var/name	// this is the fluff name. these will be left generic (such as 'Lizardperson' for the lizard race) so servers can change them to whatever
+	var/default_color = "#FFF"	// if alien colors are disabled, this is the color that will be used by that race
 
-	///A list that contains pixel offsets for various clothing features, if your species is a different shape
+	var/sexes = 1		// whether or not the race has sexual characteristics. at the moment this is only 0 for skeletons and shadows
+
 	var/list/offset_features = list(OFFSET_UNIFORM = list(0,0), OFFSET_ID = list(0,0), OFFSET_GLOVES = list(0,0), OFFSET_GLASSES = list(0,0), OFFSET_EARS = list(0,0), OFFSET_SHOES = list(0,0), OFFSET_S_STORE = list(0,0), OFFSET_FACEMASK = list(0,0), OFFSET_HEAD = list(0,0), OFFSET_FACE = list(0,0), OFFSET_BELT = list(0,0), OFFSET_BACK = list(0,0), OFFSET_SUIT = list(0,0), OFFSET_NECK = list(0,0))
-	/// this allows races to have specific hair colors... if null, it uses the H's hair/facial hair colors. if "mutcolor", it uses the H's mutant_color
-	var/hair_color
-	/// the alpha used by the hair. 255 is completely solid, 0 is transparent.
-	var/hair_alpha = 255
+
+	var/hair_color	// this allows races to have specific hair colors... if null, it uses the H's hair/facial hair colors. if "mutcolor", it uses the H's mutant_color
+	var/hair_alpha = 255	// the alpha used by the hair. 255 is completely solid, 0 is transparent.
 	var/wing_color
 
 	// GS13: Hair gradients from Skyrat
-	/// The gradient style used for the mob's hair.
-	var/grad_style
-	/// The gradient color used to color the gradient.
-	var/grad_color
+	var/grad_style // The gradient style used for the mob's hair.
+	var/grad_color // The gradient color used to color the gradient.
 
-	/// does it use skintones or not? (spoiler alert this is only used by humans)
-	var/use_skintones = FALSE
-	/// If your race wants to bleed something other than bog standard blood, change this to reagent id.
-	var/exotic_blood = ""
-	///If your race uses a non standard bloodtype (A+, O-, AB-, etc)
-	var/exotic_bloodtype = "" 
-	///What the species drops on gibbing
-	var/meat = /obj/item/reagent_containers/food/snacks/meat/slab/human
+	var/use_skintones = 0	// does it use skintones or not? (spoiler alert this is only used by humans)
+	var/exotic_blood = ""	// If your race wants to bleed something other than bog standard blood, change this to reagent id.
+	var/exotic_bloodtype = "" //If your race uses a non standard bloodtype (A+, O-, AB-, etc)
+	var/meat = /obj/item/reagent_containers/food/snacks/meat/slab/human //What the species drops on gibbing
 	var/list/gib_types = list(/obj/effect/gibspawner/human, /obj/effect/gibspawner/human/bodypartless)
-	///What, if any, leather will be droppe
 	var/skinned_type
-	///What kind of foods the species loves
 	var/liked_food = NONE
-	///What kind of foods the species dislikes!
 	var/disliked_food = GROSS
-	///What kind of foods cause harm to the species
 	var/toxic_food = TOXIC
-	/// slots the race can't equip stuff to
-	var/list/no_equip = list()
-	// this is sorta... weird. it basically lets you equip stuff that usually needs jumpsuits without one, like belts and pockets and ids
-	var/nojumpsuit = 0
-	///Flag to exclude from green slime core species.
-	var/blacklisted = 0 
-	///A flag for transformation spells that tells them "hey if you turn a person into one of these without preperation, they'll probably die!"
-	var/dangerous_existence
-	/// affects the speech message
-	var/say_mod = "says"
-	/// Default mutant bodyparts for this species. Don't forget to set one for every mutant bodypart you allow this species to have.
-	var/list/default_features = list()
-	/// Visible CURRENT bodyparts that are unique to a species. DO NOT USE THIS AS A LIST OF ALL POSSIBLE BODYPARTS AS IT WILL FUCK SHIT UP! Changes to this list for non-species specific bodyparts (ie cat ears and tails) should be assigned at organ level if possible. Layer hiding is handled by handle_mutant_bodyparts() below.
-	var/list/mutant_bodyparts = list()
-	///Internal organs that are unique to this race.
-	var/list/mutant_organs = list()
-	/// this affects the race's speed. positive numbers make it move slower, negative numbers make it move faster
-	var/speedmod = 0
-	/// overall defense for the race... or less defense, if it's negative.
-	var/armor = 0
-	/// multiplier for brute damage
-	var/brutemod = 1
-	/// multiplier for burn damage
-	var/burnmod = 1
-	/// multiplier for cold damage
-	var/coldmod = 1
-	/// multiplier for heat damage
-	var/heatmod = 1
-	/// multiplier for stun duration
-	var/stunmod = 1
-	///lowest possible punch damage
-	var/punchdamagelow = 0
-	///highest possible punch damage
-	var/punchdamagehigh = 9
-	///damage at which punches from this race will stun //yes it should be to the attacked race but it's not useful that way even if it's logical
-	var/punchstunthreshold = 9
-	///base electrocution coefficient
-	var/siemens_coeff = 1
-	///what kind of damage overlays (if any) appear on our species when wounded?
-	var/damage_overlay_type = "human"
-	///to use MUTCOLOR with a fixed color that's independent of dna.feature["mcolor"]
-	var/fixed_mut_color = ""
-	///special mutation that can be found in the genepool. Dont leave empty or changing species will be a headache
-	var/inert_mutation = DWARFISM
-	///Sounds to override barefeet walkng
-	var/list/special_step_sounds
-	///Special sound for grabbing
-	var/grab_sound
-	/// audio of a species' scream //Stolen from yogs lol
-	var/screamsound
+	var/list/no_equip = list()	// slots the race can't equip stuff to
+	var/nojumpsuit = 0	// this is sorta... weird. it basically lets you equip stuff that usually needs jumpsuits without one, like belts and pockets and ids
+	var/blacklisted = 0 //Flag to exclude from green slime core species.
+	var/dangerous_existence //A flag for transformation spells that tells them "hey if you turn a person into one of these without preperation, they'll probably die!"
+	var/say_mod = "says"	// affects the speech message
+	var/list/default_features = list() // Default mutant bodyparts for this species. Don't forget to set one for every mutant bodypart you allow this species to have.
+	var/list/mutant_bodyparts = list() 	// Visible CURRENT bodyparts that are unique to a species. DO NOT USE THIS AS A LIST OF ALL POSSIBLE BODYPARTS AS IT WILL FUCK SHIT UP! Changes to this list for non-species specific bodyparts (ie cat ears and tails) should be assigned at organ level if possible. Layer hiding is handled by handle_mutant_bodyparts() below.
+	var/list/mutant_organs = list()		//Internal organs that are unique to this race.
+	var/speedmod = 0	// this affects the race's speed. positive numbers make it move slower, negative numbers make it move faster
+	var/armor = 0		// overall defense for the race... or less defense, if it's negative.
+	var/brutemod = 1	// multiplier for brute damage
+	var/burnmod = 1		// multiplier for burn damage
+	var/coldmod = 1		// multiplier for cold damage
+	var/heatmod = 1		// multiplier for heat damage
+	var/stunmod = 1		// multiplier for stun duration
+	var/punchdamagelow = 0       //lowest possible punch damage
+	var/punchdamagehigh = 9      //highest possible punch damage
+	var/punchstunthreshold = 9//damage at which punches from this race will stun //yes it should be to the attacked race but it's not useful that way even if it's logical
+	var/siemens_coeff = 1 //base electrocution coefficient
+	var/damage_overlay_type = "human" //what kind of damage overlays (if any) appear on our species when wounded?
+	var/fixed_mut_color = "" //to use MUTCOLOR with a fixed color that's independent of dna.feature["mcolor"]
+	var/inert_mutation = DWARFISM //special mutation that can be found in the genepool. Dont leave empty or changing species will be a headache
+	var/list/special_step_sounds //Sounds to override barefeet walkng
+	var/grab_sound //Special sound for grabbing
 
-	/// species-only traits. Can be found in DNA.dm
+	// species-only traits. Can be found in DNA.dm
 	var/list/species_traits = list()
-	/// generic traits tied to having the species
+	// generic traits tied to having the species
 	var/list/inherent_traits = list()
-	///biotypes, used for viruses and the like
 	var/list/inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID
-	/// punch-specific attack verb
-	var/attack_verb = "punch"
-	///the melee attack sound
+
+	var/attack_verb = "punch"	// punch-specific attack verb
 	var/sound/attack_sound = 'sound/weapons/punch1.ogg'
-	///the swing and miss sound
 	var/sound/miss_sound = 'sound/weapons/punchmiss.ogg'
 
-	/// list of mobs that will ignore this species
-	var/mob/living/list/ignored_by = list()	
+	var/mob/living/list/ignored_by = list()	// list of mobs that will ignore this species
 	//Breathing!
-	///what type of gas is breathed
+	var/obj/item/organ/lungs/mutantlungs = null
 	var/breathid = "o2"
 
-	///Replaces default brain with a different organ
 	var/obj/item/organ/brain/mutant_brain = /obj/item/organ/brain
-	///Replaces default heart with a different organ
 	var/obj/item/organ/heart/mutant_heart = /obj/item/organ/heart
-	///Replaces default lungs with a different organ
-	var/obj/item/organ/lungs/mutantlungs = null
-	///Replaces default eyes with a different organ
 	var/obj/item/organ/eyes/mutanteyes = /obj/item/organ/eyes
-	///Replaces default ears with a different organ
 	var/obj/item/organ/ears/mutantears = /obj/item/organ/ears
-	///Replaces default tongue with a different organ
-	var/obj/item/organ/tongue/mutanttongue = /obj/item/organ/tongue
-	///Replaces default liver with a different organ
-	var/obj/item/organ/liver/mutantliver
-	///Replaces default stomach with a different organ
-	var/obj/item/organ/stomach/mutantstomach
-	///Forces a species tail
-	var/obj/item/organ/tail/mutanttail = null
-	///Forces an item into this species' hands. Only an honorary mutantthing because this is not an organ and not loaded in the same way, you've been warned to do your research.
 	var/obj/item/mutanthands
+	var/obj/item/organ/tongue/mutanttongue = /obj/item/organ/tongue
+	var/obj/item/organ/tail/mutanttail = null
+
+	var/obj/item/organ/liver/mutantliver
+	var/obj/item/organ/stomach/mutantstomach
 	var/override_float = FALSE
 
 	//Citadel snowflake
 	var/fixed_mut_color2 = ""
 	var/fixed_mut_color3 = ""
-	///Is this species restricted to certain players?
-	var/whitelisted = 0
-	///List the ckeys that can use this species, if it's whitelisted.: list("John Doe", "poopface666") Spaces & capitalization can be included or ignored entirely for each key as it checks for both.
-	var/whitelist = list() 		
+	var/whitelisted = 0 		//Is this species restricted to certain players?
+	var/whitelist = list() 		//List the ckeys that can use this species, if it's whitelisted.: list("John Doe", "poopface666") Spaces & capitalization can be included or ignored entirely for each key as it checks for both.
 
-	///Overrides the icon used for the limbs of this species. Mainly for downstream, and also because hardcoded icons disgust me. Implemented and maintained as a favor in return for a downstream's implementation of synths.
-	var/icon_limbs 
+	var/icon_limbs //Overrides the icon used for the limbs of this species. Mainly for downstream, and also because hardcoded icons disgust me. Implemented and maintained as a favor in return for a downstream's implementation of synths.
 
 	/// Our default override for typing indicator state
 	var/typing_indicator_state
@@ -2510,10 +2451,3 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 /datum/species/proc/start_wagging_tail(mob/living/carbon/human/H)
 
 /datum/species/proc/stop_wagging_tail(mob/living/carbon/human/H)
-
-//Gainstation add: Screamcode I stole from yogs
-/datum/species/proc/get_scream_sound(mob/living/carbon/human/H)
-	if(islist(screamsound))
-		return pick(screamsound)
-	return screamsound
-//Gainstation add End

@@ -203,7 +203,6 @@
 #define TRAIT_LIPOLICIDE_TOLERANCE "lipolicide_tolerance"
 #define TRAIT_WEAKLEGS			"weak_legs"
 #define TRAIT_STRONGLEGS		"strong_legs"
-#define TRAIT_WEB_WEAVER		"web_weaving"
 
 //Hyper
 #define TRAIT_MACROPHILE		"macrophile" //likes the big

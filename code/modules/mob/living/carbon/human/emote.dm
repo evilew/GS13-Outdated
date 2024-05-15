@@ -58,23 +58,6 @@
 	message = "mumbles!"
 	emote_type = EMOTE_AUDIBLE
 
-/datum/emote/living/carbon/human/scream
-	key = "scream"
-	key_third_person = "screams"
-	message = "screams!"
-	emote_type = EMOTE_AUDIBLE
-	//cooldown = 10 SECONDS
-	vary = TRUE
-
-/datum/emote/living/carbon/human/scream/get_sound(mob/living/user)
-	if(!ishuman(user))
-		return
-	var/mob/living/carbon/human/H = user
-	if(H.mind?.miming)
-		return
-	if(H.dna?.species) //Stealing yog's implementation, lol
-		return H.dna.species.get_scream_sound(H)
-
 /datum/emote/living/carbon/human/pale
 	key = "pale"
 	message = "goes pale for a second."
@@ -176,44 +159,36 @@
 		var/turf/T = loc
 		T.Entered(src)
 
-/datum/emote/living/carbon/human/robot_tongue/can_run_emote(mob/user, status_check, intentional)
-	//var/obj/item/organ/tongue/T = user.getorganslot("tongue")
-	//return T?.status == ORGAN_ROBOTIC && ..()
-	return ..() //Remove this if we do want to restrict this to synthetic tongues.
+/datum/emote/sound/human
+	mob_type_allowed_typecache = list(/mob/living/carbon/human)
+	emote_type = EMOTE_AUDIBLE
 
-/datum/emote/living/carbon/human/robot_tongue/beep
-	key = "beep"
-	key_third_person = "beeps"
-	message = "beeps."
-	message_param = "beeps at %t."
-	sound = 'sound/machines/twobeep.ogg'
-
-/datum/emote/living/carbon/human/robot_tongue/buzz
+/datum/emote/sound/human/buzz
 	key = "buzz"
 	key_third_person = "buzzes"
 	message = "buzzes."
 	message_param = "buzzes at %t."
 	sound = 'sound/machines/buzz-sigh.ogg'
 
-/datum/emote/living/carbon/human/robot_tongue/buzz2
+/datum/emote/sound/human/buzz2
 	key = "buzz2"
 	message = "buzzes twice."
 	sound = 'sound/machines/buzz-two.ogg'
 
-/datum/emote/living/carbon/human/robot_tongue/ping
+/datum/emote/sound/human/ping
 	key = "ping"
 	key_third_person = "pings"
 	message = "pings."
 	message_param = "pings at %t."
 	sound = 'sound/machines/ping.ogg'
 
-/datum/emote/living/carbon/human/robot_tongue/chime
+/datum/emote/sound/human/chime
 	key = "chime"
 	key_third_person = "chimes"
 	message = "chimes."
 	sound = 'sound/machines/chime.ogg'
 
-/datum/emote/living/carbon/human/robot_tongue/squeak
+/datum/emote/sound/human/squeak
 	key = "squeak"
 	key_third_person = "squeaks"
 	message = "lets out a squeak."

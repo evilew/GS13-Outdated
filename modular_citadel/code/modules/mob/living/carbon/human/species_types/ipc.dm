@@ -19,8 +19,6 @@
 	mutantstomach = /obj/item/organ/stomach/ipc
 	mutanteyes = /obj/item/organ/eyes/ipc
 
-	screamsound = list('goon/sound/robot_scream.ogg', 'modular_citadel/sound/voice/scream_silicon.ogg')
-
 	exotic_bloodtype = "HF"
 
 	var/datum/action/innate/monitor_change/screen
