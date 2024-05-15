@@ -893,6 +893,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Femcum</a>"
 							if(/datum/reagent/consumable/alienhoney)
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Honey</a>"
+							if(/datum/reagent/consumable/nutriment)
+								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Nutriment</a>"
 							else
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Nothing?</a>"
 							//This else is a safeguard for errors, and if it happened, they wouldn't be able to change this pref,
@@ -940,6 +942,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Honey</a>"
 							if(/datum/reagent/consumable/pinkmilk)
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Strawberry Milk</a>"
+							if(/datum/reagent/consumable/nutriment)
+								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Nutriment</a>"
 							else
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Nothing?</a>"
 							//This else is a safeguard for errors, and if it happened, they wouldn't be able to change this pref,
@@ -1055,6 +1059,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Weight Gain - Weapons:</b><a href='?_src_=prefs;preference=weight_gain_weapons'>[weight_gain_weapons == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Weight Gain - Magic:</b><a href='?_src_=prefs;preference=weight_gain_magic'>[weight_gain_magic == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Weight Gain - Viruses:</b><a href='?_src_=prefs;preference=weight_gain_viruses'>[weight_gain_viruses == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+			dat += "<b>Extreme Weight Gain:</b><a href='?_src_=prefs;preference=weight_gain_extreme'>[weight_gain_extreme == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 
 			//Add the Hyper stuff below here
 			dat += "<h2>Hyper Preferences</h2>"
@@ -2381,6 +2386,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							features["balls_fluid"] = /datum/reagent/consumable/alienhoney
 						if("Strawberry Milk")
 							features["balls_fluid"] = /datum/reagent/consumable/pinkmilk
+						if("Nutriment")
+							features["balls_fluid"] = /datum/reagent/consumable/nutriment
 
 				if("egg_size")
 					var/new_size
@@ -2426,6 +2433,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							features["breasts_fluid"] = /datum/reagent/consumable/alienhoney
 						if("Strawberry Milk")
 							features["breasts_fluid"] = /datum/reagent/consumable/pinkmilk
+						if("Nutriment")
+							features["breasts_fluid"] = /datum/reagent/consumable/nutriment
 
 				if("breasts_color")
 					var/new_breasts_color = input(user, "Breast Color:", "Character Preference", "#"+features["breasts_color"]) as color|null
@@ -2615,6 +2624,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					weight_gain_magic = !weight_gain_magic
 				if("weight_gain_viruses")
 					weight_gain_viruses = !weight_gain_viruses
+				if("weight_gain_extreme")
+					weight_gain_extreme = !weight_gain_extreme
 				if("noncon_weight_gain")
 					noncon_weight_gain = !noncon_weight_gain
 				if("max_fatness")

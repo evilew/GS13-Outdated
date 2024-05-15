@@ -19,6 +19,7 @@
 			to_chat(L, "<span class='danger'>As you attempt to pass through  \the [src], your ample curves get wedged in the narrow opening. You find yourself stuck in the [src] frame, struggling to free yourself from the tight squeeze.</span>")
 			sleep(100)
 			L.doorstuck = 0
+			L.Knockdown(1)
 		return ..()
 
 	else if(L.fatness > 3000)
@@ -28,6 +29,7 @@
 			to_chat(L, "<span class='danger'>As you attempt to pass through  \the [src], your ample curves get wedged in the narrow opening. You find yourself stuck in the [src] frame, struggling to free yourself from the tight squeeze.</span>")
 			sleep(55)
 			L.doorstuck = 0
+			L.Knockdown(1)
 			return ..()
 		if(rand(1, 5) == 5)
 			to_chat(L, "<span class='danger'>With great effort, you manage to squeeze your massive form through  \the [src]. It's a tight fit, but you successfully navigate the narrow opening, barely avoiding getting stuck.</span>")

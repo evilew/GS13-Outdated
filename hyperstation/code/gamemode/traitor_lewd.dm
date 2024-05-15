@@ -205,34 +205,36 @@ GLOBAL_LIST_INIT(hyper_special_roles, list(
 
 
 
-/datum/objective/noncon/find_target()
-	//..()
-	//to_chat(world, "<span class='boldannounce'>TEST: noncon/find_target() called</span>")
-	var/list/datum/mind/targets = list()
-	var/list/datum/mind/owners = get_owners()
-	for(var/datum/mind/candidate in SSticker.minds)
-		if (!(candidate in owners) && ishuman(candidate.current) && (candidate.current.client))
-			if(candidate.current.client?.prefs?.noncon == 1)
-				targets += candidate
-	if(targets.len > 0)
-		target = pick(targets)
-	else
-		target = null
-	update_explanation_text()
-	return target
+//GS13 - this shit's just fucking weird lol, gtfo
+
+// /datum/objective/noncon/find_target()
+// 	//..()
+// 	//to_chat(world, "<span class='boldannounce'>TEST: noncon/find_target() called</span>")
+// 	var/list/datum/mind/targets = list()
+// 	var/list/datum/mind/owners = get_owners()
+// 	for(var/datum/mind/candidate in SSticker.minds)
+// 		if (!(candidate in owners) && ishuman(candidate.current) && (candidate.current.client))
+// 			if(candidate.current.client?.prefs?.noncon == 1)
+// 				targets += candidate
+// 	if(targets.len > 0)
+// 		target = pick(targets)
+// 	else
+// 		target = null
+// 	update_explanation_text()
+// 	return target
 
 
-/datum/objective/noncon/check_completion()
-	if(!target)
-		return TRUE
-	else
-		return target.sexed
+// /datum/objective/noncon/check_completion()
+// 	if(!target)
+// 		return TRUE
+// 	else
+// 		return target.sexed
 
-/datum/objective/noncon/update_explanation_text()
-	if(target)
-		explanation_text = "Locate [target.name], and sate your lust."
-	else
-		explanation_text = "Free Lewd Objective"
+// /datum/objective/noncon/update_explanation_text()
+// 	if(target)
+// 		explanation_text = "Locate [target.name], and sate your lust."
+// 	else
+// 		explanation_text = "Free Lewd Objective"
 
 /datum/antagonist/traitor/lewd/roundend_report()
 	var/list/result = list()

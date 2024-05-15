@@ -44,6 +44,7 @@
 			sound = 'modular_citadel/sound/voice/scream_monkey.ogg'
 		if(istype(user, /mob/living/simple_animal/hostile/gorilla))
 			sound = 'sound/creatures/gorilla.ogg'
+		/* //Gainstation Remove: Human species scream overhaul oops
 		if(ishuman(user))
 			user.adjustOxyLoss(5)
 			sound = pick('modular_citadel/sound/voice/scream_m1.ogg', 'modular_citadel/sound/voice/scream_m2.ogg')
@@ -57,6 +58,7 @@
 				sound = 'modular_citadel/sound/voice/scream_skeleton.ogg'
 			if (is_species(user, /datum/species/fly) || is_species(user, /datum/species/insect))
 				sound = 'modular_citadel/sound/voice/scream_moth.ogg'
+			*/
 		if(isalien(user))
 			sound = 'sound/voice/hiss6.ogg'
 		LAZYINITLIST(user.alternate_screams)
@@ -70,7 +72,7 @@
 		message = "makes a very loud noise."
 	. = ..()
 
-/datum/emote/sound/carbon/snap
+/datum/emote/carbon/snap
 	key = "snap"
 	key_third_person = "snaps"
 	muzzle_ignore = TRUE

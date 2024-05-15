@@ -36,11 +36,14 @@
 	. = ..()
 
 /obj/structure/spider/stickyweb/CanPass(atom/movable/mover, turf/target)
-	if(istype(mover, /mob/living/simple_animal/hostile/poison/giant_spider))
+	if(istype(mover, /mob/living/simple_animal/hostile/poison/giant_spider) || HAS_TRAIT(mover, TRAIT_WEB_WEAVER))
 		return TRUE
 	else if(isliving(mover))
 		if(istype(mover.pulledby, /mob/living/simple_animal/hostile/poison/giant_spider))
 			return TRUE
+		if(mover.pulledby)
+			if(HAS_TRAIT(mover.pulledby, TRAIT_WEB_WEAVER))
+				return TRUE
 		if(prob(50))
 			to_chat(mover, "<span class='danger'>You get stuck in \the [src] for a moment.</span>")
 			return FALSE

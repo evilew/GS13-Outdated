@@ -13,6 +13,8 @@
 	liked_food = MEAT | RAW | DAIRY
 	disliked_food = FRIED | FRUIT
 
+	screamsound = list('sound/voice/catpeople/scream1.ogg', 'sound/voice/catpeople/scream2.ogg', 'sound/voice/catpeople/scream3.ogg')
+
 /datum/species/human/felinid/qualifies_for_rank(rank, list/features)
 	return TRUE
 
