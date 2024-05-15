@@ -193,7 +193,7 @@
 			sound = pick(bigsound)
 		return ..()
 	*/
-	if(user.size_multipler >= 1.5)
+	if(user.size_multiplier >= 1.5)
 		sound = pick(bigsound)
 	else
 		sound = pick(smolsound)
