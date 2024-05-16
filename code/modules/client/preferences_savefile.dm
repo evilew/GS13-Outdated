@@ -153,6 +153,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["weight_gain_magic"] >> weight_gain_magic
 	S["weight_gain_viruses"] >> weight_gain_viruses
 	S["weight_gain_weapons"] >> weight_gain_weapons
+	S["weight_gain_extreme"] >> weight_gain_extreme
 	S["wg_rate"] >> wg_rate
 	S["wl_rate"] >> wl_rate
 	S["noncon_weight_gain"] >> noncon_weight_gain
@@ -292,6 +293,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["weight_gain_viruses"], weight_gain_viruses)
 	WRITE_FILE(S["weight_gain_chems"], weight_gain_chems)
 	WRITE_FILE(S["weight_gain_weapons"], weight_gain_weapons)
+	WRITE_FILE(S["weight_gain_extreme"], weight_gain_extreme)
 	WRITE_FILE(S["wg_rate"], wg_rate)
 	WRITE_FILE(S["wl_rate"], wl_rate)
 	WRITE_FILE(S["noncon_weight_gain"], noncon_weight_gain)

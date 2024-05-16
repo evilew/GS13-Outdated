@@ -1,3 +1,7 @@
+// Gain Remove: Editing this file enough to make a new one in the modular folder
+// File is disabled in the DME, but will be left as a reference.
+// Please direct any further changes to GainStation13/code/modules/vore/eating/living_vr.dm
+
 ///////////////////// Mob Living /////////////////////
 /mob/living
 	var/digestable = FALSE					// Can the mob be digested inside a belly?

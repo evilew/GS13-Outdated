@@ -13,6 +13,18 @@
 	meat = /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/mammal
 	liked_food = MEAT | FRIED
 	disliked_food = TOXIC
+	//Same as humans
+	var/list/female_screams = list('sound/voice/human/femalescream_1.ogg', 'sound/voice/human/femalescream_2.ogg', 'sound/voice/human/femalescream_3.ogg', 'sound/voice/human/femalescream_4.ogg', 'sound/voice/human/femalescream_5.ogg')
+	var/list/male_screams = list('sound/voice/human/malescream_1.ogg', 'sound/voice/human/malescream_2.ogg', 'sound/voice/human/malescream_3.ogg', 'sound/voice/human/malescream_4.ogg', 'sound/voice/human/malescream_5.ogg')
+
+/datum/species/human/get_scream_sound(mob/living/carbon/human/H)
+	if(H.gender == FEMALE)
+		return pick(female_screams)
+	else
+		if(prob(1))
+			return pick('modular_citadel/sound/voice/scream_m1.ogg', 'modular_citadel/sound/voice/scream_m2.ogg', \
+						'sound/voice/human/wilhelm_scream.ogg')
+		return pick(male_screams)
 
 //Curiosity killed the cat's wagging tail.
 /datum/species/mammal/spec_death(gibbed, mob/living/carbon/human/H)
