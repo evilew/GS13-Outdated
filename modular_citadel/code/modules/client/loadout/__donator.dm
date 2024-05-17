@@ -259,16 +259,16 @@ datum/gear/lyricalpawsring
 	name = "Weight Gain Spellbook"
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/book/granter/spell/fattening
-	ckeywhitelist = list("sonoida", "themrsky", "not number")
+	ckeywhitelist = list("sonoida", "themrsky", "not_number")
 
 /datum/gear/wgspell_transfer
 	name = "Weight Transfer Spellbook"
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/book/granter/spell/fattening/transfer
-	ckeywhitelist = list("sonoida", "themrsky", "not number")
+	ckeywhitelist = list("sonoida", "themrsky", "not_number")
 
 /datum/gear/wgspell_take
 	name = "Weight Steal Spellbook"
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/book/granter/spell/fattening/steal
-	ckeywhitelist = list("sonoida", "themrsky", "not number")
+	ckeywhitelist = list("sonoida", "themrsky", "not_number")
