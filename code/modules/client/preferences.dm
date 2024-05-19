@@ -1059,7 +1059,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Weight Gain - Weapons:</b><a href='?_src_=prefs;preference=weight_gain_weapons'>[weight_gain_weapons == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Weight Gain - Magic:</b><a href='?_src_=prefs;preference=weight_gain_magic'>[weight_gain_magic == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Weight Gain - Viruses:</b><a href='?_src_=prefs;preference=weight_gain_viruses'>[weight_gain_viruses == TRUE ? "Enabled" : "Disabled"]</a><BR>"
-			dat += "<b>Extreme Weight Gain:</b><a href='?_src_=prefs;preference=weight_gain_extreme'>[weight_gain_extreme == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+			dat += "<b>Extreme Weight Gain (Sprite Size scales with weight):</b><a href='?_src_=prefs;preference=weight_gain_extreme'>[weight_gain_extreme == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 
 			//Add the Hyper stuff below here
 			dat += "<h2>Hyper Preferences</h2>"

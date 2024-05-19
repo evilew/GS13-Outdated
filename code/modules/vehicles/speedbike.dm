@@ -18,7 +18,7 @@
 
 /obj/vehicle/ridden/space/speedbike/Initialize()
 	. = ..()
-	overlay = mutable_appearance(icon, overlay_state, ABOVE_MOB_LAYER)
+	overlay = mutable_appearance(icon, overlay_state, BELOW_MOB_LAYER)
 	add_overlay(overlay)
 	var/datum/component/riding/D = LoadComponent(/datum/component/riding)
 	D.set_riding_offsets(RIDING_OFFSET_ALL, list(TEXT_NORTH = list(0, -8), TEXT_SOUTH = list(0, 4), TEXT_EAST = list(-10, 5), TEXT_WEST = list( 10, 5)))

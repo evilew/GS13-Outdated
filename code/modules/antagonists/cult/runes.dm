@@ -1018,7 +1018,7 @@ structure_check() searches for nearby cultist structures required for the invoca
 	if(intensity>=285) // Based on the prior formula, this means the cult makes up <15% of current players
 		var/outcome = rand(1,100)
 		switch(outcome)
-			if(1 to 10)
+			if(1 to 20)
 				var/datum/round_event_control/disease_outbreak/D = new()
 				var/datum/round_event_control/mice_migration/M = new()
 				D.runEvent()

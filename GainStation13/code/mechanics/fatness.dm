@@ -60,6 +60,7 @@
 
 /mob/living/carbon/fully_heal(admin_revive)
 	fatness = 0
+	fatness_real = 0
 	. = ..()
 
 ///Checks the parent mob's prefs to see if they can be fattened by the fattening_type
@@ -120,6 +121,6 @@
 
 /mob/living/carbon/proc/xwg_resize()
 	var/xwg_size = sqrt(fatness/FATNESS_LEVEL_BLOB)
-	xwg_size = min(xwg_size, RESIZE_MACRO)
+	xwg_size = min(xwg_size, RESIZE_HUGE)
 	xwg_size = max(xwg_size, custom_body_size*0.01)
 	resize(xwg_size)

@@ -141,11 +141,11 @@
 	weight = 2
 	cost = 5
 	requirements = list(101,20,15,10,10,10,10,10,10,10)
-	high_population_requirement = 15
+	high_population_requirement = 8
 	//property_weights = list("chaos" = 1, "valid" = 1)
 	earliest_start = 60 MINUTES //Skyrat change.
 	occurances_max = 2
-	chaos_min = 2.5
+	chaos_min = 1.5
 
 //////////////////////////////////////////////
 //                                          //
@@ -161,10 +161,10 @@
 	weight = 2
 	cost = 5
 	requirements = list(101,20,15,10,10,10,10,10,10,10)
-	high_population_requirement = 15
+	high_population_requirement = 10
 	earliest_start = 60 MINUTES
 	occurances_max = 2
-	chaos_min = 3
+	chaos_min = 2
 
 //////////////////////////////////////////////
 //                                          //
@@ -248,7 +248,7 @@
 	earliest_start = 45 MINUTES
 	repeatable_weight_decrease = 2
 	requirements = list(101,101,25,25,20,20,15,15,10,10)
-	high_population_requirement = 30
+	high_population_requirement = 15
 	//property_weights = list("extended" = -2)
 	occurances_max = 2
 	chaos_min = 3.0
@@ -272,7 +272,7 @@
 		name = "Meteor Wave: Normal"
 		cost = 5
 		typepath = /datum/round_event/meteor_wave
-		chaos_min = 2.8
+		chaos_min = 1.9
 		required_enemies = list(2,2,2,2,1,1,1,1,0,0)
 	return ..()
 
@@ -310,11 +310,11 @@
 	repeatable_weight_decrease = 2
 	cost = 2
 	requirements = list(101,101,10,5,5,5,5,5,5,5)
-	high_population_requirement = 10
+	high_population_requirement = 15
 	repeatable = TRUE
 	//property_weights = list("extended" = 1)
 	occurances_max = 1
-	chaos_min = 2.5
+	chaos_min = 2.4
 
 /datum/dynamic_ruleset/event/anomaly_gravitational
 	name = "Anomaly: Gravitational"
@@ -345,7 +345,7 @@
 	repeatable = TRUE
 	//property_weights = list("extended" = 1)
 	occurances_max = 2
-	chaos_min = 2.3
+	chaos_min = 2.2
 
 /datum/dynamic_ruleset/event/anomaly_vortex
 	name = "Anomaly: Vortex"
@@ -379,7 +379,7 @@
 	occurances_max = 1
 	requirements = list(10,10,10,10,10,10,10,10,10,10) //SECURE THAT DISK
 	cost = 50
-	chaos_min = 4
+	chaos_min = 4.5
 	map_blacklist = list("LayeniaStation.dmm")
 
 /datum/dynamic_ruleset/event/operative/get_weight()
@@ -410,11 +410,11 @@
 	enemy_roles = list("Chief Engineer","Station Engineer","Atmospheric Technician")
 	required_enemies = list(3,2,2,2,1,1,1,0,0,0)
 	requirements = list(101,25,20,15,15,15,10,10,10,10)
-	high_population_requirement = 10
+	high_population_requirement = 12
 	repeatable = TRUE
 	//property_weights = list("extended" = -1, "chaos" = 1)
 	occurances_max = 1
-	chaos_min = 2.2
+	chaos_min = 2.4
 
 /datum/dynamic_ruleset/event/carp_migration
 	name = "Carp Migration"
@@ -425,11 +425,11 @@
 	cost = 4
 	requirements = list(101,5,5,5,5,1,1,1,1,1)
 	high_population_requirement = 10
-	earliest_start = 10 MINUTES
+	earliest_start = 30 MINUTES
 	repeatable = TRUE
 	//property_weights = list("extended" = 1)
 	occurances_max = 3
-	chaos_min = 0.5
+	chaos_min = 0.7
 	map_blacklist = list("LayeniaStation.dmm")
 
 /datum/dynamic_ruleset/event/communications_blackout
@@ -445,7 +445,7 @@
 	high_population_requirement = 5
 	repeatable = TRUE
 	//property_weights = list("extended" = 1, "chaos" = 1)
-	occurances_max = 5
+	occurances_max = 4
 
 /datum/dynamic_ruleset/event/processor_overload
 	name = "Processor Overload"
@@ -474,12 +474,12 @@
 	enemy_roles = list("Chief Engineer","Station Engineer")
 	required_enemies = list(1,1,1,0,0,0,0,0,0,0)
 	requirements = list(5,5,5,5,5,5,5,0,0,0)
-	high_population_requirement = 5
+	high_population_requirement = 7
 	repeatable = TRUE
-	earliest_start = 10 MINUTES
+	earliest_start = 50 MINUTES
 	//property_weights = list("extended" = 1)
 	//always_max_weight = TRUE
-	occurances_max = 0
+	occurances_max = 2
 	map_blacklist = list("LayeniaStation.dmm")
 
 /datum/dynamic_ruleset/event/major_dust
@@ -492,10 +492,10 @@
 	enemy_roles = list("Chief Engineer","Station Engineer")
 	required_enemies = list(2,2,1,1,1,1,1,1,1,1)
 	requirements = list(15,10,9,8,7,6,5,4,3,2)
-	high_population_requirement = 10
+	high_population_requirement = 12
 	repeatable = TRUE
 	//property_weights = list("extended" = 1)
-	occurances_max = 2
+	occurances_max = 1
 	map_blacklist = list("LayeniaStation.dmm")
 
 
@@ -510,7 +510,7 @@
 	requirements = list(3,3,2,2,1,1,0,0,0,0)
 	high_population_requirement = 5
 	repeatable = TRUE
-	occurances_max = 10
+	occurances_max = 6
 	map_blacklist = list("KiloStation.dmm")
 
 // /datum/dynamic_ruleset/event/heart_attack
@@ -569,7 +569,7 @@
 	enemy_roles = list("AI","Medical Doctor","Station Engineer","Head of Personnel","Captain")
 	required_enemies = list(2,2,2,2,2,2,2,2,2,0)
 	requirements = list(5,5,5,5,5,5,5,5,5,5)
-	high_population_requirement =  5
+	high_population_requirement =  6
 	//property_weights = list("extended" = 1)
 	occurances_max = 2
 	chaos_min = 1.3
@@ -692,7 +692,7 @@
 /datum/dynamic_ruleset/event/bureaucratic_error
 	name = "Bureaucratic Error"
 	requirements = list(0,0,0,0,0,0,0,0,0,0)
-	high_population_requirement = 0
+	high_population_requirement = 8
 	typepath = /datum/round_event/bureaucratic_error
 	occurances_max = 1
 	weight = 5
@@ -748,7 +748,7 @@
 	weight = 4
 	repeatable_weight_decrease = 5
 	repeatable = TRUE
-	occurances_max = 2
+	occurances_max = 3
 
 /datum/dynamic_ruleset/event/mice_migration
 	name = "Mice Migration"
@@ -756,7 +756,7 @@
 	enemy_roles = list("Chief Engineer","Station Engineer","Atmospheric Technician")
 	required_enemies = list(1,1,1,1,1,1,0,0,0,0)
 	requirements = list(5,5,5,5,0,0,0,0,0,0)
-	high_population_requirement = 0
+	high_population_requirement = 5
 	weight = 10
 	repeatable_weight_decrease = 3
 	repeatable = TRUE
@@ -802,10 +802,10 @@
 	required_enemies = list(2,2,2,1,1,1,1,1,1,0)
 	requirements = list(101,101,10,9,8,7,5,5,5,0)
 	cost = 2
-	high_population_requirement = 18
+	high_population_requirement = 12
 	weight = 4
 	repeatable_weight_decrease = 2
-	earliest_start = 20 MINUTES
+	earliest_start = 50 MINUTES
 	repeatable = TRUE
 	occurances_max = 2
 

@@ -119,23 +119,23 @@
 		if(rand(1,100)<=strength * 0.5)
 			var/lowerletter = lowertext(newletter)
 			if(lowerletter == "o")
-				newletter = " -*BURRP*- "
+				newletter = " ++BURRP++ "
 			else if(lowerletter == "s")
-				newletter = " -*URP*- "
+				newletter = " ++URP++ "
 			else if(lowerletter == "a")
-				newletter = " -*GWUURRP*- "
+				newletter = " ++GWUURRP++ "
 			else if(lowerletter == "u")
-				newletter = " -*BUUUURRP*- "
+				newletter = " ++BUUUURRP++ "
 			else if(lowerletter == "c")
-				newletter = " -*BURP*- "
+				newletter = " ++BURP++ "
 		if(rand(1,100) <= strength * 0.25)
 			if(newletter == " ")
-				newletter = "...*GWWUUARRP*..."
+				newletter = "...++GWWUUARRP++..."
 			else if(newletter == ".")
-				newletter = " -*BWUUARRP*-."
+				newletter = " ++BWUUARRP++."
 		switch(rand(1,100) <= strength * 0.5)
 			if(1)
-				newletter += " -*BURRP*- "
+				newletter += " ++BURRP++ "
 			if(10)
 				newletter += "[newletter]"
 			if(20)
