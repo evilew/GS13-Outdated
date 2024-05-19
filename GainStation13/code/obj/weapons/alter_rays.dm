@@ -142,3 +142,30 @@
 /obj/item/ammo_casing/energy/laser/lossrate_decrease
 	projectile_type = /obj/item/projectile/alter_ray/lossrate_decrease
 	select_name = "Weight Loss Decrease"
+
+
+
+//ALTRay for making someone gain from weight loss
+
+/obj/item/gun/energy/laser/alter_ray/noloss
+	name = "AL-T-Ray: Reverser"
+	desc = "This weapon is capable of altering one's body capabilities. This one reverse's ones body functions, to make it so weight loss results in weight gain."
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/lossrate_reverse)
+
+/obj/item/ammo_casing/energy/laser/lossrate_reverse
+	projectile_type = /obj/item/projectile/alter_ray/lossrate_reverse
+	select_name = "Weight Loss Reverse"
+
+/obj/item/projectile/alter_ray/lossrate_reverse
+	ratechange_amount = -2
+	icon_state="laser"
+
+/obj/item/projectile/alter_ray/lossrate_reverse/on_hit(atom/target, blocked)
+	. = ..()
+	
+	var/mob/living/carbon/gainer = target
+
+	if(iscarbon(gainer))
+		gainer.weight_loss_rate = ratechange_amount
+		return TRUE
+

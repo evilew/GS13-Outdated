@@ -34,6 +34,17 @@
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE | DEPARTMENTAL_FLAG_SECURITY
 
+
+/datum/design/alter_ray
+	name = "AL-T-Ray: Reverser"
+	id = "alter_ray_reverser"
+	build_type = PROTOLATHE
+	materials = list(MAT_METAL = 10000, MAT_GLASS = 8000, MAT_CALORITE = 26000)
+	construction_time = 200
+	build_path = /obj/item/gun/energy/laser/alter_ray/noloss
+	category = list("Weapons")
+	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE | DEPARTMENTAL_FLAG_SECURITY
+
 //nutritech tools
 /datum/design/calorite_collar
 	name = "Calorite Collar"

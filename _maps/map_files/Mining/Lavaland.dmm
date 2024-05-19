@@ -1907,7 +1907,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 5
 	},
-/obj/machinery/portable_atmospherics/canister/oxygen,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
 /turf/open/floor/plating,
 /area/mine/living_quarters)
 "dI" = (
@@ -2615,9 +2617,6 @@
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "eT" = (
-/obj/machinery/light/small{
-	dir = 1
-	},
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/mop,
 /turf/open/floor/plating,
@@ -2680,6 +2679,17 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel,
+/area/mine/living_quarters)
+"fo" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/item/stack/sheet/mineral/plasma,
+/obj/item/stack/sheet/mineral/plasma,
+/turf/open/floor/plating,
 /area/mine/living_quarters)
 "fq" = (
 /obj/structure/stone_tile{
@@ -4079,12 +4089,21 @@
 	},
 /turf/open/floor/plating,
 /area/mine/laborcamp)
+"uu" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating,
+/area/mine/living_quarters)
 "uM" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/mine/eva)
+"uP" = (
+/turf/closed/wall,
+/area/lavaland/surface/outdoors)
 "uS" = (
 /obj/docking_port/stationary{
 	area_type = /area/lavaland/surface/outdoors;
@@ -4411,6 +4430,12 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1,
 /turf/open/floor/plasteel/dark,
 /area/mine/maintenance)
+"EG" = (
+/obj/structure/cable,
+/obj/machinery/power/adipoelectric_generator,
+/obj/machinery/light/small,
+/turf/open/floor/plating,
+/area/mine/living_quarters)
 "EI" = (
 /obj/machinery/telecomms/relay/preset/mining,
 /obj/machinery/light/small{
@@ -4533,6 +4558,10 @@
 /obj/machinery/mineral/processing_unit_console,
 /turf/closed/wall,
 /area/mine/production)
+"Ik" = (
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/turf/open/floor/plating,
+/area/mine/living_quarters)
 "In" = (
 /obj/machinery/mineral/processing_unit{
 	dir = 1
@@ -17230,7 +17259,7 @@ PQ
 PQ
 PQ
 PQ
-Wp
+uP
 Wp
 Wp
 Wp
@@ -17485,9 +17514,9 @@ el
 CH
 rI
 EM
+fo
 dG
-PQ
-Wp
+uP
 Wp
 Wp
 Wp
@@ -17742,9 +17771,9 @@ en
 PQ
 dA
 eN
+uu
 FS
-PQ
-Wp
+uP
 Wp
 Wp
 Wp
@@ -18000,8 +18029,8 @@ ey
 dB
 dF
 dH
-PQ
-Wp
+EG
+uP
 Wp
 Wp
 Wp
@@ -18257,8 +18286,8 @@ PQ
 eT
 wu
 dI
-PQ
-Wp
+eN
+uP
 Wp
 Wp
 Wp
@@ -18514,8 +18543,8 @@ PQ
 Di
 ew
 ew
-PQ
-Wp
+Ik
+uP
 Wp
 Wp
 Wp
@@ -18772,7 +18801,7 @@ PQ
 PQ
 PQ
 PQ
-Wp
+uP
 Wp
 Wp
 Wp

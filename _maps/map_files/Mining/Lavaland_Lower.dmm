@@ -523,7 +523,6 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/obj/machinery/space_heater,
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
@@ -1013,9 +1012,6 @@
 /turf/open/floor/plating,
 /area/xenoarch/gen)
 "cz" = (
-/obj/machinery/power/port_gen/pacman{
-	anchored = 1
-	},
 /obj/effect/turf_decal/box,
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -1023,18 +1019,17 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/machinery/adipoelectric_transformer,
 /turf/open/floor/plasteel/dark/side{
 	dir = 9
 	},
 /area/xenoarch/gen)
 "cA" = (
-/obj/machinery/power/port_gen/pacman{
-	anchored = 1
-	},
 /obj/effect/turf_decal/box,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
+/obj/machinery/power/adipoelectric_generator,
 /turf/open/floor/plasteel/dark/side{
 	dir = 1
 	},
@@ -1923,7 +1918,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/light,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
@@ -12819,6 +12813,17 @@
 	},
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
+"Tu" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/space_heater,
+/turf/open/floor/plasteel,
+/area/xenoarch/arch)
 "Tv" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4;
@@ -16633,7 +16638,7 @@ Sy
 ar
 ar
 ar
-ar
+dr
 ar
 ar
 ar
@@ -22024,7 +22029,7 @@ fL
 Kg
 aW
 aC
-VP
+Tu
 fL
 bL
 cu
