@@ -79,7 +79,13 @@ GLOBAL_LIST_INIT(paw_taurs, list(
 		"Panther",
 		"Horse",
 		"Cow",
-		"Tiger"
+		"Tiger",
+		"Fat Drake",
+		"Fat Wolf",
+		"Fat Lizard",
+		"Long Fluffy Tail",
+		"Fat Synth Wolf",
+		"Big Leggies"
 		))
 
 	//blood types

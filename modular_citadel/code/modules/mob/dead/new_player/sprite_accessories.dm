@@ -1909,6 +1909,32 @@ datum/sprite_accessory/mam_tails/insect
 	name = "Gator"
 	icon_state = "gator"
 
+/datum/sprite_accessory/taur/fatdrake //ported from Vorestation
+	name = "Fat Drake"
+	icon_state = "fatdrake"
+	color_src = MUTCOLORS
+/datum/sprite_accessory/taur/fatwolf //ported from Vorestation
+	name = "Fat Wolf"
+	icon_state = "fatwolf"
+	color_src = MUTCOLORS
+/datum/sprite_accessory/taur/fatliz //ported from Vorestation
+	name = "Fat Lizard"
+	icon_state = "fatliz"
+	color_src = MUTCOLORS
+/datum/sprite_accessory/taur/longtailfluff //ported from Vorestation
+	name = "Long Fluffy Tail"
+	icon_state = "longtailfluff"
+	color_src = MUTCOLORS
+/datum/sprite_accessory/taur/fatsynthwolf //ported from Vorestation
+	name = "Fat Synth Wolf"
+	icon_state = "fatsynthwolf"
+	color_src = MUTCOLORS
+/datum/sprite_accessory/taur/bigleggies //ported from Vorestation
+	name = "Big Leggies"
+	icon_state = "bigleggy"
+	color_src = MUTCOLORS
+
+
 /datum/sprite_accessory/taur/otie
 	name = "Otie"
 	icon_state = "otie"
