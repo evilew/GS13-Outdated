@@ -16,6 +16,7 @@
 	var/emp_timer = 0
 	var/active = FALSE
 	var/datum/looping_sound/generator/soundloop
+	var/iamcheckingtoseeifthelinesnumberchange = 0
 
 /obj/machinery/power/adipoelectric_generator/Initialize()
 	. = ..()
@@ -23,6 +24,7 @@
 	if(anchored)
 		connect_to_network()
 	update_icon()
+	occupant = null
 
 /obj/machinery/power/adipoelectric_generator/RefreshParts()
 	laser_modifier = 0
@@ -33,10 +35,15 @@
 		max_fat += C.rating * 2
 
 /obj/machinery/power/adipoelectric_generator/process()
-	if(occupant:fatness_real > 0 && powernet && anchored && (emp_timer < world.time))
+	if(!is_operational())
+		return
+	var/mob/living/carbon/user = occupant
+	if(!user || !attached)
+		return PROCESS_KILL
+	if(user.fatness_real > 0 && powernet && anchored && (emp_timer < world.time))
 		active = TRUE
 		add_avail(conversion_rate * laser_modifier * max_fat)
-		occupant:adjust_fatness(-max_fat, FATTENING_TYPE_ITEM)
+		user.adjust_fatness(-max_fat, FATTENING_TYPE_ITEM)
 		soundloop.start()
 	else
 		active = FALSE
@@ -96,11 +103,13 @@
 
 /obj/machinery/power/adipoelectric_generator/open_machine()
 	. = ..()
+	STOP_PROCESSING(SSobj, src)
 
 /obj/machinery/power/adipoelectric_generator/close_machine()
 	. = ..()
 	if(occupant && anchored && !panel_open)
 		add_fingerprint(occupant)
+		START_PROCESSING(SSobj, src)
 	else
 		open_machine()
 
