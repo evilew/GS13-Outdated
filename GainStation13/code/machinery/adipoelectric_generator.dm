@@ -33,6 +33,9 @@
 		max_fat += C.rating * 2
 
 /obj/machinery/power/adipoelectric_generator/process()
+	if(!occupant)
+		playsound(src, 'sound/machines/buzz-two.ogg', 50)
+		return PROCESS_KILL
 	if(occupant:fatness_real > 0 && powernet && anchored && (emp_timer < world.time))
 		active = TRUE
 		add_avail(conversion_rate * laser_modifier * max_fat)
@@ -96,11 +99,13 @@
 
 /obj/machinery/power/adipoelectric_generator/open_machine()
 	. = ..()
+	STOP_PROCESSING(SSobj, src)
 
 /obj/machinery/power/adipoelectric_generator/close_machine()
 	. = ..()
 	if(occupant && anchored && !panel_open)
 		add_fingerprint(occupant)
+		START_PROCESSING(SSobj, src)
 	else
 		open_machine()
 
