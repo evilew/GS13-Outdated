@@ -5,11 +5,11 @@
 	// -fatness_real is the value a mob is actually at, even if it's being hidden. For permanent changes, use this one
 	//What level of fatness is the parent mob currently at?
 	var/fatness = 0
-	//Is something overriding the actual fatness value of a character?
-	var/fatness_hidden = FALSE
-	//The actual value a mob is at. Is equal to fatness if fatness_hidden is FALSE.
+	//Is something hiding the actual fatness value of a character?
+	var/fat_hider = FALSE
+	//The actual value a mob is at. Is equal to fatness if fat_hider is FALSE.
 	var/fatness_real = 0
-	//The value a mob's fatness is being overwritten with if fatness_hidden is TRUE.
+	//The value a mob's fatness is being overwritten with if fat_hider has something in it.
 	var/fatness_over = 0
 	///At what rate does the parent mob gain weight? 1 = 100%
 	var/weight_gain_rate = 1
@@ -44,7 +44,7 @@
 	if(client?.prefs?.max_weight) // GS13
 		fatness_real = min(fatness_real, (client?.prefs?.max_weight - 1))
 
-	if(fatness_hidden)	//If a character's real fatness is being hidden
+	if(fat_hider)	//If a character's real fatness is being hidden
 		if(client?.prefs?.max_weight) //Check their prefs
 			fatness_over = min(fatness_over, (client?.prefs?.max_weight - 1)) //And make sure it's not above their preferred max
 
@@ -102,8 +102,8 @@
 		
 	return TRUE
 
-/mob/living/carbon/proc/fat_hide(hide_amount)	//If something wants to hide fatness_real, it'll call this method and give it an amount to cover it with
-	fatness_hidden = TRUE
+/mob/living/carbon/proc/fat_hide(hide_amount, hide_source)	//If something wants to hide fatness_real, it'll call this method and give it an amount to cover it with
+	fat_hider = hide_source
 	fatness_over = hide_amount
 	fatness = fatness_over	//To update a mob's fatness with the new amount to be shown immediately
 	if(client?.prefs?.weight_gain_extreme)
@@ -112,7 +112,7 @@
 	return TRUE
 
 /mob/living/carbon/proc/fat_show()				//If something that hides fatness is removed or expires, it'll call this method
-	fatness_hidden = FALSE
+	fat_hider = FALSE
 	fatness = fatness_real	//To update a mob's fatness with their real one immediately
 	if(client?.prefs?.weight_gain_extreme)
 		xwg_resize()

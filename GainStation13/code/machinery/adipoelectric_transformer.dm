@@ -18,6 +18,7 @@ GLOBAL_LIST_EMPTY(adipoelectric_transformer)
 	var/conversion_rate = 0.000001
 	var/emp_timer = 0
 	var/emp_multiplier = 5
+	var/datum/powernet/PN
 
 /obj/machinery/adipoelectric_transformer/Initialize()
 	. = ..()
@@ -32,9 +33,10 @@ GLOBAL_LIST_EMPTY(adipoelectric_transformer)
 	if(!is_operational())
 		return
 	if(!attached)
+		src.visible_message("<span class='alert'>[src] buzzes. Seems like it's not attached to a working power net.</span>")
 		playsound(src, 'sound/machines/buzz-two.ogg', 50)
 		return PROCESS_KILL
-	var/datum/powernet/PN = attached.powernet
+	PN = attached.powernet
 	if(PN)
 		power_avaliable = PN.netexcess
 		update_icon()
@@ -59,6 +61,7 @@ GLOBAL_LIST_EMPTY(adipoelectric_transformer)
 	. = ..()
 	if(!(stat & (BROKEN|NOPOWER)))
 		if(occupant)
+			src.visible_message("<span class='alert'>[src] emits ominous cracking noises!</span>")
 			emp_timer = world.time //stuck in for 600 ticks, about 60 seconds
 
 /obj/machinery/adipoelectric_transformer/attackby(obj/item/P, mob/user, params)
@@ -101,6 +104,7 @@ GLOBAL_LIST_EMPTY(adipoelectric_transformer)
 		GLOB.adipoelectric_transformer += src
 		START_PROCESSING(SSobj, src)
 	else
+		src.visible_message("<span class='alert'>[src] buzzes. There must be another a person going in an no other transformer active in the area.</span>")
 		playsound(src, 'sound/machines/buzz-two.ogg', 50)
 		open_machine()
 
@@ -132,6 +136,19 @@ GLOBAL_LIST_EMPTY(adipoelectric_transformer)
 /obj/machinery/adipoelectric_transformer/Destroy()
 	. = ..()
 	GLOB.adipoelectric_transformer -= src
+
+/obj/machinery/adipoelectric_transformer/examine(mob/user)
+	. = ..()
+	if(is_operational() && attached)
+		if(PN)
+			if(lastprocessed)
+				. += "<span class='notice'>[src]'s last reading on display was <b>[lastprocessed * recharge_speed]</b> adipose units.</span>"
+			else
+				. += "<span class='notice'>[src] has no last reading.</span>"
+		else
+			. += "<span class='notice'>[src]'s display states 'ERROR'. There must be something wrong with the power.</b></span>"
+	else
+		. += "<span class='notice'><b>[src]'s display is currently offline.</b></span>"
 
 /obj/item/circuitboard/machine/adipoelectric_transformer
 	name = "Adipoelectric Transformer (Machine Board)"

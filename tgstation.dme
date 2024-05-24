@@ -3124,6 +3124,7 @@
 #include "GainStation13\code\modules\vending\gatocola.dm"
 #include "GainStation13\code\modules\vending\mealdor.dm"
 #include "GainStation13\code\obj\items\bluespace_belt.dm"
+#include "GainStation13\code\obj\items\holy.dm"
 #include "GainStation13\code\obj\items\minor_items.dm"
 #include "GainStation13\code\obj\structure\calorite_doors.dm"
 #include "GainStation13\code\obj\structure\candylight.dm"
