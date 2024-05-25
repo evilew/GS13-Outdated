@@ -60,6 +60,7 @@
 	else
 		to_chat(fatty, "<span class='notice'>[src.lastreading]Lbs.</span>")
 
+	visible_message("<span class='notice'>The numbers on the screen read out: [fatty] has a BFI of [fatness].</span>")
 
 /obj/structure/scale/Crossed(AM as mob|obj)
 	if(isturf(loc))
@@ -74,3 +75,4 @@
 	weighEffect(fatty)
 	visible_message("<span class='notice'>[fatty] weighs themselves.</span>")
 	visible_message("<span class='notice'>The numbers on the screen settle on: [src.lastreading]Lbs.</span>")
+	visible_message("<span class='notice'>The numbers on the screen read out: [fatty] has a BFI of [fatness].</span>")
