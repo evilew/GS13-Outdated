@@ -62,6 +62,25 @@
 	if(digest_mode == DM_HOLD)
 		return SSBELLIES_PROCESSED
 
+///////////////////////////// DM_FATTEN /////////////////////////////
+	if(digest_mode == DM_FATTEN)
+		var/preys_fatness = 0
+		var/mob/living/carbon/predator = owner
+		if(iscarbon(predator))
+			for(var/mob/living/M in contents)
+				var/mob/living/carbon/prey = M
+				if(iscarbon(prey) && predator.fatness_real)
+					prey.adjust_fatness(predator.fatness_real * 0.01, FATTENING_TYPE_FOOD)
+					predator.adjust_fatness(-predator.fatness_real * 0.01, FATTENING_TYPE_FOOD)
+					predator.nutrition -= 5
+				preys_fatness += prey.fatness
+
+		if(!predator.fat_hider || predator.fat_hider == src)
+			if(preys_fatness > predator.fatness)
+				predator.fat_hide(preys_fatness, src)
+		if(predator.fat_hider != src)
+			predator.fat_show()		
+
 //////////////////////////// DM_DIGEST ////////////////////////////
 	else if(digest_mode == DM_DIGEST)
 		if(HAS_TRAIT(owner, TRAIT_PACIFISM)) //obvious.

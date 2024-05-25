@@ -6,6 +6,7 @@
 #define DM_DRAGON "Dragon"
 #define DM_ABSORB "Absorb"
 #define DM_UNABSORB "Un-absorb"
+#define DM_FATTEN "Fatten"
 
 #define isbelly(A) istype(A, /obj/belly)
 
