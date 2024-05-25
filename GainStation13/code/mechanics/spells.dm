@@ -85,6 +85,27 @@
 
 	user.adjust_fatness(-weight_to_add, FATTENING_TYPE_MAGIC)	
 
+/obj/effect/proc_holder/spell/aoe_turf/conjure/the_traps/fat
+	name = "Fat Traps!"
+	desc = "Summon a number of traps to fatten your enemies."
+	action_icon = 'GainStation13/icons/obj/structure/traps.dmi'
+	action_icon_state = "trap-fattening"
+
+	clothes_req = FALSE
+	summon_type = list(
+		/obj/structure/trap/fattening
+	)
+
+	summon_amt = 4
+
+/obj/effect/proc_holder/spell/aoe_turf/conjure/the_traps/fat/belch
+	name = "Belch Traps!"
+	desc = "Summon a number of traps to force your enemies to belch."
+	action_icon_state = "trap-belching"
+	summon_type = list(
+		/obj/structure/trap/belch
+	)
+
 ///Spellbooks
 /obj/item/book/granter/spell/fattening
 	name = "fattening tome"
@@ -108,3 +129,13 @@
 	spellname = "weight steal"
 	icon_state = "steal_weight"
 	desc = "This book feels warm to the touch."
+
+/obj/item/book/granter/spell/fattening/traps
+	name = "fattening trap tome"
+	spell = /obj/effect/proc_holder/spell/aoe_turf/conjure/the_traps/fat
+	spellname = "fattening traps"
+
+/obj/item/book/granter/spell/fattening/belch
+	name = "belch trap tome"
+	spell = /obj/effect/proc_holder/spell/aoe_turf/conjure/the_traps/fat/belch
+	spellname = "belch traps"
