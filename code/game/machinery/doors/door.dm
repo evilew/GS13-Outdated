@@ -175,6 +175,14 @@
 		return TRUE
 	if(unrestricted_side(M))
 		return TRUE
+	//GS13 EDIT
+	var/mob/living/carbon/human/bump_mob = M
+	if(check_fatness && istype(bump_mob))
+		if(check_below && (bump_mob.fatness >= fatness_to_check))
+			return FALSE
+		if(!check_below && (bump_mob.fatness < fatness_to_check))
+			return FALSE
+
 	return ..()
 
 /obj/machinery/door/proc/unrestricted_side(mob/M) //Allows for specific side of airlocks to be unrestrected (IE, can exit maint freely, but need access to enter)
