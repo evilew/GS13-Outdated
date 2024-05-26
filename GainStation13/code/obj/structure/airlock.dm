@@ -1,10 +1,10 @@
-/obj/machinery/door/airlock
+/obj/machinery/door
 	var/fatness_to_check = 0
 
 	var/check_fatness = FALSE
-	var/check_below = FALSE
+	var/check_fatness_below = FALSE
 
-/obj/machinery/door/airlock/proc/change_fatness_to_check(mob/user)
+/obj/machinery/door/proc/change_fatness_to_check(mob/user)
 	var/fatness_type = input(usr,
 		"What level of fatness do you wish to alert above/under at?",
 		src, "None") as null|anything in list(

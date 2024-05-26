@@ -3129,6 +3129,7 @@
 #include "GainStation13\code\obj\items\holy.dm"
 #include "GainStation13\code\obj\items\minor_items.dm"
 #include "GainStation13\code\obj\items\sensors\weight_infared.dm"
+#include "GainStation13\code\obj\structure\airlock.dm"
 #include "GainStation13\code\obj\structure\calorite_doors.dm"
 #include "GainStation13\code\obj\structure\candylight.dm"
 #include "GainStation13\code\obj\structure\fountain.dm"

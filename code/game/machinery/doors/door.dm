@@ -178,9 +178,9 @@
 	//GS13 EDIT
 	var/mob/living/carbon/human/bump_mob = M
 	if(check_fatness && istype(bump_mob))
-		if(check_below && (bump_mob.fatness >= fatness_to_check))
+		if(check_fatness_below && (bump_mob.fatness >= fatness_to_check))
 			return FALSE
-		if(!check_below && (bump_mob.fatness < fatness_to_check))
+		if(!check_fatness_below && (bump_mob.fatness < fatness_to_check))
 			return FALSE
 
 	return ..()
