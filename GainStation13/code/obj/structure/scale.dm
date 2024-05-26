@@ -71,8 +71,11 @@
 				weighperson(HM)
 
 /obj/structure/scale/proc/weighperson(mob/living/carbon/human/fatty)
-	src.lastreading = round((140 + (fatty.fatness*src.fatnessToWeight))*(fatty.size_multiplier**2)*((fatty.dna.features["taur"] != "None") ? 2.5: 1))
+	src.lastreading = fatty.calculate_weight_in_pounds() 
 	weighEffect(fatty)
 	visible_message("<span class='notice'>[fatty] weighs themselves.</span>")
 	visible_message("<span class='notice'>The numbers on the screen settle on: [src.lastreading]Lbs.</span>")
 	visible_message("<span class='notice'>The numbers on the screen read out: [fatty] has a BFI of [fatty.fatness].</span>")
+
+/mob/living/carbon/proc/calculate_weight_in_pounds()
+	return round((140 + (fatness*FATNESS_TO_WEIGHT_RATIO))*(size_multiplier**2)*((dna.features["taur"] != "None") ? 2.5: 1))
