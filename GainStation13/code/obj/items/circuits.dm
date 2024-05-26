@@ -1,5 +1,5 @@
 /obj/item/integrated_circuit/input/fat_scanner
-	name = "integrated body fat analyser"
+	name = "integrated body fat analyzer"
 	desc = "A very small version of the common medical analyser adjusted to scan a target's weight."
 	icon_state = "medscan"
 	complexity = 4
