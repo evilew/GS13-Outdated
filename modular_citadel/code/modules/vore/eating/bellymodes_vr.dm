@@ -70,9 +70,11 @@
 			for(var/mob/living/M in contents)
 				var/mob/living/carbon/prey = M
 				if(iscarbon(prey) && predator.fatness_real)
-					prey.adjust_fatness(predator.fatness_real * 0.01, FATTENING_TYPE_FOOD)
-					predator.adjust_fatness(-predator.fatness_real * 0.01, FATTENING_TYPE_FOOD)
-					predator.nutrition -= 5
+					if(predator.fatness_real > 50)
+						prey.adjust_fatness(predator.fatness_real * 0.02, FATTENING_TYPE_FOOD)
+						predator.adjust_fatness(-predator.fatness_real * 0.02, FATTENING_TYPE_FOOD)
+						if(predator.nutrition > NUTRITION_LEVEL_HUNGRY)
+							predator.nutrition -= 3
 				preys_fatness += prey.fatness
 
 		if(!predator.fat_hider || predator.fat_hider == src)

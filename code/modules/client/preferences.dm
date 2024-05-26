@@ -1059,6 +1059,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Weight Gain - Weapons:</b><a href='?_src_=prefs;preference=weight_gain_weapons'>[weight_gain_weapons == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Weight Gain - Magic:</b><a href='?_src_=prefs;preference=weight_gain_magic'>[weight_gain_magic == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Weight Gain - Viruses:</b><a href='?_src_=prefs;preference=weight_gain_viruses'>[weight_gain_viruses == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+
+			dat += "<h2>GS13 Gameplay Preferences</h2>"
+			dat += "<b>Stuckage (weight results in getting stuck in doors):</b><a href='?_src_=prefs;preference=stuckage'>[stuckage == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Extreme Weight Gain (Sprite Size scales with weight):</b><a href='?_src_=prefs;preference=weight_gain_extreme'>[weight_gain_extreme == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 
 			//Add the Hyper stuff below here
@@ -2628,6 +2631,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					weight_gain_extreme = !weight_gain_extreme
 				if("noncon_weight_gain")
 					noncon_weight_gain = !noncon_weight_gain
+				if("stuckage")
+					stuckage = !stuckage
 				if("max_fatness")
 					var/pickedweight = input(user,
 						"Choose your max fatness level, your weight will not go beyond this. None will let you gain without a limit",

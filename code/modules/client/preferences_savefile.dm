@@ -158,6 +158,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["wl_rate"] >> wl_rate
 	S["noncon_weight_gain"] >> noncon_weight_gain
 	S["max_weight"] >> max_weight 
+	S["stuckage"] >> stuckage
 
 
 	//try to fix any outdated data if necessfary
@@ -298,6 +299,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["wl_rate"], wl_rate)
 	WRITE_FILE(S["noncon_weight_gain"], noncon_weight_gain)
 	WRITE_FILE(S["max_weight"], max_weight)
+	WRITE_FILE(S["stuckage"], stuckage)
 
 	return 1
 

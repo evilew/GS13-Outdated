@@ -15,6 +15,8 @@
 	var/weight_gain_viruses = FALSE
 	///Extreme weight gain
 	var/weight_gain_extreme = FALSE
+	///stuckage
+	var/stuckage = FALSE
 
 	///Does the person wish to be involved with non-con weight gain events?
 	var/noncon_weight_gain = FALSE
