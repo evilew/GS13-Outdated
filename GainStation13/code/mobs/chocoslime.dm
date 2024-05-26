@@ -103,4 +103,6 @@
 		if(L.reagents)
 			if(!L.is_mouth_covered(head_only = 1))
 				L.reagents.add_reagent(food_fed, food_per_feeding)
+				if(HAS_TRAIT(L, TRAIT_VORACIOUS))
+					fullness_add = fullness_add * 0.67
 				L.fullness += (fullness_add)

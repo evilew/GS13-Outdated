@@ -119,6 +119,8 @@
 				spanstyle = "color:purple;"
 			if(DM_DRAGON)
 				spanstyle = "color:blue;"
+			if(DM_FATTEN)
+				spanstyle = "color:orange;"
 
 		dat += "<span style='[spanstyle]'> ([B.contents.len])</span></a></li>"
 

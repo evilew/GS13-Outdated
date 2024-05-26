@@ -140,6 +140,8 @@ All foods are distributed among various categories. Use common sense.
 			if(M.satiety > -200)
 				M.satiety -= junkiness
 			playsound(M.loc,'sound/items/eatfood.ogg', rand(10,50), 1)
+			if(HAS_TRAIT(M, TRAIT_VORACIOUS))
+				bitevolume = bitevolume * 0.67
 			M.fullness += bitevolume;
 			if(reagents.total_volume)
 				SEND_SIGNAL(src, COMSIG_FOOD_EATEN, M, user)

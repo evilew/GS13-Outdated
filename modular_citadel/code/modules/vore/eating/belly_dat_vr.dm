@@ -35,7 +35,7 @@
 	var/can_taste = FALSE					// If this belly prints the flavor of prey when it eats someone.
 
 	var/tmp/digest_mode = DM_HOLD			// Whether or not to digest. Default to not digest.
-	var/tmp/list/digest_modes = list(DM_HOLD,DM_DIGEST,DM_HEAL,DM_NOISY)	// Possible digest modes
+	var/tmp/list/digest_modes = list(DM_HOLD,DM_DIGEST,DM_HEAL,DM_NOISY, DM_FATTEN)	// Possible digest modes
 	var/tmp/mob/living/owner				// The mob whose belly this is.
 	var/tmp/list/internal_contents = list()	// People/Things you've eaten into this belly!
 	var/tmp/is_full							// Flag for if digested remeans are present. (for disposal messages)
