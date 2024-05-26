@@ -231,7 +231,7 @@
 
 /datum/quirk/voracious
 	name = "Voracious"
-	desc = "Nothing gets between you and your food. You eat twice as fast as everyone else!"
+	desc = "Nothing gets between you and your food. You eat twice as fast, get half as full and recover from stuffing twice as fast!"
 	value = 1
 	category = CATEGORY_FOOD
 	mob_trait = TRAIT_VORACIOUS

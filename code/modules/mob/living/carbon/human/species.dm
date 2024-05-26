@@ -1502,6 +1502,8 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		H.adjust_fatness(nutritionThatBecomesFat, FATTENING_TYPE_FOOD)
 	if(H.fullness > FULLNESS_LEVEL_EMPTY)//GS13 stomach-emptying routine
 		var/ticksToEmptyStomach = 20 // GS13 how many ticks it takes to decrease the fullness by 1
+		if(HAS_TRAIT(H, TRAIT_VORACIOUS))
+			ticksToEmptyStomach = ticksToEmptyStomach * 0.5
 		H.fullness -= 1/ticksToEmptyStomach
 	if (H.fullness > FULLNESS_LEVEL_BLOATED) //GS13 overeating depends on fullness now
 		if(H.overeatduration < 5000) //capped so people don't take forever to unfat
