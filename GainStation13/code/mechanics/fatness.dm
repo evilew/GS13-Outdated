@@ -124,3 +124,25 @@
 	xwg_size = min(xwg_size, RESIZE_HUGE)
 	xwg_size = max(xwg_size, custom_body_size*0.01)
 	resize(xwg_size)
+
+/proc/get_fatness_level_name(fatness_amount)
+	if(fatness_amount < FATNESS_LEVEL_FAT)
+		return "Normal"
+	if(fatness_amount < FATNESS_LEVEL_FATTER)
+		return "Fat"
+	if(fatness_amount < FATNESS_LEVEL_VERYFAT)
+		return "Fatter"
+	if(fatness_amount < FATNESS_LEVEL_OBESE)
+		return "Very Fat"
+	if(fatness_amount < FATNESS_LEVEL_MORBIDLY_OBESE)
+		return "Obese"
+	if(fatness_amount < FATNESS_LEVEL_EXTREMELY_OBESE)
+		return "Morbidly Obese"
+	if(fatness_amount < FATNESS_LEVEL_BARELYMOBILE)
+		return "Extremely Obese"
+	if(fatness_amount < FATNESS_LEVEL_IMMOBILE)
+		return "Barely Mobile"
+	if(fatness_amount < FATNESS_LEVEL_BLOB)
+		return "Immobile"
+
+	return "Blob"

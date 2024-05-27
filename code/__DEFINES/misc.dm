@@ -528,3 +528,5 @@ GLOBAL_LIST_INIT(lighter_reskins, list(ZIPPO_SKIN_PLAIN = "plain", ZIPPO_SKIN_DA
 #define FATTENING_TYPE_MAGIC "magic"
 #define FATTENING_TYPE_VIRUS "virus"
 #define FATTENING_TYPE_WEIGHT_LOSS "weight_loss" 
+
+#define FATNESS_TO_WEIGHT_RATIO 0.25
