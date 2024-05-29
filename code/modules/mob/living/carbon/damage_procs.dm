@@ -91,7 +91,10 @@
 		if(amount > 0)
 			blood_volume -= 3 * amount		//5x was too much, this is punishing enough.
 		else
-			blood_volume -= amount
+			if(blood_volume >= BLOOD_VOLUME_MAXIMUM) //if their blood level is already at safe amounts, turn the chemical into fatness rather than blood
+				adjust_fatness(-amount, FATTENING_TYPE_CHEM)
+			else
+				blood_volume -= amount
 	return ..()
 
 /mob/living/carbon/getStaminaLoss()
