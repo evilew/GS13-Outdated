@@ -198,7 +198,7 @@
 /datum/action/innate/split_body/IsAvailable()
 	if(..())
 		var/mob/living/carbon/human/H = owner
-		if(H.blood_volume >= BLOOD_VOLUME_SLIME_SPLIT)
+		if(H.blood_volume >= BLOOD_VOLUME_SLIME_SPLIT || H.fatness_real >= BLOOD_VOLUME_SLIME_SPLIT*0.45)
 			return 1
 		return 0
 
@@ -215,7 +215,7 @@
 	H.notransform = TRUE
 
 	if(do_after(owner, delay=60, needhand=FALSE, target=owner, progress=TRUE))
-		if(H.blood_volume >= BLOOD_VOLUME_SLIME_SPLIT)
+		if(H.blood_volume >= BLOOD_VOLUME_SLIME_SPLIT  || H.fatness_real >= BLOOD_VOLUME_SLIME_SPLIT*0.45)
 			make_dupe()
 		else
 			to_chat(H, "<span class='warning'>...but there is not enough of you to go around! You must attain more mass to split!</span>")
@@ -239,7 +239,10 @@
 	spare.domutcheck()
 	spare.Move(get_step(H.loc, pick(NORTH,SOUTH,EAST,WEST)))
 
-	H.blood_volume *= 0.45
+	if(H.fatness_real >= BLOOD_VOLUME_SLIME_SPLIT*0.45)
+		H.fatness_real -= BLOOD_VOLUME_SLIME_SPLIT*0.45
+	else
+		H.blood_volume *= 0.45
 	H.notransform = 0
 
 	var/datum/species/jelly/slime/origin_datum = H.dna.species
