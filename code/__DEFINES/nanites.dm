@@ -42,3 +42,7 @@
 #define NES_BUTTON_NAME "Button Name"
 #define NES_ICON "Icon"
 #define NES_COLOR "Color"
+
+//GS13 DEFINES
+#define NES_FATNESS "BFI"
+#define NES_FAT_GAIN_LOSS "Loss/Gain"

@@ -256,8 +256,8 @@
 	if(!sentence.get_value())
 		return
 	if(inclusive.get_value())
-		if(findtextEx(hearing_args[HEARING_RAW_MESSAGE], sentence))
+		if(findtext(hearing_args[HEARING_RAW_MESSAGE], sentence.get_value()))
 			send_code()
 	else
-		if(hearing_args[HEARING_RAW_MESSAGE] == sentence)
+		if(hearing_args[HEARING_RAW_MESSAGE] == sentence.get_value())
 			send_code()
