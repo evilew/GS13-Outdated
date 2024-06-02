@@ -3121,6 +3121,7 @@
 #include "GainStation13\code\modules\reagents\reagent_containers\barrel_tank.dm"
 #include "GainStation13\code\modules\research\designs\autolathe.dm"
 #include "GainStation13\code\modules\research\designs\nutri_designs.dm"
+#include "GainStation13\code\modules\research\nanites\nanite_programs\fattening.dm"
 #include "GainStation13\code\modules\research\techweb\nutritech_nodes.dm"
 #include "GainStation13\code\modules\surgery\organs\augments.dm"
 #include "GainStation13\code\modules\vending\gatocola.dm"
