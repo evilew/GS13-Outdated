@@ -26,8 +26,8 @@
 	response_help  = "pets"
 	response_disarm = "shoos"
 	response_harm   = "hits"
-	maxHealth = 20
-	health = 20
+	maxHealth = 200
+	health = 200
 	obj_damage = 0
 	melee_damage_lower = 0.001
 	melee_damage_upper = 0.001

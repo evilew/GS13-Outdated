@@ -173,8 +173,8 @@
 	name = "Clogged Vents: Fattening Chems"
 	typepath = /datum/round_event/vent_clog_fat
 	weight = 8
-	max_occurrences = 1
-	min_players = 10
+	max_occurrences = 3
+	min_players = 6
 
 /datum/round_event/vent_clog_fat
 	announceWhen	= 1
@@ -184,7 +184,7 @@
 	var/list/vents2  = list()
 	var/randomProbability2 = 1
 	var/reagentsAmount2 = 100
-	var/list/saferChems2 = list(		
+	var/list/fatchems = list(		
 		/datum/reagent/consumable/lipoifier,
 		/datum/reagent/consumable/nutriment,
 	)
@@ -225,7 +225,7 @@
 	if (prob(randomProbability2))
 		R.add_reagent(get_random_reagent_id(), reagentsAmount2)
 	else
-		R.add_reagent(pick(saferChems2), reagentsAmount2)
+		R.add_reagent(pick(fatchems), reagentsAmount2)
 
 	var/datum/effect_system/smoke_spread/chem/smoke_machine/C = new
 	C.set_up(R,16,1,T)

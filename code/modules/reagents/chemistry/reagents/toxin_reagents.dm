@@ -625,7 +625,7 @@
 	if(HAS_TRAIT(M, TRAIT_LIPOLICIDE_TOLERANCE)) //GS13 edit
 		M.adjust_fatness(-0.5, FATTENING_TYPE_WEIGHT_LOSS)
 	else
-		M.adjust_fatness(-5, FATTENING_TYPE_WEIGHT_LOSS)
+		M.adjust_fatness(-10, FATTENING_TYPE_WEIGHT_LOSS)
 
 	M.overeatduration = 0
 	return ..()
