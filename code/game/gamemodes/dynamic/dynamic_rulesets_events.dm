@@ -528,19 +528,19 @@
 // 	occurances_max = 2
 // 	chaos_min = 1.0
 
-// /datum/dynamic_ruleset/event/radiation_storm //commented out by GS13
-// 	name = "Radiation Storm"
-// 	//config_tag = "radiation_storm"
-// 	typepath = /datum/round_event/radiation_storm
-// 	cost = 6
-// 	weight = 0
-// 	repeatable_weight_decrease = 1
-// 	enemy_roles = list("Chemist","Chief Medical Officer","Geneticist","Medical Doctor")
-// 	required_enemies = list(2,2,2,2,1,1,1,1,1,0)
-// 	requirements = list(5,5,5,5,5,5,5,5,5,5)
-// 	high_population_requirement = 100
-// 	//property_weights = list("extended" = 1,"chaos" = 1)
-// 	occurances_max = 0
+/datum/dynamic_ruleset/event/radiation_storm //pls keep this disabled, it fucking sucks on long rounds
+	name = "Radiation Storm"
+	//config_tag = "radiation_storm"
+	typepath = /datum/round_event/radiation_storm
+	cost = 600000
+	weight = 0
+	repeatable_weight_decrease = 1
+	enemy_roles = list("Chemist","Chief Medical Officer","Geneticist","Medical Doctor")
+	required_enemies = list(2,2,2,2,1,1,1,1,1,0)
+	requirements = list(5,5,5,5,5,5,5,5,5,5)
+	high_population_requirement = 1000
+	//property_weights = list("extended" = 1,"chaos" = 1)
+	occurances_max = 0
 
 
 /datum/dynamic_ruleset/event/portal_storm_syndicate
