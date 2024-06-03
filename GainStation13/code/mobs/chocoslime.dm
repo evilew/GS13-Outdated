@@ -26,8 +26,8 @@
 	response_help  = "pets"
 	response_disarm = "shoos"
 	response_harm   = "hits"
-	maxHealth = 200
-	health = 200
+	maxHealth = 100
+	health = 100
 	obj_damage = 0
 	melee_damage_lower = 0.001
 	melee_damage_upper = 0.001
@@ -52,13 +52,11 @@
 /mob/living/simple_animal/hostile/feed/chocolate_slime/creambeast
 	name = "Creambeast"
 	desc = "A strange mass of thick, creamy ice cream given some sense of instinct."
-	icon = 'GainStation13/icons/mob/candymonster.dmi'
 	icon_state = "icecream_monster"
 	icon_living = "icecream_monster"
 	icon_dead = "icecream_monster_dead"
 	icon_gib = "icecream_monster_dead"
-	mob_biotypes = MOB_ORGANIC|MOB_BEAST
-	move_to_delay = 20
+	move_to_delay = 10
 	projectiletype = /obj/item/projectile/energy/fattening/icecream
 	projectilesound = 'sound/weapons/pierce.ogg'
 	ranged = 1
@@ -69,11 +67,6 @@
 	maxHealth = 100
 	health = 100
 	obj_damage = 0
-	melee_damage_lower = 0.001
-	melee_damage_upper = 0.001
-	speak_emote = list("schlorps")
-	attacktext = "stuffs itself into"
-	attack_sound = 'sound/items/eatfood.ogg'
 	vision_range = 2
 	aggro_vision_range = 9
 	turns_per_move = 5
@@ -91,10 +84,9 @@
 	hitsound_wall = 'sound/weapons/tap.ogg'
 	is_reflectable = FALSE
 	light_range = 0
-	///How much fat is added to the target mob?
 	var/food_per_feeding = 5
 	var/food_fed = /datum/reagent/consumable/nutriment
-	var/fullness_add = 10
+	var/fullness_add = 30
 
 /obj/item/projectile/energy/fattening/icecream/on_hit(atom/target, blocked)
 	. = ..()

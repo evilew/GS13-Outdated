@@ -3092,6 +3092,7 @@
 #include "GainStation13\code\machinery\feeding_tube.dm"
 #include "GainStation13\code\mechanics\fatness.dm"
 #include "GainStation13\code\mechanics\fattening_trap.dm"
+#include "GainStation13\code\mechanics\infestation.dm"
 #include "GainStation13\code\mechanics\spells.dm"
 #include "GainStation13\code\mechanics\wand.dm"
 #include "GainStation13\code\mechanics\web_weaving.dm"
