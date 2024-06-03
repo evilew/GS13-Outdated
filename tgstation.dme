@@ -3077,6 +3077,7 @@
 #include "GainStation13\code\clothing\head.dm"
 #include "GainStation13\code\clothing\suits.dm"
 #include "GainStation13\code\datums\components\fattening_door.dm"
+#include "GainStation13\code\datums\diseases\advance\symptoms\berry.dm"
 #include "GainStation13\code\datums\mutations\fatfang.dm"
 #include "GainStation13\code\datums\status_effects\fatstun.dm"
 #include "GainStation13\code\game\lore_papers.dm"
