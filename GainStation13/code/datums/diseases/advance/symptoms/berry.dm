@@ -19,7 +19,7 @@
 	if(!..())
 		return
 	if(A.affected_mob?.client?.prefs?.blueberry_inflation)
-		A.affected_mob.reagents.add_reagent(infection_reagent, max(1, A.properties["stage_rate"]) * 10)
+		A.affected_mob.reagents.add_reagent(infection_reagent, max(1, A.totalStageSpeed()) * 10)
 	..()
 
 /datum/symptom/berry/Activate(datum/disease/advance/A)
@@ -36,7 +36,7 @@
 				to_chat(M, "<span class='warning'>[pick("You feel oddly full...", "Your stomach churns...", "You hear a gurgle...", "You taste berries...")]</span>")
 		else
 			to_chat(M, "<span class='warning'><i>[pick("A deep slosh comes from inside you...", "Your mind feels so light...", "You think blue really suits you...", "Your skin feels so tight...")]</i></span>")
-			M.reagents.add_reagent(infection_reagent, max(A.properties["stage_rate"], 1))
+			M.reagents.add_reagent(infection_reagent, max(A.totalStageSpeed(), 1))
 
 /datum/reagent/berry_juice_infection
 	name = "Blueberry Juice"
@@ -53,7 +53,7 @@
 /datum/reagent/berry_juice_infection/on_mob_add(mob/living/L, amount)
 	if(iscarbon(L))
 		var/mob/living/carbon/affected_mob = L
-		if(!(affected_mob?.client?.prefs?.blueberry_inflation))
+		if(affected_mob?.client && !(affected_mob?.client?.prefs?.blueberry_inflation))
 			affected_mob.reagents.remove_reagent(/datum/reagent/berry_juice_infection, volume)
 			return
 		picked_color = pick(random_color_list)
@@ -63,7 +63,7 @@
 	..()
 
 /datum/reagent/berry_juice_infection/on_mob_life(mob/living/carbon/M)
-	if(!(M?.client?.prefs?.blueberry_inflation))
+	if(M?.client && !(M?.client?.prefs?.blueberry_inflation))
 		M.reagents.remove_reagent(/datum/reagent/berry_juice_infection, volume)
 		return
 	if(!no_mob_color)
