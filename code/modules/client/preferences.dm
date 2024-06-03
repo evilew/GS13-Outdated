@@ -895,8 +895,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Honey</a>"
 							if(/datum/reagent/consumable/nutriment)
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Nutriment</a>"
-							if(/datum/reagent/berry_juice_infection)
-								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Berry Juice</a>"
 							else
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Nothing?</a>"
 							//This else is a safeguard for errors, and if it happened, they wouldn't be able to change this pref,
@@ -946,8 +944,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Strawberry Milk</a>"
 							if(/datum/reagent/consumable/nutriment)
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Nutriment</a>"
-							if(/datum/reagent/berry_juice_infection)
-								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Berry Juice</a>"
 							else
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Nothing?</a>"
 							//This else is a safeguard for errors, and if it happened, they wouldn't be able to change this pref,
@@ -1063,7 +1059,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Weight Gain - Weapons:</b><a href='?_src_=prefs;preference=weight_gain_weapons'>[weight_gain_weapons == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Weight Gain - Magic:</b><a href='?_src_=prefs;preference=weight_gain_magic'>[weight_gain_magic == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Weight Gain - Viruses:</b><a href='?_src_=prefs;preference=weight_gain_viruses'>[weight_gain_viruses == TRUE ? "Enabled" : "Disabled"]</a><BR>"
-			dat += "<b>Blueberry Inflation:</b><a href='?_src_=prefs;preference=blueberry_inflation'>[blueberry_inflation == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 
 			dat += "<h2>GS13 Gameplay Preferences</h2>"
 			dat += "<b>Stuckage (weight results in getting stuck in doors):</b><a href='?_src_=prefs;preference=stuckage'>[stuckage == TRUE ? "Enabled" : "Disabled"]</a><BR>"
@@ -2396,8 +2391,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							features["balls_fluid"] = /datum/reagent/consumable/pinkmilk
 						if("Nutriment")
 							features["balls_fluid"] = /datum/reagent/consumable/nutriment
-						if("Berry Juice")
-							features["balls_fluid"] = /datum/reagent/berry_juice_infection
 
 				if("egg_size")
 					var/new_size
@@ -2445,8 +2438,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							features["breasts_fluid"] = /datum/reagent/consumable/pinkmilk
 						if("Nutriment")
 							features["breasts_fluid"] = /datum/reagent/consumable/nutriment
-						if("Berry Juice")
-							features["breasts_fluid"] = /datum/reagent/berry_juice_infection
 
 				if("breasts_color")
 					var/new_breasts_color = input(user, "Breast Color:", "Character Preference", "#"+features["breasts_color"]) as color|null
@@ -2642,8 +2633,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					noncon_weight_gain = !noncon_weight_gain
 				if("stuckage")
 					stuckage = !stuckage
-				if("blueberry_inflation")
-					blueberry_inflation = !blueberry_inflation
 				if("max_fatness")
 					var/pickedweight = input(user,
 						"Choose your max fatness level, your weight will not go beyond this. None will let you gain without a limit",

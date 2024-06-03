@@ -159,7 +159,6 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["noncon_weight_gain"] >> noncon_weight_gain
 	S["max_weight"] >> max_weight 
 	S["stuckage"] >> stuckage
-	S["blueberry_inflation"] >> blueberry_inflation
 
 
 	//try to fix any outdated data if necessfary
@@ -301,7 +300,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["noncon_weight_gain"], noncon_weight_gain)
 	WRITE_FILE(S["max_weight"], max_weight)
 	WRITE_FILE(S["stuckage"], stuckage)
-	WRITE_FILE(S["blueberry_inflation"], blueberry_inflation)
+
 	return 1
 
 
