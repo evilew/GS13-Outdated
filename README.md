@@ -2,12 +2,11 @@
 
 Based and maintained from Citadel Station, Hyperstation, and others. 
 
-Discord: [Here](https://discord.gg/s9ZSjSbf)
+Discord: [Here](https://discord.gg/HHxHm6F)
 
 ## Warning you will need Byond Compiler [513.1525] or higher to compile the source code.
 
 [![forinfinityandbyond](https://user-images.githubusercontent.com/5211576/29499758-4efff304-85e6-11e7-8267-62919c3688a9.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
-
 
 **Hyper Station Information**  
 **Website:** http://hyperstation13.com  
@@ -115,7 +114,6 @@ https://github.com/tgstation/tgstation-server
 * [BoxStation (default)](http://tgstation13.org/wiki/Boxstation)
 * [MetaStation](https://tgstation13.org/wiki/MetaStation)
 * [DeltaStation](https://tgstation13.org/wiki/DeltaStation)
-* [OmegaStation](https://tgstation13.org/wiki/OmegaStation)
 * [PubbyStation](https://tgstation13.org/wiki/PubbyStation)
 
 
