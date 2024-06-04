@@ -113,6 +113,7 @@ GLOBAL_LIST_INIT(maintenance_loot, list(
 	/obj/item/storage/pill_bottle/breast_enlargement = 2,
 	/obj/item/trash/fatoray_scrap1 = 1, //GS13 - added for researching fat guns
 	/obj/item/trash/fatoray_scrap2 = 1, //GS13
+	/obj/item/trash/odd_disk = 1, //GS13
 	/obj/item/clothing/shoes/wheelys = 1,
 	/obj/item/clothing/shoes/kindleKicks = 1,
 	/obj/item/autosurgeon/penis = 1,

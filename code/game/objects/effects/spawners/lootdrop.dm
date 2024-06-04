@@ -76,6 +76,7 @@
 			/obj/item/trash/candy = 1,
 			/obj/item/trash/fatoray_scrap1 = 1, // GS13
 			/obj/item/trash/fatoray_scrap2 = 1,
+			/obj/item/trash/odd_disk = 1,
 			/obj/item/trash/chips = 1,
 			/obj/item/reagent_containers/food/snacks/deadmouse = 1,
 			/obj/item/trash/pistachios = 1,
