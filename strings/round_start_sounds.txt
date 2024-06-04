@@ -37,3 +37,6 @@ sound/music/davesprite.ogg
 sound/music/byebyethere.ogg
 sound/music/nuclear_mission_jam.ogg
 sound/music/messagesfromthestars.ogg
+sound/music/whirling_in_rags.ogg
+sound/music/totally_transcendent.ogg
+sound/music/precinct_41.ogg

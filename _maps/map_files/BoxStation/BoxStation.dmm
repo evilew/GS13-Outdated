@@ -3337,7 +3337,7 @@
 "bmX" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on{dir = 1},/obj/machinery/light/small,/obj/effect/turf_decal/stripes/line,/turf/open/floor/plasteel,/area/storage/tools)
 "bmY" = (/obj/effect/turf_decal/stripes/line,/turf/open/floor/plasteel,/area/storage/tools)
 "bmZ" = (/obj/structure/reagent_dispensers/fueltank,/obj/effect/turf_decal/stripes/line{dir = 6},/turf/open/floor/plasteel,/area/storage/tools)
-"bna" = (/obj/machinery/light{dir = 8},/obj/effect/turf_decal/loading_area{dir = 4; icon_state = "drain"; name = "drain"},/obj/item/twohanded/required/kirbyplants{icon_state = "plant-10"},/turf/open/floor/carpet/black,/area/crew_quarters/bar)
+"bna" = (/obj/machinery/light{dir = 8},/obj/effect/turf_decal/loading_area{dir = 4; icon_state = "drain"; name = "drain"},/obj/machinery/jukebox,/turf/open/floor/carpet/black,/area/crew_quarters/bar)
 "bnb" = (/obj/effect/turf_decal/loading_area{dir = 8; icon_state = "drain"; name = "drain"},/turf/open/floor/carpet/black,/area/crew_quarters/bar)
 "bnc" = (/obj/item/ashtray,/obj/structure/table/plasmaglass,/turf/open/floor/carpet/black,/area/crew_quarters/bar)
 "bnd" = (/obj/structure/table/plasmaglass,/turf/open/floor/carpet/black,/area/crew_quarters/bar)

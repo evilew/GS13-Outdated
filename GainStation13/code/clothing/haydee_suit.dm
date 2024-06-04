@@ -4,7 +4,7 @@
 	icon = 'GainStation13/icons/obj/clothing/haydee_modular.dmi'
 	alternate_worn_icon = 'GainStation13/icons/obj/clothing/haydee_modular.dmi'
 	icon_state = "haydee_helmet"
-	item_state = "haydee_helmet"
+	item_state = "item_haydee_helmet"
 	armor = list("melee" = 10, "bullet" = 5, "laser" = 10, "energy" = 5, "bomb" = 0, "bio" = 0, "rad" = 25, "fire" = 25, "acid" = 25)
 	item_color = "white"
 	slowdown = 0
@@ -17,7 +17,7 @@
 	icon = 'GainStation13/icons/obj/clothing/haydee_modular.dmi'
 	alternate_worn_icon = 'GainStation13/icons/obj/clothing/haydee_modular.dmi'
 	icon_state = "haydee_suit1"
-	item_state = "haydee_suit1"
+	item_state = "item_haydee"
 	armor = list("melee" = 10, "bullet" = 5, "laser" = 10, "energy" = 5, "bomb" = 10, "bio" = 0, "rad" = 25, "fire" = 25, "acid" = 25)
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals)
 	actions_types = list(/datum/action/item_action/toggle_helmet)
