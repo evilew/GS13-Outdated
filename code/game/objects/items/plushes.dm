@@ -1062,6 +1062,12 @@
 	item_state = "oliver"
 	attack_verb = list("chomped", "bit")
 
+/obj/item/toy/plush/chloe
+	desc = "A plush of a chunky red-haired botanist."
+	icon_state = "chloe"
+	item_state = "chloe"
+	attack_verb = list("squished", "hugged", "smushed")
+
 /obj/item/toy/plush/mammal/fox
 	icon_state = "fox"
 	item_state = "fox"
