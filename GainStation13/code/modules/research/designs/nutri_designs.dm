@@ -181,6 +181,8 @@
 	recharge_time = 3
 	accepts_reagent_upgrades = FALSE
 	reagent_ids = list(/datum/reagent/consumable/cream, /datum/reagent/consumable/milk, /datum/reagent/consumable/nutriment)
+	var/starttime = 0
+	var/chemtoadd = 5
 
 /obj/item/reagent_containers/borghypo/feeding_tube/attack(mob/living/carbon/M, mob/user)
 	var/datum/reagents/R = reagent_list[mode]
@@ -190,13 +192,22 @@
 	if(!istype(M))
 		return
 	if(R.total_volume && M.can_inject(user, 1, user.zone_selected,bypass_protection))
-		to_chat(M, "<span class='warning'>You feel the cyborg's feeding tube pour liquid down your throat!</span>")
-		to_chat(user, "<span class='notice'>You feed [M] with the integrated feeding tube.</span>")
-		var/fraction = min(amount_per_transfer_from_this/R.total_volume, 1)
-		R.reaction(M, INJECT, fraction)
-		if(M.reagents)
-			var/trans = R.trans_to(M, amount_per_transfer_from_this)
-			to_chat(user, "<span class='notice'>[trans] unit\s injected.  [R.total_volume] unit\s remaining.</span>")
+	
+		if(M == user.pulling && ishuman(user.pulling))
+			starttime = world.time
+			while(starttime + 300 > world.time && in_range(user, M))
+				if(do_mob(user, M, 10, 0, 1))
+					M.reagents.add_reagent(/datum/reagent/consumable/nutriment, chemtoadd)
+					M.visible_message("<span class='danger'>[user] pumps some liquid in [M]!</span>","<span class='userdanger'>[user] pumps some liquid in you!</span>")
+		else
+			to_chat(M, "<span class='warning'>You feel the cyborg's feeding tube pour liquid down your throat!</span>")
+			to_chat(user, "<span class='warning'>You feed [M] with the integrated feeding tube.</span>")
+			visible_message("<span class='warning'>The cyborg's feeding tube pours liquid down [M]'s throat!</span>")
+			var/fraction = min(amount_per_transfer_from_this/R.total_volume, 1)
+			R.reaction(M, INJECT, fraction)
+			if(M.reagents)
+				var/trans = R.trans_to(M, amount_per_transfer_from_this)
+				to_chat(user, "<span class='notice'>[trans] unit\s injected.  [R.total_volume] unit\s remaining.</span>")
 
 /obj/item/reagent_containers/borghypo/feeding_tube/regenerate_reagents()
 	if(iscyborg(src.loc))

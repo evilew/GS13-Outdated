@@ -110,3 +110,12 @@
 	if(!no_mob_color)
 		M.add_atom_colour(pick(random_color_list), WASHABLE_COLOUR_PRIORITY)
 	..()
+
+
+// /obj/item/reagent_containers/food/snacks/meat/steak/troll
+// 	name = "Troll steak"
+// 	desc = "In its sliced state it remains dormant, but once the troll meat comes in contact with stomach acids, it begins a perpetual cycle of constant regrowth and digestion. You probably shouldn't eat this."
+// 	var/hunger_threshold = NUTRITION_LEVEL_FULL
+// 	var/nutrition_amount = 20 // somewhere around 5 pounds
+// 	var/fullness_to_add = 10
+// 	var/message = "<span class='notice'>You feel fuller...</span>" // GS13

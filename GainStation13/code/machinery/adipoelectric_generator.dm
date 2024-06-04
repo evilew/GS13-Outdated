@@ -34,7 +34,7 @@
 
 /obj/machinery/power/adipoelectric_generator/process()
 	if(!occupant)
-		src.visible_message("<span class='alert'>The [src] buzzes. It needs someon inside.</span>")
+		src.visible_message("<span class='alert'>The [src] buzzes. It needs someone inside.</span>")
 		playsound(src, 'sound/machines/buzz-two.ogg', 50)
 		return PROCESS_KILL
 	if(occupant:fatness_real > 0 && powernet && anchored && (emp_timer < world.time))
