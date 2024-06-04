@@ -16,7 +16,7 @@
 	display_name = "Nutri-Tech Weapons"
 	description = "Ever wanted to reach your daily caloric intake in just 5 seconds?"
 	prereq_ids = list("biotech", "adv_engi")
-	design_ids = list("fatoray_weak", "fatoray_cannon_weak", "alter_ray_metabolism", "alter_ray_reverser", "borg_upgrade_fatoray")
+	design_ids = list("fatoray_weak", "fatoray_cannon_weak", "alter_ray_metabolism", "alter_ray_reverser", "borg_upgrade_fatoray", "bwomf_nanites")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5000)
 	boost_item_paths = list(/obj/item/gun/energy/fatoray, /obj/item/gun/energy/fatoray/cannon, /obj/item/trash/fatoray_scrap1, /obj/item/trash/fatoray_scrap2)
 	export_price = 10000

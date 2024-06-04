@@ -157,3 +157,9 @@
 	else
 		icon_state = "sign_closed"
 		desc = "A sign that reads 'closed'"
+
+/obj/item/trash/odd_disk
+	name = "odd disk"
+	icon = 'icons/obj/module.dmi'
+	icon_state = "datadisk0"
+	desc = "A dusty disk, desconstruction will be needed to recover data."

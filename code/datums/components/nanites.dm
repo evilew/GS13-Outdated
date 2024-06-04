@@ -252,7 +252,7 @@
 	nanite_volume = CLAMP(amount, 0, max_nanites)
 
 /datum/component/nanites/proc/set_max_volume(datum/source, amount)
-	max_nanites = max(1, max_nanites)
+	max_nanites = max(1, amount)
 
 /datum/component/nanites/proc/set_cloud(datum/source, amount)
 	cloud_id = CLAMP(amount, 0, 100)

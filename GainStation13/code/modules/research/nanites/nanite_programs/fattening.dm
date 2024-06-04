@@ -109,3 +109,53 @@
 	id = "fat_adjuster_nanites"
 	program_type = /datum/nanite_program/fat_adjuster
 	category = list("Medical Nanites")
+
+/datum/nanite_program/fat_converter
+	name = "Adipose Conversion"
+	desc = "Nanites learn to convert excess body mass to replicate."
+	rogue_types = list(/datum/nanite_program/necrotic)
+
+/datum/nanite_program/fat_converter/check_conditions()
+	if(iscarbon(host_mob))
+		var/mob/living/carbon/C = host_mob
+		if(C.fatness_real <= 0 || nanites.nanite_volume >= nanites.max_nanites)
+			return FALSE
+	else
+		return FALSE
+	return ..()
+
+/datum/nanite_program/fat_converter/active_effect()
+	if(iscarbon(host_mob))
+		var/mob/living/carbon/C = host_mob
+		if(C.fatness_real > 0 && nanites.nanite_volume < nanites.max_nanites)
+			nanites.adjust_nanites(src, min(round(C.fatness_real), 5))
+			C.adjust_fatness(-(min(round(C.fatness_real), 5)), FATTENING_TYPE_WEIGHT_LOSS)
+
+/datum/design/nanites/fat_converter
+	name = "Adipose Conversion"
+	desc = "The nanites use fat to replicate quickly."
+	id = "fat_converter_nanites"
+	program_type = /datum/nanite_program/fat_converter
+	category = list("Medical Nanites")
+
+/datum/nanite_program/bwomf
+	name = "B.W.O.M.F." //Body Widening Operation for Mass Fattening
+	desc = "Nanites remains on standy-by, massively increasing the host's mass on trigger.."
+	unique = FALSE
+	can_trigger = TRUE
+	trigger_cost = 50
+	trigger_cooldown = 50
+	rogue_types = list(/datum/nanite_program/toxic)
+
+/datum/nanite_program/bwomf/on_trigger(comm_message)
+	if(iscarbon(host_mob))
+		var/mob/living/carbon/C = host_mob
+		C.adjust_fatness(100, FATTENING_TYPE_ITEM)
+		to_chat(C, "<span class='warning'>[pick("Your belly expands quickly!", "Fat envelops you further!", "Lard grows all over you!")]</span>")
+
+/datum/design/nanites/bwomf
+	name = "B.W.O.M.F."
+	desc = "Massively increase host's mass on trigger."
+	id = "bwomf_nanites"
+	program_type = /datum/nanite_program/bwomf
+	category = list("Medical Nanites")
