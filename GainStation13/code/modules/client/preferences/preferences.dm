@@ -13,6 +13,8 @@
 	var/weight_gain_magic = FALSE
 	///Weight gain from viruses
 	var/weight_gain_viruses = FALSE
+	///Weight gain from nanites
+	var/weight_gain_nanites = FALSE
 	///Blueberry Inflation
 	var/blueberry_inflation = FALSE
 	///Extreme weight gain
