@@ -98,7 +98,7 @@
 		var/mob/living/carbon/C = host_mob
 		if(BFI.get_value() > 0)
 			if(consume_nanites(BFI.get_value()))
-				C.adjust_fatness(BFI.get_value(), FATTENING_TYPE_ITEM)
+				C.adjust_fatness(BFI.get_value(), FATTENING_TYPE_NANITES)
 		else
 			if(consume_nanites(-(BFI.get_value())))
 				C.adjust_fatness(BFI.get_value(), FATTENING_TYPE_WEIGHT_LOSS)
@@ -150,7 +150,7 @@
 /datum/nanite_program/bwomf/on_trigger(comm_message)
 	if(iscarbon(host_mob))
 		var/mob/living/carbon/C = host_mob
-		C.adjust_fatness(100, FATTENING_TYPE_ITEM)
+		C.adjust_fatness(100, FATTENING_TYPE_NANITES)
 		to_chat(C, "<span class='warning'>[pick("Your belly expands quickly!", "Fat envelops you further!", "Lard grows all over you!")]</span>")
 
 /datum/design/nanites/bwomf
