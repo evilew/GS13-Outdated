@@ -217,7 +217,7 @@ datum/gear/lyricalpawsring
 	name = "Chloe Plush"
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/toy/plush/chloe
-	ckeywhitelist = list("Alphas0")
+	ckeywhitelist = list("alphas0")
 
 /datum/gear/grimmy_coat
 	name = "Overcoat of the Destitute"
