@@ -3097,6 +3097,7 @@
 #include "GainStation13\code\mechanics\metal_cruncher.dm"
 #include "GainStation13\code\mechanics\spells.dm"
 #include "GainStation13\code\mechanics\wand.dm"
+#include "GainStation13\code\mechanics\water_sponge.dm"
 #include "GainStation13\code\mechanics\web_weaving.dm"
 #include "GainStation13\code\mechanics\den abductors\console.dm"
 #include "GainStation13\code\mechanics\den abductors\purchaseble_goodies.dm"

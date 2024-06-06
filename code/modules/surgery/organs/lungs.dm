@@ -102,6 +102,7 @@
 
 /obj/item/organ/lungs/proc/check_breath(datum/gas_mixture/breath, mob/living/carbon/human/H)
 //TODO: add lung damage = less oxygen gains
+	H.water_check(breath)	//GS13 Water Sponge quirk
 	var/breathModifier = (5-(5*(damage/maxHealth)/2)) //range 2.5 - 5
 	if((H.status_flags & GODMODE))
 		return

@@ -42,14 +42,9 @@
 	if(client?.prefs?.max_weight) // GS13
 		fatness_real = min(fatness_real, (client?.prefs?.max_weight - 1))
 
-	if(fat_hiders)	//If a character's real fatness is being hidden
-		var/fatness_over = hiders_calc() //calculate the sum of all hiders
-		if(client?.prefs?.max_weight) //Check their prefs
-			fatness_over = min(fatness_over, (client?.prefs?.max_weight - 1)) //And make sure it's not above their preferred max
+	fatness = fatness_real //Make their current fatness their real fatness
 
-		fatness = fatness_real + fatness_over //Then, make their current fatness the sum of their real plus/minus the calculated amount
-	else			//If it's not being hidden
-		fatness = fatness_real //Make their current fatness their real fatness
+	hiders_apply()	//Check and apply hiders
 
 	if(client?.prefs?.weight_gain_extreme)
 		xwg_resize()
@@ -122,7 +117,7 @@
 
 /mob/living/carbon/proc/hiders_calc()
 	var/hiders_value = 0
-	for(var/hider in fat_hiders)
+	for(var/hider in fat_hiders)	
 		var/hide_values = hider:fat_hide(src)
 		if(!islist(hide_values))
 			hiders_value += hide_values
@@ -130,6 +125,15 @@
 			for(var/hide_value in hide_values)
 				hiders_value += hide_value
 	return hiders_value
+
+/mob/living/carbon/proc/hiders_apply()
+	if(fat_hiders) //do we have any hiders active?
+		var/fatness_over = hiders_calc() //calculate the sum of all hiders
+		if(client?.prefs?.max_weight) //Check their prefs
+			fatness_over = min(fatness_over, (client?.prefs?.max_weight - 1)) //And make sure it's not above their preferred max
+		fatness = fatness_real + fatness_over //Then, make their current fatness the sum of their real plus/minus the calculated amount
+		if(client?.prefs?.weight_gain_extreme)
+			xwg_resize()
 
 /mob/living/carbon/proc/xwg_resize()
 	var/xwg_size = sqrt(fatness/FATNESS_LEVEL_BLOB)
@@ -158,3 +162,7 @@
 		return "Immobile"
 
 	return "Blob"
+
+/mob/living/carbon/human/handle_breathing(times_fired)
+	. = ..()
+	hiders_apply()
