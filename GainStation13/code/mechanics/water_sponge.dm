@@ -49,3 +49,36 @@
 			reagents.add_reagent(/datum/reagent/water, H2O_pp/10)
 			breath_gases[/datum/gas/water_vapor] -= H2O_pp
 
+/obj/structure/sink
+	var/mob/living/attached
+
+/obj/structure/sink/MouseDrop(mob/living/target)
+	. = ..()
+	if(!ishuman(usr) || !usr.canUseTopic(src, BE_CLOSE) || !isliving(target))
+		return
+	if(attached)
+		visible_message("<span class='warning'>[attached] is detached from [src].</span>")
+		attached = null
+		return
+	if(Adjacent(target) && usr.Adjacent(target))
+		usr.visible_message("<span class='warning'>[usr] attaches [target] to [src].</span>", "<span class='notice'>You attach [target] to [src].</span>")
+		add_fingerprint(usr)
+		attached = target
+		START_PROCESSING(SSobj, src)
+	
+/obj/structure/sink/process()
+	if(!(get_dist(src, attached) <= 1 && isturf(attached.loc)))
+		to_chat(attached, "<span class='userdanger'>[attached] is ripped from the sink!</span>") // GS13
+		attached = null
+		return PROCESS_KILL
+	if(attached)
+		playsound(attached, 'sound/vore/pred/swallow_02.ogg', rand(10,50), 1)
+		attached.reagents.add_reagent(/datum/reagent/water, 5)
+	else
+		return PROCESS_KILL
+	
+/obj/structure/sink/attack_hand(mob/living/user)
+	if(attached)
+		visible_message("[attached] is detached from [src]")
+		attached = null
+		return
