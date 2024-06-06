@@ -16,10 +16,10 @@
 /obj/item/ammo_casing/energy/fattening
 	name = "fattening weapon lens"
 	select_name = "fatten"
-	projectile_type = /obj/item/projectile/energy/fattening
+	projectile_type = /obj/item/projectile/beam/fattening
 
 ///The base projectile used by the fatoray
-/obj/item/projectile/energy/fattening
+/obj/item/projectile/beam/fattening
 	name = "fat energy"
 	icon = 'GainStation13/icons/obj/fatoray.dmi'
 	icon_state = "ray"
@@ -27,12 +27,12 @@
 	ricochet_chance = 80
 	hitsound = 'sound/weapons/sear.ogg'
 	hitsound_wall = 'sound/weapons/effects/searwall.ogg'
-	is_reflectable = TRUE
+	damage = 0
+	eyeblur = 0
+	damage_type = BURN
+	flag = "energy"
 	light_range = 2
 	light_color = LIGHT_COLOR_ORANGE
-	ricochets_max = 50
-	ricochet_chance = 80
-	is_reflectable = TRUE
 	///How much fat is added to the target mob?
 	var/fat_added = 100
 	
@@ -58,9 +58,9 @@
 	name = "one-shot fattening weapon lens"
 	select_name = "fatten"
 	e_cost = 100
-	projectile_type = /obj/item/projectile/energy/fattening/cannon
+	projectile_type = /obj/item/projectile/beam/fattening/cannon
 
-/obj/item/projectile/energy/fattening/cannon
+/obj/item/projectile/beam/fattening/cannon
 	name = "fat energy"            
 	icon = 'GainStation13/icons/obj/fatoray.dmi'
 	icon_state = "cannon_ray"
@@ -85,10 +85,10 @@
 /obj/item/ammo_casing/energy/fattening/weak
 	name = "budget fattening weapon lens"
 	select_name = "fatten"
-	projectile_type = /obj/item/projectile/energy/fattening/weak
+	projectile_type = /obj/item/projectile/beam/fattening/weak
 
 ///The base projectile used by the fatoray
-/obj/item/projectile/energy/fattening/weak
+/obj/item/projectile/beam/fattening/weak
 	name = "fat energy"            
 	icon = 'GainStation13/icons/obj/fatoray.dmi'
 	icon_state = "ray"
@@ -115,9 +115,9 @@
 	name = "one-shot fattening weapon lens"
 	select_name = "fatten"
 	e_cost = 300
-	projectile_type = /obj/item/projectile/energy/fattening/cannon_weak
+	projectile_type = /obj/item/projectile/beam/fattening/cannon_weak
 
-/obj/item/projectile/energy/fattening/cannon_weak
+/obj/item/projectile/beam/fattening/cannon_weak
 	name = "fat energy"            
 	icon = 'GainStation13/icons/obj/fatoray.dmi'
 	icon_state = "cannon_ray"
@@ -129,7 +129,7 @@
 ///////////////////////////////////////
 
 
-/obj/item/projectile/energy/fattening/on_hit(atom/target, blocked)
+/obj/item/projectile/beam/fattening/on_hit(atom/target, blocked)
 	. = ..()
 	
 	var/mob/living/carbon/gainer = target
