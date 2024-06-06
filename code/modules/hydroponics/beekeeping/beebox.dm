@@ -108,6 +108,8 @@
 				var/mob/living/simple_animal/hostile/poison/bees/B = new(get_turf(src))
 				B.beehome = src
 				B.assign_reagent(queen_bee.beegent)
+				if(queen_bee.paxed)
+					B.paxed = TRUE
 				bees += B
 
 
