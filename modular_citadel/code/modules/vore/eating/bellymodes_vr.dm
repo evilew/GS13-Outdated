@@ -58,6 +58,18 @@
 	var/sound/pred_death = sound(get_sfx("death_pred"))
 	var/turf/source = get_turf(owner)
 
+////////////////////////// Vore Fatness /////////////////////////////
+	if(iscarbon(owner))
+		var/mob/living/carbon/predator = owner
+		var/found = FALSE
+		for(var/prey in contents)
+			if(istype(prey, /mob/living/carbon))
+				found = TRUE
+		if(found)
+			predator.hider_add(src)
+		else
+			predator.hider_remove(src)
+
 ///////////////////////////// DM_HOLD /////////////////////////////
 	if(digest_mode == DM_HOLD)
 		return SSBELLIES_PROCESSED
@@ -65,8 +77,8 @@
 ///////////////////////////// DM_FATTEN /////////////////////////////
 	if(digest_mode == DM_FATTEN)
 		var/preys_fatness = 0
-		var/mob/living/carbon/predator = owner
-		if(iscarbon(predator))
+		if(iscarbon(owner))
+			var/mob/living/carbon/predator = owner
 			for(var/mob/living/M in contents)
 				var/mob/living/carbon/prey = M
 				if(iscarbon(prey) && predator.fatness_real)
@@ -76,12 +88,6 @@
 						if(predator.nutrition > NUTRITION_LEVEL_HUNGRY)
 							predator.nutrition -= 3
 				preys_fatness += prey.fatness
-
-		if(!predator.fat_hider || predator.fat_hider == src)
-			if(preys_fatness > predator.fatness)
-				predator.fat_hide(preys_fatness, src)
-		if(predator.fat_hider != src)
-			predator.fat_show()		
 
 //////////////////////////// DM_DIGEST ////////////////////////////
 	else if(digest_mode == DM_DIGEST)

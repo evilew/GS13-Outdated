@@ -5,12 +5,10 @@
 	// -fatness_real is the value a mob is actually at, even if it's being hidden. For permanent changes, use this one
 	//What level of fatness is the parent mob currently at?
 	var/fatness = 0
-	//Is something hiding the actual fatness value of a character?
-	var/fat_hider = FALSE
+	//The list of items/effects that are being added/subtracted from our real fatness
+	var/fat_hiders = list()
 	//The actual value a mob is at. Is equal to fatness if fat_hider is FALSE.
 	var/fatness_real = 0
-	//The value a mob's fatness is being overwritten with if fat_hider has something in it.
-	var/fatness_over = 0
 	///At what rate does the parent mob gain weight? 1 = 100%
 	var/weight_gain_rate = 1
 	//At what rate does the parent mob lose weight? 1 = 100%
@@ -44,11 +42,12 @@
 	if(client?.prefs?.max_weight) // GS13
 		fatness_real = min(fatness_real, (client?.prefs?.max_weight - 1))
 
-	if(fat_hider)	//If a character's real fatness is being hidden
+	if(fat_hiders)	//If a character's real fatness is being hidden
+		var/fatness_over = hiders_calc() //calculate the sum of all hiders
 		if(client?.prefs?.max_weight) //Check their prefs
 			fatness_over = min(fatness_over, (client?.prefs?.max_weight - 1)) //And make sure it's not above their preferred max
 
-		fatness = fatness_over //Then, make that value their current fatness
+		fatness = fatness_real + fatness_over //Then, make their current fatness the sum of their real plus/minus the calculated amount
 	else			//If it's not being hidden
 		fatness = fatness_real //Make their current fatness their real fatness
 
@@ -102,22 +101,27 @@
 		
 	return TRUE
 
-/mob/living/carbon/proc/fat_hide(hide_amount, hide_source)	//If something wants to hide fatness_real, it'll call this method and give it an amount to cover it with
-	fat_hider = hide_source
-	fatness_over = hide_amount
-	fatness = fatness_over	//To update a mob's fatness with the new amount to be shown immediately
-	if(client?.prefs?.weight_gain_extreme)
-		xwg_resize()
+/mob/living/carbon/proc/hider_add(hide_source)
+	if(!(hide_source in fat_hiders))
+		fat_hiders += hide_source
 
 	return TRUE
 
-/mob/living/carbon/proc/fat_show()				//If something that hides fatness is removed or expires, it'll call this method
-	fat_hider = FALSE
-	fatness = fatness_real	//To update a mob's fatness with their real one immediately
-	if(client?.prefs?.weight_gain_extreme)
-		xwg_resize()
-
+/mob/living/carbon/proc/hider_remove(hide_source)
+	if(hide_source in fat_hiders)
+		fat_hiders -= hide_source
 	return TRUE
+
+/mob/living/carbon/proc/hiders_calc()
+	var/hiders_value = 0
+	for(var/hider in fat_hiders)
+		var/hide_values = hider:fat_hide(src)
+		if(!islist(hide_values))
+			hiders_value += hide_values
+		else
+			for(var/hide_value in hide_values)
+				hiders_value += hide_value
+	return hiders_value
 
 /mob/living/carbon/proc/xwg_resize()
 	var/xwg_size = sqrt(fatness/FATNESS_LEVEL_BLOB)

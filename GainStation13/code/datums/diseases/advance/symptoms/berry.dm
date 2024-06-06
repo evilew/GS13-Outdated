@@ -57,7 +57,7 @@
 			affected_mob.reagents.remove_reagent(/datum/reagent/berry_juice_infection, volume)
 			return
 		picked_color = pick(random_color_list)
-		affected_mob.fat_hide(affected_mob.fatness_real + ((3 * (volume * volume))/50), src)
+		affected_mob.hider_add(src)
 	else
 		L.reagents.remove_reagent(/datum/reagent/berry_juice_infection, volume)
 	..()
@@ -68,7 +68,6 @@
 		return
 	if(!no_mob_color)
 		M.add_atom_colour(picked_color, WASHABLE_COLOUR_PRIORITY)
-	M.fat_hide(M.fatness_real + ((3 * (volume * volume))/50), src)
 	M.adjust_fatness(1, FATTENING_TYPE_CHEM)
 	..()
 
@@ -76,7 +75,7 @@
 	if(!iscarbon(L))
 		return
 	var/mob/living/carbon/C = L
-	C.fat_show()
+	C.hider_remove(src)
 
 /obj/item/reagent_containers/glass/attack(mob/M, mob/user, obj/target)
 	if(M.reagents.get_reagent_amount(/datum/reagent/berry_juice_infection) > 0 && (reagents.total_volume + min(amount_per_transfer_from_this, 10)) <= volume)
@@ -89,3 +88,6 @@
 			to_chat(user, "<span class='warning'>You get some juice out of you...</span>")
 		return
 	..()
+
+/datum/reagent/berry_juice_infection/proc/fat_hide()
+	return (3 * (volume * volume))/50

@@ -8,20 +8,27 @@
 	equip_sound = 'sound/items/equip/toolbelt_equip.ogg'
 	drop_sound = 'sound/items/handling/toolbelt_drop.ogg'
 	pickup_sound =  'sound/items/handling/toolbelt_pickup.ogg'
-	var/hide_value = 0
 
 /obj/item/bluespace_belt/equipped(mob/user, slot)
 	..()
+	if(!iscarbon(user))
+		return
 	var/mob/living/carbon/U = user
 	if(slot == SLOT_BELT)
 		to_chat(user, "<span class='notice'>You put the belt around your waist and your mass begins to shrink...</span>")
-		U.fat_hide(hide_value, src)
+		U.hider_add(src)
 	else
 		to_chat(user, "<span class='notice'>The belt is opened, letting your mass flow out!</span>")
-		U.fat_show()
+		U.hider_remove(src)
 
 /obj/item/bluespace_belt/dropped(mob/user)
 	..()
+	if(!iscarbon(user))
+		return
 	to_chat(user, "<span class='warning'>The belt is opened, letting your mass flow out!</span>")
 	var/mob/living/carbon/U = user
-	U.fat_show()
+	U.hider_remove(src)
+
+/obj/item/bluespace_belt/proc/fat_hide(var/mob/living/carbon/user)
+	return -(user.fatness_real - 1)
+
