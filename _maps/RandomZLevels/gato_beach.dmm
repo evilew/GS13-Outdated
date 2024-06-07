@@ -1,10 +1,12 @@
-"ac" = (/obj/structure/mirror{pixel_y = 28},/turf/open/floor/mineral/basaltstone_floor,/area/awaymission/stargate/building)
+"ac" = (/obj/structure/mirror{pixel_y = 28},/turf/open/floor/mineral/sandstone_floor,/area/awaymission/stargate/building)
 "ad" = (/turf/open/floor/plating/beach/coastline_b{dir = 1},/area/awaymission/stargate/building)
 "at" = (/obj/structure/railing{dir = 1},/turf/open/floor/plaswood,/area/awaymission/stargate/building)
+"az" = (/obj/effect/turf_decal/sand,/obj/structure/punching_bag,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "bv" = (/turf/open/floor/plating/beach/coastline_b{dir = 9},/area/awaymission/stargate/building)
 "bL" = (/obj/structure/closet/secure_closet/personal/cabinet,/obj/item/clothing/suit/jacket/letterman_red,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "bQ" = (/turf/open/floor/plating/beach/coastline_t{dir = 10},/area/awaymission/stargate/building)
 "bR" = (/obj/structure/closet/secure_closet/personal/cabinet,/obj/item/clothing/neck/necklace/dope,/turf/open/floor/wood,/area/awaymission/stargate/building)
+"bU" = (/obj/effect/turf_decal/sand,/obj/structure/table,/obj/item/reagent_containers/rag/towel,/obj/item/reagent_containers/rag/towel{pixel_y = 4},/obj/item/reagent_containers/rag/towel{pixel_y = 8},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "bY" = (/turf/open/floor/plating/beach/coastline_t/sandwater_inner{dir = 8},/area/awaymission/stargate/building)
 "cl" = (/obj/structure/table/wood,/obj/item/reagent_containers/food/drinks/bottle/champagne,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "cZ" = (/obj/machinery/gateway{dir = 10},/obj/effect/turf_decal/sand,/obj/effect/turf_decal/stripes/asteroid/line{dir = 10},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
@@ -26,7 +28,7 @@
 "fd" = (/obj/item/toy/syndicateballoon,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "fB" = (/obj/structure/table/wood,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "fE" = (/obj/machinery/gateway{dir = 4},/obj/effect/turf_decal/sand,/obj/effect/turf_decal/stripes/asteroid/line{dir = 4},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
-"fJ" = (/obj/structure/mirror{pixel_x = -28},/obj/effect/turf_decal/sand,/obj/structure/sink{pixel_y = 32},/turf/open/floor/plasteel/white,/area/awaymission/stargate/building)
+"fJ" = (/obj/structure/mirror{pixel_x = -28},/obj/effect/turf_decal/sand,/obj/structure/sink{pixel_y = 32},/obj/effect/turf_decal/loading_area{dir = 1; icon_state = "drain"; name = "drain"},/turf/open/floor/plasteel/white,/area/awaymission/stargate/building)
 "fK" = (/obj/item/clothing/mask/gas/tiki_mask,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "fW" = (/obj/structure/closet/secure_closet/personal/cabinet,/obj/item/clothing/suit/jacket/letterman,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "gm" = (/obj/structure/flora/rock{desc = "A volcanic rock."; name = "coastal rock"},/turf/open/floor/plating/beach/water{desc = "What's the difference?"; name = "coastline water"},/area/awaymission/stargate/building)
@@ -40,18 +42,19 @@
 "hW" = (/obj/structure/rack/shelf,/obj/item/mop/advanced,/obj/item/mop/advanced,/obj/item/storage/bag/trash/bluespace,/obj/item/storage/bag/trash/bluespace,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "ii" = (/obj/item/reagent_containers/food/drinks/soda_cans/dr_gibb{pixel_x = -9; pixel_y = -7},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "ik" = (/obj/item/trash/can{pixel_x = 14; pixel_y = 7},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
-"ir" = (/obj/structure{desc = "Bar and beach south, dorms east."; icon = 'icons/obj/stationobjs.dmi'; icon_state = "signpost"; name = "directions signpost"},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
+"ir" = (/obj/structure{desc = "Bar and beach south, dorms east."; icon = 'icons/obj/stationobjs.dmi'; icon_state = "signpost"; name = "Welcome to GATO Beach Island!"},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "iR" = (/turf/closed/wall/mineral/wood,/area/awaymission/stargate/building)
 "iX" = (/turf/open/floor/carpet/orange,/area/awaymission/stargate/building)
 "jf" = (/obj/structure/railing{dir = 4},/turf/open/floor/wood,/area/awaymission/stargate/building)
 "ju" = (/obj/item/reagent_containers/food/drinks/soda_cans/space_mountain_wind,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "jA" = (/turf/open/floor/plating/beach/coastline_t{dir = 5},/area/awaymission/stargate/building)
-"jM" = (/obj/machinery/button/door{id = "changlinhut1"; name = "changing room lock"; normaldoorcontrol = 1; pixel_x = -24; specialfunctions = 4},/turf/open/floor/mineral/basaltstone_floor,/area/awaymission/stargate/building)
+"jM" = (/obj/machinery/button/door{id = "changlinhut1"; name = "changing room lock"; normaldoorcontrol = 1; pixel_x = -24; specialfunctions = 4},/turf/open/floor/mineral/sandstone_floor,/area/awaymission/stargate/building)
 "kj" = (/obj/structure/sign/poster/contraband/corn_oil,/turf/closed/wall/mineral/sandstone,/area/awaymission/stargate/building)
 "kr" = (/obj/machinery/jukebox/disco/indestructible,/turf/open/floor/light/colour_cycle,/area/awaymission/stargate/building)
 "kI" = (/obj/machinery/button/door{id = "toilet2"; name = "restroom lock"; normaldoorcontrol = 1; pixel_x = -24; specialfunctions = 4},/obj/effect/turf_decal/sand,/turf/open/floor/plasteel/white,/area/awaymission/stargate/building)
 "kK" = (/obj/structure/closet/secure_closet/bar,/obj/item/storage/box/drinkingglasses,/obj/item/reagent_containers/food/drinks/shaker,/turf/open/floor/wood,/area/awaymission/stargate/building)
-"kR" = (/obj/structure/mirror{pixel_x = 28},/obj/effect/turf_decal/sand,/obj/structure/sink{pixel_y = 32},/turf/open/floor/plasteel/white,/area/awaymission/stargate/building)
+"kR" = (/obj/structure/mirror{pixel_x = 28},/obj/effect/turf_decal/sand,/obj/structure/sink{pixel_y = 32},/obj/effect/turf_decal/loading_area{dir = 1; icon_state = "drain"; name = "drain"},/turf/open/floor/plasteel/white,/area/awaymission/stargate/building)
+"kU" = (/obj/structure/window{dir = 4},/obj/structure/fans/tiny/invisible,/turf/open/water/jungle,/area/awaymission/stargate/building)
 "kV" = (/obj/machinery/button/door{id = "theloveshack4"; name = "door lock"; normaldoorcontrol = 1; pixel_x = 24; specialfunctions = 4},/obj/structure/double_bed,/obj/item/bedsheet/double_gato,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "la" = (/obj/item/toy/sword/cx,/obj/item/toy/sword,/obj/item/toy/katana,/obj/item/toy/foamblade,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "ld" = (/obj/machinery/deepfryer,/turf/open/floor/wood,/area/awaymission/stargate/building)
@@ -71,15 +74,19 @@
 "ny" = (/obj/item/stack/sheet/plastic/fifty,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "nA" = (/obj/machinery/button/door{id = "toilet1"; name = "restroom lock"; normaldoorcontrol = 1; pixel_x = 24; specialfunctions = 4},/obj/effect/turf_decal/sand,/turf/open/floor/plasteel/white,/area/awaymission/stargate/building)
 "nK" = (/obj/effect/turf_decal/sand,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
-"oa" = (/obj/machinery/shower{dir = 8},/obj/effect/turf_decal/sand,/turf/open/floor/plasteel/white,/area/awaymission/stargate/building)
+"oa" = (/obj/machinery/shower{dir = 8},/obj/effect/turf_decal/sand,/obj/effect/turf_decal/loading_area{dir = 4; icon_state = "drain"; name = "drain"},/turf/open/floor/plasteel/white,/area/awaymission/stargate/building)
+"oe" = (/obj/effect/turf_decal/sand,/turf/open/floor/mineral/sandstone_floor,/area/awaymission/stargate/building)
 "os" = (/obj/machinery/door/airlock/sandstone{id_tag = "theloveshack2"; name = "Beach Hut"},/turf/open/floor/wood,/area/awaymission/stargate/building)
 "ou" = (/obj/effect/turf_decal/stripes/white/full,/obj/item/toy/beach_ball,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "ov" = (/obj/effect/turf_decal/sand,/obj/machinery/vending/snack/random,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "ox" = (/obj/effect/turf_decal/sand,/obj/effect/turf_decal/stripes/asteroid/line{dir = 9},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "oG" = (/obj/effect/turf_decal/stripes/white/corner,/obj/effect/turf_decal/stripes/white/line{dir = 4},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "oR" = (/obj/structure/table/wood,/obj/item/storage/box/drinkingglasses,/turf/open/floor/wood,/area/awaymission/stargate/building)
+"pp" = (/obj/structure/toilet{pixel_y = 8},/obj/effect/turf_decal/sand,/obj/effect/turf_decal/loading_area{dir = 1; icon_state = "drain"; name = "drain"},/obj/effect/turf_decal/loading_area{dir = 8; icon_state = "drain"; name = "drain"},/turf/open/floor/plasteel/white,/area/awaymission/stargate/building)
+"pu" = (/obj/structure/sauna_oven,/turf/open/floor/plaswood,/area/awaymission/stargate/building)
+"pz" = (/obj/structure/chair/bench{dir = 4},/turf/open/floor/plaswood,/area/awaymission/stargate/building)
 "pP" = (/obj/machinery/button/door{id = "theloveshack5"; name = "door lock"; normaldoorcontrol = 1; pixel_x = 24; specialfunctions = 4},/obj/structure/double_bed,/obj/item/bedsheet/double_gato,/turf/open/floor/wood,/area/awaymission/stargate/building)
-"pS" = (/obj/effect/turf_decal/sand,/obj/machinery/jukebox,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
+"pS" = (/obj/effect/turf_decal/sand,/obj/machinery/jukebox,/turf/open/floor/mineral/sandstone_floor,/area/awaymission/stargate/building)
 "qc" = (/obj/effect/turf_decal/sand,/obj/effect/turf_decal/stripes/asteroid/line{dir = 10},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "qo" = (/obj/effect/overlay/coconut{pixel_x = -5; pixel_y = 4},/turf/open/floor/plating/beach/coastline_t/sandwater_inner,/area/awaymission/stargate/building)
 "qt" = (/mob/living/simple_animal/crab,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
@@ -87,6 +94,7 @@
 "qM" = (/obj/structure/flora/rock{desc = "A volcanic rock."; name = "coastal rock"},/turf/open/floor/plating/beach/coastline_b{dir = 4},/area/awaymission/stargate/building)
 "qU" = (/obj/structure/flora/rock{desc = "A volcanic rock."; name = "coastal rock"},/turf/open/floor/plating/beach/water,/area/awaymission/stargate/building)
 "rf" = (/obj/effect/turf_decal/stripes/white/full,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
+"rg" = (/obj/effect/turf_decal/sand,/obj/effect/turf_decal/tile/bar{dir = 4},/obj/effect/turf_decal/tile/bar,/turf/open/floor/mineral/sandstone_floor,/area/awaymission/stargate/building)
 "rh" = (/obj/effect/turf_decal/sand,/obj/machinery/vending/mealdor,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "rp" = (/obj/structure/table/wood,/obj/item/storage/fancy/donut_box,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "rz" = (/obj/effect/turf_decal/sand{density = 1},/obj/effect/decal/fakelattice,/turf/open/floor/pod/light{density = 1},/area/awaymission/stargate/building)
@@ -99,7 +107,7 @@
 "tP" = (/obj/machinery/gateway{dir = 6},/obj/effect/turf_decal/sand,/obj/effect/turf_decal/stripes/asteroid/line{dir = 6},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "ub" = (/turf/open/floor/plating/beach/coastline_b{dir = 4},/area/awaymission/stargate/building)
 "un" = (/turf/open/floor/plating/beach/coastline_t/sandwater_inner{dir = 1},/area/awaymission/stargate/building)
-"ur" = (/obj/effect/turf_decal/sand,/turf/open/floor/plasteel/white,/area/awaymission/stargate/building)
+"ur" = (/obj/effect/turf_decal/sand,/obj/machinery/shower{dir = 4},/obj/effect/turf_decal/loading_area{dir = 8; icon_state = "drain"; name = "drain"},/turf/open/floor/plasteel/white,/area/awaymission/stargate/building)
 "uv" = (/obj/structure/table/wood,/obj/item/reagent_containers/food/drinks/soda_cans/lemon_lime,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "uw" = (/obj/effect/turf_decal/sand,/obj/structure/table/wood,/obj/item/toy/poolnoodle/red,/obj/item/toy/poolnoodle/yellow,/obj/item/toy/poolnoodle/blue,/obj/item/reagent_containers/rag/towel/random,/obj/item/reagent_containers/rag/towel/random,/obj/item/reagent_containers/rag/towel/random,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "ux" = (/obj/structure/barricade/wooden,/turf/open/floor/wood,/area/awaymission/stargate/building)
@@ -119,28 +127,36 @@
 "xq" = (/obj/structure/table/wood,/obj/machinery/chem_dispenser/drinks/fullupgrade{dir = 8},/turf/open/floor/wood,/area/awaymission/stargate/building)
 "xw" = (/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/obj/item/bikehorn/airhorn,/obj/structure/table/wood,/obj/item/storage/firstaid,/obj/item/storage/firstaid/brute,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "xJ" = (/obj/effect/turf_decal/sand,/obj/effect/turf_decal/stripes/asteroid/line{dir = 5},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
-"xP" = (/obj/structure/closet/wardrobe/mixed,/turf/open/floor/mineral/basaltstone_floor,/area/awaymission/stargate/building)
+"xL" = (/obj/machinery/button/door{id = "beachbigsauna"; name = "Large Sauna Lock"; normaldoorcontrol = 1; specialfunctions = 4; pixel_y = -24},/turf/open/floor/wood,/area/awaymission/stargate/building)
+"xP" = (/obj/structure/closet/wardrobe/mixed,/turf/open/floor/mineral/sandstone_floor,/area/awaymission/stargate/building)
 "yg" = (/obj/item/trash/chips{pixel_x = -18; pixel_y = 7},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "yk" = (/turf/open/floor/plating/beach/coastline_t{dir = 6},/area/awaymission/stargate/building)
 "yy" = (/turf/open/floor/plating/beach/coastline_t{dir = 1},/area/awaymission/stargate/building)
 "yH" = (/obj/structure/table,/obj/item/kitchen/rollingpin,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "yJ" = (/obj/effect/turf_decal/sand,/obj/machinery/vending/cigarette,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
+"yK" = (/obj/structure/fans/tiny,/obj/machinery/door/airlock/wood{id_tag = "beachsmallsauna"; name = "Small Sauna"},/turf/open/floor/wood,/area/awaymission/stargate/building)
 "yP" = (/obj/structure/flora/ausbushes/reedbush,/turf/open/floor/plating/beach/water,/area/awaymission/stargate/building)
+"yX" = (/obj/structure/window{dir = 8},/obj/structure/fans/tiny/invisible,/turf/open/water/jungle,/area/awaymission/stargate/building)
 "zg" = (/obj/structure/reagent_dispensers/keg/aphro,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "zh" = (/obj/effect/overlay/palmtree_l,/turf/open/floor/plating/beach/coastline_t{dir = 4},/area/awaymission/stargate/building)
 "zG" = (/obj/structure/flora/ausbushes/fullgrass,/turf/open/floor/plating/beach/coastline_b{dir = 1},/area/awaymission/stargate/building)
 "zH" = (/obj/effect/turf_decal/stripes/white/line{dir = 4},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
+"Ai" = (/obj/effect/turf_decal/sand,/obj/machinery/shower{dir = 8},/obj/effect/turf_decal/loading_area{dir = 4; icon_state = "drain"; name = "drain"},/turf/open/floor/plasteel/white,/area/awaymission/stargate/building)
 "As" = (/obj/effect/overlay/palmtree_r{desc = "How did you get here?"; icon_state = "palm2"; name = "\proper island palm tree"},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "AC" = (/obj/effect/turf_decal/stripes/white/corner,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "AH" = (/obj/effect/overlay/palmtree_l,/obj/effect/overlay/coconut,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
+"Bi" = (/obj/effect/turf_decal/sand,/obj/machinery/portable_atmospherics/canister/water_vapor,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
+"Bk" = (/obj/machinery/vending/donksofttoyvendor,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "BM" = (/obj/item/gun/energy/fatoray,/turf/closed/mineral,/area/awaymission/stargate/building)
 "BP" = (/obj/machinery/door/airlock/sandstone{id_tag = "theloveshack4"; name = "Beach Hut"},/turf/open/floor/wood,/area/awaymission/stargate/building)
 "Ch" = (/obj/machinery/button/door{id = "theloveshack1"; name = "door lock"; normaldoorcontrol = 1; pixel_x = 24; specialfunctions = 4},/obj/structure/double_bed,/obj/item/bedsheet/double_gato,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "Cq" = (/obj/structure/sign/poster/official/gato_logo,/turf/closed/wall/mineral/sandstone,/area/awaymission/stargate/building)
 "CA" = (/obj/structure/flora/ausbushes/leafybush,/turf/open/floor/plating/beach/coastline_b{dir = 4},/area/awaymission/stargate/building)
 "CS" = (/obj/effect/turf_decal/sand,/obj/effect/turf_decal/stripes/asteroid/line{dir = 4},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
+"CT" = (/obj/structure/table/wood,/obj/structure/sink{pixel_y = 32},/obj/item/stack/sheet/mineral/wood/fifty,/obj/item/stack/sheet/mineral/wood/fifty,/obj/item/reagent_containers/glass/bucket,/turf/open/floor/plaswood,/area/awaymission/stargate/building)
 "Du" = (/obj/structure/flora/ausbushes/stalkybush,/turf/open/floor/plating/beach/water,/area/awaymission/stargate/building)
 "Dw" = (/obj/structure/closet/secure_closet/personal/cabinet,/obj/item/clothing/glasses/heat,/turf/open/floor/wood,/area/awaymission/stargate/building)
+"DK" = (/turf/closed/indestructible/wood,/area/awaymission/stargate/building)
 "DN" = (/obj/item/reagent_containers/food/drinks/beer/light{pixel_x = -14; pixel_y = 15},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "DT" = (/obj/structure/mineral_door/wood{name = "bar"},/turf/open/floor/wood,/area/awaymission/stargate/building)
 "DU" = (/obj/structure/table,/obj/item/reagent_containers/food/drinks/soda_cans/sodawater,/obj/item/reagent_containers/food/drinks/soda_cans/shamblers,/obj/item/reagent_containers/food/drinks/soda_cans/pwr_game,/obj/item/reagent_containers/food/drinks/soda_cans/air,/obj/item/reagent_containers/food/drinks/soda_cans/canned_laughter,/obj/item/reagent_containers/food/drinks/soda_cans/tonic,/obj/item/reagent_containers/spray/spraytan,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
@@ -148,6 +164,7 @@
 "Eb" = (/obj/machinery/gateway/centeraway,/obj/effect/turf_decal/sand,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "Eo" = (/obj/machinery/door/airlock/sandstone{id_tag = "toilet1"; name = "restroom stall"},/obj/effect/turf_decal/sand,/turf/open/floor/plasteel/white,/area/awaymission/stargate/building)
 "Eq" = (/obj/item/reagent_containers/food/drinks/soda_cans/cola{pixel_x = -5},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
+"Eu" = (/obj/item/clothing/mask/cigarette/rollie/cannabis,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "ED" = (/mob/living/simple_animal/parrot,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "EE" = (/obj/effect/turf_decal/sand,/obj/effect/turf_decal/stripes/asteroid/line,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "EL" = (/obj/effect/turf_decal/sand,/obj/effect/turf_decal/stripes/asteroid/line{dir = 1},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
@@ -184,6 +201,8 @@
 "JX" = (/turf/open/floor/wood,/area/awaymission/stargate/building)
 "JY" = (/turf/open/floor/grass,/area/awaymission/stargate/building)
 "JZ" = (/obj/item/reagent_containers/food/drinks/soda_cans/space_mountain_wind{pixel_x = -17; pixel_y = 17},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
+"Kb" = (/obj/structure/table/wood,/obj/item/ashtray,/obj/item/clothing/mask/cigarette/rollie/nicotine,/turf/open/floor/wood,/area/awaymission/stargate/building)
+"Kg" = (/obj/structure/fans/tiny,/obj/machinery/door/airlock/wood{id_tag = "beachbigsauna"; name = "Large Sauna"},/turf/open/floor/wood,/area/awaymission/stargate/building)
 "Kh" = (/turf/open/floor/plating/beach/coastline_t/sandwater_inner,/area/awaymission/stargate/building)
 "Ku" = (/obj/machinery/button/door{id = "loveshack"; name = "love shack lock"; normaldoorcontrol = 1; pixel_x = 24; specialfunctions = 4},/obj/structure/double_bed,/obj/item/bedsheet/double_gato,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "Kw" = (/obj/machinery/door/airlock/sandstone{id_tag = "theloveshack3"; name = "Beach Hut"},/turf/open/floor/wood,/area/awaymission/stargate/building)
@@ -195,34 +214,41 @@
 "Lv" = (/obj/machinery/processor,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "Lw" = (/obj/structure/closet/secure_closet/freezer/kitchen{req_access = list(25)},/obj/item/storage/fancy/egg_box,/obj/item/reagent_containers/food/condiment/milk,/obj/item/reagent_containers/food/condiment/milk,/obj/item/reagent_containers/food/condiment/flour,/obj/item/reagent_containers/food/condiment/flour,/obj/item/reagent_containers/food/condiment/mayonnaise,/obj/item/reagent_containers/food/condiment/sugar,/obj/item/reagent_containers/food/condiment/sugar,/obj/item/reagent_containers/food/condiment/enzyme,/obj/item/reagent_containers/food/condiment/enzyme{layer = 5},/turf/open/floor/wood,/area/awaymission/stargate/building)
 "LQ" = (/obj/item/toy/plush/random,/turf/open/floor/plating/beach/coastline_t/sandwater_inner{dir = 8},/area/awaymission/stargate/building)
-"Mk" = (/obj/machinery/button/door{id = "changlinhut2"; name = "changing room lock"; normaldoorcontrol = 1; pixel_x = 24; specialfunctions = 4},/turf/open/floor/mineral/basaltstone_floor,/area/awaymission/stargate/building)
+"Mk" = (/obj/machinery/button/door{id = "changlinhut2"; name = "changing room lock"; normaldoorcontrol = 1; pixel_x = 24; specialfunctions = 4},/turf/open/floor/mineral/sandstone_floor,/area/awaymission/stargate/building)
 "Mo" = (/turf/open/floor/plating/beach/water,/area/awaymission/stargate/building)
 "MO" = (/turf/closed/indestructible/rock,/area/awaymission/stargate/building)
+"MS" = (/obj/machinery/portable_atmospherics/canister/water_vapor,/obj/structure/sink{pixel_y = 32},/turf/open/floor/plaswood,/area/awaymission/stargate/building)
 "MW" = (/obj/effect/overlay/palmtree_r,/turf/open/floor/plating/beach/coastline_t{dir = 1},/area/awaymission/stargate/building)
 "Nl" = (/obj/effect/baseturf_helper/beach/sand,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "Nn" = (/obj/machinery/button/door{id = "theloveshack3"; name = "door lock"; normaldoorcontrol = 1; pixel_x = 24; specialfunctions = 4},/obj/structure/double_bed,/obj/item/bedsheet/double_gato,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "Nx" = (/obj/effect/turf_decal/sand,/obj/machinery/telecomms/relay/preset/mining,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "Ny" = (/obj/machinery/grill,/obj/item/reagent_containers/food/snacks/sausage,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
-"NO" = (/obj/structure/sign/barsign{pixel_y = 32},/obj/effect/turf_decal/sand,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
+"NJ" = (/obj/effect/turf_decal/sand,/obj/machinery/shower{pixel_y = 19},/obj/effect/turf_decal/loading_area{dir = 1; icon_state = "drain"; name = "drain"},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
+"NO" = (/obj/structure/sign/barsign{pixel_y = 32},/obj/effect/turf_decal/sand,/turf/open/floor/mineral/sandstone_floor,/area/awaymission/stargate/building)
 "NX" = (/obj/item/toy/plush/random,/turf/open/floor/plating/beach/coastline_t/sandwater_inner{dir = 4},/area/awaymission/stargate/building)
-"NY" = (/obj/machinery/door/airlock/sandstone{id_tag = "changlinhut1"; name = "changing room"},/turf/open/floor/mineral/basaltstone_floor,/area/awaymission/stargate/building)
+"NY" = (/obj/machinery/door/airlock/sandstone{id_tag = "changlinhut1"; name = "changing room"},/turf/open/floor/mineral/sandstone_floor,/area/awaymission/stargate/building)
 "Ol" = (/obj/effect/overlay/coconut{pixel_x = 17; pixel_y = 7},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
+"Oo" = (/obj/structure/sauna_oven,/obj/machinery/light{dir = 1; color = "#ffa500"},/turf/open/floor/plaswood,/area/awaymission/stargate/building)
 "Or" = (/turf/closed/indestructible/sandstone,/area/ruin/powered/beach)
+"OQ" = (/obj/effect/turf_decal/sand,/obj/structure/table,/obj/item/reagent_containers/rag/towel,/obj/item/reagent_containers/rag/towel{pixel_y = 4},/obj/item/reagent_containers/rag/towel{pixel_y = 4},/obj/item/reagent_containers/rag/towel{pixel_y = 8},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "Pe" = (/obj/machinery/computer/security/telescreen/entertainment{pixel_y = -32},/turf/open/floor/wood,/area/awaymission/stargate/building)
 "PK" = (/obj/structure/flora/ausbushes/reedbush,/turf/open/floor/plating/beach/coastline_b{dir = 4},/area/awaymission/stargate/building)
 "Qr" = (/obj/effect/overlay/palmtree_l,/turf/open/floor/plating/beach/coastline_t/sandwater_inner{dir = 1},/area/awaymission/stargate/building)
 "QC" = (/obj/item/reagent_containers/food/drinks/soda_cans/starkist{pixel_x = -12; pixel_y = 3},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "QQ" = (/obj/structure/closet/athletic_mixed,/obj/effect/turf_decal/sand,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "QS" = (/turf/open/indestructible/binary{density = 1; desc = "I can't move through this."; icon = 'icons/misc/beach.dmi'; icon_state = "water"; name = "deep ocean water"},/area/awaymission/stargate/building)
-"QT" = (/obj/machinery/shower{dir = 4},/obj/effect/turf_decal/sand,/turf/open/floor/plasteel/white,/area/awaymission/stargate/building)
+"QT" = (/obj/machinery/shower{dir = 4},/obj/effect/turf_decal/sand,/obj/effect/turf_decal/loading_area{dir = 8; icon_state = "drain"; name = "drain"},/turf/open/floor/plasteel/white,/area/awaymission/stargate/building)
 "QV" = (/obj/structure/sign/poster/contraband/chefpropaganda,/turf/closed/wall/mineral/sandstone,/area/awaymission/stargate/building)
+"Rc" = (/obj/effect/turf_decal/sand,/obj/structure/closet/secure_closet/personal,/obj/item/reagent_containers/rag/towel,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "Rq" = (/turf/open/floor/plating/beach/coastline_t{dir = 4},/area/awaymission/stargate/building)
 "Ry" = (/mob/living/simple_animal/hostile/shark/kawaii,/turf/open/floor/plating/beach/water{desc = "What's the difference?"; name = "coastline water"},/area/awaymission/stargate/building)
 "RC" = (/obj/structure/flora/ausbushes/sunnybush,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "RK" = (/obj/effect/turf_decal/sand,/obj/vehicle/ridden/wheelchair,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
+"RN" = (/obj/effect/turf_decal/sand,/obj/structure/chair/stool,/obj/effect/turf_decal/tile/bar{dir = 4},/obj/effect/turf_decal/tile/bar{dir = 1},/turf/open/floor/mineral/sandstone_floor,/area/awaymission/stargate/building)
 "RX" = (/obj/structure/table,/obj/item/stack/packageWrap,/obj/item/stack/packageWrap,/obj/item/stack/packageWrap,/obj/item/stack/packageWrap,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "Sc" = (/obj/machinery/gateway{dir = 9},/obj/effect/turf_decal/sand,/obj/effect/turf_decal/stripes/asteroid/line{dir = 9},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "Sg" = (/turf/open/floor/plating/beach/coastline_b{dir = 10},/area/awaymission/stargate/building)
+"Sv" = (/obj/effect/turf_decal/sand,/obj/structure/chair/stool,/obj/effect/turf_decal/tile/bar{dir = 4},/obj/effect/turf_decal/tile/bar{dir = 1},/obj/effect/turf_decal/tile/bar,/turf/open/floor/mineral/sandstone_floor,/area/awaymission/stargate/building)
 "SA" = (/turf/closed/wall/mineral/sandstone,/area/awaymission/stargate/building)
 "SH" = (/obj/structure/sign/poster/contraband/shamblers_juice,/turf/closed/wall/mineral/sandstone,/area/awaymission/stargate/building)
 "SW" = (/obj/structure/table/wood,/obj/machinery/chem_dispenser/drinks/beer/fullupgrade{dir = 8},/turf/open/floor/wood,/area/awaymission/stargate/building)
@@ -231,7 +257,7 @@
 "Tm" = (/obj/structure/table,/obj/item/reagent_containers/food/drinks/beer,/obj/item/reagent_containers/food/drinks/beer,/obj/item/reagent_containers/food/drinks/beer,/obj/item/reagent_containers/food/drinks/beer,/obj/item/reagent_containers/food/drinks/beer,/obj/item/reagent_containers/food/drinks/beer,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "Tp" = (/obj/machinery/door/airlock/sandstone{id_tag = "theloveshack1"; name = "Beach Hut"},/turf/open/floor/wood,/area/awaymission/stargate/building)
 "Tr" = (/turf/open/floor/plating/beach/coastline_b{dir = 5},/area/awaymission/stargate/building)
-"Tt" = (/obj/structure/toilet{pixel_y = 8},/obj/effect/turf_decal/sand,/turf/open/floor/plasteel/white,/area/awaymission/stargate/building)
+"Tt" = (/obj/structure/toilet{pixel_y = 8},/obj/effect/turf_decal/sand,/obj/effect/turf_decal/loading_area{dir = 1; icon_state = "drain"; name = "drain"},/obj/effect/turf_decal/loading_area{dir = 4; icon_state = "drain"; name = "drain"},/turf/open/floor/plasteel/white,/area/awaymission/stargate/building)
 "Tz" = (/obj/structure/flora/rock/pile,/turf/open/floor/plating/beach/water{desc = "What's the difference?"; name = "coastline water"},/area/awaymission/stargate/building)
 "TB" = (/turf/open/floor/plasteel/stairs/old,/area/awaymission/stargate/building)
 "TR" = (/turf/open/floor/plating/beach/coastline_t{dir = 9},/area/awaymission/stargate/building)
@@ -242,13 +268,14 @@
 "Uz" = (/obj/machinery/button/door{id = "theloveshack2"; name = "door lock"; normaldoorcontrol = 1; pixel_x = 24; specialfunctions = 4},/obj/structure/double_bed,/obj/item/bedsheet/double_gato,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "UY" = (/obj/structure/table,/obj/item/reagent_containers/food/snacks/chips,/obj/item/toy/beach_ball,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "Ve" = (/obj/structure/railing{dir = 1},/turf/open/floor/wood,/area/awaymission/stargate/building)
+"Vx" = (/obj/structure/chair/bench/left{dir = 4},/obj/machinery/light{dir = 1; color = "#ffa500"},/turf/open/floor/plaswood,/area/awaymission/stargate/building)
 "VC" = (/turf/open/floor/plating/beach/coastline_b{dir = 6},/area/awaymission/stargate/building)
 "VM" = (/obj/structure/closet/crate/wooden/toy,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "VZ" = (/obj/machinery/door/airlock/sandstone{id_tag = "loveshack"; name = "Beach Hut"},/turf/open/floor/wood,/area/awaymission/stargate/building)
 "Wa" = (/obj/structure/closet/secure_closet/personal/cabinet,/obj/item/clothing/suit/jacket/letterman_syndie,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "We" = (/obj/structure/flora/ausbushes/reedbush,/turf/open/floor/plating/beach/coastline_b,/area/awaymission/stargate/building)
 "Wf" = (/obj/effect/turf_decal/sand,/obj/machinery/vending/gato,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
-"Wz" = (/obj/machinery/door/airlock/sandstone{id_tag = "changlinhut2"; name = "changing room"},/turf/open/floor/mineral/basaltstone_floor,/area/awaymission/stargate/building)
+"Wz" = (/obj/machinery/door/airlock/sandstone{id_tag = "changlinhut2"; name = "changing room"},/turf/open/floor/mineral/sandstone_floor,/area/awaymission/stargate/building)
 "WB" = (/obj/machinery/smartfridge/drying_rack,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "WM" = (/obj/structure/flora/ausbushes/grassybush,/turf/open/floor/plating/beach/coastline_b{dir = 4},/area/awaymission/stargate/building)
 "WR" = (/obj/effect/turf_decal/sand,/obj/effect/turf_decal/stripes/asteroid/line{dir = 6},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
@@ -256,18 +283,21 @@
 "Xj" = (/obj/machinery/food_cart,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "Xw" = (/obj/structure/chair/comfy/plywood{dir = 4},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "XB" = (/obj/effect/turf_decal/sand,/obj/structure/chair/stool,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
-"XK" = (/obj/structure/closet/crate/wooden{desc = "Now this is what island exploration is all about."; name = "Treasure Chest"},/obj/item/clothing/head/pirate,/obj/item/clothing/glasses/eyepatch,/obj/item/clothing/suit/pirate,/obj/item/melee/sabre{desc = "This isn't real however it can trick someone into thinking you have something real.."; force = 0; name = "foam pirate's sabre"; throwforce = 0},/obj/item/melee/sabre{desc = "This isn't real however it can trick someone into thinking you have something real.."; force = 0; name = "foam pirate's sabre"; throwforce = 0},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
+"XK" = (/obj/structure/closet/crate/wooden{desc = "Now this is what island exploration is all about."; name = "Treasure Chest"},/obj/item/clothing/head/pirate,/obj/item/clothing/glasses/eyepatch,/obj/item/clothing/suit/pirate,/obj/item/melee/sabre{desc = "This isn't real however it can trick someone into thinking you have something real.."; force = 0; name = "foam pirate's sabre"; throwforce = 0},/obj/item/melee/sabre{desc = "This isn't real however it can trick someone into thinking you have something real.."; force = 0; name = "foam pirate's sabre"; throwforce = 0},/obj/item/gun/magic/wand/food,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "XR" = (/turf/open/floor/plating/beach/coastline_t/sandwater_inner{dir = 4},/area/awaymission/stargate/building)
 "Ym" = (/obj/structure/sign/poster/ripped{pixel_x = 32},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "Yq" = (/obj/effect/turf_decal/sand,/obj/machinery/vending/kink,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "Yu" = (/obj/effect/overlay/palmtree_l,/turf/open/floor/plating/beach/coastline_t/sandwater_inner{dir = 4},/area/awaymission/stargate/building)
+"Yv" = (/obj/structure/chair/bench/left{dir = 4},/turf/open/floor/plaswood,/area/awaymission/stargate/building)
+"YF" = (/obj/structure/chair/bench/left{dir = 8},/obj/machinery/button/door{id = "beachsmallsauna"; name = "Small Sauna Lock"; normaldoorcontrol = 1; specialfunctions = 4; pixel_y = -24},/turf/open/floor/plaswood,/area/awaymission/stargate/building)
 "YP" = (/obj/item/reagent_containers/food/drinks/soda_cans/cola{pixel_x = -8; pixel_y = -4},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
 "YR" = (/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced,/obj/item/megaphone,/turf/open/floor/wood,/area/awaymission/stargate/building)
 "YX" = (/obj/item/reagent_containers/food/snacks/meat/slab/goliath,/obj/item/reagent_containers/food/snacks/meat/slab/xeno,/obj/item/reagent_containers/food/snacks/meat/slab/spider,/obj/item/reagent_containers/food/snacks/meat/slab/killertomato,/obj/item/reagent_containers/food/snacks/meat/slab/bear,/obj/structure/closet/secure_closet/freezer/kitchen,/obj/item/storage/fancy/donut_box,/obj/item/reagent_containers/food/snacks/meat/slab/monkey,/obj/item/reagent_containers/food/snacks/meat/slab/monkey,/obj/item/reagent_containers/food/snacks/meat/slab/monkey,/obj/item/reagent_containers/food/snacks/meat/slab/monkey,/obj/item/reagent_containers/food/snacks/meat/slab/monkey,/obj/item/reagent_containers/food/snacks/meat/slab/monkey,/turf/open/floor/wood,/area/awaymission/stargate/building)
-"YY" = (/obj/structure/chair/stool,/obj/effect/turf_decal/sand,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
+"YY" = (/obj/structure/chair/stool,/obj/effect/turf_decal/sand,/obj/effect/turf_decal/tile/bar{dir = 4},/obj/effect/turf_decal/tile/bar{dir = 1},/turf/open/floor/mineral/sandstone_floor,/area/awaymission/stargate/building)
 "Zn" = (/obj/item/book/granter/spell/fattening,/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
+"Zv" = (/obj/structure/chair/bench/left{dir = 8},/turf/open/floor/plaswood,/area/awaymission/stargate/building)
 "ZB" = (/obj/item/reagent_containers/food/drinks/soda_cans/lemon_lime{pixel_x = -12; pixel_y = 14},/turf/open/floor/plating/beach/sand,/area/awaymission/stargate/building)
-"ZC" = (/obj/structure/dresser{density = 0; pixel_y = 18},/turf/open/floor/mineral/basaltstone_floor,/area/awaymission/stargate/building)
+"ZC" = (/obj/structure/dresser{density = 0; pixel_y = 18},/turf/open/floor/mineral/sandstone_floor,/area/awaymission/stargate/building)
 
 (1,1,1) = {"
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
@@ -324,28 +354,28 @@ vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJG
 vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoImnoKGKGRCKGhpKGKGKGKGKGKGhpKGKGKGRCKGKGKGKGKGttEbfEKGKGKGKGKGKGKGKGKGetKGKGKGZBunyyyyyyyyyyyyyyyyXRKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGunyyjASgMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
 vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoImbQbYKGKGKGKGKGethpKGKGKGKGKGhpKGKGKGKGKGKGKGcZeAtPKGKGKGSASASASAQTKGKGoaSASASASAKGhpKGKGKGSASASASASAKGKGSASASASASAhpKGSASASASASAKGKGKGKGKGunjASgMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
 vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoTrbQbYKGKGKGRCKGKGKGKGKGKGKGKGKGKGKGuHKGKGKGKGnKKGKGKGKGSAZCacSAQTKGKGoaSAZCacSAKGKGKGKGKGSAqCJXwoSAKGKGSAqCJXwoSAKGKGSAqCJXwoSAKGKGKGKGKGKGunjAubMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
-vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSISJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoTrbQbYKGKGKGKGKGKGKGKGKGKGKGKGKGKGoxELxJKGKGnKKGKGKGKGSAxPMkSAQTKGKGoaSAjMxPSAKGKGKGKGKGSAfWJXChSAKGKGSAbRJXUzSAKGKGSAbLJXNnSAKGKGKGKGKGKGKGRqubDuMoJGJGJGJGJGEaJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
-vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoMoTrnoKGKGKGKGKGKGKGKGKGKGKGKGKGKGGtNxCSnKnKnKKGKGKGKGSASAWzSAQTKGKGoaSANYSASAKGKGKGKGKGSAmmJXJXSAKGKGSAmmJXJXSAKGgxSAmmJXJXSAKGKGKGKGKGKGKGRqlYadwzadzGadeoadJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGgsQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
-vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoMoImnoKGKGKGKGKGKGhpKGKGKGKGKGKGKGqcEEWRKGKGnKirKGKGKGKGJqnKKGKGKGKGKGKGnKvsKGKGKGKGKGKGSASATpSASAKGKGSASAosSASAKGKGSASAKwSASAKGKGKGKGKGuxVeVeVeVeuxVeVeVeVeuxWMJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
-vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoMoImbQbYKGKGKGKGetKGKGKGKGKGKGKGKGKGKGKGKGKGnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKKGKGKGKGJXJXJXJXJXJXJXJXJXJXJXjfPKJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
-vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoMoMoTrnoKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGhpetKGnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKwCKGKGKGJXJXJXJXJXJXJXJXJXJXJXjflnJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
-vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoMoMoMoMoImnoKGKGKGKGKGKGKGKGKGKGKGKGKGSASASASAKGnKKGSASASASAKGuwKQQQKQQQKQQQKQQQKQQQKQQQJDKGSASAVZSASAKGKGSASABPSASAKGKGSASAGUSASAKGKGKGKGKGuxvCvCvCvCuxvCvCvCvCuxCAJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
-vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoMoMoMoMoImnoKGKGKGKGKGKGKGKGKGKGKGKGKGSATtkRSAKGnKKGSAfJTtSAKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGSAclJXJXSAKGKGSAmmJXJXSAKGygSAmmJXJXSAKGKGKGKGKGunjAbvJpXcWeJpJplqWeJpJGEaJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
-vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoMoMoMoMoVCnoKGKGKGKGKGKGKGKGKGuHKGKGKGSAurnASAKGnKKGSAkIurSAKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGSAUeJXKuSAKGKGSAWaJXkVSAKGYmSADwJXpPSAKGKGKGKGKGKhykubyPMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGISQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
-vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoMoMoMoImTRXRKGKGKGKGKGKGKGKGKGKGKGKGKGSASAEoSAKGnKKGSAvRSASAKGKGKGKGuHKGKGKGKGKGKGKGKGKGKGKGSAHiJXPeSAKGKGSAHiJXPeSAIpikSAHiJXPeSAKGKGKGKhgQykbvMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGISQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
-vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoMoMoMoImnoKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGnKKGKGnKKGKGnKKGKGKGKGKGKGKGKGKGKGKGhpKGKGKGKGKGKGSASASASASAKGKGSASASASASAKGKGSASASASASAKGKGKhykbvJpMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
-vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSISJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGadadadadadJGMoMoMoMoMoMoImbQbYKGKGRCKGKGKGKGKGKGKGKGnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGRqbvMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
+vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSISJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoTrbQbYKGKGKGDKDKDKDKDKDKDKDKDKKGKGoxELxJKGKGnKKGKGKGKGSAxPMkSAQTKGKGoaSAjMxPSAKGKGKGKGKGSAfWJXChSAKGKGSAbRJXUzSAKGKGSAbLJXNnSAKGKGKGKGKGKGKGRqubDuMoJGJGJGJGJGEaJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
+vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoMoTrnoDKDKDKDKkUVxCTpuMSVxyXDKKGKGGtNxCSnKnKnKKGKGKGKGSASAWzSAQTKGKGoaSANYSASAKGKGKGKGKGSAmmJXJXSAKGKGSAmmJXJXSAKGgxSAmmJXJXSAKGKGKGKGKGKGKGRqlYadwzadzGadeoadJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGgsQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
+vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoMoImnoDKCTOoDKkUpzJXJXJXpzyXDKKGKGqcEEWRKGKGnKirKGKGKGJqvsnKKGKGKGKGKGKGnKvsJqKGKGKGKGKGSASATpSASAKGKGSASAosSASAKGKGSASAKwSASAKGKGKGKGKGuxVeVeVeVeuxVeVeVeVeuxWMJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
+vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoMoImnoDKJXYvDKkUpzJXJXJXpzyXDKKGKGKGKGKGKGKGnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKKGKGKGKGJXJXJXJXJXJXJXJXJXJXJXjfPKJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
+vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoMoImnoDKJXYFDKkUZvJXJXxLZvyXDKKGKGKGKGhpetKGnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKwCKGKGKGJXJXJXJXJXJXJXJXJXJXJXjflnJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
+vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoMoMoMoImnoDKyKDKDKDKDKDKKgDKDKDKDKKGKGSASASASAKGnKKGSASASASAKGuwKQQQKQQQKQQQKQQQKQQQKQQQJDKGSASAVZSASAKGKGSASABPSASAKGKGSASAGUSASAKGKGKGKGKGuxvCvCvCvCuxvCvCvCvCuxCAJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
+vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoMoMoMoImnoNJnKOQRcRcRcbUnKNJBiBiBiKGKGSAppkRSAKGnKKGSAfJTtSAKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGSAclJXJXSAKGKGSAmmJXJXSAKGygSAmmJXJXSAKGKGKGKGKGunjAbvJpXcWeJpJplqWeJpJGEaJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
+vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoMoMoMoImnonKnKnKnKnKnKnKnKnKnKnKnKKGKGSAurnASAKGnKKGSAkIAiSAKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGSAUeJXKuSAKGKGSAWaJXkVSAKGYmSADwJXpPSAKGKGKGKGKGKhykubyPMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGISQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
+vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoMoMoMoImnoKGKGKGKGKGKGnKnKnKKGKGKGKGKGSASAEoSAKGnKKGSAvRSASAKGKGKGKGuHKGKGKGKGKGKGKGKGKGKGKGSAHiJXPeSAKGKGSAHiJXPeSAIpikSAHiJXPeSAKGKGKGKhgQykbvMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGISQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
+vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoMoMoMoImnoKGKGKGKGKGKGnKnKnKKGKGKGKGKGKGKGnKKGKGnKKGKGnKKGKGKGKGKGKGKGKGKGKGKGhpKGKGKGKGKGKGSASASASASAKGKGSASASASASAKGKGSASASASASAKGKGKhykbvJpMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
+vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSISJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGadadadadadJGMoMoMoMoMoMoImbQbYKGKGRCKGKGnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGRqbvMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
 vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGImTRMWMWMWjASgMoMoMoMoMoMoMoTrbQbYKGKGKGKGKGKGKGKGKGKGnKnKWfovRKnKRKyJRKnKRKrhYqnKnKKGKGKGKGKGKGKGKGKGKGKGgxKGKGKGKGKGuHKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKhykubMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
 vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGVCnoFFVMfdIOjAubMoMoMoMoMoMoMoTrnoKGKGKGKGKGKGKGKGKGKGnKSASAHRSASACqSASASAQVSASASAnKKGKGRCKGetKGKGKGKGKGKGKGKGKGKGKGKGKGetKGKGKGKGKGKGKGKGKGKGKGKGhpKGKGRqbvMoMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
 vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSgsJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGImTRNXKGnyKGVMRqubMoMoMoMoMoMoMoImnoRCKGKGKGKGAHKGKGKGKGnKSAkKJXJXrZvmSAnpRXyHhWLwSAnKKGKGKGKGKGKGKGhpKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGRqubMoMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
 vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGImnoKGLflaKGKGRqubMoMoMoMoMoMoadVCnoKGKGKGKGKGKGKGKGKGKGnKSHkKJXJXJXxqkjJXJXJXJXLvSAnKKGnKnKnKnKnKKGKGKGACJsJsJsJsJsJsJsJsJsJsJsdZuHetKGKGKGhpKGRCKGKGKGKGRqubMoMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGISQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
-vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGImnoKGKGKGKGKGRqSgadadadadadVCTRyyXRKGKGuUnKuUnKuUKGKGKGnKSAzgJXJXJXSWSAJXTWgJJXYXSAnKnKnKGPnKGPnKKGKGKGzHKGKGKGKGKGrfKGKGKGKGKGJBKGKGKGKGKGKGKGKGKGKGKGKGRqubMoMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGISQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
+vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGImnoKGKGKGKGKGRqSgadadadadadVCTRyyXRKGKGuUnKuUnKuUKGKGKGnKSAzgJXJXJXSWSAJXTWgJJXYXSAnKnKnKGPnKaznKKGKGKGzHKGKGKGKGKGrfKGKGKGKGKGJBKGKGKGKGKGKGKGKGKGKGKGKGRqubMoMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGISQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
 vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSISJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGImbQLQKGKGLfKGatatatatatatatatatKGKGKGKGnKsesesenKKGKGKGnKDTJXJXJXJXJXnrJXldgJJXJXDTnKnKnKnKnKnKnKKGhpKGzHKGKGKGKGKGrfKGKGKGKGKGJBKGKGRCKGKGKGKGqtKGKGKGKGRqubMoMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
-vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGTrnoKGmpKGKGgFgFgFgFgFgFgFgFgFKGKGKGKGuUsekrseuUnKnKnKnKSAtwtwGMfBdOSAJXdwGgJXHFSAnKnKnKJanKJanKRCKGKGzHKGKGKGKGKGouKGKGKGKGKGJBKGKGKGKGKGKGKGKGKGvpKGKGRqubMoMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
-vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGImnoJKKhgQgQykbvJpJpJpJpJpTrnouHKGKGKGnKsesesenKKGKGKGnKnKXBXBXBXBXBEMJXJXJXJXHFSAnKKGnKnKnKnKnKKGKGKGzHKGKGKGKGKGrfKGKGKGKGKGJBKGKGuHKGKGKGKGKGKGKGKGKGRqubMoMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
-vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGImnoKGRqbvJpJpMoMoMoMoMoMoImnoKGKGKGKGuUnKuUnKuUKGKGKGnKnKnKnKnKnKnKrpJXJXJXJXXjSAnKKGKGKGKGKGKGKGqtKGoGJsJsJsJsJsrfJsJsJsJsJsJBKGKGKGKGKGKGKGKGKGKGKGKhykubMoMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
-vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGImbQgQykubJGJGMoMoMoMoMoMoImnoKGKGqtKGKGKGKGKGRCKGKGKGnKSAnKnKnKnKnKSAuvoRGMfBSASAnKKGKGTmUvKGuHKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGRCKGhpKGKhykbvMoMoMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
-vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJpJpJpJGJGJGMoMoMoMoMoMoImbQbYKGKGKGKGhpetKGKGKGKGKGnKpSnKnKnKnKnKnKYYYYYYYYNOnKnKKGKGUYDUKGKGetKGKGKGKGKGuHKGqtKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGetKhykbvMoMoMoMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
+vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGTrnoBkmpKGKGgFgFgFgFgFgFgFgFgFKGKGKGKGuUsekrseuUnKnKnKnKSAtwoRGMfBdOSAJXdwGgJXHFSAnKnKnKJanKJanKRCKGKGzHKGKGKGKGKGouKGKGKGKGKGJBKGKGKGKGKGKGKGKGKGvpKGKGRqubMoMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
+vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGImnoJKKhgQgQykbvJpJpJpJpJpTrnouHKGKGKGnKsesesenKKGKGKGnKoeRNRNRNRNSvEMJXJXJXJXHFSAnKKGnKnKnKnKnKKGKGKGzHKGKGKGKGKGrfKGKGKGKGKGJBKGKGuHKGKGKGKGKGKGKGKGKGRqubMoMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
+vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGImnoKGRqbvJpJpMoMoMoMoMoMoImnoKGKGKGKGuUnKuUnKuUKGKGKGnKoeoeoeoeoergrpJXJXJXJXXjSAnKKGKGKGKGKGKGKGqtKGoGJsJsJsJsJsrfJsJsJsJsJsJBKGKGKGKGKGKGKGKGKGKGKGKhykubMoMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
+vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGImbQgQykubJGJGMoMoMoMoMoMoImnoKGKGqtKGKGKGKGKGRCKGKGKGnKSAoeoeoeoeoeSAuvoRGMfBSASAnKKGKGTmUvKGuHKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGRCKGhpKGKhykbvMoMoMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
+vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJpJpJpJGJGJGMoMoMoMoMoMoImbQbYKGKGKGKGhpetKGKGKGKGKGnKpSoeoeoeoeoeoeYYYYYYYYNOoenKKGKGUYDUKGKGetKGKGKGKGKGuHKGqtKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGetKhykbvMoMoMoMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
 vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoMoMoMoMoTrbQbYvpKGKGKGKGKGKGKGKGKGnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKKGKGKGKGKGKGKGKGgIdzgIKGKhgQgQbYqogQgQbYKGgIfagIEqgITeqtKGKGKhykbvMoMoMoMoMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGgsQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
 vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoMoMoMoMoMoTrbQgQbYKGKGKGKGxwuCKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGKGxwuCKGKGKGKGKGKGKGKhykbvTrbQykbvTrbQbYKGKGKGKGKGKGKGKGKhykbvMoMoMoMoMoMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
 vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSISJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGMoMoMoMoMoMoMoMoMoJpTrbQgQgQgQbYYRtNKGKGKGKGKGhpKGKGKGhpKGKGKGhpKGKGKGKGKGYRtNKGKhgQgQgQgQgQykbvMoMoJpJpMoMoTrbQgQgQgQgQgQgQgQgQykbvMoMoMoMoMoMoMoMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
@@ -371,9 +401,9 @@ vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSISJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJG
 vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGgmJGJGJGJGJGHbHbHbJGJGJGHbHbHbJGJGJGJGJGJGJGJGJGJGJGadadadadadadJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGHbHbHbJGJGJGJGJGJGJGJGMoMoMoMoMoMoJGJGJGJGJGJGJGJGJGJGgmJGJGJGJGTzJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
 vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGTzJGJGHbHbJGJGJGHbHbJGJGJGJGJGJGJGJGJGJGJGVCTRyyyyyyyyjASgadadadJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGTzTzJGJGJGJGHbHbHbHbJGJGJGJGJGJGJGJGJGHbHbJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
 vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGgmJGJGJGJGJGImTRYuXBXBXBhpunyyyyyyjAubJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGHbKGKGHbHbJGJGJGHbJGJGJGHbHbHbJGJGJGJGJGJGJGHbJGJGJGJGJGJGJGJGJGJGJGJGJGJGgsQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
-vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSISJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGTzJGJGJGJGJGJGJGJGJGJGJGImnoiRGMGMUpiRKGKGKGKhykubJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGHbHbHbHbHbJGJGJGJGJGJGHbHbHbHbJGJGJGJGJGHbHbHbHbJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
+vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSISJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGTzJGJGJGJGJGJGJGJGJGJGJGImnoiRKbGMUpiRKGKGKGKhykubJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGHbHbHbHbHbJGJGJGJGJGJGHbHbHbHbJGJGJGJGJGHbHbHbHbJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
 vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGImnoeCJXJXJXJXnKKGhpRqbvJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGHbHbHbJGJGJGHbHbHbHbJGJGJGJGJGJGHbKHKGHbJGJGJGJGJGHbKGKGHbHbJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
-vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGImnoJXERJXJXJXnKRCKhykubJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGHbHbJGJGJGJGJGJGJGJGgmJGJGJGHbHbHnHbHbJGJGJGgmJGHbKGKGHbJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
+vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGImnoJXERJXEuJXnKRCKhykubJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGHbHbJGJGJGJGJGJGJGJGgmJGJGJGHbHbHnHbHbJGJGJGgmJGHbKGKGHbJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
 vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGImnoWBererJveUnKKhykbvJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGHbHbHbHbJGJGJGJGJGJGHbHbHbHbJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
 vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGImnoiRuxuxuxiRKhykbvJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGHbHbHbJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGISQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
 vvvvQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGImbQgQgQgQgQgQykbvJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGJGQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSQSvvvv
