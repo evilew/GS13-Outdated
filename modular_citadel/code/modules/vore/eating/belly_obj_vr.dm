@@ -227,10 +227,9 @@
 	items_preserved.Cut()
 	owner.update_icons()
 
-	var/mob/living/carbon/predator = owner
-	if(iscarbon(predator))
-		if(digest_mode == DM_FATTEN && predator.fat_hider == src)
-			predator.fat_show()
+	if(iscarbon(owner))
+		var/mob/living/carbon/predator = owner
+		predator.hider_remove(src)
 	
 	return count
 
@@ -279,16 +278,17 @@
 		owner.visible_message("<font color='green'><b>[owner] expels [M] from their [lowertext(name)]!</b></font>")
 	owner.update_icons()
 
-	var/mob/living/carbon/predator = owner
-	if(iscarbon(predator))
-		if(digest_mode == DM_FATTEN && predator.fat_hider == src)
-			var/preys_fatness = 0
-			for(var/mob/living/carbon/prey in contents)
-				preys_fatness += prey.fatness
-			if(preys_fatness > predator.fatness)
-				predator.fat_hide(preys_fatness, src)
-			else
-				predator.fat_show()
+	if(iscarbon(owner))
+		var/mob/living/carbon/predator = owner
+		var/found = FALSE
+		for(var/prey in contents)
+			if(istype(prey, /mob/living/carbon))
+				found = TRUE
+		if(found)
+			predator.hider_add(src)
+		else
+			predator.hider_remove(src)
+
 	return TRUE
 
 // Actually perform the mechanics of devouring the tasty prey.
@@ -695,3 +695,11 @@
 		for(var/I in emote_lists[K])
 			dupe.emote_lists[K] += I
 	return dupe
+
+/obj/belly/proc/fat_hide(var/mob/living/carbon/user)
+	var/preys_fatness = 0
+	for(var/prey in contents)
+		if(iscarbon(prey))
+			var/mob/living/carbon/cprey = prey
+			preys_fatness += cprey.fatness
+	return preys_fatness
