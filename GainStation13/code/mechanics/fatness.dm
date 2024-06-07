@@ -90,6 +90,10 @@
 			if(!client?.prefs?.weight_gain_viruses)
 				return FALSE
 
+		if(FATTENING_TYPE_NANITES)
+			if(!client?.prefs?.weight_gain_nanites)
+				return FALSE
+
 		if(FATTENING_TYPE_WEIGHT_LOSS)
 			if(HAS_TRAIT(src, TRAIT_WEIGHT_LOSS_IMMUNE))
 				return FALSE

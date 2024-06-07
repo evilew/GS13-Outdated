@@ -1063,6 +1063,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Weight Gain - Weapons:</b><a href='?_src_=prefs;preference=weight_gain_weapons'>[weight_gain_weapons == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Weight Gain - Magic:</b><a href='?_src_=prefs;preference=weight_gain_magic'>[weight_gain_magic == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Weight Gain - Viruses:</b><a href='?_src_=prefs;preference=weight_gain_viruses'>[weight_gain_viruses == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+			dat += "<b>Weight Gain - Nanites:</b><a href='?_src_=prefs;preference=weight_gain_nanites'>[weight_gain_nanites == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Blueberry Inflation:</b><a href='?_src_=prefs;preference=blueberry_inflation'>[blueberry_inflation == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 
 			dat += "<h2>GS13 Gameplay Preferences</h2>"
@@ -2636,6 +2637,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					weight_gain_magic = !weight_gain_magic
 				if("weight_gain_viruses")
 					weight_gain_viruses = !weight_gain_viruses
+				if("weight_gain_nanites")
+					weight_gain_nanites = !weight_gain_nanites
 				if("weight_gain_extreme")
 					weight_gain_extreme = !weight_gain_extreme
 				if("noncon_weight_gain")
