@@ -55,6 +55,8 @@
 	var/static/beehometypecache = typecacheof(/obj/structure/beebox)
 	var/static/hydroponicstypecache = typecacheof(/obj/machinery/hydroponics)
 
+	var/paxed = FALSE
+
 /mob/living/simple_animal/hostile/poison/bees/Initialize()
 	. = ..()
 	generate_bee_visuals()
@@ -135,13 +137,13 @@
 			wanted_objects -= beehometypecache //so we don't attack beeboxes when not going home
 		return //no don't attack the goddamm box
 	else
-		. = ..()
-		if(. && beegent && isliving(target))
-			var/mob/living/L = target
-			if(L.reagents)
-				beegent.reaction_mob(L, INJECT)
-				L.reagents.add_reagent(beegent.type, rand(1,5))
-
+		if(!paxed)
+			. = ..()
+			if(. && beegent && isliving(target))
+				var/mob/living/L = target
+				if(L.reagents)
+					beegent.reaction_mob(L, INJECT)
+					L.reagents.add_reagent(beegent.type, rand(1,5))
 
 /mob/living/simple_animal/hostile/poison/bees/proc/assign_reagent(datum/reagent/R)
 	if(istype(R))
@@ -249,7 +251,6 @@
 	icon = 'icons/mob/bees.dmi'
 	var/mob/living/simple_animal/hostile/poison/bees/queen/queen
 
-
 /obj/item/queen_bee/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/reagent_containers/syringe))
 		var/obj/item/reagent_containers/syringe/S = I
@@ -265,6 +266,10 @@
 				user.visible_message("<span class='notice'>[user] injects [src] with royal bee jelly, causing it to split into two bees, MORE BEES!</span>","<span class ='warning'>You inject [src] with royal bee jelly, causing it to split into two bees, MORE BEES!</span>")
 			else
 				to_chat(user, "<span class='warning'>You don't have enough royal bee jelly to split a bee in two!</span>")
+		if(S.reagents.get_reagent_amount(/datum/reagent/pax) >= 5 && !queen.paxed)
+			user.visible_message("<span class='notice'>[user] injects [src] with something, it looks relaxed!</span>","<span class ='warning'>You inject [src] with pax, it look relaxed!</span>")
+			S.reagents.remove_reagent(/datum/reagent/pax, 5)
+			queen.paxed = TRUE
 		else
 			var/datum/reagent/R = GLOB.chemical_reagents_list[S.reagents.get_master_reagent_id()]
 			if(R && S.reagents.has_reagent(R.type, 5))

@@ -2,9 +2,9 @@
 	. = ..()
 	if(iscarbon(target))
 		var/mob/living/carbon/T = target
-		if(T.fat_hider)
-			if(isitem(T.fat_hider))
-				var/obj/item/O = T.fat_hider
+		for(var/hider in T.fat_hiders)
+			if(isitem(hider))
+				var/obj/item/O = hider
 				T.dropItemToGround(O)
 		if(T.cursed_fat == 1)
 			T.cursed_fat = 0
@@ -14,9 +14,9 @@
 	. = ..()
 	if(iscarbon(M))
 		var/mob/living/carbon/T = M
-		if(T.fat_hider)
-			if(isitem(T.fat_hider))
-				var/obj/item/O = T.fat_hider
+		for(var/hider in T.fat_hiders)
+			if(isitem(hider))
+				var/obj/item/O = hider
 				T.dropItemToGround(O)
 		if(T.cursed_fat == 1)
 			T.cursed_fat = 0
@@ -24,9 +24,9 @@
 
 /datum/reagent/water/holywater/on_mob_life(mob/living/carbon/M)
 	. = ..()
-	if(M.fat_hider)
-		if(isitem(M.fat_hider))
-			var/obj/item/O = M.fat_hider
+	for(var/hider in M.fat_hiders)
+		if(isitem(hider))
+			var/obj/item/O = hider
 			M.dropItemToGround(O)
 	if(M.cursed_fat == 1)
 		M.cursed_fat = 0

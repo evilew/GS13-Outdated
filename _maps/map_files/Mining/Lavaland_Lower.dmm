@@ -7489,7 +7489,7 @@
 	dir = 2;
 	id = "fatchamber"
 	},
-/obj/item/projectile/energy/fattening/cannon,
+/obj/item/projectile/beam/fattening/cannon,
 /turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
 "tf" = (
@@ -7785,7 +7785,7 @@
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "uG" = (
-/obj/item/projectile/energy/fattening/cannon,
+/obj/item/projectile/beam/fattening/cannon,
 /turf/open/floor/mineral/calorite,
 /area/xenoarch/caloriteresearch_powered)
 "uH" = (
