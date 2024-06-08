@@ -93,7 +93,7 @@
 			if(newletter == " ")
 				newletter = "...huuuhhh..."
 			else if(newletter == ".")
-				newletter = " *BURP*."
+				newletter = " ++BURP++."
 		switch(rand(1,100) <= strength * 0.5)
 			if(1)
 				newletter += "'"
