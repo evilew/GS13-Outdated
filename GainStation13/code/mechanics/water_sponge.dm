@@ -82,3 +82,10 @@
 		visible_message("[attached] is detached from [src]")
 		attached = null
 		return
+
+/obj/machinery/pool/controller/process_reagents()
+	for(var/turf/open/pool/W in linked_turfs)
+		for(var/mob/living/carbon/human/swimee in W)
+			if(HAS_TRAIT(swimee, TRAIT_WATER_SPONGE))
+				swimee.reagents.add_reagent(/datum/reagent/water, 5)
+	..()
