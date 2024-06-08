@@ -90,4 +90,4 @@
 	..()
 
 /datum/reagent/berry_juice_infection/proc/fat_hide()
-	return (3 * (volume * volume))/50
+	return (124 * (volume * volume))/1000	//123'840 600% size, about 56'000 400% size, calc was: (3 * (volume * volume))/50
