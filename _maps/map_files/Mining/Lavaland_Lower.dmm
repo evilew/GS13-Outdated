@@ -7974,6 +7974,10 @@
 /obj/structure/flora/rock,
 /turf/open/floor/mineral/calorite,
 /area/lavaland/surface/outdoors)
+"vQ" = (
+/obj/structure/trap/fattening,
+/turf/open/floor/carpet/orange,
+/area/lavaland/surface/outdoors)
 "vS" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/railing{
@@ -8035,6 +8039,7 @@
 /area/xenoarch/caloriteresearch_powered)
 "wg" = (
 /obj/structure/frame/computer,
+/obj/item/trash/odd_disk,
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/caloriteresearch_powered)
 "wh" = (
@@ -9803,6 +9808,10 @@
 /obj/structure/lattice/catwalk,
 /turf/open/floor/mineral/basaltstone_floor,
 /area/xenoarch/caloriteresearch_unpowered)
+"Et" = (
+/obj/structure/trap/belch,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
 "Eu" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -10009,6 +10018,10 @@
 /obj/effect/turf_decal/candy/greenwhite2,
 /turf/open/candyfloor,
 /area/ruin/powered/candyland)
+"Fo" = (
+/obj/structure/trap/fattening,
+/turf/open/floor/plating,
+/area/lavaland/surface/outdoors)
 "Fp" = (
 /obj/structure/table,
 /obj/item/storage/belt/utility,
@@ -10568,6 +10581,7 @@
 "Iq" = (
 /obj/structure/statue/calorite/fatty,
 /obj/structure/table/reinforced/brass,
+/obj/item/book/granter/spell/fattening/belch,
 /turf/open/floor/mineral/calorite/strong,
 /area/lavaland/surface/outdoors)
 "It" = (
@@ -11460,6 +11474,10 @@
 /obj/structure/trash_pile,
 /turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
+"MP" = (
+/obj/structure/trap/fattening,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
 "MQ" = (
 /obj/structure/table,
 /obj/item/storage/firstaid/regular,
@@ -12068,6 +12086,7 @@
 /area/xenoarch/caloriteresearch_powered)
 "PH" = (
 /obj/structure/mineral_door/calorite,
+/obj/structure/trap/fattening,
 /turf/open/floor/plasteel,
 /area/lavaland/surface/outdoors)
 "PJ" = (
@@ -13106,8 +13125,8 @@
 /turf/open/floor/plasteel/freezer,
 /area/xenoarch/caloriteresearch_powered)
 "UF" = (
-/obj/item/book/granter/spell/fattening,
 /obj/structure/table/wood,
+/obj/item/book/granter/spell/fattening/traps,
 /turf/open/floor/mineral/calorite,
 /area/lavaland/surface/outdoors)
 "UG" = (
@@ -43926,9 +43945,9 @@ lQ
 lQ
 ab
 Aw
-ZH
-ZH
-ZH
+vQ
+vQ
+vQ
 Aw
 lQ
 ab
@@ -44439,7 +44458,7 @@ lQ
 lQ
 ab
 Aw
-ZH
+vQ
 DV
 ab
 ab
@@ -44700,7 +44719,7 @@ ZH
 Aw
 ab
 ab
-ZH
+vQ
 Aw
 ab
 ab
@@ -44953,8 +44972,8 @@ lQ
 lQ
 lQ
 Aw
-ZH
-ZH
+vQ
+vQ
 Xc
 ab
 ZH
@@ -45213,7 +45232,7 @@ Aw
 ZH
 DV
 DV
-ZH
+vQ
 FN
 Aw
 ab
@@ -45469,7 +45488,7 @@ lQ
 Aw
 ZH
 Aw
-DV
+Fo
 Aw
 DV
 Aw
@@ -52740,11 +52759,11 @@ ab
 ab
 lQ
 WB
-lQ
-lQ
-lQ
-lQ
-lQ
+MP
+Et
+MP
+Et
+MP
 Ga
 lQ
 lQ
@@ -52997,11 +53016,11 @@ ab
 ab
 lQ
 Gg
-lQ
+Et
 Aw
 Bd
 Aw
-lQ
+Et
 tx
 lQ
 lQ
@@ -53254,11 +53273,11 @@ ab
 ab
 lQ
 Gg
-lQ
+MP
 XQ
 Iq
 zw
-lQ
+MP
 Qk
 lQ
 lQ
@@ -53511,11 +53530,11 @@ ab
 ab
 ab
 Gg
-lQ
+Et
 Aw
 HE
 Aw
-lQ
+Et
 tx
 lQ
 lQ
@@ -53768,11 +53787,11 @@ ab
 ab
 ab
 WB
-lQ
-lQ
-lQ
-lQ
-lQ
+MP
+Et
+MP
+Et
+MP
 Ga
 lQ
 lQ
