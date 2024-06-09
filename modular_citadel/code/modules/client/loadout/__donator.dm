@@ -250,6 +250,12 @@ datum/gear/lyricalpawsring
 	path = /obj/item/dnainjector/fatfang
 	ckeywhitelist = list("sonoida")
 
+/datum/gear/toolbelt
+	name = "Empty Toolbelt"
+	category = SLOT_IN_BACKPACK
+	path = /obj/item/storage/belt/utility
+	ckeywhitelist = list("Killmewitha22")
+
 /obj/item/toy/sword/chloesabre/halsey
 	name = "Halsey's Sabre"
 	desc = "An elegant weapon, similar in design to the Captain's Sabre, but with a platinum hilt and an adamantine blade. the hilt has an engraved hyena on it."
