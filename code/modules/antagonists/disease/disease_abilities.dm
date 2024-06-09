@@ -434,6 +434,11 @@ GLOBAL_LIST_INIT(disease_ability_singletons, list(
 	short_desc = "Cause victims to gain weight."
 	long_desc = "Cause victims to gain weight. Boosts stage speed, but weakens all other stats."
 
+/datum/disease_ability/symptom/medium/heal/berry // GS13
+	symptoms = list(/datum/symptom/berry)
+	short_desc = "Cause victims to start filling up with blueberry juice."
+	long_desc = "Cause victims to fill up with blueberry juice."
+
 /datum/disease_ability/symptom/medium/robotic_adaptation // GS13
 	symptoms = list(/datum/symptom/robotic_adaptation)
 	short_desc = "Allows to infect robotic races."
