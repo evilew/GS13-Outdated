@@ -46,7 +46,8 @@
 	icon_state = "gum_wrapped"
 	desc = "Doesn't cause anything more than some discoloration... probably."
 	trash = /obj/item/trash/blueberry_gum
-	list_reagents = list(/datum/reagent/blueberry_juice = 0.5)
+	list_reagents = list(/datum/reagent/blueberry_juice = 50)
+	bitesize = 5
 	filling_color = "#001aff"
 	tastes = list("blueberry gum" = 1)
 	foodtype = FRUIT
