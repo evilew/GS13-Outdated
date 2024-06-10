@@ -14,7 +14,7 @@
 	icon_grow = "berry-grow" // Uses one growth icons set for all the subtypes
 	icon_dead = "berry-dead" // Same for the dead icon
 	genes = list(/datum/plant_gene/trait/repeated_harvest)
-	mutatelist = list(/obj/item/seeds/berry/glow, /obj/item/seeds/berry/poison)
+	mutatelist = list(/obj/item/seeds/berry/glow, /obj/item/seeds/berry/poison, /obj/item/seeds/berry/blueberry)
 	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
 
 /obj/item/reagent_containers/food/snacks/grown/berries
