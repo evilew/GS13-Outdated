@@ -1912,7 +1912,6 @@ datum/sprite_accessory/mam_tails/insect
 /datum/sprite_accessory/taur/fatdrake //ported from Vorestation
 	name = "Fat Drake"
 	icon_state = "fatdrake"
-	color_src = MUTCOLORS
 /datum/sprite_accessory/taur/fatwolf //ported from Vorestation
 	name = "Fat Wolf"
 	icon_state = "fatwolf"
