@@ -91,3 +91,14 @@
 
 /datum/reagent/berry_juice_infection/proc/fat_hide()
 	return (3 * (volume * volume))/50
+
+
+//extreme variant, for admin or item purposes
+/datum/symptom/berry/extreme
+	name = "Extreme berrification"
+	stealth = -7
+	resistance = 11
+	stage_speed = 10
+	transmittable = 2
+	level = 7
+	severity = 5

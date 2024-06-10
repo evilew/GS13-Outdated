@@ -151,7 +151,6 @@
 	name = "grey modular bra" 
 	desc = "A tasteful grey bra that reminds you of the good old days. Now adjusts to the match the wearer's size!"
 	icon_location = 'GainStation13/icons/mob/modclothes/graymodular_bra.dmi'
-	icon = 'GainStation13/icons/mob/modclothes/gray_bra.dmi'
 	icon_state = "grey"
-	item_state = "defaultsuit"
-	item_color = "defaultsuit"
+	item_state = "grey_bra"
+	item_color = "grey_bra"
