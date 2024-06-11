@@ -1,49 +1,99 @@
-"a" = (/obj/structure/flora/junglebush/b,/turf/open/floor/grass,/area/ruin/powered)
-"b" = (/turf/closed/indestructible/riveted/boss,/area/ruin/unpowered)
-"c" = (/turf/open/floor/grass,/area/ruin/powered)
-"d" = (/obj/structure/mineral_door/woodrustic,/obj/structure/fans/tiny/invisible,/turf/open/floor/grass,/area/ruin/powered)
-"e" = (/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
-"f" = (/obj/structure/stone_tile/block{dir = 4; icon_state = "pristine_block1"},/obj/structure/stone_tile/cracked,/obj/structure/statue/blueberry,/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
-"g" = (/obj/structure/stone_tile/block{dir = 4; icon_state = "pristine_block1"},/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
-"h" = (/obj/structure/stone_tile/block{dir = 8; icon_state = "pristine_block1"},/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
-"i" = (/obj/structure/stone_tile/block{dir = 4; icon_state = "pristine_block1"},/obj/structure/stone_tile/burnt{dir = 1; icon_state = "burnt_tile1"},/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
-"j" = (/obj/structure/stone_tile/block{dir = 8; icon_state = "pristine_block1"},/obj/structure/stone_tile/cracked{dir = 4; icon_state = "cracked_tile1"},/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
-"k" = (/obj/structure/stone_tile/block{dir = 4; icon_state = "pristine_block1"},/obj/structure/stone_tile/cracked{dir = 1; icon_state = "cracked_tile1"},/obj/structure/statue/blueberry,/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
-"l" = (/turf/open/lava/smooth/lava_land_surface,/area/ruin/unpowered)
-"m" = (/turf/template_noop,/area/template_noop)
-"n" = (/obj/structure/flora/junglebush/c,/turf/open/floor/grass,/area/ruin/powered)
-"o" = (/obj/structure/stone_tile/block{dir = 8; icon_state = "pristine_block1"},/obj/structure/stone_tile/burnt{dir = 8; icon_state = "burnt_tile1"},/obj/structure/statue/blueberry,/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
-"q" = (/turf/open/water,/area/ruin/powered)
-"G" = (/turf/closed/indestructible/riveted/boss,/area/ruin/powered)
-"H" = (/obj/structure/stone_tile/block{dir = 8; icon_state = "pristine_block1"},/obj/structure/statue/blueberry,/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
-"I" = (/obj/structure/flora/junglebush/b,/obj/machinery/light{base_state = null; dir = 1; icon = null; icon_state = null; invisibility = 1; overlayicon = null},/turf/open/floor/grass,/area/ruin/powered)
-"O" = (/obj/item/reagent_containers/food/snacks/muffin/berry{desc = "A delicious and spongy little cake, with blueberries."; name = "blueberry muffin"},/turf/open/floor/grass,/area/ruin/powered)
-"U" = (/obj/machinery/light{base_state = null; dir = 1; icon = null; icon_state = null; invisibility = 1; overlayicon = null},/turf/open/floor/grass,/area/ruin/powered)
+"aa" = (/obj/structure/stone_tile/block/cracked,/obj/structure/stone_tile{dir = 1},/obj/effect/light_emitter{set_cap = 3; set_luminosity = 6},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"ak" = (/obj/structure/stone_tile/block{dir = 8; icon_state = "pristine_block1"},/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
+"ap" = (/turf/open/floor/plasteel/stairs{dir = 4},/area/ruin/powered)
+"aW" = (/obj/effect/light_emitter{set_cap = 3; set_luminosity = 6},/turf/open/floor/carpet/blue,/area/ruin/powered)
+"cI" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/effect/decal/cleanable/blood/splatter{color = "#151C62"},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"cQ" = (/obj/structure/stone_tile{dir = 1},/obj/effect/light_emitter{set_cap = 3; set_luminosity = 6},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"cR" = (/obj/effect/decal/cleanable/blood{color = "#151C62"},/obj/item/trash/blueberry_gum{pixel_y = -8; pixel_x = -20},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"dI" = (/obj/effect/decal/cleanable/blood/drip{color = "#151C62"},/turf/open/floor/carpet/blue,/area/ruin/powered)
+"dJ" = (/obj/structure/stone_tile/block/cracked,/obj/structure/stone_tile{dir = 4},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"fn" = (/obj/structure/stone_tile/block{dir = 4; icon_state = "pristine_block1"},/obj/structure/stone_tile/cracked{dir = 1; icon_state = "cracked_tile1"},/obj/item/pickaxe/silver,/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"gg" = (/obj/structure/stone_tile/block{dir = 1; icon_state = "pristine_block1"},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"gj" = (/obj/structure/stone_tile/burnt,/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"gl" = (/obj/structure/stone_tile/block{dir = 4; icon_state = "pristine_block1"},/obj/structure/stone_tile{dir = 8},/obj/effect/light_emitter{set_cap = 3; set_luminosity = 6},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"hk" = (/obj/structure/stone_tile/block{dir = 8; icon_state = "pristine_block1"},/obj/structure/stone_tile/cracked{dir = 4; icon_state = "cracked_tile1"},/obj/structure/stone_tile,/obj/effect/light_emitter{set_cap = 3; set_luminosity = 6},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"iH" = (/obj/structure/stone_tile/burnt{dir = 8; icon_state = "burnt_tile1"},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"iY" = (/obj/structure/table/abductor,/obj/item/reagent_containers/food/snacks/muffin/berry{pixel_y = 3},/turf/open/floor/carpet/blue,/area/ruin/powered)
+"jy" = (/turf/open/water,/area/ruin/powered)
+"kK" = (/obj/structure/mineral_door/woodrustic,/obj/structure/fans/tiny/invisible,/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"lh" = (/obj/structure/stone_tile/block{dir = 8; icon_state = "pristine_block1"},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"lZ" = (/obj/structure/stone_tile/block{dir = 8; icon_state = "pristine_block1"},/obj/structure/stone_tile/cracked{dir = 4; icon_state = "cracked_tile1"},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"md" = (/obj/structure/stone_tile/surrounding/cracked,/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
+"mo" = (/obj/structure/stone_tile/block{dir = 4; icon_state = "pristine_block1"},/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
+"mD" = (/obj/structure/stone_tile/block{dir = 8; icon_state = "pristine_block1"},/obj/structure/stone_tile/cracked{dir = 4; icon_state = "cracked_tile1"},/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
+"nh" = (/obj/structure/table/abductor,/obj/item/reagent_containers/glass/bottle/berry{pixel_y = 4},/turf/open/floor/carpet/blue,/area/ruin/powered)
+"nD" = (/obj/structure/stone_tile/block/cracked{dir = 8},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"oi" = (/obj/structure/stone_tile/surrounding_tile{dir = 4},/obj/effect/light_emitter{set_cap = 3; set_luminosity = 6},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"oQ" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/structure/railing,/obj/effect/light_emitter{set_cap = 3; set_luminosity = 6},/obj/structure/railing{dir = 8},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"ph" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/effect/decal/cleanable/blood/tracks{dir = 6; color = "#151C62"},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"pi" = (/obj/structure/stone_tile/cracked{dir = 1; icon_state = "cracked_tile1"},/obj/structure/stone_tile/block{dir = 8; icon_state = "pristine_block1"},/obj/effect/light_emitter{set_cap = 3; set_luminosity = 6},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"pl" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 8},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"rI" = (/obj/structure/stone_tile/block{dir = 4; icon_state = "pristine_block1"},/obj/effect/decal/cleanable/blood/drip{color = "#151C62"},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"rY" = (/turf/open/lava/smooth/lava_land_surface,/area/ruin/unpowered)
+"sB" = (/obj/effect/decal/cleanable/blood/splats{color = "#151C62"},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"tr" = (/obj/structure/railing{dir = 1},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"tX" = (/obj/structure/stone_tile/block/cracked{dir = 8},/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
+"ua" = (/obj/structure/stone_tile/block{dir = 4; icon_state = "pristine_block1"},/obj/structure/stone_tile/cracked,/obj/structure/statue/blueberry,/obj/structure/stone_tile/block/cracked,/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
+"vb" = (/obj/structure/stone_tile/cracked,/obj/structure/stone_tile/block{dir = 1; icon_state = "pristine_block1"},/obj/effect/light_emitter{set_cap = 3; set_luminosity = 6},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"vd" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/effect/turf_decal/tile/blue{dir = 1},/obj/effect/turf_decal/tile/blue{dir = 4},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"wM" = (/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"xy" = (/turf/template_noop,/area/template_noop)
+"xL" = (/obj/structure/statue/blueberry,/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"yS" = (/obj/effect/decal/cleanable/blood/tracks{dir = 4; color = "#151C62"},/turf/open/floor/plasteel/stairs{dir = 8},/area/ruin/powered)
+"zt" = (/obj/item/clothing/under/rank/security/pink,/obj/effect/decal/cleanable/blood{color = "#151C62"},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"zG" = (/obj/structure/stone_tile/block{dir = 4; icon_state = "pristine_block1"},/obj/structure/stone_tile/cracked,/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"Ag" = (/obj/structure/stone_tile/block{dir = 8; icon_state = "pristine_block1"},/obj/structure/statue/blueberry,/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
+"At" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/effect/turf_decal/tile/blue{dir = 1},/obj/effect/turf_decal/tile/blue{dir = 8},/obj/effect/light_emitter{set_cap = 3; set_luminosity = 6},/obj/structure/railing{dir = 4},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"AB" = (/obj/structure/stone_tile/surrounding_tile/cracked,/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"Bb" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/effect/turf_decal/tile/blue{dir = 1},/obj/structure/railing{dir = 4},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"BN" = (/obj/structure/stone_tile/surrounding_tile/burnt,/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
+"CG" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 1},/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/effect/decal/cleanable/blood/drip{color = "#151C62"},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"CM" = (/turf/closed/indestructible/riveted/boss,/area/ruin/unpowered)
+"ES" = (/obj/structure/statue/blueberry,/turf/open/floor/carpet/blue,/area/ruin/powered)
+"Fx" = (/obj/structure/stone_tile/block/cracked{dir = 1},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"FG" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/effect/turf_decal/tile/blue,/obj/effect/turf_decal/tile/blue{dir = 4},/obj/structure/railing{dir = 8},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"FO" = (/obj/effect/decal/cleanable/blood{color = "#151C62"},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"Hh" = (/obj/structure/stone_tile/surrounding/cracked{dir = 4},/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
+"In" = (/turf/closed/indestructible/riveted/boss,/area/ruin/powered)
+"Ld" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/effect/turf_decal/tile/blue{dir = 1},/obj/effect/turf_decal/tile/blue{dir = 8},/obj/structure/railing{dir = 4},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"Mo" = (/obj/structure/stone_tile/block/cracked{dir = 4},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"MZ" = (/obj/structure/stone_tile/block{dir = 4; icon_state = "pristine_block1"},/obj/structure/stone_tile/burnt{dir = 1; icon_state = "burnt_tile1"},/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
+"Pb" = (/turf/open/floor/carpet/blue,/area/ruin/powered)
+"Pe" = (/obj/effect/decal/cleanable/blood/drip{color = "#151C62"},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"PM" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/effect/turf_decal/tile/blue{dir = 4},/obj/structure/railing{dir = 8},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"QC" = (/obj/structure/stone_tile/block/cracked,/obj/structure/stone_tile{dir = 1},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"RF" = (/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
+"RH" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/structure/railing,/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"RI" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/structure/railing,/obj/effect/light_emitter{set_cap = 3; set_luminosity = 6},/obj/structure/railing{dir = 4},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"Se" = (/obj/structure/stone_tile/surrounding_tile{dir = 8},/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
+"Xy" = (/obj/structure/stone_tile/surrounding_tile{dir = 8},/turf/open/floor/mineral/basaltstone_floor,/area/ruin/powered)
+"YV" = (/obj/structure/stone_tile/block{dir = 4; icon_state = "pristine_block1"},/obj/structure/stone_tile/cracked{dir = 1; icon_state = "cracked_tile1"},/obj/structure/statue/blueberry,/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
+"Zz" = (/obj/structure/stone_tile/block{dir = 8; icon_state = "pristine_block1"},/obj/structure/stone_tile/burnt{dir = 8; icon_state = "burnt_tile1"},/obj/structure/statue/blueberry,/obj/structure/stone_tile/block/cracked,/turf/open/floor/plating/asteroid/basalt,/area/ruin/unpowered)
 
 (1,1,1) = {"
-mmmmeeeeeeeeeeeeeeeemmmmm
-mmeeeeeelllllllleeeeeemmm
-meeebellllllllllllebeeemm
-meebllllllllllllllllbeemm
-meebllGGGGGGGGGGGGllbeemm
-meellGUccUqqqqUccUGlleemm
-meelGGcacqqqqqqcccGGleemm
-mellGGGUqqcccqqcUGGGllemm
-melllGcqqccOqqccacGlllemm
-melllGcqqcccccccccGlllemm
-mellGIcqqccccccccnUGllemm
-mellGcccqqqccccccccGllemm
-mellGccccnqqcccccccGllemm
-mellGccccccccccccccGllemm
-mellGUccUccccccUccUGllemm
-meellGcaGGGddGGGacGlleemm
-meelllbbbbfeeobbbbllleemm
-meebblllbbgeehbblllbbeemm
-meeeebllllieejllllbeeeemm
-mmeeeellllgeehlllleeeemmm
-mmeeeellllgeejlllleeeemmm
-mmeeeeeeelgeehleeeeeeemmm
-mmmeeeeeebkeeHbeeeeeemmmm
-mmmmmmmmeegeeheemmmmmmmmm
-mmmmmmmmmbeeeebmmmmmmmmmm
+xyxyxyxyRFRFRFRFRFRFRFRFRFRFRFRFRFRFRFRFxyxyxyxyxy
+xyxyRFRFRFRFRFRFrYrYrYrYrYrYrYrYRFRFRFRFRFRFxyxyxy
+xyRFRFRFCMCMrYrYrYrYInrYrYInrYrYrYrYCMCMRFRFRFxyxy
+xyRFRFCMrYrYrYrYInrYInrYrYInrYInrYrYrYrYCMRFRFxyxy
+xyRFRFCMrYrYrYInInInInInInInInInInrYrYrYCMRFRFxyxy
+xyRFRFrYrYrYInInaaFGPbaWaWPbAtdJInInrYrYrYRFRFxyxy
+xyRFRFrYrYrYInQCABFGESnhiYESLdiHdJInrYrYrYRFRFxyxy
+xyRFrYrYrYInInMowMFGPbPbdIPbLdwMlhInInrYrYrYRFxyxy
+xyRFrYrYrYInglgjwMPMvdCGvdvdBbwMXyhkInrYrYrYRFxyxy
+xyRFrYrYrYInrIFOPeoQRHcIplRHRIwMwMlhInrYrYrYRFxyxy
+xyRFrYrYInInrIztcRySySphplapapwMwMlhInInrYrYRFxyxy
+xyRFrYrYInjyfnsBPewMtrtrtrtrwMwMwMnDjyInrYrYRFxyxy
+xyRFrYrYInjyzGxLwMPewMwMwMwMwMwMxLlZjyInrYrYRFxyxy
+xyRFrYrYInjyvbggFxggcQwMwMoiFxggggpijyInrYrYRFxyxy
+xyRFrYrYInjyjyjyjyjyInwMwMInjyjyjyjyjyInrYrYRFxyxy
+xyRFRFrYInInInInInInInkKkKInInInInInInInrYRFRFxyxy
+xyRFRFrYrYInrYInrYCMuaBNSeZzCMrYInrYInrYrYRFRFxyxy
+xyRFRFrYrYrYrYInrYCMmoRFRFakCMrYInrYrYrYrYRFRFxyxy
+xyRFRFCMCMrYrYrYrYCMMZRFRFmDCMrYrYrYrYCMCMRFRFxyxy
+xyxyRFRFRFCMrYrYrYrYmoRFRFtXrYrYrYrYCMRFRFRFxyxyxy
+xyxyRFRFRFCMrYrYrYrYmoRFRFmDrYrYrYrYCMRFRFRFxyxyxy
+xyxyRFRFRFRFRFRFRFrYmoRFRFakrYRFRFRFRFRFRFRFxyxyxy
+xyxyxyRFRFRFRFRFRFCMYVRFRFAgCMRFRFRFRFRFRFxyxyxyxy
+xyxyxyxyxyxyxyxyRFRFmoRFRFakRFRFxyxyxyxyxyxyxyxyxy
+xyxyxyxyxyxyxyxyxyCMHhRFRFmdCMxyxyxyxyxyxyxyxyxyxy
 "}
