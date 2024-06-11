@@ -274,3 +274,12 @@
 	suffix = "lavaland_surface_caloriteshrine.dmm"
 	allow_duplicates = TRUE
 	cost = 0
+
+
+/datum/map_template/ruin/lavaland/blueberry_shrine //GS13
+	name = "Blueberry Shrine"
+	id = "blueberryshrine"
+	description = "A strange temple, littered with oddly round sculptures and peculiar blue stains."
+	suffix = "lavaland_surface_blueberryarea.dmm"
+	allow_duplicates = TRUE
+	cost = 0

@@ -8075,6 +8075,13 @@
 /mob/living/simple_animal/hostile/feed/chocolate_slime/creambeast,
 /turf/open/candyfloor,
 /area/ruin/powered/candyland)
+"wo" = (
+/obj/structure/sign/plaques/kiddie{
+	desc = "Prototype of propulsion-based mass increase machine. Pseudonym: La Machina.";
+	name = "Experiment #3 Plaque"
+	},
+/turf/closed/wall,
+/area/xenoarch/caloriteresearch_powered)
 "wt" = (
 /obj/effect/turf_decal/tile/bar{
 	dir = 8
@@ -65904,7 +65911,7 @@ TC
 Ny
 OA
 OA
-OA
+wo
 GT
 Zt
 Zt

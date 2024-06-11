@@ -84,17 +84,17 @@
 					/obj/item/clothing/shoes/kindleKicks)
 	crate_name = "footie crate"
 
-// /datum/supply_pack/misc/modular_greysuits
-// 	name = "Modular Greysuits Crate"
-// 	desc = "In case of sudden obesity, this stretchable jumpsuit pack can help cover up any exposed bodies!"
-// 	cost = 2000
-// 	contains = list(/obj/item/clothing/under/color/grey/modular,
-// 					/obj/item/clothing/under/color/grey/modular,
-// 					/obj/item/clothing/under/color/grey/modular,
-// 					/obj/item/clothing/under/color/grey/modular,
-// 					/obj/item/clothing/under/color/grey/modular,
-// 					/obj/item/clothing/under/color/grey/modular)
-// 	crate_name = "modular jumpsuits crate"
+/datum/supply_pack/misc/modular_greysuits
+	name = "Modular Greysuits Crate"
+	desc = "In case of sudden obesity, this stretchable jumpsuit pack can help cover up any exposed bodies!"
+	cost = 2000
+	contains = list(/obj/item/clothing/under/color/grey/modular,
+					/obj/item/clothing/under/color/grey/modular,
+					/obj/item/clothing/under/color/grey/modular,
+					/obj/item/clothing/under/color/grey/modular,
+					/obj/item/clothing/under/color/grey/modular,
+					/obj/item/clothing/under/color/grey/modular)
+	crate_name = "modular jumpsuits crate"
 
 /datum/supply_pack/misc/randombedsheets
 	name = "Bedsheet Crate (R)"

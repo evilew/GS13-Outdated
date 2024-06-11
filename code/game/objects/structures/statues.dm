@@ -316,7 +316,7 @@
 
 /obj/structure/statue/blueberry
 	name = "blueberry statue"
-	desc = "A statue resembling a poor humanoid creature shaped like a ball."
+	desc = "A statue resembling a humanoid bloated into a round spherical shape."
 	icon_state = "blueberry"
 
 

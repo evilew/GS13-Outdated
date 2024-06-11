@@ -37126,6 +37126,16 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/medical/chemistry)
+"bwZ" = (
+/obj/structure/sign/plaques/golden{
+	desc = "In this spot of maintenance, Ambire E. and Vedi managed to break a record of almost two million tons of weight on a single person, almost leading to destabilization of reality and causation of a black hole." ;
+	name = "Golden Record Plaque";
+	pixel_y = 32
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg3"
+	},
+/area/maintenance/department/security/brig)
 "bxc" = (
 /obj/structure/disposalpipe/segment{
 	dir = 6
@@ -82261,7 +82271,7 @@ apB
 aiu
 aiu
 aiu
-aoK
+bwZ
 aiu
 azY
 axC

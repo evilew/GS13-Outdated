@@ -49,7 +49,7 @@
 			to_chat(user, "<span class='warning'>You get some juice out of you...</span>")
 		return
 	..()
-
+ 
 /obj/effect/decal/cleanable/juice
 	name = "berry juice"
 	desc = "It's blue and smells enticingly sweet."
@@ -65,3 +65,13 @@
 
 /obj/effect/decal/cleanable/juice/streak
 	random_icon_states = list("streak1", "streak2", "streak3", "streak4", "streak5")
+
+//extreme variant, for admin or item purposes
+/datum/symptom/berry/extreme
+	name = "Extreme berrification"
+	stealth = -7
+	resistance = 11
+	stage_speed = 10
+	transmittable = 2
+	level = 7
+	severity = 5
