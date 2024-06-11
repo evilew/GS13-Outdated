@@ -42,12 +42,13 @@
 				L.reagents.add_reagent(/datum/reagent/water, 3)
 
 /mob/living/carbon/proc/water_check(datum/gas_mixture/breath)
-	var/breath_gases = breath.gases
-	if(breath_gases[/datum/gas/water_vapor])
-		if(HAS_TRAIT(src, TRAIT_WATER_SPONGE))
-			var/H2O_pp = breath.get_breath_partial_pressure(breath_gases[/datum/gas/water_vapor])
-			reagents.add_reagent(/datum/reagent/water, H2O_pp/10)
-			breath_gases[/datum/gas/water_vapor] -= H2O_pp
+	if(HAS_TRAIT(src, TRAIT_WATER_SPONGE))
+		if(breath.gases)
+			var/breath_gases = breath.gases
+			if(breath_gases[/datum/gas/water_vapor])
+				var/H2O_pp = breath.get_breath_partial_pressure(breath_gases[/datum/gas/water_vapor])
+				reagents.add_reagent(/datum/reagent/water, H2O_pp/10)
+				breath_gases[/datum/gas/water_vapor] -= H2O_pp
 
 /obj/structure/sink
 	var/mob/living/attached
