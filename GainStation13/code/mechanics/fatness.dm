@@ -1,3 +1,5 @@
+GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/bridge, /area/crew_quarters))
+
 /mob/living/carbon
 	//Due to the changes needed to create the system to hide fatness, here's some notes:
 	// -If you are making a mob simply gain or lose weight, use adjust_fatness. Try to not touch the variables directly unless you know 'em well
@@ -44,10 +46,7 @@
 
 	fatness = fatness_real //Make their current fatness their real fatness
 
-	hiders_apply()	//Check and apply hiders
-
-	if(client?.prefs?.weight_gain_extreme)
-		xwg_resize()
+	hiders_apply()	//Check and apply hiders, XWG is there too
 
 	return TRUE
 
@@ -136,13 +135,20 @@
 		if(client?.prefs?.max_weight) //Check their prefs
 			fatness_over = min(fatness_over, (client?.prefs?.max_weight - 1)) //And make sure it's not above their preferred max
 		fatness = fatness_real + fatness_over //Then, make their current fatness the sum of their real plus/minus the calculated amount
-		if(client?.prefs?.weight_gain_extreme)
-			xwg_resize()
+	if(client?.prefs?.weight_gain_extreme)
+		xwg_resize()
+
+/mob/living/carbon/human/handle_breathing(times_fired)
+	. = ..()
+	hiders_apply()
 
 /mob/living/carbon/proc/xwg_resize()
 	var/xwg_size = sqrt(fatness/FATNESS_LEVEL_BLOB)
-	xwg_size = min(xwg_size, RESIZE_HUGE)
+	xwg_size = min(xwg_size, RESIZE_MACRO)
 	xwg_size = max(xwg_size, custom_body_size*0.01)
+	if(xwg_size > RESIZE_BIG) //check if the size needs capping otherwise don't bother searching the list
+		if(!is_type_in_list(get_area(src), GLOB.uncapped_resize_areas)) //if the area is not int the uncapped whitelist and new size is over the cap
+			xwg_size = RESIZE_BIG
 	resize(xwg_size)
 
 /proc/get_fatness_level_name(fatness_amount)
@@ -166,7 +172,3 @@
 		return "Immobile"
 
 	return "Blob"
-
-/mob/living/carbon/human/handle_breathing(times_fired)
-	. = ..()
-	hiders_apply()

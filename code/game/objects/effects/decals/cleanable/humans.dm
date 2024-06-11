@@ -24,6 +24,8 @@
 
 /obj/effect/decal/cleanable/blood/update_icon()
 	color = blood_DNA_to_color()
+	if(blood_state == BLOOD_STATE_JUICE)
+		color = BLOOD_COLOR_JUICE
 
 /obj/effect/decal/cleanable/blood/old
 	name = "dried blood"

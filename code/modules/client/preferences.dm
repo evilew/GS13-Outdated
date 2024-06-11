@@ -895,7 +895,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Honey</a>"
 							if(/datum/reagent/consumable/nutriment)
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Nutriment</a>"
-							if(/datum/reagent/berry_juice_infection)
+							if(/datum/reagent/blueberry_juice)
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Berry Juice</a>"
 							else
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Nothing?</a>"
@@ -946,7 +946,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Strawberry Milk</a>"
 							if(/datum/reagent/consumable/nutriment)
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Nutriment</a>"
-							if(/datum/reagent/berry_juice_infection)
+							if(/datum/reagent/blueberry_juice)
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Berry Juice</a>"
 							else
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Nothing?</a>"
@@ -2398,7 +2398,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						if("Nutriment")
 							features["balls_fluid"] = /datum/reagent/consumable/nutriment
 						if("Berry Juice")
-							features["balls_fluid"] = /datum/reagent/berry_juice_infection
+							features["balls_fluid"] = /datum/reagent/blueberry_juice
 
 				if("egg_size")
 					var/new_size
@@ -2447,7 +2447,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						if("Nutriment")
 							features["breasts_fluid"] = /datum/reagent/consumable/nutriment
 						if("Berry Juice")
-							features["breasts_fluid"] = /datum/reagent/berry_juice_infection
+							features["breasts_fluid"] = /datum/reagent/blueberry_juice
 
 				if("breasts_color")
 					var/new_breasts_color = input(user, "Breast Color:", "Character Preference", "#"+features["breasts_color"]) as color|null
