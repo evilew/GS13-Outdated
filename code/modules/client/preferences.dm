@@ -947,7 +947,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							if(/datum/reagent/consumable/nutriment)
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Nutriment</a>"
 							if(/datum/reagent/blueberry_juice)
-								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=balls_fluid;task=input'>Berry Juice</a>"
+								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Berry Juice</a>"
 							else
 								dat += "<a style='display:block;width:50px' href='?_src_=prefs;preference=breasts_fluid;task=input'>Nothing?</a>"
 							//This else is a safeguard for errors, and if it happened, they wouldn't be able to change this pref,
