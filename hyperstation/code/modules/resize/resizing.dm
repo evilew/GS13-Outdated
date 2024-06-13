@@ -248,11 +248,11 @@ mob/living/get_effective_size()
 /mob/living/proc/update_mobsize(var/mob/living/tmob)
 	if(size_multiplier <= 0.50)
 		mob_size = 0
-	if(size_multiplier < 1)
+	else if(size_multiplier < 1)
 		mob_size = 1
-	if(size_multiplier <= 2)
+	else if(size_multiplier <= 2)
 		mob_size = 2 //the default human size
-	if(size_multiplier > 2)
+	else if(size_multiplier > 2)
 		mob_size = 3
 
 //Proc for instantly grabbing valid size difference. Code optimizations soon(TM)
