@@ -37128,7 +37128,7 @@
 /area/medical/chemistry)
 "bwZ" = (
 /obj/structure/sign/plaques/golden{
-	desc = "In this spot of maintenance, Ambire E. and Vedi managed to break a record of almost two million tons of weight on a single person, almost leading to destabilization of reality and causation of a black hole." ;
+	desc = "In this spot of maintenance, Ambire E. and Vedi managed to break a record of almost two million tons of weight on a single person, almost leading to destabilization of reality and causation of a black hole.";
 	name = "Golden Record Plaque";
 	pixel_y = 32
 	},
@@ -58050,6 +58050,10 @@
 /obj/effect/landmark/start/station_engineer,
 /turf/open/floor/plasteel,
 /area/engine/engineering)
+"fGA" = (
+/mob/living/silicon/robot/ai,
+/turf/open/floor/plating,
+/area/ai_monitored/turret_protected/AIsatextAS)
 "fIu" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -100237,7 +100241,7 @@ ael
 aeB
 aeS
 afl
-ael
+fGA
 afS
 acU
 abI

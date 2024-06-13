@@ -2113,6 +2113,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/mob/living/silicon/robot/ai,
 /turf/open/floor/engine,
 /area/ai_monitored/storage/satellite)
 "adO" = (
