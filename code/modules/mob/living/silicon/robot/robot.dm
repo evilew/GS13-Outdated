@@ -1270,3 +1270,9 @@
 		old_ai.connected_robots -= src
 	if(connected_ai)
 		connected_ai.connected_robots |= src
+
+/mob/living/silicon/robot/ai
+
+/mob/living/silicon/robot/ai/Initialize(mapload)
+	. = ..()
+	make_shell(/obj/item/borg/upgrade/ai)
