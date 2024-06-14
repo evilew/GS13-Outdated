@@ -2298,7 +2298,7 @@
 "aTb" = (/obj/effect/spawner/structure/window,/turf/open/floor/plating,/area/crew_quarters/fitness/recreation)
 "aTd" = (/turf/open/floor/plasteel/dark/side{dir = 9},/area/crew_quarters/fitness/recreation)
 "aTe" = (/obj/structure/cable/yellow{icon_state = "1-2"},/turf/open/floor/plasteel/dark/side{dir = 4},/area/crew_quarters/fitness/recreation)
-"aTg" = (/obj/structure/punching_bag,/turf/open/floor/wood,/area/crew_quarters/fitness/recreation)
+"aTg" = (/obj/item/conveyor_construct/treadmill,/turf/open/floor/wood,/area/crew_quarters/fitness/recreation)
 "aTh" = (/obj/structure/window/reinforced{dir = 8},/obj/item/statuebust,/turf/open/floor/grass,/area/crew_quarters/fitness/recreation)
 "aTi" = (/obj/machinery/light/small{dir = 8},/obj/structure/easel,/turf/open/floor/plating,/area/maintenance/starboard/fore)
 "aTj" = (/obj/structure/cable/yellow{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/item/cigbutt,/turf/open/floor/plating,/area/maintenance/starboard/fore)

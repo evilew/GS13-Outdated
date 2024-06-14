@@ -30460,6 +30460,7 @@
 "aYX" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/obj/structure/punching_bag,
 /turf/open/floor/wood,
 /area/crew_quarters/fitness/recreation)
 "aYY" = (
@@ -84589,7 +84590,7 @@
 /turf/open/floor/engine,
 /area/engine/supermatter)
 "xlT" = (
-/obj/structure/punching_bag,
+/obj/item/conveyor_construct/treadmill,
 /turf/open/floor/wood,
 /area/crew_quarters/fitness/recreation)
 "xmU" = (
@@ -101881,7 +101882,7 @@ cFW
 awD
 bKD
 bLb
-xlT
+btv
 btr
 bvz
 bvx
@@ -102138,7 +102139,7 @@ cuB
 awD
 bKH
 bLb
-btv
+xlT
 btu
 bLW
 bLC
