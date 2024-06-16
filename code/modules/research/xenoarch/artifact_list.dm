@@ -7,7 +7,6 @@ GLOBAL_LIST_INIT(bas_artifact,list(	/obj/item/kitchen/fork=1,
 									/obj/item/trash/plate=1,
 									/obj/item/extendohand=1,
 									/obj/item/toy/plush/random=1,
-									/obj/item/clothing/head/condom=1,
 									/obj/item/ancientartifact/useless=11
 									))
 
@@ -17,9 +16,7 @@ GLOBAL_LIST_INIT(adv_artifact,list(	/obj/item/shield/riot/roman=1,
 									/obj/item/stack/telecrystal=1,
 									/obj/item/sharpener=1,
 									/obj/item/switchblade=1,
-									/obj/item/laser_pointer=1,
 									/obj/item/instrument/piano_synth=1,
-									/obj/item/megaphone=1,
 									/obj/item/storage/backpack/satchel/bone=1,
 									/obj/item/clothing/accessory/talisman=1,
 									/obj/item/clothing/accessory/skullcodpiece=1,
@@ -31,9 +28,8 @@ GLOBAL_LIST_INIT(adv_artifact,list(	/obj/item/shield/riot/roman=1,
 									/obj/item/reagent_containers/pill/floorpill=1,
 									/obj/item/survivalcapsule/luxury=1,
 									/obj/item/slime_extract/grey=1,
-									/obj/item/ancientartifact/useless=5,
 									/obj/item/ancientartifact/faunafossil=10,
-									/obj/item/ancientartifact/florafossil=10
+									/obj/item/ancientartifact/florafossil=20
 									))
 
 GLOBAL_LIST_INIT(ult_artifact,list(	/obj/item/nuke_core/supermatter_sliver=1,

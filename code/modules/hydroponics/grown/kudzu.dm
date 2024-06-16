@@ -16,9 +16,18 @@
 	var/list/mutations = list()
 	reagents_add = list(/datum/reagent/medicine/charcoal = 0.04, /datum/reagent/consumable/nutriment = 0.02)
 
+	var/list/muts_list = list()
+	var/prickle_reagent
+
+/obj/item/seeds/kudzu/Initialize(mapload, nogenes)
+	. = ..()
+	for(var/A in subtypesof(/datum/spacevine_mutation))
+		muts_list += new A()
+
 /obj/item/seeds/kudzu/Copy()
 	var/obj/item/seeds/kudzu/S = ..()
 	S.mutations = mutations.Copy()
+	S.prickle_reagent = prickle_reagent
 	return S
 
 /obj/item/seeds/kudzu/suicide_act(mob/user)
@@ -38,7 +47,7 @@
 	to_chat(user, "<span class='notice'>You plant [src].</span>")
 	message_admins("Kudzu planted by [ADMIN_LOOKUPFLW(user)] at [ADMIN_VERBOSEJMP(user)]")
 	investigate_log("was planted by [key_name(user)] at [AREACOORD(user)]", INVESTIGATE_BOTANY)
-	new /datum/spacevine_controller(get_turf(user), mutations, potency, production)
+	new /datum/spacevine_controller(get_turf(user), mutations, potency, production, prickle_reagent)
 	qdel(src)
 
 /obj/item/seeds/kudzu/attack_self(mob/user)
@@ -50,50 +59,61 @@
 /obj/item/seeds/kudzu/get_analyzer_text()
 	var/text = ..()
 	var/text_string = ""
-	for(var/datum/spacevine_mutation/SM in mutations)
+	for(var/A in mutations)
+		var/datum/spacevine_mutation/SM = A
 		text_string += "[(text_string == "") ? "" : ", "][SM.name]"
 	text += "\n- Plant Mutations: [(text_string == "") ? "None" : text_string]"
+	if(prickle_reagent)
+		text += "\n- Plant Chemical: [prickle_reagent]"
 	return text
 
 /obj/item/seeds/kudzu/on_chem_reaction(datum/reagents/S)
 	var/list/temp_mut_list = list()
 
 	if(S.has_reagent(/datum/reagent/space_cleaner/sterilizine, 5))
-		for(var/datum/spacevine_mutation/SM in mutations)
+		for(var/A in mutations)
+			var/datum/spacevine_mutation/SM = A
 			if(SM.quality == NEGATIVE)
 				temp_mut_list += SM
 		if(prob(20) && temp_mut_list.len)
 			mutations.Remove(pick(temp_mut_list))
 		temp_mut_list.Cut()
-
-	if(S.has_reagent(/datum/reagent/fuel, 5))
-		for(var/datum/spacevine_mutation/SM in mutations)
+	else if(S.has_reagent(/datum/reagent/fuel, 5))
+		for(var/A in mutations)
+			var/datum/spacevine_mutation/SM = A
 			if(SM.quality == POSITIVE)
 				temp_mut_list += SM
 		if(prob(20) && temp_mut_list.len)
 			mutations.Remove(pick(temp_mut_list))
 		temp_mut_list.Cut()
-
-	if(S.has_reagent(/datum/reagent/phenol, 5))
-		for(var/datum/spacevine_mutation/SM in mutations)
+	else if(S.has_reagent(/datum/reagent/phenol, 5))
+		for(var/A in mutations)
+			var/datum/spacevine_mutation/SM = A
 			if(SM.quality == MINOR_NEGATIVE)
 				temp_mut_list += SM
 		if(prob(20) && temp_mut_list.len)
 			mutations.Remove(pick(temp_mut_list))
 		temp_mut_list.Cut()
-
-	if(S.has_reagent(/datum/reagent/blood, 15))
+	else if(S.has_reagent(/datum/reagent/blood, 15))
 		adjust_production(rand(15, -5))
-
-	if(S.has_reagent(/datum/reagent/toxin/amatoxin, 5))
+	else if(S.has_reagent(/datum/reagent/toxin/amatoxin, 5))
 		adjust_production(rand(5, -15))
-
-	if(S.has_reagent(/datum/reagent/toxin/plasma, 5))
+	else if(S.has_reagent(/datum/reagent/toxin/plasma, 5))
 		adjust_potency(rand(5, -15))
-
-	if(S.has_reagent(/datum/reagent/water/holywater, 10))
+	else if(S.has_reagent(/datum/reagent/water/holywater, 10))
 		adjust_potency(rand(15, -5))
-
+	else
+		if(S.has_reagent(/datum/reagent/drug/space_drugs, 5))
+			if(prob(20) && (muts_list - mutations).len > 0)
+				var/datum/spacevine_mutation/mut = pick(muts_list - mutations)
+				if(!(mut in mutations))
+					mutations |= mut 
+					src.visible_message("<span class='alert'>[src.plantname] seems to react with the chemical...</span>")
+			return
+	if(S.reagent_list.len > 0)
+		prickle_reagent = S.get_master_reagent().type
+		prickle_reagent = new prickle_reagent()
+		src.visible_message("<span class='alert'>[src.plantname] seems to absorb the chemical...</span>")
 
 /obj/item/reagent_containers/food/snacks/grown/kudzupod
 	seed = /obj/item/seeds/kudzu
@@ -105,3 +125,10 @@
 	foodtype = VEGETABLES | GROSS
 	tastes = list("kudzu" = 1)
 	wine_power = 20
+
+/*/obj/item/seeds/kudzu/test
+	potency = 100
+	yield = 10
+	maturation = 1
+	production = 1
+	mutations = list(new /datum/spacevine_mutation/prickle(), new /datum/spacevine_mutation/stable())*/
