@@ -62581,6 +62581,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/construction/mining/aux_base)
+"qkK" = (
+/obj/item/conveyor_construct/treadmill,
+/turf/open/floor/wood,
+/area/crew_quarters/fitness)
 "qnT" = (
 /obj/machinery/iv_drip,
 /turf/open/floor/plating,
@@ -108753,7 +108757,7 @@ bkV
 bms
 bng
 boj
-boi
+qkK
 bqz
 boi
 aEj
