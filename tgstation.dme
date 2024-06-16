@@ -3113,6 +3113,8 @@
 #include "GainStation13\code\modules\food_and_drinks\objects\candy_flora.dm"
 #include "GainStation13\code\modules\food_and_drinks\recipes\recipes_ported.dm"
 #include "GainStation13\code\modules\gym\gym.dm"
+#include "GainStation13\code\modules\hydroponics\lipoplant.dm"
+#include "GainStation13\code\modules\hydroponics\munchies_weed.dm"
 #include "GainStation13\code\modules\hydroponics\grown\berries.dm"
 #include "GainStation13\code\modules\mob\living\emote.dm"
 #include "GainStation13\code\modules\mob\living\emote_modular.dm"

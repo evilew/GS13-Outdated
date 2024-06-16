@@ -356,6 +356,11 @@ datum/plant_gene/trait/glow/white
 	name = "Pink Bioluminescence"
 	glow_color = "#FFB3DA"
 
+/datum/plant_gene/trait/glow/orange
+	//GS13
+	name = "Orange Bioluminescence"
+	glow_color = "#f59c18"
+
 //Change grow, harvest, and crafted food's color
 //Made for mostly being fancy with stuff. Should be rare or hard to obtain, with the exception of strange seeds
 /datum/plant_gene/trait/modified_color
