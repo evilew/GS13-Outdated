@@ -74,7 +74,7 @@
 		if(!do_after(user,50,target=src))
 			to_chat(user,"You need to stand still to extract the seeds.")
 			return
-		var/seed = pick(list(	/obj/item/seeds/lipoplant,
+		var/seed = pick(list(	///obj/item/seeds/lipoplant,
 								/obj/item/seeds/amauri,
 								/obj/item/seeds/gelthi,
 								/obj/item/seeds/jurlmah,
