@@ -159,6 +159,7 @@
 /datum/spacevine_mutation/transparency/on_grow(obj/structure/spacevine/holder)
 	holder.set_opacity(0)
 	holder.alpha = 125
+	holder.layer = BELOW_OPEN_DOOR_LAYER
 
 /datum/spacevine_mutation/oxy_eater
 	name = "oxygen consuming"
@@ -270,6 +271,40 @@
 	if(prob(25))
 		holder.entangle(crosser)
 
+/datum/spacevine_mutation/stable
+	name = "stable"
+	hue = "#2a8352"
+	quality = POSITIVE
+
+/datum/spacevine_mutation/prickle //prickle reagent needs fixing
+	name = "prickly"
+	hue = "#797777"
+	severity = 10
+	quality = MINOR_NEGATIVE
+
+/datum/spacevine_mutation/prickle/on_cross(obj/structure/spacevine/holder, mob/living/crosser)
+	if(prob(5))
+		var/datum/reagent/PR = holder.prickle_reagent
+		if(PR && istype(PR) && iscarbon(crosser))
+			var/mob/living/carbon/M = crosser
+			M.reagents.add_reagent(PR.type, 1)
+			to_chat(M, "<span class='alert'>You feel a prickle as you cross the vines.</span>")
+
+/datum/spacevine_mutation/prickle/process_mutation(obj/structure/spacevine/holder)
+	if(holder.has_buckled_mobs())
+		var/datum/reagent/PR = holder.prickle_reagent
+		if(PR && istype(PR))
+			for(var/mob/living/carbon/C in holder.buckled_mobs)
+				C.reagents.add_reagent(PR.type, 2)
+				to_chat(C, "<span class='danger'>The vines prickle you!</span>")
+
+/datum/spacevine_mutation/timid
+	name = "timid"
+	hue = "#2dad67"
+	quality = POSITIVE
+
+/datum/spacevine_mutation/timid/on_buckle(obj/structure/spacevine/holder, mob/living/buckled)
+	holder.unbuckle_all_mobs()
 
 // SPACE VINES (Note that this code is very similar to Biomass code)
 /obj/structure/spacevine
@@ -286,6 +321,7 @@
 	var/energy = 0
 	var/datum/spacevine_controller/master = null
 	var/list/mutations = list()
+	var/prickle_reagent
 
 /obj/structure/spacevine/Initialize()
 	. = ..()
@@ -378,10 +414,10 @@
 	var/list/vine_mutations_list
 	var/mutativeness = 1
 
-/datum/spacevine_controller/New(turf/location, list/muts, potency, production)
+/datum/spacevine_controller/New(turf/location, list/muts, potency, production, areagent)
 	vines = list()
 	growth_queue = list()
-	spawn_spacevine_piece(location, null, muts)
+	spawn_spacevine_piece(location, null, muts, areagent)
 	START_PROCESSING(SSobj, src)
 	vine_mutations_list = list()
 	init_subtypes(/datum/spacevine_mutation/, vine_mutations_list)
@@ -408,22 +444,28 @@
 	STOP_PROCESSING(SSobj, src)
 	return ..()
 
-/datum/spacevine_controller/proc/spawn_spacevine_piece(turf/location, obj/structure/spacevine/parent, list/muts)
+/datum/spacevine_controller/proc/spawn_spacevine_piece(turf/location, obj/structure/spacevine/parent, list/muts, thereagent)
 	var/obj/structure/spacevine/SV = new(location)
 	growth_queue += SV
 	vines += SV
 	SV.master = src
-	if(muts && muts.len)
-		for(var/datum/spacevine_mutation/M in muts)
-			M.add_mutation_to_vinepiece(SV)
-		return
 	if(parent)
 		SV.mutations |= parent.mutations
+		SV.prickle_reagent = parent.prickle_reagent
 		var/parentcolor = parent.atom_colours[FIXED_COLOUR_PRIORITY]
 		SV.add_atom_colour(parentcolor, FIXED_COLOUR_PRIORITY)
 		if(prob(mutativeness))
+			for(var/datum/spacevine_mutation/stable/SM in SV.mutations)
+				return
 			var/datum/spacevine_mutation/randmut = pick(vine_mutations_list - SV.mutations)
 			randmut.add_mutation_to_vinepiece(SV)
+	else
+		for(var/A in muts)
+			var/datum/spacevine_mutation/M = A
+			SV.mutations |= M
+			SV.prickle_reagent = thereagent
+			SV.add_atom_colour(M.hue, FIXED_COLOUR_PRIORITY)
+		return
 
 	for(var/datum/spacevine_mutation/SM in SV.mutations)
 		SM.on_birth(SV)
@@ -436,6 +478,7 @@
 	if(!vines.len)
 		var/obj/item/seeds/kudzu/KZ = new(S.loc)
 		KZ.mutations |= S.mutations
+		KZ.prickle_reagent = S.prickle_reagent
 		KZ.set_potency(mutativeness * 10)
 		KZ.set_production((spread_cap / initial(spread_cap)) * 5)
 		qdel(src)
@@ -466,8 +509,7 @@
 			if(prob(20))
 				SV.grow()
 		else //If tile is fully grown
-			SV.entangle_mob()
-
+			SV.entangle_mob()			
 		SV.spread()
 		if(i >= length)
 			break
@@ -497,11 +539,11 @@
 /obj/structure/spacevine/proc/entangle(mob/living/V)
 	if(!V || isvineimmune(V))
 		return
-	for(var/datum/spacevine_mutation/SM in mutations)
-		SM.on_buckle(src, V)
 	if((V.stat != DEAD) && (V.buckled != src)) //not dead or captured
 		to_chat(V, "<span class='danger'>The vines [pick("wind", "tangle", "tighten")] around you!</span>")
 		buckle_mob(V, 1)
+	for(var/datum/spacevine_mutation/SM in mutations)
+		SM.on_buckle(src, V)
 
 /obj/structure/spacevine/proc/spread()
 	var/direction = pick(GLOB.cardinals)
@@ -512,7 +554,7 @@
 			stepturf = get_step(src,direction) //in case turf changes, to make sure no runtimes happen
 		if(!locate(/obj/structure/spacevine, stepturf))
 			if(master)
-				master.spawn_spacevine_piece(stepturf, src)
+				master.spawn_spacevine_piece(stepturf, src, null, prickle_reagent)
 
 /obj/structure/spacevine/ex_act(severity, target)
 	if(istype(target, type)) //if its agressive spread vine dont do anything

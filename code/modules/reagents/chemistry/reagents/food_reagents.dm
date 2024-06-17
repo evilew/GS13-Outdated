@@ -17,7 +17,7 @@
 
 /datum/reagent/consumable/on_mob_life(mob/living/carbon/M)
 	current_cycle++
-	M.nutrition += nutriment_factor
+	M.nutrition += nutriment_factor * M.nutri_mult //GS13 nutriment multiplier to make nutrition stronger based on certain effects
 	M.thirst += hydration
 	holder.remove_reagent(type, metabolization_rate)
 

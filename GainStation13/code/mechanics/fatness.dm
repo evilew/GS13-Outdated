@@ -1,4 +1,4 @@
-GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/bridge, /area/crew_quarters))
+GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/bridge, /area/crew_quarters, /area/maintenance, /area/security/prison, /area/holodeck, /area/security/vacantoffice, /area/space, /area/ruin, /area/lavaland, /area/awaymission, /area/centcom, /area/fatlab))
 
 /mob/living/carbon
 	//Due to the changes needed to create the system to hide fatness, here's some notes:
