@@ -497,6 +497,7 @@
 	. = ..()
 	message = null
 	emote_type = EMOTE_VISIBLE
+	playsound(usr.loc, 'GainStation13/sound/voice/voices/speak_1.ogg', 90, 10)
 
 /datum/emote/living/custom/replace_pronoun(mob/user, message)
 	return message

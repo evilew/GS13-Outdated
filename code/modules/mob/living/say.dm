@@ -219,6 +219,23 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	if(pressure < ONE_ATMOSPHERE*0.4) //Thin air, let's italicise the message
 		spans |= SPAN_ITALICS
 
+	if(message_mode == MODE_WHISPER)
+		switch(say_mod(message, message_mode))
+			if("asks")
+				playsound(src.loc, 'GainStation13/sound/voice/voices/speak_1_ask.ogg', 45, 5, -3)
+			if("exclaims" || "yells")
+				playsound(src.loc, 'GainStation13/sound/voice/voices/speak_1_exclaim.ogg', 45, 5, -3)
+			else
+				playsound(src.loc, 'GainStation13/sound/voice/voices/speak_1.ogg', 45, 5, -3)
+	else
+		switch(say_mod(message, message_mode))
+			if("asks")
+				playsound(src.loc, 'GainStation13/sound/voice/voices/speak_1_ask.ogg', 90, 10, message_range)
+			if("exclaims" || "yells")
+				playsound(src.loc, 'GainStation13/sound/voice/voices/speak_1_exclaim.ogg', 90, 10, message_range)
+			else
+				playsound(src.loc, 'GainStation13/sound/voice/voices/speak_1.ogg', 90, 10, message_range)
+	//playsound(user.loc, pick('GainStation13/sound/voice/voices/speak_1.ogg', 'GainStation13/sound/voice/voices/speak_1_ask.ogg', 'GainStation13/sound/voice/voices/speak_1_exclaim.ogg'), 90, 10)
 	send_speech(message, message_range, src, bubble_type, spans, language, message_mode)
 
 	if(succumbed)

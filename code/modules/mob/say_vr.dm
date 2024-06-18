@@ -72,6 +72,8 @@ proc/get_top_level_mob(var/mob/S)
 		if(M.stat == DEAD && M.client && (M.client?.prefs?.chat_toggles & CHAT_GHOSTSIGHT) && !(M in viewers(T, null)))
 			M.show_message(message)
 
+	playsound(usr.loc, 'GainStation13/sound/voice/voices/speak_1.ogg', 90, 10)
+
 	if(emote_type == EMOTE_AUDIBLE)
 		user.audible_message(message=message,hearing_distance=1)
 	else
