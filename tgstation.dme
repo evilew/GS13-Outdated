@@ -3085,6 +3085,8 @@
 #include "GainStation13\code\game\sound.dm"
 #include "GainStation13\code\game\area\ruins.dm"
 #include "GainStation13\code\game\objects\effects\spawners\choco_slime_delivery.dm"
+#include "GainStation13\code\game\objects\items\RCD.dm"
+#include "GainStation13\code\game\objects\items\storage\bags.dm"
 #include "GainStation13\code\game\turfs\closed.dm"
 #include "GainStation13\code\game\turfs\open.dm"
 #include "GainStation13\code\machinery\adipoelectric_generator.dm"
