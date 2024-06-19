@@ -110,21 +110,22 @@
 	value = 10	//it sells. Make that berry factory
 
 /datum/reagent/blueberry_juice/on_mob_life(mob/living/carbon/M)
-	if(M?.client && !(M?.client?.prefs?.blueberry_inflation))
-		M.reagents.remove_reagent(/datum/reagent/blueberry_juice, volume)
-		return
-	if(!no_mob_color)
-		M.add_atom_colour(picked_color, WASHABLE_COLOUR_PRIORITY)
-	M.adjust_fatness(1, FATTENING_TYPE_CHEM)
-	if(prob(2))
-		new /obj/effect/decal/cleanable/juice(M.loc)
-		playsound(M.loc, 'sound/effects/splat.ogg',rand(10,50), 1)
+	if(M?.client)
+		if(!(M?.client?.prefs?.blueberry_inflation))
+			M.reagents.remove_reagent(/datum/reagent/blueberry_juice, volume)
+			return
+		if(!no_mob_color)
+			M.add_atom_colour(picked_color, WASHABLE_COLOUR_PRIORITY)
+		M.adjust_fatness(1, FATTENING_TYPE_CHEM)
+		if(prob(2))
+			new /obj/effect/decal/cleanable/juice(M.loc)
+			playsound(M.loc, 'sound/effects/splat.ogg',rand(10,50), 1)
 	..()
 
 /datum/reagent/blueberry_juice/on_mob_add(mob/living/L, amount)
 	if(iscarbon(L))
 		var/mob/living/carbon/affected_mob = L
-		if(affected_mob?.client && !(affected_mob?.client?.prefs?.blueberry_inflation))
+		if(!affected_mob?.client || !(affected_mob?.client?.prefs?.blueberry_inflation))
 			affected_mob.reagents.remove_reagent(/datum/reagent/blueberry_juice, volume)
 			return
 		picked_color = pick(random_color_list)
