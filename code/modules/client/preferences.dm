@@ -107,6 +107,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/starting_weight = 0				//how thicc you wanna be at start
 	var/wg_rate = 0.5
 	var/wl_rate = 0.5
+	var/voice = "human"
 
 	//HS13 jobs
 	var/sillyroles = TRUE //for clown and mime
@@ -446,6 +447,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<h2>Body</h2>"
 			dat += "<b>Gender:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=gender'>[gender == MALE ? "Male" : (gender == FEMALE ? "Female" : (gender == PLURAL ? "Non-binary" : "Object"))]</a><BR>"
 			dat += "<b>Species:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=species;task=input'>[pref_species.id]</a><BR>"
+			dat += "<b>Voice:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=voice_select;task=input'>[voice ? voice : "None"]</a><BR>"
 			dat += "<b>Custom Species Name:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=custom_species;task=input'>[custom_species ? custom_species : "None"]</a><BR>"
 			dat += "<a style='display:block;width:100px' href='?_src_=prefs;preference=all;task=random'>Random Body</A><BR>"
 			dat += "<b>Always Random Body:</b><a href='?_src_=prefs;preference=all'>[be_random_body ? "Yes" : "No"]</A><BR>"
@@ -1996,6 +1998,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					else
 						custom_species = null
 
+				if("voice_select")
+					var/chosenvoice = input(user, "Select your character's voice.", "Voice Selection", voice) in list("human", "roach", "lizard")
+					voice = chosenvoice
+
 				if("mutant_color")
 					var/new_mutantcolor = input(user, "Choose your character's alien/mutant color:", "Character Preference","#"+features["mcolor"]) as color|null
 					if(new_mutantcolor)
@@ -2957,6 +2963,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.name = character.real_name
 	character.nameless = nameless
 	character.custom_species = custom_species
+	character.voice = voice
 
 	//h13 character custom body size, make sure to set to 100% if the player hasn't choosen one yet.
 	character.custom_body_size = body_size

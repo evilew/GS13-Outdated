@@ -72,6 +72,10 @@ proc/get_top_level_mob(var/mob/S)
 		if(M.stat == DEAD && M.client && (M.client?.prefs?.chat_toggles & CHAT_GHOSTSIGHT) && !(M in viewers(T, null)))
 			M.show_message(message)
 
+	if(ishuman(usr))
+		var/mob/living/carbon/human/H = usr
+		playsound(usr.loc, "GainStation13/sound/voice/voices/[H.voice].ogg", 90, 10)
+
 	if(emote_type == EMOTE_AUDIBLE)
 		user.audible_message(message=message,hearing_distance=1)
 	else

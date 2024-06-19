@@ -372,6 +372,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["skin_tone"]			>> skin_tone
 	S["hair_style_name"]	>> hair_style
 	S["facial_style_name"]	>> facial_hair_style
+	S["voice"]				>> voice
 	// GS13: Hair gradients from Skyrat
 	S["grad_style"]			>> grad_style
 	S["grad_color"]			>> grad_color
@@ -638,6 +639,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["skin_tone"]			, skin_tone)
 	WRITE_FILE(S["hair_style_name"]	, hair_style)
 	WRITE_FILE(S["facial_style_name"]	, facial_hair_style)
+	WRITE_FILE(S["voice"]				, voice)
 	// GS13: Hair gradients from Skyrat
 	WRITE_FILE(S["grad_style"]			, grad_style)
 	WRITE_FILE(S["grad_color"]			, grad_color)
