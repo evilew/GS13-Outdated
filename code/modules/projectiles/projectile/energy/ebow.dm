@@ -4,7 +4,7 @@
 	damage = 8
 	damage_type = TOX
 	nodamage = 0
-	knockdown = 100
+	knockdown = 50
 	stutter = 5
 	drowsy = 50
 
