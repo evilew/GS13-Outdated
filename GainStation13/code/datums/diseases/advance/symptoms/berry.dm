@@ -47,6 +47,9 @@
 			to_chat(M, "<span class='warning'>[user.name] juices you...</span>")
 		else
 			to_chat(user, "<span class='warning'>You get some juice out of you...</span>")
+		if(prob(5))
+			new /obj/effect/decal/cleanable/juice(M.loc)
+			playsound(M.loc, 'sound/effects/splat.ogg',rand(10,50), 1)
 		return
 	..()
  
