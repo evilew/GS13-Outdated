@@ -117,9 +117,6 @@
 		if(!no_mob_color)
 			M.add_atom_colour(picked_color, WASHABLE_COLOUR_PRIORITY)
 		M.adjust_fatness(1, FATTENING_TYPE_CHEM)
-		if(prob(2))
-			new /obj/effect/decal/cleanable/juice(M.loc)
-			playsound(M.loc, 'sound/effects/splat.ogg',rand(10,50), 1)
 	..()
 
 /datum/reagent/blueberry_juice/on_mob_add(mob/living/L, amount)
