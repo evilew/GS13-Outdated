@@ -284,3 +284,5 @@
 #define NUKEOP_TRAIT "nuke-op"
 #define MEGAFAUNA_TRAIT "megafauna"
 #define DEATHSQUAD_TRAIT "deathsquad"
+#define HELPLESSNESS_TRAIT "helplessness"
+

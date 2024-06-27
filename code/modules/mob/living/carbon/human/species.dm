@@ -1354,7 +1354,21 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			ADD_TRAIT(H, trait_gain, OBESITY)
 		update_body_size(H, 1)
 
+/datum/species/proc/handle_helplessness(mob/living/carbon/human/fatty)
+	var/datum/preferences/preferences = fatty?.client?.prefs
+	if(!istype(preferences))
+		return FALSE
+	
+	if(preferences.helplessness_clumsy)
+		if(!HAS_TRAIT_FROM(fatty, TRAIT_CLUMSY, HELPLESSNESS_TRAIT))
+			if(fatty.fatness >= preferences.helplessness_clumsy)
+				ADD_TRAIT(fatty, TRAIT_CLUMSY, HELPLESSNESS_TRAIT)
+
+		else if(fatty.fatness < preferences.helplessness_clumsy)
+			REMOVE_TRAIT(fatty, TRAIT_CLUMSY, HELPLESSNESS_TRAIT)
+
 /datum/species/proc/handle_fatness(mob/living/carbon/human/H)
+	handle_helplessness(H)
 	if(HAS_TRAIT(H, TRAIT_BLOB))
 		handle_fatness_trait(
 			H,
