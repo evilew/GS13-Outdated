@@ -2654,31 +2654,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				if("blueberry_inflation")
 					blueberry_inflation = !blueberry_inflation
 				if("max_fatness")
-					var/pickedweight = input(user,
-						"Choose your max fatness level, your weight will not go beyond this. None will let you gain without a limit",
-						"Character Preference", "None") as null|anything in list(
-							"None", "Fat", "Fatter", "Very Fat", "Obese", "Morbidly Obese", "Extremely Obese", "Barely Mobile", "Immobile")
-					if(pickedweight)
-						switch(pickedweight)
-							if("None")
-								max_weight = FALSE 
-							if("Fat")
-								max_weight = FATNESS_LEVEL_FATTER 
-							if("Fatter")
-								max_weight = FATNESS_LEVEL_VERYFAT
-							if("Very Fat")
-								max_weight = FATNESS_LEVEL_OBESE
-							if("Obese")
-								max_weight = FATNESS_LEVEL_MORBIDLY_OBESE
-							if("Morbidly Obese")
-								max_weight = FATNESS_LEVEL_EXTREMELY_OBESE
-							if("Extremely Obese")
-								max_weight = FATNESS_LEVEL_BARELYMOBILE
-							if("Barely Mobile")
-								max_weight = FATNESS_LEVEL_IMMOBILE
-							if("Immobile")
-								max_weight = FATNESS_LEVEL_BLOB
-
+					max_weight = chose_weight("Choose your max fatness level, your weight will not go beyond this. None will let you gain without a limit", user)
 				if("inflatable_belly")
 					features["inflatable_belly"] = !features["inflatable_belly"]
 				if("hide_belly")
