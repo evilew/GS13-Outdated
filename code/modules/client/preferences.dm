@@ -1072,6 +1072,18 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Stuckage (weight results in getting stuck in doors):</b><a href='?_src_=prefs;preference=stuckage'>[stuckage == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Extreme Weight Gain (Sprite Size scales with weight):</b><a href='?_src_=prefs;preference=weight_gain_extreme'>[weight_gain_extreme == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 
+			dat += "<h2>GS13 Helplessness Preferences</h2>"
+			dat += "No Movement:</b><a href='?_src_=prefs;preference=helplessness_no_movement'>[helplessness_no_movement == FALSE ? "Disabled" : helplessness_no_movement]</a><BR>)"
+			dat += "Clumsy:</b><a href='?_src_=prefs;preference=helplessness_clumsy'>[helplessness_clumsy == FALSE ? "Disabled" : helplessness_clumsy]</a><BR>)"
+			dat += "Nearsighted:</b><a href='?_src_=prefs;preference=helplessness_nearsighted'>[helplessness_nearsighted == FALSE ? "Disabled" : helplessness_nearsighted]</a><BR>)"
+			dat += "Hidden Face:</b><a href='?_src_=prefs;preference=helplessness_hidden_face'>[helplessness_hidden_face == FALSE ? "Disabled" : helplessness_hidden_face]</a><BR>)"
+			dat += "Mute:</b><a href='?_src_=prefs;preference=helplessness_mute'>[helplessness_mute == FALSE ? "Disabled" : helplessness_mute]</a><BR>)"
+			dat += "Immobile Arms:</b><a href='?_src_=prefs;preference=helplessness_immobile_arms'>[helplessness_immobile_arms == FALSE ? "Disabled" : helplessness_immobile_arms]</a><BR>)"
+			dat += "Clothing Jumpsuit:</b><a href='?_src_=prefs;preference=helplessness_clothing_jumpsuit'>[helplessness_clothing_jumpsuit == FALSE ? "Disabled" : helplessness_clothing_jumpsuit]</a><BR>)"
+			dat += "Clothing Misc:</b><a href='?_src_=prefs;preference=helplessness_clothing_misc'>[helplessness_clothing_misc == FALSE ? "Disabled" : helplessness_clothing_misc]</a><BR>)"
+			dat += "Clothing Back:</b><a href='?_src_=prefs;preference=helplessness_clothing_back'>[helplessness_clothing_back == FALSE ? "Disabled" : helplessness_clothing_back]</a><BR>)"
+			dat += "No Buckle:</b><a href='?_src_=prefs;preference=helplessness_no_buckle'>[helplessness_no_buckle == FALSE ? "Disabled" : helplessness_no_buckle]</a><BR>)"
+
 			//Add the Hyper stuff below here
 			dat += "<h2>Hyper Preferences</h2>"
 			dat += "<b>NonCon - Bottom:</b><a href='?_src_=prefs;preference=noncon'>[noncon == TRUE ? "Enabled" : "Disabled"]</a><BR>"
@@ -2655,6 +2667,28 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					blueberry_inflation = !blueberry_inflation
 				if("max_fatness")
 					max_weight = chose_weight("Choose your max fatness level, your weight will not go beyond this. None will let you gain without a limit", user)
+
+				if("helplessness_no_movement")
+					helplessness_no_movement = chose_weight("Choose the level of fatness that you would like to be made completely able to move at. None will disable this alltogether", user)
+				if("helplessness_clumsy")
+					helplessness_clumsy = chose_weight("Choose the level of fatness that you would like to be made clumsy at. None will disable this alltogether", user)
+				if("helplessness_nearsighted")
+					helplessness_nearsighted = chose_weight("Choose the level of fatness that you would like to be made nearsighted at. None will disable this alltogether", user)
+				if("helplessness_hidden_face")
+					helplessness_hidden_face = chose_weight("Choose the level of fatness that you would like to have you face hidden at. None will disable this alltogether", user)
+				if("helplessness_mute")
+					helplessness_mute = chose_weight("Choose the level of fatness that you would like to be made unable to speak at. None will disable this alltogether", user)
+				if("helplessness_immobile_arms")
+					helplessness_immobile_arms = chose_weight("Choose the level of fatness that you would like to be made unable to use your arms at. None will disable this alltogether", user)
+				if("helplessness_clothing_jumpsuit")
+					helplessness_clothing_jumpsuit = chose_weight("Choose the level of fatness that you would like to be made unable to wear jumpsuits at. None will disable this alltogether", user)
+				if("helplessness_clothing_misc")
+					helplessness_clothing_misc = chose_weight("Choose the level of fatness that you would like to be made unable to wear other non-jumpsuit clothing at. None will disable this alltogether", user)
+				if("helplessness_clothing_back")
+					helplessness_clothing_back = chose_weight("Choose the level of fatness that you would like to be made unable to wear anything on your back at. None will disable this alltogether", user)
+				if("helplessness_no_buckle")
+					helplessness_no_buckle = chose_weight("Choose the level of fatness that you would like to be made unable to be buckled to anything at. None will disable this alltogether", user)
+
 				if("inflatable_belly")
 					features["inflatable_belly"] = !features["inflatable_belly"]
 				if("hide_belly")

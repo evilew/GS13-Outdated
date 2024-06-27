@@ -43,9 +43,7 @@
 	///What fatness level prevents the user from wearing anything on their back
 	var/helplessness_clothing_back = FALSE
 	///What fatness level prevents the user from being buckled to anything?
-	var/helplessness_no_buckle
-
-
+	var/helplessness_no_buckle = FALSE
 
 	///Does the person wish to be involved with non-con weight gain events?
 	var/noncon_weight_gain = FALSE
