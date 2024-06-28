@@ -1073,6 +1073,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Extreme Weight Gain (Sprite Size scales with weight):</b><a href='?_src_=prefs;preference=weight_gain_extreme'>[weight_gain_extreme == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 
 			dat += "<h2>GS13 Helplessness Preferences</h2>"
+			dat += "<b>Please be careful when using these mechanics as not to use them in a way that negatively impacts those around you. If you are seriously needed for something, especially something station critical, do not use these as an excuse to ignore your duty.</b><BR><BR>"
 			dat += "<b>No Movement:</b><a href='?_src_=prefs;preference=helplessness_no_movement'>[helplessness_no_movement == FALSE ? "Disabled" : helplessness_no_movement]</a><BR>"
 			dat += "<b>Clumsy:</b><a href='?_src_=prefs;preference=helplessness_clumsy'>[helplessness_clumsy == FALSE ? "Disabled" : helplessness_clumsy]</a><BR>"
 			dat += "<b>Nearsighted:</b><a href='?_src_=prefs;preference=helplessness_nearsighted'>[helplessness_nearsighted == FALSE ? "Disabled" : helplessness_nearsighted]</a><BR>"
