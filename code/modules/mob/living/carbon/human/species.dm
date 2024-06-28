@@ -1380,10 +1380,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	if(preferences.helplessness_nearsighted)
 		if(!HAS_TRAIT_FROM(fatty, TRAIT_NEARSIGHT, HELPLESSNESS_TRAIT))
 			if(fatty.fatness >= preferences.helplessness_nearsighted)
-				ADD_TRAIT(fatty, TRAIT_NEARSIGHT, HELPLESSNESS_TRAIT)
+				fatty.become_nearsighted(HELPLESSNESS_TRAIT)
 
 		else if(fatty.fatness < preferences.helplessness_nearsighted)
-			REMOVE_TRAIT(fatty, TRAIT_NEARSIGHT, HELPLESSNESS_TRAIT)
+			fatty.cure_nearsighted(HELPLESSNESS_TRAIT)
 
 
 	if(preferences.helplessness_hidden_face)
@@ -1420,6 +1420,11 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			if(fatty.fatness >= preferences.helplessness_clothing_jumpsuit)
 				ADD_TRAIT(fatty, TRAIT_NO_JUMPSUIT, HELPLESSNESS_TRAIT)
 
+				var/obj/item/clothing/under/jumpsuit = fatty.w_uniform
+				if(istype(jumpsuit))
+					to_chat(fatty, "<span class='warning'>[jumpsuit] can no longer contain your weight!</span>")
+					fatty.dropItemToGround(jumpsuit)
+
 		else if(fatty.fatness < preferences.helplessness_clothing_jumpsuit)
 			REMOVE_TRAIT(fatty, TRAIT_NO_JUMPSUIT, HELPLESSNESS_TRAIT)
 
@@ -1429,6 +1434,21 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			if(fatty.fatness >= preferences.helplessness_clothing_misc)
 				ADD_TRAIT(fatty, TRAIT_NO_MISC, HELPLESSNESS_TRAIT)
 
+				var/obj/item/clothing/suit/worn_suit = fatty.wear_suit
+				if(istype(worn_suit))
+					to_chat(fatty, "<span class='warning'>[worn_suit] can no longer contain your weight!</span>")
+					fatty.dropItemToGround(worn_suit)
+
+				var/obj/item/clothing/gloves/worn_gloves = fatty.gloves
+				if(istype(worn_gloves))
+					to_chat(fatty, "<span class='warning'>[worn_gloves] can no longer contain your weight!</span>")
+					fatty.dropItemToGround(worn_gloves)
+
+				var/obj/item/clothing/shoes/worn_shoes = fatty.shoes
+				if(istype(worn_shoes))
+					to_chat(fatty, "<span class='warning'>[worn_shoes] can no longer contain your weight!</span>")
+					fatty.dropItemToGround(worn_shoes)
+
 		else if(fatty.fatness < preferences.helplessness_clothing_misc)
 			REMOVE_TRAIT(fatty, TRAIT_NO_MISC, HELPLESSNESS_TRAIT)
 
@@ -1437,6 +1457,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		if(!HAS_TRAIT_FROM(fatty, TRAIT_NO_BACKPACK, HELPLESSNESS_TRAIT))
 			if(fatty.fatness >= preferences.helplessness_clothing_back)
 				ADD_TRAIT(fatty, TRAIT_NO_BACKPACK, HELPLESSNESS_TRAIT)
+				var/obj/item/back_item = fatty.back
+				if(istype(back_item))
+					to_chat(fatty, "<span class='warning'>Your weight makes it impossible for you to carry [back_item].</span>")
+					fatty.dropItemToGround(back_item)
 
 		else if(fatty.fatness < preferences.helplessness_clothing_back)
 			REMOVE_TRAIT(fatty, TRAIT_NO_BACKPACK, HELPLESSNESS_TRAIT)

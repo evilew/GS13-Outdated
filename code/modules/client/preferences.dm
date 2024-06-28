@@ -1080,7 +1080,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Mute:</b><a href='?_src_=prefs;preference=helplessness_mute'>[helplessness_mute == FALSE ? "Disabled" : helplessness_mute]</a><BR>"
 			dat += "<b>Immobile Arms:</b><a href='?_src_=prefs;preference=helplessness_immobile_arms'>[helplessness_immobile_arms == FALSE ? "Disabled" : helplessness_immobile_arms]</a><BR>"
 			dat += "<b>Clothing Jumpsuit:</b><a href='?_src_=prefs;preference=helplessness_clothing_jumpsuit'>[helplessness_clothing_jumpsuit == FALSE ? "Disabled" : helplessness_clothing_jumpsuit]</a<BR>"
-			dat += "<b>Clothing Misc:</b><a href='?_src_=prefs;preference=helplessness_clothing_misc'>[helplessness_clothing_misc == FALSE ? "Disabled" : helplessness_clothing_misc]</a><BR>"
+			dat += "<b>Clothing Suit, Boots, and Gloves:</b><a href='?_src_=prefs;preference=helplessness_clothing_misc'>[helplessness_clothing_misc == FALSE ? "Disabled" : helplessness_clothing_misc]</a><BR>"
 			dat += "<b>Clothing Back:</b><a href='?_src_=prefs;preference=helplessness_clothing_back'>[helplessness_clothing_back == FALSE ? "Disabled" : helplessness_clothing_back]</a><BR>"
 			dat += "<b>No Buckle:</b><a href='?_src_=prefs;preference=helplessness_no_buckle'>[helplessness_no_buckle == FALSE ? "Disabled" : helplessness_no_buckle]</a><BR>"
 
