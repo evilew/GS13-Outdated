@@ -1359,6 +1359,15 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	if(!istype(preferences))
 		return FALSE
 	
+	if(preferences.helplessness_no_movement)
+		if(!HAS_TRAIT_FROM(fatty, TRAIT_NO_MOVE, HELPLESSNESS_TRAIT))
+			if(fatty.fatness >= preferences.helplessness_no_movement)
+				ADD_TRAIT(fatty, TRAIT_NO_MOVE, HELPLESSNESS_TRAIT)
+
+		else if(fatty.fatness < preferences.helplessness_no_movement)
+			REMOVE_TRAIT(fatty, TRAIT_NO_MOVE, HELPLESSNESS_TRAIT)
+
+
 	if(preferences.helplessness_clumsy)
 		if(!HAS_TRAIT_FROM(fatty, TRAIT_CLUMSY, HELPLESSNESS_TRAIT))
 			if(fatty.fatness >= preferences.helplessness_clumsy)
@@ -1366,6 +1375,81 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 		else if(fatty.fatness < preferences.helplessness_clumsy)
 			REMOVE_TRAIT(fatty, TRAIT_CLUMSY, HELPLESSNESS_TRAIT)
+
+
+	if(preferences.helplessness_nearsighted)
+		if(!HAS_TRAIT_FROM(fatty, TRAIT_NEARSIGHT, HELPLESSNESS_TRAIT))
+			if(fatty.fatness >= preferences.helplessness_nearsighted)
+				ADD_TRAIT(fatty, TRAIT_NEARSIGHT, HELPLESSNESS_TRAIT)
+
+		else if(fatty.fatness < preferences.helplessness_nearsighted)
+			REMOVE_TRAIT(fatty, TRAIT_NEARSIGHT, HELPLESSNESS_TRAIT)
+
+
+	if(preferences.helplessness_hidden_face)
+		if(!HAS_TRAIT_FROM(fatty, TRAIT_DISFIGURED, HELPLESSNESS_TRAIT))
+			if(fatty.fatness >= preferences.helplessness_hidden_face)
+				ADD_TRAIT(fatty, TRAIT_DISFIGURED, HELPLESSNESS_TRAIT)
+
+		else if(fatty.fatness < preferences.helplessness_hidden_face)
+			REMOVE_TRAIT(fatty, TRAIT_DISFIGURED, HELPLESSNESS_TRAIT)
+
+
+	if(preferences.helplessness_mute)
+		if(!HAS_TRAIT_FROM(fatty, TRAIT_MUTE, HELPLESSNESS_TRAIT))
+			if(fatty.fatness >= preferences.helplessness_mute)
+				ADD_TRAIT(fatty, TRAIT_MUTE, HELPLESSNESS_TRAIT)
+
+		else if(fatty.fatness < preferences.helplessness_mute)
+			REMOVE_TRAIT(fatty, TRAIT_MUTE, HELPLESSNESS_TRAIT)
+
+
+	if(preferences.helplessness_immobile_arms)
+		if(!HAS_TRAIT_FROM(fatty, TRAIT_PARALYSIS_L_ARM, HELPLESSNESS_TRAIT))
+			if(fatty.fatness >= preferences.helplessness_immobile_arms)
+				ADD_TRAIT(fatty, TRAIT_PARALYSIS_L_ARM, HELPLESSNESS_TRAIT)
+				ADD_TRAIT(fatty, TRAIT_PARALYSIS_R_ARM, HELPLESSNESS_TRAIT)
+
+		else if(fatty.fatness < preferences.helplessness_immobile_arms)
+			REMOVE_TRAIT(fatty, TRAIT_PARALYSIS_L_ARM, HELPLESSNESS_TRAIT)
+			REMOVE_TRAIT(fatty, TRAIT_PARALYSIS_R_ARM, HELPLESSNESS_TRAIT)
+
+
+	if(preferences.helplessness_clothing_jumpsuit)
+		if(!HAS_TRAIT_FROM(fatty, TRAIT_NO_JUMPSUIT, HELPLESSNESS_TRAIT))
+			if(fatty.fatness >= preferences.helplessness_clothing_jumpsuit)
+				ADD_TRAIT(fatty, TRAIT_NO_JUMPSUIT, HELPLESSNESS_TRAIT)
+
+		else if(fatty.fatness < preferences.helplessness_clothing_jumpsuit)
+			REMOVE_TRAIT(fatty, TRAIT_NO_JUMPSUIT, HELPLESSNESS_TRAIT)
+
+
+	if(preferences.helplessness_clothing_misc)
+		if(!HAS_TRAIT_FROM(fatty, TRAIT_NO_MISC, HELPLESSNESS_TRAIT))
+			if(fatty.fatness >= preferences.helplessness_clothing_misc)
+				ADD_TRAIT(fatty, TRAIT_NO_MISC, HELPLESSNESS_TRAIT)
+
+		else if(fatty.fatness < preferences.helplessness_clothing_misc)
+			REMOVE_TRAIT(fatty, TRAIT_NO_MISC, HELPLESSNESS_TRAIT)
+
+
+	if(preferences.helplessness_clothing_back)
+		if(!HAS_TRAIT_FROM(fatty, TRAIT_NO_BACKPACK, HELPLESSNESS_TRAIT))
+			if(fatty.fatness >= preferences.helplessness_clothing_back)
+				ADD_TRAIT(fatty, TRAIT_NO_BACKPACK, HELPLESSNESS_TRAIT)
+
+		else if(fatty.fatness < preferences.helplessness_clothing_back)
+			REMOVE_TRAIT(fatty, TRAIT_NO_BACKPACK, HELPLESSNESS_TRAIT)
+
+
+	if(preferences.helplessness_no_buckle)
+		if(!HAS_TRAIT_FROM(fatty, TRAIT_NO_BUCKLE, HELPLESSNESS_TRAIT))
+			if(fatty.fatness >= preferences.helplessness_no_buckle)
+				ADD_TRAIT(fatty, TRAIT_NO_BUCKLE, HELPLESSNESS_TRAIT)
+
+		else if(fatty.fatness < preferences.helplessness_no_buckle)
+			REMOVE_TRAIT(fatty, TRAIT_NO_BUCKLE, HELPLESSNESS_TRAIT)
+
 
 /datum/species/proc/handle_fatness(mob/living/carbon/human/H)
 	handle_helplessness(H)
