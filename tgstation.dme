@@ -3096,6 +3096,7 @@
 #include "GainStation13\code\machinery\feeding_tube.dm"
 #include "GainStation13\code\mechanics\fatness.dm"
 #include "GainStation13\code\mechanics\fattening_trap.dm"
+#include "GainStation13\code\mechanics\helplessness.dm"
 #include "GainStation13\code\mechanics\infestation.dm"
 #include "GainStation13\code\mechanics\metal_cruncher.dm"
 #include "GainStation13\code\mechanics\spells.dm"

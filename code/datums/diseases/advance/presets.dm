@@ -71,19 +71,3 @@
 	name = "Blueberry virus bottle"
 	desc = "A small bottle. Contains blueberry virus in synthblood medium."
 	spawned_disease = /datum/disease/advance/berry_virus
-
-
-//admin variant of berry virus
-
-/datum/disease/advance/berry_virus_extreme
-	copy_type = /datum/disease/advance
-
-/datum/disease/advance/berry_virus_extreme/New(make_typecache = TRUE)
-	name = "Blueberry Virus"
-	symptoms = list(new/datum/symptom/berry/extreme)
-	..()
-
-/obj/item/reagent_containers/glass/bottle/berry_extreme
-	name = "Blueberry virus bottle"
-	desc = "A small bottle. Contains blueberry virus in synthblood medium."
-	spawned_disease = /datum/disease/advance/berry_virus_extreme

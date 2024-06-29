@@ -159,6 +159,16 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["wl_rate"] >> wl_rate
 	S["noncon_weight_gain"] >> noncon_weight_gain
 	S["max_weight"] >> max_weight 
+	S["helplessness_no_movement"] >> helplessness_no_movement
+	S["helplessness_clumsy"] >> helplessness_clumsy
+	S["helplessness_nearsighted"] >> helplessness_nearsighted
+	S["helplessness_hidden_face"] >> helplessness_hidden_face
+	S["helplessness_mute"] >> helplessness_mute
+	S["helplessness_immobile_arms"] >> helplessness_immobile_arms
+	S["helplessness_clothing_jumpsuit"] >> helplessness_clothing_jumpsuit
+	S["helplessness_clothing_misc"] >> helplessness_clothing_misc
+	S["helplessness_clothing_back"] >> helplessness_clothing_back
+	S["helplessness_no_buckle"] >> helplessness_no_buckle
 	S["stuckage"] >> stuckage
 	S["blueberry_inflation"] >> blueberry_inflation
 
@@ -302,6 +312,16 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["wl_rate"], wl_rate)
 	WRITE_FILE(S["noncon_weight_gain"], noncon_weight_gain)
 	WRITE_FILE(S["max_weight"], max_weight)
+	WRITE_FILE(S["helplessness_no_movement"], helplessness_no_movement)
+	WRITE_FILE(S["helplessness_clumsy"], helplessness_clumsy)
+	WRITE_FILE(S["helplessness_nearsighted"], helplessness_nearsighted)
+	WRITE_FILE(S["helplessness_hidden_face"], helplessness_hidden_face)
+	WRITE_FILE(S["helplessness_mute"], helplessness_mute)
+	WRITE_FILE(S["helplessness_immobile_arms"], helplessness_immobile_arms)
+	WRITE_FILE(S["helplessness_clothing_jumpsuit"], helplessness_clothing_jumpsuit)
+	WRITE_FILE(S["helplessness_clothing_misc"], helplessness_clothing_misc)
+	WRITE_FILE(S["helplessness_clothing_back"], helplessness_clothing_back)
+	WRITE_FILE(S["helplessness_no_buckle"], helplessness_no_buckle)
 	WRITE_FILE(S["stuckage"], stuckage)
 	WRITE_FILE(S["blueberry_inflation"], blueberry_inflation)
 	return 1
