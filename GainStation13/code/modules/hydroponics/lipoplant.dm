@@ -1,7 +1,8 @@
-/*/obj/item/seeds/lipoplant
+/obj/item/seeds/lipoplant
 	name = "pack of adipolipus"
 	desc = "These seeds grow into a foreign plant."
-	icon_state = "seed-fat"
+	icon = 'GainStation13/icons/obj/hydroponics/lipo_seeds.dmi'
+	icon_state = "lipo_seed"
 	species = "adipolipus"
 	plantname = "Adipolipus"
 	product = /obj/item/reagent_containers/food/snacks/grown/lipofruit
@@ -10,18 +11,19 @@
 	maturation = 8
 	production = 5
 	yield = 1
-	growing_icon = 'icons/obj/hydroponics/growing_fruits.dmi'
-	icon_grow = "fat-grow" // Uses one growth icons set for all the subtypes
-	icon_dead = "fat-dead" // Same for the dead icon
+	growing_icon = 'GainStation13/icons/obj/hydroponics/lipo_growing.dmi'
+	icon_grow = "lipo-grow" // Uses one growth icons set for all the subtypes
+	icon_dead = "lipo-dead" // Same for the dead icon
+	icon_harvest = "lipo-harvest"
 	reagents_add = list(/datum/reagent/consumable/lipoifier = 0.05)
 
 /obj/item/reagent_containers/food/snacks/grown/lipofruit
 	seed = /obj/item/seeds/lipoplant
 	name = "lipofruit"
 	desc = "A foreign fruit with an hard shell. Perhaps something sharp could open it?"
-	icon = 'icons/obj/hydroponics/harvest.dmi'
-	icon_state = "lipofruit"
-	item_state = "lipofruit"
+	icon = 'GainStation13/icons/obj/hydroponics/lipo_harvest.dmi'
+	icon_state = "lipo_nut"
+	item_state = "lipo_nut"
 	possible_transfer_amounts = list(5, 10, 15, 20, 25, 30, 50)
 	spillable = FALSE
 	resistance_flags = ACID_PROOF
@@ -33,6 +35,7 @@
 	attack_verb = list("klonked", "donked", "bonked")
 	distill_reagent = "creme_de_coconut"
 	var/opened = FALSE
+	sharpness = IS_BLUNT
 
 /obj/item/reagent_containers/food/snacks/grown/lipofruit/attackby(obj/item/W, mob/user, params)
 	if(!opened && W.sharpness)
@@ -41,7 +44,7 @@
 		spillable = TRUE
 		reagent_flags = OPENCONTAINER
 		ENABLE_BITFIELD(reagents.reagents_holder_flags, OPENCONTAINER)
-		icon_state = "lipofruit_opened"
+		icon_state = "lipo_nutcut_full"
 		desc = "A foreign fruit with an hard shell, the liquid inside looks very inviting."
 		playsound(user, W.hitsound, 50, 1, -1)
 		return
@@ -86,8 +89,8 @@
 		reagents.reaction(M, INGEST, fraction)
 		addtimer(CALLBACK(reagents, TYPE_PROC_REF(/datum/reagents, trans_to), M, 5), 5)
 		playsound(M.loc,'sound/items/drink.ogg', rand(10,50), 1)
-	if(!reagents || !reagents.total_volume)
-		icon_state = "lipofruit_empty"
+	if(!reagents || reagents.total_volume)
+		icon_state = "lipo_nutcut_empty"
 		desc = "A foreign fruit with an hard shell."
 
 /obj/item/reagent_containers/food/snacks/grown/lipofruit/afterattack(obj/target, mob/user, proximity)
@@ -118,7 +121,7 @@
 								"<span class='notice'>You splash the contents of [src] onto [target].</span>")
 			reagents.reaction(target, TOUCH)
 			reagents.clear_reagents()
-	if(reagents && reagents.total_volume)
-		icon_state = "lipofruit_opened"
+	if(reagents && reagents.total_volume && opened)
+		icon_state = "lipo_nutcut_full"
 		desc = "A foreign fruit with an hard shell, the liquid inside looks very inviting."
-*/
+

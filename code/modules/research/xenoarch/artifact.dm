@@ -91,6 +91,7 @@
 								/obj/item/seeds/gatfruit,
 								/obj/item/seeds/kudzu,
 								/obj/item/seeds/firelemon,
+								/obj/item/seeds/lipoplant, //GS13
 								/obj/item/seeds/random
 								))
 
