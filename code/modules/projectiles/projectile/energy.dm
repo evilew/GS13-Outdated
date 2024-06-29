@@ -14,7 +14,7 @@
 	icon_state = "spark"
 	color = "#FFFF00"
 	nodamage = 1
-	knockdown = 100
+	knockdown = 50
 	stutter = 5
 	jitter = 20
 	hitsound = 'sound/weapons/taserhit.ogg'
@@ -160,7 +160,7 @@
 	damage = 8
 	damage_type = TOX
 	nodamage = 0
-	knockdown = 100
+	knockdown = 50
 	stutter = 5
 
 /obj/item/projectile/energy/bolt/halloween
