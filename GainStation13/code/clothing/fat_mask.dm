@@ -17,7 +17,10 @@
 		return PROCESS_KILL
 
 /obj/item/clothing/mask/gas/fattening/process()
-	C.adjust_fatness(5, FATTENING_TYPE_ITEM)
+	if(C != null)
+		C.adjust_fatness(5, FATTENING_TYPE_ITEM)
+	else
+		return PROCESS_KILL
 
 /datum/crafting_recipe/fat_mask
 	name = "Drone Mask"
