@@ -105,6 +105,14 @@
 	result = /obj/item/reagent_containers/food/snacks/baguette
 	subcategory = CAT_MISCFOOD
 
+
+/datum/crafting_recipe/food/peel
+	name = "Peel Egg-Plants"
+	time = 20
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/shell/eggy)
+	result = /obj/item/reagent_containers/food/snacks/egg
+	subcategory = CAT_MISCFOOD
+
 ////////////////////////////////////////////////TOAST////////////////////////////////////////////////
 
 /datum/crafting_recipe/food/slimetoast
