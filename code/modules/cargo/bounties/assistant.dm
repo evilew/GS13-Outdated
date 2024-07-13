@@ -237,7 +237,7 @@
 	required_count = 5
 	wanted_types = list(/obj/structure/chair/plaswood)
 
-/datum/bounty/item/assistant/condom
+/*/datum/bounty/item/assistant/condom
 	name = "Filled Condom"
 	description = "Something wack is happening at Central Command, and now they requested some filled condoms?"
 	reward = 1150
