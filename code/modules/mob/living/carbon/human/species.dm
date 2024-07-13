@@ -1369,6 +1369,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			to_chat(fatty, "<span class='notice'>You have become thin enough to regain some of your mobility.</span>")
 			REMOVE_TRAIT(fatty, TRAIT_NO_MOVE, HELPLESSNESS_TRAIT)
 
+	else
+		if(HAS_TRAIT_FROM(fatty, TRAIT_NO_MOVE, HELPLESSNESS_TRAIT))
+			REMOVE_TRAIT(fatty, TRAIT_NO_MOVE, HELPLESSNESS_TRAIT)
+
 
 	if(preferences.helplessness_clumsy)
 		if(!HAS_TRAIT_FROM(fatty, TRAIT_CLUMSY, HELPLESSNESS_TRAIT))
@@ -1378,6 +1382,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 		else if(fatty.fatness < preferences.helplessness_clumsy)
 			to_chat(fatty, "<span class='notice'>You feel like you have lost enough weight to recover your dexterity.</span>")
+			REMOVE_TRAIT(fatty, TRAIT_CLUMSY, HELPLESSNESS_TRAIT)
+
+	else
+		if(HAS_TRAIT_FROM(fatty, TRAIT_CLUMSY, HELPLESSNESS_TRAIT))
 			REMOVE_TRAIT(fatty, TRAIT_CLUMSY, HELPLESSNESS_TRAIT)
 
 
@@ -1391,6 +1399,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			to_chat(fatty, "<span class='notice'>You are thin enough to see your enviornment again. </span>")
 			fatty.cure_nearsighted(HELPLESSNESS_TRAIT)
 
+	else
+		if(HAS_TRAIT_FROM(fatty, TRAIT_NEARSIGHT, HELPLESSNESS_TRAIT))
+			REMOVE_TRAIT(fatty, TRAIT_NEARSIGHT, HELPLESSNESS_TRAIT)
+
 
 	if(preferences.helplessness_hidden_face)
 		if(!HAS_TRAIT_FROM(fatty, TRAIT_DISFIGURED, HELPLESSNESS_TRAIT))
@@ -1402,6 +1414,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			to_chat(fatty, "<span class='notice'>You have lost enough weight to allow people to now recognize your face.</span>")
 			REMOVE_TRAIT(fatty, TRAIT_DISFIGURED, HELPLESSNESS_TRAIT)
 
+	else
+		if(HAS_TRAIT_FROM(fatty, TRAIT_DISFIGURED, HELPLESSNESS_TRAIT))
+			REMOVE_TRAIT(fatty, TRAIT_DISFIGURED, HELPLESSNESS_TRAIT)
+
 
 	if(preferences.helplessness_mute)
 		if(!HAS_TRAIT_FROM(fatty, TRAIT_MUTE, HELPLESSNESS_TRAIT))
@@ -1411,6 +1427,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 		else if(fatty.fatness < preferences.helplessness_mute)
 			to_chat(fatty, "<span class='notice'>You are thin enough now to be able to speak again. </span>")
+			REMOVE_TRAIT(fatty, TRAIT_MUTE, HELPLESSNESS_TRAIT)
+
+	else
+		if(HAS_TRAIT_FROM(fatty, TRAIT_MUTE, HELPLESSNESS_TRAIT))
 			REMOVE_TRAIT(fatty, TRAIT_MUTE, HELPLESSNESS_TRAIT)
 
 
@@ -1428,6 +1448,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			REMOVE_TRAIT(fatty, TRAIT_PARALYSIS_R_ARM, HELPLESSNESS_TRAIT)
 			fatty.update_disabled_bodyparts()
 
+	else
+		if(HAS_TRAIT_FROM(fatty, TRAIT_PARALYSIS_L_ARM, HELPLESSNESS_TRAIT))
+			REMOVE_TRAIT(fatty, TRAIT_PARALYSIS_L_ARM, HELPLESSNESS_TRAIT)
+
 
 	if(preferences.helplessness_clothing_jumpsuit)
 		if(!HAS_TRAIT_FROM(fatty, TRAIT_NO_JUMPSUIT, HELPLESSNESS_TRAIT))
@@ -1441,6 +1465,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 		else if(fatty.fatness < preferences.helplessness_clothing_jumpsuit)
 			to_chat(fatty, "<span class='notice'>You feel thin enough to put on jumpsuits now. </span>")
+			REMOVE_TRAIT(fatty, TRAIT_NO_JUMPSUIT, HELPLESSNESS_TRAIT)
+
+	else
+		if(HAS_TRAIT_FROM(fatty, TRAIT_NO_JUMPSUIT, HELPLESSNESS_TRAIT))
 			REMOVE_TRAIT(fatty, TRAIT_NO_JUMPSUIT, HELPLESSNESS_TRAIT)
 
 
@@ -1468,6 +1496,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			to_chat(fatty, "<span class='notice'>You feel thin enough to put on suits, shoes, and gloves now. </span>")
 			REMOVE_TRAIT(fatty, TRAIT_NO_MISC, HELPLESSNESS_TRAIT)
 
+	else
+		if(HAS_TRAIT_FROM(fatty, TRAIT_NO_MISC, HELPLESSNESS_TRAIT))
+			REMOVE_TRAIT(fatty, TRAIT_NO_MISC, HELPLESSNESS_TRAIT)
+
 
 	if(preferences.helplessness_clothing_back)
 		if(!HAS_TRAIT_FROM(fatty, TRAIT_NO_BACKPACK, HELPLESSNESS_TRAIT))
@@ -1482,6 +1514,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			to_chat(fatty, "<span class='notice'>You feel thin enough to hold items on your back now. </span>")
 			REMOVE_TRAIT(fatty, TRAIT_NO_BACKPACK, HELPLESSNESS_TRAIT)
 
+	else
+		if(HAS_TRAIT_FROM(fatty, TRAIT_NO_BACKPACK, HELPLESSNESS_TRAIT))
+			REMOVE_TRAIT(fatty, TRAIT_NO_BACKPACK, HELPLESSNESS_TRAIT)
+
 
 	if(preferences.helplessness_no_buckle)
 		if(!HAS_TRAIT_FROM(fatty, TRAIT_NO_BUCKLE, HELPLESSNESS_TRAIT))
@@ -1491,6 +1527,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 		else if(fatty.fatness < preferences.helplessness_no_buckle)
 			to_chat(fatty, "<span class='notice'>You feel thin enough to sit on things again. </span>")
+			REMOVE_TRAIT(fatty, TRAIT_NO_BUCKLE, HELPLESSNESS_TRAIT)
+
+	else
+		if(HAS_TRAIT_FROM(fatty, TRAIT_NO_BUCKLE, HELPLESSNESS_TRAIT))
 			REMOVE_TRAIT(fatty, TRAIT_NO_BUCKLE, HELPLESSNESS_TRAIT)
 
 
