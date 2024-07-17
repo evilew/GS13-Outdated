@@ -202,12 +202,12 @@
 //GS13 - fullness alerts
 /obj/screen/alert/bloated
 	name = "Bloated stomach"
-	desc = "Your stomach is a bit too full"
+	desc = "Your stomach is bloated, eating more would probably make your stomach pop."
 	icon_state = "Stuffed"
 
 /obj/screen/alert/stuffed
 	name = "Completely stuffed"
-	desc = "Whatever you ate, you ate too much. Your stomach has stretched to accomodate its contents, forming a very obvious belly"
+	desc = "Whatever you ate, you ate too much. Your stomach has stretched to accomodate its contents, forming a very obvious stuffed belly, eating more would cause hindered movement."
 	icon_state = "Bloated"
 
 /obj/screen/alert/beegbelly
