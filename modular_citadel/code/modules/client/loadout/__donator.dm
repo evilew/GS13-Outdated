@@ -254,7 +254,7 @@ datum/gear/lyricalpawsring
 	name = "Empty Toolbelt"
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/storage/belt/utility
-	ckeywhitelist = list("Killmewitha22")
+	ckeywhitelist = list("killmewitha22")
 
 /obj/item/toy/sword/chloesabre/halsey
 	name = "Halsey's Sabre"
