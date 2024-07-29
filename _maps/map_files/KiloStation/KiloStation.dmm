@@ -21940,9 +21940,7 @@
 /turf/open/floor/plating,
 /area/maintenance/central)
 "aLm" = (
-/obj/structure/chair{
-	dir = 8
-	},
+/obj/structure/scale,
 /turf/open/floor/plasteel/dark,
 /area/medical/medbay/central)
 "aLn" = (
@@ -22802,13 +22800,11 @@
 	dir = 4;
 	pixel_x = -26
 	},
-/obj/machinery/camera{
-	c_tag = "Medbay Lobby";
-	dir = 4;
-	name = "medical camera";
-	network = list("ss13","medical")
-	},
 /obj/structure/disposalpipe/segment,
+/obj/machinery/shower{
+	dir = 4;
+	name = "emergency shower"
+	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/medbay/central)
 "aMI" = (
@@ -23811,6 +23807,9 @@
 	name = "Scrubs, MD";
 	on = 0
 	},
+/obj/vehicle/ridden/wheelchair,
+/obj/vehicle/ridden/wheelchair,
+/obj/vehicle/ridden/wheelchair,
 /turf/open/floor/plasteel/dark,
 /area/medical/storage)
 "aOv" = (
@@ -26169,6 +26168,12 @@
 /obj/effect/turf_decal/tile/yellow,
 /obj/structure/sign/departments/chemistry{
 	pixel_x = -32
+	},
+/obj/machinery/camera{
+	c_tag = "Medbay Lobby";
+	dir = 4;
+	name = "medical camera";
+	network = list("ss13","medical")
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/medbay/central)
@@ -30460,7 +30465,6 @@
 "aYX" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
-/obj/structure/punching_bag,
 /turf/open/floor/wood,
 /area/crew_quarters/fitness/recreation)
 "aYY" = (
@@ -49156,9 +49160,6 @@
 	name = "command camera"
 	},
 /obj/structure/disposalpipe/segment,
-/obj/item/toy/plush/lizardplushie{
-	gender = "male"
-	},
 /turf/open/floor/plasteel/dark,
 /area/bridge)
 "bDD" = (
@@ -56572,6 +56573,9 @@
 	},
 /obj/machinery/light/small,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "bPR" = (
@@ -83397,10 +83401,6 @@
 /obj/structure/barricade/wooden/crude,
 /turf/open/floor/plasteel/dark,
 /area/quartermaster/warehouse)
-"oec" = (
-/obj/machinery/vending/cola/random,
-/turf/closed/wall,
-/area/crew_quarters/fitness/pool)
 "ofj" = (
 /obj/machinery/door/airlock/maintenance{
 	req_access_txt = "12"
@@ -84590,7 +84590,7 @@
 /turf/open/floor/engine,
 /area/engine/supermatter)
 "xlT" = (
-/obj/item/conveyor_construct/treadmill,
+/obj/structure/punching_bag,
 /turf/open/floor/wood,
 /area/crew_quarters/fitness/recreation)
 "xmU" = (
@@ -101882,7 +101882,7 @@ cFW
 awD
 bKD
 bLb
-btv
+xlT
 btr
 bvz
 bvx
@@ -102139,7 +102139,7 @@ cuB
 awD
 bKH
 bLb
-xlT
+btv
 btu
 bLW
 bLC
@@ -102917,7 +102917,7 @@ bGT
 bGT
 bGT
 bMx
-oec
+gWo
 afz
 adZ
 ajd
