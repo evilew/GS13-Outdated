@@ -1,7 +1,7 @@
 /obj/item/projectile/bullet
 	name = "bullet"
 	icon_state = "bullet"
-	damage = 60
+	damage = 55
 	damage_type = BRUTE
 	nodamage = FALSE
 	candink = TRUE

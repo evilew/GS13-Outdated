@@ -340,11 +340,19 @@
 
 /obj/item/storage/pill_bottle/breast_enlargement
 	name = "breast enlargement pills"
-	desc = "Made by Fermichem - They have a woman with breasts larger than she is on them. The warning states not to take more than 10u at a time."
+	desc = "Made by Fermichem - They have a woman with breasts larger than she is on them. The warning states not to take more than 30u at a time."
 
 /obj/item/storage/pill_bottle/breast_enlargement/PopulateContents()
 	for(var/i in 1 to 7)
 		new /obj/item/reagent_containers/pill/breast_enlargement(src)
+
+/obj/item/storage/pill_bottle/butt_enlargement
+	name = "butt enlargement pills"
+	desc = "Made by Fermichem - They have a figure with an ass larger than they are on them. The warning states not to take more than 30u at a time."
+
+/obj/item/storage/pill_bottle/butt_enlargement/PopulateContents()
+	for(var/i in 1 to 7)
+		new /obj/item/reagent_containers/pill/butt_enlargement(src)
 
 /////////////
 //Organ Box//

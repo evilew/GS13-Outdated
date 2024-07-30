@@ -114,6 +114,16 @@ GLOBAL_LIST_INIT(maintenance_loot, list(
 	/obj/item/trash/fatoray_scrap1 = 1, //GS13 - added for researching fat guns
 	/obj/item/trash/fatoray_scrap2 = 1, //GS13
 	/obj/item/trash/odd_disk = 1, //GS13
+	/obj/item/clothing/neck/petcollar/calorite = 1,
+	/obj/item/reagent_containers/food/drinks/soda_cans/fizzwiz = 2,
+	/obj/item/clothing/mask/gas/fattening = 1,
+	/obj/item/stack/sheet/plastic/five = 1,
+	/obj/item/wrench/bronze = 1,
+	/obj/item/kitchen/knife/combat/bone = 1,
+	/obj/item/storage/pill_bottle/butt_enlargement = 1,
+	/obj/item/clothing/mask/cowmask/gag = 1,
+	/obj/item/clothing/mask/pig/gag = 1,
+	/obj/item/grown/bananapeel = 1,
 	/obj/item/clothing/shoes/wheelys = 1,
 	/obj/item/clothing/shoes/kindleKicks = 1,
 	/obj/item/autosurgeon/penis = 1,

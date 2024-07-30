@@ -641,7 +641,7 @@
 	always_up = 1
 	use_power = NO_POWER_USE
 	has_cover = 0
-	scan_range = 9
+	scan_range = 8
 	req_access = list(ACCESS_SYNDICATE)
 	mode = TURRET_LETHAL
 	stun_projectile = /obj/item/projectile/bullet

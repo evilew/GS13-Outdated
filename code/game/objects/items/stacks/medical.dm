@@ -125,9 +125,9 @@
 	icon_state = "brutepack"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
-	heal_brute = 15
-	self_delay = 20
-	grind_results = list(/datum/reagent/medicine/styptic_powder = 10)
+	heal_brute = 7
+	self_delay = 30
+	grind_results = list(/datum/reagent/medicine/styptic_powder = 5)
 
 /obj/item/stack/medical/bruise_pack/suicide_act(mob/user)
 	user.visible_message("<span class='suicide'>[user] is bludgeoning [user.p_them()]self with [src]! It looks like [user.p_theyre()] trying to commit suicide!</span>")
@@ -181,9 +181,9 @@
 	icon_state = "ointment"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
-	heal_burn = 15
-	self_delay = 20
-	grind_results = list(/datum/reagent/medicine/silver_sulfadiazine = 10)
+	heal_burn = 7
+	self_delay = 30
+	grind_results = list(/datum/reagent/medicine/silver_sulfadiazine = 5)
 
 /obj/item/stack/medical/ointment/suicide_act(mob/living/user)
 	user.visible_message("<span class='suicide'>[user] is squeezing \the [src] into [user.p_their()] mouth! [user.p_do(TRUE)]n't [user.p_they()] know that stuff is toxic?</span>")
