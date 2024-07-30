@@ -78,7 +78,6 @@
 "kd" = (/obj/structure/table,/obj/item/kitchen/rollingpin,/obj/item/kitchen/knife/butcher,/turf/open/floor/plasteel,/area/ruin/space/has_grav/feedersden)
 "kg" = (/obj/effect/spawner/structure/window/reinforced,/obj/machinery/door/poddoor/shutters/old/preopen{id = "feederden_south"},/turf/open/floor/plating,/area/ruin/space/has_grav/feedersden)
 "ko" = (/obj/machinery/space_heater,/obj/machinery/airalarm/syndicate{pixel_y = 32},/obj/structure/disposalpipe/segment{dir = 4},/turf/open/floor/plating,/area/ruin/space/has_grav/feedersden)
-"kx" = (/obj/item/storage/box/syndie_kit/soporific_bundle,/turf/open/floor/carpet/black,/area/ruin/space/has_grav/feedersden)
 "kC" = (/obj/machinery/portable_atmospherics/canister/oxygen,/turf/open/floor/plating,/area/ruin/space/has_grav/feedersden)
 "kK" = (/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/feedersden)
 "kM" = (/obj/item/bodybag/bluespace,/turf/open/floor/plating,/area/ruin/space/has_grav/feedersden)
@@ -298,7 +297,7 @@
 "QV" = (/obj/structure/sign/poster/contraband/sun_kist{pixel_y = 32},/turf/open/floor/carpet/black,/area/ruin/space/has_grav/feedersden)
 "QW" = (/obj/structure/table/wood,/obj/effect/turf_decal/tile/red{dir = 1},/obj/effect/turf_decal/tile/red{dir = 8},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/feedersden)
 "Ra" = (/obj/machinery/door/airlock/hatch{name = "airlock"; req_access_txt = "150"},/turf/open/floor/plasteel,/area/ruin/space/has_grav/feedersden)
-"Rc" = (/obj/machinery/computer/camera_advanced/abductor/feeder,/obj/effect/turf_decal/stripes{icon_state = "trim"; dir = 10},/turf/open/floor/plating/abductor,/area/ruin/space/has_grav/feedersden)
+"Rc" = (/obj/machinery/computer/camera_advanced/abductor/feeder,/obj/effect/turf_decal/stripes{icon_state = "trim"; dir = 10},/obj/item/paper/fluff/ruins/feeder_den/tool_warning,/turf/open/floor/plating/abductor,/area/ruin/space/has_grav/feedersden)
 "Rh" = (/obj/structure/table,/obj/machinery/microwave,/turf/open/floor/plasteel,/area/ruin/space/has_grav/feedersden)
 "Rp" = (/obj/effect/turf_decal/tile/red{dir = 1},/obj/effect/turf_decal/tile/red{dir = 4},/obj/effect/turf_decal/loading_area{dir = 1; icon_state = "drain"; name = "drain"},/obj/effect/turf_decal/loading_area{dir = 1; icon_state = "drain"; name = "drain"},/obj/effect/turf_decal/loading_area{dir = 1; icon_state = "drain"; name = "drain"},/turf/open/floor/plasteel/dark,/area/ruin/space/has_grav/feedersden)
 "Rr" = (/obj/structure/table/abductor,/obj/item/abductor/gizmo/feeder,/obj/item/abductor/gizmo/feeder,/obj/effect/turf_decal/stripes{icon_state = "trim"; dir = 6},/turf/open/floor/plating/abductor,/area/ruin/space/has_grav/feedersden)
@@ -379,7 +378,7 @@ FEFEFEFEFEFEBrBrBrxgjIdGBzBrBrFEFExZfmfmBrBrBrDctEpOzSKRoSpcefDcBrBrBrFEFEebFEFE
 FEFEFEFEFEBrBrBrBzOwPVOwTOnEBrBrBrfmISBrBrBrBrnrxPoKWHKRKRTHZWDcBrBrBrBrBrqFBrFEebBrBrBrBrBrBrBrBrFEFEFEFEFEFE
 FEFEFEFEFEBrBrDcnrnrqCnrDcDcDcDcDcDcDcDcDcDcDcDcwAoKtffCZcoKNvDcDcDcBrBrBrBrDcDcCnDcDcnrnrnrnrDcBrBrFEFEFEFEFE
 FEFEFEFEBrBrBrnrzLgaQVlRnrrjybrjDcaqEUzyBuDcXoKTExoKoKJxoKoKOcKKphDcBrDcDcDcDcLVPLhgnrcyFfdelRnrBrBrFEFEFEFEFE
-FEFEFEFEBrBrBrnrLzkxUEEnqDrSsqsqnrQWoFkKJDgUgooKoKfStbvvADAgoKoKoKDcDcDcbUShnrvHJhvHqDsqUEUEOEnrBrBrFEFEFEFEFE
+FEFEFEFEBrBrBrnrLzUEUEEnqDrSsqsqnrQWoFkKJDgUgooKoKfStbvvADAgoKoKoKDcDcDcbUShnrvHJhvHqDsqUEUEOEnrBrBrFEFEFEFEFE
 FEFEFEFEBrBrBrnrNAsqsqsqHQKnsqgLnrXakKkKqtgUegoKoKnrgUgUgUnroKOcoKiWRUCuYXzsnruAsTSmHQMVsqsqTlnrBrBrFEFEFEFEFE
 FEebebebqFBrBrnrfMsqelzCnrLMelwnnrSXXFXFwODcwYrWOclQeSiXGFCcoKoKoKNzItgUeZICnrhlbghTnrelZwCHfMnrBrBrFEFEFEFEFE
 FEFEFEFEFEBrBrDcnrnrnurkDcgUKHzYDcDcgUdHDcDccwoKoKOcoKoKoKvkrWoKoKNzItDcDcDcDcgUYkzYDcftbxnrnrDcBrBrFEFEFEFEFE
