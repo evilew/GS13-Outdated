@@ -108,8 +108,8 @@
 
 /datum/crafting_recipe/food/peel
 	name = "Peel Egg-Plants"
-	time = 20
-	reqs = list(/obj/item/reagent_containers/food/snacks/grown/shell/eggy)
+	time = 5
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/shell/eggy = 1)
 	result = /obj/item/reagent_containers/food/snacks/egg
 	subcategory = CAT_MISCFOOD
 
