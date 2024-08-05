@@ -35777,6 +35777,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/mob/living/simple_animal/pet/cat,
 /turf/open/floor/plating,
 /area/maintenance/department/engine)
 "btR" = (
@@ -58355,6 +58356,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
+/mob/living/simple_animal/pet/cat,
 /turf/open/floor/plating,
 /area/maintenance/department/security/brig)
 "gvf" = (
@@ -60757,6 +60759,15 @@
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/wood,
 /area/maintenance/department/crew_quarters/dorms)
+"mou" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/mob/living/simple_animal/pet/cat,
+/turf/open/floor/plating,
+/area/maintenance/department/engine)
 "mpd" = (
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
@@ -91868,7 +91879,7 @@ bDi
 bDi
 wIv
 qOH
-fpT
+mou
 fpT
 fpT
 wNq

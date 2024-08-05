@@ -155,10 +155,16 @@
 
 //GS13 - a variant of lattice, used for maint wire protection
 
-/obj/structure/lattice/catwalk/maintenance
+/obj/structure/catwalk_maint
 	name = "maint catwalk"
 	desc = "This catwalk seems to be placed in maintenance, in order to protect the wires."
-	anchored = TRUE
-	density = FALSE
-	layer = BELOW_OBJ_LAYER
 	max_integrity = 50
+	icon = 'icons/obj/smooth_structures/catwalk.dmi'
+	icon_state = "catwalk"
+	density = FALSE
+	anchored = TRUE
+	armor = list("melee" = 50, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 80, "acid" = 50)
+	max_integrity = 50
+	layer = HIGH_OBJ_LAYER
+	plane = FLOOR_PLANE
+	obj_flags = BLOCK_Z_FALL

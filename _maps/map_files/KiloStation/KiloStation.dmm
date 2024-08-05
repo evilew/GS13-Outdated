@@ -50558,6 +50558,7 @@
 	dir = 6
 	},
 /obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/pet/cat,
 /turf/open/floor/plating,
 /area/maintenance/aft)
 "bGb" = (
@@ -65415,6 +65416,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
+/mob/living/simple_animal/pet/cat,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "cek" = (
@@ -75063,6 +75065,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
+/mob/living/simple_animal/pet/cat,
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "cvF" = (
