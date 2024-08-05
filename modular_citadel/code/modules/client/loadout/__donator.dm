@@ -240,6 +240,7 @@ datum/gear/lyricalpawsring
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/crowbar/bronze/glaug
 	ckeywhitelist = list("happytpr")
+
 /obj/item/crowbar/bronze/glaug
 	name = "Milwaukee Pocket Crowbar"
 	desc = "Much more expensive. Still serves the same function."
@@ -254,7 +255,7 @@ datum/gear/lyricalpawsring
 	name = "Empty Toolbelt"
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/storage/belt/utility
-	ckeywhitelist = list("killmewitha22")
+	ckeywhitelist = list("killmewitha22", "Killmewitha22", "KILLMEWITHA22", "sonoida")
 
 /obj/item/toy/sword/chloesabre/halsey
 	name = "Halsey's Sabre"
@@ -285,14 +286,26 @@ datum/gear/lyricalpawsring
 	path = /obj/item/book/granter/spell/fattening/steal
 	ckeywhitelist = list("sonoida", "themrsky", "Not Number")
 
+
+/datum/gear/white_eyepatch_cabal
+	name = "Cabal's Eyepatch"
+	category = SLOT_GLASSES
+	path = /obj/item/clothing/glasses/eyepatch/cabal
+	ckeywhitelist = list("spess_lizurd", "SPESS LIZURD", "spess lizurd", "SPESS_LIZURD", "spesslizurd", "sonoida")
+
+/datum/gear/white_eyepatch
+	name = "White Eyepatch"
+	category = SLOT_GLASSES
+	path = /obj/item/clothing/glasses/eyepatch/white
+
+/obj/item/clothing/glasses/eyepatch/white
+	name = "White eyepatch"
+	desc = "Smells faintly of medicine and headaches."
+	icon_state = "eyepatch_white"
+	item_state = "eyepatch_white"
+
 /obj/item/clothing/glasses/eyepatch/cabal
 	name = "Cabal's Eyepatch"
 	desc = "Vulpine sluts only."
 	icon_state = "eyepatch_white"
 	item_state = "eyepatch_white"
-
-/datum/gear/white_eyepatch
-	name = "White Eyepatch"
-	category = SLOT_GLASSES
-	path = /obj/item/book/granter/spell/fattening/steal
-	ckeywhitelist = list("spess_lizurd")
