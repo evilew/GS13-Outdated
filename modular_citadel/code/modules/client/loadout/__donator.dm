@@ -284,3 +284,15 @@ datum/gear/lyricalpawsring
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/book/granter/spell/fattening/steal
 	ckeywhitelist = list("sonoida", "themrsky", "Not Number")
+
+/obj/item/clothing/glasses/eyepatch/cabal
+	name = "Cabal's Eyepatch"
+	desc = "Vulpine sluts only."
+	icon_state = "eyepatch_white"
+	item_state = "eyepatch_white"
+
+/datum/gear/white_eyepatch
+	name = "White Eyepatch"
+	category = SLOT_GLASSES
+	path = /obj/item/book/granter/spell/fattening/steal
+	ckeywhitelist = list("spess_lizurd")

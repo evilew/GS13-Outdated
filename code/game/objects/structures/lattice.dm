@@ -151,3 +151,14 @@
 		pixel_x = 0
 		pixel_y = 0
 	return TRUE
+
+
+//GS13 - a variant of lattice, used for maint wire protection
+
+/obj/structure/lattice/catwalk/maintenance
+	name = "maint catwalk"
+	desc = "This catwalk seems to be placed in maintenance, in order to protect the wires."
+	anchored = TRUE
+	density = FALSE
+	layer = BELOW_OBJ_LAYER
+	max_integrity = 50
