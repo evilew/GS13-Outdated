@@ -308,7 +308,7 @@
 
 /obj/item/storage/backpack/duffelbag/mining_cloned
 	name = "mining replacement kit"
-	desc = "A large bag that has advance tools and a spare jumpsuit, boots, and gloves for a newly cloned miner to get back in the field. Even as a new Id!"
+	desc = "A large bag that has advance tools and a spare jumpsuit, boots, and gloves for a newly cloned miner to get back in the field. Even has a new Id!"
 
 /obj/item/storage/backpack/duffelbag/mining_cloned/PopulateContents()
 	new /obj/item/pickaxe/mini(src)
@@ -330,13 +330,17 @@
 
 /obj/machinery/mineral/equipment_vendor/proc/RedeemSVoucher(obj/item/suit_voucher/voucher, mob/redeemer)
 	var/items = list(	"Exo-suit" = image(icon = 'icons/obj/clothing/suits.dmi', icon_state = "exo"),
-						"SEVA suit" = image(icon = 'icons/obj/clothing/suits.dmi', icon_state = "seva"))
+						"SEVA suit" = image(icon = 'icons/obj/clothing/suits.dmi', icon_state = "seva"),
+						"explorer suit" = image(icon = 'icons/obj/clothing/suits.dmi', icon_state = "explorer"))
 
 	var/selection = show_radial_menu(redeemer, src, items, require_near = TRUE, tooltips = TRUE)
 	if(!selection || !Adjacent(redeemer) || QDELETED(voucher) || voucher.loc != redeemer)
 		return
 	var/drop_location = drop_location()
 	switch(selection)
+		if("explorer suit")
+			new /obj/item/clothing/suit/hooded/explorer(drop_location)
+			new /obj/item/clothing/mask/gas/explorer(drop_location)
 		if("Exo-suit")
 			new /obj/item/clothing/suit/hooded/explorer/exo(drop_location)
 			new /obj/item/clothing/mask/gas/exo(drop_location)
