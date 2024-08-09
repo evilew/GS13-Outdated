@@ -175,6 +175,24 @@
 	emote_type = EMOTE_AUDIBLE
 	sound = 'GainStation13/sound/voice/teshari/teshscream.ogg'
 
+/datum/emote/living/prbt
+	key = "prbt"
+	key_third_person = "prbts"
+	message = "prbts."
+	message_param = "prbts at %t."
+	emote_type = EMOTE_AUDIBLE
+	sound = 'GainStation13/sound/voice/emotes/prbt.ogg'
+
+/datum/emote/living/mlem
+	key = "mlem"
+	key_third_person = "mlems"
+	message = "mlems their tongue up over their nose. Mlem."
+
+/datum/emote/living/blep
+	key = "blep"
+	key_third_person = "bleps"
+	message = "bleps their tongue out. Blep."
+
 /datum/emote/living/teppi
 	key = "gyoh"
 	key_third_person = "gyohs"
