@@ -50,9 +50,13 @@
 		return FALSE	
 
 	make_noise(user, "brap", FARTING_NOISES)
-
-	if(locate(/obj/item/storage/book/bible) in get_turf(user)) //Biblefart
+	var/obj/item/storage/book/bible/b = locate(/obj/item/storage/book/bible) in get_turf(user) //Biblefart
+	if(b) //Devine Retribution
+		user.visible_message("<span class='danger'>\The [user] farts on \the [b], causing a violent, otherworldly ripple to echo outwards before they explode in a gorey mess of devine retribution!</span>",
+							"<span class='userdanger'>You feel a deep sense of dread as you release pressure from your rear over \the [b], immediately realizing your mistake as Divine Retribution rends your form into a gorey mess.</span>")
+		user.emote("scream")
 		user.gib()
+		return ..() //Gassy is dead, no fullness to reduce
 
 	. = ..()	
 	reduce_fullness(user, rand(6,12))
@@ -84,10 +88,14 @@
 		return FALSE	
 
 	make_noise(user, "fart", FARTING_NOISES)
-		
-	if(locate(/obj/item/storage/book/bible) in get_turf(user)) //Biblefart
+	var/obj/item/storage/book/bible/b = locate(/obj/item/storage/book/bible) in get_turf(user) //Biblefart
+	if(b) //Devine Retribution
+		user.visible_message("<span class='danger'>\The [user] farts on \the [b], causing a violent, otherworldly ripple to echo outwards before they explode in a gorey mess of devine retribution!</span>",
+							"<span class='userdanger'>You feel a deep sense of dread as you release pressure from your rear over \the [b], immediately realizing your mistake as Divine Retribution rends your form into a gorey mess.</span>")
+		user.emote("scream")
 		user.gib()
-	
+		return ..() //Gassy is dead, no fullness to reduce
+
 	. = ..()	
 	reduce_fullness(user, rand(4,8))
 
