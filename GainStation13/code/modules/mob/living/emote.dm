@@ -51,7 +51,7 @@
 
 	make_noise(user, "brap", FARTING_NOISES)
 
-	for(/obj/item/storage/book/bible in get_turf(user)) //Biblefart
+	if(locate(/obj/item/storage/book/bible) in get_turf(user)) //Biblefart
 		user.gib()
 
 	. = ..()	
@@ -85,7 +85,7 @@
 
 	make_noise(user, "fart", FARTING_NOISES)
 		
-	for(/obj/item/storage/book/bible in get_turf(user)) //Biblefart
+	if(locate(/obj/item/storage/book/bible) in get_turf(user)) //Biblefart
 		user.gib()
 	
 	. = ..()	
