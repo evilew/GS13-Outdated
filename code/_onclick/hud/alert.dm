@@ -215,6 +215,15 @@
 	desc = "You've somehow managed to fit even more in your stomach, barely allowing for any more room inside."
 	icon_state = "beegbelly"
 
+/obj/screen/alert/sated
+	name = "Sated"
+	desc = "You're perfectly rather sated right now."
+	icon_state = "sated"
+
+/obj/screen/alert/full
+	name = "Full"
+	desc = "You're rather full right now. Eating more food would result in weight gain."
+	icon_state = "full"
 
 /obj/screen/alert/hungry
 	name = "Hungry"
