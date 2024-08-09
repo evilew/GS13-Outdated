@@ -52,9 +52,11 @@
 	make_noise(user, "brap", FARTING_NOISES)
 	var/obj/item/storage/book/bible/b = locate(/obj/item/storage/book/bible) in get_turf(user) //Biblefart
 	if(b) //Devine Retribution
-		user.visible_message("<span class='danger'>\The [user] farts on \the [b], causing a violent, otherworldly ripple to echo outwards before they explode in a gorey mess of devine retribution!</span>",
+		user.visible_message("<span class='danger'>\The [user] farts on \the [b], causing a violent, otherworldly ripple to echo outwards before they explode in a gorey mess of divine retribution!</span>",
 							"<span class='userdanger'>You feel a deep sense of dread as you release pressure from your rear over \the [b], immediately realizing your mistake as Divine Retribution rends your form into a gorey mess.</span>")
 		user.emote("scream")
+		message_admins("[ADMIN_LOOKUPFLW(user)] farted on a bible at [ADMIN_VERBOSEJMP(user)] and was gibbed.")
+		log_game("[key_name(user)] farted on a bible at [AREACOORD(user)] and was gibbed")
 		user.gib()
 		return ..() //Gassy is dead, no fullness to reduce
 
@@ -90,9 +92,11 @@
 	make_noise(user, "fart", FARTING_NOISES)
 	var/obj/item/storage/book/bible/b = locate(/obj/item/storage/book/bible) in get_turf(user) //Biblefart
 	if(b) //Devine Retribution
-		user.visible_message("<span class='danger'>\The [user] farts on \the [b], causing a violent, otherworldly ripple to echo outwards before they explode in a gorey mess of devine retribution!</span>",
+		user.visible_message("<span class='danger'>\The [user] farts on \the [b], causing a violent, otherworldly ripple to echo outwards before they explode in a gorey mess of divine retribution!</span>",
 							"<span class='userdanger'>You feel a deep sense of dread as you release pressure from your rear over \the [b], immediately realizing your mistake as Divine Retribution rends your form into a gorey mess.</span>")
 		user.emote("scream")
+		message_admins("[ADMIN_LOOKUPFLW(user)] farted on a bible at [ADMIN_VERBOSEJMP(user)] and was gibbed.")
+		log_game("[key_name(user)] farted on a bible at [AREACOORD(user)] and was gibbed")
 		user.gib()
 		return ..() //Gassy is dead, no fullness to reduce
 
