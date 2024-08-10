@@ -21,7 +21,7 @@
 	. = ..()
 	if(!using)
 		using = TRUE
-		visible_message("<span>[user] does a rep with the [src]. YEEEEEAH!!!</span>")
+		to_chat(user, "<span>You do a rep with the [src]. YEEEEEAH!!!</span>")
 		if(do_after(usr, CLICK_CD_RESIST-reps, 0, usr, 1))
 			if(iscarbon(user))
 				var/mob/living/carbon/U = user
@@ -29,7 +29,7 @@
 			if(reps < 16)
 				reps += 0.4
 		else
-			visible_message("<span>[user] couldn't complete the rep. YOU'LL GET IT NEXT TIME CHAMP!!!</span>")
+			to_chat(user, "<span>You couldn't complete the rep. YOU'LL GET IT NEXT TIME CHAMP!!!</span>")
 		using = FALSE
 
 /obj/machinery/conveyor/treadmill
