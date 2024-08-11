@@ -2450,8 +2450,18 @@
 /turf/open/floor/plasteel/freezer,
 /area/xenoarch/gen)
 "fI" = (
-/obj/structure/flora/ausbushes/pointybush,
-/turf/open/floor/holofloor/grass,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/space/basic,
+/turf/open/floor/plasteel,
 /area/xenoarch/gen)
 "fJ" = (
 /obj/structure/cable{
@@ -3125,8 +3135,21 @@
 /turf/open/floor/plasteel/white,
 /area/xenoarch/arch)
 "hn" = (
-/obj/item/statuebust,
-/turf/open/water,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/space/basic,
+/turf/open/floor/plasteel,
 /area/xenoarch/gen)
 "ho" = (
 /obj/structure/table,
@@ -3894,6 +3917,9 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1,
 /obj/item/twohanded/required/kirbyplants/random,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
 "jl" = (
@@ -3945,9 +3971,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
-/area/xenoarch/bot{
-	name = "Demon Teleporter"
-	})
+/area/xenoarch/gen)
 "jq" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
@@ -4304,6 +4328,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
 	},
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
@@ -5329,9 +5356,19 @@
 /turf/open/floor/holofloor/grass,
 /area/xenoarch/gen)
 "mh" = (
-/obj/structure/flora/ausbushes/genericbush,
-/mob/living/simple_animal/butterfly,
-/turf/open/floor/holofloor/grass,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/light,
+/turf/open/space/basic,
+/turf/open/floor/plasteel,
 /area/xenoarch/gen)
 "mi" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
@@ -5400,9 +5437,25 @@
 /turf/open/floor/plasteel,
 /area/xenoarch/gen)
 "mp" = (
-/obj/structure/flora/ausbushes/grassybush,
-/mob/living/simple_animal/butterfly,
-/turf/open/floor/holofloor/grass,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/structure/table,
+/obj/item/storage/belt,
+/obj/item/storage/belt,
+/obj/item/storage/belt,
+/obj/item/poster{
+	pixel_y = -32
+	},
+/turf/open/space/basic,
+/turf/open/floor/plasteel,
 /area/xenoarch/gen)
 "mq" = (
 /obj/machinery/door/airlock/glass{
@@ -5430,10 +5483,26 @@
 /turf/open/floor/plating/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "mu" = (
-/obj/structure/flora/ausbushes/reedbush,
-/mob/living/simple_animal/butterfly,
-/turf/open/water,
-/area/xenoarch/gen)
+/obj/machinery/quantumpad{
+	map_pad_id = "ldemone";
+	map_pad_link_id = "demone";
+	mapped_quantum_pads = list("ldemone","demone");
+	name = "Demone Pad"
+	},
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/space/basic,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered)
 "mv" = (
 /obj/structure/rack,
 /turf/open/floor/plating,
@@ -6901,9 +6970,7 @@
 	req_one_access_txt = "48"
 	},
 /turf/open/floor/plating,
-/area/xenoarch/bot{
-	name = "Demon Teleporter"
-	})
+/area/xenoarch/gen)
 "qx" = (
 /obj/effect/turf_decal/candy/redwhite3,
 /obj/item/reagent_containers/food/snacks/candyheart,
@@ -7293,9 +7360,7 @@
 "sp" = (
 /obj/effect/decal/cleanable/oil,
 /turf/open/floor/plasteel,
-/area/xenoarch/bot{
-	name = "Demon Teleporter"
-	})
+/area/xenoarch/gen)
 "sr" = (
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -7322,15 +7387,26 @@
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "sv" = (
-/obj/machinery/quantumpad{
-	map_pad_id = "ldemone";
-	map_pad_link_id = "demone";
-	mapped_quantum_pads = list("ldemone","demone");
-	name = "Demone Pad"
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
 	},
-/obj/structure/cable,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/stripes{
+	dir = 1
+	},
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#e8eaff"
+	},
+/turf/open/space/basic,
 /turf/open/floor/plasteel,
-/area/ruin/space/has_grav/powered)
+/area/xenoarch/gen)
 "sx" = (
 /obj/structure/fluff/paper,
 /obj/structure/filingcabinet,
@@ -7425,14 +7501,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
-"sO" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plasteel,
-/area/xenoarch/bot{
-	name = "Demon Teleporter"
-	})
 "sR" = (
 /obj/structure/table,
 /obj/item/paper_bin{
@@ -7661,9 +7729,7 @@
 /obj/effect/decal/cleanable/oil,
 /obj/effect/decal/cleanable/robot_debris,
 /turf/open/floor/plasteel,
-/area/xenoarch/bot{
-	name = "Demon Teleporter"
-	})
+/area/xenoarch/gen)
 "tX" = (
 /obj/structure/toilet{
 	dir = 1
@@ -7674,6 +7740,23 @@
 	},
 /turf/open/floor/plasteel/freezer,
 /area/xenoarch/caloriteresearch_powered)
+"tY" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/light,
+/obj/structure/table,
+/obj/item/storage/toolbox/mechanical,
+/turf/open/space/basic,
+/turf/open/floor/plasteel,
+/area/xenoarch/gen)
 "tZ" = (
 /obj/structure/girder,
 /turf/open/floor/plating/airless,
@@ -8309,15 +8392,22 @@
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
 "xt" = (
-/obj/structure/cable,
-/obj/machinery/quantumpad{
-	map_pad_id = "quantum hub xenoarch";
-	map_pad_link_id = "quantum hub";
-	mapped_quantum_pads = list("ldemone","demone");
-	name = "Quantum Hub Pad"
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
 	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/item/poster{
+	pixel_y = -32
+	},
+/turf/open/space/basic,
 /turf/open/floor/plasteel,
-/area/ruin/space/has_grav/powered)
+/area/xenoarch/gen)
 "xu" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -9397,9 +9487,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel,
-/area/xenoarch/bot{
-	name = "Demon Teleporter"
-	})
+/area/xenoarch/gen)
 "CB" = (
 /obj/machinery/power/emitter{
 	dir = 1
@@ -9696,6 +9784,23 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/gen)
+"DS" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/stripes{
+	dir = 1
+	},
+/turf/open/space/basic,
+/turf/open/floor/plasteel,
+/area/xenoarch/gen)
 "DV" = (
 /turf/open/floor/plating,
 /area/lavaland/surface/outdoors)
@@ -9741,13 +9846,25 @@
 /turf/open/floor/plating,
 /area/xenoarch/caloriteresearch_powered)
 "Ed" = (
-/obj/structure/cable{
-	icon_state = "1-2"
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
 	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/stripes{
+	dir = 1
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/space/basic,
 /turf/open/floor/plasteel,
-/area/xenoarch/bot{
-	name = "Demon Teleporter"
-	})
+/area/xenoarch/gen)
 "Eg" = (
 /obj/structure/holosign/barrier/atmos,
 /turf/open/floor/plating{
@@ -10018,9 +10135,7 @@
 	},
 /obj/item/crowbar,
 /turf/open/floor/plating,
-/area/xenoarch/bot{
-	name = "Demon Teleporter"
-	})
+/area/xenoarch/gen)
 "Fn" = (
 /obj/effect/turf_decal/candy/greenwhite2,
 /turf/open/candyfloor,
@@ -10112,15 +10227,24 @@
 /area/xenoarch/caloriteresearch_powered)
 "FL" = (
 /obj/structure/cable{
-	icon_state = "4-8"
+	icon_state = "1-2"
 	},
-/obj/structure/cable{
-	icon_state = "2-8"
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
 	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/stripes{
+	dir = 1
+	},
+/turf/open/space/basic,
 /turf/open/floor/plasteel,
-/area/xenoarch/bot{
-	name = "Demon Teleporter"
-	})
+/area/xenoarch/gen)
 "FM" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/plating,
@@ -10155,11 +10279,6 @@
 /obj/structure/closet/wardrobe/black,
 /turf/open/floor/plasteel,
 /area/xenoarch/caloriteresearch_powered)
-"FZ" = (
-/turf/closed/wall,
-/area/xenoarch/bot{
-	name = "Demon Teleporter"
-	})
 "Ga" = (
 /obj/effect/turf_decal,
 /obj/effect/turf_decal/caution,
@@ -10210,11 +10329,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/caloriteresearch_powered)
-"Gq" = (
-/turf/open/floor/plating,
-/area/xenoarch/bot{
-	name = "Demon Teleporter"
-	})
 "Gr" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/tile/yellow,
@@ -10774,9 +10888,7 @@
 	req_one_access_txt = "48"
 	},
 /turf/open/floor/plating,
-/area/xenoarch/bot{
-	name = "Demon Teleporter"
-	})
+/area/xenoarch/gen)
 "Ju" = (
 /obj/structure/table,
 /obj/machinery/microwave{
@@ -10891,18 +11003,13 @@
 /area/xenoarch/caloriteresearch_powered)
 "JT" = (
 /obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/structure/cable{
 	icon_state = "0-8"
 	},
 /obj/machinery/power/apc/auto_name/north{
 	name = "Demon Teleporter APC"
 	},
 /turf/open/floor/plating,
-/area/xenoarch/bot{
-	name = "Demon Teleporter"
-	})
+/area/xenoarch/gen)
 "JU" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 10;
@@ -11648,6 +11755,25 @@
 	},
 /turf/open/floor/carpet/red,
 /area/xenoarch/caloriteresearch_powered)
+"NI" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/structure/table,
+/obj/item/radio,
+/obj/item/radio,
+/obj/item/radio,
+/obj/item/radio,
+/turf/open/space/basic,
+/turf/open/floor/plasteel,
+/area/xenoarch/gen)
 "NJ" = (
 /obj/structure/table,
 /obj/machinery/cell_charger,
@@ -12635,9 +12761,7 @@
 "SD" = (
 /obj/effect/decal/cleanable/robot_debris,
 /turf/open/floor/plating,
-/area/xenoarch/bot{
-	name = "Demon Teleporter"
-	})
+/area/xenoarch/gen)
 "SE" = (
 /obj/structure/window/reinforced/tinted{
 	dir = 4
@@ -13286,11 +13410,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/airless,
 /area/xenoarch/caloriteresearch_powered)
-"VE" = (
-/turf/open/floor/plasteel,
-/area/xenoarch/bot{
-	name = "Demon Teleporter"
-	})
 "VF" = (
 /obj/machinery/conveyor{
 	dir = 2;
@@ -13593,13 +13712,26 @@
 /turf/open/floor/plasteel/dark,
 /area/xenoarch/caloriteresearch_powered)
 "Xi" = (
-/obj/structure/cable{
-	icon_state = "1-2"
+/obj/machinery/quantumpad{
+	map_pad_id = "quantum hub xenoarch";
+	map_pad_link_id = "quantum hub";
+	mapped_quantum_pads = list("ldemone","demone");
+	name = "Quantum Hub Pad"
 	},
-/turf/open/floor/plating,
-/area/xenoarch/bot{
-	name = "Demon Teleporter"
-	})
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/space/basic,
+/turf/open/floor/plasteel,
+/area/ruin/space/has_grav/powered)
 "Xj" = (
 /obj/machinery/shower{
 	dir = 1
@@ -22838,10 +22970,10 @@ Hx
 Hx
 SL
 ka
-ei
+Ed
 fI
-mp
-fR
+fI
+xt
 Sy
 eQ
 kZ
@@ -23095,10 +23227,10 @@ Hx
 Hx
 SL
 kg
-ei
-fM
-fQ
-fS
+DS
+fI
+fI
+mh
 Sy
 hD
 Hx
@@ -23352,11 +23484,11 @@ Hx
 Hx
 SL
 ki
-ei
-fN
-fM
-fE
-ei
+FL
+hn
+hn
+Xi
+Sy
 db
 Hx
 ia
@@ -23609,11 +23741,11 @@ dY
 es
 PW
 jk
-ei
-fQ
+FL
+hn
 hn
 mu
-ei
+Sy
 ko
 Hx
 dd
@@ -23866,11 +23998,11 @@ NL
 NL
 tL
 fs
-ei
-mh
-fE
-fE
-ei
+DS
+fI
+fI
+tY
+Sy
 hE
 fB
 np
@@ -24123,11 +24255,11 @@ el
 el
 iR
 fs
-ei
-fS
-fF
-fE
-ei
+sv
+fI
+NI
+mp
+Sy
 dc
 ec
 Hx
@@ -24381,9 +24513,9 @@ dp
 Sy
 lV
 Sy
-ei
 Sy
-ei
+Sy
+Sy
 Sy
 Sy
 Sy
@@ -24911,15 +25043,15 @@ Sy
 Sy
 Sy
 Sy
-FZ
+Sy
 qv
-FZ
-FZ
-FZ
-FZ
-FZ
-FZ
-FZ
+Sy
+Sy
+Sy
+Sy
+Sy
+Sy
+Sy
 "}
 (43,1,1) = {"
 ms
@@ -25168,15 +25300,15 @@ jN
 jN
 jN
 jN
-FZ
+Sy
 CA
-Gq
-VE
-Gq
-Gq
+jN
+fK
+jN
+jN
 sp
-VE
-FZ
+fK
+Sy
 "}
 (44,1,1) = {"
 ms
@@ -25425,15 +25557,15 @@ Fe
 jN
 jN
 jN
-FZ
-sO
-Gq
-VE
-VE
-VE
+Sy
+aM
+jN
+fK
+fK
+fK
 SD
-Gq
-FZ
+jN
+Sy
 "}
 (45,1,1) = {"
 ms
@@ -25682,15 +25814,15 @@ jN
 jN
 jN
 jN
-FZ
-FL
-Ed
-Ed
-xt
+Sy
+aM
+fK
+fK
+fK
 Fl
-Gq
-Gq
-FZ
+jN
+jN
+Sy
 "}
 (46,1,1) = {"
 ms
@@ -25939,15 +26071,15 @@ jN
 jN
 kw
 jN
-FZ
+Sy
 JT
-Ed
-Xi
-sv
-VE
-Gq
-VE
-FZ
+fK
+jN
+fK
+fK
+jN
+fK
+Sy
 "}
 (47,1,1) = {"
 ab
@@ -26196,15 +26328,15 @@ jN
 jN
 kw
 jN
-FZ
-Gq
+Sy
+jN
 tW
-Gq
-Gq
-Gq
-VE
-Gq
-FZ
+jN
+jN
+jN
+fK
+jN
+Sy
 "}
 (48,1,1) = {"
 ab
@@ -26454,14 +26586,14 @@ jN
 jN
 Mt
 Jt
-Gq
-VE
-VE
+jN
+fK
+fK
 jp
-Gq
-VE
-Gq
-FZ
+jN
+fK
+jN
+Sy
 "}
 (49,1,1) = {"
 ab
@@ -26710,15 +26842,15 @@ Sy
 Sy
 Sy
 Sy
-FZ
-FZ
-FZ
-FZ
-FZ
-FZ
-FZ
-FZ
-FZ
+Sy
+Sy
+Sy
+Sy
+Sy
+Sy
+Sy
+Sy
+Sy
 "}
 (50,1,1) = {"
 ab
