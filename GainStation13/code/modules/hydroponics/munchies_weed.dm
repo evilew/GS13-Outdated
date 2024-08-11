@@ -46,7 +46,7 @@
 /datum/reagent/drug/munchies/on_mob_life(mob/living/carbon/M)
 	. = ..()
 	if(prob(10))
-		to_chat(M, "<span class='warning'>[pick("You feel a little ravenous...", "You could really go feel for a snack right now...", "The taste of food seems really enticing right now...", "Your belly groans, demanding food...")]</span>")
+		to_chat(M, "<span class='warning'>[pick("You feel a little ravenous...", "You could really go for a snack right now...", "The taste of food seems really enticing right now...", "Your belly groans, demanding food...")]</span>")
 	if(M.fullness > 10)
 		M.fullness -= 1
 	if(M.nutrition > 150)
