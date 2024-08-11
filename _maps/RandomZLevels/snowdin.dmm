@@ -2271,6 +2271,11 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
+/obj/machinery/quantumpad{
+	map_pad_id = "snowmed1";
+	map_pad_link_id = "snowmed2";
+	name = "medical outpost link"
+	},
 /turf/open/floor/plasteel/white,
 /area/awaymission/snowdin/post)
 "fc" = (
@@ -7007,6 +7012,7 @@
 /obj/structure/sign/warning/enginesafety{
 	pixel_x = 32
 	},
+/obj/item/areaeditor/blueprints,
 /turf/open/floor/plasteel,
 /area/awaymission/snowdin/post/engineering)
 "oR" = (
@@ -16289,6 +16295,16 @@
 	slowdown = 1
 	},
 /area/awaymission/snowdin/cave)
+"Vn" = (
+/obj/machinery/quantumpad{
+	name = "medical outpost link";
+	map_pad_id = "snowmed2";
+	map_pad_link_id = "snowmed1"
+	},
+/turf/open/floor/plating{
+	icon_state = "platingdmg1"
+	},
+/area/awaymission/snowdin/post/minipost)
 "Vy" = (
 /obj/item/bedsheet/cult,
 /obj/structure/bed,
@@ -18921,13 +18937,13 @@ wc
 wc
 aj
 aj
-aj
 tI
 tI
-aj
-aj
-aj
-aj
+tI
+tI
+tI
+tI
+tI
 aj
 aj
 aj
@@ -19181,13 +19197,13 @@ tI
 tI
 tQ
 tI
-aj
+tI
 tI
 tQ
 tI
 tI
 tI
-aj
+tI
 aj
 aj
 tI
@@ -19446,7 +19462,7 @@ tx
 tI
 tI
 tI
-aj
+tI
 tI
 vJ
 tI
@@ -19963,9 +19979,9 @@ tx
 tx
 tx
 tI
-aj
-aj
-tx
+tI
+tI
+tI
 tx
 tx
 tI
@@ -20220,9 +20236,9 @@ tx
 tx
 tx
 tx
-tx
-tx
-tx
+tI
+tI
+tI
 tx
 tx
 tx
@@ -20477,9 +20493,9 @@ tx
 tx
 tx
 tx
-tx
-tx
-tx
+tI
+tI
+tI
 tx
 tx
 tx
@@ -20734,7 +20750,7 @@ tx
 vK
 tx
 tx
-tx
+tI
 tI
 tI
 tx
@@ -21515,7 +21531,7 @@ tI
 tI
 tI
 tI
-aj
+tI
 tI
 tx
 tx
@@ -22037,7 +22053,7 @@ tQ
 tQ
 tI
 tI
-aj
+tI
 aj
 tx
 tx
@@ -22554,7 +22570,7 @@ aj
 tI
 ud
 wx
-aj
+tI
 tx
 tx
 tx
@@ -22813,7 +22829,7 @@ tI
 tI
 tI
 tI
-aj
+tI
 tI
 tI
 tI
@@ -23077,8 +23093,8 @@ tI
 tQ
 tI
 tI
-aj
-aj
+tI
+tI
 tx
 tx
 tx
@@ -23593,7 +23609,7 @@ aj
 aj
 aj
 tI
-aj
+tI
 aj
 aj
 tN
@@ -23850,7 +23866,7 @@ wc
 aj
 aj
 aj
-aj
+tI
 ai
 aj
 tN
@@ -28232,7 +28248,7 @@ zo
 zo
 yW
 zV
-Ai
+Vn
 Aw
 zp
 AM
