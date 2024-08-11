@@ -1,0 +1,111 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/machinery/door/airlock/shuttle,
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle/snowdin/transit)
+"b" = (
+/obj/effect/spawner/structure/window/shuttle,
+/turf/open/floor/plating,
+/area/shuttle/snowdin/transit)
+"c" = (
+/obj/structure/sign/nanotrasen,
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/snowdin/transit)
+"d" = (
+/turf/closed/wall/mineral/titanium,
+/area/shuttle/snowdin/transit)
+"e" = (
+/obj/item/circuitboard/machine/autolathe,
+/obj/structure/table,
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle/snowdin/transit)
+"f" = (
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle/snowdin/transit)
+"g" = (
+/obj/structure/chair,
+/obj/machinery/light/small{
+	brightness = 3;
+	dir = 8
+	},
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle/snowdin/transit)
+"h" = (
+/obj/machinery/computer/shuttle/snowdin/transit{
+	dir = 1;
+	shuttleId = "snowdintransit";
+	possible_destinations = "snowdintransit_a;snowdintransit_b"
+	},
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle/snowdin/transit)
+"y" = (
+/obj/structure/chair{
+	dir = 1
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle/snowdin/transit)
+"B" = (
+/obj/effect/spawner/structure/window/shuttle,
+/obj/docking_port/mobile{
+	dwidth = 3;
+	id = "snowdintransit";
+	width = 5;
+	height = 5;
+	name = "snowdin transit pod";
+	movement_force = list("KNOCKDOWN" = 0, "THROW" = 0);
+	launch_status = 0
+	},
+/turf/open/floor/plating,
+/area/shuttle/snowdin/transit)
+"D" = (
+/obj/effect/spawner/structure/window/shuttle,
+/obj/effect/baseturf_helper/asteroid/snow,
+/turf/open/floor/plating,
+/area/shuttle/snowdin/transit)
+"N" = (
+/obj/structure/chair,
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle/snowdin/transit)
+"Y" = (
+/obj/item/chair,
+/turf/open/floor/mineral/titanium/blue,
+/area/shuttle/snowdin/transit)
+
+(1,1,1) = {"
+d
+c
+a
+c
+d
+"}
+(2,1,1) = {"
+b
+g
+f
+e
+b
+"}
+(3,1,1) = {"
+D
+N
+f
+h
+B
+"}
+(4,1,1) = {"
+b
+Y
+f
+y
+b
+"}
+(5,1,1) = {"
+d
+c
+a
+c
+d
+"}
