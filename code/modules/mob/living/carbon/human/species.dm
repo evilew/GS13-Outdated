@@ -1451,7 +1451,8 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	else
 		if(HAS_TRAIT_FROM(fatty, TRAIT_PARALYSIS_L_ARM, HELPLESSNESS_TRAIT))
 			REMOVE_TRAIT(fatty, TRAIT_PARALYSIS_L_ARM, HELPLESSNESS_TRAIT)
-
+			REMOVE_TRAIT(fatty, TRAIT_PARALYSIS_R_ARM, HELPLESSNESS_TRAIT)
+			fatty.update_disabled_bodyparts()
 
 	if(preferences.helplessness_clothing_jumpsuit)
 		if(!HAS_TRAIT_FROM(fatty, TRAIT_NO_JUMPSUIT, HELPLESSNESS_TRAIT))
