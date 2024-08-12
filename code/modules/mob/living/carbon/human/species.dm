@@ -1401,7 +1401,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 	else
 		if(HAS_TRAIT_FROM(fatty, TRAIT_NEARSIGHT, HELPLESSNESS_TRAIT))
-			REMOVE_TRAIT(fatty, TRAIT_NEARSIGHT, HELPLESSNESS_TRAIT)
+			fatty.cure_nearsighted(HELPLESSNESS_TRAIT)
 
 
 	if(preferences.helplessness_hidden_face)
