@@ -49,9 +49,9 @@ mob/living/get_effective_size()
 	src.update_mobsize()
 	//Going to change the health and speed values too
 	src.remove_movespeed_modifier(MOVESPEED_ID_SIZE)
-	src.add_movespeed_modifier(MOVESPEED_ID_SIZE, multiplicative_slowdown = (abs(size_multiplier - 1) * 0.4 ))
-	var/healthmod_old = ((previous_size * 75) - 75) //Get the old value to see what we must change.
-	var/healthmod_new = ((size_multiplier * 75) - 75) //A size of one would be zero. Big boys get health, small ones lose health.
+	src.add_movespeed_modifier(MOVESPEED_ID_SIZE, multiplicative_slowdown = (abs(size_multiplier - 1) * 0.3 )) //GS Change, reduces speed penalties for size from *.4 to *.3
+	var/healthmod_old = ((previous_size * 35) - 75) //Get the old value to see what we must change. 
+	var/healthmod_new = ((size_multiplier * 35) - 75) //A size of one would be zero. Big boys get health, small ones lose health. //GS Change, reduces health penalties/buffs for size from *75 to *35
 	var/healthchange = healthmod_new - healthmod_old //Get ready to apply the new value, and subtract the old one. (Negative values become positive)
 	src.maxHealth += healthchange
 	src.health += healthchange
@@ -241,7 +241,7 @@ mob/living/get_effective_size()
 
 //Proc for scaling brute damage on size difference
 /mob/living/proc/sizediffBruteloss(var/mob/living/tmob)
-	var/B = (get_effective_size()/tmob.get_effective_size()*3) //macro divided by micro, times 3
+	var/B = (get_effective_size()/tmob.get_effective_size()*2) //macro divided by micro, times 3 //GS change, *2
 	tmob.adjustBruteLoss(B) //final result in brute loss
 
 //Proc for changing mob_size to be grabbed for item weight classes
