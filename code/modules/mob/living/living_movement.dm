@@ -21,8 +21,7 @@
 	if(m_intent == MOVE_INTENT_WALK)
 		mod = CONFIG_GET(number/movedelay/walk_delay)
 	else
-		//mod = CONFIG_GET(number/movedelay/run_delay)
-		mod = 1.30
+		mod = CONFIG_GET(number/movedelay/run_delay)
 	if(!isnum(mod))
 		mod = 1
 	add_movespeed_modifier(MOVESPEED_ID_MOB_WALK_RUN_CONFIG_SPEED, TRUE, 100, override = TRUE, multiplicative_slowdown = mod)
