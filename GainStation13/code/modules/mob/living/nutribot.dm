@@ -23,19 +23,19 @@
 	status_flags = (CANPUSH | CANSTUN)
 
 	radio_key = /obj/item/encryptionkey/headset_med
-	radio_channel = RADIO_CHANNEL_MEDICAL
+	radio_channel = RADIO_CHANNEL_SERVICE
 
 	bot_type = MED_BOT
 	model = "Nutribot"
 	bot_core_type = /obj/machinery/bot_core/nutribot
-	window_id = "automed"
+	window_id = "auto_nutrition"
 	window_name = "Automatic Nutritional Unit v1.1"
 	data_hud_type = DATA_HUD_MEDICAL_ADVANCED
 	path_image_color = "#DDDDFF"
 
 	var/obj/item/reagent_containers/glass/reagent_glass = null //Can be set to draw from this for reagents.
-	var/healthanalyzer = /obj/item/healthanalyzer
-	var/firstaid = /obj/item/storage/firstaid
+	//var/healthanalyzer = /obj/item/healthanalyzer
+	//var/firstaid = /obj/item/storage/firstaid
 	var/skin = null //Set to "tox", "ointment" or "o2" for the other two firstaid kits.
 	var/mob/living/carbon/patient = null
 	var/mob/living/carbon/oldpatient = null
@@ -119,7 +119,7 @@
 
 /mob/living/simple_animal/bot/nutribot/Initialize(mapload, new_skin)
 	. = ..()
-	var/datum/job/doctor/J = new /datum/job/doctor
+	var/datum/job/cook/J = new /datum/job/cook
 	access_card.access += J.get_access()
 	prev_access = access_card.access
 	qdel(J)
@@ -159,7 +159,7 @@
 	var/dat
 	dat += hack(user)
 	dat += showpai(user)
-	dat += "<TT><B>Medical Unit Controls v1.1</B></TT><BR><BR>"
+	dat += "<TT><B>Nutritional Unit Controls v1.1</B></TT><BR><BR>"
 	dat += "Status: <A href='?src=[REF(src)];power=1'>[on ? "On" : "Off"]</A><BR>"
 	dat += "Maintenance panel panel is [open ? "opened" : "closed"]<BR>"
 	dat += "Beaker: "
@@ -191,6 +191,7 @@
 
 		dat += "<TT>Maximum BFI: "
 		dat += "[feed_threshold ? feed_threshold : "???"] "
+		dat += "<br>"
 		dat += "Disable Maximum BFI: <a href='?src=[REF(src)];feed_threshold=1'>["Disable"]</a><br> "
 		dat += "<a href='?src=[REF(src)];feed_threshold=-100'>-</a> "
 		dat += "<a href='?src=[REF(src)];feed_threshold=100'>+</a> "
