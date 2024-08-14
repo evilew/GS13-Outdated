@@ -12,7 +12,7 @@
 /mob/living/simple_animal/bot/nutribot
 	name = "\improper Nutribot"
 	desc = "A little nutritional robot. He looks somewhat underwhelmed."
-	icon = 'icons/mob/aibots.dmi'
+	icon = 'GainStation13/icons/mob/nutribot.dmi'
 	icon_state = "nutribot0"
 	density = FALSE
 	anchored = FALSE
@@ -52,7 +52,7 @@
 	//Setting which reagents to use to treat what by default. By id.
 	var/treatment_thin = /datum/reagent/consumable/nutriment
 	var/treatment_thirsty = /datum/reagent/water
-	var/hunger_check = NUTRITION_LEVEL_FED
+	var/hunger_check = NUTRITION_LEVEL_HUNGRY
 	/*var/treatment_brute_avoid = /datum/reagent/medicine/tricordrazine
 	var/treatment_brute = /datum/reagent/medicine/bicaridine
 	var/treatment_oxy_avoid = null
@@ -104,18 +104,18 @@
 /mob/living/simple_animal/bot/nutribot/update_icon()
 	cut_overlays()
 	if(!on)
-		icon_state = "off"
+		icon_state = "nutribot0"
 		return
 	if(IsStun())
-		icon_state = "medibota"
+		icon_state = "nutribota"
 		return
 	if(mode == BOT_HEALING)
-		icon_state = "medibots[stationary_mode]"
+		icon_state = "nutribots[stationary_mode]"
 		return
 	else if(stationary_mode) //Bot has yellow light to indicate stationary mode.
-		icon_state = "medibot2"
+		icon_state = "nutribot2"
 	else
-		icon_state = "medibot1"
+		icon_state = "nutribot1"
 
 /mob/living/simple_animal/bot/nutribot/Initialize(mapload, new_skin)
 	. = ..()
@@ -177,7 +177,7 @@
 		dat += "<a href='?src=[REF(src)];adj_threshold=10'>++</a>"
 		dat += "</TT><br>"*/
 
-		dat += "<TT>Injection Level: "
+		dat += "<TT>Feed Amount: "
 		dat += "<a href='?src=[REF(src)];adj_inject=-5'>-</a> "
 		dat += "[injection_amount] "
 		dat += "<a href='?src=[REF(src)];adj_inject=5'>+</a> "
@@ -189,9 +189,9 @@
 		dat += "Hunger Check: "
 		dat += "<a href='?src=[REF(src)];hunger_check=1'>[(hunger_check==NUTRITION_LEVEL_HUNGRY) ? "Yes" : "No"]</a><br>"
 
-		dat += "<TT>Maximum Weight: "
-		dat += "[feed_threshold ? 140+(feed_threshold*FATNESS_TO_WEIGHT_RATIO) : "???"] "
-		dat += "Disable Maximum Weight: <a href='?src=[REF(src)];feed_threshold=1'>["Disable"]</a><br> "
+		dat += "<TT>Maximum BFI: "
+		dat += "[feed_threshold ? feed_threshold : "???"] "
+		dat += "Disable Maximum BFI: <a href='?src=[REF(src)];feed_threshold=1'>["Disable"]</a><br> "
 		dat += "<a href='?src=[REF(src)];feed_threshold=-100'>-</a> "
 		dat += "<a href='?src=[REF(src)];feed_threshold=100'>+</a> "
 		dat += "</TT><br>"
@@ -304,7 +304,7 @@
 	if(assess_patient(H))
 		last_found = world.time
 		if((last_newpatient_speak + 300) < world.time) //Don't spam these messages!
-			var/list/messagevoice = list("Hey, [H.name]! Hold on, I'm coming." = 'sound/voice/medbot/coming.ogg',"Wait [H.name]! I want to help!" = 'sound/voice/medbot/help.ogg',"[H.name], you appear to be injured!" = 'sound/voice/medbot/injured.ogg')
+			var/list/messagevoice = list("Hey, [H.name]! Hold on, I'm coming." = 'sound/voice/medbot/coming.ogg',"Wait [H.name]! I want to help!" = 'sound/voice/medbot/help.ogg')
 			var/message = pick(messagevoice)
 			if(prob(2) && ISINRANGE_EX(H.getFireLoss(), 0, 20))
 				message = "Notices your minor burns*OwO what's this?"
@@ -500,17 +500,17 @@
 		//declare(C)
 
 	//If they're injured, we're using a beaker, and don't have one of our WONDERCHEMS.
-	if((reagent_glass) && (use_beaker) && (C.fatness <= feed_threshold))
+	if((reagent_glass) && (use_beaker) && ((C.fatness <= feed_threshold) || (feed_threshold == 0)))
 		for(var/A in reagent_glass.reagents.reagent_list)
 			var/datum/reagent/R = A
 			if(!C.reagents.has_reagent(R.type))
 				return TRUE
 
 	//They're injured enough for it!
-	if((C.nutrition <= hunger_check) && (C.fatness <= feed_threshold) && (!C.reagents.has_reagent(treatment_thin)))
+	if((C.nutrition <= hunger_check) && ((C.fatness <= feed_threshold) || (feed_threshold == 0)) && (!C.reagents.has_reagent(treatment_thin)))
 		return TRUE //If they're already medicated don't bother!
 	
-	if((C.thirst <= THIRST_LEVEL_QUENCHED) && (!C.reagents.has_reagent(treatment_thirsty)))
+	if((C.thirst <= THIRST_LEVEL_THIRSTY) && (!C.reagents.has_reagent(treatment_thirsty)))
 		return TRUE //If they're already medicated don't bother!
 
 	/*var/treatment_toxavoid = get_avoidchem_toxin(C)
@@ -597,7 +597,7 @@
 	var/reagent_id = null
 
 	if(emagged == 2) //Emagged! Time to poison everybody.
-		reagent_id = "emagged" //evil fucking check for a string as a reagent this shit is evil. its supposed to inject corn oil AND filzulphite but ill handle that later
+		reagent_id = /datum/reagent/consumable/cornoil //evil fucking check for a string as a reagent this shit is evil. its supposed to inject corn oil AND filzulphite but ill handle that later
 
 	else
 		/*if(treat_virus)
@@ -657,8 +657,8 @@
 		if(!emagged && check_overdose(patient,reagent_id,injection_amount))
 			soft_reset()
 			return
-		C.visible_message("<span class='danger'>[src] is trying to inject [patient]!</span>", \
-			"<span class='userdanger'>[src] is trying to inject you!</span>")
+		C.visible_message("<span class='danger'>[src] is trying to feed [patient]!</span>", \
+			"<span class='userdanger'>[src] is trying to feed you!</span>")
 
 		var/failed = FALSE
 		if(do_mob(src, patient, 30))	//Is C == patient? This is so confusing
@@ -670,15 +670,15 @@
 						reagent_glass.reagents.trans_to(patient,injection_amount) //Inject from beaker instead.
 				else
 					patient.reagents.add_reagent(reagent_id,injection_amount)
-				C.visible_message("<span class='danger'>[src] injects [patient] with its syringe!</span>", \
-					"<span class='userdanger'>[src] injects you with its syringe!</span>")
+				C.visible_message("<span class='danger'>[src] feeds [patient] with its tube!</span>", \
+					"<span class='userdanger'>[src] feeds you with its tube!</span>")
 			else
 				failed = TRUE
 		else
 			failed = TRUE
 
 		if(failed)
-			visible_message("[src] retracts its syringe.")
+			visible_message("[src] retracts its tube.")
 		update_icon()
 		soft_reset()
 		return
@@ -700,9 +700,9 @@
 	visible_message("<span class='boldannounce'>[src] blows apart!</span>")
 	var/atom/Tsec = drop_location()
 
-	drop_part(firstaid, Tsec)
+	new /obj/item/stack/sheet/cardboard(Tsec)
 	new /obj/item/assembly/prox_sensor(Tsec)
-	drop_part(healthanalyzer, Tsec)
+	new /obj/item/stack/sheet/mineral/calorite(Tsec)
 
 	if(reagent_glass)
 		drop_part(reagent_glass, Tsec)
@@ -724,7 +724,7 @@
 	declare_cooldown = world.time + 200
 
 /obj/machinery/bot_core/nutribot
-	req_one_access = list(ACCESS_MEDICAL, ACCESS_ROBOTICS)
+	req_one_access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_ROBOTICS)
 
 #undef NUTRIBOT_PANIC_NONE
 #undef NUTRIBOT_PANIC_LOW
