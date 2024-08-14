@@ -484,6 +484,9 @@
 
 	if(C.suiciding)
 		return FALSE //Kevorkian school of robotic medical assistants.
+	
+	if(!C?.client?.prefs.bot_feeding)
+		return FALSE
 
 	if(emagged == 2) //Everyone needs our medicine. (Our medicine is corn oil)
 		return TRUE

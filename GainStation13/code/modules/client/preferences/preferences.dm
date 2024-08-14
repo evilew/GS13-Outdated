@@ -48,6 +48,9 @@
 	///Does the person wish to be involved with non-con weight gain events?
 	var/noncon_weight_gain = FALSE
 
+	//Does the person wish to be fed from bots?
+	var/bot_feeding = FALSE
+
 	///What is the max weight that the person wishes to be? If set to FALSE, there will be no max weight
 	var/max_weight = FALSE
 
