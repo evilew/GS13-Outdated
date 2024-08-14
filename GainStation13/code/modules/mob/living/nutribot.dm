@@ -34,8 +34,6 @@
 	path_image_color = "#DDDDFF"
 
 	var/obj/item/reagent_containers/glass/reagent_glass = null //Can be set to draw from this for reagents.
-	//var/healthanalyzer = /obj/item/healthanalyzer
-	//var/firstaid = /obj/item/storage/firstaid
 	var/skin = null //Set to "tox", "ointment" or "o2" for the other two firstaid kits.
 	var/mob/living/carbon/patient = null
 	var/mob/living/carbon/oldpatient = null
@@ -43,29 +41,14 @@
 	var/last_found = 0
 	var/last_newpatient_speak = 0 //Don't spam the "HEY I'M COMING" messages
 	var/injection_amount = 15 //How much reagent do we inject at a time?
-	var/heal_threshold = 10 //Start healing when they have this much damage in a category
 	var/feed_threshold = 200 // The weight that people should be fed to!
 	var/use_beaker = 0 //Use reagents in beaker instead of default treatment agents.
-	var/declare_crit = 1 //If active, the bot will transmit a critical patient alert to MedHUD users.
 	var/declare_cooldown = 0 //Prevents spam of critical patient alerts.
 	var/stationary_mode = 0 //If enabled, the Nutribot will not move automatically.
 	//Setting which reagents to use to treat what by default. By id.
 	var/treatment_thin = /datum/reagent/consumable/nutriment
 	var/treatment_thirsty = /datum/reagent/water
 	var/hunger_check = NUTRITION_LEVEL_HUNGRY
-	/*var/treatment_brute_avoid = /datum/reagent/medicine/tricordrazine
-	var/treatment_brute = /datum/reagent/medicine/bicaridine
-	var/treatment_oxy_avoid = null
-	var/treatment_oxy = /datum/reagent/medicine/dexalin
-	var/treatment_fire_avoid = /datum/reagent/medicine/tricordrazine
-	var/treatment_fire = /datum/reagent/medicine/kelotane
-	var/treatment_tox_avoid = /datum/reagent/medicine/tricordrazine
-	var/treatment_tox = /datum/reagent/medicine/charcoal
-	var/treatment_tox_toxlover = /datum/reagent/toxin
-	var/treatment_virus_avoid = null
-	var/treatment_virus = /datum/reagent/medicine/spaceacillin
-	var/treat_virus = 1 //If on, the bot will attempt to treat viral infections, curing them if possible.
-	*/
 	var/shut_up = 0 //self explanatory :)
 
 	//How panicked we are about being tipped over (why would you do this?)
@@ -75,31 +58,6 @@
 	//The last time we were tipped/righted and said a voice line, to avoid spam
 	var/last_tipping_action_voice = 0
 
-/*
-/mob/living/simple_animal/bot/nutribot/mysterious
-	name = "\improper Mysterious Nutribot"
-	desc = "International Nutribot of mystery."
-	skin = "bezerk"
-	treatment_brute = /datum/reagent/medicine/tricordrazine
-	treatment_fire = /datum/reagent/medicine/tricordrazine
-	treatment_tox = /datum/reagent/medicine/tricordrazine
-*/
-
-/*
-/mob/living/simple_animal/bot/nutribot/derelict
-	name = "\improper Old Nutribot"
-	desc = "Looks like it hasn't been modified since the late 2080s."
-	skin = "bezerk"
-	heal_threshold = 0
-	declare_crit = 0
-	treatment_oxy = /datum/reagent/toxin/pancuronium
-	treatment_brute_avoid = null
-	treatment_brute = /datum/reagent/toxin/pancuronium
-	treatment_fire_avoid = null
-	treatment_fire = /datum/reagent/toxin/sodium_thiopental
-	treatment_tox_avoid = null
-	treatment_tox = /datum/reagent/toxin/sodium_thiopental
-*/
 
 /mob/living/simple_animal/bot/nutribot/update_icon()
 	cut_overlays()
@@ -169,13 +127,6 @@
 		dat += "None Loaded"
 	dat += "<br>Behaviour controls are [locked ? "locked" : "unlocked"]<hr>"
 	if(!locked || issilicon(user) || IsAdminGhost(user))
-		/*dat += "<TT>Healing Threshold: "
-		dat += "<a href='?src=[REF(src)];adj_threshold=-10'>--</a> "
-		dat += "<a href='?src=[REF(src)];adj_threshold=-5'>-</a> "
-		dat += "[heal_threshold] "
-		dat += "<a href='?src=[REF(src)];adj_threshold=5'>+</a> "
-		dat += "<a href='?src=[REF(src)];adj_threshold=10'>++</a>"
-		dat += "</TT><br>"*/
 
 		dat += "<TT>Feed Amount: "
 		dat += "<a href='?src=[REF(src)];adj_inject=-5'>-</a> "
@@ -197,9 +148,7 @@
 		dat += "<a href='?src=[REF(src)];feed_threshold=100'>+</a> "
 		dat += "</TT><br>"
 
-		//dat += "Treat Viral Infections: <a href='?src=[REF(src)];virus=1'>[treat_virus ? "Yes" : "No"]</a><br>"
 		dat += "The speaker switch is [shut_up ? "off" : "on"]. <a href='?src=[REF(src)];togglevoice=[1]'>Toggle</a><br>"
-		//dat += "Critical Patient Alerts: <a href='?src=[REF(src)];critalerts=1'>[declare_crit ? "Yes" : "No"]</a><br>"
 		dat += "Patrol Station: <a href='?src=[REF(src)];operation=patrol'>[auto_patrol ? "Yes" : "No"]</a><br>"
 		dat += "Stationary Mode: <a href='?src=[REF(src)];stationary=1'>[stationary_mode ? "Yes" : "No"]</a><br>"
 
@@ -208,15 +157,6 @@
 /mob/living/simple_animal/bot/nutribot/Topic(href, href_list)
 	if(..())
 		return 1
-
-	/*if(href_list["adj_threshold"])
-		var/adjust_num = text2num(href_list["adj_threshold"])
-		heal_threshold += adjust_num
-		if(heal_threshold < 5)
-			heal_threshold = 5
-		if(heal_threshold > 75)
-			heal_threshold = 75
-	*/
 
 	else if(href_list["adj_inject"])
 		var/adjust_num = text2num(href_list["adj_inject"])
@@ -236,16 +176,10 @@
 	else if(href_list["togglevoice"])
 		shut_up = !shut_up
 
-	/*else if(href_list["critalerts"])
-		declare_crit = !declare_crit*/
-
 	else if(href_list["stationary"])
 		stationary_mode = !stationary_mode
 		path = list()
 		update_icon()
-
-	//else if(href_list["virus"])
-		//treat_virus = !treat_virus
 
 	else if(href_list["hunger_check"])
 		hunger_check = ((hunger_check==NUTRITION_LEVEL_HUNGRY) ? NUTRITION_LEVEL_FULL : NUTRITION_LEVEL_HUNGRY)
@@ -286,7 +220,6 @@
 /mob/living/simple_animal/bot/nutribot/emag_act(mob/user)
 	..()
 	if(emagged == 2)
-		//declare_crit = 0
 		if(user)
 			to_chat(user, "<span class='notice'>You short out [src]'s reagent synthesis circuits.</span>")
 		audible_message("<span class='danger'>[src] buzzes oddly!</span>")
@@ -504,32 +437,22 @@
 		//declare(C)
 
 	//If they're injured, we're using a beaker, and don't have one of our WONDERCHEMS.
-	if((reagent_glass) && (use_beaker) && ((C.fatness <= feed_threshold) || (feed_threshold == 0)))
+	if((reagent_glass) && (use_beaker) && (C.nutrition <= hunger_check) && ((C.fatness <= feed_threshold) || (feed_threshold == 0)))
 		for(var/A in reagent_glass.reagents.reagent_list)
 			var/datum/reagent/R = A
 			if(!C.reagents.has_reagent(R.type))
 				return TRUE
 
 	//They're injured enough for it!
+
+	//nutrition check
 	if((C.nutrition <= hunger_check) && ((C.fatness <= feed_threshold) || (feed_threshold == 0)) && (!C.reagents.has_reagent(treatment_thin)))
 		return TRUE //If they're already medicated don't bother!
 	
+	//hydration check, only gives water till yer not thirsty no more!!
 	if((C.thirst <= THIRST_LEVEL_THIRSTY) && (!C.reagents.has_reagent(treatment_thirsty)))
 		return TRUE //If they're already medicated don't bother!
 
-	/*var/treatment_toxavoid = get_avoidchem_toxin(C)
-	if(((isnull(treatment_toxavoid) || !C.reagents.has_reagent(treatment_toxavoid))) && (C.getToxLoss() >= heal_threshold) && (!C.reagents.has_reagent(get_healchem_toxin(C))))
-		return TRUE
-
-	if(treat_virus && !C.reagents.has_reagent(treatment_virus_avoid) && !C.reagents.has_reagent(treatment_virus))
-		for(var/thing in C.diseases)
-			var/datum/disease/D = thing
-			//the Nutribot can't detect viruses that are undetectable to Health Analyzers or Pandemic machines.
-			if(!(D.visibility_flags & HIDDEN_SCANNER || D.visibility_flags & HIDDEN_PANDEMIC) \
-			&& D.severity != DISEASE_SEVERITY_POSITIVE \
-			&& (D.stage > 1 || (D.spread_flags & DISEASE_SPREAD_AIRBORNE))) // Nutribot can't detect a virus in its initial stage unless it spreads airborne.
-				return TRUE //STOP DISEASE FOREVER
-	*/
 
 	return FALSE
 
@@ -553,16 +476,6 @@
 			set_right(H)
 	else
 		..()
-
-/*
-/mob/living/simple_animal/bot/nutribot/proc/get_avoidchem_toxin(mob/M)
-	return HAS_TRAIT(M, TRAIT_TOXINLOVER)? null : treatment_tox_avoid
-*/
-
-/*
-/mob/living/simple_animal/bot/nutribot/proc/get_healchem_toxin(mob/M)
-	return HAS_TRAIT(M, TRAIT_TOXINLOVER)? treatment_tox_toxlover : treatment_tox
-*/
 
 /mob/living/simple_animal/bot/nutribot/UnarmedAttack(atom/A)
 	if(iscarbon(A))
@@ -604,19 +517,6 @@
 		reagent_id = /datum/reagent/consumable/cornoil //evil fucking check for a string as a reagent this shit is evil. its supposed to inject corn oil AND filzulphite but ill handle that later
 
 	else
-		/*if(treat_virus)
-			var/virus = 0
-			for(var/thing in C.diseases)
-				var/datum/disease/D = thing
-				//detectable virus
-				if((!(D.visibility_flags & HIDDEN_SCANNER)) || (!(D.visibility_flags & HIDDEN_PANDEMIC)))
-					if(D.severity != DISEASE_SEVERITY_POSITIVE)      //virus is harmful
-						if((D.stage > 1) || (D.spread_flags & DISEASE_SPREAD_AIRBORNE))
-							virus = 1
-
-			if(!reagent_id && (virus))
-				if(!C.reagents.has_reagent(treatment_virus) && !C.reagents.has_reagent(treatment_virus_avoid))
-					reagent_id = treatment_virus*/
 
 		if(!reagent_id && ((feed_threshold == 0) || (C.fatness <= feed_threshold)) && (C.nutrition <= hunger_check))
 			if(!C.reagents.has_reagent(treatment_thin))
@@ -625,20 +525,6 @@
 		if(!reagent_id && (C.thirst <= THIRST_LEVEL_THIRSTY))
 			if(!C.reagents.has_reagent(treatment_thirsty))
 				reagent_id = treatment_thirsty
-
-		/*if(!reagent_id && (C.getOxyLoss() >= (15 + heal_threshold)))
-			if(!C.reagents.has_reagent(treatment_oxy) && !C.reagents.has_reagent(treatment_oxy_avoid))
-				reagent_id = treatment_oxy
-
-		if(!reagent_id && (C.getFireLoss() >= heal_threshold))
-			if(!C.reagents.has_reagent(treatment_fire) && !C.reagents.has_reagent(treatment_fire_avoid))
-				reagent_id = treatment_fire
-
-		if(!reagent_id && (C.getToxLoss() >= heal_threshold))
-			var/toxin_heal_avoid = get_avoidchem_toxin(C)
-			var/toxin_healchem = get_healchem_toxin(C)
-			if(!C.reagents.has_reagent(toxin_healchem) && (isnull(toxin_heal_avoid) || !C.reagents.has_reagent(toxin_heal_avoid)))
-				reagent_id = toxin_healchem*/
 
 		//If the patient is injured but doesn't have our special reagent in them then we should give it to them first
 		if(reagent_id && use_beaker && reagent_glass && reagent_glass.reagents.total_volume)
@@ -649,8 +535,8 @@
 					break
 
 	if(!reagent_id) //If they don't need any of that they're probably cured!
-		if(C.maxHealth - C.health < heal_threshold)
-			to_chat(src, "<span class='notice'>[C] is healthy! Your programming prevents you from injecting anyone without at least [heal_threshold] damage of any one type ([heal_threshold + 15] for oxygen damage.)</span>")
+		if((C.nutrition >= hunger_check) || (C.fatness >= feed_threshold))
+			to_chat(src, "<span class='notice'>[C] is full, or fat! Your programming prevents you from feeding anyone who is over the maximum weight, or doesn't need food!</span>")
 		var/list/messagevoice = list("All patched up!" = 'sound/voice/medbot/patchedup.ogg',"An apple a day keeps me away." = 'sound/voice/medbot/apple.ogg',"Feel better soon!" = 'sound/voice/medbot/feelbetter.ogg')
 		var/message = pick(messagevoice)
 		speak(message)
@@ -719,13 +605,6 @@
 
 	do_sparks(3, TRUE, src)
 	..()
-
-/mob/living/simple_animal/bot/nutribot/proc/declare(crit_patient)
-	if(declare_cooldown > world.time)
-		return
-	var/area/location = get_area(src)
-	speak("Medical emergency! [crit_patient ? "<b>[crit_patient]</b>" : "A patient"] is in critical condition at [location]!",radio_channel)
-	declare_cooldown = world.time + 200
 
 /obj/machinery/bot_core/nutribot
 	req_one_access = list(ACCESS_HYDROPONICS, ACCESS_BAR, ACCESS_KITCHEN, ACCESS_ROBOTICS)
