@@ -19,6 +19,36 @@
 	path = /obj/item/clothing/suit/hooded/cloak/david
 	cost = 3
 
+/datum/gear/hoodie
+	name = "Hoodie"
+	category = SLOT_WEAR_SUIT
+	path = /obj/item/clothing/suit/hooded/hoodie
+	cost = 1
+
+/datum/gear/hoodiered
+	name = "Red hoodie"
+	category = SLOT_WEAR_SUIT
+	path = /obj/item/clothing/suit/hooded/hoodie/red
+	cost = 1
+
+/datum/gear/hoodieblue
+	name = "Blue hoodie"
+	category = SLOT_WEAR_SUIT
+	path = /obj/item/clothing/suit/hooded/hoodie/blue
+	cost = 1
+
+/datum/gear/hoodiegreen
+	name = "Green hoodie"
+	category = SLOT_WEAR_SUIT
+	path = /obj/item/clothing/suit/hooded/hoodie/green
+	cost = 1
+
+/datum/gear/hoodieblack
+	name = "Black hoodie"
+	category = SLOT_WEAR_SUIT
+	path = /obj/item/clothing/suit/hooded/hoodie/black
+	cost = 1
+
 /datum/gear/jacketbomber
 	name = "Bomber jacket"
 	category = SLOT_WEAR_SUIT

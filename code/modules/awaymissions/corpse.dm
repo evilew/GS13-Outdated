@@ -725,7 +725,7 @@
 	job_description = "Feeder Fanatic"
 	short_desc = "You are a member of a niche branch of Syndicate with... strange goals."
 	flavour_text = "After months of construction and gathering equipment, your den is finished - a monument to gluttony, equipped with every tool to turn any sharp body into a quivering mound of lard..."
-	important_info = "Keep your den in one piece and away from curious eyes! YOU AREN'T ALLOWED TO CAPTURE / FATTEN UP PEOPLE WHO DON'T DO NON-CON OR DIDN'T AGREE TO IT! Despite being able to leave the outpost, you do NOT have a permission to antag or grief."
+	important_info = "Keep your den in one piece and away from curious eyes! YOU AREN'T ALLOWED TO CAPTURE / FATTEN UP PEOPLE WHO DON'T DO NON-CON OR DIDN'T AGREE TO IT! Despite being able to leave the outpost, you do NOT have a permission to antag or grief. You're supposed to stay covert, not show yourself to the whole station!"
 	outfit = /datum/outfit/feeders_den/fanatic
 	faction = ROLE_SYNDICATE
 	mirrorcanloadappearance = TRUE

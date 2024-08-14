@@ -79,3 +79,5 @@
 	var/account_id
 	can_be_held = "micro"
 	appearance_flags = KEEP_TOGETHER|TILE_BOUND|PIXEL_SCALE|LONG_GLIDE
+
+	var/voice = "human"

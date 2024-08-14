@@ -526,7 +526,7 @@
 	cost = 1
 
 
-	GS13
+//GS13
 /datum/gear/modular_greysuit
 	name = "Modular Jumpsuit (gray)"
 	category = SLOT_W_UNIFORM

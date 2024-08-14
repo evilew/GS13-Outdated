@@ -11,6 +11,12 @@
 		            /obj/item/clothing/head/fedora = 3,
 		            /obj/item/clothing/suit/jacket/letterman_gato = 5, //GS13
 					/obj/item/clothing/under/color/grey/modular = 6, //GS13
+					/obj/item/clothing/suit/hooded/hoodie = 3,
+					/obj/item/clothing/suit/hooded/hoodie/purple = 3,
+					/obj/item/clothing/suit/hooded/hoodie/red = 3,
+					/obj/item/clothing/suit/hooded/hoodie/blue = 3,
+					/obj/item/clothing/suit/hooded/hoodie/green = 3,
+					/obj/item/clothing/suit/hooded/hoodie/black = 3,
 		            /obj/item/clothing/glasses/monocle = 3,
 		            /obj/item/clothing/suit/jacket = 4,
 					/obj/item/clothing/suit/jacket/flannel = 4,

@@ -497,6 +497,9 @@
 	. = ..()
 	message = null
 	emote_type = EMOTE_VISIBLE
+	if(ishuman(usr))
+		var/mob/living/carbon/human/H = usr
+		playsound(usr.loc, "GainStation13/sound/voice/voices/[H.voice].ogg", 90, 10)
 
 /datum/emote/living/custom/replace_pronoun(mob/user, message)
 	return message

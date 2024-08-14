@@ -122,7 +122,7 @@
 	uses = 1
 	starting_organ = /obj/item/organ/genital/breasts
 
-/obj/item/autosurgeon/womb
-	desc = "A single use autosurgeon that contains a womb. A screwdriver can be used to remove it, but implants can't be placed back in."
-	uses = 1
-	starting_organ = /obj/item/organ/genital/womb
+// /obj/item/autosurgeon/womb
+// 	desc = "A single use autosurgeon that contains a womb. A screwdriver can be used to remove it, but implants can't be placed back in."
+// 	uses = 1
+// 	starting_organ = /obj/item/organ/genital/womb

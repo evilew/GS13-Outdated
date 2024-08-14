@@ -84,6 +84,10 @@
 
 	if(!mob.Process_Spacemove(direct))
 		return FALSE
+
+	//GS13 EDIT
+	if(HAS_TRAIT(mob, TRAIT_NO_MOVE))
+		return FALSE
 		
 	//We are now going to move
 	var/add_delay = mob.movement_delay()

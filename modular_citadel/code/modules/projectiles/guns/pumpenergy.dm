@@ -201,7 +201,7 @@
 	icon = 'modular_citadel/icons/obj/projectiles.dmi'
 	color = null
 	nodamage = 1
-	knockdown = 100
+	knockdown = 50
 	stamina = 5
 	stutter = 5
 	jitter = 20

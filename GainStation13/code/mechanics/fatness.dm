@@ -135,7 +135,7 @@ GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/bridge, /area/crew_quarters, 
 		if(client?.prefs?.max_weight) //Check their prefs
 			fatness_over = min(fatness_over, (client?.prefs?.max_weight - 1)) //And make sure it's not above their preferred max
 		fatness = fatness_real + fatness_over //Then, make their current fatness the sum of their real plus/minus the calculated amount
-	if(client?.prefs?.weight_gain_extreme)
+	if(client?.prefs?.weight_gain_extreme && !normalized)
 		xwg_resize()
 
 /mob/living/carbon/human/handle_breathing(times_fired)

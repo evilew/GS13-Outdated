@@ -51,6 +51,13 @@
 				return FALSE
 
 			spawned_cocoon.icon_state = pick("cocoon_large1","cocoon_large2","cocoon_large3")
+			var/cocoon_size = target.size_multiplier
+			var/matrix/new_matrix = new
+
+			new_matrix.Scale(cocoon_size)
+			new_matrix.Translate(0,16 * (cocoon_size-1))
+			spawned_cocoon.transform = new_matrix
+
 			return TRUE 
 
 		user.visible_message("<span class='warning'>[user] attempts to remove [target]'s [target.wear_suit]!</span>", "<span class='warning'>You attempt to remove [target]'s [target.wear_suit].</span>")

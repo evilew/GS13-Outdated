@@ -222,7 +222,11 @@
 //GS13
 #define TRAIT_WEIGHT_LOSS_IMMUNE "weight_loss_immune"
 #define TRAIT_UNIVERSAL_GAINER "universal_gainer"
-
+#define TRAIT_NO_MOVE "no_move"
+#define TRAIT_NO_JUMPSUIT "no_jumpsuit"
+#define TRAIT_NO_MISC "no_misc"
+#define TRAIT_NO_BACKPACK "no_backpack"
+#define TRAIT_NO_BUCKLE "no_buckle"
 
 // common trait sources
 #define TRAIT_GENERIC "generic"
@@ -284,3 +288,5 @@
 #define NUKEOP_TRAIT "nuke-op"
 #define MEGAFAUNA_TRAIT "megafauna"
 #define DEATHSQUAD_TRAIT "deathsquad"
+#define HELPLESSNESS_TRAIT "helplessness"
+

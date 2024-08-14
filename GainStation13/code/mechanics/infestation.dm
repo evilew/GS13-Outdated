@@ -2,9 +2,9 @@
 /datum/round_event_control/dessert_infestation
 	name = "Dessert Infestation"
 	typepath = /datum/round_event/dessert_infestation
-	weight = 5
-	max_occurrences = 2
-	min_players = 8
+	weight = 6
+	max_occurrences = 3
+	min_players = 6
 
 /datum/round_event/dessert_infestation
 	announceWhen = 100

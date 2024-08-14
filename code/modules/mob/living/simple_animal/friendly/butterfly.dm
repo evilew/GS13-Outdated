@@ -24,6 +24,7 @@
 	verb_ask = "flutters inquisitively"
 	verb_exclaim = "flutters intensely"
 	verb_yell = "flutters intensely"
+	blood_volume = 0
 
 /mob/living/simple_animal/butterfly/Initialize()
 	. = ..()

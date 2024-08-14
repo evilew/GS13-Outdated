@@ -20,6 +20,28 @@
 	tools = list(TOOL_SCREWDRIVER, TOOL_WRENCH, TOOL_WELDER)
 	category = CAT_MISC
 
+/datum/crafting_recipe/weightmachine/stacklifter
+	name ="Stack Lifter"
+	result = /obj/structure/weightmachine/stacklifter
+	time = 50
+	reqs = list(/obj/item/stack/sheet/metal = 10)
+	category = CAT_MISC
+
+/datum/crafting_recipe/weightmachine/weightlifter
+	name ="Weight Lifter"
+	result = /obj/structure/weightmachine/weightlifter
+	time = 50
+	reqs = list(/obj/item/stack/sheet/metal = 8,
+				/obj/item/stack/rods = 4)
+	category = CAT_MISC
+
+/datum/crafting_recipe/punching_bag
+	name ="Punching Bag"
+	result = /obj/structure/punching_bag
+	time = 35
+	reqs = list(/obj/item/storage/backpack = 1,
+				/obj/item/stack/cable_coil = 2)
+	category = CAT_MISC
 ///////////////////
 //Tools & Storage//
 ///////////////////

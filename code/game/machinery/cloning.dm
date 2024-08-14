@@ -128,7 +128,7 @@
 	return examine(user)
 
 //Start growing a human clone in the pod!
-/obj/machinery/clonepod/proc/growclone(ckey, clonename, ui, mutation_index, mindref, datum/species/mrace, list/features, factions, list/quirks, experimental = FALSE)
+/obj/machinery/clonepod/proc/growclone(ckey, clonename, ui, mutation_index, mindref, datum/species/mrace, list/features, factions, list/quirks, experimental = FALSE, fatness)
 	if(panel_open)
 		return FALSE
 	if(mess || attempting)
@@ -223,6 +223,9 @@
 		var/mob/living/current = clonemind.current //gets body of current mind
 		if(!isnull(current))
 			size = current.size_multiplier * 100
+	
+	if(fatness)
+		H.fatness_real = fatness
 
 	return TRUE
 

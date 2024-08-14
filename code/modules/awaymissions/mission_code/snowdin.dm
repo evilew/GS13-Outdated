@@ -92,11 +92,6 @@
 	name = "Snowdin Outpost - Underground Mine Post"
 	icon_state = "awaycontent22"
 
-/area/awaymission/snowdin/post/broken_shuttle
-	name = "Snowdin Outpost - Broken Transit Shuttle"
-	icon_state = "awaycontent20"
-	requires_power = FALSE
-
 /area/awaymission/snowdin/igloo
 	name = "Snowdin Igloos"
 	icon_state = "awaycontent14"
@@ -139,6 +134,9 @@
 /area/shuttle/snowdin/elevator2
 	name = "Mining Elevator"
 
+/area/shuttle/snowdin/transit
+	name = "Snowdin Outpost - Transit Shuttle"
+
 //shuttle console for elevators//
 
 /obj/machinery/computer/shuttle/snowdin/mining
@@ -150,6 +148,14 @@
 	shuttleId = "snowdin_mining"
 	possible_destinations = "snowdin_mining_top;snowdin_mining_down"
 
+/obj/machinery/computer/shuttle/snowdin/transit
+	name = "transit computer"
+	desc = "controls the transit shuttle"
+	icon_screen = "shuttle"
+	icon_keyboard = "tech_key"
+	light_color = LIGHT_COLOR_CYAN
+	shuttleId = "snowdintransit"
+	possible_destinations = "snowdintransit_a;snowdintransit_b"
 
 //liquid plasma!!!!!!//
 
@@ -475,67 +481,46 @@
 
 /obj/effect/spawner/lootdrop/snowdin/dungeonlite
 	name = "dungeon lite"
-	loot = list(/obj/item/melee/classic_baton = 11,
+	loot = list(/obj/item/gun/energy/laser/carbine = 5,
 				/obj/item/melee/classic_baton/telescopic = 12,
 				/obj/item/book/granter/spell/smoke = 10,
-				/obj/item/book/granter/spell/blind = 10,
 				/obj/item/storage/firstaid/regular = 45,
 				/obj/item/storage/firstaid/toxin = 35,
 				/obj/item/storage/firstaid/brute = 27,
 				/obj/item/storage/firstaid/fire = 27,
 				/obj/item/storage/toolbox/syndicate = 12,
-				/obj/item/grenade/plastic/c4 = 7,
-				/obj/item/grenade/clusterbuster/smoke = 15,
 				/obj/item/clothing/under/chameleon = 13,
-				/obj/item/clothing/shoes/chameleon/noslip = 10,
-				/obj/item/borg/upgrade/ddrill = 3,
-				/obj/item/borg/upgrade/soh = 3)
+				/obj/item/clothing/shoes/chameleon/noslip = 10)
 
 /obj/effect/spawner/lootdrop/snowdin/dungeonmid
 	name = "dungeon mid"
 	loot = list(/obj/item/defibrillator/compact = 6,
-				/obj/item/storage/firstaid/tactical = 35,
-				/obj/item/shield/energy = 6,
-				/obj/item/shield/riot/tele = 12,
-				/obj/item/dnainjector/lasereyesmut = 7,
-				/obj/item/gun/magic/wand/fireball/inert = 3,
-				/obj/item/pneumatic_cannon = 15,
-				/obj/item/melee/transforming/energy/sword = 7,
-				/obj/item/book/granter/spell/knock = 15,
-				/obj/item/book/granter/spell/summonitem = 20,
-				/obj/item/book/granter/spell/forcewall = 17,
-				/obj/item/storage/backpack/holding = 12,
-				/obj/item/grenade/spawnergrenade/manhacks = 6,
-				/obj/item/grenade/spawnergrenade/spesscarp = 7,
-				/obj/item/grenade/clusterbuster/inferno = 3,
-				/obj/item/stack/sheet/mineral/diamond{amount = 15} = 10,
-				/obj/item/stack/sheet/mineral/uranium{amount = 15} = 10,
-				/obj/item/stack/sheet/mineral/plasma{amount = 15} = 10,
-				/obj/item/stack/sheet/mineral/gold{amount = 15} = 10,
-				/obj/item/book/granter/spell/barnyard = 4,
+				/obj/item/storage/firstaid/tactical = 10,
+				/obj/item/shield/riot/tele = 2,
+				/obj/item/book/granter/spell/knock = 5,
+				/obj/item/book/granter/spell/summonitem = 5,
+				/obj/item/storage/backpack/holding = 2,
+				/obj/item/stack/sheet/mineral/diamond{amount = 20} = 15,
+				/obj/item/stack/sheet/mineral/uranium{amount = 30} = 15,
+				/obj/item/stack/sheet/mineral/plasma{amount = 50} = 15,
+				/obj/item/stack/sheet/mineral/gold{amount = 50} = 15,
+				/obj/item/stack/sheet/mineral/silver{amount = 50} = 15,
+				/obj/item/stack/sheet/mineral/titanium{amount = 50} = 15,
 				/obj/item/pickaxe/drill/diamonddrill = 6,
-				/obj/item/borg/upgrade/vtec = 7,
-				/obj/item/borg/upgrade/disablercooler = 7)
+				/obj/item/gun/ballistic/automatic/ar = 1)
 
 
 /obj/effect/spawner/lootdrop/snowdin/dungeonheavy
 	name = "dungeon heavy"
-	loot = list(/obj/item/twohanded/singularityhammer = 25,
-				/obj/item/twohanded/mjollnir = 10,
-				/obj/item/twohanded/fireaxe = 25,
-				/obj/item/organ/brain/alien = 17,
-				/obj/item/twohanded/dualsaber = 15,
-				/obj/item/organ/heart/demon = 7,
-				/obj/item/gun/ballistic/automatic/c20r/unrestricted = 16,
-				/obj/item/gun/magic/wand/resurrection/inert = 15,
-				/obj/item/gun/magic/wand/resurrection = 10,
-				/obj/item/uplink/old = 2,
-				/obj/item/book/granter/spell/charge = 12,
-				/obj/item/grenade/clusterbuster/spawner_manhacks = 15,
-				/obj/item/book/granter/spell/fireball = 10,
-				/obj/item/pickaxe/drill/jackhammer = 30,
-				/obj/item/borg/upgrade/syndicate = 13,
-				/obj/item/borg/upgrade/selfrepair = 17)
+	loot = list(/obj/item/twohanded/singularityhammer = 1,
+				/obj/item/twohanded/dualsaber/hypereutactic = 1,
+				/obj/item/organ/brain/alien = 1,
+				/obj/item/gun/ballistic/automatic/c20r/unrestricted = 1,
+				/obj/item/book/granter/spell/charge = 1,
+				/obj/item/book/granter/martial/cqc = 1,
+				/obj/item/book/granter/spell/fattening/steal = 1,
+				/obj/item/dnainjector/lasereyesmut = 1,
+				/obj/item/book/granter/spell/fattening/transfer = 1)
 
 /obj/effect/spawner/lootdrop/snowdin/dungeonmisc
 	name = "dungeon misc"

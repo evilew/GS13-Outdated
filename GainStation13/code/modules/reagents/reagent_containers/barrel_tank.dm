@@ -74,8 +74,6 @@
 /datum/crafting_recipe/barrel_tank
 	name = "Barrel tank"
 	result = /obj/item/reagent_containers/barrel_tank
-	time = 25
 	tools = list(TOOL_CROWBAR)
 	reqs = list(/obj/item/stack/sheet/mineral/wood = 20)
-	always_availible = TRUE
 	category = CAT_CLOTHING

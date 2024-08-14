@@ -283,3 +283,4 @@
 	list_reagents = list(/datum/reagent/fermi/butt_enlarger = 10)
 	price = 4
 	icon_state = "pill_lewd"
+	
