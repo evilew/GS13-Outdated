@@ -1056,6 +1056,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Maximum Weight:</b><a href='?_src_=prefs;preference=max_fatness'>[max_weight == FALSE ? "None" : max_weight]</a><BR>"
 			dat += "<b>NonCon - Weight Gain:</b><a href='?_src_=prefs;preference=noncon_weight_gain'>[noncon_weight_gain == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 
+			dat += "<b>Bot Feeding:</b><a href='?_src_=prefs;preference=bot_feeding'>[bot_feeding == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+
 			dat += "<h2>GS13 Weight Gain</h2>"
 			dat += "<b>Weight Gain - Food:</b><a href='?_src_=prefs;preference=weight_gain_food'>[weight_gain_food == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Weight Gain - Items:</b><a href='?_src_=prefs;preference=weight_gain_items'>[weight_gain_items == TRUE ? "Enabled" : "Disabled"]</a><BR>"
@@ -2660,6 +2662,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					weight_gain_extreme = !weight_gain_extreme
 				if("noncon_weight_gain")
 					noncon_weight_gain = !noncon_weight_gain
+				if("bot_feeding")
+					bot_feeding = !bot_feeding
 				if("stuckage")
 					stuckage = !stuckage
 				if("blueberry_inflation")

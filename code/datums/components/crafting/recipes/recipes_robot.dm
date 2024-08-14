@@ -82,3 +82,13 @@
 	reqs = list(/obj/item/stack/cable_coil = 1, /obj/item/stack/rods = 1,  /obj/item/reagent_containers/food/snacks/grown/potato = 1, /obj/item/aicard = 1 )
 	result = /obj/item/aicard/potato
 	category = CAT_ROBOT
+
+/datum/crafting_recipe/nutribot
+	name = "Nutribot"
+	reqs = list(/obj/item/stack/sheet/cardboard = 1,
+				/obj/item/stack/sheet/mineral/calorite = 1,
+				/obj/item/bodypart/r_arm/robot = 1,
+				/obj/item/assembly/prox_sensor = 1)
+	result = /mob/living/simple_animal/bot/nutribot
+	time = 40
+	category = CAT_ROBOT

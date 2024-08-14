@@ -3123,6 +3123,7 @@
 #include "GainStation13\code\modules\mob\living\emote.dm"
 #include "GainStation13\code\modules\mob\living\emote_modular.dm"
 #include "GainStation13\code\modules\mob\living\emote_ported.dm"
+#include "GainStation13\code\modules\mob\living\nutribot.dm"
 #include "GainStation13\code\modules\mob\living\vore\eating\living_vr.dm"
 #include "GainStation13\code\modules\mob\living\vore\eating\trasheat_lists.dm"
 #include "GainStation13\code\modules\reagents\chemistry\reagents\consumable_reagents.dm"
