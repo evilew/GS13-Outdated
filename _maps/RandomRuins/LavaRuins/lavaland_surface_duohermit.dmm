@@ -40,12 +40,13 @@
 "O" = (/obj/machinery/door/airlock/titanium{name = "Escape Pod Airlock"},/turf/open/floor/mineral/titanium/blue,/area/ruin/powered)
 "Q" = (/obj/item/weldingtool,/turf/open/floor/mineral/titanium/blue,/area/ruin/powered)
 "R" = (/obj/item/stack/cable_coil/red,/turf/open/floor/plating/asteroid/basalt,/area/ruin/powered)
+"S" = (/obj/item/card/id/away{access = list(); name = "Weathered Mining ID"; desc = "Some ancient, worn down mining ID card, the magnetic strips for the access have long since worn away. It might still have a use though"; mining_points = 16},/turf/open/floor/plating,/area/ruin/powered)
 "T" = (/obj/item/stock_parts/matter_bin,/turf/open/floor/plating/asteroid/basalt,/area/ruin/powered)
 "U" = (/obj/item/stock_parts/matter_bin,/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors)
 "V" = (/turf/closed/wall/mineral/titanium/interior,/area/ruin/powered)
 "W" = (/obj/structure/shuttle/engine/propulsion/burst{dir = 8},/turf/closed/wall/mineral/titanium/interior,/area/ruin/powered)
 "Y" = (/obj/item/mining_scanner,/turf/open/floor/plating/asteroid/basalt,/area/ruin/powered)
-"Z" = (/obj/item/circuitboard/machine/protolathe/department/science,/obj/item/circuitboard/computer/rdconsole,/turf/open/floor/plating/asteroid/basalt,/area/ruin/powered)
+"Z" = (/obj/item/circuitboard/computer/rdconsole,/obj/item/circuitboard/machine/protolathe,/turf/open/floor/plating/asteroid/basalt,/area/ruin/powered)
 
 (1,1,1) = {"
 aaaaaaaccccaaaaa
@@ -56,7 +57,7 @@ aacJfYffLilkcaaa
 aaccfffffgncaaaa
 aaacffZfRfpcaaaa
 aaacTfoqofrcaaaa
-saactttooucaaaaa
+saactttoSucaaaaa
 saaatvwooKcaaaaa
 sssatxyztAcaaaaa
 sssstxyCtcWVVaaa
