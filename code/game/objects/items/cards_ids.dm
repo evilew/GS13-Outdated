@@ -664,7 +664,7 @@
 	name = "Arctic Station Captain's ID card"
 	desc = "A faded Arctic Station ID card. You can make out the rank \"Captain\"."
 	assignment = "Arctic Station Captain"
-	access = list(ACCESS_AWAY_GENERAL, AWAY_ACCESS_ALL, ACCESS_AWAY_MAINT)
+	access = list(ACCESS_AWAY_GENERAL, ACCESS_AWAY_MAINT)
 	icon_state = "retrosec"
 	uses_overlays = FALSE
 
