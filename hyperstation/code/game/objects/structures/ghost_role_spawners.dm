@@ -71,38 +71,17 @@
 
 /obj/effect/mob_spawn/human/exiled/Initialize(mapload)
 	. = ..()
-	delayusability(9000, FALSE) //Probably should not show up on the menu? It gives it away that snowdin is the away mission.
-	var/arrpee = rand(1,3)
+	var/arrpee = rand(1,1)
 	switch(arrpee)
 		if(1)
 			flavour_text += "You were a lowly engineer, hired by GATO to make sure the turbines from their mining operation remained functional. \
 			You remember the day the mining team descended for the very last time into the depths of the shafts, only to never return. \
 			The agonizing screams from whatever now haunts those mines still brings a shiver down your spine."
-			outfit.uniform = /obj/item/clothing/under/rank/engineer
-			outfit.suit = /obj/item/clothing/suit/hooded/wintercoat/engineering
-			outfit.shoes = /obj/item/clothing/shoes/sneakers/black
-			outfit.back = /obj/item/storage/backpack/industrial
+			outfit.uniform = /obj/item/clothing/under/rank/assistant
+			outfit.suit = /obj/item/clothing/suit/hooded/wintercoat
+			outfit.shoes = /obj/item/clothing/shoes/winterboots
+			outfit.back = /obj/item/storage/backpack
 			outfit.id = /obj/item/card/id/away/snowdin/eng
-			outfit.implants = list(/obj/item/implant/exile) //Made it so they cannot simply exit through the gateway at will.
-		if(2)
-			flavour_text += "You were a plasma researcher, hired by GATO to oversee a small research division in a remote, isolated little icy planet, \
-			you remember the day the mining team descended for the very last time into the depths of the shafts, only to never return. \
-			While you haven't heard them yourself, reports say the sounds that were heard over radio were likely not of this world."
-			outfit.uniform = /obj/item/clothing/under/rank/scientist
-			outfit.suit = /obj/item/clothing/suit/hooded/wintercoat/science
-			outfit.shoes = /obj/item/clothing/shoes/sneakers/black
-			outfit.back = /obj/item/storage/backpack/science
-			outfit.id = /obj/item/card/id/away/snowdin/sci
-			outfit.implants = list(/obj/item/implant/exile) //Made it so they cannot simply exit through the gateway at will.
-		if(3)
-			flavour_text += "You were a junior doctor, hired by GATO to oversee the mental state of a plasma mining operation's miners. \
-			Over and over you reported that the miners were having constant, similar types of hallucinations and that perhaps the whole operation should pause \
-			until further investigation was concluded, but command shrugged it off as an episode of mass hallucination... Until the miners never came back."
-			outfit.uniform = /obj/item/clothing/under/rank/medical
-			outfit.suit = /obj/item/clothing/suit/hooded/wintercoat/medical
-			outfit.shoes = /obj/item/clothing/shoes/sneakers/black
-			outfit.back = /obj/item/storage/backpack/medic
-			outfit.id = /obj/item/card/id/away/snowdin/med
 			outfit.implants = list(/obj/item/implant/exile) //Made it so they cannot simply exit through the gateway at will.
 
 /obj/effect/mob_spawn/human/exiled/Destroy()
