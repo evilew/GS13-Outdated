@@ -77,7 +77,7 @@
 			flavour_text += "You were a lowly engineer, hired by GATO to make sure the turbines from their mining operation remained functional. \
 			You remember the day the mining team descended for the very last time into the depths of the shafts, only to never return. \
 			The agonizing screams from whatever now haunts those mines still brings a shiver down your spine."
-			outfit.uniform = /obj/item/clothing/under/rank/assistant
+			outfit.uniform = /obj/item/clothing/under/assistantformal
 			outfit.suit = /obj/item/clothing/suit/hooded/wintercoat
 			outfit.shoes = /obj/item/clothing/shoes/winterboots
 			outfit.back = /obj/item/storage/backpack
