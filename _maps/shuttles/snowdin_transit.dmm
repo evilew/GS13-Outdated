@@ -48,7 +48,7 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/snowdin/transit)
 "B" = (
-/obj/effect/spawner/structure/window/shuttle,
+/obj/machinery/door/airlock/shuttle,
 /obj/docking_port/mobile{
 	dwidth = 3;
 	id = "snowdintransit";
@@ -56,9 +56,10 @@
 	height = 5;
 	name = "snowdin transit pod";
 	movement_force = list("KNOCKDOWN" = 0, "THROW" = 0);
-	launch_status = 0
+	launch_status = 1;
+	dir = 8
 	},
-/turf/open/floor/plating,
+/turf/open/floor/mineral/titanium/blue,
 /area/shuttle/snowdin/transit)
 "D" = (
 /obj/effect/spawner/structure/window/shuttle,
@@ -93,7 +94,7 @@ D
 N
 f
 h
-B
+b
 "}
 (4,1,1) = {"
 b
@@ -105,7 +106,7 @@ b
 (5,1,1) = {"
 d
 c
-a
+B
 c
 d
 "}

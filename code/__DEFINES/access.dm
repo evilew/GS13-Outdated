@@ -93,8 +93,8 @@
 #define ACCESS_AWAY_MED 202//Away medical
 #define ACCESS_AWAY_SEC 203//Away security
 #define ACCESS_AWAY_ENGINE 204//Away engineering
-#define ACCESS_AWAY_GENERIC1 205//Away generic access
-#define ACCESS_AWAY_GENERIC2 206
+#define ACCESS_AWAY_ALL 205 //Away All Access
+#define ACCESS_AWAY_BOTANY 206 //Away Botany Access
 #define ACCESS_AWAY_GENERIC3 207
 #define ACCESS_AWAY_GENERIC4 208
 
