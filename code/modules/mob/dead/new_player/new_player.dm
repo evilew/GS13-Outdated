@@ -114,6 +114,10 @@
 		new_player_panel()
 
 	if(href_list["late_join"])
+		if(!client?.prefs?.features["ooc_text"])
+			to_chat(usr, "<span class='danger'>You need to set your OOC text you can join! This can be done in the Character Appearance menu.</span>")
+			return
+
 		if(!SSticker || !SSticker.IsRoundInProgress())
 			to_chat(usr, "<span class='danger'>The round is either not ready, or has already finished...</span>")
 			return
