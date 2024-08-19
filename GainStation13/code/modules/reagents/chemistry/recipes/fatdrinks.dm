@@ -41,3 +41,15 @@
 	id = /datum/reagent/consumable/snakebite
 	results = list(/datum/reagent/consumable/snakebite = 3)
 	required_reagents = list(/datum/reagent/toxin = 1, /datum/reagent/consumable/limejuice = 1, /datum/reagent/consumable/lipoifier = 1)
+
+/datum/chemical_reaction/milkshake_vanilla
+	name = "Vanilla Milkshake"
+	id = /datum/reagent/consumable/milkshake_vanilla
+	results = list(/datum/reagent/consumable/milkshake_vanilla = 3)
+	required_reagents = list(/datum/reagent/consumable/milk = 1, /datum/reagent/consumable/cream = 1, /datum/reagent/consumable/vanilla = 1)
+
+/datum/chemical_reaction/milkshake_chocolate
+	name = "Chocolate Milkshake"
+	id = /datum/reagent/consumable/milkshake_chocolate
+	results = list(/datum/reagent/consumable/milkshake_chocolate = 3)
+	required_reagents = list(/datum/reagent/consumable/milk/chocolate_milk = 1, /datum/reagent/consumable/cream = 1, /datum/reagent/consumable/coco = 1)

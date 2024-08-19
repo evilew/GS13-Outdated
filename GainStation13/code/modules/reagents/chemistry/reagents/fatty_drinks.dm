@@ -131,3 +131,29 @@
 	else
 		M.nutrition += 1
 	..()
+
+/datum/reagent/consumable/milkshake_vanilla
+	name = "Vanilla Milkshake"
+	description = "A plain vanilla milkshake. A classic."
+	color = "#DFDFDF"
+	taste_description = "creamy vanilla"
+	quality = DRINK_VERYGOOD
+	nutriment_factor = 6 * REAGENTS_METABOLISM
+	glass_icon_state = "milkshake_vanilla"
+	glass_name = "vanilla milkshake"
+	glass_desc = "Guess they fixed the milkshake machine after all, huh?"
+	shot_glass_icon_state = "shotglasscream"
+	hydration = 3
+
+/datum/reagent/consumable/milkshake_chocolate
+	name = "Chocolate Milkshake"
+	description = "It's like chocolate milk, but for even cooler kids."
+	color = "#7D4E29"
+	taste_description = "creamy chocolate"
+	quality = DRINK_VERYGOOD
+	nutriment_factor = 8 * REAGENTS_METABOLISM
+	glass_icon_state = "milkshake_chocolate"
+	glass_name = "chocolate milkshake"
+	glass_desc = "Nothing better than cream AND cocoa!"
+	shot_glass_icon_state = "shotglassbrown"
+	hydration = 3
