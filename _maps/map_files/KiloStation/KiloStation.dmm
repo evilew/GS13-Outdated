@@ -46289,6 +46289,9 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/plasteel/yellowsiding{
 	dir = 8
 	},
@@ -47238,6 +47241,9 @@
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/open/floor/plasteel/yellowsiding{
 	dir = 8
 	},
@@ -54366,6 +54372,12 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
 	},
+/obj/machinery/power/apc{
+	areastring = "/area/crew_quarters/fitness/pool";
+	name = "Pool Area APC";
+	pixel_y = -23
+	},
+/obj/structure/cable,
 /turf/open/floor/plasteel/yellowsiding/corner{
 	dir = 1
 	},
@@ -76514,7 +76526,7 @@
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green,
 /obj/machinery/power/apc{
-	areastring = "/area/maintenance/starboard/aft";
+	areastring = "/area/security/vacantoffice";
 	dir = 1;
 	name = "Vacant Office APC";
 	pixel_y = 23
