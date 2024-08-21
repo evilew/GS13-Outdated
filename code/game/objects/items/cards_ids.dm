@@ -338,6 +338,11 @@
 /obj/item/card/id/captains_spare/Initialize()
 	var/datum/job/captain/J = new/datum/job/captain
 	access = J.get_access()
+	GLOB.poi_list |= src
+	. = ..()
+
+/obj/item/card/id/captains_spare/Destroy()
+	GLOB.poi_list -= src
 	. = ..()
 
 /obj/item/card/id/centcom
