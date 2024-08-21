@@ -13572,6 +13572,16 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/item/cigbutt,
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "Pool Area APC";
+	pixel_x = -24;
+	areastring = "/area/crew_quarters/fitness/pool"
+	},
+/obj/structure/cable{
+	icon_state = "0-2";
+	pixel_y = 1
+	},
 /turf/open/floor/plating,
 /area/maintenance/department/crew_quarters/dorms)
 "aAT" = (
@@ -45081,6 +45091,16 @@
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
+	},
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "Monastery Asteroid APC";
+	pixel_x = -24;
+	areastring = "/area/chapel/asteroid/monastery"
+	},
+/obj/structure/cable{
+	icon_state = "0-2";
+	pixel_y = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/chapel/dock)
