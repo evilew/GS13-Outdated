@@ -43,6 +43,7 @@
 #define PARANOIA	/datum/mutation/human/paranoia
 #define MINDREAD	/datum/mutation/human/mindreader
 #define FATFANG		/datum/mutation/human/fatfang
+#define RADFAT		/datum/mutation/human/radfat
 
 #define UI_CHANGED "ui changed"
 #define UE_CHANGED "ue changed"
