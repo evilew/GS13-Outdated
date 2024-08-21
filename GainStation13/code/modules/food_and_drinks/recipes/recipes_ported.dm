@@ -111,3 +111,16 @@
 	)
 	result = /obj/item/reagent_containers/food/snacks/cinammonbun
 	subcategory = CAT_PASTRY
+
+//GS Food
+
+/datum/crafting_recipe/food/lavaland_soup
+	name = "Lavaland Stew"
+	reqs = list(
+		/obj/item/reagent_containers/food/snacks/grown/ash_flora/mushroom_leaf = 1,
+		/obj/item/reagent_containers/food/snacks/grown/ash_flora/mushroom_stem = 1,
+		/obj/item/reagent_containers/food/snacks/grown/ash_flora/cactus_fruit = 2,
+		/obj/item/reagent_containers/glass/bowl/mushroom_bowl = 1
+	)
+	result = /obj/item/reagent_containers/food/tribal/soup
+	subcategory = CAT_PRIMAL
