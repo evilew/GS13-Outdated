@@ -1,6 +1,24 @@
 /obj/item/implant/docile
 	name = "docility implant"
 	activated = FALSE
+	/// What fatness level does the target need to be for the implant to work?
+	var/required_fatness = FATNESS_LEVEL_BLOB
+	/// What traits do we want to give the implanted mob?
+	var/list/traits_list = list(
+		TRAIT_WEIGHT_LOSS_IMMUNE,
+		TRAIT_PACIFISM,
+		TRAIT_CLUMSY,
+		TRAIT_FAT_GOOD,
+		TRAIT_HEAVY_SLEEPER,
+		TRAIT_DOCILE,
+	)
+
+/obj/item/implant/docile/can_be_implanted_in(mob/living/target)
+	var/mob/living/carbon/human/target_human = target
+	if(!istype(target_human) || (target_human.fatness_real < required_fatness))
+		return FALSE
+
+	return target?.client?.prefs?.fatness_vulnerable
 
 /obj/item/implant/docile/implant(mob/living/target, mob/user, silent = FALSE)
 	. = ..()
@@ -11,25 +29,20 @@
 	if(!istype(target_human))
 		return
 
-	// If you have this implant, you aren't going to be doing any fighting.
-	ADD_TRAIT(target, TRAIT_WEIGHT_LOSS_IMMUNE, src)
-	ADD_TRAIT(target, TRAIT_PACIFISM, src)
-	ADD_TRAIT(target, TRAIT_CLUMSY, src)
-	ADD_TRAIT(target, TRAIT_FAT_GOOD, src)
-	ADD_TRAIT(target, TRAIT_HEAVY_SLEEPER, src)
+	for(var/trait in trait_list)
+		ADD_TRAIT(target, trait, src)
 
 	target_human.nutri_mult += 1
+	return TRUE
 
 /obj/item/implant/docile/removed(mob/living/source, silent = FALSE, special = 0)
 	. = ..()
 	if(!.)
 		return
 
-	REMOVE_TRAIT(target, TRAIT_WEIGHT_LOSS_IMMUNE, src)
-	REMOVE_TRAIT(target, TRAIT_PACIFISM, src)
-	REMOVE_TRAIT(target, TRAIT_CLUMSY, src)
-	REMOVE_TRAIT(target, TRAIT_FAT_GOOD, src)
-	REMOVE_TRAIT(target, TRAIT_HEAVY_SLEEPER, src)
+	for(var/trait in trait_list)
+		REMOVE_TRAIT(target, trait, src)
 
 	target_human.nutri_mult -= 1
+	return TRUE
 
