@@ -21,6 +21,8 @@
 	var/weight_gain_extreme = FALSE
 	///stuckage
 	var/stuckage = FALSE
+	/// Are items that only affect those at high weights able to affect the player?
+	var/fatness_vulnerable = FALSE
 
 	// Helplessness, a set of prefs that make things extra tough at higher weights. If set to FALSE, they won't do anything.
 	///What fatness level disables movement?
