@@ -51,7 +51,7 @@
 	return TRUE
 
 
-/obj/item/implant/docile/livstock
+/obj/item/implant/docile/livestock
 	name = "livestock implant"
 	traits_list = list(
 		TRAIT_WEIGHT_LOSS_IMMUNE,
@@ -93,7 +93,7 @@
 	if(!.)
 		return FALSE
 
-	var/mob/living/carbon/human/target_human = target
+	var/mob/living/carbon/human/target_human = source 
 	target_human.real_name = stored_name
 	target_human.name = stored_name	
 
