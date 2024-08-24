@@ -162,6 +162,9 @@
 				if(QDELETED(ROI))
 					continue //sleeps in CHECK_TICK
 
+				if(isliving(ROI) && !check_mob_teleportability(ROI))
+					continue
+
 				// if is anchored, don't let through
 				if(ROI.anchored)
 					if(isliving(ROI))
@@ -183,6 +186,10 @@
 	if(link)
 		linked_pad = link
 		. = TRUE
+
+/// Checks if the mob is able to be teleported.
+/obj/machinery/quantumpad/proc/check_mob_teleportability(mob/living/mob_to_check)
+	return TRUE
 
 /obj/item/paper/guides/quantumpad
 	name = "Quantum Pad For Dummies"

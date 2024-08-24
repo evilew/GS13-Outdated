@@ -18,6 +18,9 @@
 	if(!istype(target_human) || (target_human.fatness_real < required_fatness))
 		return FALSE
 
+	if(HAS_TRAIT(target_human, TRAIT_DOCILE))
+		return FALSE //They probably already have an implant, they likely don't need this.
+
 	return target?.client?.prefs?.fatness_vulnerable
 
 /obj/item/implant/docile/implant(mob/living/target, mob/user, silent = FALSE)
@@ -60,6 +63,7 @@
 		TRAIT_FAT_GOOD,
 		TRAIT_HEAVY_SLEEPER,
 		TRAIT_DOCILE,
+		TRAIT_LIVESTOCK,
 		TRAIT_NO_MISC,
 		TRAIT_NORUNNING,
 	)
@@ -68,6 +72,8 @@
 	var/stored_name = ""
 	/// What name do we want to give the mob before adding the randomized number
 	var/name_to_give = "Livestock"
+	/// How much do we want to modifiy the productivity stats of the mob's current sex organs by?
+	var/productivity_mult = 4
 
 /obj/item/implant/docile/livestock/can_be_implanted_in(mob/living/target)
 	. = ..()
@@ -88,6 +94,16 @@
 	target_human.real_name = new_name
 	target_human.name = new_name
 
+	if(target_human?.getorganslot("testicles"))
+		var/obj/item/organ/genital/testicles/balls = target_human?.getorganslot("testicles")
+		balls.fluid_mult = balls.fluid_mult * productivity_mult
+		balls.fluid_max_volume = balls.fluid_max_volume * productivity_mult
+
+	if(target_human?.getorganslot("breasts"))
+		var/obj/item/organ/genital/breasts/boobs = target_human?.getorganslot("breasts")
+		boobs.fluid_mult = boobs.fluid_mult * productivity_mult
+		boobs.fluid_max_volume = boobs.fluid_max_volume * productivity_mult
+
 /obj/item/implant/docile/livestock/removed(mob/living/source, silent, special)
 	. = ..()
 	if(!.)
@@ -97,12 +113,22 @@
 	target_human.real_name = stored_name
 	target_human.name = stored_name	
 
-/obj/item/implantcase/docile
-	name = "implant case - 'Docility'"
-	desc = "A glass case containing a docility implant."
-	imp_type = /obj/item/implant/docile
+	if(target_human?.getorganslot("testicles"))
+		var/obj/item/organ/genital/testicles/balls = target_human?.getorganslot("testicles")
+		balls.fluid_mult = balls.fluid_mult / productivity_mult
+		balls.fluid_max_volume = balls.fluid_max_volume / productivity_mult
+
+	if(target_human?.getorganslot("breasts"))
+		var/obj/item/organ/genital/breasts/boobs = target_human?.getorganslot("breasts")
+		boobs.fluid_mult = boobs.fluid_mult / productivity_mult
+		boobs.fluid_max_volume = boobs.fluid_max_volume / productivity_mult
 
 /obj/item/implantcase/docile
+	name = "implant case - 'Docility'"
+	desc = "A glass case containing a docility implant. Used to make those at high weights docile."
+	imp_type = /obj/item/implant/docile
+
+/obj/item/implantcase/docile/livestock
 	name = "implant case - 'Livestock'"
-	desc = "A glass case containing a livestock implant."
+	desc = "A glass case containing a livestock implant. Functions similar to the docility implant, but changes the implantee's name and makes them even more helpless. cannot be combined with the docility implant."
 	imp_type = /obj/item/implant/docile/livestock

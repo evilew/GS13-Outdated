@@ -228,6 +228,7 @@
 #define TRAIT_NO_BACKPACK "no_backpack"
 #define TRAIT_NO_BUCKLE "no_buckle"
 #define TRAIT_DOCILE "docile"
+#define TRAIT_LIVESTOCK "livestock"
 
 // common trait sources
 #define TRAIT_GENERIC "generic"
