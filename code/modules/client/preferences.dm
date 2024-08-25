@@ -1069,7 +1069,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Blueberry Inflation:</b><a href='?_src_=prefs;preference=blueberry_inflation'>[blueberry_inflation == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 
 			dat += "<h2>GS13 Gameplay Preferences</h2>"
-			dat += "<b>Stuckage (weight results in getting stuck in doors):</b><a href='?_src_=prefs;preference=stuckage'>[stuckage == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+			dat += "<b>Stuckage (at what weight will you get stuck in doors?):</b><a href='?_src_=prefs;preference=stuckage'>[stuckage == FALSE ? "Disabled" : stuckage]</a><BR>"
+			dat += "<b>Chair Breakage (at what weight will you break chairs?):</b><a href='?_src_=prefs;preference=chair_breakage'>[chair_breakage == FALSE ? "Disabled" : chair_breakage]</a><BR>"
 			dat += "<b>Extreme Weight Gain (Sprite Size scales with weight):</b><a href='?_src_=prefs;preference=weight_gain_extreme'>[weight_gain_extreme == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 
 			dat += "<h2>GS13 Helplessness Preferences</h2>"
@@ -2665,7 +2666,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				if("bot_feeding")
 					bot_feeding = !bot_feeding
 				if("stuckage")
-					stuckage = !stuckage
+					stuckage = chose_weight("Choose the level of fatness where your weight will hinder your ability to go through airlocks? None will disable this alltogether", user)
+				if("chair_breakage")
+					chair_breakage = chose_weight("Choose the level of fatness where your weight will be too much for chairs to handle? None will disable this alltogether", user)
+
 				if("blueberry_inflation")
 					blueberry_inflation = !blueberry_inflation
 				if("max_fatness")

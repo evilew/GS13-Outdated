@@ -19,8 +19,10 @@
 	var/blueberry_inflation = FALSE
 	///Extreme weight gain
 	var/weight_gain_extreme = FALSE
-	///stuckage
+	/// At what weight will you start to get stuck in airlocks?
 	var/stuckage = FALSE
+	/// At what weight will you start to break chairs?
+	var/chair_breakage = FALSE
 
 	// Helplessness, a set of prefs that make things extra tough at higher weights. If set to FALSE, they won't do anything.
 	///What fatness level disables movement?
