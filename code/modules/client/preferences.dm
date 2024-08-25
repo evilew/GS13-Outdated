@@ -1070,6 +1070,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			dat += "<h2>GS13 Gameplay Preferences</h2>"
 			dat += "<b>Stuckage (weight results in getting stuck in doors):</b><a href='?_src_=prefs;preference=stuckage'>[stuckage == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+			dat += "This preference will allow items that work based on weight to work to you, <b>usually to your detriment.</b> <BR>"
+			dat += "<b>Fatness Vulnerability:</b><a href='?_src_=prefs;preference=fatness_vulnerable'>[fatness_vulnerable == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+			dat += "This preference functions similar to the one before but allows for items with more drastic effects. <b>Do not enable this if you aren't okay with more drastic things happening to your character.</b><BR>"
+			dat += "<b>Extreme Fatness Vulnerability:</b><a href='?_src_=prefs;preference=extreme_fatness_vulnerable'>[extreme_fatness_vulnerable == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Extreme Weight Gain (Sprite Size scales with weight):</b><a href='?_src_=prefs;preference=weight_gain_extreme'>[weight_gain_extreme == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 
 			dat += "<h2>GS13 Helplessness Preferences</h2>"
@@ -2666,6 +2670,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					bot_feeding = !bot_feeding
 				if("stuckage")
 					stuckage = !stuckage
+				if("fatness_vulnerable")
+					fatness_vulnerable = !fatness_vulnerable
+				if("extreme_fatness_vulnerable")
+					extreme_fatness_vulnerable = !extreme_fatness_vulnerable
 				if("blueberry_inflation")
 					blueberry_inflation = !blueberry_inflation
 				if("max_fatness")
