@@ -113,34 +113,40 @@
 
 	add_fingerprint(user)
 	. = buckle_mob(M, check_loc = check_loc)
-	if(.)
-		if (M == user && M.fatness >= 3440 && istype(src, /obj/structure/chair)) //GS13 stuff - chair breaking mechanics
-			M.visible_message(\
-				"<span class='notice'>[M] slowly buckles [M.p_them()]self to [src]. their movements slow and deliberate. As [M] settles into the seat, a sudden, violent crash echoes through the air. [M]'s massive weight mercilessly crushes the poor [src], reducing it to pieces! </span>",\
-				"<span class='notice'>You slowly try to buckle yourself to [src]. But it breaks under your massive ass!</span>",\
-				"<span class='italics'>You hear metal clanking.</span>")
-			playsound(loc, 'sound/effects/snap.ogg', 50, 1)
-			playsound(loc, 'sound/effects/woodhit.ogg', 50, 1)
-			playsound(loc, 'sound/effects/bodyfall4.ogg', 50, 1)
-			            // Destroy the src object
-			src.Destroy()
-		else if(M == user && M.fatness >= 1840)
-			M.visible_message(\
-				"<span class='notice'>[M] buckles [M.p_them()]self to the creaking [src]. The [src] protests audibly under the weight as [M]'s ample form settles onto its surface. .</span>",\
-				"<span class='notice'>You buckle yourself to [src].The [src] is cracking and is barely able to hold your weight </span>",\
-				"<span class='italics'>You hear metal clanking.</span>")
-			playsound(loc, 'sound/effects/crossed.ogg', 50, 1)
-		else if(M == user && M.fatness >= 840)
-			M.visible_message(\
-				"<span class='notice'>[M] buckles [M.p_them()]self to the creaking [src] as their weight spreads all over it.</span>",\
-				"<span class='notice'>You buckle yourself to [src].The [src] is creaking as you shuffle a bit </span>",\
-				"<span class='italics'>You hear metal clanking.</span>")
-			playsound(loc, 'sound/effects/crossed.ogg', 50, 1)
-		else
-			M.visible_message(\
-				"<span class='warning'>[user] buckles [M] to [src]!</span>",\
-				"<span class='warning'>[user] buckles you to [src]!</span>",\
-				"<span class='italics'>You hear metal clanking.</span>")
+	if(!.)
+		return
+
+	var/breaking_weight = M?.client?.prefs?.chair_breakage
+	if(!breaking_weight || (M != user) || ((breaking_weight / 3) > M.fatness))
+		M.visible_message(\
+			"<span class='warning'>[user] buckles [M] to [src]!</span>",\
+			"<span class='warning'>[user] buckles you to [src]!</span>",\
+			"<span class='italics'>You hear metal clanking.</span>")
+		return
+
+	if ((M.fatness >= breaking_weight) && istype(src, /obj/structure/chair)) //GS13 stuff - chair breaking mechanics
+		M.visible_message(\
+			"<span class='notice'>[M] slowly buckles [M.p_them()]self to [src]. their movements slow and deliberate. As [M] settles into the seat, a sudden, violent crash echoes through the air. [M]'s massive weight mercilessly crushes the poor [src], reducing it to pieces! </span>",\
+			"<span class='notice'>You slowly try to buckle yourself to [src]. But it breaks under your massive ass!</span>",\
+			"<span class='italics'>You hear metal clanking.</span>")
+		playsound(loc, 'sound/effects/snap.ogg', 50, 1)
+		playsound(loc, 'sound/effects/woodhit.ogg', 50, 1)
+		playsound(loc, 'sound/effects/bodyfall4.ogg', 50, 1)
+					// Destroy the src object
+		src.Destroy()
+	else if(M.fatness >= (breaking_weight / 2))
+		M.visible_message(\
+			"<span class='notice'>[M] buckles [M.p_them()]self to the creaking [src]. The [src] protests audibly under the weight as [M]'s ample form settles onto its surface. .</span>",\
+			"<span class='notice'>You buckle yourself to [src].The [src] is cracking and is barely able to hold your weight </span>",\
+			"<span class='italics'>You hear metal clanking.</span>")
+		playsound(loc, 'sound/effects/crossed.ogg', 50, 1)
+	else if(M.fatness >= (breaking_weight / 3))
+		M.visible_message(\
+			"<span class='notice'>[M] buckles [M.p_them()]self to the creaking [src] as their weight spreads all over it.</span>",\
+			"<span class='notice'>You buckle yourself to [src].The [src] is creaking as you shuffle a bit </span>",\
+			"<span class='italics'>You hear metal clanking.</span>")
+		playsound(loc, 'sound/effects/crossed.ogg', 50, 1)
+
 
 /atom/movable/proc/user_unbuckle_mob(mob/living/buckled_mob, mob/user)
 	var/mob/living/M = unbuckle_mob(buckled_mob)

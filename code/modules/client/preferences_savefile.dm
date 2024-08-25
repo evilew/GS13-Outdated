@@ -171,6 +171,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["helplessness_clothing_back"] >> helplessness_clothing_back
 	S["helplessness_no_buckle"] >> helplessness_no_buckle
 	S["stuckage"] >> stuckage
+	S["chair_breakage"] >> chair_breakage
 	S["fatness_vulnerable"] >> fatness_vulnerable 
 	S["extreme_fatness_vulnerable"] >> extreme_fatness_vulnerable
 	S["blueberry_inflation"] >> blueberry_inflation
@@ -327,6 +328,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["helplessness_clothing_back"], helplessness_clothing_back)
 	WRITE_FILE(S["helplessness_no_buckle"], helplessness_no_buckle)
 	WRITE_FILE(S["stuckage"], stuckage)
+	WRITE_FILE(S["chair_breakage"], chair_breakage)
 	WRITE_FILE(S["fatness_vulnerable"], fatness_vulnerable)
 	WRITE_FILE(S["extreme_fatness_vulnerable"], extreme_fatness_vulnerable)
 	WRITE_FILE(S["blueberry_inflation"], blueberry_inflation)

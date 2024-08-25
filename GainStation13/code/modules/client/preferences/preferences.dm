@@ -19,8 +19,10 @@
 	var/blueberry_inflation = FALSE
 	///Extreme weight gain
 	var/weight_gain_extreme = FALSE
-	///stuckage
+	/// At what weight will you start to get stuck in airlocks?
 	var/stuckage = FALSE
+	/// At what weight will you start to break chairs?
+	var/chair_breakage = FALSE
 	/// Are items that only affect those at high weights able to affect the player?
 	var/fatness_vulnerable = FALSE
 	/// Similar to fatness_vulnerable, but with more extreme effects such as transformation/hypno.
