@@ -69,3 +69,15 @@
 	credit_cost = 1500
 	item_to_dispense = /obj/item/storage/box/rndboards
 	initial_stock = 2
+
+/datum/feeders_den_goodie/docility_implant
+	name = "Docility Implant"
+	credit_cost = 100
+	item_to_dispense = /obj/item/implantcase/docile
+	initial_stock = 5
+
+/datum/feeders_den_goodie/docility_implant/livestock
+	name = "Livestock Implant"
+	credit_cost = 250
+	item_to_dispense = /obj/item/implantcase/docile/livestock
+	initial_stock = 5
