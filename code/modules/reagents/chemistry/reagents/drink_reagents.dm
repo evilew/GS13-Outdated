@@ -1002,3 +1002,57 @@
 	glass_desc = "A Summer time drink that can be frozen and eaten or Drinked from a glass!"
 	glass_name = "Orange Creamsicle"
 	hydration = 4
+
+
+//MODERN TG DRINKS
+
+/datum/reagent/consumable/shirley_temple
+	name = "Shirley Temple"
+	description = "Here you go little girl, now you can drink like the adults."
+	color = "#F43724"
+	quality = DRINK_GOOD
+	taste_description = "sweet cherry syrup and ginger spice"
+	glass_icon_state = "shirleytemple"
+	glass_name = "Shirley Temple"
+	glass_desc = "Sweet syrup and ginger spice makes everything nice."
+	hydration = 6
+
+/datum/reagent/consumable/shirley_temple/on_mob_life(mob/living/carbon/affected_mob, seconds_per_tick, times_fired)
+	affected_mob.adjust_disgust(-3 * REM * seconds_per_tick)
+	return ..()
+
+/datum/reagent/consumable/cinderella
+	name = "Cinderella"
+	description = "Most definitely a fruity alcohol cocktail to have while partying with your friends."
+	color = "#FF6A50"
+	quality = DRINK_VERYGOOD
+	taste_description = "sweet tangy fruit"
+	glass_icon_state = "cinderella"
+	glass_name = "Cinderella"
+	glass_desc = "A fruity cocktail to have while partying with your friends."
+	hydration = 9
+
+/datum/reagent/consumable/cinderella/on_mob_life(mob/living/carbon/affected_mob, seconds_per_tick, times_fired)
+	. = ..()
+	affected_mob.adjust_disgust(-5 * REM * seconds_per_tick)
+
+/datum/reagent/consumable/roy_rogers
+	name = "Roy Rogers"
+	description = "A sweet fizzy drink."
+	color = "#53090B"
+	quality = DRINK_GOOD
+	taste_description = "fruity overlysweet cola"
+	glass_icon_state = "royrogers"
+	glass_name = "Roy Rogers"
+	glass_desc = "An extremely sweet, fizzy drink, best served cold."
+	hydration = 4
+
+/datum/reagent/consumable/hakka_mate
+	name = "Hakka-Mate"
+	description = "A Martian-made yerba mate soda, dragged straight out of the pits of a hacking convention."
+	color = "#c4b000"
+	taste_description = "bubbly yerba mate"
+	glass_icon_state = "hakka_mate"
+	glass_name = "glass of hakka-mate"
+	glass_desc = "A drink popular at hacking conventions."
+	hydration = 5
