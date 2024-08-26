@@ -497,7 +497,8 @@
 	upgrade_reagents = list(
 		/datum/reagent/consumable/banana,
 		/datum/reagent/consumable/berryjuice,
-		/datum/reagent/consumable/strawberryjuice
+		/datum/reagent/consumable/strawberryjuice,
+		/datum/reagent/consumable/hakka_mate
 	)
 	upgrade_reagents2 = list(
 		/datum/reagent/consumable/applejuice,
@@ -510,7 +511,9 @@
 		/datum/reagent/consumable/nothing,
 		/datum/reagent/medicine/cryoxadone,
 		/datum/reagent/consumable/peachjuice,
-		/datum/reagent/consumable/vanilla
+		/datum/reagent/consumable/vanilla,
+		/datum/reagent/consumable/shirley_temple
+		
 	)
 	emagged_reagents = list(
 		/datum/reagent/consumable/ethanol/thirteenloko,
@@ -563,11 +566,18 @@
 		/datum/reagent/consumable/ethanol/creme_de_coconut,
 		/datum/reagent/consumable/ethanol/triple_sec,
 		/datum/reagent/consumable/ethanol/sake,
-		/datum/reagent/consumable/ethanol/applejack
+		/datum/reagent/consumable/ethanol/applejack,
+		/datum/reagent/consumable/ethanol/shochu,
+		/datum/reagent/consumable/ethanol/yuyake,
+		/datum/reagent/consumable/ethanol/curacao,
+		/datum/reagent/consumable/ethanol/amaretto,
+		/datum/reagent/consumable/ethanol/bitters
 	)
 	upgrade_reagents = list(
 		/datum/reagent/consumable/ethanol,
-		/datum/reagent/consumable/ethanol/fernet
+		/datum/reagent/consumable/ethanol/fernet,
+		/datum/reagent/consumable/ethanol/coconut_rum,
+		/datum/reagent/consumable/sol_dry
 	)
 	upgrade_reagents2 = null
 	upgrade_reagents3 = null
