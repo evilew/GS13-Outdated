@@ -917,3 +917,88 @@
     id = /datum/reagent/consumable/orange_creamsicle
     results = list(/datum/reagent/consumable/orange_creamsicle = 4)
     required_reagents = list(/datum/reagent/consumable/vanilla = 1, /datum/reagent/consumable/milk = 1, /datum/reagent/consumable/ice = 1, /datum/reagent/consumable/orangejuice = 1)
+
+
+
+//MODERN TG DRINKS
+
+/datum/chemical_reaction/drink/godfather
+	results = list(/datum/reagent/consumable/ethanol/godfather = 2)
+	required_reagents = list(/datum/reagent/consumable/ethanol/amaretto = 1, /datum/reagent/consumable/ethanol/whiskey = 1)
+
+/datum/chemical_reaction/drink/godmother
+	results = list(/datum/reagent/consumable/ethanol/godmother = 2)
+	required_reagents = list(/datum/reagent/consumable/ethanol/amaretto = 1, /datum/reagent/consumable/ethanol/vodka = 1)
+
+/datum/chemical_reaction/drink/amaretto_alexander
+	results = list(/datum/reagent/consumable/ethanol/amaretto_alexander = 3)
+	required_reagents = list(/datum/reagent/consumable/ethanol/amaretto = 1, /datum/reagent/consumable/ethanol/creme_de_cacao = 1, /datum/reagent/consumable/cream = 1)
+
+/datum/chemical_reaction/drink/ginger_amaretto
+	results = list(/datum/reagent/consumable/ethanol/ginger_amaretto = 4)
+	required_reagents = list(/datum/reagent/consumable/ethanol/amaretto = 1, /datum/reagent/consumable/sol_dry = 1, /datum/reagent/consumable/ice = 1, /datum/reagent/consumable/lemonjuice = 1)
+
+/datum/chemical_reaction/drink/yuyakita
+	results = list(/datum/reagent/consumable/ethanol/yuyakita = 4)
+	required_reagents = list(/datum/reagent/consumable/ethanol/tequila = 2, /datum/reagent/consumable/limejuice = 1, /datum/reagent/consumable/ethanol/yuyake = 1)
+
+/datum/chemical_reaction/drink/saibasan
+	results = list(/datum/reagent/consumable/ethanol/saibasan = 10)
+	required_reagents = list(/datum/reagent/consumable/ethanol/shochu = 2, /datum/reagent/consumable/ethanol/yuyake = 2, /datum/reagent/consumable/triple_citrus = 3, /datum/reagent/consumable/cherryjelly = 3)
+
+/datum/chemical_reaction/drink/banzai_ti
+	results = list(/datum/reagent/consumable/ethanol/banzai_ti = 10)
+	required_reagents = list(/datum/reagent/consumable/ethanol/yuyake = 1, /datum/reagent/consumable/ethanol/triple_sec = 1, /datum/reagent/consumable/ethanol/gin = 1, /datum/reagent/consumable/ethanol/rum = 1, /datum/reagent/consumable/ethanol/tequila = 1, /datum/reagent/consumable/ethanol/vodka = 1, /datum/reagent/consumable/triple_citrus = 2, /datum/reagent/consumable/sodawater = 2)
+
+/datum/chemical_reaction/drink/sanraizusoda
+	results = list(/datum/reagent/consumable/ethanol/sanraizusoda = 5)
+	required_reagents = list(/datum/reagent/consumable/ethanol/yuyake = 1, /datum/reagent/consumable/sodawater = 2, /datum/reagent/consumable/ice = 1, /datum/reagent/consumable/cream = 1)
+
+/datum/chemical_reaction/drink/kumicho
+	results = list(/datum/reagent/consumable/ethanol/kumicho = 4)
+	required_reagents = list(/datum/reagent/consumable/ethanol/godfather = 2, /datum/reagent/consumable/ethanol/shochu = 1, /datum/reagent/consumable/ethanol/bitters = 1)
+
+/datum/chemical_reaction/drink/red_planet
+	results = list(/datum/reagent/consumable/ethanol/red_planet = 8)
+	required_reagents = list(/datum/reagent/consumable/ethanol/shochu = 2, /datum/reagent/consumable/ethanol/triple_sec = 2, /datum/reagent/consumable/ethanol/vermouth = 2, /datum/reagent/consumable/grenadine = 1, /datum/reagent/consumable/ethanol/bitters = 1)
+
+/datum/chemical_reaction/drink/amaterasu
+	results = list(/datum/reagent/consumable/ethanol/amaterasu = 10)
+	required_reagents = list(/datum/reagent/consumable/ethanol/shochu = 1, /datum/reagent/consumable/ethanol/vodka = 1, /datum/reagent/consumable/grenadine = 1, /datum/reagent/consumable/berryjuice = 2, /datum/reagent/consumable/sodawater = 5)
+
+/datum/chemical_reaction/drink/nekomimosa
+	results = list(/datum/reagent/consumable/ethanol/nekomimosa = 5)
+	required_reagents = list(/datum/reagent/consumable/ethanol/yuyake = 2, /datum/reagent/consumable/watermelonjuice = 2, /datum/reagent/consumable/ethanol/champagne = 1)
+
+/datum/chemical_reaction/drink/sentai_quencha
+	results = list(/datum/reagent/consumable/ethanol/sentai_quencha = 5)
+	required_reagents = list(/datum/reagent/consumable/ethanol/shochu = 1, /datum/reagent/consumable/ethanol/curacao = 1, /datum/reagent/consumable/triple_citrus = 3)
+
+/datum/chemical_reaction/drink/four_bit
+	results = list(/datum/reagent/consumable/ethanol/four_bit = 5)
+	required_reagents = list(/datum/reagent/consumable/ethanol/rum = 2, /datum/reagent/consumable/hakka_mate = 2, /datum/reagent/consumable/limejuice = 1)
+
+/datum/chemical_reaction/drink/konococo_rumtini
+	results = list(/datum/reagent/consumable/ethanol/konococo_rumtini = 10)
+	required_reagents = list(/datum/reagent/consumable/ethanol/coconut_rum = 2, /datum/reagent/consumable/ethanol/kahlua = 3, /datum/reagent/consumable/coffee = 3, /datum/reagent/consumable/sugar = 2)
+
+/datum/chemical_reaction/drink/blue_hawaiian
+	results = list(/datum/reagent/consumable/ethanol/blue_hawaiian = 5)
+	required_reagents = list(/datum/reagent/consumable/ethanol/coconut_rum = 2, /datum/reagent/consumable/pineapplejuice = 1, /datum/reagent/consumable/lemonjuice = 1, /datum/reagent/consumable/ethanol/curacao = 1)
+
+/datum/chemical_reaction/drink/moscow_mule
+	results = list(/datum/reagent/consumable/ethanol/moscow_mule = 10)
+	required_reagents = list(/datum/reagent/consumable/sol_dry = 5, /datum/reagent/consumable/ethanol/vodka = 5, /datum/reagent/consumable/limejuice = 1, /datum/reagent/consumable/ice = 1)
+	mix_sound = 'sound/effects/bubbles2.ogg'
+
+/datum/chemical_reaction/drink/roy_rogers
+	results = list(/datum/reagent/consumable/roy_rogers = 3)
+	required_reagents = list(/datum/reagent/consumable/space_cola = 2, /datum/reagent/consumable/grenadine = 1)
+
+/datum/chemical_reaction/drink/shirley_temple
+	results = list(/datum/reagent/consumable/shirley_temple = 3)
+	required_reagents = list(/datum/reagent/consumable/sol_dry = 2, /datum/reagent/consumable/grenadine = 1)
+
+/datum/chemical_reaction/drink/cinderella
+	results = list(/datum/reagent/consumable/cinderella = 50)
+	required_reagents = list(/datum/reagent/consumable/pineapplejuice = 10, /datum/reagent/consumable/orangejuice = 10, /datum/reagent/consumable/lemonjuice = 5, /datum/reagent/consumable/ice = 5, /datum/reagent/consumable/sol_dry = 20, /datum/reagent/consumable/ethanol/bitters = 2)

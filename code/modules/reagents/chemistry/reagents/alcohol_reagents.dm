@@ -2438,4 +2438,280 @@ datum/reagent/consumable/ethanol/creme_de_coconut
 // 	taste_description = "viscous cream"
 // 	glass_desc = "The name is probably exactly what it is."
 
+//MODERN TG DRINKS
+
+/datum/reagent/consumable/ethanol/amaretto_alexander
+	name = "Amaretto Alexander"
+	description = "A weaker version of the Alexander, what it lacks in strength it makes up for in flavor."
+	color = "#DBD5AE"
+	boozepwr = 35
+	quality = DRINK_VERYGOOD
+	taste_description = "sweet, creamy cacao"
+	glass_icon_state = "alexanderam"
+	glass_name = "Amaretto Alexander"
+	glass_desc = "A weaker version of the Alexander, what it lacks in strength it makes up for in flavor."
+
+/datum/reagent/consumable/ethanol/ginger_amaretto
+	name = "Ginger Amaretto"
+	description = "A delightfully simple cocktail that pleases the senses."
+	boozepwr = 30
+	color = "#EFB42A"
+	quality = DRINK_GOOD
+	taste_description = "sweetness followed by a soft sourness and warmth"
+	glass_icon_state = "gingeramaretto"
+	glass_name = "Ginger Amaretto"
+	glass_desc = "A delightfully simple cocktail that pleases the senses."
+
+/datum/reagent/consumable/ethanol/godfather
+	name = "Godfather"
+	description = "A rough cocktail with illegal connections."
+	boozepwr = 50
+	color = "#E68F00"
+	quality = DRINK_GOOD
+	taste_description = "a delightful softened punch"
+	glass_icon_state = "godfather"
+	glass_name = "Godfather"
+	glass_desc = "A rough cocktail with illegal connections."
+
+/datum/reagent/consumable/ethanol/godmother
+	name = "Godmother"
+	description = "A twist on a classic, liked more by mature women."
+	boozepwr = 50
+	color = "#E68F00"
+	quality = DRINK_GOOD
+	taste_description = "sweetness and a zesty twist"
+	glass_icon_state = "godmother"
+	glass_name = "Godmother"
+	glass_desc = "A twist on a classic, liked more by mature women."
+
+/datum/reagent/consumable/ethanol/moscow_mule
+	name = "Moscow Mule"
+	description = "A chilly drink that reminds you of the Derelict."
+	color = "#EEF1AA"
+	boozepwr = 30
+	quality = DRINK_GOOD
+	taste_description = "refreshing spiciness"
+	glass_icon_state = "moscow_mule"
+	glass_name = "Moscow Mule"
+	glass_desc = "A chilly drink that reminds you of the Derelict."
+
+	/datum/reagent/consumable/ethanol/yuyakita
+	name = "Yūyakita"
+	description = "A hell unleashed upon the world by an unnamed patron."
+	boozepwr = 40
+	color = "#F54040"
+	quality = DRINK_NICE
+	taste_description = "death"
+	glass_icon_state = "yuyakita"
+	glass_name = "Yuyakita"
+	glass_desc = "A hell unleashed upon the world by an unnamed patron."
+
+/datum/reagent/consumable/ethanol/saibasan
+	name = "Saibāsan"
+	description = "A drink glorifying Cybersun's enduring business."
+	boozepwr = 20
+	color = "#F54040"
+	quality = DRINK_FANTASTIC
+	taste_description = "betrayal"
+	glass_icon_state = "saibasan"
+	glass_name = "Saibāsan"
+	glass_desc = "A drink glorifying Cybersun Industries enduring business. Bad idea to drink this in front of Security."
+
+/datum/reagent/consumable/ethanol/banzai_ti
+	name = "Banzai-Tī"
+	description = "A variation on the Long Island Iced Tea, made with yuyake for an alternative flavour that's hard to place."
+	boozepwr = 40
+	color = "#F54040"
+	quality = DRINK_VERYGOOD
+	taste_description = "an asian twist on the liquor cabinet"
+	glass_icon_state = "banzai_ti"
+	glass_name = "Banzai-Ti"
+	glass_desc = "A variation of Long Island Iced Tea, made with yuyake."
+
+/datum/reagent/consumable/ethanol/sanraizusoda
+	name = "Sanraizusōda"
+	description = "It's a citrus cream soda, except with alcohol- what's not to love? Well... possibly the hangovers."
+	boozepwr = 6
+	color = "#F54040"
+	quality = DRINK_GOOD
+	taste_description = "creamy citrus soda"
+	glass_icon_state = "sanraizusoda"
+	glass_name = "Saibāsan"
+	glass_desc = "It's a citrus cream soda, except with alcohol."
+
+/datum/reagent/consumable/ethanol/kumicho
+	name = "Kumichō"
+	description = "A new take on a classic cocktail, the Kumicho takes the Godfather formula and adds shochu for an Asian twist."
+	boozepwr = 62
+	color = "#F54040"
+	quality = DRINK_VERYGOOD
+	taste_description = "rice and rye"
+	glass_icon_state = "kumicho"
+	glass_name = "Kumicho"
+	glass_desc = "A new take on a classic cocktail, the Kumicho takes after the Godfather."
+
+/datum/reagent/consumable/ethanol/red_planet
+	name = "Red Planet"
+	description = "Made in celebration of the Martian Concession, the Red Planet is based on the classic El Presidente, and is as patriotic as it is bright crimson."
+	boozepwr = 45
+	color = "#F54040"
+	quality = DRINK_VERYGOOD
+	taste_description = "the spirit of freedom"
+	glass_icon_state = "red_planet"
+	glass_name = "Red Planet"
+	glass_desc = "Made in celebration of the Martian Concession, a bright crimson to match the surface of Earths sister planet."
+
+/datum/reagent/consumable/ethanol/amaterasu
+	name = "Amaterasu"
+	description = "Named for Amaterasu, the Shinto Goddess of the Sun, this cocktail embodies radiance- or something like that, anyway."
+	boozepwr = 54 //1 part bitters is a lot
+	color = "#F54040"
+	quality = DRINK_VERYGOOD
+	taste_description = "sweet nectar of the gods"
+	glass_icon_state = "amaterasu"
+	glass_name = "Amaterasu"
+	glass_desc = "Named after Amaterasu, the Shinto Goddess of the Sun, this cocktail embodies radiance."
+
+/datum/reagent/consumable/ethanol/nekomimosa
+	name = "Nekomimosa"
+	description = "An overly sweet cocktail, made with melon liqueur, melon juice, and champagne (which contains no melon, unfortunately)."
+	boozepwr = 17
+	color = "#FF0C8D"
+	quality = DRINK_GOOD
+	taste_description = "MELON"
+	glass_icon_state = "nekomimosa"
+	glass_name = "Nekomimosa"
+	glass_desc = "An overly sweet cocktail, with a face drawn on the glass"
+
+/datum/reagent/consumable/ethanol/sentai_quencha //melon soda, triple citrus, shochu, blue curacao
+	name = "Sentai Quencha"
+	description = "Based on the galaxy-famous \"Kyūkyoku no Ninja Pawā Sentai\", the Sentai Quencha is a favourite at anime conventions and weeb bars."
+	boozepwr = 28
+	color = "#F54040"
+	quality = DRINK_GOOD
+	taste_description = "ultimate ninja power"
+	glass_icon_state = "sentai_quencha"
+	glass_name = "Sentai Quencha"
+	glass_desc = "A ninja's favorite energy drink."
+
+/datum/reagent/consumable/ethanol/maui_sunrise //coconut rum, pineapple juice, yuyake, triple citrus, lemon-lime soda
+	name = "Maui Sunrise"
+	description = "Behind this drink's red facade lurks a sharp, complex flavour."
+	boozepwr = 15
+	color = "#F54040"
+	quality = DRINK_VERYGOOD
+	taste_description = "sunrise over the pacific"
+	glass_icon_state = "maui_sunrise"
+	glass_name = "Maui Sunrise"
+	glass_desc = "Behind the drinks red facade lurks a sharp, complex flavour."
+
+/datum/reagent/consumable/ethanol/four_bit
+	name = "Four Bit"
+	description = "A drink to power your typing hands."
+	boozepwr = 26
+	color = "#F54040"
+	quality = DRINK_GOOD
+	taste_description = "cyberspace"
+	glass_icon_state = "four_bit"
+	glass_name = "Four Bit"
+	glass_desc = "A drink to power your typing hands."
+
+/datum/reagent/consumable/ethanol/konococo_rumtini //todo: add espresso | coffee, coffee liqueur, coconut rum, sugar
+	name = "Konococo Rumtini"
+	description = "Coconut rum, coffee liqueur, and espresso- an odd combination, to be sure, but a welcomed one."
+	boozepwr = 20
+	color = "#F54040"
+	quality = DRINK_VERYGOOD
+	taste_description = "coconut coffee"
+	glass_icon_state = "konococo_rumtini"
+	glass_name = "Konococ Rumtini"
+	glass_desc = "Coconut rum, coffee liqueur, and espresso. An odd combination to be sure."
+
+/datum/reagent/consumable/ethanol/blue_hawaiian //pineapple juice, lemon juice, coconut rum, blue curacao
+	name = "Blue Hawaiian"
+	description = "Sweet, sharp and coconutty."
+	boozepwr = 30
+	color = "#F54040"
+	quality = DRINK_VERYGOOD
+	taste_description = "the aloha state"
+	glass_icon_state = "blue_hawaiian"
+	glass_name = "Blue Hawaiian"
+	glass_desc = "Sweet, sharp and coconutty."
+
+/datum/reagent/consumable/ethanol/shochu
+	name = "Shochu"
+	description = "Also known as soju or baijiu, this drink is made from fermented rice, much like sake, but at a generally higher proof making it more similar to a true spirit."
+	boozepwr = 45
+	color = "#DDDDDD"
+	quality = DRINK_NICE
+	taste_description = "stiff rice wine"
+	glass_icon_state = "shochu_bottle"
+	glass_name = "bottle of Shochu"
+	glass_desc = "Also known as Soju or Baijiu. This drink is made from fermented rice."
+
+/datum/reagent/consumable/ethanol/yuyake
+	name = "Yūyake"
+	description = "A sweet melon liqueur from Japan. Considered a relic of the 1980s by most, it has some niche use in cocktail making, in part due to its bright red colour."
+	boozepwr = 40
+	color = "#F54040"
+	quality = DRINK_NICE
+	taste_description = "sweet melon"
+	glass_icon_state = "yuyake_bottle"
+	glass_name = "bottle of yuyake"
+	glass_desc = "A sweet melon liqueur from Earth, considered a relic from the year 1980."
+
+/datum/reagent/consumable/ethanol/curacao
+	name = "Curaçao"
+	description = "Made with laraha oranges, for an aromatic finish."
+	boozepwr = 30
+	color = "#1a5fa1"
+	quality = DRINK_NICE
+	taste_description = "blue orange"
+	glass_icon_state = "curacao_bottle"
+	glass_name = "bottle of Curacao"
+	glass_desc = "Made with laraha oranges, for an aromantic finish."
+
+/datum/reagent/consumable/ethanol/amaretto
+	name = "Amaretto"
+	description = "A gentle drink that carries a sweet aroma."
+	color = "#E17600"
+	boozepwr = 25
+	taste_description = "fruity and nutty sweetness"
+	glass_icon_state = "amarettoglass"
+	glass_name = "glass of amaretto"
+	glass_desc = "A gentle drink that carries a sweet aroma."
+
+/datum/reagent/consumable/ethanol/bitters //why do they call them bitters, anyway? they're more spicy than anything else
+	name = "Andromeda Bitters"
+	description = "A bartender's best friend, often used to lend a delicate spiciness to any drink. Produced in New Trinidad, now and forever."
+	boozepwr = 70
+	color = "#1c0000"
+	quality = DRINK_NICE
+	taste_description = "spiced alcohol"
+	glass_icon_state = "bitters"
+	glass_name = "glass of bitters"
+	glass_desc = "A spicy, heavy alcohol, typically used to enhance flavour."
+
+
+/datum/reagent/consumable/ethanol/coconut_rum
+	name = "Coconut Rum"
+	description = "The distilled essence of the beach. Tastes like bleach-blonde hair and suncream."
+	boozepwr = 21
+	color = "#F54040"
+	quality = DRINK_NICE
+	taste_description = "coconut rum"
+	glass_icon_state = "coconut_rum_bottle"
+	glass_name = "bottle of coconut rum"
+	glass_desc = "The distilled essence of the beach."
+
+
+/datum/reagent/consumable/sol_dry
+	name = "Sol Dry"
+	description = "A soothing, mellow drink made from ginger."
+	color = "#f7d26a"
+	quality = DRINK_NICE
+	taste_description = "sweet ginger spice"
+	glass_icon_state = "soldry"
+	glass_name = "glass of sol dry"
+	glass_desc = "A soothing, mellow drink made from ginger."
 
