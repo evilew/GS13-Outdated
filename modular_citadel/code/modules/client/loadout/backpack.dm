@@ -275,3 +275,45 @@
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/bluespace_belt
 	cost = 5
+
+/datum/gear/pride_pin
+	name = "Pride Pin"
+	category = SLOT_IN_BACKPACK
+	path = /obj/item/clothing/accessory/pride_pin
+	cost = 0 // fully automated luxury gay space communism
+
+
+/datum/gear/pride_pin/bi
+    name = "Bisexual Pride Pin"
+    path = /obj/item/clothing/accessory/pride_pin/bi
+        
+
+/datum/gear/pride_pin/trans
+    name = "Transgender Pride Pin"
+    path = /obj/item/clothing/accessory/pride_pin/trans
+        
+
+/datum/gear/pride_pin/ace
+    name = "Asexual Pride Pin"
+    path = /obj/item/clothing/accessory/pride_pin/ace
+        
+
+/datum/gear/pride_pin/enby
+    name = "Non-Binary Pride Pin"
+    path = /obj/item/clothing/accessory/pride_pin/enby
+        
+
+/datum/gear/pride_pin/pan
+    name = "Pansexual Pride Pin"
+    path = /obj/item/clothing/accessory/pride_pin/pan
+        
+
+/datum/gear/pride_pin/lesbian
+    name = "Lesbian Pride Pin"
+    path = /obj/item/clothing/accessory/pride_pin/lesbian
+        
+
+/datum/gear/pride_pin/intersex
+    name = "Intersex Pride Pin"
+    path = /obj/item/clothing/accessory/pride_pin/intersex
+        
