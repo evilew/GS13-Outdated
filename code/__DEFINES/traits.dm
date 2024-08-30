@@ -206,6 +206,7 @@
 #define TRAIT_WEB_WEAVER		"web_weaving"
 #define TRAIT_METAL_CRUNCHER 	"metal_cruncher"
 #define TRAIT_WATER_SPONGE 		"water_sponge"
+#define TRAIT_FATROUSAL         "fatrousal"
 
 //Hyper
 #define TRAIT_MACROPHILE		"macrophile" //likes the big
