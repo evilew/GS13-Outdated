@@ -2495,7 +2495,7 @@ datum/reagent/consumable/ethanol/creme_de_coconut
 	glass_name = "Moscow Mule"
 	glass_desc = "A chilly drink that reminds you of the Derelict."
 
-	/datum/reagent/consumable/ethanol/yuyakita
+/datum/reagent/consumable/ethanol/yuyakita
 	name = "Yūyakita"
 	description = "A hell unleashed upon the world by an unnamed patron."
 	boozepwr = 40
@@ -2536,7 +2536,7 @@ datum/reagent/consumable/ethanol/creme_de_coconut
 	quality = DRINK_GOOD
 	taste_description = "creamy citrus soda"
 	glass_icon_state = "sanraizusoda"
-	glass_name = "Saibāsan"
+	glass_name = "Senraizu Soda"
 	glass_desc = "It's a citrus cream soda, except with alcohol."
 
 /datum/reagent/consumable/ethanol/kumicho
@@ -2712,6 +2712,6 @@ datum/reagent/consumable/ethanol/creme_de_coconut
 	quality = DRINK_NICE
 	taste_description = "sweet ginger spice"
 	glass_icon_state = "soldry"
-	glass_name = "glass of sol dry"
-	glass_desc = "A soothing, mellow drink made from ginger."
+	glass_name = "glass of sol"
+	glass_desc = "A delightfully simple cocktail that pleases the senses."
 
