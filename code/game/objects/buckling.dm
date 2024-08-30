@@ -117,7 +117,7 @@
 		return
 
 	var/breaking_weight = M?.client?.prefs?.chair_breakage
-	if(!breaking_weight || (M != user) || ((breaking_weight / 3) > M.fatness))
+	if(isnull(breaking_weight) || (breaking_weight < 10) || (M != user) || ((breaking_weight / 3) > M.fatness))
 		M.visible_message(\
 			"<span class='warning'>[user] buckles [M] to [src]!</span>",\
 			"<span class='warning'>[user] buckles you to [src]!</span>",\
