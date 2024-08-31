@@ -43,6 +43,8 @@
 		//citadel code
 		if(AROUSAL)
 			adjustArousalLoss(damage * hit_percent)
+		if(FAT)
+			applyFatnessDamage(damage * hit_percent)
 	return TRUE
 
 
@@ -118,6 +120,12 @@
 	if(!diff)
 		return
 	adjustStaminaLoss(diff, updating, forced)
+
+
+/mob/living/carbon/applyFatnessDamage(amount)
+	var/fat_to_add = ((amount * CONFIG_GET(number/damage_multiplier)) * FAT_DAMAGE_TO_FATNESS)
+	adjust_fatness(fat_to_add, FATTENING_TYPE_WEAPON)
+	return fat_to_add
 
 
 /** adjustOrganLoss
