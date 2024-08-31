@@ -13,7 +13,7 @@
 		return ..()
 
 	var/stuckage_weight = L?.client?.prefs?.stuckage
-	if(!stuckage_weight)
+	if(isnull(stuckage_weight) || (stuckage_weight < 10))
 		return ..() // They aren't able to get stuck
 	
 	if(L.fatness > (stuckage_weight * 2))
