@@ -5,5 +5,11 @@
 
 	"workbench.editorAssociations": {
 		"*.dmi": "imagePreview.previewEditor"
+	},
+	"files.exclude": {
+		"**/*.rpyc": true,
+		"**/*.rpa": true,
+		"**/*.rpymc": true,
+		"**/cache/": true
 	}
 }

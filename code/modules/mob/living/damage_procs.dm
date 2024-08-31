@@ -43,6 +43,8 @@
 			return adjustCloneLoss(damage)
 		if(STAMINA)
 			return adjustStaminaLoss(damage)
+		if(FAT)
+			return applyFatnessDamage(damage)
 
 /mob/living/proc/get_damage_amount(damagetype = BRUTE)
 	switch(damagetype)
@@ -60,7 +62,7 @@
 			return getStaminaLoss()
 
 
-/mob/living/proc/apply_damages(brute = 0, burn = 0, tox = 0, oxy = 0, clone = 0, def_zone = null, blocked = FALSE, stamina = 0, brain = 0)
+/mob/living/proc/apply_damages(brute = 0, burn = 0, tox = 0, oxy = 0, clone = 0, def_zone = null, blocked = FALSE, stamina = 0, brain = 0, fatness = 0)
 	if(blocked >= 100)
 		return 0
 	if(brute)
@@ -77,6 +79,8 @@
 		apply_damage(stamina, STAMINA, def_zone, blocked)
 	if(brain)
 		apply_damage(brain, BRAIN, def_zone, blocked)
+	if(fatness)
+		apply_damage(fatness, FAT, def_zone, blocked)
 	return 1
 
 

@@ -43,6 +43,8 @@
 		//citadel code
 		if(AROUSAL)
 			adjustArousalLoss(damage * hit_percent)
+		if(FAT)
+			applyFatnessDamage(damage * hit_percent)
 	return TRUE
 
 
@@ -121,10 +123,9 @@
 
 
 /mob/living/carbon/applyFatnessDamage(amount)
-	if(!check_weight_prefs(FATTENING_TYPE_WEAPON)) //Typically, this kind of damage would be applied to people through weapons.
-		return FALSE
-
-	adjust_fatness((amount * FAT_DAMAGE_TO_FATNESS), FATTENING_TYPE_WEAPON)
+	var/fat_to_add = ((amount * CONFIG_GET(number/damage_multiplier)) * FAT_DAMAGE_TO_FATNESS)
+	adjust_fatness(fat_to_add, FATTENING_TYPE_WEAPON)
+	return fat_to_add
 
 
 /** adjustOrganLoss
