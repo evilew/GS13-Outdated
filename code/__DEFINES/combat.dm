@@ -10,6 +10,10 @@
 #define CLONE		"clone"
 #define STAMINA 	"stamina"
 #define BRAIN		"brain"
+// GS13 EDIT
+#define FAT 		"fat"
+/// What is the rate that one damage is converted to fatness?
+#define FAT_DAMAGE_TO_FATNESS 4
 
 //bitflag damage defines used for suicide_act
 #define BRUTELOSS 		(1<<0)

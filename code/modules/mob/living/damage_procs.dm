@@ -25,6 +25,8 @@
 			adjustCloneLoss(damage * hit_percent)
 		if(STAMINA)
 			adjustStaminaLoss(damage * hit_percent)
+		if(FAT)
+			applyFatnessDamage(damage * hit_percent)
 	return 1
 
 /mob/living/proc/apply_damage_type(damage = 0, damagetype = BRUTE) //like apply damage except it always uses the damage procs
@@ -228,6 +230,10 @@
 	return
 
 /mob/living/proc/setStaminaLoss(amount, updating_stamina = TRUE, forced = FALSE)
+	return
+
+/// Apply fatness damage from weapons or items that have the fatness damage type.
+/mob/living/proc/applyFatnessDamage(amount)
 	return
 
 // heal ONE external organ, organ gets randomly selected from damaged ones.
