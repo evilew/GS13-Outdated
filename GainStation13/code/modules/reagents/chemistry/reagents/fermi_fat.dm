@@ -162,7 +162,7 @@
 	required_temp = 1
 	OptimalTempMin 		= 600		// Lower area of bell curve for determining heat based rate reactions
 	OptimalTempMax 		= 650		// Upper end for above
-	ExplodeTemp 		= 800 		// Temperature at which reaction explodes
+	ExplodeTemp 		= 700 		// Temperature at which reaction explodes
 	OptimalpHMin 		= 10		// Lowest value of pH determining pH a 1 value for pH based rate reactions (Plateu phase)
 	OptimalpHMax 		= 11.5		// Higest value for above
 	ReactpHLim 			= 1 		// How far out pH wil react, giving impurity place (Exponential phase)
