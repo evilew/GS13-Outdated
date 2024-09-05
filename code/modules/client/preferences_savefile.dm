@@ -392,6 +392,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["age"]				>> age
 	S["body_size"]			>> body_size
 	S["starting_weight"]	>> starting_weight
+	S["permanent_fat"]		>> permanent_fat
 	S["wg_rate"]			>> wg_rate
 	S["wl_rate"]			>> wl_rate
 	S["hair_color"]			>> hair_color

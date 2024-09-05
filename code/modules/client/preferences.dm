@@ -105,6 +105,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	//GS13
 	var/starting_weight = 0				//how thicc you wanna be at start
+	var/permanent_fat = 0				//If it isn't the consequences of your own actions
 	var/wg_rate = 0.5
 	var/wl_rate = 0.5
 	var/voice = "human"
@@ -2997,6 +2998,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	//GS13
 	character.fatness = starting_weight
 	character.fatness_real = starting_weight
+	character.fatness_perma = permanent_fat
 	character.weight_gain_rate = wg_rate
 	character.weight_loss_rate = wl_rate
 
