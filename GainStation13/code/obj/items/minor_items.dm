@@ -67,6 +67,11 @@
 	uses = 1
 	starting_organ = /obj/item/organ/cyberimp/chest/nutriment/turbo
 
+/obj/item/autosurgeon/fat_mobility
+	desc = "A single use autosurgeon that contains a mobility nanite core. A screwdriver can be used to remove it, but implants can't be placed back in."
+	uses = 1
+	starting_organ = /obj/item/organ/cyberimp/chest/mobility
+
 //fast food restaurant - closed / open signs
 /obj/item/holosign_creator/restaurant
 	name = "Holosign Projector - Restaurant Adverts"

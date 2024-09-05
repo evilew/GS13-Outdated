@@ -25,8 +25,9 @@ GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/bridge, /area/crew_quarters, 
 *
 * * adjustment_amount - adjusts how much weight is gained or loss. Positive numbers add weight. 
 * * type_of_fattening - what type of fattening is being used. Look at the traits in fatness.dm for valid options.
+* * ignore_rate - do we want to ignore the mob's weight gain/loss rate? This is only here for niche uses.
 */
-/mob/living/carbon/proc/adjust_fatness(adjustment_amount, type_of_fattening = FATTENING_TYPE_ITEM)
+/mob/living/carbon/proc/adjust_fatness(adjustment_amount, type_of_fattening = FATTENING_TYPE_ITEM, ignore_rate = FALSE)
 	if(!adjustment_amount || !type_of_fattening)
 		return FALSE
 
@@ -35,10 +36,11 @@ GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/bridge, /area/crew_quarters, 
 			return FALSE
 
 	var/amount_to_change = adjustment_amount
-	if(adjustment_amount > 0)
-		amount_to_change = amount_to_change * weight_gain_rate	
-	else
-		amount_to_change = amount_to_change * weight_loss_rate
+	if(!ignore_rate)
+		if(adjustment_amount > 0)
+			amount_to_change = amount_to_change * weight_gain_rate	
+		else
+			amount_to_change = amount_to_change * weight_loss_rate
 
 	fatness_real += amount_to_change 
 	fatness_real = max(fatness_real, MINIMUM_FATNESS_LEVEL) //It would be a little silly if someone got negative fat.
@@ -204,3 +206,34 @@ GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/bridge, /area/crew_quarters, 
 		return "Immobile"
 
 	return "Blob"
+
+/// Finds what the next fatness level for the parent mob would be based off of fatness_real.
+/mob/living/carbon/proc/get_next_fatness_level()
+	if(fatness_real < FATNESS_LEVEL_FAT)
+		return FATNESS_LEVEL_FAT 
+	if(fatness_real < FATNESS_LEVEL_FATTER)
+		return FATNESS_LEVEL_FATTER
+	if(fatness_real < FATNESS_LEVEL_VERYFAT)
+		return FATNESS_LEVEL_VERYFAT
+	if(fatness_real < FATNESS_LEVEL_OBESE)
+		return FATNESS_LEVEL_OBESE
+	if(fatness_real < FATNESS_LEVEL_MORBIDLY_OBESE)
+		return FATNESS_LEVEL_MORBIDLY_OBESE
+	if(fatness_real < FATNESS_LEVEL_EXTREMELY_OBESE)
+		return FATNESS_LEVEL_EXTREMELY_OBESE
+	if(fatness_real < FATNESS_LEVEL_BARELYMOBILE)
+		return FATNESS_LEVEL_BARELYMOBILE
+	if(fatness_real < FATNESS_LEVEL_IMMOBILE)
+		return FATNESS_LEVEL_IMMOBILE
+	if(fatness_real < FATNESS_LEVEL_BLOB)
+		return FATNESS_LEVEL_BLOB
+
+	return FATNESS_LEVEL_BLOB 
+
+/// How much real fatness does the current mob have to gain until they reach the next level? Return FALSE if they are maxed out.
+/mob/living/carbon/proc/fatness_until_next_level()
+	var/needed_fatness = get_next_fatness_level() - fatness_real
+	needed_fatness = max(needed_fatness, 0)
+
+	return needed_fatness
+
