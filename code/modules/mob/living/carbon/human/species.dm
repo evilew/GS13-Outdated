@@ -1893,7 +1893,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 		// Hyperstation 13: Mood now influences action speed.
 
-		if(H.fatness) // GS13
+		if(H.fatness && !HAS_TRAIT(H, TRAIT_NO_FAT_SLOWDOWN)) // GS13
 			var/fatness_delay = (H.fatness / FATNESS_DIVISOR)
 			if(H.fatness < FATNESS_LEVEL_BARELYMOBILE)
 				fatness_delay = fatness_delay - flight

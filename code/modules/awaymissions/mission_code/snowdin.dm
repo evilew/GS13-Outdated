@@ -128,14 +128,41 @@
 	dynamic_lighting = DYNAMIC_LIGHTING_ENABLED
 	requires_power = TRUE
 
+/area/awaymission/snowdin/comms
+	name = "Radio Tower"
+	icon_state = "awaycontent16"
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	requires_power = TRUE
+
+/area/awaymission/snowdin/cabin
+	name = "Strange cabin"
+	icon_state = "awaycontent18"
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	requires_power = FALSE
+
+/area/awaymission/snowdin/cargo
+	name = "Exploration Base"
+	icon_state = "awaycontent16"
+	dynamic_lighting = DYNAMIC_LIGHTING_ENABLED
+	requires_power = TRUE
+
+/area/awaymission/snowdin/transit
+	name = "Transit Shuttle Docks"
+	icon_state = "awaycontent16"
+	dynamic_lighting = DYNAMIC_LIGHTING_ENABLED
+	requires_power = FALSE
+
 /area/shuttle/snowdin/elevator1
 	name = "Excavation Elevator"
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 
 /area/shuttle/snowdin/elevator2
 	name = "Mining Elevator"
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 
 /area/shuttle/snowdin/transit
 	name = "Snowdin Outpost - Transit Shuttle"
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 
 //shuttle console for elevators//
 
@@ -155,7 +182,7 @@
 	icon_keyboard = "tech_key"
 	light_color = LIGHT_COLOR_CYAN
 	shuttleId = "snowdintransit"
-	possible_destinations = "snowdintransit_a;snowdintransit_b"
+	possible_destinations = "snowdintransit_a;snowdintransit_b;snowdintransit_c"
 
 //liquid plasma!!!!!!//
 
@@ -514,10 +541,8 @@
 	name = "dungeon heavy"
 	loot = list(/obj/item/twohanded/singularityhammer = 1,
 				/obj/item/twohanded/dualsaber/hypereutactic = 1,
-				/obj/item/organ/brain/alien = 1,
 				/obj/item/gun/ballistic/automatic/c20r/unrestricted = 1,
 				/obj/item/book/granter/spell/charge = 1,
-				/obj/item/book/granter/martial/cqc = 1,
 				/obj/item/book/granter/spell/fattening/steal = 1,
 				/obj/item/dnainjector/lasereyesmut = 1,
 				/obj/item/book/granter/spell/fattening/transfer = 1)
@@ -527,11 +552,12 @@
 	lootdoubles = 2
 	lootcount = 1
 
-	loot = list(/obj/item/stack/sheet/mineral/snow{amount = 25} = 10,
-				/obj/item/toy/snowball = 15,
-				/obj/item/shovel = 10,
+	loot = list(/obj/item/stack/sheet/mineral/snow{amount = 25} = 1,
+				/obj/item/toy/snowball = 5,
+				/obj/item/shovel = 4,
 				/obj/item/twohanded/spear = 8,
-				)
+				/obj/item/stack/ore/iron{amount = 50} = 10,
+				/obj/item/stack/ore/glass{amount = 50} = 10)
 
 //special items//--
 
