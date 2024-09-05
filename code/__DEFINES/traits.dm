@@ -230,6 +230,7 @@
 #define TRAIT_NO_BUCKLE "no_buckle"
 #define TRAIT_DOCILE "docile"
 #define TRAIT_LIVESTOCK "livestock"
+#define TRAIT_NO_FAT_SLOWDOWN "no_fat_slowdown"
 
 // common trait sources
 #define TRAIT_GENERIC "generic"

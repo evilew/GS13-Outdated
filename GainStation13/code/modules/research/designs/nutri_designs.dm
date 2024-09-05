@@ -68,6 +68,17 @@
 	category = list("Misc", "Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
 
+/datum/design/cyberimp_fat_mobility
+	name = "Mobility Nanite Core"
+	desc = "This implant contains nanites that reinforce leg muscles, allowing for unimpeded movement at extreme weights."
+	id = "ci-fatmobility"
+	build_type = PROTOLATHE | MECHFAB
+	construction_time = 100
+	materials = list(MAT_METAL = 800, MAT_GLASS = 800, MAT_GOLD = 750, MAT_URANIUM = 1000)
+	build_path = /obj/item/organ/cyberimp/chest/mobility
+	category = list("Misc", "Medical Designs")
+	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL | DEPARTMENTAL_FLAG_SCIENCE
+
 /datum/design/bluespace_belt
 	name = "Bluespace Belt"
 	desc = "A belt made using bluespace technology. The power of space and time, used to hide the fact you are fat."

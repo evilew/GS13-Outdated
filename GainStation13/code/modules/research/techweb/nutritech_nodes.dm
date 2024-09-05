@@ -5,7 +5,7 @@
 	display_name = "Nutri-Tech Tools"
 	description = "Ending world hunger was never made easier!"
 	prereq_ids = list("biotech", "adv_engi")
-	design_ids = list("calorite_collar", "ci-nutrimentturbo", "bluespace_belt", "adipoelectric_transformer", "cookie_synthesizer", "borg_upgrade_cookiesynthesizer", "borg_upgrade_feedingtube")
+	design_ids = list("calorite_collar", "ci-nutrimentturbo", "bluespace_belt", "adipoelectric_transformer", "cookie_synthesizer", "borg_upgrade_cookiesynthesizer", "borg_upgrade_feedingtube", "ci-fatmobility")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	boost_item_paths = list(/obj/item/gun/energy/fatoray, /obj/item/gun/energy/fatoray/cannon, /obj/item/trash/fatoray_scrap1, /obj/item/trash/fatoray_scrap2)
 	export_price = 5000

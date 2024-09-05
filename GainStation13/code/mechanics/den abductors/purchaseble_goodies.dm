@@ -23,6 +23,11 @@
 	credit_cost = 150
 	item_to_dispense = /obj/item/autosurgeon/nutripump_turbo
 
+/datum/feeders_den_goodie/nutripump_turbo
+	name = "Mobility Nanite Core Autosurgeon"
+	credit_cost = 400
+	item_to_dispense = /obj/item/autosurgeon/fat_mobility
+
 /datum/feeders_den_goodie/fatbeam_gun
 	name = "Fatbeam gun"
 	credit_cost = 400
