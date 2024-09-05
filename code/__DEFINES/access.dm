@@ -95,8 +95,9 @@
 #define ACCESS_AWAY_ENGINE 204//Away engineering
 #define ACCESS_AWAY_ALL 205 //Away All Access
 #define ACCESS_AWAY_BOTANY 206 //Away Botany Access
-#define ACCESS_AWAY_GENERIC3 207
-#define ACCESS_AWAY_GENERIC4 208
+#define ACCESS_AWAY_SCIENCE 207 //Away Science Access
+#define ACCESS_AWAY_GENERIC3 208 //Had to leave this one because for some reason it's getting used
+#define ACCESS_AWAY_EXPLORE 209 //Away Explorer Access
 
 	//Special, for anything that's basically internal
 #define ACCESS_BLOODCULT 250

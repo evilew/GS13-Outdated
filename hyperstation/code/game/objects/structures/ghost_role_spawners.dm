@@ -67,7 +67,6 @@
 	Every day, you pause and recollect your memories from before it all happened... "
 	assignedrole = "Arctic Exile"
 	mirrorcanloadappearance = TRUE
-	ghost_usable = FALSE
 
 /obj/effect/mob_spawn/human/exiled/Initialize(mapload)
 	. = ..()
@@ -81,7 +80,6 @@
 			outfit.suit = /obj/item/clothing/suit/hooded/wintercoat
 			outfit.shoes = /obj/item/clothing/shoes/winterboots
 			outfit.back = /obj/item/storage/backpack
-			outfit.id = /obj/item/card/id/away/snowdin/eng
 			outfit.implants = list(/obj/item/implant/exile) //Made it so they cannot simply exit through the gateway at will.
 
 /obj/effect/mob_spawn/human/exiled/Destroy()
