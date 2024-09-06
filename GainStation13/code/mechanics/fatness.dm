@@ -149,6 +149,11 @@ GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/bridge, /area/crew_quarters, 
 			fatness = min(fatness, (client?.prefs?.max_weight - 1))	//Apply max weight prefs
 
 /mob/living/carbon/proc/adjust_perma(adjustment_amount, type_of_fattening = FATTENING_TYPE_ITEM)
+	if(!client)
+		return FALSE
+	if(!client.prefs.weight_gain_permanent)
+		return FALSE
+	
 	if(!adjustment_amount || !type_of_fattening)
 		return FALSE
 
