@@ -137,13 +137,3 @@
 	tastes = list("eggs", "breakfast" = 1)
 	foodtype = GRAIN | SUGAR
 
-
-
-//GS Food
-
-/obj/item/reagent_containers/food/tribal/soup
-	name = "lavaland stew"
-	desc = "A mixture of various lavaland mushrooms, turned into a bland but medicinal stew."
-	icon = 'icons/obj/food/ported_meals.dmi'
-	icon_state = "lavalandsoup"
-	list_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/vitfro = 15) //Primarily here to let ashwalkers make medicine. Low nutrient content, high medicine content.
