@@ -271,3 +271,14 @@
 							 /datum/reagent/carbon, /datum/reagent/drug/mushroomhallucinogen)
 	bonus_reagents = list(snowflake_reagent = 5, /datum/reagent/consumable/nutriment = 6)
 	reagents.add_reagent(snowflake_reagent, 5)
+
+
+/obj/item/reagent_containers/food/snacks/soup/lavaland_stew
+	name = "lavaland stew"
+	desc = "A mixture of various lavaland mushrooms, turned into a bland but medicinal stew."
+	icon = 'icons/obj/food/ported_meals.dmi'
+	icon_state = "lavalandsoup"
+	trash = /obj/item/reagent_containers/glass/bowl/mushroom_bowl
+	list_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/vitfro = 15) //Primarily here to let ashwalkers make medicine. Low nutrient content, high medicine content.
+	tastes = list("fresh pickings","extreme blandness" = 1)
+	foodtype = MEAT 
