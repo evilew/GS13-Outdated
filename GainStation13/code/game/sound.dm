@@ -1,38 +1,37 @@
-/proc/gs13_get_sfx(soundin)
-	if(istext(soundin))
-		switch(soundin)
-			if("belch")
-				soundin = pick(	'GainStation13/sound/voice/belch1.ogg',
-								'GainStation13/sound/voice/belch2.ogg',
-								'GainStation13/sound/voice/belch3.ogg',
-								'GainStation13/sound/voice/belch4.ogg',
-								'GainStation13/sound/voice/belch5.ogg',
-								'GainStation13/sound/voice/belch6.ogg',
-								'GainStation13/sound/voice/belch7.ogg',
-								'GainStation13/sound/voice/belch8.ogg',
-								'GainStation13/sound/voice/belch9.ogg',
-								'GainStation13/sound/voice/belch10.ogg',
-								'GainStation13/sound/voice/belch11.ogg')
-			if("brap")
-				soundin = pick(	'GainStation13/sound/voice/brap1.ogg',
-								'GainStation13/sound/voice/brap2.ogg',
-								'GainStation13/sound/voice/brap3.ogg',
-								'GainStation13/sound/voice/brap4.ogg',
-								'GainStation13/sound/voice/brap5.ogg',
-								'GainStation13/sound/voice/brap6.ogg',
-								'GainStation13/sound/voice/brap7.ogg',
-								'GainStation13/sound/voice/brap8.ogg')
-			if("burp")
-				soundin = pick(	'GainStation13/sound/voice/burp1.ogg')
-			if("burunyu")
-				soundin = pick(	'GainStation13/sound/voice/funnycat.ogg')
-			if("fart")
-				soundin = pick(	'GainStation13/sound/voice/fart1.ogg',
-								'GainStation13/sound/voice/fart2.ogg',
-								'GainStation13/sound/voice/fart3.ogg',
-								'GainStation13/sound/voice/fart4.ogg')
-			if("gurgle")
-				soundin = pick(	'GainStation13/sound/voice/gurgle1.ogg',
-								'GainStation13/sound/voice/gurgle2.ogg',
-								'GainStation13/sound/voice/gurgle3.ogg')
-	return soundin
+/proc/playsound_prefed(atom/source, soundin, pref, vol as num, vary, extrarange as num, falloff, frequency = null, channel = 0, pressure_affected = TRUE, ignore_walls = TRUE, soundenvwet = -10000, soundenvdry = 0)
+	if(isarea(source))
+		throw EXCEPTION("playsound(): source is an area")
+		return
+
+	var/turf/turf_source = get_turf(source)
+
+	if (!turf_source)
+		return
+
+	//allocate a channel if necessary now so its the same for everyone
+	channel = channel || open_sound_channel()
+
+ 	// Looping through the player list has the added bonus of working for mobs inside containers
+	var/sound/S = sound(get_sfx(soundin))
+	var/maxdistance = (world.view + extrarange)
+	var/z = turf_source.z
+	var/list/listeners = SSmobs.clients_by_zlevel[z]
+	if(!ignore_walls) //these sounds don't carry through walls
+		listeners = listeners & hearers(maxdistance,turf_source)
+	
+	for(var/P in listeners)
+		var/mob/M = P
+		if(!M.client)
+			continue
+		if((!M.client?.prefs.cit_toggles & pref))
+			continue
+		if(get_dist(M, turf_source) <= maxdistance)
+			M.playsound_local(turf_source, soundin, vol, vary, frequency, falloff, channel, pressure_affected, S, soundenvwet, soundenvdry)
+	for(var/P in SSmobs.dead_players_by_zlevel[z])
+		var/mob/M = P
+		if(!M.client)
+			continue
+		if((!M.client?.prefs.cit_toggles & pref))
+			continue
+		if(get_dist(M, turf_source) <= maxdistance)
+			M.playsound_local(turf_source, soundin, vol, vary, frequency, falloff, channel, pressure_affected, S, soundenvwet, soundenvdry)
