@@ -114,7 +114,7 @@
 
 //GS Food
 
-/datum/crafting_recipe/food/lavaland_soup
+/datum/crafting_recipe/food/lavaland_stew
 	name = "Lavaland Stew"
 	reqs = list(
 		/obj/item/reagent_containers/food/snacks/grown/ash_flora/mushroom_leaf = 1,
@@ -122,5 +122,5 @@
 		/obj/item/reagent_containers/food/snacks/grown/ash_flora/cactus_fruit = 2,
 		/obj/item/reagent_containers/glass/bowl/mushroom_bowl = 1
 	)
-	result = /obj/item/reagent_containers/food/tribal/soup
-	subcategory = CAT_PRIMAL
+	result = /obj/item/reagent_containers/food/snacks/soup/lavaland_stew
+	subcategory = CAT_SOUP
