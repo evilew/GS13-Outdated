@@ -321,6 +321,12 @@
 					else if(stage in R.addiction_stage4_end to INFINITY)
 						to_chat(C, "<span class='notice'>You feel like you've gotten over your need for [R.name].</span>")
 						SEND_SIGNAL(C, COMSIG_CLEAR_MOOD_EVENT, "[R.type]_addiction")
+						
+						//GS13 on reagent addiction removal
+						if(istype(R, /datum/reagent/fermi_fat))
+							var/datum/reagent/fermi_fat/F = R
+							F.addiction_remove(C)
+						
 						cached_addictions.Remove(R)
 					else
 						SEND_SIGNAL(C, COMSIG_CLEAR_MOOD_EVENT, "[R.type]_overdose")

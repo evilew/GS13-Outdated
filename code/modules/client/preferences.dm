@@ -105,6 +105,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	//GS13
 	var/starting_weight = 0				//how thicc you wanna be at start
+	var/permanent_fat = 0				//If it isn't the consequences of your own actions
 	var/wg_rate = 0.5
 	var/wl_rate = 0.5
 	var/voice = "human"
@@ -1076,6 +1077,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "This preference functions similar to the one before but allows for items with more drastic effects. <b>Do not enable this if you aren't okay with more drastic things happening to your character.</b><BR>"
 			dat += "<b>Extreme Fatness Vulnerability:</b><a href='?_src_=prefs;preference=extreme_fatness_vulnerable'>[extreme_fatness_vulnerable == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Extreme Weight Gain (Sprite Size scales with weight):</b><a href='?_src_=prefs;preference=weight_gain_extreme'>[weight_gain_extreme == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+			dat += "<b>Weight Gain Permanent (special weight persists between rounds):</b><a href='?_src_=prefs;preference=weight_gain_permanent'>[weight_gain_permanent == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 
 			dat += "<h2>GS13 Helplessness Preferences</h2>"
 			dat += "<b>Please be careful when using these mechanics as not to use them in a way that negatively impacts those around you. If you are seriously needed for something, especially something station critical, do not use these as an excuse to ignore your duty.</b><BR><BR>"
@@ -2665,6 +2667,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					weight_gain_nanites = !weight_gain_nanites
 				if("weight_gain_extreme")
 					weight_gain_extreme = !weight_gain_extreme
+				if("weight_gain_permanent")
+					weight_gain_permanent = !weight_gain_permanent
 				if("noncon_weight_gain")
 					noncon_weight_gain = !noncon_weight_gain
 				if("bot_feeding")
@@ -2997,6 +3001,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	//GS13
 	character.fatness = starting_weight
 	character.fatness_real = starting_weight
+	character.fatness_perma = permanent_fat
 	character.weight_gain_rate = wg_rate
 	character.weight_loss_rate = wl_rate
 

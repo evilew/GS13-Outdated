@@ -11,6 +11,8 @@ GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/bridge, /area/crew_quarters, 
 	var/fat_hiders = list()
 	//The actual value a mob is at. Is equal to fatness if fat_hider is FALSE.
 	var/fatness_real = 0
+	//Permanent fatness, which sticks around between rounds
+	var/fatness_perma = 0
 	///At what rate does the parent mob gain weight? 1 = 100%
 	var/weight_gain_rate = 1
 	//At what rate does the parent mob lose weight? 1 = 100%
@@ -48,7 +50,9 @@ GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/bridge, /area/crew_quarters, 
 
 	fatness = fatness_real //Make their current fatness their real fatness
 
-	hiders_apply()	//Check and apply hiders, XWG is there too
+	hiders_apply()	//Check and apply hiders
+	perma_apply()	//Check and apply for permanent fat
+	xwg_resize()	//Apply XWG
 
 	return TRUE
 
@@ -134,24 +138,57 @@ GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/bridge, /area/crew_quarters, 
 /mob/living/carbon/proc/hiders_apply()
 	if(fat_hiders) //do we have any hiders active?
 		var/fatness_over = hiders_calc() //calculate the sum of all hiders
+		fatness = fatness + fatness_over //Then, make their current fatness the sum of their real plus/minus the calculated amount
 		if(client?.prefs?.max_weight) //Check their prefs
-			fatness_over = min(fatness_over, (client?.prefs?.max_weight - 1)) //And make sure it's not above their preferred max
-		fatness = fatness_real + fatness_over //Then, make their current fatness the sum of their real plus/minus the calculated amount
-	if(client?.prefs?.weight_gain_extreme && !normalized)
-		xwg_resize()
+			fatness = min(fatness, (client?.prefs?.max_weight - 1)) //And make sure it's not above their preferred max
+
+/mob/living/carbon/proc/perma_apply()
+	if(fatness_perma > 0)	//Check if we need to make calcs at all
+		fatness = fatness + fatness_perma	//Add permanent fat to fatness
+		if(client?.prefs?.max_weight)	//Check for max weight prefs
+			fatness = min(fatness, (client?.prefs?.max_weight - 1))	//Apply max weight prefs
+
+/mob/living/carbon/proc/adjust_perma(adjustment_amount, type_of_fattening = FATTENING_TYPE_ITEM)
+	if(!client)
+		return FALSE
+	if(!client.prefs.weight_gain_permanent)
+		return FALSE
+	
+	if(!adjustment_amount || !type_of_fattening)
+		return FALSE
+
+	if(!HAS_TRAIT(src, TRAIT_UNIVERSAL_GAINER) && client?.prefs)
+		if(!check_weight_prefs(type_of_fattening))
+			return FALSE
+	var/amount_to_change = adjustment_amount
+
+	if(adjustment_amount > 0)
+		amount_to_change = amount_to_change * weight_gain_rate	
+	else
+		amount_to_change = amount_to_change * weight_loss_rate
+
+	fatness_perma += amount_to_change
+	fatness_perma = max(fatness_perma, MINIMUM_FATNESS_LEVEL)
+		
+	if(client?.prefs?.max_weight) // GS13
+		fatness_perma = min(fatness_perma, (client?.prefs?.max_weight - 1))
 
 /mob/living/carbon/human/handle_breathing(times_fired)
 	. = ..()
+	fatness = fatness_real
 	hiders_apply()
+	perma_apply()
+	xwg_resize()
 
 /mob/living/carbon/proc/xwg_resize()
-	var/xwg_size = sqrt(fatness/FATNESS_LEVEL_BLOB)
-	xwg_size = min(xwg_size, RESIZE_MACRO)
-	xwg_size = max(xwg_size, custom_body_size*0.01)
-	if(xwg_size > RESIZE_BIG) //check if the size needs capping otherwise don't bother searching the list
-		if(!is_type_in_list(get_area(src), GLOB.uncapped_resize_areas)) //if the area is not int the uncapped whitelist and new size is over the cap
-			xwg_size = RESIZE_BIG
-	resize(xwg_size)
+	if(client?.prefs?.weight_gain_extreme && !normalized)
+		var/xwg_size = sqrt(fatness/FATNESS_LEVEL_BLOB)
+		xwg_size = min(xwg_size, RESIZE_MACRO)
+		xwg_size = max(xwg_size, custom_body_size*0.01)
+		if(xwg_size > RESIZE_BIG) //check if the size needs capping otherwise don't bother searching the list
+			if(!is_type_in_list(get_area(src), GLOB.uncapped_resize_areas)) //if the area is not int the uncapped whitelist and new size is over the cap
+				xwg_size = RESIZE_BIG
+		resize(xwg_size)
 
 /proc/get_fatness_level_name(fatness_amount)
 	if(fatness_amount < FATNESS_LEVEL_FAT)

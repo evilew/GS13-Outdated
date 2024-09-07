@@ -248,6 +248,11 @@
 /obj/machinery/cryopod/proc/despawn_occupant()
 	var/mob/living/mob_occupant = occupant
 
+	//GS13 Process permanent fat
+	if(mob_occupant.client.prefs)
+		if(mob_occupant.client.ckey)
+			mob_occupant.client.prefs.perma_fat_save(mob_occupant)
+
 	//Update any existing objectives involving this mob.
 	for(var/datum/objective/O in GLOB.objectives)
 		// We don't want revs to get objectives that aren't for heads of staff. Letting
