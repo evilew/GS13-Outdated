@@ -1,3 +1,4 @@
+GLOBAL_LIST_INIT(bee_banned_chem, list(/datum/reagent/fermi_fat, /datum/reagent/fermi_slim))
 
 #define BEE_IDLE_ROAMING		70 //The value of idle at which a bee in a beebox will try to wander
 #define BEE_IDLE_GOHOME			0  //The value of idle at which a bee will try to go home
@@ -272,13 +273,16 @@
 			queen.paxed = TRUE
 		else
 			var/datum/reagent/R = GLOB.chemical_reagents_list[S.reagents.get_master_reagent_id()]
-			if(R && S.reagents.has_reagent(R.type, 5))
-				S.reagents.remove_reagent(R.type,5)
-				queen.assign_reagent(R)
-				user.visible_message("<span class='warning'>[user] injects [src]'s genome with [R.name], mutating it's DNA!</span>","<span class='warning'>You inject [src]'s genome with [R.name], mutating it's DNA!</span>")
-				name = queen.name
+			if(!is_type_in_list(R, GLOB.bee_banned_chem))
+				if(R && S.reagents.has_reagent(R.type, 5))
+					S.reagents.remove_reagent(R.type,5)
+					queen.assign_reagent(R)
+					user.visible_message("<span class='warning'>[user] injects [src]'s genome with [R.name], mutating it's DNA!</span>","<span class='warning'>You inject [src]'s genome with [R.name], mutating it's DNA!</span>")
+					name = queen.name
+				else
+					to_chat(user, "<span class='warning'>You don't have enough units of that chemical to modify the bee's DNA!</span>")
 			else
-				to_chat(user, "<span class='warning'>You don't have enough units of that chemical to modify the bee's DNA!</span>")
+				to_chat(user, "<span class='warning'>The bee rejects the injection! This chem is incompatible!</span>")
 	..()
 
 
