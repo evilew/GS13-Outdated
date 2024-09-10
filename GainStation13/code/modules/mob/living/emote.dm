@@ -6,17 +6,7 @@
 	sound = 'GainStation13/sound/voice/gurgle1.ogg'
 
 /datum/emote/living/gurgle/get_sound()
-	return pick('GainStation13/sound/voice/gurgle1.ogg',
-				'GainStation13/sound/voice/gurgle2.ogg',
-				'GainStation13/sound/voice/gurgle3.ogg')
-
-/datum/emote/living/gurgle/run_emote(mob/living/user, params)
-	if(!ishuman(user))
-		return FALSE
-
-	playsound(user, "gurgle")
-
-	. = ..()
+	return get_sfx("gurgle") // Lets get any of the gurgle sounds we have set.
 
 /datum/emote/living/burp
 	key = "burp"
@@ -33,7 +23,7 @@
 	if(!.)
 		return FALSE
 	
-	playsound_prefed(user, noise_type, noise_pref, 100, TRUE, -7)
+	playsound_prefed(user, noise_type, noise_pref, 100, TRUE, -4)
 
 	user.reduce_fullness(rand(reduction_min,reduction_max))
 
@@ -69,6 +59,7 @@
 	key_third_person = "belches loudly"
 	message = "belches"
 	//god hates me for this -Metha
+	noise_type = "belch"
 	reduction_min = 6
 	reduction_max = 12
 
