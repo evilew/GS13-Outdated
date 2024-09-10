@@ -11,8 +11,6 @@ GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/bridge, /area/crew_quarters, 
 	var/fat_hiders = list()
 	//The actual value a mob is at. Is equal to fatness if fat_hider is FALSE.
 	var/fatness_real = 0
-	//Permanent fatness, which sticks around between rounds
-	var/fatness_perma = 0
 	///At what rate does the parent mob gain weight? 1 = 100%
 	var/weight_gain_rate = 1
 	//At what rate does the parent mob lose weight? 1 = 100%
@@ -51,11 +49,9 @@ GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/bridge, /area/crew_quarters, 
 	fatness = fatness_real //Make their current fatness their real fatness
 
 	hiders_apply()	//Check and apply hiders
-	perma_apply()	//Check and apply for permanent fat
 	xwg_resize()	//Apply XWG
 
 	return TRUE
-
 
 /mob/living/carbon/fully_heal(admin_revive)
 	fatness = 0
@@ -142,42 +138,10 @@ GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/bridge, /area/crew_quarters, 
 		if(client?.prefs?.max_weight) //Check their prefs
 			fatness = min(fatness, (client?.prefs?.max_weight - 1)) //And make sure it's not above their preferred max
 
-/mob/living/carbon/proc/perma_apply()
-	if(fatness_perma > 0)	//Check if we need to make calcs at all
-		fatness = fatness + fatness_perma	//Add permanent fat to fatness
-		if(client?.prefs?.max_weight)	//Check for max weight prefs
-			fatness = min(fatness, (client?.prefs?.max_weight - 1))	//Apply max weight prefs
-
-/mob/living/carbon/proc/adjust_perma(adjustment_amount, type_of_fattening = FATTENING_TYPE_ITEM)
-	if(!client)
-		return FALSE
-	if(!client.prefs.weight_gain_permanent)
-		return FALSE
-	
-	if(!adjustment_amount || !type_of_fattening)
-		return FALSE
-
-	if(!HAS_TRAIT(src, TRAIT_UNIVERSAL_GAINER) && client?.prefs)
-		if(!check_weight_prefs(type_of_fattening))
-			return FALSE
-	var/amount_to_change = adjustment_amount
-
-	if(adjustment_amount > 0)
-		amount_to_change = amount_to_change * weight_gain_rate	
-	else
-		amount_to_change = amount_to_change * weight_loss_rate
-
-	fatness_perma += amount_to_change
-	fatness_perma = max(fatness_perma, MINIMUM_FATNESS_LEVEL)
-		
-	if(client?.prefs?.max_weight) // GS13
-		fatness_perma = min(fatness_perma, (client?.prefs?.max_weight - 1))
-
 /mob/living/carbon/human/handle_breathing(times_fired)
 	. = ..()
 	fatness = fatness_real
 	hiders_apply()
-	perma_apply()
 	xwg_resize()
 
 /mob/living/carbon/proc/xwg_resize()

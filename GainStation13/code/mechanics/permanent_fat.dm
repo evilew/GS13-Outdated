@@ -1,6 +1,8 @@
 /datum/preferences/proc/perma_fat_save(character)
 	if(iscarbon(character))
 		var/mob/living/carbon/C = character
+		if(!C.client.prefs.weight_gain_permanent)
+			return FALSE
 		if(!path)
 			return 0
 			if(world.time < savecharcooldown)
@@ -15,4 +17,4 @@
 			return 0
 		S.cd = "/character[default_slot]"
 		
-		WRITE_FILE(S["permanent_fat"]			, C.fatness_perma)
+		WRITE_FILE(S["starting_weight"]			, C.fatness_real)
