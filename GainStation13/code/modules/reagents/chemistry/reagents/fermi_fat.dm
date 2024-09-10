@@ -53,6 +53,7 @@
 	if(!iscarbon(M))
 		return..()
 	M.adjust_fatness(30, FATTENING_TYPE_CHEM)
+	M.adjust_perma(1, FATTENING_TYPE_CHEM)
 	..()
 	. = 1
 
@@ -62,6 +63,7 @@
 		return..()
 	var/mob/living/carbon/C = M
 	C.adjust_fatness(20, FATTENING_TYPE_CHEM)
+	C.adjust_perma(1, FATTENING_TYPE_CHEM)
 	..()
 
 /datum/reagent/fermi_fat/overdose_start(mob/living/M)
@@ -179,7 +181,8 @@
 /datum/reagent/fermi_slim/on_mob_life(mob/living/carbon/M)
 	if(!iscarbon(M))
 		return..()
-	M.adjust_fatness(-50, FATTENING_TYPE_CHEM)
+	M.adjust_fatness(-50, FATTENING_TYPE_WEIGHT_LOSS)
+	M.adjust_perma(-5, FATTENING_TYPE_WEIGHT_LOSS)
 	..()
 	. = 1
 
