@@ -3500,5 +3500,6 @@
 #include "modular_citadel\interface\skin.dmf"
 #include "v_CHOMPstation2\code\clothing\head.dm"
 #include "v_CHOMPstation2\code\clothing\suits.dm"
+#include "yogstation\code\game\objects\items\tools.dm"
 #include "yogstation\code\modules\power\energyharvester.dm"
 // END_INCLUDE
