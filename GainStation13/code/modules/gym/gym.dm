@@ -69,7 +69,7 @@
 	for(var/obj/item/stock_parts/manipulator/M in component_parts)
 		fatloss += M.rating * -10
 	
-/obj/machinery/treadmill/attackby()
+/obj/machinery/treadmill/attackby(obj/item/O, mob/living/user, params)
 	if(default_deconstruction_screwdriver(user, "conveyor0", "conveyor0", O))
 		return TRUE
 
@@ -89,7 +89,7 @@
 /datum/design/treadmill
 	name = "Treadmill Board"
 	id = "treadmill"
-	build_type = AUTOLATE | PROTOLATHE
+	build_type = AUTOLATHE | PROTOLATHE
 	materials = list(MAT_METAL = 50, MAT_GLASS = 50)
 	build_path = /obj/item/circuitboard/machine/treadmill
 	category = list("inital", "Construction")
