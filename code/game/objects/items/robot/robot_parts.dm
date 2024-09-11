@@ -226,7 +226,7 @@
 		else
 			to_chat(user, "<span class='warning'>You need to attach a flash to it first!</span>")
 
-	else if (W.tool_behavior == TOOL_MULTITOOL)
+	else if (W.tool_behaviour == TOOL_MULTITOOL)
 		if(check_completion())
 			Interact(user)
 		else
@@ -382,7 +382,7 @@
 
 	var/mob/living/living_user = usr
 	var/obj/item/item_in_hand = living_user.get_active_held_item()
-	if(!item_in_hand.tool_behavior == TOOL_MULTITOOL)
+	if(!item_in_hand.tool_behaviour == TOOL_MULTITOOL)
 		to_chat(living_user, "<span class='warning'>You need a multitool!</span>")
 		return
 

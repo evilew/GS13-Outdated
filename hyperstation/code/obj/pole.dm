@@ -71,7 +71,7 @@
 
 /obj/item/polepack/attackby(obj/item/P, mob/user, params) //erecting a pole here.
 	add_fingerprint(user)
-	if(P.tool_behavior == TOOL_WRENCH)
+	if(P.tool_behaviour == TOOL_WRENCH)
 		if (!(item_flags & IN_INVENTORY))
 			to_chat(user, "<span class='notice'>You start to fasten the frame to the floor and celing...</span>")
 			if(P.use_tool(src, user, 8 SECONDS, volume=50))
@@ -83,7 +83,7 @@
 
 /obj/structure/pole/attackby(obj/item/P, mob/user, params) //un-erecting a pole. :(
 	add_fingerprint(user)
-	if(P.tool_behavior == TOOL_WRENCH)
+	if(P.tool_behaviour == TOOL_WRENCH)
 		to_chat(user, "<span class='notice'>You start to unfastening the frame...</span>")
 		if(P.use_tool(src, user, 8 SECONDS, volume=50))
 			to_chat(user, "<span class='notice'>You take down the stripper pole!</span>")

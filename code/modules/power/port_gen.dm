@@ -168,7 +168,7 @@
 		return
 	else if(!active)
 
-		if(O.tool_behavior == TOOL_WRENCH)
+		if(O.tool_behaviour == TOOL_WRENCH)
 
 			if(!anchored && !isinspace())
 				connect_to_network()
@@ -181,7 +181,7 @@
 
 			playsound(src.loc, 'sound/items/deconstruct.ogg', 50, 1)
 			return
-		else if(O.tool_behavior == TOOL_SCREWDRIVER)
+		else if(O.tool_behaviour == TOOL_SCREWDRIVER)
 			panel_open = !panel_open
 			O.play_tool_sound(src)
 			if(panel_open)

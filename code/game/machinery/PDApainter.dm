@@ -77,7 +77,7 @@
 		O.add_fingerprint(user)
 		update_icon()
 
-	else if(O.tool_behavior == TOOL_WELDER && user.a_intent != INTENT_HARM)
+	else if(O.tool_behaviour == TOOL_WELDER && user.a_intent != INTENT_HARM)
 		if(stat & BROKEN)
 			if(!O.tool_start_check(user, amount=0))
 				return

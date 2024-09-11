@@ -33,7 +33,7 @@
 
 /obj/item/computer_hardware/attackby(obj/item/I, mob/living/user)
 	// Multitool. Runs diagnostics
-	if(I.tool_behavior == TOOL_MULTITOOL)
+	if(I.tool_behaviour == TOOL_MULTITOOL)
 		to_chat(user, "***** DIAGNOSTICS REPORT *****")
 		diagnostics(user)
 		to_chat(user, "******************************")

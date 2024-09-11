@@ -106,7 +106,7 @@
 			toggle_lock(user)
 		else
 			to_chat(user,  "<span class='warning'>Access denied.</span>")
-	else if(W.tool_behavior == TOOL_WELDER && user.a_intent == INTENT_HELP && !broken)
+	else if(W.tool_behaviour == TOOL_WELDER && user.a_intent == INTENT_HELP && !broken)
 		if(obj_integrity < max_integrity)
 			if(!W.tool_start_check(user, amount=5))
 				return
@@ -119,7 +119,7 @@
 		else
 			to_chat(user, "<span class='warning'>[src] is already in good condition!</span>")
 		return
-	else if(!alert && W.tool_behavior == TOOL_CROWBAR && openable) //Only applies to the lab cage and player made display cases
+	else if(!alert && W.tool_behaviour == TOOL_CROWBAR && openable) //Only applies to the lab cage and player made display cases
 		if(broken)
 			if(showpiece)
 				to_chat(user, "<span class='notice'>Remove the displayed object first.</span>")

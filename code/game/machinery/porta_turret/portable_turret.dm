@@ -240,7 +240,7 @@
 
 /obj/machinery/porta_turret/attackby(obj/item/I, mob/user, params)
 	if(stat & BROKEN)
-		if(I.tool_behavior == TOOL_CROWBAR)
+		if(I.tool_behaviour == TOOL_CROWBAR)
 			//If the turret is destroyed, you can remove it with a crowbar to
 			//try and salvage its components
 			to_chat(user, "<span class='notice'>You begin prying the metal coverings off...</span>")
@@ -284,7 +284,7 @@
 			to_chat(user, "<span class='notice'>Controls are now [locked ? "locked" : "unlocked"].</span>")
 		else
 			to_chat(user, "<span class='notice'>Access denied.</span>")
-	else if(I.tool_behavior == TOOL_MULTITOOL && !locked)
+	else if(I.tool_behaviour == TOOL_MULTITOOL && !locked)
 		var/obj/item/multitool/M = I
 		M.buffer = src
 		to_chat(user, "<span class='notice'>You add [src] to multitool buffer.</span>")
@@ -843,7 +843,7 @@
 	if(stat & BROKEN)
 		return
 
-	if (I.tool_behavior == TOOL_MULTITOOL)
+	if (I.tool_behaviour == TOOL_MULTITOOL)
 		var/obj/item/multitool/M = I
 		if(M.buffer && istype(M.buffer, /obj/machinery/porta_turret))
 			turrets |= M.buffer

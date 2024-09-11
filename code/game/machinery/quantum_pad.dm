@@ -55,12 +55,12 @@
 		return
 
 	if(panel_open)
-		if(I.tool_behavior == TOOL_MULTITOOL)
+		if(I.tool_behaviour == TOOL_MULTITOOL)
 			var/obj/item/multitool/M = I
 			M.buffer = src
 			to_chat(user, "<span class='notice'>You save the data in [I]'s buffer. It can now be saved to pads with closed panels.</span>")
 			return TRUE
-	else if(I.tool_behavior == TOOL_MULTITOOL)
+	else if(I.tool_behaviour == TOOL_MULTITOOL)
 		var/obj/item/multitool/M = I
 		if(istype(M.buffer, /obj/machinery/quantumpad))
 			if(M.buffer == src)

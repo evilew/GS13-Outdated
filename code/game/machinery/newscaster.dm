@@ -730,7 +730,7 @@ GLOBAL_LIST_EMPTY(allCasters)
 				to_chat(user, "<span class='notice'>You [anchored ? "un" : ""]secure [name].</span>")
 				new /obj/item/wallframe/newscaster(loc)
 			qdel(src)
-	else if(I.tool_behavior == TOOL_WELDER && user.a_intent != INTENT_HARM)
+	else if(I.tool_behaviour == TOOL_WELDER && user.a_intent != INTENT_HARM)
 		if(stat & BROKEN)
 			if(!I.tool_start_check(user, amount=0))
 				return

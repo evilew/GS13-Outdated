@@ -119,9 +119,9 @@ Maintenance panel panel is [open ? "opened" : "closed"]"},
 
 
 /mob/living/simple_animal/bot/honkbot/attackby(obj/item/W, mob/user, params)
-	if(W.tool_behavior == TOOL_WELDER && user.a_intent != INTENT_HARM)
+	if(W.tool_behaviour == TOOL_WELDER && user.a_intent != INTENT_HARM)
 		return
-	if(!W.tool_behavior == TOOL_SCREWDRIVER && (W.force) && (!target) && (W.damtype != STAMINA) ) // Check for welding tool to fix #2432.
+	if(!W.tool_behaviour == TOOL_SCREWDRIVER && (W.force) && (!target) && (W.damtype != STAMINA) ) // Check for welding tool to fix #2432.
 		retaliate(user)
 		addtimer(CALLBACK(src,PROC_REF(react_buzz)), 5)
 	..()

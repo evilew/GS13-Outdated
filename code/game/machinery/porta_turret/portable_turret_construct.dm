@@ -30,7 +30,7 @@
 				build_step = PTURRET_BOLTED
 				return
 
-			else if(I.tool_behavior == TOOL_CROWBAR && !anchored)
+			else if(I.tool_behaviour == TOOL_CROWBAR && !anchored)
 				I.play_tool_sound(src, 75)
 				to_chat(user, "<span class='notice'>You dismantle the turret construction.</span>")
 				new /obj/item/stack/sheet/metal( loc, 5)
@@ -63,7 +63,7 @@
 				build_step = PTURRET_INTERNAL_ARMOUR_ON
 				return
 
-			else if(I.tool_behavior == TOOL_WELDER)
+			else if(I.tool_behaviour == TOOL_WELDER)
 				if(!I.tool_start_check(user, amount=5)) //uses up 5 fuel
 					return
 
@@ -103,7 +103,7 @@
 
 
 		if(PTURRET_SENSORS_ON)
-			if(I.tool_behavior == TOOL_SCREWDRIVER)
+			if(I.tool_behaviour == TOOL_SCREWDRIVER)
 				I.play_tool_sound(src, 100)
 				build_step = PTURRET_CLOSED
 				to_chat(user, "<span class='notice'>You close the internal access hatch.</span>")
@@ -120,14 +120,14 @@
 					to_chat(user, "<span class='warning'>You need two sheets of metal to continue construction!</span>")
 				return
 
-			else if(I.tool_behavior == TOOL_SCREWDRIVER)
+			else if(I.tool_behaviour == TOOL_SCREWDRIVER)
 				I.play_tool_sound(src, 100)
 				build_step = PTURRET_SENSORS_ON
 				to_chat(user, "<span class='notice'>You open the internal access hatch.</span>")
 				return
 
 		if(PTURRET_START_EXTERNAL_ARMOUR)
-			if(I.tool_behavior == TOOL_WELDER)
+			if(I.tool_behaviour == TOOL_WELDER)
 				if(!I.tool_start_check(user, amount=5))
 					return
 
@@ -149,7 +149,7 @@
 					turret.setup(installed_gun)
 					qdel(src)
 
-			else if(I.tool_behavior == TOOL_CROWBAR)
+			else if(I.tool_behaviour == TOOL_CROWBAR)
 				I.play_tool_sound(src, 75)
 				to_chat(user, "<span class='notice'>You pry off the turret's exterior armor.</span>")
 				new /obj/item/stack/sheet/metal(loc, 2)

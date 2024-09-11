@@ -159,7 +159,7 @@
 
 
 /obj/machinery/power/am_control_unit/attackby(obj/item/W, mob/user, params)
-	if(W.tool_behavior == TOOL_WRENCH)
+	if(W.tool_behaviour == TOOL_WRENCH)
 		if(!anchored)
 			W.play_tool_sound(src, 75)
 			user.visible_message("[user.name] secures the [src.name] to the floor.", \

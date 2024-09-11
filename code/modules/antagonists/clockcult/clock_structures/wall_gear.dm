@@ -27,7 +27,7 @@
 	if(I.tool_behaviour == TOOL_WRENCH)
 		default_unfasten_wrench(user, I, 10)
 		return 1
-	else if(I.tool_behavior == TOOL_SCREWDRIVER)
+	else if(I.tool_behaviour == TOOL_SCREWDRIVER)
 		if(anchored)
 			to_chat(user, "<span class='warning'>[src] needs to be unsecured to disassemble it!</span>")
 		else

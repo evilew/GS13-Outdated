@@ -126,7 +126,7 @@
 		..()
 //cut heated metal into nails
 /obj/item/processed/metal/attackby(obj/item/I, mob/user, params)
-	if(I.tool_behavior == TOOL_WIRECUTTER)
+	if(I.tool_behaviour == TOOL_WIRECUTTER)
 		to_chat(user,"<span class='notice'> You tediously begin to cut [src] into several nails...</span>")
 		if(do_after(user, 80) && isturf(loc))
 			new /obj/item/nails(loc)

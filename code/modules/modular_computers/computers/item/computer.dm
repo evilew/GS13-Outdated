@@ -400,7 +400,7 @@
 		if(install_component(W, user))
 			return
 
-	if(W.tool_behavior == TOOL_WRENCH)
+	if(W.tool_behaviour == TOOL_WRENCH)
 		if(all_components.len)
 			to_chat(user, "<span class='warning'>Remove all components from \the [src] before disassembling it.</span>")
 			return
@@ -410,7 +410,7 @@
 		qdel(src)
 		return
 
-	if(W.tool_behavior == TOOL_WELDER)
+	if(W.tool_behaviour == TOOL_WELDER)
 		if(obj_integrity == max_integrity)
 			to_chat(user, "<span class='warning'>\The [src] does not require repairs.</span>")
 			return
@@ -424,7 +424,7 @@
 			to_chat(user, "<span class='notice'>You repair \the [src].</span>")
 		return
 
-	if(W.tool_behavior == TOOL_SCREWDRIVER)
+	if(W.tool_behaviour == TOOL_SCREWDRIVER)
 		if(!all_components.len)
 			to_chat(user, "<span class='warning'>This device doesn't have any components installed.</span>")
 			return

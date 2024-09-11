@@ -221,7 +221,7 @@
 	if((user.a_intent != INTENT_HELP) || !LAZYLEN(dent_decals))
 		return FALSE
 
-	if(W.tool_behavior == TOOL_WELDER)
+	if(W.tool_behaviour == TOOL_WELDER)
 		if(!W.tool_start_check(user, amount=0))
 			return FALSE
 
@@ -255,7 +255,7 @@
 	return FALSE
 
 /turf/closed/wall/proc/try_decon(obj/item/I, mob/user, turf/T)
-	if(I.tool_behavior == TOOL_WELDER || istype(I, /obj/item/gun/energy/plasmacutter))
+	if(I.tool_behaviour == TOOL_WELDER || istype(I, /obj/item/gun/energy/plasmacutter))
 		if(!I.tool_start_check(user, amount=0))
 			return FALSE
 

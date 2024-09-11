@@ -95,7 +95,7 @@
 
 
 /obj/item/grenade/attackby(obj/item/W, mob/user, params)
-	if(W.tool_behavior == TOOL_SCREWDRIVER)
+	if(W.tool_behaviour == TOOL_SCREWDRIVER)
 		switch(det_time)
 			if ("1")
 				det_time = 10

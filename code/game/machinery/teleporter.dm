@@ -156,7 +156,7 @@
 	return ..()
 
 /obj/machinery/teleport/station/attackby(obj/item/W, mob/user, params)
-	if(W.tool_behavior == TOOL_MULTITOOL)
+	if(W.tool_behaviour == TOOL_MULTITOOL)
 		var/obj/item/multitool/M = W
 		if(panel_open)
 			M.buffer = src
@@ -177,7 +177,7 @@
 	else if(default_deconstruction_crowbar(W))
 		return
 
-	else if(W.tool_behavior == TOOL_WIRECUTTER)
+	else if(W.tool_behaviour == TOOL_WIRECUTTER)
 		if(panel_open)
 			link_console_and_hub()
 			to_chat(user, "<span class='caution'>You reconnect the station to nearby machinery.</span>")

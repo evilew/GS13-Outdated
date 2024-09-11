@@ -22,7 +22,7 @@
 	freerange = TRUE
 
 /obj/item/radio/intercom/ratvar/attackby(obj/item/I, mob/living/user, params)
-	if(I.tool_behavior == TOOL_SCREWDRIVER)
+	if(I.tool_behaviour == TOOL_SCREWDRIVER)
 		to_chat(user, "<span class='danger'>[src] is fastened to the wall with [is_servant_of_ratvar(user) ? "replicant alloy" : "some material you've never seen"], and can't be removed.</span>")
 		return //no unfastening!
 	. = ..()
@@ -56,7 +56,7 @@
 		. += "<span class='notice'>It's <i>unscrewed</i> from the wall, and can be <b>detached</b>.</span>"
 
 /obj/item/radio/intercom/attackby(obj/item/I, mob/living/user, params)
-	if(I.tool_behavior == TOOL_SCREWDRIVER)
+	if(I.tool_behaviour == TOOL_SCREWDRIVER)
 		if(unfastened)
 			user.visible_message("<span class='notice'>[user] starts tightening [src]'s screws...</span>", "<span class='notice'>You start screwing in [src]...</span>")
 			if(I.use_tool(src, user, 30, volume=50))

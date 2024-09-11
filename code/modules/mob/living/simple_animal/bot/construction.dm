@@ -100,7 +100,7 @@
 				build_step++
 
 		if(ASSEMBLY_FOURTH_STEP)
-			if(W.tool_behavior == TOOL_WELDER)
+			if(W.tool_behaviour == TOOL_WELDER)
 				if(W.use_tool(src, user, 0, volume=40))
 					name = "shielded frame assembly"
 					to_chat(user, "<span class='notice'>You weld the vest to [src].</span>")
@@ -181,7 +181,7 @@
 			build_step++
 
 		if(8)
-			if(W.tool_behavior == TOOL_SCREWDRIVER)
+			if(W.tool_behaviour == TOOL_SCREWDRIVER)
 				to_chat(user, "<span class='notice'>You start attaching the gun to the frame...</span>")
 				if(W.use_tool(src, user, 40, volume=100))
 					name = "armed [name]"
@@ -408,13 +408,13 @@
 	var/atom/Tsec = drop_location()
 	switch(build_step)
 		if(ASSEMBLY_FIRST_STEP)
-			if(I.tool_behavior == TOOL_WELDER)
+			if(I.tool_behaviour == TOOL_WELDER)
 				if(I.use_tool(src, user, 0, volume=40))
 					add_overlay("hs_hole")
 					to_chat(user, "<span class='notice'>You weld a hole in [src]!</span>")
 					build_step++
 
-			else if(I.tool_behavior == TOOL_SCREWDRIVER) //deconstruct
+			else if(I.tool_behaviour == TOOL_SCREWDRIVER) //deconstruct
 				new /obj/item/assembly/signaler(Tsec)
 				new /obj/item/clothing/head/helmet/sec(Tsec)
 				to_chat(user, "<span class='notice'>You disconnect the signaler from the helmet.</span>")
@@ -430,7 +430,7 @@
 				qdel(I)
 				build_step++
 
-			else if(I.tool_behavior == TOOL_WELDER) //deconstruct
+			else if(I.tool_behaviour == TOOL_WELDER) //deconstruct
 				if(I.use_tool(src, user, 0, volume=40))
 					cut_overlay("hs_hole")
 					to_chat(user, "<span class='notice'>You weld the hole in [src] shut!</span>")
@@ -447,7 +447,7 @@
 				qdel(I)
 				build_step++
 
-			else if(I.tool_behavior == TOOL_SCREWDRIVER) //deconstruct
+			else if(I.tool_behaviour == TOOL_SCREWDRIVER) //deconstruct
 				cut_overlay("hs_eye")
 				new /obj/item/assembly/prox_sensor(Tsec)
 				to_chat(user, "<span class='notice'>You detach the proximity sensor from [src].</span>")
@@ -488,7 +488,7 @@
 					qdel(I)
 					qdel(src)
 
-			else if(I.tool_behavior == TOOL_SCREWDRIVER) //deconstruct
+			else if(I.tool_behaviour == TOOL_SCREWDRIVER) //deconstruct
 				cut_overlay("hs_arm")
 				var/obj/item/bodypart/dropped_arm = new robot_arm(Tsec)
 				robot_arm = null
@@ -520,7 +520,7 @@
 					S.robot_arm = robot_arm
 					qdel(I)
 					qdel(src)
-			else if(I.tool_behavior == TOOL_SCREWDRIVER) //deconstruct
+			else if(I.tool_behaviour == TOOL_SCREWDRIVER) //deconstruct
 				build_step--
 				icon_state = initial(icon_state)
 				to_chat(user, "<span class='notice'>You unbolt [src]'s energy swords</span>")

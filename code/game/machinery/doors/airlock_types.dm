@@ -712,7 +712,7 @@
 			playsound(src, 'sound/items/deconstruct.ogg', 50, 1)
 			construction_state = GEAR_SECURE
 		return 1
-	else if(I.tool_behavior == TOOL_CROWBAR)
+	else if(I.tool_behaviour == TOOL_CROWBAR)
 		if(construction_state == GEAR_SECURE)
 			to_chat(user, "<span class='warning'>[src]'s cogwheel is too tightly secured! Your [I.name] can't reach under it!</span>")
 			return 1

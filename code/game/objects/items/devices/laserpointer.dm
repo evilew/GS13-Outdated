@@ -48,7 +48,7 @@
 		else
 			to_chat(user, "<span class='notice'>[src] already has a diode installed.</span>")
 
-	else if(W.tool_behavior == TOOL_SCREWDRIVER)
+	else if(W.tool_behaviour == TOOL_SCREWDRIVER)
 		if(diode)
 			to_chat(user, "<span class='notice'>You remove the [diode.name] from \the [src].</span>")
 			diode.forceMove(drop_location())

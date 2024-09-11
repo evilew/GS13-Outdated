@@ -107,7 +107,7 @@
 		return
 	switch(stage)
 		if(1)
-			if(W.tool_behavior == TOOL_WRENCH)
+			if(W.tool_behaviour == TOOL_WRENCH)
 				to_chat(usr, "<span class='notice'>You begin deconstructing [src]...</span>")
 				if (W.use_tool(src, user, 30, volume=50))
 					new /obj/item/stack/sheet/metal(drop_location(), sheets_refunded)
@@ -128,11 +128,11 @@
 					to_chat(user, "<span class='warning'>You need one length of cable to wire [src]!</span>")
 				return
 		if(2)
-			if(W.tool_behavior == TOOL_WRENCH)
+			if(W.tool_behaviour == TOOL_WRENCH)
 				to_chat(usr, "<span class='warning'>You have to remove the wires first!</span>")
 				return
 
-			if(W.tool_behavior == TOOL_WIRECUTTER)
+			if(W.tool_behaviour == TOOL_WIRECUTTER)
 				stage = 1
 				icon_state = "[fixture_type]-construct-stage1"
 				new /obj/item/stack/cable_coil(drop_location(), 1, "red")
@@ -141,7 +141,7 @@
 				W.play_tool_sound(src, 100)
 				return
 
-			if(W.tool_behavior == TOOL_SCREWDRIVER)
+			if(W.tool_behaviour == TOOL_SCREWDRIVER)
 				user.visible_message("[user.name] closes [src]'s casing.", \
 					"<span class='notice'>You close [src]'s casing.</span>", "<span class='italics'>You hear screwing.</span>")
 				W.play_tool_sound(src, 75)
@@ -450,7 +450,7 @@
 
 	// attempt to stick weapon into light socket
 	else if(status == LIGHT_EMPTY)
-		if(W.tool_behavior == TOOL_SCREWDRIVER) //If it's a screwdriver open it.
+		if(W.tool_behaviour == TOOL_SCREWDRIVER) //If it's a screwdriver open it.
 			W.play_tool_sound(src, 75)
 			user.visible_message("[user.name] opens [src]'s casing.", \
 				"<span class='notice'>You open [src]'s casing.</span>", "<span class='italics'>You hear a noise.</span>")

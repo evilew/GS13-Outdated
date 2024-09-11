@@ -62,7 +62,7 @@
 
 
 /obj/item/inducer/attackby(obj/item/W, mob/user)
-	if(W.tool_behavior == TOOL_SCREWDRIVER)
+	if(W.tool_behaviour == TOOL_SCREWDRIVER)
 		W.play_tool_sound(src)
 		if(!opened)
 			to_chat(user, "<span class='notice'>You unscrew the battery compartment.</span>")

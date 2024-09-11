@@ -143,7 +143,7 @@
 	LAZYREMOVE(pods, pod)
 
 /obj/machinery/computer/prototype_cloning/attackby(obj/item/W, mob/user, params)
-	if(W.tool_behavior == TOOL_MULTITOOL)
+	if(W.tool_behaviour == TOOL_MULTITOOL)
 		if(!multitool_check_buffer(user, W))
 			return
 		var/obj/item/multitool/P = W

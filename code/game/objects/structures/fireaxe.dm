@@ -23,9 +23,9 @@
 	return ..()
 
 /obj/structure/fireaxecabinet/attackby(obj/item/I, mob/user, params)
-	if(iscyborg(user) || I.tool_behavior == TOOL_MULTITOOL)
+	if(iscyborg(user) || I.tool_behaviour == TOOL_MULTITOOL)
 		toggle_lock(user)
-	else if(I.tool_behavior == TOOL_WELDER && user.a_intent == INTENT_HELP && !broken)
+	else if(I.tool_behaviour == TOOL_WELDER && user.a_intent == INTENT_HELP && !broken)
 		if(obj_integrity < max_integrity)
 			if(!I.tool_start_check(user, amount=2))
 				return

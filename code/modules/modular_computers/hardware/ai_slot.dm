@@ -62,7 +62,7 @@
 /obj/item/computer_hardware/ai_slot/attackby(obj/item/I, mob/living/user)
 	if(..())
 		return
-	if(I.tool_behavior == TOOL_SCREWDRIVER)
+	if(I.tool_behaviour == TOOL_SCREWDRIVER)
 		to_chat(user, "<span class='notice'>You press down on the manual eject button with \the [I].</span>")
 		try_eject(,user,1)
 		return

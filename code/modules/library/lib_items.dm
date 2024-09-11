@@ -58,7 +58,7 @@
 					to_chat(user, "<span class='notice'>You wrench the frame into place.</span>")
 					anchored = TRUE
 					state = 1
-			if(I.tool_behavior == TOOL_CROWBAR)
+			if(I.tool_behaviour == TOOL_CROWBAR)
 				if(I.use_tool(src, user, 20, volume=50))
 					to_chat(user, "<span class='notice'>You pry the frame apart.</span>")
 					deconstruct(TRUE)
@@ -100,7 +100,7 @@
 					return
 				else
 					name = "bookcase ([sanitize(newname)])"
-			else if(I.tool_behavior == TOOL_CROWBAR)
+			else if(I.tool_behaviour == TOOL_CROWBAR)
 				if(contents.len)
 					to_chat(user, "<span class='warning'>You need to remove the books first!</span>")
 				else
@@ -292,7 +292,7 @@
 					scanner.computer.inventory.Add(src)
 					to_chat(user, "[I]'s screen flashes: 'Book stored in buffer. Title added to general inventory.'")
 
-	else if(I.tool_behavior == TOOL_MULTITOOL)
+	else if(I.tool_behaviour == TOOL_MULTITOOL)
 		to_chat(user, "<span class='notice'>You begin to erase the data from [title] with your PDA!...</span>")
 		if(do_after(user, 30, target = src))
 			to_chat(user, "<span class='notice'>You erase all the page data from [title] with your PDA! You didn't want to read it anyway.</span>")

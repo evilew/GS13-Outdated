@@ -310,7 +310,7 @@
 	if(default_deconstruction_crowbar(W))
 		return
 
-	if(W.tool_behavior == TOOL_MULTITOOL)
+	if(W.tool_behaviour == TOOL_MULTITOOL)
 		if(!multitool_check_buffer(user, W))
 			return
 		var/obj/item/multitool/P = W

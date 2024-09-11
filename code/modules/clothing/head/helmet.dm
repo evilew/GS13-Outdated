@@ -288,7 +288,7 @@
 					A.Grant(user)
 		return
 
-	if(I.tool_behavior == TOOL_SCREWDRIVER)
+	if(I.tool_behaviour == TOOL_SCREWDRIVER)
 		if(F)
 			for(var/obj/item/flashlight/seclite/S in src)
 				to_chat(user, "<span class='notice'>You unscrew the seclite from [src].</span>")

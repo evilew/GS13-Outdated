@@ -49,7 +49,7 @@
 	// This exists so Hardened/Silver Stake can't have a welding torch used on them.
 
 /obj/item/stake/basic/attackby(obj/item/W, mob/user, params)
-	if(W.tool_behavior == TOOL_WELDER)
+	if(W.tool_behaviour == TOOL_WELDER)
 		//if (amWelded)
 		//	to_chat(user, "<span class='warning'>This stake has already been treated with fire.</span>")
 		//	return
@@ -146,7 +146,7 @@
 
 // Convert back to Silver
 /obj/item/stake/hardened/silver/attackby(obj/item/I, mob/user, params)
-	if(I.tool_behavior == TOOL_WELDER)
+	if(I.tool_behaviour == TOOL_WELDER)
 		var/obj/item/weldingtool/WT = I
 		if(WT.use(0))//remove_fuel(0, user))
 			var/obj/item/stack/sheet/mineral/silver/newsheet = new (user.loc)

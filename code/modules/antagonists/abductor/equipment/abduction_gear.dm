@@ -636,7 +636,7 @@ Congratulations! You are now trained for invasive xenobiology research!"}
 	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
 
 /obj/item/radio/headset/abductor/attackby(obj/item/W, mob/user, params)
-	if(W.tool_behavior == TOOL_SCREWDRIVER)
+	if(W.tool_behaviour == TOOL_SCREWDRIVER)
 		return // Stops humans from disassembling abductor headsets.
 	return ..()
 

@@ -19,7 +19,7 @@
 	if(default_deconstruction_screwdriver(user, icon_open, icon_closed, P))
 		return
 	// Using a multitool lets you access the receiver's interface
-	else if(P.tool_behavior == TOOL_MULTITOOL)
+	else if(P.tool_behaviour == TOOL_MULTITOOL)
 		attack_hand(user)
 
 	else if(default_deconstruction_crowbar(P))
@@ -244,7 +244,7 @@
 
 // Check if the user can use it.
 /obj/machinery/telecomms/proc/canInteract(mob/user)
-	if(issilicon(user) || user.get_active_held_item().tool_behavior == TOOL_MULTITOOL)
+	if(issilicon(user) || user.get_active_held_item().tool_behaviour == TOOL_MULTITOOL)
 		return TRUE
 	return FALSE
 // Check if the user is nearby and has a multitool.
@@ -265,6 +265,6 @@
 		var/mob/living/silicon/ai/U = user
 		P = U.aiMulti
 	else if(iscyborg(user) && in_range(user, src))
-		if(user.get_active_held_item().tool_behavior == TOOL_MULTITOOL)
+		if(user.get_active_held_item().tool_behaviour == TOOL_MULTITOOL)
 			P = user.get_active_held_item()
 	return P
