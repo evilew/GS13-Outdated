@@ -765,8 +765,10 @@ datum/status_effect/stabilized/blue/on_remove()
 	colour = "red"
 
 /datum/status_effect/stabilized/red/on_apply()
-	owner.ignore_slowdown("slimestatus")
-	return ..()
+	if(HAS_TRAIT(owner, TRAIT_IMMUTABLE_SLOW))
+		return ..()
+	else
+		owner.ignore_slowdown("slimestatus")
 
 /datum/status_effect/stabilized/red/on_remove()
 	owner.unignore_slowdown("slimestatus")
@@ -915,6 +917,7 @@ datum/status_effect/stabilized/blue/on_remove()
 
 /datum/status_effect/stabilized/lightpink/on_apply()
 	ADD_TRAIT(owner, TRAIT_GOTTAGOFAST,"slimestatus")
+	ADD_TRAIT(owner, TRAIT_PACIFISM,"slimestatus")
 	return ..()
 
 /datum/status_effect/stabilized/lightpink/tick()
@@ -926,6 +929,7 @@ datum/status_effect/stabilized/blue/on_remove()
 
 /datum/status_effect/stabilized/lightpink/on_remove()
 	REMOVE_TRAIT(owner, TRAIT_GOTTAGOFAST,"slimestatus")
+	REMOVE_TRAIT(owner, TRAIT_PACIFISM,"slimestatus")
 
 /datum/status_effect/stabilized/adamantine
 	id = "stabilizedadamantine"

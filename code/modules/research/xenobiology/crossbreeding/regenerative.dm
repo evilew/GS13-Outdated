@@ -24,13 +24,13 @@ Regenerative extracts:
 		to_chat(user, "<span class='warning'>[src] will not work on the dead!</span>")
 		return
 	if(H != user)
-		user.visible_message("<span class='notice'>[user] crushes the [src] over [H], the milky goo quickly regenerating all of [H.p_their()] injuries!</span>",
+		user.visible_message("<span class='notice'>[user] crushes the [src] over [H], the milky goo quickly seeping into [H.p_their()] skin!</span>",
 			"<span class='notice'>You squeeze the [src], and it bursts over [H], the milky goo regenerating [H.p_their()] injuries.</span>")
 	else
-		user.visible_message("<span class='notice'>[user] crushes the [src] over [user.p_them()]self, the milky goo quickly regenerating all of [user.p_their()] injuries!</span>",
-			"<span class='notice'>You squeeze the [src], and it bursts in your hand, splashing you with milky goo which quickly regenerates your injuries!</span>")
+		user.visible_message("<span class='notice'>[user] crushes the [src] over [user.p_them()]self, the milky goo quickly seeping into [user.p_their()] skin!</span>",
+			"<span class='notice'>You squeeze the [src], and it bursts in your hand, splashing you with milky goo which seeps into your skin!</span>")
 	core_effect_before(H, user)
-	H.revive(full_heal = 1)
+	target.reagents.add_reagent(/datum/reagent/medicine/regen_jelly,30) //TODO Make these stronger, No aheals but I'll make a new medicine for these to add that heals faster.
 	core_effect(H, user)
 	playsound(target, 'sound/effects/splat.ogg', 40, 1)
 	qdel(src)
@@ -51,7 +51,7 @@ Regenerative extracts:
 	colour = "purple"
 
 /obj/item/slimecross/regenerative/purple/core_effect(mob/living/target, mob/user)
-	target.reagents.add_reagent(/datum/reagent/medicine/regen_jelly,10)
+	target.reagents.add_reagent(/datum/reagent/medicine/neo_jelly,15) //Varies what it applies so you get two powerful healing chems at once. 
 
 /obj/item/slimecross/regenerative/blue
 	colour = "blue"
@@ -148,10 +148,10 @@ Regenerative extracts:
 
 /obj/item/slimecross/regenerative/sepia
 	colour = "sepia"
-
-/obj/item/slimecross/regenerative/sepia/core_effect(mob/living/target, mob/user)
+/*
+/obj/item/slimecross/regenerative/sepia/core_effect(mob/living/target, mob/user) //Disabling this for the timebeing, Timestop is literally a wizard spell, this shouldn't exist.
 	new /obj/effect/timestop(get_turf(target), 2, 50, list(user,target))
-
+*/
 /obj/item/slimecross/regenerative/cerulean
 	colour = "cerulean"
 
