@@ -79,6 +79,7 @@
 #define TRAIT_MONKEYLIKE		"monkeylike" //sets IsAdvancedToolUser to FALSE
 #define TRAIT_PACIFISM			"pacifism"
 #define TRAIT_IGNORESLOWDOWN	"ignoreslow"
+#define TRAIT_IMMUTABLE_SLOW	"immutableslow" //Cannot become faster
 #define TRAIT_GOTTAGOFAST		"fast"
 #define TRAIT_GOTTAGOREALLYFAST	"2fast"
 #define TRAIT_DEATHCOMA			"deathcoma" //Causes death-like unconsciousness
