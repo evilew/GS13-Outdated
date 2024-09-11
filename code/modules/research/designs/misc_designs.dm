@@ -469,7 +469,7 @@
 	id = "handdrill"
 	build_type = PROTOLATHE
 	materials = list(MAT_METAL = 3500, MAT_SILVER = 1500, MAT_TITANIUM = 2500)
-	build_path = /obj/item/screwdriver/power
+	build_path = /obj/item/handdrill
 	category = list("Equipment")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
 
@@ -477,7 +477,7 @@
 	name = "Jaws of Life"
 	desc = "A small, compact Jaws of Life with an interchangeable pry jaws and cutting jaws"
 	id = "jawsoflife" // added one more requirment since the Jaws of Life are a bit OP
-	build_path = /obj/item/crowbar/power
+	build_path = /obj/item/jawsoflife
 	build_type = PROTOLATHE
 	materials = list(MAT_METAL = 4500, MAT_SILVER = 2500, MAT_TITANIUM = 3500)
 	category = list("Equipment")

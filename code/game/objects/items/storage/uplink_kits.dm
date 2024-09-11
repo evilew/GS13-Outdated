@@ -50,7 +50,7 @@
 			new /obj/item/clothing/gloves/color/latex/nitrile(src)
 			new /obj/item/clothing/mask/gas/clown_hat(src)
 			new /obj/item/clothing/under/suit_jacket/really_black(src)
-			new /obj/item/screwdriver/power(src) //2 tc item
+			new /obj/item/handdrill(src) //2 tc item
 
 		if("murder") // 35 tc
 			new /obj/item/melee/transforming/energy/sword/saber(src)

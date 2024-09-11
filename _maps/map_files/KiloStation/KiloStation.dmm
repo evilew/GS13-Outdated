@@ -30867,7 +30867,7 @@
 	dir = 4;
 	pixel_x = -26
 	},
-/obj/item/crowbar/power,
+/obj/item/jawsoflife,
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -37577,7 +37577,7 @@
 "bkt" = (
 /obj/effect/turf_decal/delivery,
 /obj/structure/closet/crate/silvercrate,
-/obj/item/wrench/power,
+/obj/item/handdrill,
 /obj/machinery/light/small{
 	dir = 4
 	},
