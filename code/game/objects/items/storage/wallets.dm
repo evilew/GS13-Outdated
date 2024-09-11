@@ -13,7 +13,7 @@
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 	STR.max_items = 4
-	STR.cant_hold = typecacheof(list(/obj/item/screwdriver/power))
+	STR.cant_hold = typecacheof(list(/obj/item/handdrill))
 	STR.can_hold = typecacheof(list(
 		/obj/item/stack/spacecash,
 		/obj/item/card,

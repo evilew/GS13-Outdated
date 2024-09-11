@@ -14,8 +14,7 @@
 	cost = 25
 	k_elasticity = 1/80 //Market can only take so much
 	unit_name = "power tool"
-	export_types = list(/obj/item/crowbar/power, /obj/item/screwdriver/power, \
-						/obj/item/weldingtool/experimental, /obj/item/wirecutters/power, /obj/item/wrench/power)
+	export_types = list(/obj/item/jawsoflife, /obj/item/handdrill, /obj/item/weldingtool/experimental)
 	include_subtypes = TRUE
 
 /datum/export/gear/advtool

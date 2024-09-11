@@ -47,7 +47,7 @@
 	belt = /obj/item/gun/energy/e_gun/advtaser
 	backpack_contents = list(/obj/item/storage/firstaid/radbgone=2,
 		/obj/item/storage/firstaid/toxin=1,
-		/obj/item/crowbar/power=1,
+		/obj/item/jawsoflife=1,
 		/obj/item/shovel=1,
 		/obj/item/geiger_counter=1)
 

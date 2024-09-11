@@ -67,7 +67,7 @@
 		/obj/item/radio,
 		/obj/item/clothing/gloves,
 		/obj/item/holosign_creator/atmos,
-		/obj/item/holosign_creator/firelock
+		/obj/item/holosign_creator/firelock,
 		/obj/item/holosign_creator/engineering,
 		/obj/item/forcefield_projector,
 		/obj/item/assembly/signaler,
@@ -76,8 +76,8 @@
 		/obj/item/inducer,
 		/obj/item/grenade/chem_grenade/smart_metal_foam,
 		/obj/item/grenade/chem_grenade/metalfoam,
-		/obj/item/handdrill
-		/obj/item/jawsoflife
+		/obj/item/handdrill,
+		/obj/item/jawsoflife,
 		/obj/item/carpentry/handsaw,
 		/obj/item/carpentry/hammer,
 		/obj/item/carpentry/sandpaper,
@@ -92,8 +92,8 @@
 	item_state = "utility_ce"
 
 /obj/item/storage/belt/utility/chief/full/PopulateContents()
-	new /obj/item/screwdriver/power(src)
-	new /obj/item/crowbar/power(src)
+	new /obj/item/handdrill(src)
+	new /obj/item/jawsoflife(src)
 	new /obj/item/weldingtool/experimental(src)//This can be changed if this is too much
 	new /obj/item/multitool(src)
 	new /obj/item/stack/cable_coil(src,30,pick("red","yellow","orange"))

@@ -4,7 +4,7 @@
 /obj/item/jawsoflife
 	name = "jaws of life"
 	desc = "A set of jaws of life, compressed through the magic of science. It's fitted with a prying head."
-	materials = list(/datum/material/iron=150,/datum/material/silver=50,/datum/material/titanium=25)
+	materials = list(/datum/material/metal=150,/datum/material/silver=50,/datum/material/titanium=25)
 	icon = 'icons/obj/tools.dmi'
 	icon_state = "jaws_pry"
 	item_state = "jawsoflife"
@@ -105,7 +105,7 @@
 	item_state = "drill"
 	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
-	materials = list(/datum/material/iron=150,/datum/material/silver=50,/datum/material/titanium=25) //done for balance reasons, making them high value for research, but harder to get
+	materials = list(/datum/material/metal=150,/datum/material/silver=50,/datum/material/titanium=25) //done for balance reasons, making them high value for research, but harder to get
 	force = 8 //might or might not be too high, subject to change
 	w_class = WEIGHT_CLASS_SMALL
 	throwforce = 8
@@ -116,8 +116,7 @@
 	usesound = 'sound/items/drill_use.ogg'
 	toolspeed = 0.7
 	tool_behaviour = TOOL_SCREWDRIVER
-	sharpness = SHARP_POINTY
-
+	sharpness = IS_SHARP_ACCURATE
 /obj/item/handdrill/attack(mob/living/carbon/M, mob/living/carbon/user)
 	if(!(user.a_intent == INTENT_HARM) && attempt_initiate_surgery(src, M, user))
 		return
@@ -146,7 +145,7 @@
 	desc = "A simple powered hand drill. It's fitted with a bolt bit."
 	icon_state = "drill_bolt"
 	tool_behaviour = TOOL_WRENCH
-	sharpness = SHARP_NONE
+	sharpness = IS_BLUNT
 	playsound(get_turf(user),'sound/items/change_drill.ogg',50,1)
 	if (iscyborg(user))
 		to_chat(user,span_notice("Your servos whirr as the drill reconfigures into bolt mode."))
@@ -158,7 +157,7 @@
 	desc = "A simple powered hand drill. It's fitted with a screw bit."
 	icon_state = "drill_screw"
 	tool_behaviour = TOOL_SCREWDRIVER
-	sharpness = SHARP_POINTY
+	sharpness = IS_SHARP_ACCURATE
 	playsound(get_turf(user),'sound/items/change_drill.ogg',50,1)
 	if (iscyborg(user))
 		to_chat(user,span_notice("Your servos whirr as the drill reconfigures into screw mode."))
@@ -166,6 +165,7 @@
 		to_chat(user, span_notice("You attach the screw driver bit to [src]."))
 	update_icon()
 
+/* //I'll fix this later. Maybe. It's yogs-specific ERT gear it wont be noticed.
 /obj/item/jawsoflife/jimmy
 	name = "airlock jimmy"
 	desc = "A pump assisted airlock prying jimmy."
@@ -232,3 +232,4 @@
 		. += span_danger("The pressure gage has been tampered with.")
 	if(user)
 		show_gage(user)
+*/

@@ -124,8 +124,8 @@
 	access = ACCESS_ENGINE
 	contains = list(/obj/item/clothing/head/hardhat,
 					/obj/item/clothing/suit/hazardvest,
-					/obj/item/screwdriver/power,
-					/obj/item/crowbar/power)
+					/obj/item/handdrill,
+					/obj/item/jawsoflife)
 	crate_name = "power tools crate"
 	crate_type = /obj/structure/closet/crate/secure/engineering
 
