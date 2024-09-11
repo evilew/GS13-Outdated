@@ -44,6 +44,9 @@
 		else if(M.size_multiplier > max_size)
 			to_chat(M, "<span class='warning'>You are too big to operate something like this!</span>")
 			unbuckle_mob(M)
+		else if(HAS_TRAIT(M, TRAIT_IMMUTABLE_SLOW))
+			to_chat(M, "<span class='warning'>Your armor is too heavy to operate something like this!</span>")
+			unbuckle_mob(M)
 	return ..()
 
 /obj/vehicle/ridden/attackby(obj/item/I, mob/user, params)
