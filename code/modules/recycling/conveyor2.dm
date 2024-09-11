@@ -40,7 +40,7 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 
 /obj/machinery/conveyor/inverted //Directions inverted so you can use different corner peices.
 	icon_state = "conveyor_map_inverted"
-	verted = -1
+	inverted = TRUE
 
 /obj/machinery/conveyor/inverted/Initialize(mapload)
 	. = ..()
@@ -307,12 +307,23 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 		CHECK_TICK
 
 /obj/machinery/conveyor_switch/attackby(obj/item/I, mob/user, params)
-	if(I.tool_behaviour == TOOL_CROWBAR)
-		var/obj/item/conveyor_switch_construct/C = new/obj/item/conveyor_switch_construct(src.loc)
-		C.id = id
-		transfer_fingerprints_to(C)
-		to_chat(user, "<span class='notice'>You detach the conveyor switch.</span>")
-		qdel(src)
+	switch(I.tool_behaviour)
+		if(TOOL_CROWBAR)
+			var/obj/item/conveyor_switch_construct/C = new/obj/item/conveyor_switch_construct(src.loc)
+			C.id = id
+			transfer_fingerprints_to(C)
+			to_chat(user, "<span class='notice'>You detach the conveyor switch.</span>")
+			qdel(src)
+		if(TOOL_WRENCH)
+			if(position)
+				to_chat(user, span_warning("\The [src] must be off before attempting to change it's direction!"))
+				return FALSE
+			oneway = !oneway
+			I.play_tool_sound(src, 75)
+			user.visible_message("<span class='notice'>[user] sets \the [src] to [oneway ? "one-way" : "two-way"].</span>",
+								"<span class='notice'>You set \the [src] to [oneway ? "one-way" : "two-way"].</span>",
+								"<span class='italics'>You hear a ratchet.</span>")
+
 
 /obj/machinery/conveyor_switch/oneway
 	icon_state = "conveyor_switch_oneway"
@@ -365,7 +376,7 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 	max_amount = 30
 	singular_name = "conveyor belt"
 	w_class = WEIGHT_CLASS_BULKY
-	materials = list(/datum/material/iron = 1000)
+	materials = list(/datum/material/metal = 1000)
 	///id for linking
 	var/id = "" //inherited by the belt
 
