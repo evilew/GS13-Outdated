@@ -6,6 +6,7 @@
 	item_state = "utility"
 	lefthand_file = 'icons/mob/inhands/equipment/belt_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/belt_righthand.dmi'
+	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BELT
 	attack_verb = list("whipped", "lashed", "disciplined")
 	max_integrity = 300
@@ -47,7 +48,10 @@
 /obj/item/storage/belt/utility/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	var/static/list/can_hold = typecacheof(list(
+	STR.max_items = 11
+	STR.max_w_class = WEIGHT_CLASS_NORMAL
+	STR.max_combined_w_class = 24
+	STR.can_hold = typecacheof(list(
 		/obj/item/crowbar,
 		/obj/item/screwdriver,
 		/obj/item/weldingtool,
@@ -62,16 +66,24 @@
 		/obj/item/extinguisher/mini,
 		/obj/item/radio,
 		/obj/item/clothing/gloves,
-		/obj/item/holosign_creator,
+		/obj/item/holosign_creator/atmos,
+		/obj/item/holosign_creator/firelock
+		/obj/item/holosign_creator/engineering,
 		/obj/item/forcefield_projector,
 		/obj/item/assembly/signaler,
+		/obj/item/lightreplacer,
+		/obj/item/pipe_dispenser,
+		/obj/item/inducer,
+		/obj/item/grenade/chem_grenade/smart_metal_foam,
+		/obj/item/grenade/chem_grenade/metalfoam,
+		/obj/item/handdrill
+		/obj/item/jawsoflife
 		/obj/item/carpentry/handsaw,
 		/obj/item/carpentry/hammer,
 		/obj/item/carpentry/sandpaper,
 		/obj/item/carpentry/borer,
 		/obj/item/carpentry/glue
 		))
-	STR.can_hold = can_hold
 
 /obj/item/storage/belt/utility/chief
 	name = "\improper Chief Engineer's toolbelt" //"the Chief Engineer's toolbelt", because "Chief Engineer's toolbelt" is not a proper noun
@@ -136,6 +148,7 @@
 /obj/item/storage/belt/medical/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	STR.max_items = 11
 	STR.max_w_class = WEIGHT_CLASS_BULKY
 	STR.can_hold = typecacheof(list(
 		/obj/item/healthanalyzer,
@@ -474,7 +487,7 @@ obj/item/storage/belt/slut/ComponentInitialize()
 
 /obj/item/storage/belt/durathread
 	name = "durathread toolbelt"
-	desc = "A toolbelt made out of durathread, it seems resistant enough to hold even big tools like an RCD, it also has higher capacity."
+	desc = "A toolbelt made out of durathread, it seems resistant enough to hold an assortment of different tools and it also has higher capacity."
 	icon_state = "webbing-durathread"
 	item_state = "webbing-durathread"
 	resistance_flags = FIRE_PROOF
@@ -482,8 +495,8 @@ obj/item/storage/belt/slut/ComponentInitialize()
 /obj/item/storage/belt/durathread/ComponentInitialize()
 	. = ..()
 	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
-	STR.max_items = 14
-	STR.max_combined_w_class = 32
+	STR.max_items = 20
+	STR.max_combined_w_class = 36
 	STR.max_w_class = WEIGHT_CLASS_NORMAL
 	STR.can_hold = typecacheof(list(
 		/obj/item/ammo_box,
