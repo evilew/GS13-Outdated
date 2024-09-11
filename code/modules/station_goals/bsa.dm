@@ -40,7 +40,9 @@
 	icon_state = "power_box"
 
 /obj/machinery/bsa/back/multitool_act(mob/living/user, obj/item/I)
-	if(istype(I, /obj/item/multitool)) // Only this multitool type has a data buffer.
+	if(I.tool_behaviour == TOOL_MULTITOOL) // Only this multitool type has a data buffer.
+		if(!multitool_check_buffer(user, I))
+			return
 		var/obj/item/multitool/M = I
 		M.buffer = src
 		to_chat(user, "<span class='notice'>You store linkage information in [I]'s buffer.</span>")
@@ -54,7 +56,7 @@
 	icon_state = "emitter_center"
 
 /obj/machinery/bsa/front/multitool_act(mob/living/user, obj/item/I)
-	if(istype(I, /obj/item/multitool)) // Only this multitool type has a data buffer.
+	if(I.tool_behaviour == TOOL_MULTITOOL) // Only this multitool type has a data buffer.
 		var/obj/item/multitool/M = I
 		M.buffer = src
 		to_chat(user, "<span class='notice'>You store linkage information in [I]'s buffer.</span>")
@@ -70,7 +72,7 @@
 	var/obj/machinery/bsa/front/front
 
 /obj/machinery/bsa/middle/multitool_act(mob/living/user, obj/item/I)
-	if(istype(I, /obj/item/multitool)) // Only this multitool type has a data buffer.
+	if(I.tool_behaviour == TOOL_MULTITOOL) // Only this multitool type has a data buffer.
 		var/obj/item/multitool/M = I
 		if(M.buffer)
 			if(istype(M.buffer, /obj/machinery/bsa/back))

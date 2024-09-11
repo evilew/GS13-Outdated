@@ -168,7 +168,7 @@
 	return INITIALIZE_HINT_LATELOAD
 
 /obj/structure/scale/credits/attackby(obj/item/used_tool, mob/user, params)
-	if(!istype(used_tool, /obj/item/wrench))
+	if(!used_tool.tool_behaviour == TOOL_WRENCH)
 		return ..()
 
 	anchored = !anchored

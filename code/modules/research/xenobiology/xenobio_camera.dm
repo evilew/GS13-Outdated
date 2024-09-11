@@ -138,7 +138,9 @@
 		current_potion = O
 		to_chat(user, "<span class='notice'>You load [O] in the console's potion slot[replaced ? ", replacing the one that was there before" : ""].</span>")
 		return
-	else if(istype(O, /obj/item/multitool))
+	else if(O.tool_behaviour == TOOL_MULTITOOL)
+		if(!multitool_check_buffer(user, O))
+			return
 		var/obj/item/multitool/M = O
 		if(istype(M.buffer))
 			to_chat(user, "<span class='notice'>You link [src] with [M.buffer] in [M] buffer.</span>")

@@ -615,7 +615,7 @@
 	else if(default_unfasten_wrench(user, O))
 		return
 
-	else if(istype(O, /obj/item/wirecutters) && unwrenchable)
+	else if(O.tool_behaviour == TOOL_WIRECUTTER && unwrenchable)
 		if (!anchored)
 			to_chat(user, "<span class='warning'>Anchor the tray first!</span>")
 			return

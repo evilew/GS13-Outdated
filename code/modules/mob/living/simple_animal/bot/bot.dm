@@ -284,7 +284,7 @@
 	show_controls(user)
 
 /mob/living/simple_animal/bot/attackby(obj/item/W, mob/user, params)
-	if(istype(W, /obj/item/screwdriver))
+	if(W.tool_behaviour == TOOL_SCREWDRIVER)
 		if(!locked)
 			open = !open
 			to_chat(user, "<span class='notice'>The maintenance panel is now [open ? "opened" : "closed"].</span>")
@@ -314,7 +314,7 @@
 					ejectpai(user)
 	else
 		user.changeNext_move(CLICK_CD_MELEE)
-		if(istype(W, /obj/item/weldingtool) && user.a_intent != INTENT_HARM)
+		if(W.tool_behaviour == TOOL_WELDER && user.a_intent != INTENT_HARM)
 			if(health >= maxHealth)
 				to_chat(user, "<span class='warning'>[src] does not need a repair!</span>")
 				return

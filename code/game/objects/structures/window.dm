@@ -166,7 +166,7 @@
 
 	add_fingerprint(user)
 
-	if(istype(I, /obj/item/weldingtool) && user.a_intent == INTENT_HELP)
+	if(I.tool_behaviour == TOOL_WELDER && user.a_intent == INTENT_HELP)
 		if(obj_integrity < max_integrity)
 			if(!I.tool_start_check(user, amount=0))
 				return
@@ -181,7 +181,7 @@
 		return
 
 	if(!(flags_1&NODECONSTRUCT_1))
-		if(istype(I, /obj/item/screwdriver))
+		if(I.tool_behaviour == TOOL_SCREWDRIVER)
 			I.play_tool_sound(src, 75)
 			if(reinf)
 				if(state == WINDOW_SCREWED_TO_FRAME || state == WINDOW_IN_FRAME)
@@ -202,7 +202,7 @@
 			return
 
 
-		else if (istype(I, /obj/item/crowbar) && reinf && (state == WINDOW_OUT_OF_FRAME || state == WINDOW_IN_FRAME))
+		else if (I.tool_behaviour == TOOL_CROWBAR && reinf && (state == WINDOW_OUT_OF_FRAME || state == WINDOW_IN_FRAME))
 			to_chat(user, "<span class='notice'>You begin to lever the window [state == WINDOW_OUT_OF_FRAME ? "into":"out of"] the frame...</span>")
 			I.play_tool_sound(src, 75)
 			if(I.use_tool(src, user, decon_speed, extra_checks = CALLBACK(src,PROC_REF(check_state_and_anchored), state, anchored)))
@@ -210,7 +210,7 @@
 				to_chat(user, "<span class='notice'>You pry the window [state == WINDOW_IN_FRAME ? "into":"out of"] the frame.</span>")
 			return
 
-		else if(istype(I, /obj/item/wrench) && !anchored)
+		else if(I.tool_behaviour == TOOL_WRENCH && !anchored)
 			I.play_tool_sound(src, 75)
 			to_chat(user, "<span class='notice'> You begin to disassemble [src]...</span>")
 			if(I.use_tool(src, user, decon_speed, extra_checks = CALLBACK(src,PROC_REF(check_state_and_anchored), state, anchored)))

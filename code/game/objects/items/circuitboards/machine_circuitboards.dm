@@ -279,7 +279,7 @@
 		/obj/machinery/vending/gato = "GATO Vending Machine")
 
 /obj/item/circuitboard/machine/vendor/attackby(obj/item/I, mob/user, params)
-	if(istype(I, /obj/item/screwdriver))
+	if(I.tool_behaviour == TOOL_SCREWDRIVER)
 		var/choice = show_radial_menu(user, src, GLOB.vending_m_choices, radius = 46, require_near = TRUE, tooltips = TRUE)
 		if(!choice)
 			return
@@ -353,7 +353,7 @@
 			build_path = PATH_HEATER
 
 /obj/item/circuitboard/machine/thermomachine/attackby(obj/item/I, mob/user, params)
-	if(istype(I, /obj/item/screwdriver))
+	if(I.tool_behaviour == TOOL_SCREWDRIVER)
 		var/obj/item/circuitboard/new_type
 		var/new_setting
 		switch(build_path)
@@ -422,7 +422,7 @@
 	needs_anchored = FALSE
 
 /obj/item/circuitboard/machine/processor/attackby(obj/item/I, mob/user, params)
-	if(istype(I, /obj/item/screwdriver))
+	if(I.tool_behaviour == TOOL_SCREWDRIVER)
 		if(build_path == /obj/machinery/processor)
 			name = "Slime Processor (Machine Board)"
 			build_path = /obj/machinery/processor/slime
@@ -458,7 +458,7 @@
 	return ..()
 
 /obj/item/circuitboard/machine/smartfridge/attackby(obj/item/I, mob/user, params)
-	if(istype(I, /obj/item/screwdriver))
+	if(I.tool_behaviour == TOOL_SCREWDRIVER)
 		var/position = fridges_name_paths.Find(build_path, fridges_name_paths)
 		position = (position == fridges_name_paths.len) ? 1 : (position + 1)
 		build_path = fridges_name_paths[position]
@@ -635,7 +635,7 @@
 		build_path = PATH_POWERCOIL
 
 /obj/item/circuitboard/machine/tesla_coil/attackby(obj/item/I, mob/user, params)
-	if(istype(I, /obj/item/screwdriver))
+	if(I.tool_behaviour == TOOL_SCREWDRIVER)
 		var/obj/item/circuitboard/new_type
 		var/new_setting
 		switch(build_path)
@@ -732,7 +732,7 @@
 	needs_anchored = FALSE
 
 /obj/item/circuitboard/machine/chem_master/attackby(obj/item/I, mob/user, params)
-	if(istype(I, /obj/item/screwdriver))
+	if(I.tool_behaviour == TOOL_SCREWDRIVER)
 		var/new_name = "ChemMaster"
 		var/new_path = /obj/machinery/chem_master
 

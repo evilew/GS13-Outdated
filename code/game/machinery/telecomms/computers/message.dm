@@ -325,7 +325,7 @@
 			update_static_data(usr)
 
 /obj/machinery/computer/message_monitor/attackby(obj/item/O, mob/living/user, params)
-	if(istype(O, /obj/item/screwdriver) && CHECK_BITFIELD(obj_flags, EMAGGED))
+	if(O.tool_behaviour == TOOL_SCREWDRIVER && CHECK_BITFIELD(obj_flags, EMAGGED))
 		//Stops people from just unscrewing the monitor and putting it back to get the console working again. 
 		//Why this though, you should make it emag to a board level. (i wont do it)
 		to_chat(user, "<span class='warning'>It is too hot to mess with!</span>")

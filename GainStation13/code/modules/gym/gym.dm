@@ -32,71 +32,68 @@
 			to_chat(user, "<span>You couldn't complete the rep. YOU'LL GET IT NEXT TIME CHAMP!!!</span>")
 		using = FALSE
 
-/obj/machinery/conveyor/treadmill
+/obj/machinery/treadmill
 	name = "treadmill"
 	desc = "A treadmil, for losing weight!"
-
-/obj/machinery/conveyor/treadmill/convey(list/affecting)
-	var/turf/T = get_step(src, movedir)
-	if(length(T.contents) > 150)
-		return
-	for(var/atom/movable/A in affecting)
-		if((A.loc == loc) && A.has_gravity())
-			A.ConveyorMove(movedir)
-			if(iscarbon(A))
-				var/mob/living/carbon/C = A
-				C.adjust_fatness(-10, FATTENING_TYPE_WEIGHT_LOSS)
-
-/obj/machinery/conveyor/treadmill/attackby(obj/item/I, mob/user, params)
-	if(istype(I, /obj/item/crowbar))
-		user.visible_message("<span class='notice'>[user] struggles to pry up \the [src] with \the [I].</span>", \
-		"<span class='notice'>You struggle to pry up \the [src] with \the [I].</span>")
-		if(I.use_tool(src, user, 40, volume=40))
-			if(!(stat & BROKEN))
-				var/obj/item/conveyor_construct/treadmill/C = new/obj/item/conveyor_construct/treadmill(src.loc)
-				C.id = id
-				transfer_fingerprints_to(C)
-			to_chat(user, "<span class='notice'>You remove the conveyor belt.</span>")
-			qdel(src)
-
-	else if(istype(I, /obj/item/wrench))
-		if(!(stat & BROKEN))
-			I.play_tool_sound(src)
-			setDir(turn(dir,-45))
-			update_move_direction()
-			to_chat(user, "<span class='notice'>You rotate [src].</span>")
-
-	else if(istype(I, /obj/item/screwdriver))
-		if(!(stat & BROKEN))
-			verted = verted * -1
-			update_move_direction()
-			to_chat(user, "<span class='notice'>You reverse [src]'s direction.</span>")
-
-	else if(user.a_intent != INTENT_HARM)
-		user.transferItemToLoc(I, drop_location())
-	else
-		return ..()
-
-/obj/item/conveyor_construct/treadmill
 	icon = 'icons/obj/recycling.dmi'
-	icon_state = "conveyor_construct"
-	name = "treadmill assembly"
-	desc = "A treadmill assembly."
-	w_class = WEIGHT_CLASS_BULKY
-	id = "" //inherited by the belt
+	icon_state = "conveyor0"
+	circuit = /obj/item/circuitboard/machine/treadmill
 
-/obj/item/conveyor_construct/afterattack(atom/A, mob/user, proximity, click_parameters)
-	SEND_SIGNAL(src, COMSIG_ITEM_AFTERATTACK, A, user, proximity, click_parameters)
-	SEND_SIGNAL(user, COMSIG_MOB_ITEM_AFTERATTACK, A, user, proximity, click_parameters)
-	if(!proximity || user.stat || !isfloorturf(A) || istype(A, /area/shuttle))
-		return
-	var/cdir = get_dir(A, user)
-	if(A == user.loc)
-		to_chat(user, "<span class='notice'>You cannot place a conveyor belt under yourself.</span>")
-		return
-	var/obj/machinery/conveyor/treadmill/C = new/obj/machinery/conveyor/treadmill(A, cdir, id)
-	transfer_fingerprints_to(C)
-	qdel(src)
+	var/fatloss = -10
+
+/obj/machinery/treadmill/Uncross(atom/movable/AM, atom/newloc)
+	if(stat & BROKEN)
+		return ..()
+	if(!isliving(AM))
+		return ..()
+	var/mob/living/M = AM
+	if(M.throwing || M.floating || M.is_flying()) //Make sure they're not going over it
+		return ..()
+	if(AM.dir != dir) //Make sure they're going into the treadmill
+		return ..()
+	if(prob(25))
+		playsound(src, "sound/machines/tractor_running.ogg", 25, TRUE, -2) //Rumblin'
+	if(iscarbon(M))
+		var/mob/living/carbon/C = M
+		if(C.fatness > FATNESS_LEVEL_BARELYMOBILE)
+			if(prob(5))
+				visible_message(pick(list(	//Really testing the poor thing, huh?
+					"\the [src] audibly strains under [C]'s weight...",
+					"\the [src] creeaaaaks under [C]'s strain..."
+				)))
+		C.adjust_fatness(fatloss, FATTENING_TYPE_WEIGHT_LOSS)
+	flick("conveyor-1", src)
+	return FALSE
+	
+/obj/machinery/treadmill/RefreshParts(obj/item/O, mob/user, params)
+	for(var/obj/item/stock_parts/manipulator/M in component_parts)
+		fatloss += M.rating * -10
+	
+/obj/machinery/treadmill/attackby()
+	if(default_deconstruction_screwdriver(user, "conveyor0", "conveyor0", O))
+		return TRUE
+
+	if(default_deconstruction_crowbar(O))
+		return TRUE
+
+	if(default_change_direction_wrench(O))
+		return TRUE
+
+	return ..()
+
+/obj/item/circuitboard/machine/treadmill
+	name = "Treadmill (Machine Board)"
+	build_path = /obj/machinery/autolathe
+	req_components = list(/obj/item/stock_parts/manipulator = 1)
+
+/datum/design/treadmill
+	name = "Treadmill Board"
+	id = "treadmill"
+	build_type = AUTOLATE | PROTOLATHE
+	materials = list(MAT_METAL = 50, MAT_GLASS = 50)
+	build_path = /obj/item/circuitboard/machine/treadmill
+	category = list("inital", "Construction")
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
 
 /datum/design/dumbbell
 	name = "Dumbbell"
@@ -105,7 +102,7 @@
 	materials = list(MAT_METAL = 2000)
 	build_path = /obj/item/dumbbell
 	category = list("initial", "Tools")
-
+/*
 /datum/design/treadmill
 	name = "Treadmill"
 	id = "treadmill"
@@ -113,3 +110,4 @@
 	materials = list(MAT_METAL = 5000)
 	build_path = /obj/item/conveyor_construct/treadmill
 	category = list("initial", "Construction")
+*/

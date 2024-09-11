@@ -47,7 +47,7 @@ obj/structure/medkit_cabinet/contents_explosion(severity, target)
 
 //disassembly code
 /obj/structure/medkit_cabinet/attackby(obj/item/I, mob/user, params)
-	if(istype(I, /obj/item/wrench) && !stored_medkit)
+	if(I.tool_behaviour == TOOL_WRENCH && !stored_medkit)
 		to_chat(user, "<span class='notice'>You start unsecuring [name]...</span>")
 		I.play_tool_sound(src)
 		if(I.use_tool(src, user, 60))

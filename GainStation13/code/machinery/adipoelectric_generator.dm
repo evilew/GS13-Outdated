@@ -72,7 +72,7 @@
 	if(default_deconstruction_crowbar(P))
 		return
 
-	if(istype(P, /obj/item/wrench) && !active)
+	if(P.tool_behaviour == TOOL_WRENCH && !active)
 		if(!anchored && !isinspace())
 			connect_to_network()
 			to_chat(user, "<span class='notice'>You secure the generator to the floor.</span>")

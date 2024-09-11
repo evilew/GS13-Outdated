@@ -201,7 +201,7 @@
 				to_chat(user, "<span class='warning'>Invalid ID: Access denied.</span>")
 		else
 			to_chat(user, "<span class='warning'>Maintenance protocols disabled by operator.</span>")
-	else if(istype(W, /obj/item/wrench))
+	else if(W.tool_behaviour == TOOL_WRENCH)
 		if(construction_state==1)
 			construction_state = 2
 			to_chat(user, "<span class='notice'>You undo the securing bolts.</span>")
@@ -209,7 +209,7 @@
 			construction_state = 1
 			to_chat(user, "<span class='notice'>You tighten the securing bolts.</span>")
 		return
-	else if(istype(W, /obj/item/crowbar))
+	else if(W.tool_behaviour == TOOL_CROWBAR)
 		if(construction_state==2)
 			construction_state = 3
 			to_chat(user, "<span class='notice'>You open the hatch to the power unit.</span>")
@@ -226,7 +226,7 @@
 			else
 				to_chat(user, "<span class='warning'>You need two lengths of cable to fix this mech!</span>")
 		return
-	else if(istype(W, /obj/item/screwdriver) && user.a_intent != INTENT_HARM)
+	else if(W.tool_behaviour == TOOL_SCREWDRIVER && user.a_intent != INTENT_HARM)
 		if(internal_damage & MECHA_INT_TEMP_CONTROL)
 			clearInternalDamage(MECHA_INT_TEMP_CONTROL)
 			to_chat(user, "<span class='notice'>You repair the damaged temperature controller.</span>")
@@ -254,7 +254,7 @@
 				to_chat(user, "<span class='notice'>There's already a powercell installed.</span>")
 		return
 
-	else if(istype(W, /obj/item/weldingtool) && user.a_intent != INTENT_HARM)
+	else if(W.tool_behaviour == TOOL_WELDER && user.a_intent != INTENT_HARM)
 		user.changeNext_move(CLICK_CD_MELEE)
 		if(obj_integrity < max_integrity)
 			if(W.use_tool(src, user, 0, volume=50, amount=1))
