@@ -19,6 +19,8 @@
 	var/blueberry_inflation = FALSE
 	///Extreme weight gain
 	var/weight_gain_extreme = FALSE
+	///Persistant fatness
+	var/weight_gain_persistent = FALSE
 	///Permanent weight gain
 	var/weight_gain_permanent = FALSE
 	/// At what weight will you start to get stuck in airlocks?

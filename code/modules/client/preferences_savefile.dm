@@ -298,6 +298,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 		default_slot = slot
 		WRITE_FILE(S["default_slot"] , slot)
 
+	ckeyslot = slot
 	S.cd = "/character[slot]"
 	var/needs_update = savefile_needs_update(S)
 	if(needs_update == -2)		//fatal, can't load any data
@@ -495,6 +496,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["weight_gain_nanites"] >> weight_gain_nanites
 	S["weight_gain_weapons"] >> weight_gain_weapons
 	S["weight_gain_extreme"] >> weight_gain_extreme
+	S["weight_gain_persistent"] >> weight_gain_persistent
 	S["weight_gain_permanent"] >> weight_gain_permanent
 	S["wg_rate"] >> wg_rate
 	S["wl_rate"] >> wl_rate
@@ -714,6 +716,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["weight_gain_chems"], weight_gain_chems)
 	WRITE_FILE(S["weight_gain_weapons"], weight_gain_weapons)
 	WRITE_FILE(S["weight_gain_extreme"], weight_gain_extreme)
+	WRITE_FILE(S["weight_gain_persistent"], weight_gain_persistent)
 	WRITE_FILE(S["weight_gain_permanent"], weight_gain_permanent)
 	WRITE_FILE(S["wg_rate"], wg_rate)
 	WRITE_FILE(S["wl_rate"], wl_rate)

@@ -109,6 +109,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/wg_rate = 0.5
 	var/wl_rate = 0.5
 	var/voice = "human"
+	var/ckeyslot
 
 	//HS13 jobs
 	var/sillyroles = TRUE //for clown and mime
@@ -1077,7 +1078,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "This preference functions similar to the one before but allows for items with more drastic effects. <b>Do not enable this if you aren't okay with more drastic things happening to your character.</b><BR>"
 			dat += "<b>Extreme Fatness Vulnerability:</b><a href='?_src_=prefs;preference=extreme_fatness_vulnerable'>[extreme_fatness_vulnerable == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 			dat += "<b>Extreme Weight Gain (Sprite Size scales with weight):</b><a href='?_src_=prefs;preference=weight_gain_extreme'>[weight_gain_extreme == TRUE ? "Enabled" : "Disabled"]</a><BR>"
-			dat += "<b>Weight Gain Permanent (special weight persists between rounds):</b><a href='?_src_=prefs;preference=weight_gain_permanent'>[weight_gain_permanent == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+			dat += "<b>Persistent Fat (endround/cryo weight becomes your new start weight):</b><a href='?_src_=prefs;preference=weight_gain_persistent'>[weight_gain_persistent == TRUE ? "Enabled" : "Disabled"]</a><BR>"
+			dat += "<b>Permanent Weight (hard to remove and persistent weight):</b><a href='?_src_=prefs;preference=weight_gain_permanent'>[weight_gain_permanent == TRUE ? "Enabled" : "Disabled"]</a><BR>"
 
 			dat += "<h2>GS13 Helplessness Preferences</h2>"
 			dat += "<b>Please be careful when using these mechanics as not to use them in a way that negatively impacts those around you. If you are seriously needed for something, especially something station critical, do not use these as an excuse to ignore your duty.</b><BR><BR>"
@@ -2667,6 +2669,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					weight_gain_nanites = !weight_gain_nanites
 				if("weight_gain_extreme")
 					weight_gain_extreme = !weight_gain_extreme
+				if("weight_gain_persistent")
+					weight_gain_persistent = !weight_gain_persistent
 				if("weight_gain_permanent")
 					weight_gain_permanent = !weight_gain_permanent
 				if("noncon_weight_gain")
@@ -3001,9 +3005,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	//GS13
 	character.fatness = starting_weight
 	character.fatness_real = starting_weight
-	character.fatness_perma = permanent_fat
+	if(weight_gain_permanent)
+		character.fatness_perma = permanent_fat
 	character.weight_gain_rate = wg_rate
 	character.weight_loss_rate = wl_rate
+	character.savekey = clientckey
+	character.ckeyslot = ckeyslot
 
 	character.gender = gender
 	character.age = age

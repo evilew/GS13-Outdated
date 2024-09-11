@@ -9,6 +9,9 @@
 	instability = 10
 	energy_coeff = 1
 	power_coeff = 1
+	///Which chem is added (lipo default) and how much?
+	var/chem_to_add = /datum/reagent/consumable/lipoifier
+	var/chem_amount = 5
 
 /obj/effect/proc_holder/spell/targeted/touch/fatfang
 	name = "The Nibble"
@@ -27,16 +30,14 @@
 	catchphrase = null
 	icon = 'icons/mob/actions/bloodsucker.dmi'
 	icon_state = "power_feed"
-	///How much weight is added?
-	var/chem_to_add = 5
 	
 	var/starttime = 0
 
 /obj/item/melee/touch_attack/fatfang/afterattack(atom/target, mob/living/carbon/user, proximity)
-	if(!proximity || !iscarbon(target) || target == user)
+	if(!proximity || !iscarbon(target))
 		return FALSE
 	
-	if(!target || !chem_to_add)
+	if(!target || !user.dna.get_mutation(FATFANG).chem_to_add || !user.dna.get_mutation(FATFANG).chem_amount)
 		return FALSE
 	target.visible_message("<span class='danger'>[user] nibbles [target]!</span>","<span class='userdanger'>[user] nibbles you!</span>")
 	if(target == user.pulling && ishuman(user.pulling))
@@ -44,13 +45,12 @@
 		user.dna.get_mutation(FATFANG).power.charge_max = 600 * GET_MUTATION_ENERGY(user.dna.get_mutation(FATFANG))
 		while(starttime + 300 > world.time && in_range(user, target))
 			if(do_mob(user, target, 10, 0, 1))
-				target.reagents.add_reagent(/datum/reagent/consumable/lipoifier, (chem_to_add * GET_MUTATION_POWER(user.dna.get_mutation(FATFANG))/2))
+				target.reagents.add_reagent(user.dna.get_mutation(FATFANG).chem_to_add, (user.dna.get_mutation(FATFANG).chem_amount * GET_MUTATION_POWER(user.dna.get_mutation(FATFANG))/2))
 				target.visible_message("<span class='danger'>[user] pumps some venom in [target]!</span>","<span class='userdanger'>[user] pumps some venom in you!</span>")
 	else
 		user.dna.get_mutation(FATFANG).power.charge_max = 50 * GET_MUTATION_ENERGY(user.dna.get_mutation(FATFANG))
-		target.reagents.add_reagent(/datum/reagent/consumable/lipoifier, chem_to_add * GET_MUTATION_POWER(user.dna.get_mutation(FATFANG)))
-
-	return ..()
+		target.reagents.add_reagent(user.dna.get_mutation(FATFANG).chem_to_add, user.dna.get_mutation(FATFANG).chem_amount * GET_MUTATION_POWER(user.dna.get_mutation(FATFANG)))
+	user.changeNext_move(50)
 
 /obj/item/dnainjector/antifang
 	name = "\improper DNA injector (Anti-The Nibble)"

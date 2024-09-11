@@ -1,5 +1,3 @@
-///datum/reagent/sizechem
-
 //Reagent
 /datum/reagent/fermi_fat
 	name = "Galbanic Compound"
@@ -83,7 +81,7 @@
 		C.adjust_fatness(1, FATTENING_TYPE_CHEM)
 		C.fullness = max(0, C.fullness-1)
 		C.nutrition = max(0, C.nutrition-1)
-		if(addiction_mults == 0)
+		if(addiction_mults < 1)
 			C.nutri_mult += 0.5
 			C.weight_gain_rate += 0.25
 			addiction_mults = 1
@@ -99,7 +97,7 @@
 		C.adjust_fatness(2, FATTENING_TYPE_CHEM)
 		C.fullness = max(0, C.fullness-2)
 		C.nutrition = max(0, C.nutrition-2)
-		if(addiction_mults <= 1)
+		if(addiction_mults < 2)
 			C.nutri_mult += 0.5
 			C.weight_gain_rate += 0.25
 			addiction_mults = 2
@@ -115,7 +113,7 @@
 		C.adjust_fatness(3, FATTENING_TYPE_CHEM)
 		C.fullness = max(0, C.fullness-3)
 		C.nutrition = max(0, C.nutrition-3)
-		if(addiction_mults <= 2)
+		if(addiction_mults < 3)
 			C.nutri_mult += 0.5
 			C.weight_gain_rate += 0.25
 			addiction_mults = 3
@@ -131,7 +129,7 @@
 		C.adjust_fatness(4, FATTENING_TYPE_CHEM)
 		C.fullness = max(0, C.fullness-4)
 		C.nutrition = max(0, C.nutrition-4)
-		if(addiction_mults <= 3)
+		if(addiction_mults < 4)
 			C.nutri_mult += 0.5
 			C.weight_gain_rate += 0.25
 			addiction_mults = 4
@@ -143,6 +141,7 @@
 		C.weight_gain_rate = max(0,11, 0.25 * addiction_mults)
 	return
 
+//Reagent
 /datum/reagent/fermi_slim
 	name = "Macerinic Solution"
 	description = "A solution with unparalleled obesity-solving properties. One of the few things known to be capable of removing galbanic fat."
@@ -151,6 +150,8 @@
 	pH = 7
 	metabolization_rate = REAGENTS_METABOLISM / 4
 	can_synth = FALSE
+
+	overdose_threshold = 50
 
 //Reaction
 /datum/chemical_reaction/fermi_slim
@@ -180,7 +181,16 @@
 /datum/reagent/fermi_slim/on_mob_life(mob/living/carbon/M)
 	if(!iscarbon(M))
 		return..()
-	M.adjust_fatness(-50, FATTENING_TYPE_CHEM)
-	M.adjust_perma(-5, FATTENING_TYPE_CHEM)
+	M.adjust_fatness(-50, FATTENING_TYPE_WEIGHT_LOSS)
+	M.adjust_perma(-5, FATTENING_TYPE_WEIGHT_LOSS)
 	..()
 	. = 1
+
+/datum/reagent/fermi_slim/overdose_process(mob/living/M)
+	if(!iscarbon(M))
+		return..()
+	var/mob/living/carbon/C = M
+	C.fullness = max(0, C.fullness-5)
+	C.nutrition = max(0, C.nutrition-5)
+	C.weight_loss_rate = min(5, C.weight_loss_rate+0.01)
+	..()

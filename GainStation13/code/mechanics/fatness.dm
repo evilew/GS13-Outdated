@@ -56,7 +56,6 @@ GLOBAL_LIST_INIT(uncapped_resize_areas, list(/area/bridge, /area/crew_quarters, 
 
 	return TRUE
 
-
 /mob/living/carbon/fully_heal(admin_revive)
 	fatness = 0
 	fatness_real = 0
