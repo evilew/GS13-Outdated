@@ -37,15 +37,26 @@
 	desc = "A treadmil, for losing weight!"
 
 /obj/machinery/conveyor/treadmill/convey(list/affecting)
-	var/turf/T = get_step(src, movedir)
-	if(length(T.contents) > 150)
-		return
-	for(var/atom/movable/A in affecting)
-		if((A.loc == loc) && A.has_gravity())
-			A.ConveyorMove(movedir)
+	for(var/am in affecting)
+		if(!ismovable(am))	//This is like a third faster than for(var/atom/movable in affecting)
+			continue
+		var/atom/movable/movable_thing = am
+		//Give this a chance to yield if the server is busy
+		stoplag()
+		if(QDELETED(movable_thing) || (movable_thing.loc != loc))
+			continue
+		if(iseffect(movable_thing) || isdead(movable_thing))
+			continue
+		if(isliving(movable_thing))
+			var/mob/living/zoommob = movable_thing
+			if((zoommob.movement_type & FLYING) && !zoommob.stat)
+				continue
+		if(!movable_thing.anchored && movable_thing.has_gravity())
+			step(movable_thing, movedir)
 			if(iscarbon(A))
 				var/mob/living/carbon/C = A
 				C.adjust_fatness(-10, FATTENING_TYPE_WEIGHT_LOSS)
+	conveying = FALSE
 
 /obj/machinery/conveyor/treadmill/attackby(obj/item/I, mob/user, params)
 	if(I.tool_behavior == TOOL_CROWBAR)
@@ -85,7 +96,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	id = "" //inherited by the belt
 
-/obj/item/conveyor_construct/afterattack(atom/A, mob/user, proximity, click_parameters)
+/obj/item/conveyor_construct/treadmill/afterattack(atom/A, mob/user, proximity, click_parameters)
 	SEND_SIGNAL(src, COMSIG_ITEM_AFTERATTACK, A, user, proximity, click_parameters)
 	SEND_SIGNAL(user, COMSIG_MOB_ITEM_AFTERATTACK, A, user, proximity, click_parameters)
 	if(!proximity || user.stat || !isfloorturf(A) || istype(A, /area/shuttle))

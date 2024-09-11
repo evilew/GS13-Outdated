@@ -2,23 +2,37 @@
 //note that corner pieces transfer stuff clockwise when running forward, and anti-clockwise backwards.
 
 GLOBAL_LIST_EMPTY(conveyors_by_id)
-
+#define MAX_CONVEYOR_ITEMS_MOVE 30
 /obj/machinery/conveyor
 	icon = 'icons/obj/recycling.dmi'
 	icon_state = "conveyor_map"
 	name = "conveyor belt"
 	desc = "A conveyor belt."
 	layer = BELOW_OPEN_DOOR_LAYER
-	var/operating = 0	// 1 if running forward, -1 if backwards, 0 if off
-	var/operable = 1	// true if can operate (no broken segments in this belt run)
-	var/forwards		// this is the default (forward) direction, set by the map dir
-	var/backwards		// hopefully self-explanatory
-	var/movedir			// the actual direction to move stuff in
-
-	var/list/affecting	// the list of all items that will be moved this ptick
-	var/id = ""			// the control ID	- must match controller ID
-	var/verted = 1		// Inverts the direction the conveyor belt moves.
+	/// 1 if running forward, -1 if backwards, 0 if off
+	var/operating = 0
+	/// true if can operate (no broken segments in this belt run)
+	var/operable = 1
+	/// this is the default (forward) direction, set by the map dir
+	var/forwards
+	/// The opposite of forwards. It's set in a special var for corner belts, which aren't using the opposite direction when in reverse.
+	var/backwards
+	/// the actual direction to move stuff in
+	var/movedir	
+	/// The control ID - must match at least one conveyor switch's ID to be useful.
+	var/id = ""
+	// Inverts the direction the conveyor belt moves when true.
+	var/inverted = FALSE	
 	speed_process = TRUE
+	/// Are we currently conveying items?
+	var/conveying = FALSE
+
+/obj/machinery/conveyor/examine(mob/user)
+	. = ..()
+	if(inverted)
+		. += span_notice("It is currently set to go in reverse.")
+	. += "\nLeft-click with a <b>wrench</b> to rotate."
+	. += "Left-click with a <b>screwdriver</b> to invert its direction."
 
 /obj/machinery/conveyor/centcom_auto
 	id = "round_end_belt"
@@ -41,17 +55,8 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 	update_move_direction()
 
 /obj/machinery/conveyor/auto/update()
-	if(stat & BROKEN)
-		icon_state = "conveyor-broken"
-		operating = FALSE
-		return
-	else if(!operable)
-		operating = FALSE
-	else if(stat & NOPOWER)
-		operating = FALSE
-	else
-		operating = TRUE
-	icon_state = "conveyor[operating * verted]"
+	. = ..()
+	operating = .
 
 // create a conveyor
 /obj/machinery/conveyor/Initialize(mapload, newdir, newid)
@@ -102,7 +107,7 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 		if(SOUTHWEST)
 			forwards = WEST
 			backwards = NORTH
-	if(verted == -1)
+	if(inverted)
 		var/temp = forwards
 		forwards = backwards
 		backwards = temp
@@ -112,35 +117,58 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 		movedir = backwards
 	update()
 
+/obj/machinery/conveyor/update_icon()
+	if(!operating)
+		icon_state = "conveyor[inverted ? "-0" : "0"]"
+	else
+		icon_state = "conveyor[inverted ? -operating : operating]"
+
 /obj/machinery/conveyor/proc/update()
-	if(stat & BROKEN)
-		icon_state = "conveyor-broken"
-		operating = FALSE
-		return
-	if(!operable)
-		operating = FALSE
+	. = TRUE
 	if(stat & NOPOWER)
 		operating = FALSE
-	icon_state = "conveyor[operating * verted]"
+		. = FALSE
+	update_icon()
 
 	// machine process
 	// move items to the target location
 /obj/machinery/conveyor/process()
-	if(stat & (BROKEN | NOPOWER))
+	if(!operating || conveying)
 		return
-	if(!operating)
-		return
+	
 	use_power(6)
-	affecting = loc.contents - src		// moved items will be all in loc
-	addtimer(CALLBACK(src,PROC_REF(convey), affecting), 1)
+	//get the first 30 items in contents
+	var/turf/locturf = loc
+	var/list/items = locturf.contents - src - locturf.lighting_object
+	if(!LAZYLEN(items))//Dont do anything at all if theres nothing there but the conveyor
+		return
+	var/list/affecting
+	if(length(items) > MAX_CONVEYOR_ITEMS_MOVE)
+		affecting = items.Copy(1, MAX_CONVEYOR_ITEMS_MOVE + 1)//Lists start at 1 lol
+	else
+		affecting = items
+	conveying = TRUE
+
+	addtimer(CALLBACK(src, .proc/convey, affecting), 1)//Movement effect
 
 /obj/machinery/conveyor/proc/convey(list/affecting)
-	var/turf/T = get_step(src, movedir)
-	if(length(T.contents) > 150)
-		return
-	for(var/atom/movable/A in affecting)
-		if((A.loc == loc) && A.has_gravity())
-			A.ConveyorMove(movedir)
+	for(var/am in affecting)
+		if(!ismovable(am))	//This is like a third faster than for(var/atom/movable in affecting)
+			continue
+		var/atom/movable/movable_thing = am
+		//Give this a chance to yield if the server is busy
+		stoplag()
+		if(QDELETED(movable_thing) || (movable_thing.loc != loc))
+			continue
+		if(iseffect(movable_thing) || isdead(movable_thing))
+			continue
+		if(isliving(movable_thing))
+			var/mob/living/zoommob = movable_thing
+			if((zoommob.movement_type & FLYING) && !zoommob.stat)
+				continue
+		if(!movable_thing.anchored && movable_thing.has_gravity())
+			step(movable_thing, movedir)
+	conveying = FALSE
 
 // attack with item, place item on conveyor
 /obj/machinery/conveyor/attackby(obj/item/I, mob/user, params)
@@ -148,25 +176,23 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 		user.visible_message("<span class='notice'>[user] struggles to pry up \the [src] with \the [I].</span>", \
 		"<span class='notice'>You struggle to pry up \the [src] with \the [I].</span>")
 		if(I.use_tool(src, user, 40, volume=40))
-			if(!(stat & BROKEN))
-				var/obj/item/conveyor_construct/C = new/obj/item/conveyor_construct(src.loc)
-				C.id = id
-				transfer_fingerprints_to(C)
+			var/obj/item/stack/conveyor/C = new/obj/item/stack/conveyor(loc, 1, TRUE, id)
+			C.id = id
+			transfer_fingerprints_to(C)
 			to_chat(user, "<span class='notice'>You remove the conveyor belt.</span>")
 			qdel(src)
 
-		if(!(stat & BROKEN))
-			I.play_tool_sound(src)
-			setDir(turn(dir,-45))
-			update_move_direction()
-			to_chat(user, "<span class='notice'>You rotate [src].</span>")
 	else if(I.tool_behavior == TOOL_WRENCH)
+		I.play_tool_sound(src)
+		setDir(turn(dir,-45))
+		update_move_direction()
+		to_chat(user, "<span class='notice'>You rotate [src].</span>")
 
-		if(!(stat & BROKEN))
-			verted = verted * -1
-			update_move_direction()
-			to_chat(user, "<span class='notice'>You reverse [src]'s direction.</span>")
 	else if(I.tool_behavior == TOOL_SCREWDRIVER)
+		inverted = !inverted
+		update_move_direction()
+		to_chat(user, "<span class='notice'>You set [src]'s direction [inverted ? "backwards" : "back to default"].</span>")
+		update_icon()
 
 	else if(user.a_intent != INTENT_HARM)
 		user.transferItemToLoc(I, drop_location())
@@ -179,34 +205,6 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 	if(.)
 		return
 	user.Move_Pulled(src)
-
-// make the conveyor broken
-// also propagate inoperability to any connected conveyor with the same ID
-/obj/machinery/conveyor/proc/broken()
-	stat |= BROKEN
-	update()
-
-	var/obj/machinery/conveyor/C = locate() in get_step(src, dir)
-	if(C)
-		C.set_operable(dir, id, 0)
-
-	C = locate() in get_step(src, turn(dir,180))
-	if(C)
-		C.set_operable(turn(dir,180), id, 0)
-
-
-//set the operable var if ID matches, propagating in the given direction
-
-/obj/machinery/conveyor/proc/set_operable(stepdir, match_id, op)
-
-	if(id != match_id)
-		return
-	operable = op
-
-	update()
-	var/obj/machinery/conveyor/C = locate() in get_step(src, stepdir)
-	if(C)
-		C.set_operable(stepdir, id, op)
 
 /obj/machinery/conveyor/power_change()
 	..()
@@ -326,37 +324,6 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 	if((dir == NORTH) || (dir == WEST))
 		invert_icon = TRUE
 
-//
-// CONVEYOR CONSTRUCTION STARTS HERE
-//
-
-/obj/item/conveyor_construct
-	icon = 'icons/obj/recycling.dmi'
-	icon_state = "conveyor_construct"
-	name = "conveyor belt assembly"
-	desc = "A conveyor belt assembly."
-	w_class = WEIGHT_CLASS_BULKY
-	var/id = "" //inherited by the belt
-
-/obj/item/conveyor_construct/attackby(obj/item/I, mob/user, params)
-	..()
-	if(istype(I, /obj/item/conveyor_switch_construct))
-		to_chat(user, "<span class='notice'>You link the switch to the conveyor belt assembly.</span>")
-		var/obj/item/conveyor_switch_construct/C = I
-		id = C.id
-
-/obj/item/conveyor_construct/afterattack(atom/A, mob/user, proximity)
-	. = ..()
-	if(!proximity || user.stat || !isfloorturf(A) || istype(A, /area/shuttle))
-		return
-	var/cdir = get_dir(A, user)
-	if(A == user.loc)
-		to_chat(user, "<span class='notice'>You cannot place a conveyor belt under yourself.</span>")
-		return
-	var/obj/machinery/conveyor/C = new/obj/machinery/conveyor(A, cdir, id)
-	transfer_fingerprints_to(C)
-	qdel(src)
-
 /obj/item/conveyor_switch_construct
 	name = "conveyor switch assembly"
 	desc = "A conveyor control switch assembly."
@@ -385,6 +352,56 @@ GLOBAL_LIST_EMPTY(conveyors_by_id)
 	transfer_fingerprints_to(NC)
 	qdel(src)
 
+/obj/item/conveyor_switch_construct/attackby(obj/item/I, mob/user, params)
+	if(I.tool_behaviour == TOOL_MULTITOOL)
+		id = "[rand()]"
+		to_chat(user, span_notice("You pulse \the [src]'s connection, randomly generating a new network ID."))
+
+/obj/item/stack/conveyor
+	name = "conveyor belt assembly"
+	desc = "A conveyor belt assembly."
+	icon = 'icons/obj/recycling.dmi'
+	icon_state = "conveyor_construct"
+	max_amount = 30
+	singular_name = "conveyor belt"
+	w_class = WEIGHT_CLASS_BULKY
+	materials = list(/datum/material/iron = 1000)
+	///id for linking
+	var/id = "" //inherited by the belt
+
+/obj/item/stack/conveyor/Initialize(mapload, new_amount, merge = TRUE, _id)
+	. = ..()
+	id = _id
+
+/obj/item/stack/conveyor/afterattack(atom/A, mob/user, proximity)
+	. = ..()
+	if(!proximity || user.stat || !isfloorturf(A) || istype(A, /area/shuttle))
+		return
+	var/cdir = get_dir(A, user)
+	if(A == user.loc)
+		to_chat(user, "<span class='notice'>You cannot place a conveyor belt under yourself.</span>")
+		return
+	var/obj/machinery/conveyor/C = new/obj/machinery/conveyor(A, cdir, id)
+	transfer_fingerprints_to(C)
+	use(1)
+
+/obj/item/stack/conveyor/attackby(obj/item/I, mob/user, params)
+	..()
+	if(istype(I, /obj/item/conveyor_switch_construct))
+		to_chat(user, "<span class='notice'>You link the switch to the conveyor belt assembly.</span>")
+		var/obj/item/conveyor_switch_construct/C = I
+		id = C.id
+	if(I.tool_behaviour == TOOL_MULTITOOL)
+		id = ""
+		to_chat(user, span_notice("You unlink the conveyor belt assembly from any switches it's connected to."))
+
+/obj/item/stack/conveyor/update_weight()
+	return FALSE
+
+/obj/item/stack/conveyor/thirty
+	amount = 30
+
 /obj/item/paper/guides/conveyor
 	name = "paper- 'Nano-it-up U-build series, #9: Build your very own conveyor belt, in SPACE'"
 	info = "<h1>Congratulations!</h1><p>You are now the proud owner of the best conveyor set available for space mail order! We at Nano-it-up know you love to prepare your own structures without wasting time, so we have devised a special streamlined assembly procedure that puts all other mail-order products to shame!</p><p>Firstly, you need to link the conveyor switch assembly to each of the conveyor belt assemblies. After doing so, you simply need to install the belt assemblies onto the floor, et voila, belt built. Our special Nano-it-up smart switch will detected any linked assemblies as far as the eye can see! This convenience, you can only have it when you Nano-it-up. Stay nano!</p>"
+#undef MAX_CONVEYOR_ITEMS_MOVE
