@@ -16,7 +16,7 @@
 	if(!(flags_1 & NODECONSTRUCT_1))
 		if(default_unfasten_wrench(user, W))
 			return
-		if(istype(W, /obj/item/weldingtool) || istype(W, /obj/item/gun/energy/plasmacutter))
+		if(W.tool_behavior == TOOL_WELDER || istype(W, /obj/item/gun/energy/plasmacutter))
 			if(!W.tool_start_check(user, amount=0))
 				return FALSE
 

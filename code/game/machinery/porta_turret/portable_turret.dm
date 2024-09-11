@@ -240,7 +240,7 @@
 
 /obj/machinery/porta_turret/attackby(obj/item/I, mob/user, params)
 	if(stat & BROKEN)
-		if(istype(I, /obj/item/crowbar))
+		if(I.tool_behavior == TOOL_CROWBAR)
 			//If the turret is destroyed, you can remove it with a crowbar to
 			//try and salvage its components
 			to_chat(user, "<span class='notice'>You begin prying the metal coverings off...</span>")
@@ -257,7 +257,7 @@
 					to_chat(user, "<span class='notice'>You remove the turret but did not manage to salvage anything.</span>")
 				qdel(src)
 
-	else if((istype(I, /obj/item/wrench)) && (!on))
+	else if((I.tool_behaviour == TOOL_WRENCH) && (!on))
 		if(raised)
 			return
 
@@ -284,7 +284,7 @@
 			to_chat(user, "<span class='notice'>Controls are now [locked ? "locked" : "unlocked"].</span>")
 		else
 			to_chat(user, "<span class='notice'>Access denied.</span>")
-	else if(istype(I, /obj/item/multitool) && !locked)
+	else if(I.tool_behavior == TOOL_MULTITOOL && !locked)
 		var/obj/item/multitool/M = I
 		M.buffer = src
 		to_chat(user, "<span class='notice'>You add [src] to multitool buffer.</span>")
@@ -843,7 +843,7 @@
 	if(stat & BROKEN)
 		return
 
-	if (istype(I, /obj/item/multitool))
+	if (I.tool_behavior == TOOL_MULTITOOL)
 		var/obj/item/multitool/M = I
 		if(M.buffer && istype(M.buffer, /obj/machinery/porta_turret))
 			turrets |= M.buffer

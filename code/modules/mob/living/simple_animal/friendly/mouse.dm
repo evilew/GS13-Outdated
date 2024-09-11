@@ -199,7 +199,7 @@
 /mob/living/simple_animal/mouse/boommouse/attackby(obj/item/I, mob/living/user, params)
 	var/turf/T = get_turf(src)
 	message_admins("[ADMIN_LOOKUPFLW(user)] is attacking a boommouse at [ADMIN_VERBOSEJMP(T)].")
-	if(istype(I, /obj/item/weldingtool))
+	if(I.tool_behavior == TOOL_WELDER)
 		var/obj/item/weldingtool/W = I
 		if(W.welding)
 			user.visible_message("<span class='warning'>[user] burns the boommouse with [user.p_their()] [W.name]!</span>", "<span class='userdanger'>That was stupid of you.</span>")

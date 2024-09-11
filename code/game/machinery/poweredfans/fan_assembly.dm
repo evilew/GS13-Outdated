@@ -25,7 +25,7 @@
 	switch(stat)
 		if(1)
 			// Stat 1
-			if(istype(W, /obj/item/weldingtool))
+			if(W.tool_behavior == TOOL_WELDER)
 				if(weld(W, user))
 					to_chat(user, "<span class='notice'>You weld the fan assembly securely into place.</span>")
 					setAnchored(TRUE)
@@ -46,7 +46,7 @@
 					forceMove(F)
 					F.setDir(src.dir)
 					return
-			else if(istype(W, /obj/item/weldingtool))
+			else if(W.tool_behavior == TOOL_WELDER)
 				if(weld(W, user))
 					to_chat(user, "<span class='notice'>You unweld the fan assembly from its place.</span>")
 					stat = 1

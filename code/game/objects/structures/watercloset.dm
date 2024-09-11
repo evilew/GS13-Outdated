@@ -75,7 +75,7 @@
 
 
 /obj/structure/toilet/attackby(obj/item/I, mob/living/user, params)
-	if(istype(I, /obj/item/crowbar))
+	if(I.tool_behavior == TOOL_CROWBAR)
 		to_chat(user, "<span class='notice'>You start to [cistern ? "replace the lid on the cistern" : "lift the lid off the cistern"]...</span>")
 		playsound(loc, 'sound/effects/stonedoor_openclose.ogg', 50, 1)
 		if(I.use_tool(src, user, 30))
@@ -596,7 +596,7 @@
 		to_chat(user, "<span class='warning'>Someone's already washing here.</span>")
 		return
 
-	if (istype(O, /obj/item/wrench) && user.a_intent == INTENT_HELP)
+	if (O.tool_behavior == TOOL_WRENCH && user.a_intent == INTENT_HELP)
 		to_chat(user, "<span class='notice'>You start deconstructing [src]...</span>")
 		O.play_tool_sound(src)
 

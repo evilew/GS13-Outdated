@@ -48,7 +48,7 @@
 				C.adjust_fatness(-10, FATTENING_TYPE_WEIGHT_LOSS)
 
 /obj/machinery/conveyor/treadmill/attackby(obj/item/I, mob/user, params)
-	if(istype(I, /obj/item/crowbar))
+	if(I.tool_behavior == TOOL_CROWBAR)
 		user.visible_message("<span class='notice'>[user] struggles to pry up \the [src] with \the [I].</span>", \
 		"<span class='notice'>You struggle to pry up \the [src] with \the [I].</span>")
 		if(I.use_tool(src, user, 40, volume=40))
@@ -59,14 +59,14 @@
 			to_chat(user, "<span class='notice'>You remove the conveyor belt.</span>")
 			qdel(src)
 
-	else if(istype(I, /obj/item/wrench))
+	else if(I.tool_behaviour == TOOL_WRENCH)
 		if(!(stat & BROKEN))
 			I.play_tool_sound(src)
 			setDir(turn(dir,-45))
 			update_move_direction()
 			to_chat(user, "<span class='notice'>You rotate [src].</span>")
 
-	else if(istype(I, /obj/item/screwdriver))
+	else if(I.tool_behavior == TOOL_SCREWDRIVER)
 		if(!(stat & BROKEN))
 			verted = verted * -1
 			update_move_direction()

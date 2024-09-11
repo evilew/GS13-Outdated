@@ -21,7 +21,7 @@
 		anchored = TRUE
 		return TRUE
 
-	if(istype(item, /obj/item/crowbar))
+	if(item.tool_behavior == TOOL_CROWBAR)
 		to_chat(user,"<span class='notice'>You pry the bricks from the floor.</span>")
 		anchored = FALSE
 		return TRUE

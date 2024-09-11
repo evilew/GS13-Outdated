@@ -343,7 +343,7 @@
 	. = TRUE
 	if(opened)
 		if(istype(W, cutting_tool))
-			if(istype(W, /obj/item/weldingtool))
+			if(W.tool_behavior == TOOL_WELDER)
 				if(!W.tool_start_check(user, amount=0))
 					return
 
@@ -368,9 +368,9 @@
 			return TRUE
 	else if(istype(W, /obj/item/electronics/airlock))
 		handle_lock_addition(user, W)
-	else if(istype(W, /obj/item/screwdriver))
+	else if(W.tool_behavior == TOOL_SCREWDRIVER)
 		handle_lock_removal(user, W)
-	else if(istype(W, /obj/item/weldingtool) && can_weld_shut)
+	else if(W.tool_behavior == TOOL_WELDER && can_weld_shut)
 		if(!W.tool_start_check(user, amount=0))
 			return
 
@@ -387,7 +387,7 @@
 							"<span class='notice'>You [welded ? "weld" : "unwelded"] \the [src] with \the [W].</span>",
 							"<span class='italics'>You hear welding.</span>")
 			update_icon()
-	else if(istype(W, /obj/item/wrench) && anchorable)
+	else if(W.tool_behavior == TOOL_WRENCH && anchorable)
 		if(isinspace() && !anchored)
 			return
 		setAnchored(!anchored)

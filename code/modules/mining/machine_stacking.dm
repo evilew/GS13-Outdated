@@ -38,7 +38,7 @@
 	user << browse(dat, "window=console_stacking_machine")
 
 /obj/machinery/mineral/stacking_unit_console/multitool_act(mob/living/user, obj/item/I)
-	if(istype(I, /obj/item/multitool))
+	if(I.tool_behavior == TOOL_MULTITOOL)
 		var/obj/item/multitool/M = I
 		M.buffer = src
 		to_chat(user, "<span class='notice'>You store linkage information in [I]'s buffer.</span>")

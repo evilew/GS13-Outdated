@@ -353,7 +353,7 @@
 			torture_time -= 1
 		else if(I.sharpness == IS_SHARP_ACCURATE)
 			torture_time -= 2
-		if(istype(I, /obj/item/weldingtool))
+		if(I.tool_behavior == TOOL_WELDER)
 			var/obj/item/weldingtool/welder = I
 			welder.welding = TRUE
 			torture_time -= 5
