@@ -13,7 +13,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	usesound = 'sound/items/jaws_pry.ogg'
 	force = 15
-	toolspeed = 0.7
+	toolspeed = 0.35 // GS edit: Yogs speed is 0.7, but that's ass.
 	tool_behaviour = TOOL_CROWBAR
 	var/pryforce = 1 // the speed at which airlocks are pried open. Default is 1 .
 
@@ -114,7 +114,7 @@
 	attack_verb = list("drilled", "screwed", "jabbed","whacked")
 	hitsound = 'sound/items/drill_hit.ogg'
 	usesound = 'sound/items/drill_use.ogg'
-	toolspeed = 0.7
+	toolspeed = 0.35 //GS edit. Yog's value is 0.7, but that's ass. 
 	tool_behaviour = TOOL_SCREWDRIVER
 	sharpness = IS_SHARP_ACCURATE
 /obj/item/handdrill/attack(mob/living/carbon/M, mob/living/carbon/user)
