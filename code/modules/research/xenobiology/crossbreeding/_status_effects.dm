@@ -491,6 +491,8 @@ datum/status_effect/rebreathing/tick()
 
 /datum/status_effect/stabilized/purple/tick()
 	var/is_healing = FALSE
+	if(owner.nutrition <= NUTRITION_LEVEL_STARVING) //No healing if you don't eat
+		return..()
 	if(owner.getBruteLoss() > 0)
 		owner.adjustBruteLoss(-0.2)
 		is_healing = TRUE
@@ -503,6 +505,7 @@ datum/status_effect/rebreathing/tick()
 	if(is_healing)
 		examine_text = "<span class='warning'>SUBJECTPRONOUN is regenerating slowly, purplish goo filling in small injuries!</span>"
 		new /obj/effect/temp_visual/heal(get_turf(owner), "#FF0000")
+		owner.nutrition -= 5 //Drains nutrition to heal. Idea is to make it seem like it's just speeding up natural regeneration significantly
 	else
 		examine_text = null
 	..()
@@ -544,8 +547,8 @@ datum/status_effect/stabilized/blue/on_remove()
 /datum/status_effect/stabilized/yellow
 	id = "stabilizedyellow"
 	colour = "yellow"
-	var/cooldown = 10
-	var/max_cooldown = 10
+	var/cooldown = 30
+	var/max_cooldown = 30
 	examine_text = "<span class='warning'>Nearby electronics seem just a little more charged wherever SUBJECTPRONOUN goes.</span>"
 
 /datum/status_effect/stabilized/yellow/tick()
@@ -601,6 +604,7 @@ datum/status_effect/stabilized/blue/on_remove()
 	colour = "dark blue"
 
 /datum/status_effect/stabilized/darkblue/tick()
+	owner.adjust_bodytemperature(min(-1.5)) //Makes you colder, you are soaking wet after all
 	if(owner.fire_stacks > 0 && prob(80))
 		owner.fire_stacks--
 		if(owner.fire_stacks <= 0)

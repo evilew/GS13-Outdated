@@ -30,7 +30,7 @@ Regenerative extracts:
 		user.visible_message("<span class='notice'>[user] crushes the [src] over [user.p_them()]self, the milky goo quickly seeping into [user.p_their()] skin!</span>",
 			"<span class='notice'>You squeeze the [src], and it bursts in your hand, splashing you with milky goo which seeps into your skin!</span>")
 	core_effect_before(H, user)
-	target.reagents.add_reagent(/datum/reagent/medicine/regen_jelly,30) //TODO Make these stronger, No aheals but I'll make a new medicine for these to add that heals faster.
+	target.reagents.add_reagent(/datum/reagent/medicine/pure_regen_jelly,5) //No instant aheals. Gives medicine instead, extremely fast acting and very powerful. But not instant.
 	core_effect(H, user)
 	playsound(target, 'sound/effects/splat.ogg', 40, 1)
 	qdel(src)
@@ -51,7 +51,7 @@ Regenerative extracts:
 	colour = "purple"
 
 /obj/item/slimecross/regenerative/purple/core_effect(mob/living/target, mob/user)
-	target.reagents.add_reagent(/datum/reagent/medicine/neo_jelly,15) //Varies what it applies so you get two powerful healing chems at once. 
+	target.reagents.add_reagent(/datum/reagent/medicine/pure_neo_jelly,5) //Varies what it applies so you get two powerful healing chems at once since Purples are all about healing.
 
 /obj/item/slimecross/regenerative/blue
 	colour = "blue"
