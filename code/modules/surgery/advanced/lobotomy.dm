@@ -21,7 +21,7 @@
 	return TRUE
 /datum/surgery_step/lobotomize
 	name = "perform lobotomy"
-	implements = list(TOOL_SCALPEL = 85, /obj/item/melee/transforming/energy/sword = 55, /obj/item/kitchen/knife = 35,
+	implements = list(TOOL_SCALPEL = 90, /obj/item/melee/transforming/energy/sword = 55, /obj/item/kitchen/knife = 35,
 		/obj/item/shard = 25, /obj/item = 20)
 	time = 100
 /datum/surgery_step/lobotomize/tool_check(mob/user, obj/item/tool)
@@ -43,11 +43,11 @@
 		target.mind.remove_antag_datum(/datum/antagonist/brainwashed)
 	switch(rand(1,4))//Now let's see what hopefully-not-important part of the brain we cut off
 		if(1)
-			target.gain_trauma_type(BRAIN_TRAUMA_MILD, TRAUMA_RESILIENCE_MAGIC)
+			target.gain_trauma_type(BRAIN_TRAUMA_MILD, TRAUMA_RESILIENCE_SURGERY)
 		if(2)
-			target.gain_trauma_type(BRAIN_TRAUMA_SEVERE, TRAUMA_RESILIENCE_MAGIC)
+			target.gain_trauma_type(BRAIN_TRAUMA_SEVERE, TRAUMA_RESILIENCE_SURGERY)
 		if(3)
-			target.gain_trauma_type(BRAIN_TRAUMA_SPECIAL, TRAUMA_RESILIENCE_MAGIC)
+			target.gain_trauma_type(BRAIN_TRAUMA_SPECIAL, TRAUMA_RESILIENCE_SURGERY)
 	return TRUE
 
 /datum/surgery_step/lobotomize/failure(mob/user, mob/living/carbon/target, target_zone, obj/item/tool, datum/surgery/surgery)
@@ -59,11 +59,11 @@
 		B.applyOrganDamage(80)
 		switch(rand(1,3))
 			if(1)
-				target.gain_trauma_type(BRAIN_TRAUMA_MILD, TRAUMA_RESILIENCE_MAGIC)
+				target.gain_trauma_type(BRAIN_TRAUMA_MILD, TRAUMA_RESILIENCE_LOBOTOMY)
 			if(2)
-				target.gain_trauma_type(BRAIN_TRAUMA_SEVERE, TRAUMA_RESILIENCE_MAGIC)
+				target.gain_trauma_type(BRAIN_TRAUMA_SEVERE, TRAUMA_RESILIENCE_LOBOTOMY)
 			if(3)
-				target.gain_trauma_type(BRAIN_TRAUMA_SPECIAL, TRAUMA_RESILIENCE_MAGIC)
+				target.gain_trauma_type(BRAIN_TRAUMA_SPECIAL, TRAUMA_RESILIENCE_LOBOTOMY)
 	else
 		user.visible_message("<span class='warning'>[user] suddenly notices that the brain [user.p_they()] [user.p_were()] working on is not there anymore.", "<span class='warning'>You suddenly notice that the brain you were working on is not there anymore.</span>")
 	return FALSE
