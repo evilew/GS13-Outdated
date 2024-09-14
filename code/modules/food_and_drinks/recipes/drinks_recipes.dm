@@ -1002,3 +1002,7 @@
 /datum/chemical_reaction/drink/cinderella
 	results = list(/datum/reagent/consumable/cinderella = 50)
 	required_reagents = list(/datum/reagent/consumable/pineapplejuice = 10, /datum/reagent/consumable/orangejuice = 10, /datum/reagent/consumable/lemonjuice = 5, /datum/reagent/consumable/ice = 5, /datum/reagent/consumable/sol_dry = 20, /datum/reagent/consumable/ethanol/bitters = 2)
+
+/datum/chemical_reaction/drink/maui_sunrise
+	results = list(/datum/reagent/consumable/ethanol/maui_sunrise = 10)
+	required_reagents = list(/datum/reagent/consumable/ethanol/coconut_rum = 2, /datum/reagent/consumable/pineapplejuice = 2, /datum/reagent/consumable/ethanol/yuyake = 1, /datum/reagent/consumable/triple_citrus = 1, /datum/reagent/consumable/lemon_lime = 4)
