@@ -72,6 +72,7 @@
 		/obj/item/forcefield_projector,
 		/obj/item/assembly/signaler,
 		/obj/item/lightreplacer,
+		/obj/item/construction/rcd,
 		/obj/item/pipe_dispenser,
 		/obj/item/inducer,
 		/obj/item/grenade/chem_grenade/smart_metal_foam,
@@ -585,7 +586,9 @@ obj/item/storage/belt/slut/ComponentInitialize()
 		/obj/item/weldingtool,
 		/obj/item/wirecutters,
 		/obj/item/wrench,
-		/obj/item/wrench/medical
+		/obj/item/wrench/medical,
+		/obj/item/handdrill,
+		/obj/item/jawsoflife
 		))
 
 /obj/item/storage/belt/grenade

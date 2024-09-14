@@ -23,15 +23,13 @@
 		var/mob/M = P
 		if(!M.client)
 			continue
-		if((!M.client?.prefs.cit_toggles & pref))
-			continue
-		if(get_dist(M, turf_source) <= maxdistance)
-			M.playsound_local(turf_source, soundin, vol, vary, frequency, falloff, channel, pressure_affected, S, soundenvwet, soundenvdry)
+		if((M.client?.prefs.cit_toggles & pref))
+			if(get_dist(M, turf_source) <= maxdistance)
+				M.playsound_local(turf_source, soundin, vol, vary, frequency, falloff, channel, pressure_affected, S, soundenvwet, soundenvdry)
 	for(var/P in SSmobs.dead_players_by_zlevel[z])
 		var/mob/M = P
 		if(!M.client)
 			continue
-		if((!M.client?.prefs.cit_toggles & pref))
-			continue
-		if(get_dist(M, turf_source) <= maxdistance)
-			M.playsound_local(turf_source, soundin, vol, vary, frequency, falloff, channel, pressure_affected, S, soundenvwet, soundenvdry)
+		if((M.client?.prefs.cit_toggles & pref))
+			if(get_dist(M, turf_source) <= maxdistance)
+				M.playsound_local(turf_source, soundin, vol, vary, frequency, falloff, channel, pressure_affected, S, soundenvwet, soundenvdry)
