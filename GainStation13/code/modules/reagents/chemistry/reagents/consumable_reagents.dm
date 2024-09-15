@@ -140,6 +140,36 @@
 /datum/reagent/blueberry_juice/proc/fat_hide()
 	return (124 * (volume * volume))/1000	//123'840 600% size, about 56'000 400% size, calc was: (3 * (volume * volume))/50
 
+/datum/reagent/consumable/ethanol/hunchback //drink from goonstation, adapted for here. yay!!
+	name = "Hunchback"
+	description = "Better out than in."
+	reagent_state = LIQUID
+	color = "#700000CC"
+	metabolization_rate = 0.75 * REAGENTS_METABOLISM
+	taste_description = "nausea"
+	boozepwr = 25
+	var/last_check_time = 0
+	glass_name = "glass of Hunchback"
+	glass_desc = "An alleged cocktail invented by a notorious scientist. Useful in a pinch as an impromptu purgative, or interrogation tool."
+	pH = 4.5
+	value = 1
+
+/datum/reagent/consumable/ethanol/hunchback/on_mob_life(mob/living/carbon/M)
+	if(last_check_time + 50 < world.time)
+		to_chat(M,"<span class='notice'>You feel yourself gag...</span>")
+		if(M.disgust < 80)
+			M.adjust_disgust(20)
+		SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "gross_food", /datum/mood_event/disgusting_food)
+		last_check_time = world.time
+	for(var/A in M.reagents.reagent_list)
+		var/datum/reagent/R = A
+		if(R != src)
+			M.reagents.remove_reagent(R.type,5)
+	if(M.health > 10)
+		M.adjustToxLoss(4*REM, 0)
+		. = 1
+	..()
+
 // /obj/item/reagent_containers/food/snacks/meat/steak/troll
 // 	name = "Troll steak"
 // 	desc = "In its sliced state it remains dormant, but once the troll meat comes in contact with stomach acids, it begins a perpetual cycle of constant regrowth and digestion. You probably shouldn't eat this."
