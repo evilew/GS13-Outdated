@@ -144,7 +144,7 @@
 	name = "Hunchback"
 	description = "Better out than in."
 	reagent_state = LIQUID
-	color = "#700000CC"
+	color = "#5a00009f"
 	metabolization_rate = 0.75 * REAGENTS_METABOLISM
 	taste_description = "nausea"
 	boozepwr = 25
