@@ -191,10 +191,10 @@
 	medical_record_text = "Patient has been observed eating inedible garbage."
 
 /datum/quirk/trashcan/add()
-	quirk_holder.verbs += /mob/living/proc/eat_trash
+	add_verb(quirk_holder, /mob/living/proc/eat_trash)
 
 /datum/quirk/trashcan/remove()
-	quirk_holder.verbs -= /mob/living/proc/eat_trash
+	remove_verb(quirk_holder, /mob/living/proc/eat_trash)
 
 /datum/quirk/universal_diet
 	name = "Universal diet"
