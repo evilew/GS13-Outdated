@@ -3097,6 +3097,7 @@
 #include "GainStation13\code\machinery\adipoelectric_transformer.dm"
 #include "GainStation13\code\machinery\fattening_turret.dm"
 #include "GainStation13\code\machinery\feeding_tube.dm"
+#include "GainStation13\code\machinery\feeding_tube_industrial.dm"
 #include "GainStation13\code\machinery\supply_teleporter.dm"
 #include "GainStation13\code\mechanics\fatness.dm"
 #include "GainStation13\code\mechanics\fatrousal.dm"
