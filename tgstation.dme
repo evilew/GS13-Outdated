@@ -3080,6 +3080,7 @@
 #include "GainStation13\code\clothing\head.dm"
 #include "GainStation13\code\clothing\suits.dm"
 #include "GainStation13\code\datums\components\fattening_door.dm"
+#include "GainStation13\code\datums\components\crafting\recipes\recipes_misc_gs.dm"
 #include "GainStation13\code\datums\diseases\advance\symptoms\berry.dm"
 #include "GainStation13\code\datums\mutations\fatfang.dm"
 #include "GainStation13\code\datums\mutations\radfat.dm"
