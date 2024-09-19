@@ -114,12 +114,12 @@
 								used_icon_location = icon_stuffed_location
 								
 						if(!adjusted) //check the style, if it needs to be the adjusted variants
-							if(G.size <= 9+2) //check that the size is within accepted values, NOTE: these need to be removed later, better to cap organ sizes to begin with. Cap is 9 (max fat stage) + 2 (stuffed stages)
+							if(G.size <= 9+FULLNESS_STUFFED_EXTRA_SPRITE_SIZES) //check that the size is within accepted values, NOTE: these need to be removed later, better to cap organ sizes to begin with. Cap is 9 (max fat stage) + 2 (stuffed stages)
 								. += mutable_appearance(used_icon_location, "belly_[size]", GENITALS_UNDER_LAYER) //add, from the clothes' icon file the overlay corresponding to that genital at that size and draw it onto the layer
 							else //if not an expected size value, bigger than the max, default to max size
 								. += mutable_appearance(used_icon_location, "belly_11", GENITALS_UNDER_LAYER)
 						else //use the alternative adjusted sprites
-							if(G.size <= 9+2)
+							if(G.size <= 9+FULLNESS_STUFFED_EXTRA_SPRITE_SIZES)
 								. += mutable_appearance(used_icon_location, "belly_[size]_d", GENITALS_UNDER_LAYER)
 							else
 								. += mutable_appearance(used_icon_location, "belly_11_d", GENITALS_UNDER_LAYER)

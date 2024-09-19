@@ -474,25 +474,24 @@
 			colourcode = S.color_src
 
 			if(G.slot == "belly") // GS13
+
+				// Default settings
+				genital_overlay.icon_state = "belly_[size]"
+				genital_overlay.layer = -UNDER_BACK_LAYER
+				colourcode = "belly_color"
+
 				// Change belly sprite and size based on current fullness
 				switch(H.fullness)
 					if(0 to FULLNESS_LEVEL_BLOATED)
-						genital_overlay.icon_state = "belly_[size]"
+						genital_overlay.icon = 'hyperstation/icons/obj/genitals/belly.dmi'
 					if(FULLNESS_LEVEL_BLOATED to FULLNESS_LEVEL_BEEG)
 						genital_overlay.icon = 'hyperstation/icons/obj/genitals/belly_stuffed.dmi'
-						genital_overlay.icon_state = "belly_[size]"
-						genital_overlay.layer = -UNDER_BACK_LAYER
-						colourcode = "belly_color"
 					if(FULLNESS_LEVEL_BEEG to FULLNESS_LEVEL_NOMOREPLZ)
 						genital_overlay.icon = 'hyperstation/icons/obj/genitals/belly_stuffed.dmi'
 						genital_overlay.icon_state = "belly_[size+1]"
-						genital_overlay.layer = -UNDER_BACK_LAYER
-						colourcode = "belly_color"
 					if(FULLNESS_LEVEL_NOMOREPLZ to INFINITY)
 						genital_overlay.icon = 'hyperstation/icons/obj/genitals/belly_stuffed.dmi'
 						genital_overlay.icon_state = "belly_[size+2]"
-						genital_overlay.layer = -UNDER_BACK_LAYER
-						colourcode = "belly_color"
 
 			//sizecheck added to prevent rendering blank icons
 			if(G.slot == "anus" && G.size > 0) // GS13
