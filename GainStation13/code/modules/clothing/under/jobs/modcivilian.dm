@@ -115,12 +115,12 @@
 							if(G.size <= 9+2) //check that the size is within accepted values, NOTE: these need to be removed later, better to cap organ sizes to begin with. Cap is 9 (max fat stage) + 2 (stuffed stages)
 								. += mutable_appearance(used_icon_location, "belly_[size]", GENITALS_UNDER_LAYER) //add, from the clothes' icon file the overlay corresponding to that genital at that size and draw it onto the layer
 							else //if not an expected size value, bigger than the max, default to max size
-								. += mutable_appearance(icon_location, "belly_11", GENITALS_UNDER_LAYER)
+								. += mutable_appearance(used_icon_location, "belly_11", GENITALS_UNDER_LAYER)
 						else //use the alternative adjusted sprites
 							if(G.size <= 9+2)
-								. += mutable_appearance(icon_location, "belly_[size]_d", GENITALS_UNDER_LAYER)
+								. += mutable_appearance(used_icon_location, "belly_[size]_d", GENITALS_UNDER_LAYER)
 							else
-								. += mutable_appearance(icon_location, "belly_11_d", GENITALS_UNDER_LAYER)
+								. += mutable_appearance(used_icon_location, "belly_11_d", GENITALS_UNDER_LAYER)
 				if(istype(O, /obj/item/organ/genital/anus)) //if that organ is the butt
 					G = O
 					if(suit_style == DIGITIGRADE_SUIT_STYLE) //check if the suit needs to use sprites for digitigrade characters
