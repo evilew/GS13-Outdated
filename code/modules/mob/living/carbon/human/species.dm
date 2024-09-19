@@ -1727,7 +1727,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			H.throw_alert("fullness", /obj/screen/alert/stuffed)
 		if(FULLNESS_LEVEL_NOMOREPLZ to INFINITY)
 			H.throw_alert("fullness", /obj/screen/alert/beegbelly)
-
+			
+	// Update here for changing belly to match stuffed-ness
+	var/obj/item/organ/genital/belly/belly = H.getorganslot("belly")
+	belly.update()
 
 	switch(H.fatness)
 		if(FATNESS_LEVEL_BLOB to INFINITY)
