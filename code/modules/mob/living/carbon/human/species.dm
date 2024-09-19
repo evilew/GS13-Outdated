@@ -1730,7 +1730,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 	// Update here for changing belly to match stuffed-ness
 	var/obj/item/organ/genital/belly/B= H.getorganslot("belly")
-	if(!isnull(B))
+	if(!isnull(B) && istype(B))
 		B.update()
 
 	switch(H.fatness)

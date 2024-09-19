@@ -99,6 +99,7 @@
 						var/mob/living/carbon/human/H = O.owner
 						var/size = 0
 						var/used_icon_location = icon_location
+
 						switch(H.fullness)
 							if(0 to FULLNESS_LEVEL_BLOATED) // Normal
 								size = G.size 
@@ -111,6 +112,7 @@
 							if(FULLNESS_LEVEL_NOMOREPLZ to INFINITY)// Take the stuffed sprite of size + 2
 								size = G.size + 2
 								used_icon_location = icon_stuffed_location
+								
 						if(!adjusted) //check the style, if it needs to be the adjusted variants
 							if(G.size <= 9+2) //check that the size is within accepted values, NOTE: these need to be removed later, better to cap organ sizes to begin with. Cap is 9 (max fat stage) + 2 (stuffed stages)
 								. += mutable_appearance(used_icon_location, "belly_[size]", GENITALS_UNDER_LAYER) //add, from the clothes' icon file the overlay corresponding to that genital at that size and draw it onto the layer
@@ -121,6 +123,7 @@
 								. += mutable_appearance(used_icon_location, "belly_[size]_d", GENITALS_UNDER_LAYER)
 							else
 								. += mutable_appearance(used_icon_location, "belly_11_d", GENITALS_UNDER_LAYER)
+								
 				if(istype(O, /obj/item/organ/genital/anus)) //if that organ is the butt
 					G = O
 					if(suit_style == DIGITIGRADE_SUIT_STYLE) //check if the suit needs to use sprites for digitigrade characters
