@@ -2,7 +2,7 @@
 
 /datum/reagent/consumable/stellarsugar //Starbit Essence.
 	name = "Stellar Sugar"
-	desc = "An edible substance formed by extremely unlikely celestial events, ground into a powder. A rare delicacy!"
+	description = "An edible substance formed by rare peculiar and celestial events, ground into a powder. Delicious!"
 	reagent_state = SOLID
 	color = "#722be3"
 	taste_mult = 5 // It's rare... and has a pretty powerful (albeit positive) presence!

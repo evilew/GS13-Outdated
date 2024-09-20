@@ -3121,7 +3121,7 @@
 #include "GainStation13\code\modules\food_and_drinks\drinks.dm"
 #include "GainStation13\code\modules\food_and_drinks\food.dm"
 #include "GainStation13\code\modules\food_and_drinks\recipes_bigpizza.dm"
-#include "GainStation13\code\modules\food_and_drinks\starbit.dm"
+#include "GainStation13\code\modules\food_and_drinks\stellar_piece.dm"
 #include "GainStation13\code\modules\food_and_drinks\objects\candy_flora.dm"
 #include "GainStation13\code\modules\food_and_drinks\recipes\recipes_ported.dm"
 #include "GainStation13\code\modules\gym\gym.dm"

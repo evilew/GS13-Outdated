@@ -76,8 +76,8 @@
 		for(var/turf/S in applicable_areas)
 			S.set_light(l_color = aurora_color)
 	//GS Add: Starbits rarely come durring caelus events!
-	if(prob(1))
-		spawn_meteors(rand(1,3) list(/obj/effect/meteor/starbit))
+	if(prob(10))
+		spawn_meteors(rand(3,6), list(/obj/effect/meteor/stellar_cluster))
 	//GS Add end.
 
 /datum/round_event/aurora_caelus/end()
