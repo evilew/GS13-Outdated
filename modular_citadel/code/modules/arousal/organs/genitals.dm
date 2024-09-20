@@ -482,7 +482,7 @@
 
 				// Change belly sprite and size based on current fullness
 				switch(H.fullness)
-					if(0 to FULLNESS_LEVEL_BLOATED)
+					if(-100 to FULLNESS_LEVEL_BLOATED)
 						genital_overlay.icon = 'hyperstation/icons/obj/genitals/belly.dmi'
 					if(FULLNESS_LEVEL_BLOATED to FULLNESS_LEVEL_BEEG)
 						genital_overlay.icon = 'hyperstation/icons/obj/genitals/belly_stuffed.dmi'

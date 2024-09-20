@@ -101,7 +101,7 @@
 						var/used_icon_location = icon_location
 
 						switch(H.fullness)
-							if(0 to FULLNESS_LEVEL_BLOATED) // Normal
+							if(-100 to FULLNESS_LEVEL_BLOATED) // Normal
 								size = G.size 
 							if(FULLNESS_LEVEL_BLOATED to FULLNESS_LEVEL_BEEG) // Take the stuffed sprite of the same size
 								size = G.size
