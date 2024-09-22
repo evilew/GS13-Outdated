@@ -139,7 +139,10 @@ Slimecrossing Armor
 /obj/item/clothing/suit/armor/heavy/adamantine/equipped(mob/living/carbon/human/user, slot) //Gives you a trait to prevent increasing speed.
 	. = ..()
 	if(slot == SLOT_WEAR_SUIT)
-		ADD_TRAIT(user, TRAIT_IMMUTABLE_SLOW, "immutableslow_[REF(src)]")
+		ADD_TRAIT(user, TRAIT_IMMUTABLE_SLOW, "immutableslow_[REF(src)]") //Adds trait to prevent increases in movespeed
+		user.unignore_slowdown("slimestatus") //Deletes the stable red trait on equip to prevent bypassing it
+	if(!(slot == SLOT_WEAR_SUIT))
+		REMOVE_TRAIT(user, TRAIT_IMMUTABLE_SLOW, "immutableslow_[REF(src)]") 
 
 /obj/structure/light_prism/spectral
 	name = "spectral light prism"
