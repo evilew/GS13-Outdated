@@ -75,6 +75,10 @@
 		var/aurora_color = aurora_colors[aurora_progress]
 		for(var/turf/S in applicable_areas)
 			S.set_light(l_color = aurora_color)
+	//GS Add: Starbits rarely come durring caelus events!
+	if(prob(10))
+		spawn_meteors(rand(3,6), list(/obj/effect/meteor/stellar_cluster))
+	//GS Add end.
 
 /datum/round_event/aurora_caelus/end()
 	priority_announce("The aurora caelus event is now ending. Starlight conditions will slowly return to normal. When this has concluded, please return to your workplace and continue work as normal. Have a pleasant shift, [station_name()], and thank you for watching with us.",
