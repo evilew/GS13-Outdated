@@ -42,7 +42,7 @@
 	..()
 	pump_limit = 0
 	for(var/obj/item/stock_parts/matter_bin/mb in contents)
-		if(pump_stuff.Find(mb)) //stuff we're going to pump are not being used to build us.
+		if(mb in pump_stuff) //stuff we're going to pump are not being used to build us.
 			continue
 		pump_limit += mb.rating * 2.5 // ~20 items per pump with 2 bluespace bins
 
@@ -156,7 +156,8 @@
 		else
 			tube_overlay.icon_state = "tube-idle"
 	
-	add_overlay("light-[clogged ? "r" : "g"]")
+	if(welded) //if we're not welded, dont show our light on.
+		add_overlay("light-[clogged ? "r" : "g"]")
 
 	add_overlay(tube_overlay)
 
@@ -368,6 +369,8 @@
 
 		playsound(src, 'sound/items/welder2.ogg', 100, 1)
 		if(I.use_tool(src, user, 20))
+			update_icon()
+			playsound(src, 'sound/items/welder.ogg', 100, 1)
 			if(welded)
 				to_chat(user, "<span class='notice'>You slice the floorweld off [src].</span>")
 				welded = FALSE
@@ -381,8 +384,10 @@
 			
 		
 	else
+		playsound(src, 'sound/items/welder2.ogg', 100, 1)
 		to_chat(user, "<span class='notice'>You begin deconstructing \the [src]</span>")
 		if(I.use_tool(src, user, 30))
+			playsound(src, 'sound/items/welder.ogg', 100, 1)
 			deconstruct(TRUE)
 	return TRUE
 
@@ -391,24 +396,29 @@
 /obj/structure/disposaloutlet/industrial_feeding_tube/container_resist(mob/living/user) 
 	if(user.stat || !clogged) //If it's not clogged, they'll be ejected soon... One way or another.
 		return
-	playsound(src, "clang", 50)
+	playsound(src, 'sound/effects/clang.ogg', 50)
 	visible_message("\The [src] loudly clongs as something inside tries to break free!")
 	if(do_after(user, 100))
 		unclog()
 
-/obj/structure/disposaloutlet/industrial_feeding_tube/proc/clog(list/clog_junk)
+/obj/structure/disposaloutlet/industrial_feeding_tube/proc/clog(list/clog_junk, loud = TRUE)
 	clogged = TRUE
 	for(var/atom/movable/AM in clog_junk)
-		if(!pump_stuff.Find(AM))
+		if(!(AM in pump_stuff))
 			pump_stuff += AM
-
-	playsound(src, 'sound/machines/warning-buzzer.ogg', 50, 1)
+		AM.forceMove(src)
+		
+	
+	update_icon()
+	if(loud)
+		playsound(src, 'sound/machines/warning-buzzer.ogg', 50, 1)
 
 /obj/structure/disposaloutlet/industrial_feeding_tube/proc/unclog()
 	
 	spew(pump_stuff)
 
 	clogged = FALSE
+	update_icon()
 
 /obj/structure/disposaloutlet/industrial_feeding_tube/proc/spew(var/list/spew_stuff, playsound = FALSE)
 	var/turf/T = get_turf(src)
