@@ -70,6 +70,7 @@
 	desc = "A tasteful grey jumpsuit that reminds you of the good old days. Now adjusts to the match the wearer's size!" //description same as above
 	
 	var/icon_location = 'GainStation13/icons/mob/modclothes/graymodular.dmi' //specify the file path where the modular overlays for those clothes are located
+	var/icon_stuffed_location = 'GainStation13/icons/mob/modclothes/graymodular_stuffed.dmi'
 	var/mob/living/carbon/U //instance a variable for keeping track of the user
 
 /obj/item/clothing/under/color/grey/modular/equipped(mob/user, slot) //whenever the clothes are in someone's inventory the clothes keep track of who that user is
@@ -93,16 +94,36 @@
 			for(O in U.internal_organs) //check the user for the organs they have
 				if(istype(O, /obj/item/organ/genital/belly)) //if that organ is a belly
 					G = O //treat that organ as a genital
-					if(!adjusted) //check the style, if it needs to be the adjusted variants
-						if(G.size <= 9) //check that the size is within accepted values, NOTE: these need to be removed later, better to cap organ sizes to begin with
-							. += mutable_appearance(icon_location, "belly_[G.size]", GENITALS_UNDER_LAYER) //add, from the clothes' icon file the overlay corresponding to that genital at that size and draw it onto the layer
-						else //if not an expected size value, bigger than the max, default to max size
-							. += mutable_appearance(icon_location, "belly_9", GENITALS_UNDER_LAYER)
-					else //use the alternative adjusted sprites
-						if(G.size <= 9)
-							. += mutable_appearance(icon_location, "belly_[G.size]_d", GENITALS_UNDER_LAYER)
-						else
-							. += mutable_appearance(icon_location, "belly_9_d", GENITALS_UNDER_LAYER)
+					// Change to visually update sprite depending on fullness.
+					if(ishuman(O.owner))
+						var/mob/living/carbon/human/H = O.owner
+						var/size = 0
+						var/used_icon_location = icon_location
+
+						switch(H.fullness)
+							if(-100 to FULLNESS_LEVEL_BLOATED) // Normal
+								size = G.size 
+							if(FULLNESS_LEVEL_BLOATED to FULLNESS_LEVEL_BEEG) // Take the stuffed sprite of the same size
+								size = G.size
+								used_icon_location = icon_stuffed_location
+							if(FULLNESS_LEVEL_BEEG to FULLNESS_LEVEL_NOMOREPLZ) // Take the stuffed sprite of size + 1
+								size = G.size + 1
+								used_icon_location = icon_stuffed_location
+							if(FULLNESS_LEVEL_NOMOREPLZ to INFINITY)// Take the stuffed sprite of size + 2
+								size = G.size + 2
+								used_icon_location = icon_stuffed_location
+								
+						if(!adjusted) //check the style, if it needs to be the adjusted variants
+							if(G.size <= 9+FULLNESS_STUFFED_EXTRA_SPRITE_SIZES) //check that the size is within accepted values, NOTE: these need to be removed later, better to cap organ sizes to begin with. Cap is 9 (max fat stage) + 2 (stuffed stages)
+								. += mutable_appearance(used_icon_location, "belly_[size]", GENITALS_UNDER_LAYER) //add, from the clothes' icon file the overlay corresponding to that genital at that size and draw it onto the layer
+							else //if not an expected size value, bigger than the max, default to max size
+								. += mutable_appearance(used_icon_location, "belly_11", GENITALS_UNDER_LAYER)
+						else //use the alternative adjusted sprites
+							if(G.size <= 9+FULLNESS_STUFFED_EXTRA_SPRITE_SIZES)
+								. += mutable_appearance(used_icon_location, "belly_[size]_d", GENITALS_UNDER_LAYER)
+							else
+								. += mutable_appearance(used_icon_location, "belly_11_d", GENITALS_UNDER_LAYER)
+								
 				if(istype(O, /obj/item/organ/genital/anus)) //if that organ is the butt
 					G = O
 					if(suit_style == DIGITIGRADE_SUIT_STYLE) //check if the suit needs to use sprites for digitigrade characters

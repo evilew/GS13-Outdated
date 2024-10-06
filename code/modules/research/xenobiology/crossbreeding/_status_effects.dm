@@ -772,7 +772,8 @@ datum/status_effect/stabilized/blue/on_remove()
 	if(HAS_TRAIT(owner, TRAIT_IMMUTABLE_SLOW))
 		return ..()
 	else
-		owner.ignore_slowdown("slimestatus")
+		owner.ignore_slowdown("slimestatus") 
+		return ..()
 
 /datum/status_effect/stabilized/red/on_remove()
 	owner.unignore_slowdown("slimestatus")
