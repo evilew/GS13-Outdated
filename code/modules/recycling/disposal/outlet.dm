@@ -16,6 +16,10 @@
 
 /obj/structure/disposaloutlet/Initialize(mapload, obj/structure/disposalconstruct/make_from)
 	. = ..()
+	//GS Add: Hacky Solution, but it works.
+	if(type == /obj/structure/disposaloutlet/industrial_feeding_tube)
+		return
+	//GS Add End.
 	if(make_from)
 		setDir(make_from.dir)
 		make_from.forceMove(src)
