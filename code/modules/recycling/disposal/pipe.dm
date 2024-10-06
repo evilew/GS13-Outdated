@@ -264,9 +264,6 @@
 
 	var/obj/structure/disposaloutlet/O = locate() in T
 	if(O)
-		//GS add: Fixes a minor issue where the trunk gets linked to feeding tube improperly
-		if(O.type = /obj/structure/disposaloutlet/industrial_feeding_tube)
-			return
 		linked = O
 
 
